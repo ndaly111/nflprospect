@@ -57,7 +57,10 @@ function updateHeader() {
 
   const count = prospects.length
   const ago = timeAgo(meta.lastUpdated)
-  metaEl.textContent = `Updated ${ago} · ${count} prospect${count !== 1 ? 's' : ''}`
+  const draftDate = new Date('2026-04-23T00:00:00')
+  const daysUntil = Math.ceil((draftDate - Date.now()) / 86400000)
+  const countdown = daysUntil > 0 ? ` · Draft in ${daysUntil}d` : ''
+  metaEl.textContent = `Updated ${ago} · ${count} prospect${count !== 1 ? 's' : ''}${countdown}`
 
   if (meta.sources && statusEl) {
     statusEl.classList.remove('hidden')
@@ -65,7 +68,6 @@ function updateHeader() {
       tankathon: 'Tankathon',
       espn: 'ESPN',
       walter_football: 'Walter Football',
-      pfn: 'PFN',
     }
     statusEl.innerHTML = Object.entries(meta.sources).map(([src, info]) => {
       const ok = info.status === 'ok'

@@ -277,45 +277,6 @@ def fetch_walter_football() -> list[dict]:
 # ---------------------------------------------------------------------------
 # Pro Football Network big board (JSON API)
 # ---------------------------------------------------------------------------
-def fetch_pfn() -> list[dict]:
-    """Fetch PFN draft big board via their WordPress JSON API."""
-    url = f'https://www.profootballnetwork.com/wp-json/pfn/v1/draft-big-board?year={DRAFT_YEAR}'
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-        r.raise_for_status()
-        data = r.json()
-        # PFN returns list of player objects
-        players = data if isinstance(data, list) else data.get('players', data.get('data', []))
-        if not players:
-            raise ValueError('Empty response')
-
-        prospects = []
-        for item in players:
-            name = (item.get('name') or item.get('player_name') or '').strip()
-            pos = (item.get('position') or item.get('pos') or '').strip().upper()
-            school = (item.get('school') or item.get('college') or item.get('team') or '').strip()
-            rank = item.get('rank') or item.get('overall_rank') or item.get('big_board_rank')
-            if not (name and rank):
-                continue
-            try:
-                rank = int(rank)
-            except (TypeError, ValueError):
-                continue
-            prospects.append({
-                'name': name,
-                'position': pos,
-                'school': school,
-                'rank': rank,
-                'source': 'pfn',
-            })
-
-        prospects.sort(key=lambda p: p['rank'])
-        logger.info(f'PFN: {len(prospects)} prospects')
-        return prospects
-    except Exception as e:
-        logger.warning(f'PFN failed: {e}')
-        return []
-
 
 # ---------------------------------------------------------------------------
 # Public API
@@ -325,12 +286,11 @@ def fetch_all_rankings() -> dict[str, list[dict]]:
     import concurrent.futures
 
     results = {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:
         futures = {
             ex.submit(fetch_tankathon): 'tankathon',
             ex.submit(fetch_espn): 'espn',
             ex.submit(fetch_walter_football): 'walter_football',
-            ex.submit(fetch_pfn): 'pfn',
         }
         for f in concurrent.futures.as_completed(futures):
             src = futures[f]
