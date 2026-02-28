@@ -1,11 +1,15 @@
 {
-  "lastUpdated": "2026-02-28T19:28:08Z",
+  "lastUpdated": "2026-02-28T19:37:19Z",
   "prospectCount": 200,
   "draftYear": 2026,
   "sources": {
     "walter_football": {
       "status": "ok",
       "count": 16
+    },
+    "pfn": {
+      "status": "failed",
+      "count": 0
     },
     "espn": {
       "status": "ok",
