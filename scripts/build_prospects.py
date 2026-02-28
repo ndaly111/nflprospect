@@ -74,6 +74,7 @@ def build_prospect_list(rankings_by_source: dict[str, list[dict]]) -> list[dict]
                 'rankBySource': {},
                 'espnGrade': None,
                 'espnId': None,
+                'projectedTeam': None,
                 'heightInches': None,
                 'weightLbs': None,
                 'tankCombine': {},
@@ -90,6 +91,11 @@ def build_prospect_list(rankings_by_source: dict[str, list[dict]]) -> list[dict]
             master[norm]['espnGrade'] = p['grade']
         if p.get('espn_id'):
             master[norm]['espnId'] = p['espn_id']
+        # Projected team: prefer Walter Football (more explicit), fall back to ESPN
+        if p.get('wf_team') and not master[norm]['projectedTeam']:
+            master[norm]['projectedTeam'] = p['wf_team']
+        elif p.get('espn_team') and not master[norm]['projectedTeam']:
+            master[norm]['projectedTeam'] = p['espn_team']
         # Tankathon has more precise height (e.g. "6'4"") — prefer over ESPN inches
         if p.get('height') and not master[norm]['heightInches']:
             master[norm]['heightInches'] = p['height']
@@ -210,6 +216,7 @@ def merge_with_existing(new_prospects: list[dict], existing: list[dict]) -> list
             'positionRank': 0,  # filled below
             'espnGrade': p.get('espnGrade'),
             'espnId': p.get('espnId') or (existing_rec.get('espnId') if existing_rec else None),
+            'projectedTeam': p.get('projectedTeam') or (existing_rec.get('projectedTeam') if existing_rec else None),
             'rankBySource': p['rankBySource'],
             'rankHistory': rank_history,
             'collegeStats': existing_rec.get('collegeStats', {}) if existing_rec else {},

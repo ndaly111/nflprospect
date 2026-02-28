@@ -152,6 +152,7 @@ def fetch_espn() -> list[dict]:
             overall_rank = rank
             grade = None
             pos_rank = None
+            espn_team = None
             for attr in d.get('attributes', []):
                 attr_name = attr.get('name')
                 if attr_name == 'overall':
@@ -160,6 +161,11 @@ def fetch_espn() -> list[dict]:
                     grade = attr.get('value')
                 elif attr_name == 'rank':
                     pos_rank = int(attr.get('value', 0))
+
+            # Projected team from ESPN
+            team_ref = d.get('proTeam') or d.get('projectedTeam')
+            if isinstance(team_ref, dict):
+                espn_team = team_ref.get('abbreviation') or team_ref.get('displayName')
 
             # Height/weight available inline — use for combine stub
             height_in = d.get('height')  # inches
@@ -180,6 +186,7 @@ def fetch_espn() -> list[dict]:
                 'grade': grade,
                 'espn_pos_rank': pos_rank,
                 'espn_id': d.get('id'),
+                'espn_team': espn_team,
                 'height': height_str,
                 'weight': int(weight) if weight else None,
                 'source': 'espn',
@@ -225,12 +232,13 @@ def fetch_walter_football() -> list[dict]:
             if len(l) > 150:
                 continue
 
-            name = pos = school = None
+            name = pos = school = team = None
 
             # Format 1: "Team Name: Player Name, POS, School"
-            m1 = re.match(r'^[A-Z][A-Za-z ]+:\s*([A-Z][a-zA-Z .\']+),\s*([A-Z/]{1,6}),\s*([A-Za-z ]+)$', l)
+            m1 = re.match(r'^([A-Z][A-Za-z ]+):\s*([A-Z][a-zA-Z .\']+),\s*([A-Z/]{1,6}),\s*([A-Za-z ]+)$', l)
             if m1:
-                name, pos, school = m1.group(1).strip(), m1.group(2).strip(), m1.group(3).strip()
+                team = m1.group(1).strip()
+                name, pos, school = m1.group(2).strip(), m1.group(3).strip(), m1.group(4).strip()
 
             # Format 2: "Player Name, POS, School"  (no team prefix)
             if not name:
@@ -256,6 +264,7 @@ def fetch_walter_football() -> list[dict]:
                 'school': school,
                 'rank': len(prospects) + 1,
                 'source': 'walter_football',
+                'wf_team': team,
             })
 
         logger.info(f'Walter Football: {len(prospects)} picks')

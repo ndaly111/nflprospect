@@ -118,7 +118,7 @@ export function renderProspectCard(prospect, isExpanded = false) {
             <div class="flex items-center gap-2 flex-wrap">
               <span class="text-2xl font-black text-blue-400 leading-none">#${prospect.consensusRank}</span>
               <div class="text-xs text-gray-400 leading-snug">
-                <div>Rd ${prospect.projectedRound || '?'} &nbsp;·&nbsp; #${prospect.positionRank} ${prospect.positionGroup}</div>
+                <div>Rd ${prospect.projectedRound || '?'} &nbsp;·&nbsp; #${prospect.positionRank} ${prospect.positionGroup}${prospect.projectedTeam ? ` &nbsp;·&nbsp; <span class="text-amber-400 font-semibold">${prospect.projectedTeam}</span>` : ''}</div>
                 <div class="${trend.cls} font-medium">${trend.arrow} (30d)</div>
               </div>
               ${prospect.espnGrade ? `
