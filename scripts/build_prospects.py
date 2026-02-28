@@ -209,6 +209,7 @@ def merge_with_existing(new_prospects: list[dict], existing: list[dict]) -> list
             'projectedPickRange': pick_range,
             'positionRank': 0,  # filled below
             'espnGrade': p.get('espnGrade'),
+            'espnId': p.get('espnId') or (existing_rec.get('espnId') if existing_rec else None),
             'rankBySource': p['rankBySource'],
             'rankHistory': rank_history,
             'collegeStats': existing_rec.get('collegeStats', {}) if existing_rec else {},

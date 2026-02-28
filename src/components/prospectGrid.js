@@ -1,8 +1,12 @@
 import { applyFilters } from '../utils/filters.js'
 import { renderProspectCard, wireCardEvents } from './prospectCard.js'
-import { getState, setState } from '../state.js'
+import { getState } from '../state.js'
+
+const PAGE_SIZE = 30
 
 let eventsWired = false
+let visibleCount = PAGE_SIZE
+let prevFilterKey = ''
 
 export function renderProspectGrid() {
   const container = document.getElementById('prospect-grid')
@@ -10,6 +14,14 @@ export function renderProspectGrid() {
   if (!container) return
 
   const { prospects, filters, sort, expandedCardId } = getState()
+
+  // Reset pagination when filters or sort change
+  const filterKey = JSON.stringify({ filters, sort })
+  if (filterKey !== prevFilterKey) {
+    visibleCount = PAGE_SIZE
+    prevFilterKey = filterKey
+  }
+
   const filtered = applyFilters(prospects, filters, sort)
 
   // Update result count
@@ -31,8 +43,8 @@ export function renderProspectGrid() {
     return
   }
 
-  // Preserve expanded state across re-renders
-  container.innerHTML = filtered.map(p => renderProspectCard(p, p.id === expandedCardId)).join('')
+  const visible = filtered.slice(0, visibleCount)
+  container.innerHTML = visible.map(p => renderProspectCard(p, p.id === expandedCardId)).join('')
 
   // Wire events once using event delegation on the container
   if (!eventsWired) {
@@ -40,8 +52,25 @@ export function renderProspectGrid() {
     eventsWired = true
   }
 
+  // "Load more" button if there are hidden prospects
+  if (filtered.length > visibleCount) {
+    const remaining = filtered.length - visibleCount
+    const btnWrap = document.createElement('div')
+    btnWrap.className = 'col-span-full flex justify-center py-6'
+    btnWrap.innerHTML = `
+      <button class="load-more-btn px-6 py-2.5 bg-gray-800 hover:bg-gray-700 border border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white rounded-lg text-sm font-medium transition-colors">
+        Load ${Math.min(PAGE_SIZE, remaining)} more
+        <span class="text-gray-500 text-xs ml-1">(${remaining} left)</span>
+      </button>`
+    btnWrap.querySelector('.load-more-btn').addEventListener('click', () => {
+      visibleCount += PAGE_SIZE
+      renderProspectGrid()
+    })
+    container.appendChild(btnWrap)
+  }
+
   // If a card should be expanded, init its chart after render
-  if (expandedCardId) {
+  if (expandedCardId && visible.some(p => p.id === expandedCardId)) {
     const expandedProspect = prospects.find(p => p.id === expandedCardId)
     if (expandedProspect) {
       import('./rankingChart.js').then(({ renderRankingChart }) => {

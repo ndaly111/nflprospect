@@ -66,6 +66,9 @@ export function renderProspectCard(prospect, isExpanded = false) {
   }).join('<span class="text-gray-700 mx-1">·</span>')
 
   const gradeColor = prospect.espnGrade >= 90 ? 'text-green-400' : prospect.espnGrade >= 85 ? 'text-yellow-400' : 'text-gray-400'
+  const headshotUrl = prospect.espnId
+    ? `https://a.espncdn.com/i/headshots/college-football/players/full/${prospect.espnId}.png`
+    : null
 
   // Range bar: show spread across sources
   const sourceRanks = Object.values(prospect.rankBySource || {})
@@ -126,6 +129,9 @@ export function renderProspectCard(prospect, isExpanded = false) {
             </div>
           </div>
           <div class="flex flex-col items-end gap-2 flex-shrink-0">
+            ${headshotUrl ? `<img src="${headshotUrl}" alt="" loading="lazy"
+              class="w-10 h-10 rounded-full object-cover object-top bg-gray-700 border border-gray-700"
+              onerror="this.style.display='none'">` : ''}
             <button class="share-btn text-gray-600 hover:text-gray-300 transition-colors text-xs p-1" data-id="${prospect.id}" title="Copy link">⎘</button>
             <div class="text-gray-600 text-xs card-chevron" data-id="${prospect.id}">${isExpanded ? '▲' : '▼'}</div>
           </div>
