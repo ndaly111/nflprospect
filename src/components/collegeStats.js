@@ -1,97 +1,92 @@
 import { formatStat } from '../utils/format.js'
 
-const COLUMNS = {
-  QB: [
-    { key: 'games', label: 'G' },
-    { key: 'completions', label: 'CMP' },
-    { key: 'attempts', label: 'ATT' },
-    { key: 'passingYards', label: 'YDS' },
-    { key: 'passingTDs', label: 'TD' },
-    { key: 'interceptions', label: 'INT' },
-    { key: 'rushingYards', label: 'RUSH YDS' },
-    { key: 'rushingTDs', label: 'RUSH TD' },
-  ],
-  RB: [
-    { key: 'games', label: 'G' },
-    { key: 'rushingAttempts', label: 'ATT' },
-    { key: 'rushingYards', label: 'YDS' },
-    { key: 'rushingTDs', label: 'TD' },
-    { key: 'receptions', label: 'REC' },
-    { key: 'receivingYards', label: 'REC YDS' },
-  ],
-  WR: [
-    { key: 'games', label: 'G' },
-    { key: 'receptions', label: 'REC' },
-    { key: 'receivingYards', label: 'YDS' },
-    { key: 'receivingTDs', label: 'TD' },
-  ],
-  TE: [
-    { key: 'games', label: 'G' },
-    { key: 'receptions', label: 'REC' },
-    { key: 'receivingYards', label: 'YDS' },
-    { key: 'receivingTDs', label: 'TD' },
-  ],
-  OL: [
-    { key: 'games', label: 'G' },
-  ],
-  DL: [
-    { key: 'games', label: 'G' },
-    { key: 'tackles', label: 'TKL' },
-    { key: 'sacks', label: 'SACK' },
-    { key: 'tfls', label: 'TFL' },
-  ],
-  EDGE: [
-    { key: 'games', label: 'G' },
-    { key: 'tackles', label: 'TKL' },
-    { key: 'sacks', label: 'SACK' },
-    { key: 'tfls', label: 'TFL' },
-    { key: 'pbus', label: 'PBU' },
-  ],
-  LB: [
-    { key: 'games', label: 'G' },
-    { key: 'tackles', label: 'TKL' },
-    { key: 'sacks', label: 'SACK' },
-    { key: 'tfls', label: 'TFL' },
-    { key: 'interceptions', label: 'INT' },
-  ],
-  DB: [
-    { key: 'games', label: 'G' },
-    { key: 'tackles', label: 'TKL' },
-    { key: 'sacks', label: 'SACK' },
-    { key: 'interceptions', label: 'INT' },
-    { key: 'pbus', label: 'PBU' },
-  ],
+// CFBD-sourced stats by year
+const CFBD_COLUMNS = {
+  QB: ['games','completions','attempts','passingYards','passingTDs','interceptions','rushingYards','rushingTDs'],
+  RB: ['games','rushingAttempts','rushingYards','rushingTDs','receptions','receivingYards'],
+  WR: ['games','receptions','receivingYards','receivingTDs'],
+  TE: ['games','receptions','receivingYards','receivingTDs'],
+  OL: ['games'],
+  DL: ['games','tackles','sacks','tfls','interceptions'],
+  EDGE: ['games','tackles','sacks','tfls','pbus'],
+  LB: ['games','tackles','sacks','tfls','interceptions'],
+  DB: ['games','tackles','sacks','interceptions','pbus'],
+}
+
+const CFBD_LABELS = {
+  games:'G', completions:'CMP', attempts:'ATT', passingYards:'PASS YDS', passingTDs:'TD',
+  interceptions:'INT', rushingYards:'RUSH YDS', rushingTDs:'RUSH TD',
+  rushingAttempts:'ATT', receptions:'REC', receivingYards:'REC YDS', receivingTDs:'TD',
+  tackles:'TKL', sacks:'SACK', tfls:'TFL', pbus:'PBU',
+}
+
+// Tankathon stat label → display label
+const TANK_LABELS = {
+  'TACKLES': 'TKL', 'SACKS': 'SACK', 'PASS DEF': 'PBU', 'INT': 'INT', 'FF': 'FF',
+  'Pass Yds': 'PASS YDS', 'TD': 'TD', 'Pct': 'COMP%', 'Rating': 'QBR',
+  'Rush Yds': 'RUSH YDS', 'AVG': 'YPC',
+  'REC': 'REC', 'REC Yds': 'REC YDS', 'REC TD': 'REC TD',
+  'RUSH YDS': 'RUSH YDS', 'RUSH TD': 'RUSH TD',
 }
 
 export function renderCollegeStats(prospect) {
-  const stats = prospect.collegeStats
-  if (!stats || Object.keys(stats).length === 0) {
-    return '<p class="text-gray-500 text-sm">No college stats available</p>'
+  const hasCFBD = prospect.collegeStats && Object.keys(prospect.collegeStats).length > 0
+  const hasTankStats = prospect.tankStats && Object.keys(prospect.tankStats).length > 0
+
+  if (!hasCFBD && !hasTankStats) {
+    return '<p class="text-gray-500 text-sm">No college stats available yet</p>'
   }
 
-  const cols = COLUMNS[prospect.positionGroup] || COLUMNS.DB
-  const years = Object.keys(stats).sort()
+  let html = ''
 
-  const headerCells = ['Year', ...cols.map(c => c.label)].map(l =>
-    `<th class="text-left px-3 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider whitespace-nowrap">${l}</th>`
-  ).join('')
+  // CFBD year-by-year table (if available)
+  if (hasCFBD) {
+    const cols = CFBD_COLUMNS[prospect.positionGroup] || CFBD_COLUMNS.DB
+    const years = Object.keys(prospect.collegeStats).sort()
+    const headerCells = ['Year', ...cols.map(c => CFBD_LABELS[c] || c)]
+      .map(l => `<th class="text-left px-2 py-1.5 text-xs font-semibold text-gray-400 uppercase tracking-wider whitespace-nowrap">${l}</th>`)
+      .join('')
+    const rows = years.map(year => {
+      const s = prospect.collegeStats[year]
+      const cells = cols.map(c =>
+        `<td class="px-2 py-1.5 text-sm text-gray-200 whitespace-nowrap">${formatStat(s[c])}</td>`
+      ).join('')
+      return `<tr class="border-t border-gray-700/50 hover:bg-gray-700/30">
+        <td class="px-2 py-1.5 text-sm font-semibold text-blue-400">${year}</td>${cells}</tr>`
+    }).join('')
 
-  const rows = years.map(year => {
-    const s = stats[year]
-    const cells = cols.map(c =>
-      `<td class="px-3 py-2 text-sm text-gray-200 whitespace-nowrap">${formatStat(s[c.key])}</td>`
-    ).join('')
-    return `<tr class="border-t border-gray-700 hover:bg-gray-750">
-      <td class="px-3 py-2 text-sm font-medium text-blue-400">${year}</td>
-      ${cells}
-    </tr>`
-  }).join('')
+    html += `
+      <div class="overflow-x-auto mb-4">
+        <table class="w-full text-sm">
+          <thead><tr>${headerCells}</tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>`
+  }
 
-  return `
-    <div class="overflow-x-auto">
-      <table class="w-full text-sm">
-        <thead><tr>${headerCells}</tr></thead>
-        <tbody>${rows}</tbody>
-      </table>
-    </div>`
+  // Tankathon recent-season stats summary
+  if (hasTankStats && !hasCFBD) {
+    const items = Object.entries(prospect.tankStats).map(([lbl, val]) => {
+      const displayLbl = TANK_LABELS[lbl] || lbl
+      return `<div class="bg-gray-700/50 rounded-lg p-3 text-center">
+        <div class="text-xs text-gray-400 mb-1">${displayLbl}</div>
+        <div class="text-base font-bold text-white">${val}</div>
+      </div>`
+    }).join('')
+
+    html += `
+      <div class="mb-2">
+        <p class="text-xs text-gray-500 mb-2">2024 Season Totals</p>
+        <div class="grid grid-cols-3 sm:grid-cols-4 gap-2">${items}</div>
+      </div>`
+  } else if (hasTankStats && hasCFBD) {
+    // Show tankStats as a compact row under CFBD
+    const items = Object.entries(prospect.tankStats).map(([lbl, val]) => {
+      const displayLbl = TANK_LABELS[lbl] || lbl
+      return `<span class="text-xs text-gray-400">${displayLbl}: <span class="text-gray-200">${val}</span></span>`
+    }).join('<span class="text-gray-700 mx-1">·</span>')
+    html += `<div class="text-xs mt-1 flex flex-wrap gap-1">${items}</div>`
+  }
+
+  return html
 }

@@ -2,6 +2,7 @@ const state = {
   prospects: [],
   news: [],
   meta: {},
+  historical: {},
   filters: {
     positionGroup: 'ALL',
     round: 'ALL',
@@ -13,6 +14,8 @@ const state = {
   error: null,
 }
 
+// Subscribers can optionally declare which keys they care about.
+// If keys is null/undefined, subscriber fires on every change.
 const subscribers = []
 
 export function getState() {
@@ -20,14 +23,19 @@ export function getState() {
 }
 
 export function setState(patch) {
+  const changedKeys = Object.keys(patch)
   Object.assign(state, patch)
-  subscribers.forEach(fn => fn(state))
+  subscribers.forEach(({ fn, keys }) => {
+    if (!keys || changedKeys.some(k => keys.includes(k))) {
+      fn(state, changedKeys)
+    }
+  })
 }
 
-export function subscribe(fn) {
-  subscribers.push(fn)
+export function subscribe(fn, keys = null) {
+  subscribers.push({ fn, keys })
   return () => {
-    const i = subscribers.indexOf(fn)
+    const i = subscribers.findIndex(s => s.fn === fn)
     if (i >= 0) subscribers.splice(i, 1)
   }
 }

@@ -61,12 +61,53 @@ def fetch_tankathon() -> list[dict]:
                     pos = parts[0].strip()
                     school = parts[1].strip()
 
+            # Height / weight
+            height_str, weight_val = None, None
+            meas_el = row.select_one('.mock-row-measurements')
+            if meas_el:
+                parts = meas_el.get_text(separator='|', strip=True).split('|')
+                if len(parts) >= 1:
+                    height_str = parts[0].strip()  # e.g. "6'4""
+                if len(parts) >= 2:
+                    w = re.sub(r'[^\d]', '', parts[1])
+                    weight_val = int(w) if w else None
+
+            # Combine drills
+            combine = {}
+            combine_el = row.select_one('.nfl-mock-row-stats.combine')
+            if combine_el:
+                for stat_div in combine_el.select('.stat'):
+                    lbl_el = stat_div.select_one('.label')
+                    val_el = stat_div.select_one('.value')
+                    if lbl_el and val_el:
+                        lbl = lbl_el.get_text(strip=True).lower()
+                        val = val_el.get_text(strip=True).replace('"', '').strip()
+                        if val and val != ' ':
+                            combine[lbl] = val
+
+            # College stats (most recent season totals)
+            tank_stats = {}
+            stats_el = row.select_one('.nfl-mock-row-stats.statistics')
+            if stats_el:
+                for stat_div in stats_el.select('.stat'):
+                    lbl_el = stat_div.select_one('.label')
+                    val_el = stat_div.select_one('.value.total')
+                    if lbl_el and val_el:
+                        lbl = lbl_el.get_text(strip=True)
+                        val = val_el.get_text(strip=True)
+                        if val:
+                            tank_stats[lbl] = val
+
             prospects.append({
                 'name': name,
                 'position': pos,
                 'school': school,
                 'rank': rank,
                 'source': 'tankathon',
+                'height': height_str,
+                'weight': weight_val,
+                'tankCombine': combine,
+                'tankStats': tank_stats,
             })
 
         logger.info(f'Tankathon: {len(prospects)} prospects')

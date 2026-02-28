@@ -17,6 +17,7 @@ from fetch_rankings import fetch_all_rankings
 from fetch_combine import fetch_combine
 from fetch_college_stats import fetch_player_stats
 from fetch_news import fetch_draft_news
+from fetch_historical import fetch_historical_by_position, compute_percentiles
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
@@ -75,6 +76,8 @@ def build_prospect_list(rankings_by_source: dict[str, list[dict]]) -> list[dict]
                 'espnId': None,
                 'heightInches': None,
                 'weightLbs': None,
+                'tankCombine': {},
+                'tankStats': {},
             }
         master[norm]['rankBySource'][p['source']] = p['rank']
         # Prefer non-empty position/school
@@ -87,10 +90,16 @@ def build_prospect_list(rankings_by_source: dict[str, list[dict]]) -> list[dict]
             master[norm]['espnGrade'] = p['grade']
         if p.get('espn_id'):
             master[norm]['espnId'] = p['espn_id']
+        # Tankathon has more precise height (e.g. "6'4"") — prefer over ESPN inches
         if p.get('height') and not master[norm]['heightInches']:
             master[norm]['heightInches'] = p['height']
         if p.get('weight') and not master[norm]['weightLbs']:
             master[norm]['weightLbs'] = p['weight']
+        # Tankathon combine drills and stats
+        if p.get('tankCombine'):
+            master[norm]['tankCombine'].update(p['tankCombine'])
+        if p.get('tankStats'):
+            master[norm]['tankStats'].update(p['tankStats'])
 
     prospects = list(master.values())
 
@@ -157,16 +166,35 @@ def merge_with_existing(new_prospects: list[dict], existing: list[dict]) -> list
 
         # Count how many of this position group are ranked higher
         # (will be fixed in a second pass)
-        # Use ESPN height/weight as combine stub if no existing combine data
+        # Build combine data from Tankathon drills + ESPN/Tankathon height/weight
         existing_combine = existing_rec.get('combineData') if existing_rec else None
-        if not existing_combine and (p.get('heightInches') or p.get('weightLbs')):
-            existing_combine = {
-                'height': p.get('heightInches'),
-                'weight': p.get('weightLbs'),
-                'forty': None, 'bench': None, 'vertical': None,
-                'broadJump': None, 'cone': None, 'shuttle': None,
-                'participated': False,
-            }
+        tank_combine = p.get('tankCombine', {})
+
+        def parse_float(val):
+            try: return float(str(val).replace('"','').strip())
+            except: return None
+
+        new_combine = {
+            'height': p.get('heightInches'),
+            'weight': p.get('weightLbs'),
+            'forty': parse_float(tank_combine.get('40-yard')),
+            'vertical': parse_float(tank_combine.get('vertical')),
+            'broadJump': parse_float(tank_combine.get('broad')),
+            'bench': parse_float(tank_combine.get('bench')),
+            'cone': parse_float(tank_combine.get('3-cone')),
+            'shuttle': parse_float(tank_combine.get('shuttle')),
+            'participated': bool(tank_combine),
+        }
+
+        if existing_combine:
+            # Merge: prefer existing explicit values, fill gaps from new
+            for k in ['height', 'weight', 'forty', 'vertical', 'broadJump', 'bench', 'cone', 'shuttle']:
+                if existing_combine.get(k) is None and new_combine.get(k) is not None:
+                    existing_combine[k] = new_combine[k]
+            if new_combine['participated']:
+                existing_combine['participated'] = True
+        else:
+            existing_combine = new_combine
 
         merged = {
             'id': prospect_id,
@@ -184,6 +212,7 @@ def merge_with_existing(new_prospects: list[dict], existing: list[dict]) -> list
             'rankBySource': p['rankBySource'],
             'rankHistory': rank_history,
             'collegeStats': existing_rec.get('collegeStats', {}) if existing_rec else {},
+            'tankStats': p.get('tankStats', {}),
             'combineData': existing_combine,
         }
         result.append(merged)
@@ -307,9 +336,20 @@ def main():
     except Exception as e:
         logger.warning(f'News fetch failed: {e}')
 
-    # 7. Write JSON
+    # 7. Fetch historical comparison data
+    logger.info('Fetching historical combine data...')
+    historical_percentiles = {}
+    try:
+        historical = fetch_historical_by_position(5)
+        historical_percentiles = compute_percentiles(historical)
+        logger.info(f'Historical: {sum(len(v) for v in historical.values())} players')
+    except Exception as e:
+        logger.warning(f'Historical fetch failed: {e}')
+
+    # 8. Write JSON
     (DATA_DIR / 'prospects.json').write_text(json.dumps(prospects, indent=2))
     (DATA_DIR / 'news.json').write_text(json.dumps(news, indent=2))
+    (DATA_DIR / 'historical.json').write_text(json.dumps(historical_percentiles, indent=2))
     meta = build_meta(source_results, len(prospects))
     (DATA_DIR / 'meta.json').write_text(json.dumps(meta, indent=2))
 

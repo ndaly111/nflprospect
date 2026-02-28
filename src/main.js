@@ -5,7 +5,6 @@ import { renderProspectGrid, renderSkeleton } from './components/prospectGrid.js
 import { renderNewsPanel } from './components/newsPanel.js'
 import { timeAgo } from './utils/format.js'
 
-// Resolve base path for data fetching
 const BASE = import.meta.env.BASE_URL
 
 function getDataUrl(file) {
@@ -15,9 +14,8 @@ function getDataUrl(file) {
 function renderApp() {
   document.getElementById('app').innerHTML = `
     <div class="min-h-screen bg-gray-950">
-      <!-- Header -->
       <header class="bg-gray-900 border-b border-gray-800 sticky top-0 z-10">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4 flex-wrap">
           <div class="flex items-center gap-3">
             <span class="text-2xl">🏈</span>
             <div>
@@ -25,32 +23,29 @@ function renderApp() {
               <p class="text-xs text-gray-400" id="header-meta">Loading…</p>
             </div>
           </div>
-          <div id="source-status" class="hidden sm:flex items-center gap-3 text-xs text-gray-500"></div>
+          <div id="source-status" class="hidden sm:flex items-center gap-2 flex-wrap text-xs"></div>
         </div>
       </header>
 
-      <!-- Filters -->
       <div class="bg-gray-900 border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 py-3" id="filter-bar"></div>
       </div>
 
-      <!-- Main Grid -->
       <main class="max-w-7xl mx-auto px-4 py-6">
         <div id="error-banner" class="hidden mb-4 p-3 bg-red-900 border border-red-700 rounded-lg text-red-200 text-sm"></div>
+        <div id="result-count" class="text-xs text-gray-500 mb-3"></div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="prospect-grid"></div>
       </main>
 
-      <!-- News Section -->
       <section class="max-w-7xl mx-auto px-4 pb-10">
-        <h2 class="text-lg font-bold text-white mb-4">Draft News</h2>
+        <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+          Draft News <span class="text-xs font-normal text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">ESPN</span>
+        </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="news-panel">
           <div class="col-span-full text-gray-600 text-sm">Loading news…</div>
         </div>
       </section>
     </div>`
-
-  renderSkeleton()
-  renderFilterBar()
 }
 
 function updateHeader() {
@@ -65,31 +60,49 @@ function updateHeader() {
 
   if (meta.sources && statusEl) {
     statusEl.classList.remove('hidden')
+    const SOURCE_LABELS = {
+      tankathon: 'Tankathon',
+      espn: 'ESPN',
+      walter_football: 'Walter Football',
+    }
     statusEl.innerHTML = Object.entries(meta.sources).map(([src, info]) => {
-      const ok = info.status === 'ok' || info.status === 'stub'
-      const label = src.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
-      return `<span class="${ok ? 'text-green-500' : 'text-red-500'}">● ${label}</span>`
-    }).join(' ')
+      const ok = info.status === 'ok'
+      const label = SOURCE_LABELS[src] || src.replace(/_/g, ' ')
+      const countTxt = info.count ? ` (${info.count})` : ''
+      return `<span class="flex items-center gap-1 ${ok ? 'text-green-400' : 'text-gray-600'}">
+        <span class="text-[10px]">●</span>${label}${countTxt}</span>`
+    }).join('')
   }
+}
+
+function updateResultCount() {
+  const el = document.getElementById('result-count')
+  if (!el) return
+  const { prospects, filters, sort } = getState()
+  const { applyFilters } = window.__filters || {}
+  // Just show total for now; filter count updated in grid render
+  el.textContent = ''
 }
 
 async function loadData() {
   setState({ loading: true, error: null })
 
   try {
-    const [prospectsRes, newsRes, metaRes] = await Promise.all([
+    const [prospectsRes, newsRes, metaRes, historicalRes] = await Promise.all([
       fetch(getDataUrl('prospects.json')),
       fetch(getDataUrl('news.json')),
       fetch(getDataUrl('meta.json')),
+      fetch(getDataUrl('historical.json')),
     ])
 
-    const [prospects, news, meta] = await Promise.all([
+    const [prospects, news, meta, historical] = await Promise.all([
       prospectsRes.ok ? prospectsRes.json() : [],
       newsRes.ok ? newsRes.json() : [],
       metaRes.ok ? metaRes.json() : {},
+      historicalRes.ok ? historicalRes.json() : {},
     ])
 
-    setState({ prospects, news, meta, loading: false })
+    setState({ prospects, news, meta, historical, loading: false })
   } catch (err) {
     console.error('Failed to load data:', err)
     setState({ loading: false, error: 'Failed to load prospect data. Please try again.' })
@@ -103,13 +116,33 @@ async function loadData() {
 
 // Boot
 renderApp()
+renderSkeleton()
+renderFilterBar()
 
+// Grid only re-renders when data/filters/sort change — NOT on card expand
 subscribe(state => {
   if (!state.loading) {
     renderProspectGrid()
+  }
+}, ['prospects', 'filters', 'sort', 'loading'])
+
+// News renders once on data load
+subscribe(state => {
+  if (!state.loading) {
     renderNewsPanel(state.news)
+  }
+}, ['news', 'loading'])
+
+// Header updates when meta/prospects change
+subscribe(state => {
+  if (!state.loading) {
     updateHeader()
   }
-})
+}, ['meta', 'prospects', 'loading'])
+
+// Filter bar re-renders on filter/sort state changes
+subscribe(() => {
+  renderFilterBar()
+}, ['filters', 'sort'])
 
 loadData()

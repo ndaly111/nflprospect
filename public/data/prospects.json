@@ -26,16 +26,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "69",
+      "SACKS": "6.5",
+      "PASS DEF": "2",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 243,
-      "forty": null,
+      "forty": 4.46,
       "bench": null,
       "vertical": null,
       "broadJump": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -65,6 +72,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "Pass Yds": "3535",
+      "TD": "41",
+      "INT": "6",
+      "Pct": "72.0",
+      "Rating": "182.9"
+    },
     "combineData": {
       "height": "6-5",
       "weight": 225,
@@ -104,6 +118,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "54",
+      "SACKS": "9.5",
+      "PASS DEF": "1",
+      "INT": "1",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 275,
@@ -143,6 +164,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "68",
+      "SACKS": "1.0",
+      "PASS DEF": "2",
+      "INT": "2",
+      "FF": "2"
+    },
     "combineData": {
       "height": "6-0",
       "weight": 205,
@@ -182,16 +210,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "52",
+      "SACKS": "14.5",
+      "PASS DEF": "3",
+      "INT": "0",
+      "FF": "3"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 250,
-      "forty": null,
+      "forty": 4.5,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 35.0,
+      "broadJump": 129.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -222,6 +257,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-6",
       "weight": 315,
@@ -262,16 +298,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "82",
+      "SACKS": "1.0",
+      "PASS DEF": "3",
+      "INT": "1",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 243,
-      "forty": null,
+      "forty": 4.46,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
-      "cone": null,
-      "shuttle": null,
-      "participated": false
+      "vertical": 43.5,
+      "broadJump": 134.0,
+      "cone": 7.09,
+      "shuttle": 4.26,
+      "participated": true
     }
   },
   {
@@ -301,6 +344,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "Rush Yds": "1372",
+      "TD": "18",
+      "AVG": "6.9",
+      "REC YDS": "280",
+      "REC TD": "3"
+    },
     "combineData": {
       "height": "6-0",
       "weight": 214,
@@ -340,6 +390,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-6",
       "weight": 302,
@@ -379,6 +430,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "51",
+      "REC Yds": "875",
+      "TD": "9",
+      "AVG": "17.2",
+      "RUSH YDS": "16"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 195,
@@ -418,16 +476,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "29",
+      "SACKS": "2.0",
+      "PASS DEF": "4",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-6",
       "weight": 285,
       "forty": null,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 35.0,
+      "broadJump": 117.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -457,6 +522,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "61",
+      "REC Yds": "711",
+      "TD": "8",
+      "AVG": "11.7",
+      "RUSH YDS": "4"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 200,
@@ -496,6 +568,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "45",
+      "SACKS": "0.0",
+      "PASS DEF": "11",
+      "INT": "2",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-0",
       "weight": 190,
@@ -535,6 +614,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "79",
+      "REC Yds": "1156",
+      "TD": "11",
+      "AVG": "14.6",
+      "RUSH YDS": "4"
+    },
     "combineData": {
       "height": "5-11",
       "weight": 195,
@@ -573,7 +659,18 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {},
+    "combineData": {
+      "height": "6'4\"",
+      "weight": 328,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "kenyon sadiq-te-oregon",
@@ -602,16 +699,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "51",
+      "REC Yds": "560",
+      "TD": "8",
+      "AVG": "11.0",
+      "RUSH YDS": "6"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 245,
-      "forty": null,
+      "forty": 4.39,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 43.5,
+      "broadJump": 133.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -641,6 +745,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "62",
+      "REC Yds": "881",
+      "TD": "11",
+      "AVG": "14.2",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 209,
@@ -680,6 +791,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "30",
+      "SACKS": "2.0",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 315,
@@ -719,6 +837,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-6",
       "weight": 304,
@@ -758,6 +877,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "44",
+      "SACKS": "0.0",
+      "PASS DEF": "9",
+      "INT": "4",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-0",
       "weight": 193,
@@ -797,6 +923,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "63",
+      "SACKS": "12.5",
+      "PASS DEF": "0",
+      "INT": "0",
+      "FF": "4"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 280,
@@ -835,6 +968,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-4",
       "weight": 330,
@@ -874,6 +1008,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-7",
       "weight": 315,
@@ -913,16 +1048,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "96",
+      "SACKS": "1.0",
+      "PASS DEF": "5",
+      "INT": "2",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-0",
       "weight": 205,
-      "forty": null,
+      "forty": 4.35,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 41.0,
+      "broadJump": 125.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -952,6 +1094,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "65",
+      "SACKS": "3.0",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "2"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 326,
@@ -991,16 +1140,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "48",
+      "SACKS": "3.0",
+      "PASS DEF": "9",
+      "INT": "0",
+      "FF": "5"
+    },
     "combineData": {
       "height": "5-11",
       "weight": 180,
       "forty": null,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 34.0,
+      "broadJump": 123.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -1030,6 +1186,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-7",
       "weight": 366,
@@ -1069,16 +1226,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "37",
+      "SACKS": "5.0",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 265,
-      "forty": null,
+      "forty": 4.68,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 34.0,
+      "broadJump": 120.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -1108,16 +1272,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "41",
+      "SACKS": "2.5",
+      "PASS DEF": "0",
+      "INT": "0",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 325,
-      "forty": null,
+      "forty": 5.18,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 21.5,
+      "broadJump": 100.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -1147,6 +1318,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "Pass Yds": "3567",
+      "TD": "28",
+      "INT": "5",
+      "Pct": "64.5",
+      "Rating": "145.2"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 208,
@@ -1186,6 +1364,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "88",
+      "SACKS": "3.5",
+      "PASS DEF": "4",
+      "INT": "0",
+      "FF": "2"
+    },
     "combineData": {
       "height": "6-1",
       "weight": 235,
@@ -1225,16 +1410,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "77",
+      "SACKS": "0.5",
+      "PASS DEF": "5",
+      "INT": "2",
+      "FF": "3"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 202,
-      "forty": null,
+      "forty": 4.52,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 35.5,
+      "broadJump": 122.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -1264,16 +1456,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "50",
+      "SACKS": "0.0",
+      "PASS DEF": "8",
+      "INT": "1",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-0",
       "weight": 195,
-      "forty": null,
+      "forty": 4.44,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 40.5,
+      "broadJump": 125.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -1303,16 +1502,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "31",
+      "SACKS": "11.5",
+      "PASS DEF": "6",
+      "INT": "0",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 248,
-      "forty": null,
+      "forty": 4.59,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 32.5,
+      "broadJump": 115.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -1342,16 +1548,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "27",
+      "SACKS": "0.0",
+      "PASS DEF": "5",
+      "INT": "1",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-0",
       "weight": 190,
       "forty": null,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 41.0,
+      "broadJump": 131.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -1381,6 +1594,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-6",
       "weight": 330,
@@ -1420,6 +1634,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "61",
+      "REC Yds": "919",
+      "TD": "9",
+      "AVG": "15.1",
+      "RUSH YDS": "75"
+    },
     "combineData": {
       "height": "5-11",
       "weight": 190,
@@ -1459,6 +1680,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "69",
+      "REC Yds": "937",
+      "TD": "13",
+      "AVG": "13.6",
+      "RUSH YDS": "74"
+    },
     "combineData": {
       "height": "6-0",
       "weight": 201,
@@ -1498,6 +1726,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "42",
+      "SACKS": "6.5",
+      "PASS DEF": "2",
+      "INT": "0",
+      "FF": "2"
+    },
     "combineData": {
       "height": "6-5",
       "weight": 262,
@@ -1537,16 +1772,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "6",
+      "SACKS": "0.0",
+      "PASS DEF": "0",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-6",
       "weight": 330,
-      "forty": null,
+      "forty": 5.04,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 32.0,
+      "broadJump": 114.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -1576,6 +1818,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-5",
       "weight": 318,
@@ -1615,6 +1858,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-6",
       "weight": 315,
@@ -1654,16 +1898,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "69",
+      "SACKS": "4.0",
+      "PASS DEF": "1",
+      "INT": "2",
+      "FF": "3"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 238,
-      "forty": null,
+      "forty": 4.51,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 37.0,
+      "broadJump": 125.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -1693,6 +1944,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "36",
+      "REC Yds": "630",
+      "TD": "5",
+      "AVG": "17.5",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 223,
@@ -1732,16 +1990,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "26",
+      "SACKS": "6.5",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "2"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 249,
-      "forty": null,
+      "forty": 4.67,
       "bench": null,
       "vertical": null,
       "broadJump": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -1771,6 +2036,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "81",
+      "REC Yds": "811",
+      "TD": "6",
+      "AVG": "10.0",
+      "RUSH YDS": "7"
+    },
     "combineData": {
       "height": "5-10",
       "weight": 180,
@@ -1810,16 +2082,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "49",
+      "SACKS": "1.0",
+      "PASS DEF": "9",
+      "INT": "4",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-0",
       "weight": 185,
-      "forty": null,
+      "forty": 4.4,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 38.0,
+      "broadJump": 126.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -1849,16 +2128,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "105",
+      "SACKS": "3.5",
+      "PASS DEF": "3",
+      "INT": "0",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 240,
-      "forty": null,
+      "forty": 4.62,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
-      "cone": null,
-      "shuttle": null,
-      "participated": false
+      "vertical": 39.0,
+      "broadJump": 125.0,
+      "cone": 7.02,
+      "shuttle": 4.34,
+      "participated": true
     }
   },
   {
@@ -1888,6 +2174,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "72",
+      "REC Yds": "917",
+      "TD": "6",
+      "AVG": "12.7",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 220,
@@ -1927,6 +2220,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "62",
+      "REC Yds": "1017",
+      "TD": "9",
+      "AVG": "16.4",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-5",
       "weight": 200,
@@ -1966,6 +2266,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "30",
+      "SACKS": "10.0",
+      "PASS DEF": "3",
+      "INT": "0",
+      "FF": "2"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 260,
@@ -2005,16 +2312,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "61",
+      "SACKS": "0.0",
+      "PASS DEF": "11",
+      "INT": "2",
+      "FF": "1"
+    },
     "combineData": {
       "height": "5-9",
       "weight": 170,
       "forty": null,
       "bench": null,
-      "vertical": null,
+      "vertical": 43.5,
       "broadJump": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -2044,16 +2358,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "53",
+      "SACKS": "0.0",
+      "PASS DEF": "8",
+      "INT": "2",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 195,
-      "forty": null,
+      "forty": 4.45,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 34.0,
+      "broadJump": 120.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -2083,6 +2404,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "23",
+      "SACKS": "1.5",
+      "PASS DEF": "0",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 305,
@@ -2122,6 +2450,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "64",
+      "REC Yds": "862",
+      "TD": "7",
+      "AVG": "13.5",
+      "RUSH YDS": "101"
+    },
     "combineData": {
       "height": "6-1",
       "weight": 204,
@@ -2161,6 +2496,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-3",
       "weight": 300,
@@ -2200,16 +2536,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "128",
+      "SACKS": "1.0",
+      "PASS DEF": "6",
+      "INT": "4",
+      "FF": "7"
+    },
     "combineData": {
       "height": "6-1",
       "weight": 230,
-      "forty": null,
+      "forty": 4.57,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
-      "cone": null,
-      "shuttle": null,
-      "participated": false
+      "vertical": 38.5,
+      "broadJump": 121.0,
+      "cone": 6.9,
+      "shuttle": 4.19,
+      "participated": true
     }
   },
   {
@@ -2239,16 +2582,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "88",
+      "SACKS": "0.0",
+      "PASS DEF": "4",
+      "INT": "3",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-0",
       "weight": 222,
-      "forty": null,
+      "forty": 4.52,
       "bench": null,
       "vertical": null,
       "broadJump": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -2278,16 +2628,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "43",
+      "SACKS": "11.0",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "3"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 275,
       "forty": null,
-      "bench": null,
+      "bench": 30.0,
       "vertical": null,
       "broadJump": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -2317,6 +2674,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "64",
+      "SACKS": "5.0",
+      "PASS DEF": "5",
+      "INT": "2",
+      "FF": "2"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 192,
@@ -2356,6 +2720,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-5",
       "weight": 315,
@@ -2395,16 +2760,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "42",
+      "SACKS": "4.0",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-5",
       "weight": 278,
-      "forty": null,
+      "forty": 4.87,
       "bench": null,
       "vertical": null,
       "broadJump": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -2434,6 +2806,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "55",
+      "REC Yds": "604",
+      "TD": "4",
+      "AVG": "11.0",
+      "RUSH YDS": "78"
+    },
     "combineData": {
       "height": "5-11",
       "weight": 190,
@@ -2473,16 +2852,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "81",
+      "SACKS": "3.0",
+      "PASS DEF": "3",
+      "INT": "2",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-1",
       "weight": 220,
-      "forty": null,
+      "forty": 4.53,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
-      "cone": null,
-      "shuttle": null,
-      "participated": false
+      "vertical": 39.5,
+      "broadJump": 129.0,
+      "cone": 6.97,
+      "shuttle": 4.26,
+      "participated": true
     }
   },
   {
@@ -2512,6 +2898,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "89",
+      "SACKS": "1.5",
+      "PASS DEF": "4",
+      "INT": "0",
+      "FF": "2"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 228,
@@ -2551,16 +2944,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "35",
+      "SACKS": "1.0",
+      "PASS DEF": "4",
+      "INT": "2",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 198,
-      "forty": null,
+      "forty": 4.5,
       "bench": null,
       "vertical": null,
       "broadJump": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -2590,6 +2990,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "65",
+      "REC Yds": "830",
+      "TD": "15",
+      "AVG": "12.8",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 209,
@@ -2629,6 +3036,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "33",
+      "SACKS": "4.0",
+      "PASS DEF": "3",
+      "INT": "0",
+      "FF": "3"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 240,
@@ -2668,6 +3082,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "Pass Yds": "1927",
+      "TD": "12",
+      "INT": "5",
+      "Pct": "67.4",
+      "Rating": "133.8"
+    },
     "combineData": {
       "height": "6-1",
       "weight": 205,
@@ -2707,6 +3128,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "49",
+      "REC Yds": "745",
+      "TD": "4",
+      "AVG": "15.2",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 200,
@@ -2746,16 +3174,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "27",
+      "SACKS": "0.0",
+      "PASS DEF": "2",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-0",
       "weight": 205,
-      "forty": null,
+      "forty": 4.47,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 36.0,
+      "broadJump": 120.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -2785,6 +3220,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "45",
+      "SACKS": "1.0",
+      "PASS DEF": "0",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-5",
       "weight": 337,
@@ -2824,6 +3266,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-4",
       "weight": 320,
@@ -2863,16 +3306,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "33",
+      "SACKS": "3.5",
+      "PASS DEF": "2",
+      "INT": "0",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 292,
-      "forty": null,
+      "forty": 4.82,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
-      "cone": null,
+      "vertical": 36.5,
+      "broadJump": 114.0,
+      "cone": 8.09,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -2902,6 +3352,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "Rush Yds": "674",
+      "TD": "11",
+      "AVG": "6.0",
+      "REC YDS": "87",
+      "REC TD": "2"
+    },
     "combineData": {
       "height": "5-11",
       "weight": 209,
@@ -2941,16 +3398,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "62",
+      "REC Yds": "769",
+      "TD": "4",
+      "AVG": "12.4",
+      "RUSH YDS": "2"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 235,
-      "forty": null,
+      "forty": 4.51,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 45.5,
+      "broadJump": 135.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -2980,16 +3444,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "30",
+      "SACKS": "1.0",
+      "PASS DEF": "4",
+      "INT": "2",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-0",
       "weight": 188,
-      "forty": null,
+      "forty": 4.42,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 39.0,
+      "broadJump": 130.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -3019,16 +3490,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "55",
+      "SACKS": "0.0",
+      "PASS DEF": "10",
+      "INT": "2",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 200,
-      "forty": null,
+      "forty": 4.49,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
-      "cone": null,
-      "shuttle": null,
-      "participated": false
+      "vertical": 40.0,
+      "broadJump": 134.0,
+      "cone": 7.13,
+      "shuttle": 4.2,
+      "participated": true
     }
   },
   {
@@ -3058,6 +3536,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "84",
+      "SACKS": "2.0",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 237,
@@ -3097,6 +3582,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "43",
+      "REC Yds": "448",
+      "TD": "2",
+      "AVG": "10.4",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-5",
       "weight": 243,
@@ -3135,7 +3627,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "Rush Yds": "758",
+      "TD": "15",
+      "AVG": "4.9",
+      "REC YDS": "354",
+      "REC TD": "2"
+    },
+    "combineData": {
+      "height": "5'9\"",
+      "weight": 220,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "keith abney ii-cb-arizona state",
@@ -3164,6 +3673,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "44",
+      "SACKS": "1.0",
+      "PASS DEF": "12",
+      "INT": "2",
+      "FF": "2"
+    },
     "combineData": {
       "height": "6-0",
       "weight": 190,
@@ -3203,6 +3719,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "Rush Yds": "1451",
+      "TD": "12",
+      "AVG": "5.8",
+      "REC YDS": "370",
+      "REC TD": "3"
+    },
     "combineData": {
       "height": "5-11",
       "weight": 200,
@@ -3241,7 +3764,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "42",
+      "SACKS": "8.5",
+      "PASS DEF": "3",
+      "INT": "0",
+      "FF": "3"
+    },
+    "combineData": {
+      "height": "6'5.5\"",
+      "weight": 256,
+      "forty": 4.63,
+      "vertical": 39.5,
+      "broadJump": 131.0,
+      "bench": null,
+      "cone": 6.9,
+      "shuttle": null,
+      "participated": true
+    }
   },
   {
     "id": "carson beck-qb-miami",
@@ -3270,6 +3810,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "Pass Yds": "3813",
+      "TD": "30",
+      "INT": "12",
+      "Pct": "72.4",
+      "Rating": "157.0"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 220,
@@ -3308,6 +3855,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-5",
       "weight": 326,
@@ -3347,16 +3895,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "74",
+      "SACKS": "0.0",
+      "PASS DEF": "1",
+      "INT": "1",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 200,
       "forty": null,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 32.5,
+      "broadJump": 122.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -3385,7 +3940,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "77",
+      "SACKS": "0.0",
+      "PASS DEF": "8",
+      "INT": "1",
+      "FF": "2"
+    },
+    "combineData": {
+      "height": "6'2\"",
+      "weight": 202,
+      "forty": null,
+      "vertical": 42.5,
+      "broadJump": 128.0,
+      "bench": null,
+      "cone": null,
+      "shuttle": 4.18,
+      "participated": true
+    }
   },
   {
     "id": "charles demmings-cb",
@@ -3413,6 +3985,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-1",
       "weight": 190,
@@ -3452,6 +4025,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-7",
       "weight": 325,
@@ -3491,6 +4065,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-5",
       "weight": 315,
@@ -3530,16 +4105,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "59",
+      "SACKS": "0.0",
+      "PASS DEF": "8",
+      "INT": "2",
+      "FF": "1"
+    },
     "combineData": {
       "height": "5-10",
       "weight": 185,
-      "forty": null,
+      "forty": 4.4,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 39.0,
+      "broadJump": 130.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -3568,7 +4150,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "52",
+      "SACKS": "1.0",
+      "PASS DEF": "6",
+      "INT": "4",
+      "FF": "0"
+    },
+    "combineData": {
+      "height": "6'0.5\"",
+      "weight": 190,
+      "forty": 4.33,
+      "vertical": 38.0,
+      "broadJump": 130.0,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": true
+    }
   },
   {
     "id": "nicholas singleton-rb-penn state",
@@ -3597,6 +4196,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "Rush Yds": "549",
+      "TD": "13",
+      "AVG": "4.5",
+      "REC YDS": "219",
+      "REC TD": "1"
+    },
     "combineData": {
       "height": "6-0",
       "weight": 224,
@@ -3636,6 +4242,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "18",
+      "SACKS": "0.0",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 325,
@@ -3675,6 +4288,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "50",
+      "REC Yds": "694",
+      "TD": "6",
+      "AVG": "13.9",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 240,
@@ -3714,6 +4334,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "71",
+      "REC Yds": "1004",
+      "TD": "6",
+      "AVG": "14.1",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 185,
@@ -3753,6 +4380,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "57",
+      "REC Yds": "620",
+      "TD": "4",
+      "AVG": "10.9",
+      "RUSH YDS": "-1"
+    },
     "combineData": {
       "height": "5-9",
       "weight": 188,
@@ -3791,7 +4425,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "37",
+      "SACKS": "3.0",
+      "PASS DEF": "0",
+      "INT": "0",
+      "FF": "1"
+    },
+    "combineData": {
+      "height": "6'5.5\"",
+      "weight": 256,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "chris mcclellan-dl-missouri",
@@ -3819,7 +4470,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "48",
+      "SACKS": "6.0",
+      "PASS DEF": "2",
+      "INT": "0",
+      "FF": "0"
+    },
+    "combineData": {
+      "height": "6'4\"",
+      "weight": 313,
+      "forty": 5.05,
+      "vertical": 29.5,
+      "broadJump": 108.0,
+      "bench": 25.0,
+      "cone": null,
+      "shuttle": null,
+      "participated": true
+    }
   },
   {
     "id": "sam hecht-iol-kansas state",
@@ -3848,6 +4516,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-4",
       "weight": 300,
@@ -3886,7 +4555,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "REC": "101",
+      "REC Yds": "1278",
+      "TD": "13",
+      "AVG": "12.7",
+      "RUSH YDS": "-2"
+    },
+    "combineData": {
+      "height": "6'0\"",
+      "weight": 185,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "billy schrauth-iol-notre dame",
@@ -3915,6 +4601,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-4",
       "weight": 305,
@@ -3954,6 +4641,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "36",
+      "SACKS": "5.0",
+      "PASS DEF": "0",
+      "INT": "1",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 255,
@@ -3993,6 +4687,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "Rush Yds": "1070",
+      "TD": "8",
+      "AVG": "6.4",
+      "REC YDS": "226",
+      "REC TD": "1"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 223,
@@ -4031,7 +4732,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "Pass Yds": "3937",
+      "TD": "22",
+      "INT": "3",
+      "Pct": "66.1",
+      "Rating": "155.4"
+    },
+    "combineData": {
+      "height": "6'0\"",
+      "weight": 200,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "bud clark-s-tcu",
@@ -4060,16 +4778,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "56",
+      "SACKS": "1.0",
+      "PASS DEF": "7",
+      "INT": "4",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 185,
-      "forty": null,
+      "forty": 4.41,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 38.0,
+      "broadJump": 127.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -4099,6 +4824,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-5",
       "weight": 305,
@@ -4138,6 +4864,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-8",
       "weight": 318,
@@ -4177,6 +4904,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-7",
       "weight": 336,
@@ -4216,6 +4944,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "57",
+      "REC Yds": "1054",
+      "TD": "6",
+      "AVG": "18.5",
+      "RUSH YDS": "14"
+    },
     "combineData": {
       "height": "5-9",
       "weight": 170,
@@ -4255,6 +4990,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "29",
+      "REC Yds": "416",
+      "TD": "4",
+      "AVG": "14.3",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-5",
       "weight": 250,
@@ -4294,16 +5036,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "50",
+      "SACKS": "1.0",
+      "PASS DEF": "8",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-1",
       "weight": 189,
-      "forty": null,
+      "forty": 4.52,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 42.0,
+      "broadJump": 132.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -4332,6 +5081,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-3",
       "weight": 240,
@@ -4371,16 +5121,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "28",
+      "SACKS": "7.0",
+      "PASS DEF": "3",
+      "INT": "0",
+      "FF": "2"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 250,
-      "forty": null,
+      "forty": 4.52,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 40.0,
+      "broadJump": 130.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -4410,6 +5167,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "69",
+      "REC Yds": "872",
+      "TD": "9",
+      "AVG": "12.6",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-1",
       "weight": 224,
@@ -4449,6 +5213,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-3",
       "weight": 302,
@@ -4488,6 +5253,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-6",
       "weight": 314,
@@ -4527,16 +5293,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "38",
+      "SACKS": "10.0",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "2"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 235,
-      "forty": null,
+      "forty": 4.64,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 39.0,
+      "broadJump": 125.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -4566,6 +5339,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-5",
       "weight": 303,
@@ -4605,16 +5379,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "48",
+      "REC Yds": "620",
+      "TD": "6",
+      "AVG": "12.9",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 264,
-      "forty": null,
+      "forty": 4.62,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 35.0,
+      "broadJump": 118.0,
       "cone": null,
-      "shuttle": null,
-      "participated": false
+      "shuttle": 4.42,
+      "participated": true
     }
   },
   {
@@ -4643,6 +5424,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-0",
       "weight": 208,
@@ -4682,6 +5464,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "49",
+      "REC Yds": "489",
+      "TD": "7",
+      "AVG": "10.0",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 251,
@@ -4721,16 +5510,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "54",
+      "SACKS": "0.0",
+      "PASS DEF": "10",
+      "INT": "2",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-1",
       "weight": 211,
-      "forty": null,
+      "forty": 4.4,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 37.0,
+      "broadJump": 130.0,
       "cone": null,
-      "shuttle": null,
-      "participated": false
+      "shuttle": 4.32,
+      "participated": true
     }
   },
   {
@@ -4760,16 +5556,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "13",
+      "SACKS": "0.5",
+      "PASS DEF": "1",
+      "INT": "1",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-1",
       "weight": 290,
       "forty": null,
-      "bench": null,
+      "bench": 27.0,
       "vertical": null,
       "broadJump": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -4798,7 +5601,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "73",
+      "SACKS": "1.0",
+      "PASS DEF": "3",
+      "INT": "0",
+      "FF": "0"
+    },
+    "combineData": {
+      "height": "5'11\"",
+      "weight": 226,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": 7.32,
+      "shuttle": 4.48,
+      "participated": true
+    }
   },
   {
     "id": "harold perkins jr-lb-lsu",
@@ -4826,7 +5646,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "56",
+      "SACKS": "4.0",
+      "PASS DEF": "3",
+      "INT": "3",
+      "FF": "1"
+    },
+    "combineData": {
+      "height": "6'1\"",
+      "weight": 223,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "aamil wagner-ot-notre dame",
@@ -4855,6 +5692,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-6",
       "weight": 296,
@@ -4893,7 +5731,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "34",
+      "SACKS": "2.0",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "0"
+    },
+    "combineData": {
+      "height": "6'1\"",
+      "weight": 265,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "parker brailsford-iol-alabama",
@@ -4921,7 +5776,18 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {},
+    "combineData": {
+      "height": "6'2\"",
+      "weight": 275,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "dontay corleone-dl-cincinnati",
@@ -4950,6 +5816,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "13",
+      "SACKS": "0.0",
+      "PASS DEF": "0",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-1",
       "weight": 335,
@@ -4989,16 +5862,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "33",
+      "REC Yds": "346",
+      "TD": "3",
+      "AVG": "10.5",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 240,
-      "forty": null,
+      "forty": 4.62,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 36.0,
+      "broadJump": 119.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -5028,6 +5908,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "Rush Yds": "1303",
+      "TD": "15",
+      "AVG": "6.2",
+      "REC YDS": "68",
+      "REC TD": "0"
+    },
     "combineData": {
       "height": "5-11",
       "weight": 217,
@@ -5066,6 +5953,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-3",
       "weight": 315,
@@ -5105,6 +5993,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-5",
       "weight": 300,
@@ -5143,6 +6032,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-5",
       "weight": 250,
@@ -5181,7 +6071,18 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {},
+    "combineData": {
+      "height": "6'5\"",
+      "weight": 316,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "jaishawn barham-lb-michigan",
@@ -5210,16 +6111,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "32",
+      "SACKS": "4.0",
+      "PASS DEF": "3",
+      "INT": "0",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-3",
       "weight": 243,
-      "forty": null,
+      "forty": 4.64,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 33.0,
+      "broadJump": 123.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -5249,16 +6157,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "50",
+      "SACKS": "0.0",
+      "PASS DEF": "10",
+      "INT": "1",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-1",
       "weight": 190,
-      "forty": null,
+      "forty": 4.38,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 37.5,
+      "broadJump": 124.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -5288,6 +6203,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "35",
+      "SACKS": "1.5",
+      "PASS DEF": "2",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-4",
       "weight": 305,
@@ -5326,6 +6248,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-4",
       "weight": 210,
@@ -5364,7 +6287,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "REC": "50",
+      "REC Yds": "557",
+      "TD": "7",
+      "AVG": "11.1",
+      "RUSH YDS": "0"
+    },
+    "combineData": {
+      "height": "6'2\"",
+      "weight": 205,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "louis moore-s-indiana",
@@ -5393,6 +6333,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "88",
+      "SACKS": "0.0",
+      "PASS DEF": "4",
+      "INT": "6",
+      "FF": "0"
+    },
     "combineData": {
       "height": "5-11",
       "weight": 200,
@@ -5431,7 +6378,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "REC": "19",
+      "REC Yds": "198",
+      "TD": "3",
+      "AVG": "10.4",
+      "RUSH YDS": "5"
+    },
+    "combineData": {
+      "height": "6'5.5\"",
+      "weight": 245,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": 4.4,
+      "participated": true
+    }
   },
   {
     "id": "domani jackson-cb-alabama",
@@ -5460,16 +6424,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "39",
+      "SACKS": "0.0",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-1",
       "weight": 196,
-      "forty": null,
+      "forty": 4.41,
       "bench": null,
       "vertical": null,
       "broadJump": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -5499,16 +6470,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "16",
+      "SACKS": "2.0",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 320,
-      "forty": null,
-      "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "forty": 5.31,
+      "bench": 21.0,
+      "vertical": 30.0,
+      "broadJump": 100.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -5537,6 +6515,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-4",
       "weight": 264,
@@ -5576,16 +6555,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "25",
+      "SACKS": "4.0",
+      "PASS DEF": "2",
+      "INT": "1",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-1",
       "weight": 294,
-      "forty": null,
+      "forty": 4.75,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 33.5,
+      "broadJump": 112.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -5614,6 +6600,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-1",
       "weight": 195,
@@ -5652,6 +6639,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-2",
       "weight": 230,
@@ -5691,6 +6679,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-5",
       "weight": 325,
@@ -5729,6 +6718,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-4",
       "weight": 312,
@@ -5767,7 +6757,18 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {},
+    "combineData": {
+      "height": "6'5\"",
+      "weight": 308,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "bryce boettcher-lb",
@@ -5795,6 +6796,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-2",
       "weight": 232,
@@ -5834,6 +6836,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "55",
+      "REC Yds": "811",
+      "TD": "6",
+      "AVG": "14.7",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-2",
       "weight": 200,
@@ -5872,7 +6881,18 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {},
+    "combineData": {
+      "height": "6'9\"",
+      "weight": 345,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "sam roush-te-stanford",
@@ -5901,16 +6921,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "49",
+      "REC Yds": "545",
+      "TD": "2",
+      "AVG": "11.1",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-5",
       "weight": 260,
-      "forty": null,
+      "forty": 4.7,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
-      "cone": null,
-      "shuttle": null,
-      "participated": false
+      "vertical": 38.5,
+      "broadJump": 126.0,
+      "cone": 7.08,
+      "shuttle": 4.37,
+      "participated": true
     }
   },
   {
@@ -5939,6 +6966,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-3",
       "weight": 260,
@@ -5977,7 +7005,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "Rush Yds": "907",
+      "TD": "10",
+      "AVG": "5.1",
+      "REC YDS": "140",
+      "REC TD": "0"
+    },
+    "combineData": {
+      "height": "5'10\"",
+      "weight": 195,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "adam randall-rb",
@@ -6005,6 +7050,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-2",
       "weight": 230,
@@ -6043,7 +7089,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "REC": "57",
+      "REC Yds": "705",
+      "TD": "6",
+      "AVG": "12.4",
+      "RUSH YDS": "35"
+    },
+    "combineData": {
+      "height": "6'3\"",
+      "weight": 190,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "fernando carmona-ot",
@@ -6071,6 +7134,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-5",
       "weight": 325,
@@ -6110,6 +7174,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "Pass Yds": "1100",
+      "TD": "8",
+      "INT": "3",
+      "Pct": "64.8",
+      "Rating": "135.7"
+    },
     "combineData": {
       "height": "6-5",
       "weight": 235,
@@ -6148,7 +7219,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "55",
+      "SACKS": "1.5",
+      "PASS DEF": "1",
+      "INT": "1",
+      "FF": "0"
+    },
+    "combineData": {
+      "height": "6'4.5\"",
+      "weight": 233,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "kaelon black-rb",
@@ -6176,6 +7264,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "5-10",
       "weight": 210,
@@ -6214,6 +7303,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-7",
       "weight": 240,
@@ -6252,7 +7342,18 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {},
+    "combineData": {
+      "height": "6'6\"",
+      "weight": 327,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "oscar delp-te-georgia",
@@ -6280,7 +7381,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "REC": "20",
+      "REC Yds": "261",
+      "TD": "1",
+      "AVG": "13.1",
+      "RUSH YDS": "0"
+    },
+    "combineData": {
+      "height": "6'5\"",
+      "weight": 245,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "aiden fisher-lb-indiana",
@@ -6309,6 +7427,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "97",
+      "SACKS": "4.5",
+      "PASS DEF": "1",
+      "INT": "2",
+      "FF": "1"
+    },
     "combineData": {
       "height": "6-1",
       "weight": 233,
@@ -6347,7 +7472,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "34",
+      "SACKS": "1.0",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "0"
+    },
+    "combineData": {
+      "height": "6'2.5\"",
+      "weight": 273,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": 28.0,
+      "cone": null,
+      "shuttle": null,
+      "participated": true
+    }
   },
   {
     "id": "jager burton-iol-kentucky",
@@ -6375,7 +7517,18 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {},
+    "combineData": {
+      "height": "6'4\"",
+      "weight": 322,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "fernando carmona jr-ot-arkansas",
@@ -6403,7 +7556,18 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {},
+    "combineData": {
+      "height": "6'5\"",
+      "weight": 325,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "eli raridon-te-notre dame",
@@ -6432,16 +7596,23 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "REC": "32",
+      "REC Yds": "482",
+      "TD": "0",
+      "AVG": "15.1",
+      "RUSH YDS": "0"
+    },
     "combineData": {
       "height": "6-7",
       "weight": 251,
-      "forty": null,
+      "forty": 4.62,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 36.0,
+      "broadJump": 123.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -6470,6 +7641,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "5-11",
       "weight": 210,
@@ -6508,7 +7680,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "REC": "66",
+      "REC Yds": "732",
+      "TD": "1",
+      "AVG": "11.1",
+      "RUSH YDS": "76"
+    },
+    "combineData": {
+      "height": "5'11\"",
+      "weight": 180,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "trey zuhn iii-ot-texas am",
@@ -6536,7 +7725,18 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {},
+    "combineData": {
+      "height": "6'7\"",
+      "weight": 315,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "ephesians prysock-cb-washington",
@@ -6564,7 +7764,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "48",
+      "SACKS": "0.0",
+      "PASS DEF": "7",
+      "INT": "1",
+      "FF": "0"
+    },
+    "combineData": {
+      "height": "6'3.5\"",
+      "weight": 196,
+      "forty": 4.45,
+      "vertical": 39.0,
+      "broadJump": 124.0,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": true
+    }
   },
   {
     "id": "tacario davis-cb-washington",
@@ -6592,7 +7809,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "19",
+      "SACKS": "0.0",
+      "PASS DEF": "3",
+      "INT": "2",
+      "FF": "0"
+    },
+    "combineData": {
+      "height": "6'4\"",
+      "weight": 194,
+      "forty": 4.41,
+      "vertical": 37.0,
+      "broadJump": 123.0,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": true
+    }
   },
   {
     "id": "jaeden roberts-iol-alabama",
@@ -6621,6 +7855,7 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {},
     "combineData": {
       "height": "6-5",
       "weight": 327,
@@ -6659,7 +7894,18 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {},
+    "combineData": {
+      "height": "6'3\"",
+      "weight": 209,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "beau stephens-iol-iowa",
@@ -6687,7 +7933,18 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {},
+    "combineData": {
+      "height": "6'5\"",
+      "weight": 315,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "demonte capehart-dl-clemson",
@@ -6715,7 +7972,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "21",
+      "SACKS": "1.0",
+      "PASS DEF": "2",
+      "INT": "0",
+      "FF": "0"
+    },
+    "combineData": {
+      "height": "6'5\"",
+      "weight": 313,
+      "forty": 4.85,
+      "vertical": 33.5,
+      "broadJump": 107.0,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": true
+    }
   },
   {
     "id": "j c davis-ot-illinois",
@@ -6743,7 +8017,18 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {},
+    "combineData": {
+      "height": "6'5\"",
+      "weight": 335,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "hezekiah masses-cb-california",
@@ -6771,7 +8056,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "47",
+      "SACKS": "0.0",
+      "PASS DEF": "13",
+      "INT": "5",
+      "FF": "0"
+    },
+    "combineData": {
+      "height": "6'0.5\"",
+      "weight": 179,
+      "forty": 4.46,
+      "vertical": 31.5,
+      "broadJump": 119.0,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": true
+    }
   },
   {
     "id": "zxavian harris-dl-ole miss",
@@ -6800,6 +8102,13 @@
       }
     ],
     "collegeStats": {},
+    "tankStats": {
+      "TACKLES": "58",
+      "SACKS": "3.0",
+      "PASS DEF": "3",
+      "INT": "1",
+      "FF": "0"
+    },
     "combineData": {
       "height": "6-7",
       "weight": 320,
@@ -6838,7 +8147,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "47",
+      "SACKS": "0.0",
+      "PASS DEF": "10",
+      "INT": "1",
+      "FF": "0"
+    },
+    "combineData": {
+      "height": "6'1\"",
+      "weight": 189,
+      "forty": 4.59,
+      "vertical": 36.0,
+      "broadJump": null,
+      "bench": null,
+      "cone": 7.19,
+      "shuttle": 4.19,
+      "participated": true
+    }
   },
   {
     "id": "michael taaffe-s-texas",
@@ -6866,7 +8192,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "70",
+      "SACKS": "1.0",
+      "PASS DEF": "1",
+      "INT": "2",
+      "FF": "0"
+    },
+    "combineData": {
+      "height": "6'0\"",
+      "weight": 190,
+      "forty": 4.5,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": true
+    }
   },
   {
     "id": "max llewellyn-edge-iowa",
@@ -6894,7 +8237,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "26",
+      "SACKS": "6.5",
+      "PASS DEF": "6",
+      "INT": "0",
+      "FF": "2"
+    },
+    "combineData": {
+      "height": "6'5.5\"",
+      "weight": 258,
+      "forty": 4.81,
+      "vertical": 32.5,
+      "broadJump": 115.0,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": true
+    }
   },
   {
     "id": "aaron anderson-wr-lsu",
@@ -6922,7 +8282,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "REC": "33",
+      "REC Yds": "398",
+      "TD": "0",
+      "AVG": "12.1",
+      "RUSH YDS": "2"
+    },
+    "combineData": {
+      "height": "5'8\"",
+      "weight": 188,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "eric mcalister-wr-tcu",
@@ -6950,7 +8327,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "REC": "72",
+      "REC Yds": "1190",
+      "TD": "10",
+      "AVG": "16.5",
+      "RUSH YDS": "0"
+    },
+    "combineData": {
+      "height": "6'3\"",
+      "weight": 205,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "cade klubnik-qb-clemson",
@@ -6978,7 +8372,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "Pass Yds": "2943",
+      "TD": "16",
+      "INT": "6",
+      "Pct": "65.6",
+      "Rating": "139.0"
+    },
+    "combineData": {
+      "height": "6'2\"",
+      "weight": 210,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "albert regis-dl-texas am",
@@ -7006,7 +8417,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "49",
+      "SACKS": "2.0",
+      "PASS DEF": "3",
+      "INT": "0",
+      "FF": "1"
+    },
+    "combineData": {
+      "height": "6'1.5\"",
+      "weight": 295,
+      "forty": 4.88,
+      "vertical": 34.0,
+      "broadJump": 116.0,
+      "bench": null,
+      "cone": 7.77,
+      "shuttle": null,
+      "participated": true
+    }
   },
   {
     "id": "dj campbell-iol-texas",
@@ -7034,7 +8462,18 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {},
+    "combineData": {
+      "height": "6'3\"",
+      "weight": 321,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "ethan burke-edge-texas",
@@ -7062,7 +8501,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "40",
+      "SACKS": "3.0",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "1"
+    },
+    "combineData": {
+      "height": "6'6\"",
+      "weight": 259,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "sawyer robertson-qb-baylor",
@@ -7090,7 +8546,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "Pass Yds": "3681",
+      "TD": "31",
+      "INT": "12",
+      "Pct": "60.3",
+      "Rating": "137.2"
+    },
+    "combineData": {
+      "height": "6'4\"",
+      "weight": 220,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "eric rivers-wr-georgia tech",
@@ -7118,7 +8591,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "REC": "46",
+      "REC Yds": "658",
+      "TD": "2",
+      "AVG": "14.3",
+      "RUSH YDS": "56"
+    },
+    "combineData": {
+      "height": "5'11\"",
+      "weight": 180,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "bishop fitzgerald-s-usc",
@@ -7146,7 +8636,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "51",
+      "SACKS": "1.0",
+      "PASS DEF": "3",
+      "INT": "5",
+      "FF": "0"
+    },
+    "combineData": {
+      "height": "5'11\"",
+      "weight": 201,
+      "forty": 4.55,
+      "vertical": 33.0,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": true
+    }
   },
   {
     "id": "marlin klein-te-michigan",
@@ -7174,7 +8681,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "REC": "24",
+      "REC Yds": "248",
+      "TD": "1",
+      "AVG": "10.3",
+      "RUSH YDS": "0"
+    },
+    "combineData": {
+      "height": "6'6\"",
+      "weight": 248,
+      "forty": 4.61,
+      "vertical": 36.0,
+      "broadJump": 117.0,
+      "bench": null,
+      "cone": 7.42,
+      "shuttle": null,
+      "participated": true
+    }
   },
   {
     "id": "j mari taylor-rb-virginia",
@@ -7202,7 +8726,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "Rush Yds": "1062",
+      "TD": "14",
+      "AVG": "4.8",
+      "REC YDS": "253",
+      "REC TD": "1"
+    },
+    "combineData": {
+      "height": "5'9\"",
+      "weight": 204,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "charlie becker-wr-indiana",
@@ -7230,7 +8771,24 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "REC": "34",
+      "REC Yds": "679",
+      "TD": "4",
+      "AVG": "20.0",
+      "RUSH YDS": "0"
+    },
+    "combineData": {
+      "height": "6'4\"",
+      "weight": 209,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   },
   {
     "id": "brandon finney jr-cb-oregon",
@@ -7258,6 +8816,23 @@
       }
     ],
     "collegeStats": {},
-    "combineData": null
+    "tankStats": {
+      "TACKLES": "42",
+      "SACKS": "1.0",
+      "PASS DEF": "8",
+      "INT": "3",
+      "FF": "2"
+    },
+    "combineData": {
+      "height": "6'2\"",
+      "weight": 203,
+      "forty": null,
+      "vertical": null,
+      "broadJump": null,
+      "bench": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    }
   }
 ]
