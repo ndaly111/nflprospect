@@ -5,6 +5,7 @@ import { renderProspectGrid, renderSkeleton } from './components/prospectGrid.js
 import { renderNewsPanel } from './components/newsPanel.js'
 import { renderCombinePanel } from './components/combinePanel.js'
 import { renderCombineSpotlight } from './components/combineSpotlight.js'
+import { renderMockDraftBoard } from './components/mockDraftBoard.js'
 import { timeAgo } from './utils/format.js'
 
 const BASE = import.meta.env.BASE_URL
@@ -38,6 +39,14 @@ function renderApp() {
         <div id="result-count" class="text-xs text-gray-500 mb-3"></div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="prospect-grid"></div>
       </main>
+
+      <section class="max-w-7xl mx-auto px-4 pb-6" id="mock-draft-section" style="display:none">
+        <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+          Mock Draft Board
+          <span class="text-xs font-normal text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">Tankathon · Click to view prospect</span>
+        </h2>
+        <div class="bg-gray-800 border border-gray-700 rounded-xl p-4" id="mock-draft-board"></div>
+      </section>
 
       <section class="max-w-7xl mx-auto px-4 pb-6" id="combine-spotlight-section" style="display:none">
         <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
@@ -170,16 +179,20 @@ subscribe(state => {
   }
 }, ['news', 'loading'])
 
-// Combine spotlight renders once when prospects load
+// Combine spotlight and mock draft render once when prospects load
 subscribe(state => {
   if (!state.loading) {
     renderCombineSpotlight()
-    const section = document.getElementById('combine-spotlight-section')
+    const combineSection = document.getElementById('combine-spotlight-section')
     const hasAnyDrills = state.prospects.some(p => {
       const c = p.combineData || {}
       return c.forty || c.vertical || c.broadJump || c.bench || c.cone
     })
-    if (section) section.style.display = hasAnyDrills ? '' : 'none'
+    if (combineSection) combineSection.style.display = hasAnyDrills ? '' : 'none'
+
+    renderMockDraftBoard()
+    const mockSection = document.getElementById('mock-draft-section')
+    if (mockSection) mockSection.style.display = state.prospects.some(p => p.projectedPick) ? '' : 'none'
   }
 }, ['prospects', 'loading'])
 
