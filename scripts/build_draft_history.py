@@ -1,6 +1,7 @@
 """
 Build historical NFL Draft class data from nflverse CSVs.
-Joins draft_picks.csv (actual picks) with combine.csv (measurements).
+Joins draft_picks.csv (actual picks) with combine.csv (measurements),
+and fetches college stats from CFBD for each draft class.
 Writes data/draft_history.json as {year_str: [prospect, ...]}
 """
 import json
@@ -12,6 +13,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
 from utils import fuzzy_match_player, make_id, normalize_name
+from fetch_college_stats import fetch_player_stats
 
 logger = logging.getLogger(__name__)
 
@@ -138,7 +140,35 @@ def build_draft_history() -> dict[str, list[dict]]:
 
         prospects.sort(key=lambda p: p['actualPick'])
         result[str(year)] = prospects
-        logger.info(f'{year}: {len(prospects)} picks, {sum(1 for p in prospects if p["combineData"]) } with combine data')
+        logger.info(f'{year}: {len(prospects)} picks, {sum(1 for p in prospects if p["combineData"])} with combine data')
+
+    # Fetch college stats for all draft classes
+    # Each draft class year Y uses the 3 seasons before the draft: Y-1, Y-2, Y-3
+    logger.info('Fetching college stats for historical classes...')
+    try:
+        # Collect all unique stat years needed across all draft classes
+        stat_years = sorted(
+            {year - offset for year in YEARS for offset in (1, 2, 3)},
+            reverse=True,
+        )
+        # Collect all prospects from all years (fetch_player_stats handles all at once)
+        all_prospects = [p for year_prospects in result.values() for p in year_prospects]
+        stats = fetch_player_stats(all_prospects, years=stat_years)
+
+        # Distribute stats back to each year's prospects (only include relevant seasons)
+        for year_str, year_prospects in result.items():
+            year = int(year_str)
+            relevant = {str(year - o) for o in (1, 2, 3)}
+            with_stats = 0
+            for p in year_prospects:
+                p_stats = stats.get(p['name'], {})
+                filtered = {yr: s for yr, s in p_stats.items() if yr in relevant}
+                if filtered:
+                    p['collegeStats'] = filtered
+                    with_stats += 1
+            logger.info(f'{year_str}: {with_stats} prospects with college stats')
+    except Exception as e:
+        logger.warning(f'College stats fetch failed: {e}')
 
     return result
 
