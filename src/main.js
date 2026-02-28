@@ -65,6 +65,7 @@ function updateHeader() {
       tankathon: 'Tankathon',
       espn: 'ESPN',
       walter_football: 'Walter Football',
+      pfn: 'PFN',
     }
     statusEl.innerHTML = Object.entries(meta.sources).map(([src, info]) => {
       const ok = info.status === 'ok'

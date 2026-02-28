@@ -52,6 +52,7 @@ const SOURCE_LABELS = {
   tankathon: 'Tankathon',
   espn: 'ESPN',
   walter_football: 'Walter Football',
+  pfn: 'PFN',
 }
 
 export function renderProspectCard(prospect, isExpanded = false) {

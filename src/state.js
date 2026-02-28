@@ -8,6 +8,7 @@ const state = {
     positionGroup: 'ALL',
     round: 'ALL',
     search: '',
+    trend: 'ALL',
   },
   sort: 'consensusRank',
   expandedCardId: null,

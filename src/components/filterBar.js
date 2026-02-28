@@ -5,8 +5,16 @@ const POSITION_GROUPS = ['ALL', 'QB', 'RB', 'WR', 'TE', 'OL', 'DL', 'EDGE', 'LB'
 const SORT_OPTIONS = [
   { value: 'consensusRank', label: 'Consensus Rank' },
   { value: 'projectedRound', label: 'Projected Round' },
+  { value: 'espnGrade', label: 'ESPN Grade' },
+  { value: 'trending', label: 'Biggest Movers' },
   { value: 'name', label: 'Name (A-Z)' },
   { value: 'school', label: 'School' },
+]
+
+const TREND_OPTIONS = [
+  { value: 'ALL', label: 'All' },
+  { value: 'RISING', label: '↑ Rising' },
+  { value: 'FALLING', label: '↓ Falling' },
 ]
 
 export function renderFilterBar() {
@@ -41,6 +49,14 @@ export function renderFilterBar() {
             ? 'bg-blue-600 text-white'
             : 'bg-gray-800 text-gray-300 hover:bg-gray-700'}"
           data-pos="${pos}">${pos}</button>`
+      ).join('')}
+      <span class="text-gray-700 mx-1">|</span>
+      ${TREND_OPTIONS.map(t => `
+        <button class="trend-tab px-3 py-1.5 rounded-full text-sm font-medium transition-colors
+          ${filters.trend === t.value
+            ? (t.value === 'RISING' ? 'bg-emerald-700 text-white' : t.value === 'FALLING' ? 'bg-red-800 text-white' : 'bg-blue-600 text-white')
+            : 'bg-gray-800 text-gray-400 hover:bg-gray-700'}"
+          data-trend="${t.value}">${t.label}</button>`
       ).join('')}
     </div>
     <div class="flex flex-wrap items-center gap-3">
@@ -78,6 +94,14 @@ function wireFilterEvents() {
     btn.addEventListener('click', () => {
       const { filters } = getState()
       setState({ filters: { ...filters, positionGroup: btn.dataset.pos }, expandedCardId: null })
+    })
+  })
+
+  // Trend tabs
+  document.querySelectorAll('.trend-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const { filters } = getState()
+      setState({ filters: { ...filters, trend: btn.dataset.trend }, expandedCardId: null })
     })
   })
 

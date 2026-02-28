@@ -1,3 +1,5 @@
+import { trendArrow } from './format.js'
+
 export function applyFilters(prospects, filters, sort) {
   let result = prospects.slice()
 
@@ -10,6 +12,13 @@ export function applyFilters(prospects, filters, sort) {
   if (filters.round !== 'ALL') {
     const round = parseInt(filters.round)
     result = result.filter(p => p.projectedRound === round)
+  }
+
+  // Trend filter
+  if (filters.trend === 'RISING') {
+    result = result.filter(p => trendArrow(p.rankHistory, 30).delta > 0)
+  } else if (filters.trend === 'FALLING') {
+    result = result.filter(p => trendArrow(p.rankHistory, 30).delta < 0)
   }
 
   // Search filter
@@ -30,6 +39,13 @@ export function applyFilters(prospects, filters, sort) {
       case 'projectedRound':
         return (a.projectedRound || 8) - (b.projectedRound || 8) ||
                (a.consensusRank || 999) - (b.consensusRank || 999)
+      case 'espnGrade':
+        // Highest grade first; prospects without grade go to bottom
+        return (b.espnGrade || 0) - (a.espnGrade || 0)
+      case 'trending':
+        // Biggest movers first (absolute delta)
+        return Math.abs(trendArrow(b.rankHistory, 30).delta) -
+               Math.abs(trendArrow(a.rankHistory, 30).delta)
       case 'name':
         return a.name.localeCompare(b.name)
       case 'school':
