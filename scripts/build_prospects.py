@@ -18,6 +18,7 @@ from fetch_combine import fetch_combine
 from fetch_college_stats import fetch_player_stats
 from fetch_news import fetch_draft_news
 from fetch_historical import fetch_historical_by_position, compute_percentiles, compute_stat_importance, compute_player_comps
+from fetch_mock_draft import fetch_mock_draft
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
@@ -237,6 +238,7 @@ def merge_with_existing(new_prospects: list[dict], existing: list[dict]) -> list
             'espnGrade': p.get('espnGrade'),
             'espnId': p.get('espnId') or (existing_rec.get('espnId') if existing_rec else None),
             'projectedTeam': p.get('projectedTeam') or (existing_rec.get('projectedTeam') if existing_rec else None),
+            'projectedPick': p.get('projectedPick') or (existing_rec.get('projectedPick') if existing_rec else None),
             'classYear': p.get('classYear') or (existing_rec.get('classYear') if existing_rec else None),
             'rankBySource': p['rankBySource'],
             'rankHistory': rank_history,
@@ -361,7 +363,26 @@ def main():
     except Exception as e:
         logger.warning(f'Combine fetch failed: {e}')
 
-    # 6. Fetch news
+    # 6. Fetch mock draft (team projections)
+    logger.info('Fetching mock draft picks...')
+    try:
+        mock_picks = fetch_mock_draft()
+        if mock_picks:
+            for p in prospects:
+                name_lower = p['name'].lower()
+                pick_data = mock_picks.get(name_lower)
+                if pick_data:
+                    # Always set pick number from mock draft
+                    p['projectedPick'] = pick_data['pick']
+                    # Only override team if none set by a more authoritative source
+                    if not p.get('projectedTeam'):
+                        p['projectedTeam'] = pick_data['team']
+            teams_added = sum(1 for p in prospects if p.get('projectedTeam'))
+            logger.info(f'Mock draft: {teams_added} prospects with team projection')
+    except Exception as e:
+        logger.warning(f'Mock draft fetch failed: {e}')
+
+    # Fetch news
     logger.info('Fetching news...')
     news = []
     try:
