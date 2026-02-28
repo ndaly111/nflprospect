@@ -77,6 +77,7 @@ function updateHeader() {
       tankathon: 'Tankathon',
       espn: 'ESPN',
       walter_football: 'Walter Football',
+      cbs_sports: 'CBS Sports',
     }
     statusEl.innerHTML = Object.entries(meta.sources).map(([src, info]) => {
       const ok = info.status === 'ok'

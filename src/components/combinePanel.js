@@ -57,8 +57,15 @@ export function renderCombinePanel(combineData, positionGroup, playerComps = [])
         </div>
       </div>` : ''
 
+    // Normalize height format before display
+    let displayVal = val
+    if (m.key === 'height' && val) {
+      const h = String(val).replace(/['"]/g, '').trim()
+      displayVal = h.includes('-') ? h.replace('-', "'") + '"' : h
+    }
+
     const display = hasVal
-      ? `<span class="text-lg font-bold ${valColor}">${val}${m.unit}</span>`
+      ? `<span class="text-lg font-bold ${valColor}">${displayVal}${m.unit}</span>`
       : `<span class="text-gray-600 text-lg">—</span>`
 
     // importance indicator

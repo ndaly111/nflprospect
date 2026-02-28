@@ -78,6 +78,7 @@ const SOURCE_LABELS = {
   tankathon: 'Tankathon',
   espn: 'ESPN',
   walter_football: 'Walter Football',
+  cbs_sports: 'CBS Sports',
 }
 
 function renderSourceRankings(prospect) {
@@ -144,7 +145,12 @@ export function renderProspectCard(prospect, isExpanded = false) {
   const hw = (() => {
     const c = prospect.combineData || {}
     const parts = []
-    if (c.height) parts.push(c.height.replace('-', "'") + '"')
+    if (c.height) {
+      // Normalize: '6-6' → "6'6\"", '6\'4"' → "6'4\""
+      const h = String(c.height).replace(/['"]/g, '').trim()
+      const formatted = h.includes('-') ? h.replace('-', "'") + '"' : h
+      parts.push(formatted)
+    }
     if (c.weight) parts.push(`${c.weight} lbs`)
     return parts.length ? parts.join(' · ') : ''
   })()

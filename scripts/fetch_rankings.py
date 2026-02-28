@@ -275,8 +275,68 @@ def fetch_walter_football() -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
-# Pro Football Network big board (JSON API)
+# CBS Sports big board
 # ---------------------------------------------------------------------------
+def fetch_cbs_sports() -> list[dict]:
+    """Parse CBS Sports NFL prospect rankings table."""
+    url = 'https://www.cbssports.com/nfl/draft/prospect-rankings/'
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, 'lxml')
+        table = soup.select_one('.table-base-nfl-prospect-rankings')
+        if not table:
+            logger.warning('CBS Sports: rankings table not found')
+            return []
+
+        prospects = []
+        for row in table.select('tr'):
+            cells = row.select('td')
+            if len(cells) < 5:
+                continue
+            rank_txt = cells[0].get_text(strip=True)
+            name_txt = cells[1].get_text(strip=True)
+            school_txt = cells[2].get_text(strip=True)
+            pos_txt = cells[4].get_text(strip=True)
+            # Filter: rank must be integer, name must look like "First Last"
+            try:
+                rank = int(rank_txt)
+            except ValueError:
+                continue
+            if not re.match(r'^[A-Z][a-z]+ [A-Z]', name_txt):
+                continue
+            if not pos_txt or not re.match(r'^[A-Z]{1,6}', pos_txt):
+                continue
+
+            # Height/weight from cols 6/7 if present
+            height_str, weight_val = None, None
+            if len(cells) >= 7:
+                ht = cells[6].get_text(strip=True)
+                if re.match(r'^\d-\d+$', ht):
+                    height_str = ht
+            if len(cells) >= 8:
+                wt = re.sub(r'[^\d]', '', cells[7].get_text(strip=True))
+                weight_val = int(wt) if wt else None
+
+            # CBS uses "Miami (Fla.)" → normalize to "Miami"
+            school = re.sub(r'\s*\(.*?\)', '', school_txt).strip()
+
+            prospects.append({
+                'name': name_txt,
+                'position': pos_txt,
+                'school': school,
+                'rank': rank,
+                'source': 'cbs_sports',
+                'height': height_str,
+                'weight': weight_val,
+            })
+
+        logger.info(f'CBS Sports: {len(prospects)} prospects')
+        return prospects
+    except Exception as e:
+        logger.warning(f'CBS Sports failed: {e}')
+        return []
+
 
 # ---------------------------------------------------------------------------
 # Public API
@@ -286,11 +346,12 @@ def fetch_all_rankings() -> dict[str, list[dict]]:
     import concurrent.futures
 
     results = {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
         futures = {
             ex.submit(fetch_tankathon): 'tankathon',
             ex.submit(fetch_espn): 'espn',
             ex.submit(fetch_walter_football): 'walter_football',
+            ex.submit(fetch_cbs_sports): 'cbs_sports',
         }
         for f in concurrent.futures.as_completed(futures):
             src = futures[f]

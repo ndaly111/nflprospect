@@ -180,8 +180,21 @@ def merge_with_existing(new_prospects: list[dict], existing: list[dict]) -> list
             try: return float(str(val).replace('"','').strip())
             except: return None
 
+        def normalize_height(val):
+            """Normalize to '6-4' format from '6\'4"', '6-4', or raw inches."""
+            if val is None:
+                return None
+            s = str(val).replace("'", '-').replace('"', '').strip()
+            if '-' in s:
+                return s  # already feet-inches
+            try:
+                inches = int(float(s))
+                return f'{inches // 12}-{inches % 12}'
+            except Exception:
+                return s
+
         new_combine = {
-            'height': p.get('heightInches'),
+            'height': normalize_height(p.get('heightInches')),
             'weight': p.get('weightLbs'),
             'forty': parse_float(tank_combine.get('40-yard')),
             'vertical': parse_float(tank_combine.get('vertical')),
