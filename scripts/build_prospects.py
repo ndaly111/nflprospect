@@ -237,10 +237,10 @@ def merge_college_stats(prospects: list[dict], stats_by_name: dict[str, dict]) -
             if matched:
                 match = stats_by_name.get(matched['name'])
         if match:
-            # Merge (don't overwrite existing manual data)
             existing = p.get('collegeStats', {})
             for yr, yr_stats in match.items():
-                if yr not in existing:
+                # Overwrite if new data is non-empty; never overwrite non-empty with empty
+                if yr_stats and (yr not in existing or not existing[yr]):
                     existing[yr] = yr_stats
             p['collegeStats'] = existing
     return prospects
