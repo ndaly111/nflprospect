@@ -3,6 +3,7 @@ import { getState, setState, subscribe } from './state.js'
 import { renderFilterBar } from './components/filterBar.js'
 import { renderProspectGrid, renderSkeleton } from './components/prospectGrid.js'
 import { renderNewsPanel } from './components/newsPanel.js'
+import { renderCombinePanel } from './components/combinePanel.js'
 import { timeAgo } from './utils/format.js'
 
 const BASE = import.meta.env.BASE_URL
@@ -144,5 +145,17 @@ subscribe(state => {
 subscribe(() => {
   renderFilterBar()
 }, ['filters', 'sort', 'historical', 'historicalYear'])
+
+// When historicalYear changes, update the combine tab for the currently expanded card
+subscribe(state => {
+  const { expandedCardId, prospects } = state
+  if (!expandedCardId) return
+  const prospect = prospects.find(p => p.id === expandedCardId)
+  if (!prospect) return
+  const combineEl = document.querySelector(`.tab-content[data-tab="combine"][data-card="${expandedCardId}"]`)
+  if (combineEl) {
+    combineEl.innerHTML = renderCombinePanel(prospect.combineData, prospect.positionGroup)
+  }
+}, ['historicalYear'])
 
 loadData()
