@@ -124,11 +124,12 @@ def fetch_tankathon() -> list[dict]:
 # ---------------------------------------------------------------------------
 # ESPN sports.core API (concurrent $ref resolution)
 # ---------------------------------------------------------------------------
-def fetch_espn() -> list[dict]:
+def fetch_espn(year: int = None) -> list[dict]:
     """Fetch ESPN draft big board with concurrent athlete resolution."""
+    draft_year = year or DRAFT_YEAR
     list_url = (
         f'https://sports.core.api.espn.com/v2/sports/football/leagues/nfl'
-        f'/seasons/{DRAFT_YEAR}/draft/athletes?limit=500'
+        f'/seasons/{draft_year}/draft/athletes?limit=500'
     )
     try:
         r = requests.get(list_url, headers=HEADERS, timeout=TIMEOUT)

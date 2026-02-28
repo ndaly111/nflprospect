@@ -13,7 +13,7 @@ let prevFilterKey = ''
 function renderListView(filtered, watchlist, expandedCardId, isHistorical) {
   const watchSet = new Set(watchlist)
   const rows = filtered.map(p => {
-    const displayRank = isHistorical ? p.actualPick : p.consensusRank
+    const displayRank = isHistorical ? (p.espnRank || p.actualPick) : p.consensusRank
     const rankColor = displayRank <= 5 ? 'text-yellow-400'
       : displayRank <= 32 ? 'text-blue-400'
       : displayRank <= 64 ? 'text-green-400'
@@ -23,9 +23,10 @@ function renderListView(filtered, watchlist, expandedCardId, isHistorical) {
 
     if (isHistorical) {
       const teamShort = p.actualTeam ? p.actualTeam.split(' ').pop() : '—'
+      const histRank = p.espnRank || p.actualPick
       return [
         `<tr class="list-row border-t border-gray-700/50 hover:bg-gray-700/30 cursor-pointer transition-colors ${rowBg}" data-id="${p.id}">`,
-        `<td class="py-2.5 pl-3 pr-2 text-sm font-bold ${rankColor} w-10">#${p.actualPick}</td>`,
+        `<td class="py-2.5 pl-3 pr-2 text-sm font-bold ${rankColor} w-10">#${histRank}</td>`,
         `<td class="py-2.5 pr-3 min-w-0">`,
         `<div class="font-semibold text-white text-sm truncate">${p.name}</div>`,
         `<div class="school-filter-btn text-xs text-gray-500 hover:text-blue-400 transition-colors cursor-pointer truncate" data-school="${p.school}">${p.school}</div>`,
@@ -72,7 +73,7 @@ function renderListView(filtered, watchlist, expandedCardId, isHistorical) {
   }).join('')
 
   const headers = isHistorical
-    ? `<th class="pb-2 pl-3 pr-2 text-left font-medium">Pick</th>
+    ? `<th class="pb-2 pl-3 pr-2 text-left font-medium">Rank</th>
        <th class="pb-2 pr-3 text-left font-medium">Player</th>
        <th class="pb-2 pr-3 text-left font-medium">Pos</th>
        <th class="pb-2 pr-3 text-left font-medium hidden sm:table-cell">Round</th>

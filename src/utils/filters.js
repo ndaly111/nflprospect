@@ -41,8 +41,8 @@ export function applyFilters(prospects, filters, sort, watchlist = []) {
 
   // Sort — fall back to actualPick for historical prospects
   result.sort((a, b) => {
-    const rankA = a.consensusRank || a.actualPick || 999
-    const rankB = b.consensusRank || b.actualPick || 999
+    const rankA = a.consensusRank || a.espnRank || a.actualPick || 999
+    const rankB = b.consensusRank || b.espnRank || b.actualPick || 999
     switch (sort) {
       case 'consensusRank':
         return rankA - rankB

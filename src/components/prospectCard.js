@@ -129,10 +129,16 @@ function findProspectById(id) {
 function renderHistoricalCard(prospect, isExpanded) {
   const posColor = POSITION_COLORS[prospect.positionGroup] || 'bg-gray-800 text-gray-300'
   const isStarred = getState().watchlist.includes(prospect.id)
-  const pickColor = prospect.actualPick <= 5 ? 'text-yellow-400'
-    : prospect.actualPick <= 32 ? 'text-blue-400'
-    : prospect.actualPick <= 64 ? 'text-green-400'
+  const displayRank = prospect.espnRank || prospect.actualPick
+  const rankColor = displayRank <= 5 ? 'text-yellow-400'
+    : displayRank <= 32 ? 'text-blue-400'
+    : displayRank <= 64 ? 'text-green-400'
     : 'text-gray-400'
+  const gradeColor = (prospect.espnGrade || 0) >= 90 ? 'text-green-400'
+    : (prospect.espnGrade || 0) >= 85 ? 'text-yellow-400' : 'text-gray-400'
+  const headshotUrl = prospect.espnId
+    ? `https://a.espncdn.com/i/headshots/college-football/players/full/${prospect.espnId}.png`
+    : null
 
   const hw = (() => {
     const c = prospect.combineData || {}
@@ -160,12 +166,21 @@ function renderHistoricalCard(prospect, isExpanded) {
     `</div>`,
     `<h2 class="text-base font-bold text-white leading-snug mb-1">${prospect.name}</h2>`,
     `<div class="flex items-center gap-2 flex-wrap">`,
-    `<span class="text-2xl font-black ${pickColor} leading-none">#${prospect.actualPick}</span>`,
+    `<span class="text-2xl font-black ${rankColor} leading-none">#${displayRank}</span>`,
     `<div class="text-xs text-gray-400 leading-snug">`,
+    prospect.espnRank ? `<div class="text-gray-500 text-[11px]">Pick #${prospect.actualPick} overall</div>` : '',
     `<div>Round ${prospect.actualRound || '?'}${teamSpan}</div>`,
     hw ? `<div class="text-gray-500">${hw}</div>` : '',
-    `</div></div></div>`,
+    `</div>`,
+    prospect.espnGrade ? [
+      `<div class="ml-auto flex flex-col items-end">`,
+      `<div class="text-[10px] text-gray-500 uppercase tracking-wider">ESPN</div>`,
+      `<div class="text-base font-bold ${gradeColor}">${prospect.espnGrade}</div>`,
+      `</div>`,
+    ].join('') : '',
+    `</div></div>`,
     `<div class="flex flex-col items-end gap-2 flex-shrink-0">`,
+    headshotUrl ? `<img src="${headshotUrl}" alt="" loading="lazy" class="w-10 h-10 rounded-full object-cover object-top bg-gray-700 border border-gray-700" onerror="this.style.display='none'">` : '',
     `<button class="star-btn text-lg leading-none transition-colors ${isStarred ? 'text-yellow-400' : 'text-gray-700 hover:text-gray-400'}" data-id="${prospect.id}" title="${isStarred ? 'Remove from watchlist' : 'Add to watchlist'}">★</button>`,
     `<div class="text-gray-600 text-xs card-chevron" data-id="${prospect.id}">${isExpanded ? '▲' : '▼'}</div>`,
     `</div></div></div>`,
@@ -178,6 +193,8 @@ function renderHistoricalCard(prospect, isExpanded) {
     `<div class="p-4">`,
     `<div class="tab-content" data-tab="draft" data-card="${prospect.id}">`,
     `<div class="text-sm space-y-0">`,
+    prospect.espnRank ? `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">ESPN Pre-Draft Rank</span><span class="font-bold text-blue-400">#${prospect.espnRank}</span></div>` : '',
+    prospect.espnGrade ? `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">ESPN Grade</span><span class="font-bold ${gradeColor}">${prospect.espnGrade}</span></div>` : '',
     `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">Overall Pick</span><span class="font-bold text-white">#${prospect.actualPick}</span></div>`,
     `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">Round</span><span class="text-white">${prospect.actualRound || '—'}</span></div>`,
     `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">Team</span><span class="text-amber-400 font-semibold">${prospect.actualTeam || '—'}</span></div>`,
@@ -453,9 +470,17 @@ function expandCardDOM(id) {
   if (card) card.classList.replace('border-gray-700', 'border-blue-600')
   if (chevron) chevron.textContent = '▲'
 
-  // Reset to ranking tab
-  const firstTab = detail.querySelector('.detail-tab[data-tab="ranking"]')
-  if (firstTab) activateTab(firstTab)
+  // Reset to first available tab (ranking for current-year, draft for historical)
+  const rankTab = detail.querySelector('.detail-tab[data-tab="ranking"]')
+  const draftTab = detail.querySelector('.detail-tab[data-tab="draft"]')
+  const firstTab = rankTab || draftTab
+  if (firstTab) {
+    activateTab(firstTab)
+    const firstTabName = firstTab.dataset.tab
+    detail.querySelectorAll('.tab-content').forEach(c => {
+      c.classList.toggle('hidden', c.dataset.tab !== firstTabName)
+    })
+  }
 
   // Init chart (only for current-year prospects with rank history)
   const prospect = findProspectById(id)

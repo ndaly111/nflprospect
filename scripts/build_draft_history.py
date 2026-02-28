@@ -15,6 +15,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).parent))
 from utils import fuzzy_match_player, make_id, normalize_name
 from fetch_college_stats import fetch_player_stats
+from fetch_rankings import fetch_espn
 
 logger = logging.getLogger(__name__)
 
@@ -179,6 +180,32 @@ def build_draft_history() -> dict[str, list[dict]]:
             logger.info(f'{year_str}: {with_stats} prospects with college stats')
     except Exception as e:
         logger.warning(f'College stats fetch failed: {e}')
+
+    # Fetch ESPN pre-draft rankings for each historical year
+    logger.info('Fetching ESPN pre-draft rankings for historical classes...')
+    for year_str, year_prospects in result.items():
+        year = int(year_str)
+        try:
+            espn_list = fetch_espn(year=year)
+            espn_by_name = {p['name']: p for p in espn_list}
+            espn_candidates = [{'name': k} for k in espn_by_name]
+            n_espn = 0
+            for p in year_prospects:
+                e = espn_by_name.get(p['name'])
+                if e is None and espn_candidates:
+                    match = fuzzy_match_player(p['name'], espn_candidates, threshold=85)
+                    if match:
+                        e = espn_by_name.get(match['name'])
+                if e is not None:
+                    p['espnRank'] = e.get('rank')
+                    if e.get('grade') is not None:
+                        p['espnGrade'] = e['grade']
+                    if e.get('espn_id') is not None:
+                        p['espnId'] = e['espn_id']
+                    n_espn += 1
+            logger.info(f'{year}: {n_espn}/{len(year_prospects)} prospects with ESPN pre-draft rank')
+        except Exception as exc:
+            logger.warning(f'{year}: ESPN pre-draft fetch failed: {exc}')
 
     return result
 
