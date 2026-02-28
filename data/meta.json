@@ -1,0 +1,9 @@
+{
+  "lastUpdated": "2026-02-28T06:00:00Z",
+  "prospectCount": 2,
+  "sources": {
+    "walter_football": {"status": "stub", "count": 2},
+    "pro_football_network": {"status": "stub", "count": 2},
+    "espn": {"status": "stub", "count": 2}
+  }
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "id": "travis-hunter-cb-colorado",
+    "name": "Travis Hunter",
+    "position": "CB/WR",
+    "positionGroup": "DB",
+    "school": "Colorado",
+    "class": "Junior",
+    "yearsInCollege": 3,
+    "consensusRank": 1,
+    "projectedRound": 1,
+    "projectedPickRange": [1, 5],
+    "positionRank": 1,
+    "rankBySource": {
+      "walter_football": 1,
+      "pro_football_network": 2,
+      "espn": 1
+    },
+    "rankHistory": [
+      {"date": "2026-02-01", "rank": 3},
+      {"date": "2026-02-28", "rank": 1}
+    ],
+    "collegeStats": {
+      "2023": {"games": 13, "receptions": 96, "receivingYards": 1258, "receivingTDs": 14, "tackles": 44, "interceptions": 4},
+      "2024": {"games": 12, "receptions": 75, "receivingYards": 1152, "receivingTDs": 15, "tackles": 38, "interceptions": 5}
+    },
+    "combineData": {
+      "height": "6-1", "weight": 185, "forty": 4.38,
+      "bench": null, "vertical": 38.5, "broadJump": 126,
+      "cone": 6.87, "shuttle": 4.12, "participated": true
+    }
+  },
+  {
+    "id": "abdul-carter-edge-penn-state",
+    "name": "Abdul Carter",
+    "position": "EDGE",
+    "positionGroup": "EDGE",
+    "school": "Penn State",
+    "class": "Junior",
+    "yearsInCollege": 3,
+    "consensusRank": 2,
+    "projectedRound": 1,
+    "projectedPickRange": [1, 5],
+    "positionRank": 1,
+    "rankBySource": {
+      "walter_football": 2,
+      "pro_football_network": 1,
+      "espn": 3
+    },
+    "rankHistory": [
+      {"date": "2026-02-01", "rank": 2},
+      {"date": "2026-02-28", "rank": 2}
+    ],
+    "collegeStats": {
+      "2023": {"games": 13, "tackles": 58, "sacks": 11.5, "tfls": 17, "interceptions": 0, "pbus": 2},
+      "2024": {"games": 12, "tackles": 62, "sacks": 12.0, "tfls": 18, "interceptions": 1, "pbus": 3}
+    },
+    "combineData": {
+      "height": "6-3", "weight": 248, "forty": 4.55,
+      "bench": 22, "vertical": 35.5, "broadJump": 118,
+      "cone": 7.02, "shuttle": 4.28, "participated": true
+    }
+  }
+]
