@@ -34,6 +34,13 @@ export function renderCollegeStats(prospect, classPct = {}) {
   const hasTankStats = prospect.tankStats && Object.keys(prospect.tankStats).length > 0
 
   if (!hasCFBD && !hasTankStats) {
+    if (prospect.positionGroup === 'OL') {
+      return `
+        <div class="text-center py-4 text-gray-500">
+          <p class="text-sm font-medium mb-1">Individual stats not tracked for OL</p>
+          <p class="text-xs text-gray-600">Evaluation based on film, combine measurements, and physical traits. Check the Combine tab for measurables.</p>
+        </div>`
+    }
     return '<p class="text-gray-500 text-sm">No college stats available yet</p>'
   }
 

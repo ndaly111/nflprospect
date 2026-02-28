@@ -278,7 +278,14 @@ def fetch_walter_football() -> list[dict]:
 # CBS Sports big board
 # ---------------------------------------------------------------------------
 def fetch_cbs_sports() -> list[dict]:
-    """Parse CBS Sports NFL prospect rankings table."""
+    """Parse CBS Sports NFL prospect rankings table.
+
+    Row structure (repeating block per player):
+      Row N+0: [rank, name, school, class_year, pos, pos_rank, ht, wt, ...]
+      Row N+1: mock draft blurb + stats (may contain "Browns Select ...")
+      Row N+2: empty
+      Row N+3: stats-only duplicate (skip)
+    """
     url = 'https://www.cbssports.com/nfl/draft/prospect-rankings/'
     try:
         r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
@@ -289,16 +296,18 @@ def fetch_cbs_sports() -> list[dict]:
             logger.warning('CBS Sports: rankings table not found')
             return []
 
-        prospects = []
-        for row in table.select('tr'):
+        # Two-pass: first collect player rows, then look-ahead for team picks
+        all_rows = table.select('tr')
+        player_rows = {}  # row_index → basic player dict
+        for i, row in enumerate(all_rows):
             cells = row.select('td')
             if len(cells) < 5:
                 continue
             rank_txt = cells[0].get_text(strip=True)
             name_txt = cells[1].get_text(strip=True)
             school_txt = cells[2].get_text(strip=True)
-            pos_txt = cells[4].get_text(strip=True)
-            # Filter: rank must be integer, name must look like "First Last"
+            class_txt = cells[3].get_text(strip=True) if len(cells) > 3 else ''
+            pos_txt = cells[4].get_text(strip=True) if len(cells) > 4 else ''
             try:
                 rank = int(rank_txt)
             except ValueError:
@@ -308,7 +317,6 @@ def fetch_cbs_sports() -> list[dict]:
             if not pos_txt or not re.match(r'^[A-Z]{1,6}', pos_txt):
                 continue
 
-            # Height/weight from cols 6/7 if present
             height_str, weight_val = None, None
             if len(cells) >= 7:
                 ht = cells[6].get_text(strip=True)
@@ -318,10 +326,8 @@ def fetch_cbs_sports() -> list[dict]:
                 wt = re.sub(r'[^\d]', '', cells[7].get_text(strip=True))
                 weight_val = int(wt) if wt else None
 
-            # CBS uses "Miami (Fla.)" → normalize to "Miami"
             school = re.sub(r'\s*\(.*?\)', '', school_txt).strip()
-
-            prospects.append({
+            player_rows[i] = {
                 'name': name_txt,
                 'position': pos_txt,
                 'school': school,
@@ -329,9 +335,28 @@ def fetch_cbs_sports() -> list[dict]:
                 'source': 'cbs_sports',
                 'height': height_str,
                 'weight': weight_val,
-            })
+                'class_year': class_txt or None,
+                'cbs_team': None,
+            }
 
-        logger.info(f'CBS Sports: {len(prospects)} prospects')
+        # Look-ahead: check the immediately following row for team pick text
+        # Format: "Mike Renner's Mock Draft: Browns Select Player Name ..."
+        for idx in player_rows:
+            for offset in (1, 2):
+                next_idx = idx + offset
+                if next_idx >= len(all_rows):
+                    continue
+                blurb = all_rows[next_idx].get_text(separator=' ', strip=True)
+                m = re.search(r'Mock Draft:\s+([A-Z][a-zA-Z ]+?)\s+Select', blurb)
+                if m:
+                    team = m.group(1).strip()
+                    # Validate it looks like a team name (2-4 words max)
+                    if len(team.split()) <= 4 and len(team) < 30:
+                        player_rows[idx]['cbs_team'] = team
+                    break
+
+        prospects = list(player_rows.values())
+        logger.info(f'CBS Sports: {len(prospects)} prospects ({sum(1 for p in prospects if p["cbs_team"])} with team picks)')
         return prospects
     except Exception as e:
         logger.warning(f'CBS Sports failed: {e}')
