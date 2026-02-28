@@ -1,8 +1,34 @@
-import { trendArrow } from '../utils/format.js'
+import { trendArrow, formatDate } from '../utils/format.js'
 import { renderRankingChart, destroyChart } from './rankingChart.js'
 import { renderCollegeStats } from './collegeStats.js'
 import { renderCombinePanel } from './combinePanel.js'
 import { getState, setState, subscribe } from '../state.js'
+
+function renderProspectNews(name) {
+  const { news } = getState()
+  if (!news || news.length === 0) {
+    return '<p class="text-gray-500 text-sm">No news available</p>'
+  }
+  // Match articles mentioning the player's last name (or full name)
+  const lastName = name.split(' ').pop().toLowerCase()
+  const firstName = name.split(' ')[0].toLowerCase()
+  const matches = news.filter(item => {
+    const text = ((item.headline || '') + ' ' + (item.description || '')).toLowerCase()
+    return text.includes(lastName) && text.includes(firstName)
+  })
+  if (matches.length === 0) {
+    return `<p class="text-gray-500 text-sm">No news mentioning ${name} found.</p>`
+  }
+  return matches.map(item => `
+    <a href="${item.url || '#'}" target="_blank" rel="noopener"
+       class="flex gap-3 py-2.5 border-b border-gray-700/50 last:border-0 hover:bg-gray-700/20 -mx-4 px-4 transition-colors">
+      ${item.image ? `<img src="${item.image}" alt="" class="w-14 h-10 object-cover rounded flex-shrink-0 bg-gray-700">` : ''}
+      <div class="flex-1 min-w-0">
+        <p class="text-sm text-gray-200 leading-snug line-clamp-2">${item.headline}</p>
+        <p class="text-xs text-gray-500 mt-0.5">${formatDate(item.published)}</p>
+      </div>
+    </a>`).join('')
+}
 
 // Cache for in-class college stat percentiles
 let _statPctCache = null
@@ -151,10 +177,11 @@ export function renderProspectCard(prospect, isExpanded = false) {
 
       <!-- Expandable Detail -->
       <div class="card-detail ${isExpanded ? '' : 'hidden'} border-t border-gray-700" data-id="${prospect.id}">
-        <div class="flex border-b border-gray-700">
-          <button class="detail-tab flex-1 px-3 py-2 text-xs font-medium border-b-2 border-blue-500 text-blue-400" data-tab="ranking" data-card="${prospect.id}">Rankings</button>
-          <button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors" data-tab="stats" data-card="${prospect.id}">Stats</button>
-          <button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors" data-tab="combine" data-card="${prospect.id}">Combine</button>
+        <div class="flex border-b border-gray-700 overflow-x-auto">
+          <button class="detail-tab flex-1 px-3 py-2 text-xs font-medium border-b-2 border-blue-500 text-blue-400 whitespace-nowrap" data-tab="ranking" data-card="${prospect.id}">Rankings</button>
+          <button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors whitespace-nowrap" data-tab="stats" data-card="${prospect.id}">Stats</button>
+          <button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors whitespace-nowrap" data-tab="combine" data-card="${prospect.id}">Combine</button>
+          <button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors whitespace-nowrap" data-tab="news" data-card="${prospect.id}">News</button>
         </div>
         <div class="p-4">
           <div class="tab-content" data-tab="ranking" data-card="${prospect.id}">
@@ -167,6 +194,9 @@ export function renderProspectCard(prospect, isExpanded = false) {
           </div>
           <div class="tab-content hidden" data-tab="combine" data-card="${prospect.id}">
             ${renderCombinePanel(prospect.combineData, prospect.positionGroup, prospect.playerComps)}
+          </div>
+          <div class="tab-content hidden" data-tab="news" data-card="${prospect.id}">
+            ${renderProspectNews(prospect.name)}
           </div>
         </div>
       </div>
