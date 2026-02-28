@@ -25,7 +25,9 @@
         "rank": 2
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "69",
       "SACKS": "6.5",
@@ -117,7 +119,10 @@
         "rank": 4
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "54",
       "SACKS": "9.5",
@@ -163,7 +168,9 @@
         "rank": 5
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "68",
       "SACKS": "1.0",
@@ -297,7 +304,11 @@
         "rank": 10
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "82",
       "SACKS": "1.0",
@@ -343,7 +354,10 @@
         "rank": 11
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "Rush Yds": "1372",
       "TD": "18",
@@ -429,7 +443,10 @@
         "rank": 14
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "REC": "51",
       "REC Yds": "875",
@@ -475,7 +492,10 @@
         "rank": 15
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "29",
       "SACKS": "2.0",
@@ -521,7 +541,9 @@
         "rank": 16
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "REC": "61",
       "REC Yds": "711",
@@ -613,7 +635,10 @@
         "rank": 21
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "REC": "79",
       "REC Yds": "1156",
@@ -698,7 +723,10 @@
         "rank": 24
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "REC": "51",
       "REC Yds": "560",
@@ -744,7 +772,11 @@
         "rank": 25
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "REC": "62",
       "REC Yds": "881",
@@ -790,7 +822,10 @@
         "rank": 26
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "30",
       "SACKS": "2.0",
@@ -876,7 +911,9 @@
         "rank": 28
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "44",
       "SACKS": "0.0",
@@ -922,7 +959,11 @@
         "rank": 29
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "63",
       "SACKS": "12.5",
@@ -1093,7 +1134,10 @@
         "rank": 34
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "65",
       "SACKS": "3.0",
@@ -1139,7 +1183,10 @@
         "rank": 35
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "48",
       "SACKS": "3.0",
@@ -1225,7 +1272,10 @@
         "rank": 31
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "37",
       "SACKS": "5.0",
@@ -1317,7 +1367,11 @@
         "rank": 38
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "Pass Yds": "3567",
       "TD": "28",
@@ -1501,7 +1555,9 @@
         "rank": 41
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "31",
       "SACKS": "11.5",
@@ -1679,7 +1735,11 @@
         "rank": 45
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "REC": "69",
       "REC Yds": "937",
@@ -1725,7 +1785,9 @@
         "rank": 46
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "42",
       "SACKS": "6.5",
@@ -1771,7 +1833,10 @@
         "rank": 47
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "6",
       "SACKS": "0.0",
@@ -1897,7 +1962,10 @@
         "rank": 50
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "69",
       "SACKS": "4.0",
@@ -1989,7 +2057,11 @@
         "rank": 54
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "26",
       "SACKS": "6.5",
@@ -2081,7 +2153,11 @@
         "rank": 55
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "49",
       "SACKS": "1.0",
@@ -2127,7 +2203,9 @@
         "rank": 56
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "105",
       "SACKS": "3.5",
@@ -2173,7 +2251,11 @@
         "rank": 57
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "REC": "72",
       "REC Yds": "917",
@@ -2219,7 +2301,9 @@
         "rank": 58
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "REC": "62",
       "REC Yds": "1017",
@@ -2265,7 +2349,11 @@
         "rank": 59
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "30",
       "SACKS": "10.0",
@@ -2311,7 +2399,9 @@
         "rank": 63
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "61",
       "SACKS": "0.0",
@@ -2357,7 +2447,10 @@
         "rank": 60
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "53",
       "SACKS": "0.0",
@@ -2403,7 +2496,10 @@
         "rank": 61
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "23",
       "SACKS": "1.5",
@@ -2449,7 +2545,9 @@
         "rank": 62
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "REC": "64",
       "REC Yds": "862",
@@ -2535,7 +2633,11 @@
         "rank": 65
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "128",
       "SACKS": "1.0",
@@ -2627,7 +2729,11 @@
         "rank": 66
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "43",
       "SACKS": "11.0",
@@ -2805,7 +2911,11 @@
         "rank": 69
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "REC": "55",
       "REC Yds": "604",
@@ -2851,7 +2961,10 @@
         "rank": 70
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "81",
       "SACKS": "3.0",
@@ -2897,7 +3010,11 @@
         "rank": 71
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "89",
       "SACKS": "1.5",
@@ -2943,7 +3060,11 @@
         "rank": 72
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "35",
       "SACKS": "1.0",
@@ -2989,7 +3110,9 @@
         "rank": 75
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "REC": "65",
       "REC Yds": "830",
@@ -3035,7 +3158,11 @@
         "rank": 76
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "33",
       "SACKS": "4.0",
@@ -3081,7 +3208,11 @@
         "rank": 77
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "Pass Yds": "1927",
       "TD": "12",
@@ -3127,7 +3258,10 @@
         "rank": 78
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "REC": "49",
       "REC Yds": "745",
@@ -3173,7 +3307,9 @@
         "rank": 79
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "27",
       "SACKS": "0.0",
@@ -3305,7 +3441,11 @@
         "rank": 82
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "33",
       "SACKS": "3.5",
@@ -3351,7 +3491,10 @@
         "rank": 83
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "Rush Yds": "674",
       "TD": "11",
@@ -3397,7 +3540,9 @@
         "rank": 84
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "REC": "62",
       "REC Yds": "769",
@@ -3443,7 +3588,10 @@
         "rank": 85
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "30",
       "SACKS": "1.0",
@@ -3626,7 +3774,9 @@
         "rank": 89
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "Rush Yds": "758",
       "TD": "15",
@@ -3718,7 +3868,10 @@
         "rank": 91
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "Rush Yds": "1451",
       "TD": "12",
@@ -3763,7 +3916,11 @@
         "rank": 92
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "42",
       "SACKS": "8.5",
@@ -3894,7 +4051,11 @@
         "rank": 95
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "74",
       "SACKS": "0.0",
@@ -3939,7 +4100,10 @@
         "rank": 96
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "77",
       "SACKS": "0.0",
@@ -4104,7 +4268,11 @@
         "rank": 100
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "59",
       "SACKS": "0.0",
@@ -4149,7 +4317,11 @@
         "rank": 101
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "52",
       "SACKS": "1.0",
@@ -4195,7 +4367,11 @@
         "rank": 102
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "Rush Yds": "549",
       "TD": "13",
@@ -4241,7 +4417,11 @@
         "rank": 103
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "18",
       "SACKS": "0.0",
@@ -4287,7 +4467,9 @@
         "rank": 104
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "REC": "50",
       "REC Yds": "694",
@@ -4333,7 +4515,9 @@
         "rank": 105
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "REC": "71",
       "REC Yds": "1004",
@@ -4379,7 +4563,9 @@
         "rank": 106
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "REC": "57",
       "REC Yds": "620",
@@ -4424,7 +4610,10 @@
         "rank": 107
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "37",
       "SACKS": "3.0",
@@ -4469,7 +4658,9 @@
         "rank": 108
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "48",
       "SACKS": "6.0",
@@ -4554,7 +4745,9 @@
         "rank": 110
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "REC": "101",
       "REC Yds": "1278",
@@ -4640,7 +4833,9 @@
         "rank": 112
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "36",
       "SACKS": "5.0",
@@ -4777,7 +4972,11 @@
         "rank": 115
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "56",
       "SACKS": "1.0",
@@ -4989,7 +5188,9 @@
         "rank": 120
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "REC": "29",
       "REC Yds": "416",
@@ -5035,7 +5236,9 @@
         "rank": 121
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "50",
       "SACKS": "1.0",
@@ -5120,7 +5323,11 @@
         "rank": 123
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "28",
       "SACKS": "7.0",
@@ -5166,7 +5373,11 @@
         "rank": 124
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "REC": "69",
       "REC Yds": "872",
@@ -5378,7 +5589,10 @@
         "rank": 129
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "REC": "48",
       "REC Yds": "620",
@@ -5463,7 +5677,9 @@
         "rank": 131
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "REC": "49",
       "REC Yds": "489",
@@ -5509,7 +5725,10 @@
         "rank": 132
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "54",
       "SACKS": "0.0",
@@ -5600,7 +5819,10 @@
         "rank": 134
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "TACKLES": "73",
       "SACKS": "1.0",
@@ -5730,7 +5952,9 @@
         "rank": 137
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "34",
       "SACKS": "2.0",
@@ -5815,7 +6039,11 @@
         "rank": 139
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "13",
       "SACKS": "0.0",
@@ -5907,7 +6135,11 @@
         "rank": 141
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "Rush Yds": "1303",
       "TD": "15",
@@ -6110,7 +6342,9 @@
         "rank": 146
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "32",
       "SACKS": "4.0",
@@ -6156,7 +6390,11 @@
         "rank": 147
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "50",
       "SACKS": "0.0",
@@ -6202,7 +6440,11 @@
         "rank": 148
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "35",
       "SACKS": "1.5",
@@ -6332,7 +6574,10 @@
         "rank": 150
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "88",
       "SACKS": "0.0",
@@ -6423,7 +6668,9 @@
         "rank": 152
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "39",
       "SACKS": "0.0",
@@ -6469,7 +6716,11 @@
         "rank": 153
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "16",
       "SACKS": "2.0",
@@ -6554,7 +6805,11 @@
         "rank": 155
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "25",
       "SACKS": "4.0",
@@ -6920,7 +7175,11 @@
         "rank": 164
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "REC": "49",
       "REC Yds": "545",
@@ -7004,7 +7263,11 @@
         "rank": 166
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "Rush Yds": "907",
       "TD": "10",
@@ -7173,7 +7436,11 @@
         "rank": 170
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "Pass Yds": "1100",
       "TD": "8",
@@ -7218,7 +7485,11 @@
         "rank": 171
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "55",
       "SACKS": "1.5",
@@ -7380,7 +7651,11 @@
         "rank": 175
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "REC": "20",
       "REC Yds": "261",
@@ -7426,7 +7701,9 @@
         "rank": 176
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "97",
       "SACKS": "4.5",
@@ -7471,7 +7748,11 @@
         "rank": 177
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "34",
       "SACKS": "1.0",
@@ -7595,7 +7876,10 @@
         "rank": 180
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "REC": "32",
       "REC Yds": "482",
@@ -7763,7 +8047,9 @@
         "rank": 184
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "TACKLES": "48",
       "SACKS": "0.0",
@@ -7893,7 +8179,10 @@
         "rank": 187
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {},
     "combineData": {
       "height": "6'3\"",
@@ -7971,7 +8260,11 @@
         "rank": 189
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "21",
       "SACKS": "1.0",
@@ -8101,7 +8394,11 @@
         "rank": 191
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "58",
       "SACKS": "3.0",
@@ -8146,7 +8443,11 @@
         "rank": 186
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "47",
       "SACKS": "0.0",
@@ -8191,7 +8492,11 @@
         "rank": 192
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "70",
       "SACKS": "1.0",
@@ -8236,7 +8541,11 @@
         "rank": 193
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "26",
       "SACKS": "6.5",
@@ -8281,7 +8590,10 @@
         "rank": 194
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "REC": "33",
       "REC Yds": "398",
@@ -8326,7 +8638,9 @@
         "rank": 195
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "REC": "72",
       "REC Yds": "1190",
@@ -8371,7 +8685,11 @@
         "rank": 196
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "Pass Yds": "2943",
       "TD": "16",
@@ -8416,7 +8734,11 @@
         "rank": 197
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "49",
       "SACKS": "2.0",
@@ -8500,7 +8822,11 @@
         "rank": 198
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {},
+      "2022": {}
+    },
     "tankStats": {
       "TACKLES": "40",
       "SACKS": "3.0",
@@ -8545,7 +8871,10 @@
         "rank": 199
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "Pass Yds": "3681",
       "TD": "31",
@@ -8680,7 +9009,10 @@
         "rank": 202
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {},
+      "2023": {}
+    },
     "tankStats": {
       "REC": "24",
       "REC Yds": "248",
@@ -8770,7 +9102,9 @@
         "rank": 200
       }
     ],
-    "collegeStats": {},
+    "collegeStats": {
+      "2024": {}
+    },
     "tankStats": {
       "REC": "34",
       "REC Yds": "679",
