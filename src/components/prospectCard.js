@@ -34,6 +34,30 @@ export function renderProspectCard(prospect, isExpanded = false) {
 
   const gradeColor = prospect.espnGrade >= 90 ? 'text-green-400' : prospect.espnGrade >= 85 ? 'text-yellow-400' : 'text-gray-400'
 
+  // Range bar: show spread across sources
+  const sourceRanks = Object.values(prospect.rankBySource || {})
+  const rangeBar = (() => {
+    if (sourceRanks.length < 2) return ''
+    const minRank = Math.min(...sourceRanks)
+    const maxRank = Math.max(...sourceRanks)
+    const spread = maxRank - minRank
+    const dotPct = spread === 0 ? 50 : Math.round((prospect.consensusRank - minRank) / spread * 100)
+    const spreadColor = spread <= 2 ? '#22c55e' : spread <= 6 ? '#3b82f6' : '#f59e0b'
+    const spreadLabel = spread === 0 ? 'all agree' : spread <= 2 ? 'tight' : spread <= 6 ? 'moderate' : 'wide'
+    return `
+      <div class="mt-2 pt-2 border-t border-gray-700/40">
+        <div class="flex justify-between text-[10px] mb-1">
+          <span class="text-green-500/80">Best: #${minRank}</span>
+          <span style="color:${spreadColor}">${spread === 0 ? '✓ ' : ''}${spreadLabel}${spread > 0 ? ` (${spread})` : ''}</span>
+          <span class="text-amber-500/80">Worst: #${maxRank}</span>
+        </div>
+        <div class="relative h-1 bg-gray-700/60 rounded-full">
+          <div class="absolute top-1/2 w-2.5 h-2.5 rounded-full border-2 border-gray-800"
+               style="left:${dotPct}%;transform:translate(-50%,-50%);background:${spreadColor}"></div>
+        </div>
+      </div>`
+  })()
+
   return `
     <div class="prospect-card bg-gray-800 rounded-xl border ${isExpanded ? 'border-blue-600' : 'border-gray-700'} overflow-hidden hover:border-gray-500 transition-colors"
          data-id="${prospect.id}">
@@ -62,8 +86,9 @@ export function renderProspectCard(prospect, isExpanded = false) {
           </div>
           <div class="text-gray-600 text-xs mt-1 card-chevron flex-shrink-0" data-id="${prospect.id}">${isExpanded ? '▲' : '▼'}</div>
         </div>
+        ${rangeBar}
         ${sourcesList ? `
-          <div class="mt-2 pt-2 border-t border-gray-700/60 text-xs flex flex-wrap gap-x-3 gap-y-0.5">
+          <div class="mt-2 text-xs flex flex-wrap gap-x-3 gap-y-0.5">
             ${sourcesList}
           </div>` : ''}
       </div>
