@@ -17,7 +17,7 @@ from fetch_rankings import fetch_all_rankings
 from fetch_combine import fetch_combine
 from fetch_college_stats import fetch_player_stats
 from fetch_news import fetch_draft_news
-from fetch_historical import fetch_historical_by_position, compute_percentiles, compute_stat_importance
+from fetch_historical import fetch_historical_by_position, compute_percentiles, compute_stat_importance, compute_player_comps
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
@@ -339,6 +339,7 @@ def main():
     # 7. Fetch historical comparison data
     logger.info('Fetching historical combine data...')
     historical_percentiles = {}
+    historical = {}
     try:
         historical = fetch_historical_by_position(5)
         historical_percentiles = compute_percentiles(historical)
@@ -353,6 +354,18 @@ def main():
         historical_percentiles['importance'] = importance
     except Exception as e:
         logger.warning(f'Stat importance failed: {e}')
+
+    # Compute player comps (most similar historical players by combine metrics)
+    logger.info('Computing player comps...')
+    try:
+        player_comps = compute_player_comps(prospects, historical)
+        for p in prospects:
+            p['playerComps'] = player_comps.get(p['id'], [])
+    except Exception as e:
+        logger.warning(f'Player comps failed: {e}')
+        for p in prospects:
+            if 'playerComps' not in p:
+                p['playerComps'] = []
 
     # 8. Write JSON
     (DATA_DIR / 'prospects.json').write_text(json.dumps(prospects, indent=2))

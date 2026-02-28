@@ -104,6 +104,20 @@ async function loadData() {
     ])
 
     setState({ prospects, news, meta, historical, loading: false })
+
+    // Deep-link: auto-expand a prospect from ?p=<id> query param
+    const deepId = new URLSearchParams(location.search).get('p')
+    if (deepId) {
+      const match = prospects.find(p => p.id === deepId)
+      if (match) {
+        setState({ expandedCardId: deepId })
+        // Scroll to card after grid renders
+        setTimeout(() => {
+          const el = document.querySelector(`.prospect-card[data-id="${deepId}"]`)
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }, 150)
+      }
+    }
   } catch (err) {
     console.error('Failed to load data:', err)
     setState({ loading: false, error: 'Failed to load prospect data. Please try again.' })
@@ -154,7 +168,7 @@ subscribe(state => {
   if (!prospect) return
   const combineEl = document.querySelector(`.tab-content[data-tab="combine"][data-card="${expandedCardId}"]`)
   if (combineEl) {
-    combineEl.innerHTML = renderCombinePanel(prospect.combineData, prospect.positionGroup)
+    combineEl.innerHTML = renderCombinePanel(prospect.combineData, prospect.positionGroup, prospect.playerComps)
   }
 }, ['historicalYear'])
 

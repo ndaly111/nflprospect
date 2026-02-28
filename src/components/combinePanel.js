@@ -3,7 +3,7 @@ import { getState } from '../state.js'
 // Lower 40 time = better; higher everything else = better
 const LOWER_IS_BETTER = new Set(['forty', 'cone', 'shuttle'])
 
-export function renderCombinePanel(combineData, positionGroup) {
+export function renderCombinePanel(combineData, positionGroup, playerComps = []) {
   if (!combineData) {
     return '<p class="text-gray-500 text-sm">No combine data available</p>'
   }
@@ -83,6 +83,36 @@ export function renderCombinePanel(combineData, positionGroup) {
   const yearLabel = year === 'all' ? "All Draft Classes ('20–'24)" : `${year} Draft Class`
   const hasPercentiles = Object.keys(posPercentiles).some(k => posPercentiles[k]?.length > 0)
 
+  // Player comps section
+  let compsSection = ''
+  if (playerComps && playerComps.length > 0) {
+    const compItems = playerComps.map(comp => {
+      const pickStr = comp.pick ? `Pick #${comp.pick}` : 'UDFA'
+      const yearShort = comp.year ? `'${String(comp.year).slice(2)}` : ''
+      const simColor = comp.similarity >= 75 ? 'text-green-400'
+        : comp.similarity >= 50 ? 'text-blue-400'
+        : 'text-gray-400'
+      return `
+        <div class="flex items-center justify-between bg-gray-700/40 rounded-lg px-3 py-2">
+          <div class="flex-1 min-w-0">
+            <span class="text-sm font-semibold text-white">${comp.name}</span>
+            <span class="text-xs text-gray-500 ml-1.5">${yearShort}</span>
+            <div class="text-xs text-gray-500 mt-0.5">${pickStr} · ${comp.school}</div>
+          </div>
+          <div class="flex-shrink-0 ml-3 text-right">
+            <div class="text-[10px] text-gray-600 uppercase tracking-wide">match</div>
+            <div class="text-sm font-bold ${simColor}">${comp.similarity}%</div>
+          </div>
+        </div>`
+    }).join('')
+
+    compsSection = `
+      <div class="mt-4 pt-3 border-t border-gray-700/50">
+        <div class="text-xs text-gray-500 uppercase tracking-wide mb-2">Most similar to</div>
+        <div class="flex flex-col gap-1.5">${compItems}</div>
+      </div>`
+  }
+
   return `
     ${hasPercentiles ? `
     <div class="flex items-center gap-2 mb-3 px-1">
@@ -90,7 +120,8 @@ export function renderCombinePanel(combineData, positionGroup) {
       <span class="text-[11px] font-semibold text-blue-400 bg-blue-900/30 px-2 py-0.5 rounded-full">${yearLabel}</span>
     </div>` : ''}
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">${items}</div>
-    ${note}`
+    ${note}
+    ${compsSection}`
 }
 
 function computePercentile(val, sorted, lowerIsBetter) {

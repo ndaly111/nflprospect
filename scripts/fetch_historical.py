@@ -283,6 +283,117 @@ def compute_stat_importance() -> dict:
         return {}
 
 
+def compute_player_comps(
+    prospects: list[dict],
+    historical_by_pos: dict[str, list[dict]],
+    top_n: int = 3,
+) -> dict[str, list[dict]]:
+    """
+    For each prospect find the top_n most similar historical players (2020-2024)
+    using z-score normalised Euclidean distance on shared combine metrics.
+
+    Returns {prospect_id: [{name, year, pick, school, similarity}]}
+    where similarity is 0-100 (100 = identical profile).
+    """
+    import math
+
+    METRICS = ['height', 'weight', 'forty', 'vertical', 'broadJump', 'bench', 'cone', 'shuttle']
+    MIN_SHARED = 2
+
+    def _height_to_inches(raw):
+        if raw is None:
+            return None
+        s = str(raw).strip()
+        if '-' in s:
+            parts = s.split('-', 1)
+            try:
+                return float(int(parts[0]) * 12 + int(parts[1]))
+            except (ValueError, IndexError):
+                return None
+        return None
+
+    def _get_val(player, metric):
+        if metric == 'height':
+            return _height_to_inches(player.get('height'))
+        val = player.get(metric)
+        if val is None:
+            return None
+        try:
+            return float(val)
+        except (TypeError, ValueError):
+            return None
+
+    # Pre-compute per-position-group per-metric mean/std from historical players
+    norm: dict[str, dict[str, tuple]] = {}
+    for pos_group, players in historical_by_pos.items():
+        norm[pos_group] = {}
+        for metric in METRICS:
+            vals = [_get_val(p, metric) for p in players]
+            vals = [v for v in vals if v is not None]
+            if len(vals) < 2:
+                continue
+            mu = sum(vals) / len(vals)
+            sigma = math.sqrt(sum((v - mu) ** 2 for v in vals) / len(vals))
+            if sigma < 1e-9:
+                continue
+            norm[pos_group][metric] = (mu, sigma)
+
+    result: dict[str, list[dict]] = {}
+
+    for prospect in prospects:
+        pid = prospect.get('id', '')
+        pos_group = prospect.get('positionGroup', '')
+        combine = prospect.get('combineData') or {}
+        pos_norm = norm.get(pos_group, {})
+
+        # Build prospect's z-score vector
+        pvec: dict[str, float] = {}
+        for metric in METRICS:
+            if metric not in pos_norm:
+                continue
+            val = _get_val(combine, metric)
+            if val is None:
+                continue
+            mu, sigma = pos_norm[metric]
+            pvec[metric] = (val - mu) / sigma
+
+        if len(pvec) < MIN_SHARED:
+            result[pid] = []
+            continue
+
+        candidates = []
+        for hp in historical_by_pos.get(pos_group, []):
+            shared = []
+            for metric, pz in pvec.items():
+                hval = _get_val(hp, metric)
+                if hval is None:
+                    continue
+                mu, sigma = pos_norm[metric]
+                hz = (hval - mu) / sigma
+                shared.append((pz - hz) ** 2)
+            if len(shared) < MIN_SHARED:
+                continue
+            dist = math.sqrt(sum(shared))
+            candidates.append((dist, hp))
+
+        candidates.sort(key=lambda x: x[0])
+        comps = []
+        for dist, hp in candidates[:top_n]:
+            similarity = round(max(0.0, 100.0 * math.exp(-dist / 2.0)))
+            comps.append({
+                'name': hp.get('name', ''),
+                'year': hp.get('year'),
+                'pick': hp.get('pick'),
+                'school': hp.get('school', ''),
+                'similarity': similarity,
+            })
+        result[pid] = comps
+
+    with_comps = sum(1 for v in result.values() if v)
+    logger.info(f'Player comps: {with_comps}/{len(result)} prospects have comps')
+    return result
+
+
 def _format_height(raw) -> str | None:
     if not raw or raw == 'nan':
         return None

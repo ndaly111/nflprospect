@@ -91,6 +91,13 @@ export function renderProspectCard(prospect, isExpanded = false) {
       </div>`
   })()
 
+  // Big mover badge (>= 7 spots in 30 days)
+  const moverBadge = (() => {
+    if (Math.abs(trend.delta) < 7) return ''
+    if (trend.delta > 0) return `<span class="text-[10px] font-bold text-emerald-400 bg-emerald-900/40 px-1.5 py-0.5 rounded-full">🔥 +${trend.delta}</span>`
+    return `<span class="text-[10px] font-bold text-red-400 bg-red-900/40 px-1.5 py-0.5 rounded-full">↘ ${trend.delta}</span>`
+  })()
+
   return `
     <div class="prospect-card bg-gray-800 rounded-xl border ${isExpanded ? 'border-blue-600' : 'border-gray-700'} overflow-hidden hover:border-gray-500 transition-colors"
          data-id="${prospect.id}">
@@ -102,6 +109,7 @@ export function renderProspectCard(prospect, isExpanded = false) {
             <div class="flex items-center gap-2 flex-wrap mb-1">
               <span class="text-xs font-semibold px-2 py-0.5 rounded-full ${posColor}">${prospect.position}</span>
               <span class="text-xs text-gray-400 truncate">${prospect.school}</span>
+              ${moverBadge}
             </div>
             <h2 class="text-base font-bold text-white leading-snug mb-1">${prospect.name}</h2>
             <div class="flex items-center gap-2 flex-wrap">
@@ -117,7 +125,10 @@ export function renderProspectCard(prospect, isExpanded = false) {
                 </div>` : ''}
             </div>
           </div>
-          <div class="text-gray-600 text-xs mt-1 card-chevron flex-shrink-0" data-id="${prospect.id}">${isExpanded ? '▲' : '▼'}</div>
+          <div class="flex flex-col items-end gap-2 flex-shrink-0">
+            <button class="share-btn text-gray-600 hover:text-gray-300 transition-colors text-xs p-1" data-id="${prospect.id}" title="Copy link">⎘</button>
+            <div class="text-gray-600 text-xs card-chevron" data-id="${prospect.id}">${isExpanded ? '▲' : '▼'}</div>
+          </div>
         </div>
         ${rangeBar}
         ${sourcesList ? `
@@ -143,7 +154,7 @@ export function renderProspectCard(prospect, isExpanded = false) {
             ${renderCollegeStats(prospect, statPct[prospect.positionGroup] || {})}
           </div>
           <div class="tab-content hidden" data-tab="combine" data-card="${prospect.id}">
-            ${renderCombinePanel(prospect.combineData, prospect.positionGroup)}
+            ${renderCombinePanel(prospect.combineData, prospect.positionGroup, prospect.playerComps)}
           </div>
         </div>
       </div>
@@ -152,6 +163,19 @@ export function renderProspectCard(prospect, isExpanded = false) {
 
 export function wireCardEvents(container) {
   container.addEventListener('click', e => {
+    // Share button
+    const shareBtn = e.target.closest('.share-btn')
+    if (shareBtn) {
+      e.stopPropagation()
+      const id = shareBtn.dataset.id
+      const url = `${location.origin}${location.pathname}?p=${encodeURIComponent(id)}`
+      navigator.clipboard?.writeText(url).then(() => {
+        shareBtn.textContent = '✓'
+        setTimeout(() => { shareBtn.textContent = '⎘' }, 1500)
+      })
+      return
+    }
+
     const tab = e.target.closest('.detail-tab')
     if (tab) {
       handleTabClick(tab)
@@ -237,7 +261,7 @@ function handleTabClick(tab) {
     const prospect = getState().prospects.find(p => p.id === cardId)
     const combineEl = document.querySelector(`.tab-content[data-tab="combine"][data-card="${cardId}"]`)
     if (prospect && combineEl) {
-      combineEl.innerHTML = renderCombinePanel(prospect.combineData, prospect.positionGroup)
+      combineEl.innerHTML = renderCombinePanel(prospect.combineData, prospect.positionGroup, prospect.playerComps)
     }
   }
 }
