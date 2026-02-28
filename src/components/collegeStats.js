@@ -29,7 +29,7 @@ const TANK_LABELS = {
   'RUSH YDS': 'RUSH YDS', 'RUSH TD': 'RUSH TD',
 }
 
-export function renderCollegeStats(prospect) {
+export function renderCollegeStats(prospect, classPct = {}) {
   const hasCFBD = prospect.collegeStats && Object.keys(prospect.collegeStats).length > 0
   const hasTankStats = prospect.tankStats && Object.keys(prospect.tankStats).length > 0
 
@@ -48,9 +48,18 @@ export function renderCollegeStats(prospect) {
       .join('')
     const rows = years.map(year => {
       const s = prospect.collegeStats[year]
-      const cells = cols.map(c =>
-        `<td class="px-2 py-1.5 text-sm text-gray-200 whitespace-nowrap">${formatStat(s[c])}</td>`
-      ).join('')
+      const cells = cols.map(c => {
+        const val = s[c]
+        const sorted = classPct[c]
+        let colorClass = 'text-gray-200'
+        if (c !== 'games' && typeof val === 'number' && !isNaN(val) && sorted?.length > 1) {
+          let below = 0
+          for (const v of sorted) { if (v < val) below++ }
+          const pct = Math.round((below / sorted.length) * 100)
+          colorClass = pct >= 80 ? 'text-green-400' : pct >= 60 ? 'text-green-300/70' : pct >= 40 ? 'text-gray-200' : pct >= 20 ? 'text-amber-400/70' : 'text-red-400'
+        }
+        return `<td class="px-2 py-1.5 text-sm ${colorClass} whitespace-nowrap">${formatStat(val)}</td>`
+      }).join('')
       return `<tr class="border-t border-gray-700/50 hover:bg-gray-700/30">
         <td class="px-2 py-1.5 text-sm font-semibold text-blue-400">${year}</td>${cells}</tr>`
     }).join('')

@@ -17,7 +17,7 @@ from fetch_rankings import fetch_all_rankings
 from fetch_combine import fetch_combine
 from fetch_college_stats import fetch_player_stats
 from fetch_news import fetch_draft_news
-from fetch_historical import fetch_historical_by_position, compute_percentiles
+from fetch_historical import fetch_historical_by_position, compute_percentiles, compute_stat_importance
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
@@ -345,6 +345,14 @@ def main():
         logger.info(f'Historical: {sum(len(v) for v in historical.values())} players')
     except Exception as e:
         logger.warning(f'Historical fetch failed: {e}')
+
+    # Compute stat importance (correlation with career success)
+    logger.info('Computing stat importance...')
+    try:
+        importance = compute_stat_importance()
+        historical_percentiles['importance'] = importance
+    except Exception as e:
+        logger.warning(f'Stat importance failed: {e}')
 
     # 8. Write JSON
     (DATA_DIR / 'prospects.json').write_text(json.dumps(prospects, indent=2))

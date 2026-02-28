@@ -4,6 +4,38 @@ import { renderCollegeStats } from './collegeStats.js'
 import { renderCombinePanel } from './combinePanel.js'
 import { getState, setState } from '../state.js'
 
+// Cache for in-class college stat percentiles
+let _statPctCache = null
+let _statPctLen = 0
+
+function buildCollegeStatPct(prospects) {
+  if (_statPctCache && _statPctLen === prospects.length) return _statPctCache
+  const result = {}  // {posGroup: {statKey: sorted_values[]}}
+  for (const p of prospects) {
+    const grp = p.positionGroup
+    if (!result[grp]) result[grp] = {}
+    const cs = p.collegeStats || {}
+    // Use all years — accumulate all values
+    for (const stats of Object.values(cs)) {
+      for (const [key, val] of Object.entries(stats)) {
+        if (typeof val === 'number' && !isNaN(val) && val > 0 && key !== 'games') {
+          if (!result[grp][key]) result[grp][key] = []
+          result[grp][key].push(val)
+        }
+      }
+    }
+  }
+  // Sort each array
+  for (const grp of Object.values(result)) {
+    for (const key of Object.keys(grp)) {
+      grp[key].sort((a, b) => a - b)
+    }
+  }
+  _statPctCache = result
+  _statPctLen = prospects.length
+  return result
+}
+
 const POSITION_COLORS = {
   QB: 'bg-red-900 text-red-300',
   RB: 'bg-green-900 text-green-300',
@@ -23,6 +55,7 @@ const SOURCE_LABELS = {
 }
 
 export function renderProspectCard(prospect, isExpanded = false) {
+  const statPct = buildCollegeStatPct(getState().prospects)
   const trend = trendArrow(prospect.rankHistory, 30)
   const posColor = POSITION_COLORS[prospect.positionGroup] || 'bg-gray-800 text-gray-300'
   const chartId = `chart-${prospect.id}`
@@ -107,7 +140,7 @@ export function renderProspectCard(prospect, isExpanded = false) {
             </div>
           </div>
           <div class="tab-content hidden" data-tab="stats" data-card="${prospect.id}">
-            ${renderCollegeStats(prospect)}
+            ${renderCollegeStats(prospect, statPct[prospect.positionGroup] || {})}
           </div>
           <div class="tab-content hidden" data-tab="combine" data-card="${prospect.id}">
             ${renderCombinePanel(prospect.combineData, prospect.positionGroup)}

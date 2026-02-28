@@ -9,6 +9,8 @@ logger = logging.getLogger(__name__)
 
 COMBINE_URL = 'https://github.com/nflverse/nflverse-data/releases/download/combine/combine.csv'
 DRAFT_URL = 'https://github.com/nflverse/nflverse-data/releases/download/draft_picks/draft_picks.csv'
+PLAYER_STATS_OFF_URL = 'https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats.csv'
+PLAYER_STATS_DEF_URL = 'https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_def.csv'
 
 # Map nflverse positions to our position groups
 POS_GROUP_MAP = {
@@ -120,6 +122,161 @@ def compute_percentiles(historical: dict[str, list[dict]]) -> dict:
         result[str(year)] = _compute(year_players)
 
     return result
+
+
+def compute_stat_importance() -> dict:
+    """
+    For each position group, compute Spearman correlation between combine metrics
+    and career NFL success (receiving/rushing/passing yards for offense, composite
+    defensive score for defense). Uses nflverse player_stats.
+
+    Returns {positionGroup: {metric: {importance, correlation, n}}}
+    """
+    import numpy as np
+
+    def _norm(name):
+        """Normalize player name for fuzzy matching."""
+        import re
+        return re.sub(r'[^a-z ]', '', str(name).lower()).strip()
+
+    def _spearman(x, y):
+        """Spearman correlation without scipy — rank then Pearson."""
+        x = np.array(x, dtype=float)
+        y = np.array(y, dtype=float)
+        def rank(arr):
+            order = arr.argsort()
+            ranks = np.empty_like(order, dtype=float)
+            ranks[order] = np.arange(len(arr))
+            return ranks
+        xr, yr = rank(x), rank(y)
+        xc, yc = xr - xr.mean(), yr - yr.mean()
+        denom = (xc**2).sum()**0.5 * (yc**2).sum()**0.5
+        return float((xc * yc).sum() / denom) if denom > 0 else 0.0
+
+    try:
+        # Load combine data — restrict to 2015-2021 draft classes
+        # (gives each player at least 3 seasons of career data by 2024)
+        combine = pd.read_csv(COMBINE_URL)
+        yr_col = 'draft_year' if 'draft_year' in combine.columns else 'year'
+        combine = combine[combine[yr_col].between(2015, 2021)].copy()
+        combine['pos_group'] = combine['pos'].str.upper().map(POS_GROUP_MAP)
+        combine = combine[combine['pos_group'].notna()].copy()
+        combine['_norm'] = combine['player_name'].apply(_norm)
+
+        # Load career offensive stats and aggregate
+        off = pd.read_csv(PLAYER_STATS_OFF_URL, low_memory=False)
+        if 'season_type' in off.columns:
+            off = off[off['season_type'] == 'REG']
+        off_agg = off.groupby('player_name', as_index=False).agg({
+            'receiving_yards': 'sum',
+            'rushing_yards': 'sum',
+            'passing_yards': 'sum',
+        })
+        off_agg['_norm'] = off_agg['player_name'].apply(_norm)
+        off_lookup = {row['_norm']: row for _, row in off_agg.iterrows()}
+
+        # Load career defensive stats and aggregate
+        defn = pd.read_csv(PLAYER_STATS_DEF_URL, low_memory=False)
+        if 'season_type' in defn.columns:
+            defn = defn[defn['season_type'] == 'REG']
+        defn_agg = defn.groupby('player_name', as_index=False).agg({
+            'def_sacks': 'sum',
+            'def_tackles': 'sum',
+            'def_interceptions': 'sum',
+            'def_pass_defended': 'sum',
+        }).fillna(0)
+        defn_agg['_norm'] = defn_agg['player_name'].apply(_norm)
+        # Composite defensive success score
+        defn_agg['def_success'] = (
+            defn_agg['def_tackles'] +
+            8 * defn_agg['def_sacks'] +
+            10 * defn_agg['def_interceptions'] +
+            3 * defn_agg['def_pass_defended']
+        )
+        def_lookup = {row['_norm']: row for _, row in defn_agg.iterrows()}
+
+        # Success metric per position group
+        def get_success(pos_group, norm_name):
+            rec = off_lookup.get(norm_name) or {}
+            drec = def_lookup.get(norm_name) or {}
+            if pos_group == 'WR': return float(rec.get('receiving_yards') or 0)
+            if pos_group == 'TE': return float(rec.get('receiving_yards') or 0)
+            if pos_group == 'RB': return float(rec.get('rushing_yards') or 0)
+            if pos_group == 'QB': return float(rec.get('passing_yards') or 0)
+            if pos_group in ('EDGE', 'DL', 'LB', 'DB'): return float(drec.get('def_success') or 0)
+            return None
+
+        COMBINE_METRICS = {
+            'forty': 'forty',
+            'vertical': 'vertical',
+            'broadJump': 'broad_jump',
+            'bench': 'bench',
+            'cone': 'cone',
+            'shuttle': 'shuttle',
+            'weight': 'wt',
+        }
+        LOWER_IS_BETTER = {'forty', 'cone', 'shuttle'}
+
+        result = {}
+
+        for pos_group in ['QB', 'RB', 'WR', 'TE', 'OL', 'DL', 'EDGE', 'LB', 'DB']:
+            pos_df = combine[combine['pos_group'] == pos_group].copy()
+            if len(pos_df) < 8:
+                continue
+
+            group_result = {}
+            for our_key, col in COMBINE_METRICS.items():
+                if col not in pos_df.columns:
+                    continue
+
+                rows = pos_df[['_norm', col]].dropna(subset=[col])
+                if len(rows) < 8:
+                    continue
+
+                # For OL: use draft pick (inverted) as success proxy — career stats not tracked
+                if pos_group == 'OL':
+                    ol_rows = pos_df[['_norm', col, 'draft_ovr']].dropna()
+                    if len(ol_rows) < 8:
+                        continue
+                    metric_vals = ol_rows[col].values
+                    success_vals = -ol_rows['draft_ovr'].values  # earlier pick = better
+                    n = len(ol_rows)
+                else:
+                    pairs = []
+                    for _, row in rows.iterrows():
+                        s = get_success(pos_group, row['_norm'])
+                        if s is not None and s > 0:  # exclude players with 0 career stats
+                            pairs.append((float(row[col]), s))
+                    if len(pairs) < 8:
+                        continue
+                    metric_vals = [p[0] for p in pairs]
+                    success_vals = [p[1] for p in pairs]
+                    n = len(pairs)
+
+                r = _spearman(metric_vals, success_vals)
+
+                # Flip sign for lower-is-better metrics so positive r = better
+                if our_key in LOWER_IS_BETTER:
+                    r = -r
+
+                importance = 'high' if abs(r) >= 0.25 else 'medium' if abs(r) >= 0.12 else 'low'
+                group_result[our_key] = {
+                    'importance': importance,
+                    'correlation': round(r, 3),
+                    'n': n,
+                }
+
+            if group_result:
+                result[pos_group] = group_result
+
+        logger.info(f'Stat importance: computed for {len(result)} position groups')
+        return result
+
+    except Exception as e:
+        logger.warning(f'Stat importance computation failed: {e}')
+        import traceback
+        logger.warning(traceback.format_exc())
+        return {}
 
 
 def _format_height(raw) -> str | None:

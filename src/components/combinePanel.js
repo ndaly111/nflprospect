@@ -24,33 +24,54 @@ export function renderCombinePanel(combineData, positionGroup) {
     { key: 'shuttle', label: 'Shuttle', unit: 's', historical: 'shuttle' },
   ]
 
+  // Build importance lookup from state
+  const importance = (getState().historical || {}).importance || {}
+  const importanceData = {}
+  const impPos = importance[positionGroup] || {}
+  for (const [key, data] of Object.entries(impPos)) {
+    importanceData[key] = data.importance  // 'high', 'medium', 'low'
+  }
+
   const items = metrics.map(m => {
     const val = combineData[m.key]
     const hasVal = val !== null && val !== undefined
 
-    let pctDisplay = ''
+    let pct = null
     if (hasVal && m.historical && posPercentiles[m.historical]?.length > 1) {
-      const sorted = posPercentiles[m.historical]
-      const pct = computePercentile(val, sorted, LOWER_IS_BETTER.has(m.key))
-      const barColor = pct >= 80 ? '#22c55e' : pct >= 50 ? '#3b82f6' : pct >= 25 ? '#f59e0b' : '#6b7280'
-      pctDisplay = `
-        <div class="mt-1.5">
-          <div class="flex justify-between text-[10px] text-gray-500 mb-0.5">
-            <span>${pct}th pct</span><span>vs ${year === 'all' ? "'20-'24" : year}</span>
-          </div>
-          <div class="h-1 bg-gray-700 rounded-full overflow-hidden">
-            <div class="h-full rounded-full" style="width:${pct}%;background:${barColor}"></div>
-          </div>
-        </div>`
+      pct = computePercentile(val, posPercentiles[m.historical], LOWER_IS_BETTER.has(m.key))
     }
 
+    const valColor = pct !== null
+      ? (pct >= 80 ? 'text-green-400' : pct >= 60 ? 'text-green-300/70' : pct >= 40 ? 'text-gray-200' : pct >= 20 ? 'text-amber-400/70' : 'text-red-400')
+      : 'text-gray-200'
+
+    const barColor = pct !== null
+      ? (pct >= 80 ? '#22c55e' : pct >= 50 ? '#3b82f6' : pct >= 25 ? '#f59e0b' : '#6b7280')
+      : null
+
+    const pctDisplay = pct !== null ? `
+      <div class="mt-1.5">
+        <div class="flex justify-between text-[10px] text-gray-500 mb-0.5">
+          <span>${pct}th pct</span><span>vs ${year === 'all' ? "'20-'24" : year}</span>
+        </div>
+        <div class="h-1 bg-gray-700 rounded-full overflow-hidden">
+          <div class="h-full rounded-full" style="width:${pct}%;background:${barColor}"></div>
+        </div>
+      </div>` : ''
+
     const display = hasVal
-      ? `<span class="text-lg font-bold text-white">${val}${m.unit}</span>`
+      ? `<span class="text-lg font-bold ${valColor}">${val}${m.unit}</span>`
       : `<span class="text-gray-600 text-lg">—</span>`
+
+    // importance indicator
+    const imp = importanceData[m.key]
+    const impDot = imp === 'high' ? '<span class="ml-1 text-[9px] font-semibold text-blue-400 uppercase tracking-wide">KEY</span>'
+      : imp === 'medium' ? '<span class="ml-1 text-[9px] text-gray-500 uppercase tracking-wide">MOD</span>'
+      : ''
 
     return `
       <div class="bg-gray-700/50 rounded-lg p-3">
-        <div class="text-xs text-gray-400 mb-1">${m.label}</div>
+        <div class="text-xs text-gray-400 mb-1 flex items-center">${m.label}${impDot}</div>
         ${display}
         ${pctDisplay}
       </div>`
