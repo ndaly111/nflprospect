@@ -42,9 +42,10 @@ export function renderProspectCard(prospect) {
             <div class="flex items-center gap-3 mt-1">
               <span class="text-2xl font-black text-blue-400">#${prospect.consensusRank}</span>
               <div>
-                <div class="text-xs text-gray-400">Rd ${prospect.projectedRound || '?'}</div>
+                <div class="text-xs text-gray-400">Rd ${prospect.projectedRound || '?'} · #${prospect.positionRank} ${prospect.positionGroup}</div>
                 <div class="${trend.cls} text-xs font-medium">${trend.arrow} (30d)</div>
               </div>
+              ${prospect.espnGrade ? `<div class="ml-auto text-right"><div class="text-xs text-gray-500">ESPN</div><div class="text-sm font-bold text-yellow-400">${prospect.espnGrade}</div></div>` : ''}
             </div>
           </div>
           <div class="text-gray-500 text-sm card-chevron" data-id="${prospect.id}">▼</div>

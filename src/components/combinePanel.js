@@ -1,7 +1,8 @@
 export function renderCombinePanel(combineData) {
-  if (!combineData || !combineData.participated) {
+  if (!combineData) {
     return '<p class="text-gray-500 text-sm">No combine data available</p>'
   }
+  const isStub = !combineData.participated
 
   const metrics = [
     { key: 'height', label: 'Height', unit: '' },
@@ -26,5 +27,7 @@ export function renderCombinePanel(combineData) {
       </div>`
   }).join('')
 
-  return `<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">${items}</div>`
+  return `
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">${items}</div>
+    ${isStub ? '<p class="text-xs text-gray-600 mt-2">Height/weight from ESPN. Full combine results pending.</p>' : ''}`
 }

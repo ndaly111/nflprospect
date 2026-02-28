@@ -71,6 +71,10 @@ def build_prospect_list(rankings_by_source: dict[str, list[dict]]) -> list[dict]
                 'position': p.get('position', ''),
                 'school': p.get('school', ''),
                 'rankBySource': {},
+                'espnGrade': None,
+                'espnId': None,
+                'heightInches': None,
+                'weightLbs': None,
             }
         master[norm]['rankBySource'][p['source']] = p['rank']
         # Prefer non-empty position/school
@@ -78,6 +82,15 @@ def build_prospect_list(rankings_by_source: dict[str, list[dict]]) -> list[dict]
             master[norm]['position'] = p['position']
         if p.get('school') and not master[norm]['school']:
             master[norm]['school'] = p['school']
+        # Store ESPN metadata
+        if p.get('grade') is not None:
+            master[norm]['espnGrade'] = p['grade']
+        if p.get('espn_id'):
+            master[norm]['espnId'] = p['espn_id']
+        if p.get('height') and not master[norm]['heightInches']:
+            master[norm]['heightInches'] = p['height']
+        if p.get('weight') and not master[norm]['weightLbs']:
+            master[norm]['weightLbs'] = p['weight']
 
     prospects = list(master.values())
 
@@ -144,6 +157,17 @@ def merge_with_existing(new_prospects: list[dict], existing: list[dict]) -> list
 
         # Count how many of this position group are ranked higher
         # (will be fixed in a second pass)
+        # Use ESPN height/weight as combine stub if no existing combine data
+        existing_combine = existing_rec.get('combineData') if existing_rec else None
+        if not existing_combine and (p.get('heightInches') or p.get('weightLbs')):
+            existing_combine = {
+                'height': p.get('heightInches'),
+                'weight': p.get('weightLbs'),
+                'forty': None, 'bench': None, 'vertical': None,
+                'broadJump': None, 'cone': None, 'shuttle': None,
+                'participated': False,
+            }
+
         merged = {
             'id': prospect_id,
             'name': p['name'],
@@ -156,10 +180,11 @@ def merge_with_existing(new_prospects: list[dict], existing: list[dict]) -> list
             'projectedRound': proj_round,
             'projectedPickRange': pick_range,
             'positionRank': 0,  # filled below
+            'espnGrade': p.get('espnGrade'),
             'rankBySource': p['rankBySource'],
             'rankHistory': rank_history,
             'collegeStats': existing_rec.get('collegeStats', {}) if existing_rec else {},
-            'combineData': existing_rec.get('combineData', None) if existing_rec else None,
+            'combineData': existing_combine,
         }
         result.append(merged)
 

@@ -1,9 +1,19 @@
 {
-  "lastUpdated": "2026-02-28T06:00:00Z",
-  "prospectCount": 2,
+  "lastUpdated": "2026-02-28T16:48:10Z",
+  "prospectCount": 201,
+  "draftYear": 2026,
   "sources": {
-    "walter_football": {"status": "stub", "count": 2},
-    "pro_football_network": {"status": "stub", "count": 2},
-    "espn": {"status": "stub", "count": 2}
+    "walter_football": {
+      "status": "ok",
+      "count": 2
+    },
+    "tankathon": {
+      "status": "ok",
+      "count": 182
+    },
+    "espn": {
+      "status": "ok",
+      "count": 150
+    }
   }
 }
