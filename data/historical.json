@@ -9834,5 +9834,44 @@
         285
       ]
     }
+  },
+  "importance": {
+    "OL": {
+      "forty": {
+        "importance": "high",
+        "correlation": 0.389,
+        "n": 212
+      },
+      "vertical": {
+        "importance": "high",
+        "correlation": 0.261,
+        "n": 194
+      },
+      "broadJump": {
+        "importance": "high",
+        "correlation": 0.307,
+        "n": 191
+      },
+      "bench": {
+        "importance": "low",
+        "correlation": 0.085,
+        "n": 197
+      },
+      "cone": {
+        "importance": "medium",
+        "correlation": 0.178,
+        "n": 171
+      },
+      "shuttle": {
+        "importance": "high",
+        "correlation": 0.281,
+        "n": 179
+      },
+      "weight": {
+        "importance": "low",
+        "correlation": 0.067,
+        "n": 246
+      }
+    }
   }
 }
