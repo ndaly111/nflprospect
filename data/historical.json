@@ -9836,6 +9836,149 @@
     }
   },
   "importance": {
+    "QB": {
+      "forty": {
+        "importance": "medium",
+        "correlation": 0.206,
+        "n": 51
+      },
+      "vertical": {
+        "importance": "low",
+        "correlation": -0.112,
+        "n": 52
+      },
+      "broadJump": {
+        "importance": "high",
+        "correlation": 0.259,
+        "n": 49
+      },
+      "cone": {
+        "importance": "medium",
+        "correlation": 0.245,
+        "n": 45
+      },
+      "shuttle": {
+        "importance": "low",
+        "correlation": -0.086,
+        "n": 45
+      },
+      "weight": {
+        "importance": "low",
+        "correlation": 0.0,
+        "n": 61
+      }
+    },
+    "RB": {
+      "forty": {
+        "importance": "low",
+        "correlation": 0.05,
+        "n": 111
+      },
+      "vertical": {
+        "importance": "low",
+        "correlation": 0.088,
+        "n": 107
+      },
+      "broadJump": {
+        "importance": "medium",
+        "correlation": 0.176,
+        "n": 101
+      },
+      "bench": {
+        "importance": "low",
+        "correlation": -0.052,
+        "n": 99
+      },
+      "cone": {
+        "importance": "medium",
+        "correlation": 0.247,
+        "n": 68
+      },
+      "shuttle": {
+        "importance": "high",
+        "correlation": 0.291,
+        "n": 73
+      },
+      "weight": {
+        "importance": "low",
+        "correlation": 0.109,
+        "n": 117
+      }
+    },
+    "WR": {
+      "forty": {
+        "importance": "medium",
+        "correlation": 0.131,
+        "n": 152
+      },
+      "vertical": {
+        "importance": "medium",
+        "correlation": 0.177,
+        "n": 150
+      },
+      "broadJump": {
+        "importance": "low",
+        "correlation": 0.033,
+        "n": 147
+      },
+      "bench": {
+        "importance": "low",
+        "correlation": 0.061,
+        "n": 122
+      },
+      "cone": {
+        "importance": "medium",
+        "correlation": 0.156,
+        "n": 110
+      },
+      "shuttle": {
+        "importance": "medium",
+        "correlation": 0.144,
+        "n": 112
+      },
+      "weight": {
+        "importance": "low",
+        "correlation": -0.017,
+        "n": 169
+      }
+    },
+    "TE": {
+      "forty": {
+        "importance": "high",
+        "correlation": 0.375,
+        "n": 67
+      },
+      "vertical": {
+        "importance": "high",
+        "correlation": 0.395,
+        "n": 61
+      },
+      "broadJump": {
+        "importance": "high",
+        "correlation": 0.383,
+        "n": 59
+      },
+      "bench": {
+        "importance": "low",
+        "correlation": 0.005,
+        "n": 62
+      },
+      "cone": {
+        "importance": "high",
+        "correlation": 0.322,
+        "n": 55
+      },
+      "shuttle": {
+        "importance": "high",
+        "correlation": 0.369,
+        "n": 56
+      },
+      "weight": {
+        "importance": "low",
+        "correlation": -0.08,
+        "n": 77
+      }
+    },
     "OL": {
       "forty": {
         "importance": "high",
@@ -9871,6 +10014,154 @@
         "importance": "low",
         "correlation": 0.067,
         "n": 246
+      }
+    },
+    "DL": {
+      "forty": {
+        "importance": "low",
+        "correlation": -0.004,
+        "n": 129
+      },
+      "vertical": {
+        "importance": "low",
+        "correlation": 0.088,
+        "n": 120
+      },
+      "broadJump": {
+        "importance": "low",
+        "correlation": -0.005,
+        "n": 116
+      },
+      "bench": {
+        "importance": "low",
+        "correlation": 0.02,
+        "n": 118
+      },
+      "cone": {
+        "importance": "medium",
+        "correlation": 0.129,
+        "n": 102
+      },
+      "shuttle": {
+        "importance": "low",
+        "correlation": 0.103,
+        "n": 104
+      },
+      "weight": {
+        "importance": "low",
+        "correlation": 0.004,
+        "n": 145
+      }
+    },
+    "EDGE": {
+      "forty": {
+        "importance": "low",
+        "correlation": 0.11,
+        "n": 137
+      },
+      "vertical": {
+        "importance": "medium",
+        "correlation": 0.15,
+        "n": 125
+      },
+      "broadJump": {
+        "importance": "medium",
+        "correlation": 0.16,
+        "n": 125
+      },
+      "bench": {
+        "importance": "low",
+        "correlation": -0.009,
+        "n": 115
+      },
+      "cone": {
+        "importance": "low",
+        "correlation": -0.005,
+        "n": 100
+      },
+      "shuttle": {
+        "importance": "low",
+        "correlation": 0.119,
+        "n": 101
+      },
+      "weight": {
+        "importance": "low",
+        "correlation": 0.052,
+        "n": 149
+      }
+    },
+    "LB": {
+      "forty": {
+        "importance": "medium",
+        "correlation": 0.226,
+        "n": 75
+      },
+      "vertical": {
+        "importance": "medium",
+        "correlation": 0.162,
+        "n": 78
+      },
+      "broadJump": {
+        "importance": "low",
+        "correlation": 0.024,
+        "n": 76
+      },
+      "bench": {
+        "importance": "low",
+        "correlation": 0.065,
+        "n": 67
+      },
+      "cone": {
+        "importance": "medium",
+        "correlation": 0.162,
+        "n": 52
+      },
+      "shuttle": {
+        "importance": "low",
+        "correlation": 0.07,
+        "n": 56
+      },
+      "weight": {
+        "importance": "medium",
+        "correlation": 0.19,
+        "n": 96
+      }
+    },
+    "DB": {
+      "forty": {
+        "importance": "low",
+        "correlation": 0.031,
+        "n": 234
+      },
+      "vertical": {
+        "importance": "low",
+        "correlation": 0.107,
+        "n": 215
+      },
+      "broadJump": {
+        "importance": "low",
+        "correlation": 0.022,
+        "n": 216
+      },
+      "bench": {
+        "importance": "low",
+        "correlation": 0.031,
+        "n": 205
+      },
+      "cone": {
+        "importance": "medium",
+        "correlation": 0.248,
+        "n": 148
+      },
+      "shuttle": {
+        "importance": "high",
+        "correlation": 0.286,
+        "n": 152
+      },
+      "weight": {
+        "importance": "low",
+        "correlation": 0.09,
+        "n": 263
       }
     }
   }

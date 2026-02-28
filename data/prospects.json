@@ -42,7 +42,7 @@
       "broadJump": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -1564,7 +1564,7 @@
       "broadJump": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -3594,7 +3594,7 @@
       "broadJump": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -3977,11 +3977,11 @@
       "weight": 209,
       "forty": null,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 35.0,
+      "broadJump": 124.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -4375,7 +4375,7 @@
       "broadJump": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -4471,11 +4471,11 @@
       "weight": 200,
       "forty": null,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 35.5,
+      "broadJump": 120.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -5482,11 +5482,11 @@
       "weight": 223,
       "forty": null,
       "bench": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 39.0,
+      "broadJump": 128.0,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -8191,11 +8191,11 @@
       "weight": 195,
       "forty": null,
       "vertical": null,
-      "broadJump": null,
+      "broadJump": 122.0,
       "bench": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -8350,7 +8350,7 @@
       "broadJump": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -9775,7 +9775,7 @@
       "bench": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -10004,7 +10004,7 @@
       "bench": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
@@ -10190,12 +10190,12 @@
       "height": "5'9\"",
       "weight": 204,
       "forty": null,
-      "vertical": null,
-      "broadJump": null,
+      "vertical": 34.5,
+      "broadJump": 115.0,
       "bench": null,
       "cone": null,
       "shuttle": null,
-      "participated": false
+      "participated": true
     }
   },
   {
