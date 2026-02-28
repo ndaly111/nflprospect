@@ -258,9 +258,33 @@ export function renderProspectCard(prospect, isExpanded = false) {
 
   // Big mover badge (>= 7 spots in 30 days)
   const moverBadge = (() => {
+    if (prospect.actualPick) return ''  // post-draft: replace with drafted badge
     if (Math.abs(trend.delta) < 7) return ''
     if (trend.delta > 0) return `<span class="text-[10px] font-bold text-emerald-400 bg-emerald-900/40 px-1.5 py-0.5 rounded-full">🔥 +${trend.delta}</span>`
     return `<span class="text-[10px] font-bold text-red-400 bg-red-900/40 px-1.5 py-0.5 rounded-full">↘ ${trend.delta}</span>`
+  })()
+
+  // Post-draft badge + actual pick line (replaces projected info once draft happens)
+  const draftedBadge = prospect.actualPick
+    ? '<span class="text-[10px] font-bold text-green-400 bg-green-900/40 px-1.5 py-0.5 rounded-full">✓ DRAFTED</span>'
+    : ''
+
+  const pickInfoLine = (() => {
+    if (prospect.actualPick) {
+      return [
+        '<div>',
+        `Round ${prospect.actualRound}`,
+        ` · <span class="font-bold text-green-400">#${prospect.actualPick} overall</span>`,
+        ` · <span class="team-filter-btn text-amber-400 font-semibold hover:text-amber-300 cursor-pointer transition-colors" data-team="${prospect.actualTeam}">${prospect.actualTeam}</span>`,
+        '</div>',
+      ].join('')
+    }
+    const posInfo = `#${prospect.positionRank}${prospect.positionTotal ? '<span class="text-gray-600">/' + prospect.positionTotal + '</span>' : ''} ${prospect.positionGroup}`
+    const rdInfo = `Rd ${prospect.projectedRound || '?'}${prospect.projectedPickRange ? ' <span class="text-gray-600">(#' + prospect.projectedPickRange[0] + '–' + prospect.projectedPickRange[1] + ')</span>' : ''}`
+    const teamInfo = prospect.projectedTeam
+      ? ` &nbsp;·&nbsp; <span class="team-filter-btn text-amber-400 font-semibold hover:text-amber-300 cursor-pointer transition-colors" data-team="${prospect.projectedTeam}">${prospect.projectedPick ? '#' + prospect.projectedPick + ' ' : ''}${prospect.projectedTeam}</span>`
+      : ''
+    return `<div>${rdInfo} &nbsp;·&nbsp; ${posInfo}${teamInfo}</div>`
   })()
 
   return `
@@ -276,13 +300,13 @@ export function renderProspectCard(prospect, isExpanded = false) {
               <span class="school-filter-btn text-xs text-gray-400 hover:text-blue-400 transition-colors cursor-pointer truncate"
                     data-school="${prospect.school}" title="Show all ${prospect.school} prospects">${prospect.school}</span>
               ${prospect.classYear ? `<span class="text-xs text-gray-600">${prospect.classYear}</span>` : ''}
-              ${moverBadge}
+              ${draftedBadge}${moverBadge}
             </div>
             <h2 class="text-base font-bold text-white leading-snug mb-1">${prospect.name}</h2>
             <div class="flex items-center gap-2 flex-wrap">
               <span class="text-2xl font-black ${rankColor} leading-none">#${prospect.consensusRank}</span>
               <div class="text-xs text-gray-400 leading-snug">
-                <div>Rd ${prospect.projectedRound || '?'}${prospect.projectedPickRange ? ` <span class="text-gray-600">(#${prospect.projectedPickRange[0]}–${prospect.projectedPickRange[1]})</span>` : ''} &nbsp;·&nbsp; #${prospect.positionRank}${prospect.positionTotal ? `<span class="text-gray-600">/${prospect.positionTotal}</span>` : ''} ${prospect.positionGroup}${prospect.projectedTeam ? ` &nbsp;·&nbsp; <span class="team-filter-btn text-amber-400 font-semibold hover:text-amber-300 cursor-pointer transition-colors" data-team="${prospect.projectedTeam}">${prospect.projectedPick ? `#${prospect.projectedPick} ` : ''}${prospect.projectedTeam}</span>` : ''}</div>
+                ${pickInfoLine}
                 <div class="flex items-center gap-2">
                   <span class="${trend.cls} font-medium">${trend.arrow}</span>
                   ${hw ? `<span class="text-gray-600">·</span><span class="text-gray-500">${hw}</span>` : ''}

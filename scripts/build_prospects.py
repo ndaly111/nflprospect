@@ -27,6 +27,10 @@ DATA_DIR = Path(__file__).parent.parent / 'data'
 DATA_DIR.mkdir(exist_ok=True)
 
 DRAFT_YEAR = 2026
+# NFL Draft ends ~April 25; after that date nflverse will have the actual picks.
+# Update DRAFT_YEAR each season — everything else is automatic.
+DRAFT_DATE = datetime(DRAFT_YEAR, 4, 25, tzinfo=timezone.utc)
+NFLVERSE_PICKS_URL = 'https://github.com/nflverse/nflverse-data/releases/download/draft_picks/draft_picks.csv'
 
 # Team name normalization — map short/variant names → full NFL team name
 TEAM_NAME_MAP = {
@@ -348,6 +352,44 @@ def merge_combine_data(prospects: list[dict], combine_by_name: dict[str, dict]) 
     return prospects
 
 
+def merge_actual_picks(prospects: list[dict]) -> list[dict]:
+    """After the draft, pull actual picks from nflverse and merge into prospects."""
+    import pandas as pd
+    try:
+        picks_df = pd.read_csv(NFLVERSE_PICKS_URL)
+        picks = picks_df[picks_df['season'] == DRAFT_YEAR]
+        if picks.empty:
+            logger.info(f'{DRAFT_YEAR} draft picks not yet in nflverse — skipping actual pick merge')
+            return prospects
+
+        pick_by_name: dict[str, dict] = {}
+        for _, row in picks.iterrows():
+            name = str(row.get('pfr_player_name', '') or '').strip()
+            if name:
+                pick_by_name[name.lower()] = {
+                    'actualPick':  int(row['pick']),
+                    'actualRound': int(row['round']),
+                    'actualTeam':  normalize_team_name(str(row.get('team', '') or '').strip()),
+                }
+
+        candidates = [{'name': k} for k in pick_by_name]
+        merged = 0
+        for p in prospects:
+            data = pick_by_name.get(p['name'].lower())
+            if not data and candidates:
+                match = fuzzy_match_player(p['name'], candidates, threshold=88)
+                if match:
+                    data = pick_by_name.get(match['name'].lower())
+            if data:
+                p.update(data)
+                merged += 1
+
+        logger.info(f'Merged actual {DRAFT_YEAR} draft picks for {merged} prospects')
+    except Exception as e:
+        logger.warning(f'Actual pick merge failed: {e}')
+    return prospects
+
+
 def build_meta(source_results: dict, prospect_count: int) -> dict:
     sources = {}
     for src, players in source_results.items():
@@ -418,7 +460,12 @@ def main():
     except Exception as e:
         logger.warning(f'Combine fetch failed: {e}')
 
-    # 6. Fetch mock draft (team projections)
+    # 6. Merge actual draft picks once the draft has happened
+    if datetime.now(timezone.utc) >= DRAFT_DATE:
+        logger.info('Draft has occurred — merging actual picks from nflverse...')
+        prospects = merge_actual_picks(prospects)
+
+    # 7. Fetch mock draft (team projections — only relevant pre-draft)
     logger.info('Fetching mock draft picks...')
     try:
         mock_picks = fetch_mock_draft()

@@ -44,7 +44,12 @@ function renderListView(filtered, watchlist, expandedCardId, isHistorical) {
 
     const trend = trendArrow(p.rankHistory, 30)
     const gradeColor = p.espnGrade >= 90 ? 'text-green-400' : p.espnGrade >= 85 ? 'text-yellow-400' : 'text-gray-500'
-    const teamShort = p.projectedTeam ? p.projectedTeam.split(' ').pop() : '—'
+    // Post-draft: prefer actual team/round over projected
+    const displayTeam = p.actualTeam || p.projectedTeam
+    const displayPick = p.actualPick || p.projectedPick
+    const displayRound = p.actualRound || p.projectedRound
+    const teamShort = displayTeam ? displayTeam.split(' ').pop() : '—'
+    const teamClass = p.actualTeam ? 'text-green-400/90' : p.projectedTeam ? 'text-amber-400/80' : 'text-gray-700'
     return [
       `<tr class="list-row border-t border-gray-700/50 hover:bg-gray-700/30 cursor-pointer transition-colors ${rowBg}" data-id="${p.id}">`,
       `<td class="py-2.5 pl-3 pr-2 text-sm font-bold ${rankColor} w-10">#${p.consensusRank}</td>`,
@@ -56,8 +61,8 @@ function renderListView(filtered, watchlist, expandedCardId, isHistorical) {
       `<span class="text-gray-300">${p.position}</span>`,
       `<span class="text-gray-600 ml-1">${p.positionGroup !== p.position ? p.positionGroup : ''}</span>`,
       `</td>`,
-      `<td class="py-2.5 pr-3 text-xs text-gray-400 whitespace-nowrap hidden sm:table-cell">Rd ${p.projectedRound || '?'}</td>`,
-      `<td class="py-2.5 pr-3 text-xs whitespace-nowrap hidden lg:table-cell ${p.projectedTeam ? 'text-amber-400/80' : 'text-gray-700'}">${p.projectedPick ? '#' + p.projectedPick + ' ' : ''}${teamShort}</td>`,
+      `<td class="py-2.5 pr-3 text-xs text-gray-400 whitespace-nowrap hidden sm:table-cell">Rd ${displayRound || '?'}</td>`,
+      `<td class="py-2.5 pr-3 text-xs whitespace-nowrap hidden lg:table-cell ${teamClass}">${displayPick ? '#' + displayPick + ' ' : ''}${teamShort}</td>`,
       `<td class="py-2.5 pr-3 text-xs whitespace-nowrap hidden md:table-cell ${trend.cls}">${trend.arrow}</td>`,
       `<td class="py-2.5 pr-3 text-xs ${gradeColor} whitespace-nowrap hidden sm:table-cell">${p.espnGrade || '—'}</td>`,
       `<td class="py-2.5 pr-3 text-center">`,

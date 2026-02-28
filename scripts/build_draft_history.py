@@ -7,6 +7,7 @@ Writes data/draft_history.json as {year_str: [prospect, ...]}
 import json
 import logging
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import pandas as pd
@@ -20,7 +21,16 @@ logger = logging.getLogger(__name__)
 DRAFT_PICKS_URL = 'https://github.com/nflverse/nflverse-data/releases/download/draft_picks/draft_picks.csv'
 COMBINE_URL     = 'https://github.com/nflverse/nflverse-data/releases/download/combine/combine.csv'
 
-YEARS = list(range(2020, 2026))  # 2020–2025 (most recent completed draft)
+# NFL Draft is held in late April; include the current year once the draft has passed.
+# This auto-advances each year without manual code changes.
+_now = datetime.now(timezone.utc)
+_current_year = _now.year
+_draft_month_day = (_now.month, _now.day)
+_draft_passed = _draft_month_day >= (4, 25)  # draft ends ~April 25 each year
+
+# History starts 2020; include this year only after the draft
+_last_completed = _current_year if _draft_passed else _current_year - 1
+YEARS = list(range(2020, _last_completed + 1))
 
 POS_GROUP_MAP = {
     'QB': 'QB',
