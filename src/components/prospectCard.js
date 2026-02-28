@@ -67,6 +67,10 @@ export function renderProspectCard(prospect, isExpanded = false) {
   }).join('<span class="text-gray-700 mx-1">·</span>')
 
   const gradeColor = prospect.espnGrade >= 90 ? 'text-green-400' : prospect.espnGrade >= 85 ? 'text-yellow-400' : 'text-gray-400'
+  const rankColor = prospect.consensusRank <= 5 ? 'text-yellow-400'
+    : prospect.consensusRank <= 32 ? 'text-blue-400'
+    : prospect.consensusRank <= 64 ? 'text-green-400'
+    : 'text-gray-400'
   const headshotUrl = prospect.espnId
     ? `https://a.espncdn.com/i/headshots/college-football/players/full/${prospect.espnId}.png`
     : null
@@ -117,7 +121,7 @@ export function renderProspectCard(prospect, isExpanded = false) {
             </div>
             <h2 class="text-base font-bold text-white leading-snug mb-1">${prospect.name}</h2>
             <div class="flex items-center gap-2 flex-wrap">
-              <span class="text-2xl font-black text-blue-400 leading-none">#${prospect.consensusRank}</span>
+              <span class="text-2xl font-black ${rankColor} leading-none">#${prospect.consensusRank}</span>
               <div class="text-xs text-gray-400 leading-snug">
                 <div>Rd ${prospect.projectedRound || '?'} &nbsp;·&nbsp; #${prospect.positionRank} ${prospect.positionGroup}${prospect.projectedTeam ? ` &nbsp;·&nbsp; <span class="text-amber-400 font-semibold">${prospect.projectedTeam}</span>` : ''}</div>
                 <div class="${trend.cls} font-medium">${trend.arrow} (30d)</div>
@@ -234,6 +238,16 @@ function expandCardDOM(id) {
   const prospect = getState().prospects.find(p => p.id === id)
   if (prospect) {
     setTimeout(() => renderRankingChart(`chart-${id}`, prospect.rankHistory), 60)
+  }
+
+  // Scroll expanded card into view on mobile (only if partially off-screen)
+  if (card) {
+    setTimeout(() => {
+      const rect = card.getBoundingClientRect()
+      if (rect.bottom > window.innerHeight || rect.top < 60) {
+        card.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+      }
+    }, 80)
   }
 }
 

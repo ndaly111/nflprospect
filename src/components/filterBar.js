@@ -83,6 +83,9 @@ export function renderFilterBar() {
           value="${filters.search}"
           class="w-full bg-gray-800 border border-gray-700 text-gray-200 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-blue-500 placeholder-gray-600">
       </div>
+      ${(filters.positionGroup !== 'ALL' || filters.round !== 'ALL' || filters.search || filters.trend !== 'ALL')
+        ? `<button id="clear-filters-btn" class="text-xs text-gray-500 hover:text-red-400 transition-colors whitespace-nowrap">✕ Clear</button>`
+        : ''}
     </div>`
 
   wireFilterEvents()
@@ -127,6 +130,18 @@ function wireFilterEvents() {
   if (histYearEl) {
     histYearEl.addEventListener('change', () => {
       setState({ historicalYear: histYearEl.value })
+    })
+  }
+
+  // Clear all filters
+  const clearBtn = document.getElementById('clear-filters-btn')
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      setState({
+        filters: { positionGroup: 'ALL', round: 'ALL', search: '', trend: 'ALL' },
+        sort: 'consensusRank',
+        expandedCardId: null,
+      })
     })
   }
 
