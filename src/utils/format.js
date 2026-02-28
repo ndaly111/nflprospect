@@ -20,12 +20,15 @@ export function trendArrow(rankHistory, days = 30) {
   const now = sorted[sorted.length - 1]
   const cutoff = new Date(now.date)
   cutoff.setDate(cutoff.getDate() - days)
-  const old = sorted.filter(r => new Date(r.date) <= cutoff).pop()
-  if (!old) return { arrow: '—', cls: 'trend-stable', delta: 0 }
+  // Fall back to oldest available entry if no point is 30+ days old
+  const old = sorted.filter(r => new Date(r.date) <= cutoff).pop() || sorted[0]
+  const diffDays = Math.round((new Date(now.date) - new Date(old.date)) / 86400000)
+  if (diffDays === 0) return { arrow: '—', cls: 'trend-stable', delta: 0 }
+  const label = diffDays >= 28 ? '30d' : `${diffDays}d`
   const delta = old.rank - now.rank // positive = risen (rank number went down)
-  if (delta > 0) return { arrow: `↑ +${delta}`, cls: 'trend-up', delta }
-  if (delta < 0) return { arrow: `↓ ${delta}`, cls: 'trend-down', delta }
-  return { arrow: '—', cls: 'trend-stable', delta: 0 }
+  if (delta > 0) return { arrow: `↑ +${delta} (${label})`, cls: 'trend-up', delta }
+  if (delta < 0) return { arrow: `↓ ${delta} (${label})`, cls: 'trend-down', delta }
+  return { arrow: `— (${label})`, cls: 'trend-stable', delta: 0 }
 }
 
 export function formatStat(val, decimals = 0) {

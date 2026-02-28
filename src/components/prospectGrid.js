@@ -1,5 +1,6 @@
 import { applyFilters } from '../utils/filters.js'
 import { renderProspectCard, wireCardEvents } from './prospectCard.js'
+import { renderRankingChart } from './rankingChart.js'
 import { getState, setState } from '../state.js'
 import { trendArrow } from '../utils/format.js'
 
@@ -19,6 +20,7 @@ function renderListView(filtered, watchlist, expandedCardId) {
       : 'text-gray-400'
     const isStarred = watchSet.has(p.id)
     const gradeColor = p.espnGrade >= 90 ? 'text-green-400' : p.espnGrade >= 85 ? 'text-yellow-400' : 'text-gray-500'
+    const teamShort = p.projectedTeam ? p.projectedTeam.split(' ').pop() : '—'
     return `
       <tr class="list-row border-t border-gray-700/50 hover:bg-gray-700/30 cursor-pointer transition-colors ${p.id === expandedCardId ? 'bg-gray-700/40' : ''}"
           data-id="${p.id}">
@@ -32,6 +34,7 @@ function renderListView(filtered, watchlist, expandedCardId) {
           <span class="text-gray-600 ml-1">${p.positionGroup !== p.position ? p.positionGroup : ''}</span>
         </td>
         <td class="py-2.5 pr-3 text-xs text-gray-400 whitespace-nowrap hidden sm:table-cell">Rd ${p.projectedRound || '?'}</td>
+        <td class="py-2.5 pr-3 text-xs whitespace-nowrap hidden lg:table-cell ${p.projectedTeam ? 'text-amber-400/80' : 'text-gray-700'}">${p.projectedPick ? `#${p.projectedPick} ` : ''}${teamShort}</td>
         <td class="py-2.5 pr-3 text-xs whitespace-nowrap hidden md:table-cell ${trend.cls}">${trend.arrow}</td>
         <td class="py-2.5 pr-3 text-xs ${gradeColor} whitespace-nowrap hidden sm:table-cell">${p.espnGrade || '—'}</td>
         <td class="py-2.5 pr-3 text-center">
@@ -50,6 +53,7 @@ function renderListView(filtered, watchlist, expandedCardId) {
             <th class="pb-2 pr-3 text-left font-medium">Player</th>
             <th class="pb-2 pr-3 text-left font-medium">Pos</th>
             <th class="pb-2 pr-3 text-left font-medium hidden sm:table-cell">Round</th>
+            <th class="pb-2 pr-3 text-left font-medium hidden lg:table-cell">Team</th>
             <th class="pb-2 pr-3 text-left font-medium hidden md:table-cell">Trend</th>
             <th class="pb-2 pr-3 text-left font-medium hidden sm:table-cell">Grade</th>
             <th class="pb-2 pr-3 text-center font-medium">★</th>
@@ -170,9 +174,7 @@ export function renderProspectGrid() {
   if (expandedCardId && visible.some(p => p.id === expandedCardId)) {
     const expandedProspect = prospects.find(p => p.id === expandedCardId)
     if (expandedProspect) {
-      import('./rankingChart.js').then(({ renderRankingChart }) => {
-        setTimeout(() => renderRankingChart(`chart-${expandedCardId}`, expandedProspect.rankHistory), 60)
-      })
+      setTimeout(() => renderRankingChart(`chart-${expandedCardId}`, expandedProspect.rankHistory), 60)
     }
   }
 }

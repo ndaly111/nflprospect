@@ -205,9 +205,9 @@ export function renderProspectCard(prospect, isExpanded = false) {
             <div class="flex items-center gap-2 flex-wrap">
               <span class="text-2xl font-black ${rankColor} leading-none">#${prospect.consensusRank}</span>
               <div class="text-xs text-gray-400 leading-snug">
-                <div>Rd ${prospect.projectedRound || '?'}${prospect.projectedPickRange ? ` <span class="text-gray-600">(#${prospect.projectedPickRange[0]}–${prospect.projectedPickRange[1]})</span>` : ''} &nbsp;·&nbsp; #${prospect.positionRank} ${prospect.positionGroup}${prospect.projectedTeam ? ` &nbsp;·&nbsp; <span class="team-filter-btn text-amber-400 font-semibold hover:text-amber-300 cursor-pointer transition-colors" data-team="${prospect.projectedTeam}">${prospect.projectedPick ? `#${prospect.projectedPick} ` : ''}${prospect.projectedTeam}</span>` : ''}</div>
+                <div>Rd ${prospect.projectedRound || '?'}${prospect.projectedPickRange ? ` <span class="text-gray-600">(#${prospect.projectedPickRange[0]}–${prospect.projectedPickRange[1]})</span>` : ''} &nbsp;·&nbsp; #${prospect.positionRank}${prospect.positionTotal ? `<span class="text-gray-600">/${prospect.positionTotal}</span>` : ''} ${prospect.positionGroup}${prospect.projectedTeam ? ` &nbsp;·&nbsp; <span class="team-filter-btn text-amber-400 font-semibold hover:text-amber-300 cursor-pointer transition-colors" data-team="${prospect.projectedTeam}">${prospect.projectedPick ? `#${prospect.projectedPick} ` : ''}${prospect.projectedTeam}</span>` : ''}</div>
                 <div class="flex items-center gap-2">
-                  <span class="${trend.cls} font-medium">${trend.arrow} (30d)</span>
+                  <span class="${trend.cls} font-medium">${trend.arrow}</span>
                   ${hw ? `<span class="text-gray-600">·</span><span class="text-gray-500">${hw}</span>` : ''}
                 </div>
               </div>

@@ -18,7 +18,7 @@ export function renderRankingChart(containerId, rankHistory) {
     return
   }
 
-  if (rankHistory.length < 3) {
+  if (rankHistory.length < 2) {
     canvas.parentElement.innerHTML = '<p class="text-gray-600 text-xs text-center py-6">History chart available after more daily refreshes</p>'
     return
   }

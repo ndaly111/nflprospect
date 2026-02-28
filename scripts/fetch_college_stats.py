@@ -131,7 +131,7 @@ def fetch_player_stats(prospects: list[dict], years: list[int] = None) -> dict[s
     Returns {name: {year_str: {stats...}}}
     """
     if years is None:
-        years = [2024, 2023, 2022]
+        years = [2025, 2024, 2023, 2022]
 
     result: dict[str, dict] = {}
 

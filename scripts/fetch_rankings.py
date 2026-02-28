@@ -162,10 +162,10 @@ def fetch_espn() -> list[dict]:
                 elif attr_name == 'rank':
                     pos_rank = int(attr.get('value', 0))
 
-            # Projected team from ESPN
+            # Projected team from ESPN — prefer full displayName over abbreviation
             team_ref = d.get('proTeam') or d.get('projectedTeam')
             if isinstance(team_ref, dict):
-                espn_team = team_ref.get('abbreviation') or team_ref.get('displayName')
+                espn_team = team_ref.get('displayName') or team_ref.get('abbreviation')
 
             # Height/weight available inline — use for combine stub
             height_in = d.get('height')  # inches
@@ -337,26 +337,62 @@ def fetch_cbs_sports() -> list[dict]:
                 'weight': weight_val,
                 'class_year': class_txt or None,
                 'cbs_team': None,
+                'cbs_stats': {},
             }
 
-        # Look-ahead: check the immediately following row for team pick text
-        # Format: "Mike Renner's Mock Draft: Browns Select Player Name ..."
+        # Stat column patterns embedded in the text blob (after "College Stats")
+        # e.g. "2025 College StatsGPPYDSPCTTDSINT16353572416"
+        STAT_PATTERNS = {
+            'GPPYDSPCTTDSINT':   ['games', 'passingYards', 'completionPct', 'passingTDs', 'interceptions'],
+            'GPTKLSACKSINT':     ['games', 'tackles', 'sacks', 'interceptions'],
+            'GPRECYDSAVGTDS':    ['games', 'receptions', 'receivingYards', 'avgRec', 'receivingTDs'],
+            'GPATTYDSAVGTDS':    ['games', 'rushingAttempts', 'rushingYards', 'avgRush', 'rushingTDs'],
+        }
+
+        def _parse_stat_row(blurb_text: str, val_cells: list) -> dict:
+            """Extract CBS stats from the blurb text + value cells."""
+            # Normalize: remove spaces, hyphens, and periods before matching
+            normalized = blurb_text.upper().replace(' ', '').replace('-', '').replace('.', '')
+            for pattern, keys in STAT_PATTERNS.items():
+                if pattern in normalized:
+                    stats = {}
+                    for i, key in enumerate(keys):
+                        if i < len(val_cells):
+                            raw = val_cells[i].strip().rstrip('%').replace(',', '')
+                            if raw and raw not in ('—', '-', ''):
+                                try:
+                                    stats[key] = float(raw)
+                                except ValueError:
+                                    pass
+                    return stats
+            return {}
+
         for idx in player_rows:
             for offset in (1, 2):
                 next_idx = idx + offset
                 if next_idx >= len(all_rows):
                     continue
-                blurb = all_rows[next_idx].get_text(separator=' ', strip=True)
+                next_row = all_rows[next_idx]
+                blurb = next_row.get_text(separator=' ', strip=True)
+
+                # Stats are in Row N+1 only
+                if offset == 1:
+                    val_cells = [c.get_text(strip=True) for c in next_row.select('td')]
+                    stats = _parse_stat_row(blurb, val_cells[1:] if val_cells else [])
+                    if stats:
+                        player_rows[idx]['cbs_stats'] = stats
+
+                # Team pick detection: Row N+1 or N+2
                 m = re.search(r'Mock Draft:\s+([A-Z][a-zA-Z ]+?)\s+Select', blurb)
                 if m:
                     team = m.group(1).strip()
-                    # Validate it looks like a team name (2-4 words max)
                     if len(team.split()) <= 4 and len(team) < 30:
                         player_rows[idx]['cbs_team'] = team
                     break
 
         prospects = list(player_rows.values())
-        logger.info(f'CBS Sports: {len(prospects)} prospects ({sum(1 for p in prospects if p["cbs_team"])} with team picks)')
+        n_stats = sum(1 for p in prospects if p['cbs_stats'])
+        logger.info(f'CBS Sports: {len(prospects)} prospects ({sum(1 for p in prospects if p["cbs_team"])} with team picks, {n_stats} with stats)')
         return prospects
     except Exception as e:
         logger.warning(f'CBS Sports failed: {e}')

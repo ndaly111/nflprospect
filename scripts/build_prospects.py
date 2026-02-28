@@ -114,6 +114,7 @@ def build_prospect_list(rankings_by_source: dict[str, list[dict]]) -> list[dict]
                 'weightLbs': None,
                 'tankCombine': {},
                 'tankStats': {},
+                'cbsStats': {},
             }
         master[norm]['rankBySource'][p['source']] = p['rank']
         # Prefer non-empty position/school
@@ -147,6 +148,9 @@ def build_prospect_list(rankings_by_source: dict[str, list[dict]]) -> list[dict]
             master[norm]['tankCombine'].update(p['tankCombine'])
         if p.get('tankStats'):
             master[norm]['tankStats'].update(p['tankStats'])
+        # CBS Sports stats (single-season snapshot)
+        if p.get('cbs_stats'):
+            master[norm]['cbsStats'].update(p['cbs_stats'])
 
     prospects = list(master.values())
 
@@ -276,17 +280,20 @@ def merge_with_existing(new_prospects: list[dict], existing: list[dict]) -> list
             'rankBySource': p['rankBySource'],
             'rankHistory': rank_history,
             'collegeStats': existing_rec.get('collegeStats', {}) if existing_rec else {},
+            'cbsStats': p.get('cbsStats', {}),
             'tankStats': p.get('tankStats', {}),
             'combineData': existing_combine,
         }
         result.append(merged)
 
-    # Fill position ranks
+    # Fill position ranks then totals
     pos_counters: dict[str, int] = {}
     for p in result:
         pg = p['positionGroup']
         pos_counters[pg] = pos_counters.get(pg, 0) + 1
         p['positionRank'] = pos_counters[pg]
+    for p in result:
+        p['positionTotal'] = pos_counters[p['positionGroup']]
 
     return result
 
@@ -303,10 +310,23 @@ def merge_college_stats(prospects: list[dict], stats_by_name: dict[str, dict]) -
         if match:
             existing = p.get('collegeStats', {})
             for yr, yr_stats in match.items():
-                # Overwrite if new data is non-empty; never overwrite non-empty with empty
-                if yr_stats and (yr not in existing or not existing[yr]):
-                    existing[yr] = yr_stats
+                if yr_stats:
+                    # CFBD data takes precedence; merge with existing (e.g. CBS) preserving extras
+                    existing[yr] = {**existing.get(yr, {}), **yr_stats}
             p['collegeStats'] = existing
+    return prospects
+
+
+def merge_cbs_stats(prospects: list[dict]) -> list[dict]:
+    """Add CBS Sports 2025 season stats when CFBD doesn't have that year."""
+    year = str(DRAFT_YEAR - 1)  # "2025"
+    for p in prospects:
+        if not p.get('cbsStats'):
+            continue
+        cs = p.get('collegeStats') or {}
+        if year not in cs:
+            cs[year] = p['cbsStats']
+            p['collegeStats'] = cs
     return prospects
 
 
@@ -387,6 +407,8 @@ def main():
         prospects = merge_college_stats(prospects, stats)
     except Exception as e:
         logger.warning(f'College stats failed: {e}')
+    # Fill gaps with CBS Sports stats (single-season fallback)
+    prospects = merge_cbs_stats(prospects)
 
     # 5. Fetch combine data
     logger.info('Fetching combine data...')

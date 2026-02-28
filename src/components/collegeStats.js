@@ -1,11 +1,11 @@
 import { formatStat } from '../utils/format.js'
 
-// CFBD-sourced stats by year
+// CFBD-sourced stats by year (also handles CBS Sports fallback keys)
 const CFBD_COLUMNS = {
-  QB: ['games','completions','attempts','passingYards','passingTDs','interceptions','rushingYards','rushingTDs'],
-  RB: ['games','rushingAttempts','rushingYards','rushingTDs','receptions','receivingYards'],
-  WR: ['games','receptions','receivingYards','receivingTDs'],
-  TE: ['games','receptions','receivingYards','receivingTDs'],
+  QB: ['games','completions','attempts','passingYards','completionPct','passingTDs','interceptions','rushingYards','rushingTDs'],
+  RB: ['games','rushingAttempts','rushingYards','avgRush','rushingTDs','receptions','receivingYards'],
+  WR: ['games','receptions','receivingYards','avgRec','receivingTDs'],
+  TE: ['games','receptions','receivingYards','avgRec','receivingTDs'],
   OL: ['games'],
   DL: ['games','tackles','sacks','tfls','interceptions'],
   EDGE: ['games','tackles','sacks','tfls','pbus'],
@@ -15,10 +15,14 @@ const CFBD_COLUMNS = {
 
 const CFBD_LABELS = {
   games:'G', completions:'CMP', attempts:'ATT', passingYards:'PASS YDS', passingTDs:'TD',
-  interceptions:'INT', rushingYards:'RUSH YDS', rushingTDs:'RUSH TD',
-  rushingAttempts:'ATT', receptions:'REC', receivingYards:'REC YDS', receivingTDs:'TD',
+  completionPct:'COMP%', interceptions:'INT', rushingYards:'RUSH YDS', rushingTDs:'RUSH TD',
+  rushingAttempts:'ATT', avgRush:'YPC', receptions:'REC', receivingYards:'REC YDS',
+  avgRec:'YPR', receivingTDs:'TD',
   tackles:'TKL', sacks:'SACK', tfls:'TFL', pbus:'PBU',
 }
+
+// Columns that need 1 decimal place
+const DECIMAL_COLS = new Set(['completionPct', 'avgRush', 'avgRec'])
 
 // Tankathon stat label → display label
 const TANK_LABELS = {
@@ -54,7 +58,18 @@ export function renderCollegeStats(prospect, classPct = {}) {
       .map(l => `<th class="text-left px-2 py-1.5 text-xs font-semibold text-gray-400 uppercase tracking-wider whitespace-nowrap">${l}</th>`)
       .join('')
     const rows = years.map(year => {
-      const s = prospect.collegeStats[year]
+      const raw = prospect.collegeStats[year]
+      // Compute derived stats for display when not directly available
+      const s = { ...raw }
+      if (!s.completionPct && s.completions && s.attempts) {
+        s.completionPct = (s.completions / s.attempts) * 100
+      }
+      if (!s.avgRush && s.rushingYards && s.rushingAttempts) {
+        s.avgRush = s.rushingYards / s.rushingAttempts
+      }
+      if (!s.avgRec && s.receivingYards && s.receptions) {
+        s.avgRec = s.receivingYards / s.receptions
+      }
       const cells = cols.map(c => {
         const val = s[c]
         const sorted = classPct[c]
@@ -65,7 +80,7 @@ export function renderCollegeStats(prospect, classPct = {}) {
           const pct = Math.round((below / sorted.length) * 100)
           colorClass = pct >= 80 ? 'text-green-400' : pct >= 60 ? 'text-green-300/70' : pct >= 40 ? 'text-gray-200' : pct >= 20 ? 'text-amber-400/70' : 'text-red-400'
         }
-        return `<td class="px-2 py-1.5 text-sm ${colorClass} whitespace-nowrap">${formatStat(val)}</td>`
+        return `<td class="px-2 py-1.5 text-sm ${colorClass} whitespace-nowrap">${formatStat(val, DECIMAL_COLS.has(c) ? 1 : 0)}</td>`
       }).join('')
       return `<tr class="border-t border-gray-700/50 hover:bg-gray-700/30">
         <td class="px-2 py-1.5 text-sm font-semibold text-blue-400">${year}</td>${cells}</tr>`
