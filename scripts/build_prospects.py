@@ -28,6 +28,39 @@ DATA_DIR.mkdir(exist_ok=True)
 
 DRAFT_YEAR = 2026
 
+# Team name normalization — map short/variant names → full NFL team name
+TEAM_NAME_MAP = {
+    'Bears': 'Chicago Bears', 'Bengals': 'Cincinnati Bengals',
+    'Bills': 'Buffalo Bills', 'Broncos': 'Denver Broncos',
+    'Browns': 'Cleveland Browns', 'Buccaneers': 'Tampa Bay Buccaneers',
+    'Cardinals': 'Arizona Cardinals', 'Chargers': 'Los Angeles Chargers',
+    'Chiefs': 'Kansas City Chiefs', 'Colts': 'Indianapolis Colts',
+    'Cowboys': 'Dallas Cowboys', 'Dolphins': 'Miami Dolphins',
+    'Eagles': 'Philadelphia Eagles', 'Falcons': 'Atlanta Falcons',
+    'Giants': 'New York Giants', 'Jaguars': 'Jacksonville Jaguars',
+    'Jets': 'New York Jets', 'Lions': 'Detroit Lions',
+    'Packers': 'Green Bay Packers', 'Panthers': 'Carolina Panthers',
+    'Patriots': 'New England Patriots', 'Raiders': 'Las Vegas Raiders',
+    'Rams': 'Los Angeles Rams', 'Ravens': 'Baltimore Ravens',
+    'Saints': 'New Orleans Saints', 'Seahawks': 'Seattle Seahawks',
+    '49ers': 'San Francisco 49ers', 'Steelers': 'Pittsburgh Steelers',
+    'Texans': 'Houston Texans', 'Titans': 'Tennessee Titans',
+    'Vikings': 'Minnesota Vikings', 'Commanders': 'Washington Commanders',
+}
+
+def normalize_team_name(name: str) -> str | None:
+    if not name:
+        return None
+    # Already a full name?
+    if any(name.startswith(city) for city in ['Arizona', 'Atlanta', 'Baltimore', 'Buffalo',
+        'Carolina', 'Chicago', 'Cincinnati', 'Cleveland', 'Dallas', 'Denver', 'Detroit',
+        'Green Bay', 'Houston', 'Indianapolis', 'Jacksonville', 'Kansas City',
+        'Las Vegas', 'Los Angeles', 'Miami', 'Minnesota', 'New England', 'New Orleans',
+        'New York', 'Philadelphia', 'Pittsburgh', 'San Francisco', 'Seattle',
+        'Tampa Bay', 'Tennessee', 'Washington']):
+        return name
+    return TEAM_NAME_MAP.get(name, name)
+
 # Position group normalization
 POSITION_GROUP_MAP = {
     'QB': 'QB', 'RB': 'RB', 'FB': 'RB',
@@ -95,11 +128,11 @@ def build_prospect_list(rankings_by_source: dict[str, list[dict]]) -> list[dict]
             master[norm]['espnId'] = p['espn_id']
         # Projected team: prefer Walter Football (most explicit pick), then CBS, then ESPN
         if p.get('wf_team') and not master[norm]['projectedTeam']:
-            master[norm]['projectedTeam'] = p['wf_team']
+            master[norm]['projectedTeam'] = normalize_team_name(p['wf_team'])
         elif p.get('cbs_team') and not master[norm]['projectedTeam']:
-            master[norm]['projectedTeam'] = p['cbs_team']
+            master[norm]['projectedTeam'] = normalize_team_name(p['cbs_team'])
         elif p.get('espn_team') and not master[norm]['projectedTeam']:
-            master[norm]['projectedTeam'] = p['espn_team']
+            master[norm]['projectedTeam'] = normalize_team_name(p['espn_team'])
 
         # Class year (from CBS Sports)
         if p.get('class_year') and not master[norm].get('classYear'):
@@ -376,7 +409,7 @@ def main():
                     p['projectedPick'] = pick_data['pick']
                     # Only override team if none set by a more authoritative source
                     if not p.get('projectedTeam'):
-                        p['projectedTeam'] = pick_data['team']
+                        p['projectedTeam'] = normalize_team_name(pick_data['team'])
             teams_added = sum(1 for p in prospects if p.get('projectedTeam'))
             logger.info(f'Mock draft: {teams_added} prospects with team projection')
     except Exception as e:
