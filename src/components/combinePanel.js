@@ -51,9 +51,7 @@ export function renderCombinePanel(combineData, positionGroup) {
 
     const pctDisplay = pct !== null ? `
       <div class="mt-1.5">
-        <div class="flex justify-between text-[10px] text-gray-500 mb-0.5">
-          <span>${pct}th pct</span><span>vs ${year === 'all' ? "'20-'24" : year}</span>
-        </div>
+        <div class="text-[10px] text-gray-500 mb-0.5">${pct}th percentile</div>
         <div class="h-1 bg-gray-700 rounded-full overflow-hidden">
           <div class="h-full rounded-full" style="width:${pct}%;background:${barColor}"></div>
         </div>
@@ -82,7 +80,15 @@ export function renderCombinePanel(combineData, positionGroup) {
     ? '<p class="text-xs text-gray-600 mt-2">Height/weight from ESPN. Combine drills from Tankathon. Full official results pending.</p>'
     : ''
 
+  const yearLabel = year === 'all' ? "All Draft Classes ('20–'24)" : `${year} Draft Class`
+  const hasPercentiles = Object.keys(posPercentiles).some(k => posPercentiles[k]?.length > 0)
+
   return `
+    ${hasPercentiles ? `
+    <div class="flex items-center gap-2 mb-3 px-1">
+      <span class="text-[11px] text-gray-500 uppercase tracking-wide">Comparing vs</span>
+      <span class="text-[11px] font-semibold text-blue-400 bg-blue-900/30 px-2 py-0.5 rounded-full">${yearLabel}</span>
+    </div>` : ''}
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">${items}</div>
     ${note}`
 }

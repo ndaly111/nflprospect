@@ -2,7 +2,7 @@ import { trendArrow } from '../utils/format.js'
 import { renderRankingChart, destroyChart } from './rankingChart.js'
 import { renderCollegeStats } from './collegeStats.js'
 import { renderCombinePanel } from './combinePanel.js'
-import { getState, setState } from '../state.js'
+import { getState, setState, subscribe } from '../state.js'
 
 // Cache for in-class college stat percentiles
 let _statPctCache = null
@@ -231,6 +231,14 @@ function handleTabClick(tab) {
   if (tabName === 'ranking') {
     const prospect = getState().prospects.find(p => p.id === cardId)
     if (prospect) setTimeout(() => renderRankingChart(`chart-${cardId}`, prospect.rankHistory), 60)
+  }
+
+  if (tabName === 'combine') {
+    const prospect = getState().prospects.find(p => p.id === cardId)
+    const combineEl = document.querySelector(`.tab-content[data-tab="combine"][data-card="${cardId}"]`)
+    if (prospect && combineEl) {
+      combineEl.innerHTML = renderCombinePanel(prospect.combineData, prospect.positionGroup)
+    }
   }
 }
 
