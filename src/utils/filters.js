@@ -27,13 +27,14 @@ export function applyFilters(prospects, filters, sort, watchlist = []) {
     result = result.filter(p => watchSet.has(p.id))
   }
 
-  // Search filter
+  // Search filter — matches name, school, position, projected team
   if (filters.search.trim()) {
     const q = filters.search.trim().toLowerCase()
     result = result.filter(p =>
       p.name.toLowerCase().includes(q) ||
       p.school.toLowerCase().includes(q) ||
-      p.position.toLowerCase().includes(q)
+      p.position.toLowerCase().includes(q) ||
+      (p.projectedTeam || '').toLowerCase().includes(q)
     )
   }
 

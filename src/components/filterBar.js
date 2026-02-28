@@ -85,7 +85,7 @@ export function renderFilterBar() {
       </div>
       ${yearOptions}
       <div class="flex-1 min-w-[160px]">
-        <input id="search-input" type="text" placeholder="Search name, school, position…"
+        <input id="search-input" type="text" placeholder="Search name, school, team, position…"
           value="${filters.search}"
           class="w-full bg-gray-800 border border-gray-700 text-gray-200 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-blue-500 placeholder-gray-600">
       </div>
