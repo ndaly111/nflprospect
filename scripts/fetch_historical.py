@@ -164,28 +164,32 @@ def compute_stat_importance() -> dict:
         combine['_norm'] = combine['player_name'].apply(_norm)
 
         # Load career offensive stats and aggregate
+        # player_stats uses truncated 'player_name' (e.g. "T.Brady") but
+        # 'player_display_name' has full names that match combine.csv
         off = pd.read_csv(PLAYER_STATS_OFF_URL, low_memory=False)
         if 'season_type' in off.columns:
             off = off[off['season_type'] == 'REG']
-        off_agg = off.groupby('player_name', as_index=False).agg({
+        name_col_off = 'player_display_name' if 'player_display_name' in off.columns else 'player_name'
+        off_agg = off.groupby(name_col_off, as_index=False).agg({
             'receiving_yards': 'sum',
             'rushing_yards': 'sum',
             'passing_yards': 'sum',
         })
-        off_agg['_norm'] = off_agg['player_name'].apply(_norm)
-        off_lookup = {row['_norm']: row for _, row in off_agg.iterrows()}
+        off_agg['_norm'] = off_agg[name_col_off].apply(_norm)
+        off_lookup = {row['_norm']: row.to_dict() for _, row in off_agg.iterrows()}
 
         # Load career defensive stats and aggregate
         defn = pd.read_csv(PLAYER_STATS_DEF_URL, low_memory=False)
         if 'season_type' in defn.columns:
             defn = defn[defn['season_type'] == 'REG']
-        defn_agg = defn.groupby('player_name', as_index=False).agg({
+        name_col_def = 'player_display_name' if 'player_display_name' in defn.columns else 'player_name'
+        defn_agg = defn.groupby(name_col_def, as_index=False).agg({
             'def_sacks': 'sum',
             'def_tackles': 'sum',
             'def_interceptions': 'sum',
             'def_pass_defended': 'sum',
         }).fillna(0)
-        defn_agg['_norm'] = defn_agg['player_name'].apply(_norm)
+        defn_agg['_norm'] = defn_agg[name_col_def].apply(_norm)
         # Composite defensive success score
         defn_agg['def_success'] = (
             defn_agg['def_tackles'] +
@@ -193,7 +197,7 @@ def compute_stat_importance() -> dict:
             10 * defn_agg['def_interceptions'] +
             3 * defn_agg['def_pass_defended']
         )
-        def_lookup = {row['_norm']: row for _, row in defn_agg.iterrows()}
+        def_lookup = {row['_norm']: row.to_dict() for _, row in defn_agg.iterrows()}
 
         # Success metric per position group
         def get_success(pos_group, norm_name):
