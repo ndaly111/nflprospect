@@ -76,8 +76,8 @@ def build_draft_history() -> dict[str, list[dict]]:
     logger.info('Fetching nflverse combine.csv ...')
     combine_df = pd.read_csv(COMBINE_URL)
 
-    # Normalise column names
-    yr_col = 'draft_year' if 'draft_year' in combine_df.columns else 'year'
+    # Use 'season' for combine (draft_year is NaN for current-year class before the draft)
+    yr_col = 'season'
     picks_yr_col = 'season'  # draft_picks uses 'season'
 
     result: dict[str, list[dict]] = {}
