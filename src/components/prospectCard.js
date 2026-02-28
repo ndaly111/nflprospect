@@ -196,7 +196,8 @@ export function renderProspectCard(prospect, isExpanded = false) {
           <div class="flex-1 min-w-0">
             <div class="flex items-center gap-2 flex-wrap mb-1">
               <span class="text-xs font-semibold px-2 py-0.5 rounded-full ${posColor}">${prospect.position}</span>
-              <span class="text-xs text-gray-400 truncate">${prospect.school}</span>
+              <span class="school-filter-btn text-xs text-gray-400 hover:text-blue-400 transition-colors cursor-pointer truncate"
+                    data-school="${prospect.school}" title="Show all ${prospect.school} prospects">${prospect.school}</span>
               ${prospect.classYear ? `<span class="text-xs text-gray-600">${prospect.classYear}</span>` : ''}
               ${moverBadge}
             </div>
@@ -264,6 +265,18 @@ export function renderProspectCard(prospect, isExpanded = false) {
 
 export function wireCardEvents(container) {
   container.addEventListener('click', e => {
+    // School filter shortcut
+    const schoolBtn = e.target.closest('.school-filter-btn')
+    if (schoolBtn) {
+      e.stopPropagation()
+      const { filters } = getState()
+      const school = schoolBtn.dataset.school
+      // Toggle: clicking same school again clears the filter
+      const newSearch = filters.search === school ? '' : school
+      setState({ filters: { ...filters, search: newSearch }, expandedCardId: null })
+      return
+    }
+
     // Star / watchlist button
     const starBtn = e.target.closest('.star-btn')
     if (starBtn) {

@@ -25,7 +25,7 @@ function renderListView(filtered, watchlist, expandedCardId) {
         <td class="py-2.5 pl-3 pr-2 text-sm font-bold ${rankColor} w-10">#${p.consensusRank}</td>
         <td class="py-2.5 pr-3 min-w-0">
           <div class="font-semibold text-white text-sm truncate">${p.name}</div>
-          <div class="text-xs text-gray-500 truncate">${p.school}</div>
+          <div class="school-filter-btn text-xs text-gray-500 hover:text-blue-400 transition-colors cursor-pointer truncate" data-school="${p.school}">${p.school}</div>
         </td>
         <td class="py-2.5 pr-3 text-xs whitespace-nowrap">
           <span class="text-gray-300">${p.position}</span>
@@ -119,6 +119,14 @@ export function renderProspectGrid() {
         const { watchlist: wl } = getState()
         const next = wl.includes(id) ? wl.filter(x => x !== id) : [...wl, id]
         setState({ watchlist: next })
+      })
+    })
+    container.querySelectorAll('.school-filter-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation()
+        const { filters } = getState()
+        const school = btn.dataset.school
+        setState({ filters: { ...filters, search: filters.search === school ? '' : school }, expandedCardId: null })
       })
     })
     container.querySelectorAll('.list-row').forEach(row => {

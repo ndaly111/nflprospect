@@ -83,9 +83,10 @@ export function renderCombinePanel(combineData, positionGroup, playerComps = [])
   }).join('')
 
   const participated = combineData.participated
-  const note = !participated
-    ? '<p class="text-xs text-gray-600 mt-2">Height/weight from ESPN. Combine drills from Tankathon. Full official results pending.</p>'
-    : ''
+  const hasAnyDrills = ['forty', 'vertical', 'broadJump', 'bench', 'cone', 'shuttle'].some(k => combineData[k] != null)
+  const note = !hasAnyDrills
+    ? '<p class="text-xs text-gray-600 mt-2">Height/weight only. Official 2026 Combine drill times will update automatically when nflverse publishes results.</p>'
+    : (!participated ? '<p class="text-xs text-gray-600 mt-2">Times from pre-combine workouts. Official results may update.</p>' : '')
 
   const yearLabel = year === 'all' ? "All Draft Classes ('20–'24)" : `${year} Draft Class`
   const hasPercentiles = Object.keys(posPercentiles).some(k => posPercentiles[k]?.length > 0)
