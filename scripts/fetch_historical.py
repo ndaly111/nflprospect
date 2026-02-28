@@ -86,20 +86,38 @@ def fetch_historical_by_position(years: int = YEARS_BACK) -> dict[str, list[dict
         return {}
 
 
-def compute_percentiles(historical: dict[str, list[dict]]) -> dict[str, dict[str, list]]:
+def compute_percentiles(historical: dict[str, list[dict]]) -> dict:
     """
-    For each position group, compute sorted lists of each metric.
-    Used by frontend to show where a prospect ranks historically.
-    Returns: {positionGroup: {metric: sorted_values}}
+    Compute sorted metric arrays for combine percentile comparison.
+    Returns nested dict: {bucket: {positionGroup: {metric: sorted_values}}}
+    where bucket is 'all' or a specific year string ('2024', '2023', etc.)
     """
-    result = {}
     metrics = ['forty', 'vertical', 'broadJump', 'bench', 'cone', 'shuttle', 'weight']
 
-    for group, players in historical.items():
-        result[group] = {}
-        for metric in metrics:
-            vals = sorted(v[metric] for v in players if v.get(metric) is not None)
-            result[group][metric] = vals
+    def _compute(players):
+        out = {}
+        for group, grp_players in players.items():
+            out[group] = {}
+            for metric in metrics:
+                vals = sorted(v[metric] for v in grp_players if v.get(metric) is not None)
+                out[group][metric] = vals
+        return out
+
+    # Combined (all years)
+    result = {'all': _compute(historical)}
+
+    # Per-year buckets
+    all_years = set()
+    for players in historical.values():
+        for p in players:
+            if p.get('year'):
+                all_years.add(p['year'])
+
+    for year in sorted(all_years):
+        year_players: dict[str, list] = {}
+        for group, players in historical.items():
+            year_players[group] = [p for p in players if p.get('year') == year]
+        result[str(year)] = _compute(year_players)
 
     return result
 

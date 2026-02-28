@@ -8,8 +8,10 @@ export function renderCombinePanel(combineData, positionGroup) {
     return '<p class="text-gray-500 text-sm">No combine data available</p>'
   }
 
-  const historical = getState().historical || {}
-  const posPercentiles = historical[positionGroup] || {}
+  const { historical, historicalYear } = getState()
+  const year = historicalYear || 'all'
+  const bucket = (historical || {})[year] || (historical || {})['all'] || {}
+  const posPercentiles = bucket[positionGroup] || {}
 
   const metrics = [
     { key: 'height', label: 'Height', unit: '', historical: false },
@@ -34,7 +36,7 @@ export function renderCombinePanel(combineData, positionGroup) {
       pctDisplay = `
         <div class="mt-1.5">
           <div class="flex justify-between text-[10px] text-gray-500 mb-0.5">
-            <span>${pct}th pct</span><span>vs '20-'24</span>
+            <span>${pct}th pct</span><span>vs ${year === 'all' ? "'20-'24" : year}</span>
           </div>
           <div class="h-1 bg-gray-700 rounded-full overflow-hidden">
             <div class="h-full rounded-full" style="width:${pct}%;background:${barColor}"></div>

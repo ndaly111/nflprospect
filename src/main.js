@@ -19,7 +19,7 @@ function renderApp() {
           <div class="flex items-center gap-3">
             <span class="text-2xl">🏈</span>
             <div>
-              <h1 class="text-lg font-bold text-white leading-tight">NFL Draft Tracker 2026</h1>
+              <h1 class="text-lg font-bold text-white leading-tight">NFL Draft Tracker</h1>
               <p class="text-xs text-gray-400" id="header-meta">Loading…</p>
             </div>
           </div>
@@ -140,9 +140,9 @@ subscribe(state => {
   }
 }, ['meta', 'prospects', 'loading'])
 
-// Filter bar re-renders on filter/sort state changes
+// Filter bar re-renders on filter/sort/historical changes
 subscribe(() => {
   renderFilterBar()
-}, ['filters', 'sort'])
+}, ['filters', 'sort', 'historical', 'historicalYear'])
 
 loadData()

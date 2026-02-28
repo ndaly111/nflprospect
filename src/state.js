@@ -3,6 +3,7 @@ const state = {
   news: [],
   meta: {},
   historical: {},
+  historicalYear: 'all',
   filters: {
     positionGroup: 'ALL',
     round: 'ALL',

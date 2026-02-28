@@ -13,7 +13,25 @@ export function renderFilterBar() {
   const container = document.getElementById('filter-bar')
   if (!container) return
 
-  const { filters, sort } = getState()
+  const { filters, sort, historical, historicalYear } = getState()
+
+  // Build year options from available historical buckets
+  const histYears = Object.keys(historical || {})
+    .filter(k => k !== 'all' && /^\d{4}$/.test(k))
+    .sort()
+    .reverse()
+
+  const yearOptions = histYears.length > 0
+    ? `<div class="flex items-center gap-2">
+        <label class="text-xs text-gray-400 whitespace-nowrap">Compare vs:</label>
+        <select id="hist-year-select" class="bg-gray-800 border border-gray-700 text-gray-200 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-blue-500">
+          <option value="all" ${historicalYear === 'all' ? 'selected' : ''}>All Classes</option>
+          ${histYears.map(y => `
+            <option value="${y}" ${historicalYear === y ? 'selected' : ''}>${y} Draft</option>`
+          ).join('')}
+        </select>
+      </div>`
+    : ''
 
   container.innerHTML = `
     <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -43,6 +61,7 @@ export function renderFilterBar() {
           ).join('')}
         </select>
       </div>
+      ${yearOptions}
       <div class="flex-1 min-w-[160px]">
         <input id="search-input" type="text" placeholder="Search name, school, position…"
           value="${filters.search}"
@@ -77,6 +96,14 @@ function wireFilterEvents() {
   if (sortEl) {
     sortEl.addEventListener('change', () => {
       setState({ sort: sortEl.value, expandedCardId: null })
+    })
+  }
+
+  // Historical year comparison
+  const histYearEl = document.getElementById('hist-year-select')
+  if (histYearEl) {
+    histYearEl.addEventListener('change', () => {
+      setState({ historicalYear: histYearEl.value })
     })
   }
 
