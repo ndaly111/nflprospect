@@ -78,7 +78,6 @@ function wireFilterEvents() {
     btn.addEventListener('click', () => {
       const { filters } = getState()
       setState({ filters: { ...filters, positionGroup: btn.dataset.pos }, expandedCardId: null })
-      renderFilterBar()
     })
   })
 
