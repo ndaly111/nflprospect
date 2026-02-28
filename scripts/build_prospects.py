@@ -256,15 +256,19 @@ def merge_college_stats(prospects: list[dict], stats_by_name: dict[str, dict]) -
 
 def merge_combine_data(prospects: list[dict], combine_by_name: dict[str, dict]) -> list[dict]:
     for p in prospects:
-        if p.get('combineData'):
-            continue
         match = combine_by_name.get(p['name'])
         if not match:
             matched = fuzzy_match_player(p['name'], [{'name': k} for k in combine_by_name.keys()])
             if matched:
                 match = combine_by_name.get(matched['name'])
         if match:
-            p['combineData'] = match
+            # Merge: official combine values override estimates; existing non-null values preserved
+            existing = dict(p.get('combineData') or {})
+            for k in ['height', 'weight', 'forty', 'bench', 'vertical', 'broadJump', 'cone', 'shuttle']:
+                if match.get(k) is not None:
+                    existing[k] = match[k]
+            existing['participated'] = True
+            p['combineData'] = existing
     return prospects
 
 

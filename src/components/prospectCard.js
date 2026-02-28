@@ -80,6 +80,45 @@ const SOURCE_LABELS = {
   walter_football: 'Walter Football',
 }
 
+function renderSourceRankings(prospect) {
+  const entries = Object.entries(prospect.rankBySource || {})
+  if (entries.length === 0) return ''
+
+  // Find the max rank across all prospects to scale bars
+  const allRanks = getState().prospects.flatMap(p => Object.values(p.rankBySource || {}))
+  const maxRank = allRanks.length ? Math.max(...allRanks) : 300
+
+  const rows = entries.map(([src, rank]) => {
+    const label = SOURCE_LABELS[src] || src.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+    const barPct = Math.round((1 - (rank - 1) / maxRank) * 100)
+    const barColor = rank <= 10 ? '#f59e0b' : rank <= 32 ? '#3b82f6' : rank <= 64 ? '#22c55e' : '#6b7280'
+    return `
+      <div class="flex items-center gap-2">
+        <span class="text-[11px] text-gray-500 w-28 flex-shrink-0 truncate">${label}</span>
+        <div class="flex-1 h-1.5 bg-gray-700 rounded-full overflow-hidden">
+          <div class="h-full rounded-full" style="width:${barPct}%;background:${barColor}"></div>
+        </div>
+        <span class="text-[11px] font-bold text-gray-300 w-8 text-right flex-shrink-0">#${rank}</span>
+      </div>`
+  }).join('')
+
+  const consensus = prospect.consensusRank
+  const spread = entries.length >= 2
+    ? Math.max(...entries.map(([,r]) => r)) - Math.min(...entries.map(([,r]) => r))
+    : 0
+  const spreadTxt = spread === 0 ? 'All sources agree' : spread <= 5 ? `${spread}-pick spread` : `${spread}-pick spread`
+  const spreadColor = spread === 0 ? 'text-green-400' : spread <= 5 ? 'text-blue-400' : 'text-amber-400'
+
+  return `
+    <div class="mb-1">
+      <div class="flex justify-between items-baseline mb-2">
+        <span class="text-[11px] text-gray-500 uppercase tracking-wider">Source Rankings</span>
+        <span class="text-[11px] ${spreadColor}">${spreadTxt}</span>
+      </div>
+      <div class="flex flex-col gap-1.5">${rows}</div>
+    </div>`
+}
+
 export function renderProspectCard(prospect, isExpanded = false) {
   const statPct = buildCollegeStatPct(getState().prospects)
   const trend = trendArrow(prospect.rankHistory, 30)
@@ -100,6 +139,15 @@ export function renderProspectCard(prospect, isExpanded = false) {
   const headshotUrl = prospect.espnId
     ? `https://a.espncdn.com/i/headshots/college-football/players/full/${prospect.espnId}.png`
     : null
+
+  // Height/weight compact display
+  const hw = (() => {
+    const c = prospect.combineData || {}
+    const parts = []
+    if (c.height) parts.push(c.height.replace('-', "'") + '"')
+    if (c.weight) parts.push(`${c.weight} lbs`)
+    return parts.length ? parts.join(' · ') : ''
+  })()
 
   // Range bar: show spread across sources
   const sourceRanks = Object.values(prospect.rankBySource || {})
@@ -150,7 +198,10 @@ export function renderProspectCard(prospect, isExpanded = false) {
               <span class="text-2xl font-black ${rankColor} leading-none">#${prospect.consensusRank}</span>
               <div class="text-xs text-gray-400 leading-snug">
                 <div>Rd ${prospect.projectedRound || '?'}${prospect.projectedPickRange ? ` <span class="text-gray-600">(#${prospect.projectedPickRange[0]}–${prospect.projectedPickRange[1]})</span>` : ''} &nbsp;·&nbsp; #${prospect.positionRank} ${prospect.positionGroup}${prospect.projectedTeam ? ` &nbsp;·&nbsp; <span class="text-amber-400 font-semibold">${prospect.projectedTeam}</span>` : ''}</div>
-                <div class="${trend.cls} font-medium">${trend.arrow} (30d)</div>
+                <div class="flex items-center gap-2">
+                  <span class="${trend.cls} font-medium">${trend.arrow} (30d)</span>
+                  ${hw ? `<span class="text-gray-600">·</span><span class="text-gray-500">${hw}</span>` : ''}
+                </div>
               </div>
               ${prospect.espnGrade ? `
                 <div class="ml-auto flex flex-col items-end">
@@ -185,7 +236,8 @@ export function renderProspectCard(prospect, isExpanded = false) {
         </div>
         <div class="p-4">
           <div class="tab-content" data-tab="ranking" data-card="${prospect.id}">
-            <div style="height:180px; position:relative;">
+            ${renderSourceRankings(prospect)}
+            <div style="height:160px; position:relative;" class="mt-3">
               <canvas id="${chartId}"></canvas>
             </div>
           </div>

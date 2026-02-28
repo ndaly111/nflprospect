@@ -89,12 +89,19 @@ export function renderCollegeStats(prospect, classPct = {}) {
         <div class="grid grid-cols-3 sm:grid-cols-4 gap-2">${items}</div>
       </div>`
   } else if (hasTankStats && hasCFBD) {
-    // Show tankStats as a compact row under CFBD
+    // Show tankStats as a labeled supplemental row
     const items = Object.entries(prospect.tankStats).map(([lbl, val]) => {
       const displayLbl = TANK_LABELS[lbl] || lbl
-      return `<span class="text-xs text-gray-400">${displayLbl}: <span class="text-gray-200">${val}</span></span>`
-    }).join('<span class="text-gray-700 mx-1">·</span>')
-    html += `<div class="text-xs mt-1 flex flex-wrap gap-1">${items}</div>`
+      return `<div class="bg-gray-700/50 rounded-lg p-2.5 text-center">
+        <div class="text-[10px] text-gray-400 mb-0.5">${displayLbl}</div>
+        <div class="text-sm font-bold text-gray-200">${val}</div>
+      </div>`
+    }).join('')
+    html += `
+      <div class="mt-2 pt-2 border-t border-gray-700/40">
+        <p class="text-[11px] text-gray-500 mb-2">2024 Season (Tankathon)</p>
+        <div class="grid grid-cols-3 sm:grid-cols-5 gap-1.5">${items}</div>
+      </div>`
   }
 
   return html

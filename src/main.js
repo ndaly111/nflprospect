@@ -4,6 +4,7 @@ import { renderFilterBar } from './components/filterBar.js'
 import { renderProspectGrid, renderSkeleton } from './components/prospectGrid.js'
 import { renderNewsPanel } from './components/newsPanel.js'
 import { renderCombinePanel } from './components/combinePanel.js'
+import { renderCombineSpotlight } from './components/combineSpotlight.js'
 import { timeAgo } from './utils/format.js'
 
 const BASE = import.meta.env.BASE_URL
@@ -37,6 +38,14 @@ function renderApp() {
         <div id="result-count" class="text-xs text-gray-500 mb-3"></div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="prospect-grid"></div>
       </main>
+
+      <section class="max-w-7xl mx-auto px-4 pb-6" id="combine-spotlight-section" style="display:none">
+        <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+          Combine Spotlight
+          <span class="text-xs font-normal text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">2026 NFL Combine</span>
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3" id="combine-spotlight"></div>
+      </section>
 
       <section class="max-w-7xl mx-auto px-4 pb-10">
         <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
@@ -159,6 +168,19 @@ subscribe(state => {
     renderNewsPanel(state.news)
   }
 }, ['news', 'loading'])
+
+// Combine spotlight renders once when prospects load
+subscribe(state => {
+  if (!state.loading) {
+    renderCombineSpotlight()
+    const section = document.getElementById('combine-spotlight-section')
+    const hasAnyDrills = state.prospects.some(p => {
+      const c = p.combineData || {}
+      return c.forty || c.vertical || c.broadJump || c.bench || c.cone
+    })
+    if (section) section.style.display = hasAnyDrills ? '' : 'none'
+  }
+}, ['prospects', 'loading'])
 
 // Header updates when meta/prospects change
 subscribe(state => {

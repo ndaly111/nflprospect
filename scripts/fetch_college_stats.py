@@ -104,6 +104,27 @@ def _pivot_stats(rows: list, category: str) -> dict:
     return dict(out)
 
 
+def _name_only_index(by_category: dict) -> dict:
+    """
+    Build a fallback index keyed by player name only (ignoring team).
+    CFBD uses full team names ('Indiana Hoosiers') but our prospects store
+    short names ('Indiana'), so exact (name, school) lookups often miss.
+    """
+    out = {}
+    for cat, cat_dict in by_category.items():
+        name_dict: dict = {}
+        for (pname, _team), stats in cat_dict.items():
+            if pname not in name_dict:
+                name_dict[pname] = stats
+            else:
+                # Merge duplicate-name rows (rare but possible)
+                for k, v in stats.items():
+                    if k not in name_dict[pname]:
+                        name_dict[pname][k] = v
+        out[cat] = name_dict
+    return out
+
+
 def fetch_player_stats(prospects: list[dict], years: list[int] = None) -> dict[str, dict]:
     """
     Fetch college stats for a list of prospects.
@@ -112,30 +133,28 @@ def fetch_player_stats(prospects: list[dict], years: list[int] = None) -> dict[s
     if years is None:
         years = [2024, 2023, 2022]
 
-    # Build prospect lookup: (name, school) → prospect
-    prospect_lookup = {}
-    for p in prospects:
-        key = (p.get('name', ''), p.get('school', ''))
-        prospect_lookup[key] = p
-
     result: dict[str, dict] = {}
 
     for year in years:
         logger.info(f'Fetching CFBD stats for {year}...')
 
-        # Fetch all four categories at once
         rows = _get('/stats/player/season', {'year': year})
         if not rows:
             continue
 
-        # Debug: log sample row structure on first iteration
-        if rows and year == years[0]:
-            sample = rows[0]
-            logger.info(f'CFBD sample row keys: {list(sample.keys())}')
-            logger.info(f'CFBD sample row: {sample}')
-
-        # Pivot by category
+        # Pivot by category: {(player, team): stats}
         by_category = {cat: _pivot_stats(rows, cat) for cat in STAT_MAP}
+        # Fallback index by player name only (handles school name mismatches)
+        by_name = _name_only_index(by_category)
+
+        # Build GP lookup by player name (ignore team to avoid school-name mismatch)
+        gp_by_name: dict[str, int] = {}
+        for row in rows:
+            if row.get('statType') == 'GP':
+                try:
+                    gp_by_name[row['player']] = int(float(row['stat']))
+                except Exception:
+                    pass
 
         for p in prospects:
             name = p.get('name', '')
@@ -145,33 +164,34 @@ def fetch_player_stats(prospects: list[dict], years: list[int] = None) -> dict[s
             if not category:
                 continue
 
-            player_key = (name, school)
+            # Try exact (name, school) first; fall back to name-only
             cat_stats = by_category.get(category, {})
-            year_stats = cat_stats.get(player_key, {})
+            year_stats = dict(cat_stats.get((name, school), {}))
+            if not year_stats:
+                year_stats = dict(by_name.get(category, {}).get(name, {}))
+
+            if not year_stats:
+                continue
 
             # For QBs also grab rushing stats
-            if pos_group == 'QB' and year_stats:
-                rush_stats = by_category.get('rushing', {}).get(player_key, {})
-                if rush_stats:
-                    year_stats['rushingYards'] = rush_stats.get('rushingYards')
-                    year_stats['rushingTDs'] = rush_stats.get('rushingTDs')
+            if pos_group == 'QB':
+                rush = by_category.get('rushing', {}).get((name, school)) \
+                       or by_name.get('rushing', {}).get(name, {})
+                if rush:
+                    year_stats.setdefault('rushingYards', rush.get('rushingYards'))
+                    year_stats.setdefault('rushingTDs', rush.get('rushingTDs'))
 
             # For RBs also grab receiving
-            if pos_group == 'RB' and year_stats:
-                recv_stats = by_category.get('receiving', {}).get(player_key, {})
-                if recv_stats:
-                    year_stats['receptions'] = recv_stats.get('receptions')
-                    year_stats['receivingYards'] = recv_stats.get('receivingYards')
+            if pos_group == 'RB':
+                recv = by_category.get('receiving', {}).get((name, school)) \
+                       or by_name.get('receiving', {}).get(name, {})
+                if recv:
+                    year_stats.setdefault('receptions', recv.get('receptions'))
+                    year_stats.setdefault('receivingYards', recv.get('receivingYards'))
 
-            # Count games from any category that has the data
-            if year_stats and 'games' not in year_stats:
-                for row in rows:
-                    if row.get('player') == name and row.get('team') == school and row.get('statType') == 'GP':
-                        try:
-                            year_stats['games'] = int(float(row['stat']))
-                        except Exception:
-                            pass
-                        break
+            # Games played
+            if 'games' not in year_stats and name in gp_by_name:
+                year_stats['games'] = gp_by_name[name]
 
             filtered = {k: v for k, v in year_stats.items() if v is not None}
             if filtered:

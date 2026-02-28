@@ -14,7 +14,12 @@ export function renderRankingChart(containerId, rankHistory) {
   }
 
   if (!rankHistory || rankHistory.length === 0) {
-    canvas.parentElement.innerHTML = '<p class="text-gray-500 text-sm text-center py-4">No ranking history available</p>'
+    canvas.parentElement.innerHTML = '<p class="text-gray-500 text-sm text-center py-8">No ranking history yet</p>'
+    return
+  }
+
+  if (rankHistory.length < 3) {
+    canvas.parentElement.innerHTML = '<p class="text-gray-600 text-xs text-center py-6">History chart available after more daily refreshes</p>'
     return
   }
 
