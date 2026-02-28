@@ -486,6 +486,14 @@ def main():
     logger.info(f'=== Done: {len(prospects)} prospects, {len(news)} news items ===')
     logger.info(f'Sources: { {k: len(v) for k, v in source_results.items()} }')
 
+    # 9. Build draft history (prior year classes for browsing)
+    logger.info('Building draft history...')
+    try:
+        from build_draft_history import main as build_history_main
+        build_history_main()
+    except Exception as e:
+        logger.warning(f'Draft history build failed: {e}')
+
 
 if __name__ == '__main__':
     main()

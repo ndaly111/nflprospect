@@ -4,6 +4,8 @@ const state = {
   meta: {},
   historical: {},
   historicalYear: 'all',
+  draftYear: 2026,     // which draft class to view (2026 = current prospects)
+  draftHistory: {},    // loaded from draft_history.json, keyed by year string
   filters: {
     positionGroup: 'ALL',
     round: 'ALL',

@@ -111,21 +111,23 @@ async function loadData() {
   setState({ loading: true, error: null })
 
   try {
-    const [prospectsRes, newsRes, metaRes, historicalRes] = await Promise.all([
+    const [prospectsRes, newsRes, metaRes, historicalRes, draftHistoryRes] = await Promise.all([
       fetch(getDataUrl('prospects.json')),
       fetch(getDataUrl('news.json')),
       fetch(getDataUrl('meta.json')),
       fetch(getDataUrl('historical.json')),
+      fetch(getDataUrl('draft_history.json')),
     ])
 
-    const [prospects, news, meta, historical] = await Promise.all([
+    const [prospects, news, meta, historical, draftHistory] = await Promise.all([
       prospectsRes.ok ? prospectsRes.json() : [],
       newsRes.ok ? newsRes.json() : [],
       metaRes.ok ? metaRes.json() : {},
       historicalRes.ok ? historicalRes.json() : {},
+      draftHistoryRes.ok ? draftHistoryRes.json() : {},
     ])
 
-    setState({ prospects, news, meta, historical, loading: false })
+    setState({ prospects, news, meta, historical, draftHistory, loading: false })
 
     // Deep-link: auto-expand a prospect from ?p=<id> query param
     const deepId = new URLSearchParams(location.search).get('p')
@@ -165,12 +167,12 @@ subscribe(state => {
   localStorage.setItem('nfl-watchlist', JSON.stringify(state.watchlist))
 }, ['watchlist'])
 
-// Grid re-renders when data/filters/sort/viewMode/watchlist change — NOT on card expand
+// Grid re-renders when data/filters/sort/viewMode/watchlist/draftYear change — NOT on card expand
 subscribe(state => {
   if (!state.loading) {
     renderProspectGrid()
   }
-}, ['prospects', 'filters', 'sort', 'loading', 'viewMode', 'watchlist'])
+}, ['prospects', 'filters', 'sort', 'loading', 'viewMode', 'watchlist', 'draftYear', 'draftHistory'])
 
 // News renders once on data load
 subscribe(state => {

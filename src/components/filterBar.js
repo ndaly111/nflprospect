@@ -22,15 +22,33 @@ export function renderFilterBar() {
   const container = document.getElementById('filter-bar')
   if (!container) return
 
-  const { filters, sort, historical, historicalYear, watchlist } = getState()
+  const { filters, sort, historical, historicalYear, watchlist, draftYear, draftHistory } = getState()
+  const isHistorical = draftYear !== 2026
 
-  // Build year options from available historical buckets
+  // Build draft year options from draftHistory
+  const draftYears = Object.keys(draftHistory || {})
+    .filter(k => /^\d{4}$/.test(k))
+    .sort()
+    .reverse()
+
+  const draftYearSelector = `
+    <div class="flex items-center gap-2">
+      <label class="text-xs text-gray-400 whitespace-nowrap">Draft Year:</label>
+      <select id="draft-year-select" class="bg-gray-800 border ${isHistorical ? 'border-blue-500' : 'border-gray-700'} text-gray-200 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-blue-500">
+        <option value="2026" ${draftYear === 2026 ? 'selected' : ''}>2026 (Current)</option>
+        ${draftYears.map(y => `
+          <option value="${y}" ${draftYear === parseInt(y) ? 'selected' : ''}>${y} Draft</option>`
+        ).join('')}
+      </select>
+    </div>`
+
+  // Build year comparison options (for combine percentiles)
   const histYears = Object.keys(historical || {})
     .filter(k => k !== 'all' && /^\d{4}$/.test(k))
     .sort()
     .reverse()
 
-  const yearOptions = histYears.length > 0
+  const compareOptions = histYears.length > 0
     ? `<div class="flex items-center gap-2">
         <label class="text-xs text-gray-400 whitespace-nowrap">Compare vs:</label>
         <select id="hist-year-select" class="bg-gray-800 border border-gray-700 text-gray-200 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-blue-500">
@@ -43,6 +61,11 @@ export function renderFilterBar() {
     : ''
 
   container.innerHTML = `
+    ${isHistorical ? `
+      <div class="flex items-center gap-2 mb-3 px-3 py-2 bg-blue-900/20 border border-blue-700/40 rounded-lg text-sm text-blue-300">
+        <span>Viewing <strong>${draftYear} Draft Class</strong> — actual picks, rounds, and teams</span>
+        <button id="back-to-2026" class="ml-auto text-xs text-blue-400 hover:text-blue-200 underline whitespace-nowrap">Back to 2026</button>
+      </div>` : ''}
     <div class="flex flex-wrap items-center gap-2 mb-3">
       ${POSITION_GROUPS.map(pos => `
         <button class="pos-tab px-3 py-1.5 rounded-full text-sm font-medium transition-colors
@@ -51,21 +74,23 @@ export function renderFilterBar() {
             : 'bg-gray-800 text-gray-300 hover:bg-gray-700'}"
           data-pos="${pos}">${pos}</button>`
       ).join('')}
-      <span class="text-gray-700 mx-1">|</span>
-      ${TREND_OPTIONS.map(t => `
-        <button class="trend-tab px-3 py-1.5 rounded-full text-sm font-medium transition-colors
-          ${filters.trend === t.value
-            ? (t.value === 'RISING' ? 'bg-emerald-700 text-white' : t.value === 'FALLING' ? 'bg-red-800 text-white' : 'bg-blue-600 text-white')
-            : 'bg-gray-800 text-gray-400 hover:bg-gray-700'}"
-          data-trend="${t.value}">${t.label}</button>`
-      ).join('')}
-      ${watchlist.length > 0 ? `
-        <button id="watchlist-toggle" class="px-3 py-1.5 rounded-full text-sm font-medium transition-colors
-          ${filters.watchlistOnly ? 'bg-yellow-600 text-white' : 'bg-gray-800 text-yellow-500/70 hover:bg-gray-700'}">
-          ★ Watchlist${filters.watchlistOnly ? '' : ` (${watchlist.length})`}
-        </button>` : ''}
+      ${!isHistorical ? `
+        <span class="text-gray-700 mx-1">|</span>
+        ${TREND_OPTIONS.map(t => `
+          <button class="trend-tab px-3 py-1.5 rounded-full text-sm font-medium transition-colors
+            ${filters.trend === t.value
+              ? (t.value === 'RISING' ? 'bg-emerald-700 text-white' : t.value === 'FALLING' ? 'bg-red-800 text-white' : 'bg-blue-600 text-white')
+              : 'bg-gray-800 text-gray-400 hover:bg-gray-700'}"
+            data-trend="${t.value}">${t.label}</button>`
+        ).join('')}
+        ${watchlist.length > 0 ? `
+          <button id="watchlist-toggle" class="px-3 py-1.5 rounded-full text-sm font-medium transition-colors
+            ${filters.watchlistOnly ? 'bg-yellow-600 text-white' : 'bg-gray-800 text-yellow-500/70 hover:bg-gray-700'}">
+            ★ Watchlist${filters.watchlistOnly ? '' : ` (${watchlist.length})`}
+          </button>` : ''}` : ''}
     </div>
     <div class="flex flex-wrap items-center gap-3">
+      ${draftYearSelector}
       <div class="flex items-center gap-2">
         <label class="text-xs text-gray-400 whitespace-nowrap">Round:</label>
         <select id="round-filter" class="bg-gray-800 border border-gray-700 text-gray-200 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-blue-500">
@@ -75,21 +100,22 @@ export function renderFilterBar() {
           ).join('')}
         </select>
       </div>
-      <div class="flex items-center gap-2">
-        <label class="text-xs text-gray-400 whitespace-nowrap">Sort:</label>
-        <select id="sort-select" class="bg-gray-800 border border-gray-700 text-gray-200 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-blue-500">
-          ${SORT_OPTIONS.map(o => `
-            <option value="${o.value}" ${sort === o.value ? 'selected' : ''}>${o.label}</option>`
-          ).join('')}
-        </select>
-      </div>
-      ${yearOptions}
+      ${!isHistorical ? `
+        <div class="flex items-center gap-2">
+          <label class="text-xs text-gray-400 whitespace-nowrap">Sort:</label>
+          <select id="sort-select" class="bg-gray-800 border border-gray-700 text-gray-200 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-blue-500">
+            ${SORT_OPTIONS.map(o => `
+              <option value="${o.value}" ${sort === o.value ? 'selected' : ''}>${o.label}</option>`
+            ).join('')}
+          </select>
+        </div>
+        ${compareOptions}` : ''}
       <div class="flex-1 min-w-[160px]">
-        <input id="search-input" type="text" placeholder="Search name, school, team, position…"
+        <input id="search-input" type="text" placeholder="Search name, school, team…"
           value="${filters.search}"
           class="w-full bg-gray-800 border border-gray-700 text-gray-200 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-blue-500 placeholder-gray-600">
       </div>
-      ${(filters.positionGroup !== 'ALL' || filters.round !== 'ALL' || filters.search || filters.trend !== 'ALL' || filters.watchlistOnly)
+      ${(filters.positionGroup !== 'ALL' || filters.round !== 'ALL' || filters.search || (!isHistorical && (filters.trend !== 'ALL' || filters.watchlistOnly)))
         ? `<button id="clear-filters-btn" class="text-xs text-gray-500 hover:text-red-400 transition-colors whitespace-nowrap">✕ Clear</button>`
         : ''}
     </div>`
@@ -131,7 +157,28 @@ function wireFilterEvents() {
     })
   }
 
-  // Historical year comparison
+  // Draft year selector (browse historical classes)
+  const draftYearEl = document.getElementById('draft-year-select')
+  if (draftYearEl) {
+    draftYearEl.addEventListener('change', () => {
+      const year = parseInt(draftYearEl.value)
+      setState({
+        draftYear: year,
+        expandedCardId: null,
+        filters: { positionGroup: 'ALL', round: 'ALL', search: '', trend: 'ALL', watchlistOnly: false },
+      })
+    })
+  }
+
+  // Back to 2026 button
+  const backBtn = document.getElementById('back-to-2026')
+  if (backBtn) {
+    backBtn.addEventListener('click', () => {
+      setState({ draftYear: 2026, expandedCardId: null })
+    })
+  }
+
+  // Historical year comparison (combine percentiles)
   const histYearEl = document.getElementById('hist-year-select')
   if (histYearEl) {
     histYearEl.addEventListener('change', () => {

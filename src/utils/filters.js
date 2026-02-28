@@ -9,17 +9,17 @@ export function applyFilters(prospects, filters, sort, watchlist = []) {
     result = result.filter(p => p.positionGroup === filters.positionGroup)
   }
 
-  // Round filter
+  // Round filter — use actualRound for historical prospects, projectedRound for current
   if (filters.round !== 'ALL') {
     const round = parseInt(filters.round)
-    result = result.filter(p => p.projectedRound === round)
+    result = result.filter(p => (p.actualRound || p.projectedRound) === round)
   }
 
-  // Trend filter
+  // Trend filter — only applies to current prospects with rank history
   if (filters.trend === 'RISING') {
-    result = result.filter(p => trendArrow(p.rankHistory, 30).delta > 0)
+    result = result.filter(p => p.rankHistory && trendArrow(p.rankHistory, 30).delta > 0)
   } else if (filters.trend === 'FALLING') {
-    result = result.filter(p => trendArrow(p.rankHistory, 30).delta < 0)
+    result = result.filter(p => p.rankHistory && trendArrow(p.rankHistory, 30).delta < 0)
   }
 
   // Watchlist filter
@@ -27,25 +27,28 @@ export function applyFilters(prospects, filters, sort, watchlist = []) {
     result = result.filter(p => watchSet.has(p.id))
   }
 
-  // Search filter — matches name, school, position, projected team
+  // Search filter — matches name, school, position, team (projected or actual)
   if (filters.search.trim()) {
     const q = filters.search.trim().toLowerCase()
     result = result.filter(p =>
       p.name.toLowerCase().includes(q) ||
       p.school.toLowerCase().includes(q) ||
       p.position.toLowerCase().includes(q) ||
-      (p.projectedTeam || '').toLowerCase().includes(q)
+      (p.projectedTeam || '').toLowerCase().includes(q) ||
+      (p.actualTeam || '').toLowerCase().includes(q)
     )
   }
 
-  // Sort
+  // Sort — fall back to actualPick for historical prospects
   result.sort((a, b) => {
+    const rankA = a.consensusRank || a.actualPick || 999
+    const rankB = b.consensusRank || b.actualPick || 999
     switch (sort) {
       case 'consensusRank':
-        return (a.consensusRank || 999) - (b.consensusRank || 999)
+        return rankA - rankB
       case 'projectedRound':
-        return (a.projectedRound || 8) - (b.projectedRound || 8) ||
-               (a.consensusRank || 999) - (b.consensusRank || 999)
+        return (a.projectedRound || a.actualRound || 8) - (b.projectedRound || b.actualRound || 8) ||
+               rankA - rankB
       case 'espnGrade':
         // Highest grade first; prospects without grade go to bottom
         return (b.espnGrade || 0) - (a.espnGrade || 0)
@@ -58,7 +61,7 @@ export function applyFilters(prospects, filters, sort, watchlist = []) {
       case 'school':
         return a.school.localeCompare(b.school)
       default:
-        return (a.consensusRank || 999) - (b.consensusRank || 999)
+        return rankA - rankB
     }
   })
 

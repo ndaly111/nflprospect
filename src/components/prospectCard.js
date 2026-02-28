@@ -120,8 +120,85 @@ function renderSourceRankings(prospect) {
     </div>`
 }
 
+function findProspectById(id) {
+  const { prospects, draftYear, draftHistory } = getState()
+  return prospects.find(p => p.id === id) ||
+    (draftHistory[String(draftYear)] || []).find(p => p.id === id)
+}
+
+function renderHistoricalCard(prospect, isExpanded) {
+  const posColor = POSITION_COLORS[prospect.positionGroup] || 'bg-gray-800 text-gray-300'
+  const isStarred = getState().watchlist.includes(prospect.id)
+  const pickColor = prospect.actualPick <= 5 ? 'text-yellow-400'
+    : prospect.actualPick <= 32 ? 'text-blue-400'
+    : prospect.actualPick <= 64 ? 'text-green-400'
+    : 'text-gray-400'
+
+  const hw = (() => {
+    const c = prospect.combineData || {}
+    const parts = []
+    if (c.height) {
+      const h = String(c.height).replace(/['"]/g, '').trim()
+      parts.push(h.includes('-') ? h.replace('-', "'") + '"' : h)
+    }
+    if (c.weight) parts.push(`${c.weight} lbs`)
+    return parts.join(' · ')
+  })()
+
+  const teamSpan = prospect.actualTeam
+    ? ` · <span class="text-amber-400 font-semibold">${prospect.actualTeam}</span>`
+    : ''
+
+  return [
+    `<div class="prospect-card bg-gray-800 rounded-xl border ${isExpanded ? 'border-blue-600' : 'border-gray-700'} overflow-hidden hover:border-gray-500 transition-colors" data-id="${prospect.id}">`,
+    `<div class="card-header cursor-pointer p-4 select-none" data-id="${prospect.id}">`,
+    `<div class="flex items-start justify-between gap-2">`,
+    `<div class="flex-1 min-w-0">`,
+    `<div class="flex items-center gap-2 flex-wrap mb-1">`,
+    `<span class="text-xs font-semibold px-2 py-0.5 rounded-full ${posColor}">${prospect.position}</span>`,
+    `<span class="school-filter-btn text-xs text-gray-400 hover:text-blue-400 transition-colors cursor-pointer truncate" data-school="${prospect.school}">${prospect.school}</span>`,
+    `</div>`,
+    `<h2 class="text-base font-bold text-white leading-snug mb-1">${prospect.name}</h2>`,
+    `<div class="flex items-center gap-2 flex-wrap">`,
+    `<span class="text-2xl font-black ${pickColor} leading-none">#${prospect.actualPick}</span>`,
+    `<div class="text-xs text-gray-400 leading-snug">`,
+    `<div>Round ${prospect.actualRound || '?'}${teamSpan}</div>`,
+    hw ? `<div class="text-gray-500">${hw}</div>` : '',
+    `</div></div></div>`,
+    `<div class="flex flex-col items-end gap-2 flex-shrink-0">`,
+    `<button class="star-btn text-lg leading-none transition-colors ${isStarred ? 'text-yellow-400' : 'text-gray-700 hover:text-gray-400'}" data-id="${prospect.id}" title="${isStarred ? 'Remove from watchlist' : 'Add to watchlist'}">★</button>`,
+    `<div class="text-gray-600 text-xs card-chevron" data-id="${prospect.id}">${isExpanded ? '▲' : '▼'}</div>`,
+    `</div></div></div>`,
+    `<div class="card-detail ${isExpanded ? '' : 'hidden'} border-t border-gray-700" data-id="${prospect.id}">`,
+    `<div class="flex border-b border-gray-700 overflow-x-auto">`,
+    `<button class="detail-tab flex-1 px-3 py-2 text-xs font-medium border-b-2 border-blue-500 text-blue-400 whitespace-nowrap" data-tab="draft" data-card="${prospect.id}">Draft Info</button>`,
+    `<button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors whitespace-nowrap" data-tab="stats" data-card="${prospect.id}">Stats</button>`,
+    `<button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors whitespace-nowrap" data-tab="combine" data-card="${prospect.id}">Combine</button>`,
+    `</div>`,
+    `<div class="p-4">`,
+    `<div class="tab-content" data-tab="draft" data-card="${prospect.id}">`,
+    `<div class="text-sm space-y-0">`,
+    `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">Overall Pick</span><span class="font-bold text-white">#${prospect.actualPick}</span></div>`,
+    `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">Round</span><span class="text-white">${prospect.actualRound || '—'}</span></div>`,
+    `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">Team</span><span class="text-amber-400 font-semibold">${prospect.actualTeam || '—'}</span></div>`,
+    `<div class="flex justify-between py-2"><span class="text-gray-500">Position</span><span class="text-white">${prospect.position}${prospect.positionGroup !== prospect.position ? ' (' + prospect.positionGroup + ')' : ''}</span></div>`,
+    `</div></div>`,
+    `<div class="tab-content hidden" data-tab="stats" data-card="${prospect.id}">`,
+    renderCollegeStats(prospect, {}),
+    `</div>`,
+    `<div class="tab-content hidden" data-tab="combine" data-card="${prospect.id}">`,
+    renderCombinePanel(prospect.combineData, prospect.positionGroup, null),
+    `</div></div></div></div>`,
+  ].join('')
+}
+
 export function renderProspectCard(prospect, isExpanded = false) {
-  const statPct = buildCollegeStatPct(getState().prospects)
+  if (!prospect.consensusRank && prospect.actualPick !== undefined) {
+    return renderHistoricalCard(prospect, isExpanded)
+  }
+
+  const { prospects, draftYear, draftHistory } = getState()
+  const statPct = buildCollegeStatPct(prospects)
   const trend = trendArrow(prospect.rankHistory, 30)
   const isStarred = getState().watchlist.includes(prospect.id)
   const posColor = POSITION_COLORS[prospect.positionGroup] || 'bg-gray-800 text-gray-300'
@@ -356,9 +433,9 @@ function expandCardDOM(id) {
   const firstTab = detail.querySelector('.detail-tab[data-tab="ranking"]')
   if (firstTab) activateTab(firstTab)
 
-  // Init chart
-  const prospect = getState().prospects.find(p => p.id === id)
-  if (prospect) {
+  // Init chart (only for current-year prospects with rank history)
+  const prospect = findProspectById(id)
+  if (prospect && prospect.rankHistory) {
     setTimeout(() => renderRankingChart(`chart-${id}`, prospect.rankHistory), 60)
   }
 
@@ -396,15 +473,17 @@ function handleTabClick(tab) {
   })
 
   if (tabName === 'ranking') {
-    const prospect = getState().prospects.find(p => p.id === cardId)
-    if (prospect) setTimeout(() => renderRankingChart(`chart-${cardId}`, prospect.rankHistory), 60)
+    const prospect = findProspectById(cardId)
+    if (prospect && prospect.rankHistory) {
+      setTimeout(() => renderRankingChart(`chart-${cardId}`, prospect.rankHistory), 60)
+    }
   }
 
   if (tabName === 'combine') {
-    const prospect = getState().prospects.find(p => p.id === cardId)
+    const prospect = findProspectById(cardId)
     const combineEl = document.querySelector(`.tab-content[data-tab="combine"][data-card="${cardId}"]`)
     if (prospect && combineEl) {
-      combineEl.innerHTML = renderCombinePanel(prospect.combineData, prospect.positionGroup, prospect.playerComps)
+      combineEl.innerHTML = renderCombinePanel(prospect.combineData, prospect.positionGroup, prospect.playerComps || null)
     }
   }
 }
