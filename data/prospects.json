@@ -44,7 +44,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jordan Love",
+        "year": 2020,
+        "pick": 26,
+        "school": "Utah State",
+        "similarity": 76
+      },
+      {
+        "name": "Jake Luton",
+        "year": 2020,
+        "pick": 189,
+        "school": "Oregon State",
+        "similarity": 76
+      },
+      {
+        "name": "Drake Maye",
+        "year": 2024,
+        "pick": 3,
+        "school": "North Carolina",
+        "similarity": 75
+      }
+    ]
   },
   {
     "id": "arvell reese-lb-ohio state",
@@ -98,7 +121,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Troy Andersen",
+        "year": 2022,
+        "pick": 58,
+        "school": "Montana St.",
+        "similarity": 82
+      },
+      {
+        "name": "Darrian Beavers",
+        "year": 2022,
+        "pick": 182,
+        "school": "Cincinnati",
+        "similarity": 73
+      },
+      {
+        "name": "Quay Walker",
+        "year": 2022,
+        "pick": 22,
+        "school": "Georgia",
+        "similarity": 72
+      }
+    ]
   },
   {
     "id": "david bailey-de-texas tech",
@@ -145,7 +191,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Felix Anudike-Uzomah",
+        "year": 2023,
+        "pick": 31,
+        "school": "Kansas St.",
+        "similarity": 82
+      },
+      {
+        "name": "DeAngelo Malone",
+        "year": 2022,
+        "pick": 82,
+        "school": "Western Kentucky",
+        "similarity": 76
+      },
+      {
+        "name": "Drake Jackson",
+        "year": 2022,
+        "pick": 61,
+        "school": "USC",
+        "similarity": 71
+      }
+    ]
   },
   {
     "id": "caleb downs-s-ohio state",
@@ -199,7 +268,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jaycee Horn",
+        "year": 2021,
+        "pick": 8,
+        "school": "South Carolina",
+        "similarity": 100
+      },
+      {
+        "name": "Jordan Howden",
+        "year": 2023,
+        "pick": 146,
+        "school": "Minnesota",
+        "similarity": 91
+      },
+      {
+        "name": "Jevon Holland",
+        "year": 2021,
+        "pick": 36,
+        "school": "Oregon",
+        "similarity": 91
+      }
+    ]
   },
   {
     "id": "rueben bain jr-de-miami",
@@ -259,7 +351,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Joshua Paschal",
+        "year": 2022,
+        "pick": 46,
+        "school": "Kentucky",
+        "similarity": 76
+      },
+      {
+        "name": "Brandon Dorlus",
+        "year": 2024,
+        "pick": 109,
+        "school": "Oregon",
+        "similarity": 73
+      },
+      {
+        "name": "Marshawn Kneeland",
+        "year": 2024,
+        "pick": 56,
+        "school": "Western Michigan",
+        "similarity": 73
+      }
+    ]
   },
   {
     "id": "francis mauigoa-ot-miami",
@@ -300,7 +415,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Lucas Niang",
+        "year": 2020,
+        "pick": 96,
+        "school": "TCU",
+        "similarity": 100
+      },
+      {
+        "name": "Abraham Lucas",
+        "year": 2022,
+        "pick": 72,
+        "school": "Washington St.",
+        "similarity": 100
+      },
+      {
+        "name": "Cordell Volson",
+        "year": 2022,
+        "pick": 136,
+        "school": "North Dakota St.",
+        "similarity": 100
+      }
+    ]
   },
   {
     "id": "spencer fano-ot-utah",
@@ -341,7 +479,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Bernhard Raimann",
+        "year": 2022,
+        "pick": 77,
+        "school": "Central Michigan",
+        "similarity": 96
+      },
+      {
+        "name": "Ryan Hayes",
+        "year": 2023,
+        "pick": 238,
+        "school": "Michigan",
+        "similarity": 86
+      },
+      {
+        "name": "Colton McKivitz",
+        "year": 2020,
+        "pick": 153,
+        "school": "West Virginia",
+        "similarity": 86
+      }
+    ]
   },
   {
     "id": "jeremiyah love-rb-notre dame",
@@ -403,7 +564,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jonathon Brooks",
+        "year": 2024,
+        "pick": 46,
+        "school": "Texas",
+        "similarity": 91
+      },
+      {
+        "name": "Isaiah Spiller",
+        "year": 2022,
+        "pick": 123,
+        "school": "Texas A&M",
+        "similarity": 87
+      },
+      {
+        "name": "Trey Benson",
+        "year": 2024,
+        "pick": 66,
+        "school": "Florida St.",
+        "similarity": 83
+      }
+    ]
   },
   {
     "id": "keldric faulk-de-auburn",
@@ -463,7 +647,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Esezi Otomewo",
+        "year": 2022,
+        "pick": 165,
+        "school": "Minnesota",
+        "similarity": 69
+      },
+      {
+        "name": "Myles Cole",
+        "year": 2024,
+        "pick": 236,
+        "school": "Texas Tech",
+        "similarity": 68
+      },
+      {
+        "name": "Keion White",
+        "year": 2023,
+        "pick": 46,
+        "school": "Georgia Tech",
+        "similarity": 68
+      }
+    ]
   },
   {
     "id": "carnell tate-wr-ohio state",
@@ -521,7 +728,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "George Pickens",
+        "year": 2022,
+        "pick": 52,
+        "school": "Georgia",
+        "similarity": 100
+      },
+      {
+        "name": "Devontez Walker",
+        "year": 2024,
+        "pick": 113,
+        "school": "North Carolina",
+        "similarity": 80
+      },
+      {
+        "name": "A.T. Perry",
+        "year": 2023,
+        "pick": 195,
+        "school": "Wake Forest",
+        "similarity": 79
+      }
+    ]
   },
   {
     "id": "sonny styles-lb-ohio state",
@@ -587,7 +817,30 @@
       "cone": 7.09,
       "shuttle": 4.26,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kamal Martin",
+        "year": 2020,
+        "pick": 175,
+        "school": "Minnesota",
+        "similarity": 69
+      },
+      {
+        "name": "Drew Sanders",
+        "year": 2023,
+        "pick": 67,
+        "school": "Arkansas",
+        "similarity": 66
+      },
+      {
+        "name": "Jamin Davis",
+        "year": 2021,
+        "pick": 19,
+        "school": "Kentucky",
+        "similarity": 52
+      }
+    ]
   },
   {
     "id": "jordyn tyson-wr-arizona state",
@@ -640,7 +893,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Romeo Doubs",
+        "year": 2022,
+        "pick": 132,
+        "school": "Nevada",
+        "similarity": 97
+      },
+      {
+        "name": "Puka Nacua",
+        "year": 2023,
+        "pick": 177,
+        "school": "BYU",
+        "similarity": 97
+      },
+      {
+        "name": "Antoine Green",
+        "year": 2023,
+        "pick": 219,
+        "school": "North Carolina",
+        "similarity": 97
+      }
+    ]
   },
   {
     "id": "mansoor delane-cb-lsu",
@@ -687,7 +963,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Derek Stingley",
+        "year": 2022,
+        "pick": 3,
+        "school": "LSU",
+        "similarity": 100
+      },
+      {
+        "name": "Brian Branch",
+        "year": 2023,
+        "pick": 45,
+        "school": "Alabama",
+        "similarity": 100
+      },
+      {
+        "name": "Marcellas Dial",
+        "year": 2024,
+        "pick": 180,
+        "school": "South Carolina",
+        "similarity": 100
+      }
+    ]
   },
   {
     "id": "kenyon sadiq-te-oregon",
@@ -744,7 +1043,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Brock Bowers",
+        "year": 2024,
+        "pick": 13,
+        "school": "Georgia",
+        "similarity": 87
+      },
+      {
+        "name": "Dalton Kincaid",
+        "year": 2023,
+        "pick": 25,
+        "school": "Utah",
+        "similarity": 71
+      },
+      {
+        "name": "Tre' McKitty",
+        "year": 2021,
+        "pick": 97,
+        "school": "Georgia",
+        "similarity": 69
+      }
+    ]
   },
   {
     "id": "makai lemon-wr-usc",
@@ -801,7 +1123,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kayshon Boutte",
+        "year": 2023,
+        "pick": 187,
+        "school": "LSU",
+        "similarity": 100
+      },
+      {
+        "name": "Tylan Wallace",
+        "year": 2021,
+        "pick": 131,
+        "school": "Oklahoma St.",
+        "similarity": 97
+      },
+      {
+        "name": "Amon-Ra St. Brown",
+        "year": 2021,
+        "pick": 112,
+        "school": "USC",
+        "similarity": 94
+      }
+    ]
   },
   {
     "id": "peter woods-dt-clemson",
@@ -861,7 +1206,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jalen Carter",
+        "year": 2023,
+        "pick": 9,
+        "school": "Georgia",
+        "similarity": 98
+      },
+      {
+        "name": "Daviyon Nixon",
+        "year": 2021,
+        "pick": 158,
+        "school": "Iowa",
+        "similarity": 96
+      },
+      {
+        "name": "Jordan Jefferson",
+        "year": 2024,
+        "pick": 116,
+        "school": "LSU",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "denzel boston-wr-washington",
@@ -923,7 +1291,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Isaiah Hodgins",
+        "year": 2020,
+        "pick": 207,
+        "school": "Oregon State",
+        "similarity": 97
+      },
+      {
+        "name": "Christian Watson",
+        "year": 2022,
+        "pick": 34,
+        "school": "North Dakota St.",
+        "similarity": 97
+      },
+      {
+        "name": "Nico Collins",
+        "year": 2021,
+        "pick": 89,
+        "school": "Michigan",
+        "similarity": 83
+      }
+    ]
   },
   {
     "id": "vega ioane-iol-penn state",
@@ -962,7 +1353,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "jermod mccoy-cb-tennessee",
@@ -1016,7 +1408,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jaylon Johnson",
+        "year": 2020,
+        "pick": 50,
+        "school": "Utah",
+        "similarity": 100
+      },
+      {
+        "name": "Carrington Valentine",
+        "year": 2023,
+        "pick": 232,
+        "school": "Kentucky",
+        "similarity": 100
+      },
+      {
+        "name": "L'Jarius Sneed",
+        "year": 2020,
+        "pick": 138,
+        "school": "Louisiana Tech",
+        "similarity": 95
+      }
+    ]
   },
   {
     "id": "caleb lomu-ot-utah",
@@ -1056,7 +1471,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Bernhard Raimann",
+        "year": 2022,
+        "pick": 77,
+        "school": "Central Michigan",
+        "similarity": 96
+      },
+      {
+        "name": "Colton McKivitz",
+        "year": 2020,
+        "pick": 153,
+        "school": "West Virginia",
+        "similarity": 93
+      },
+      {
+        "name": "Liam Eichenberg",
+        "year": 2021,
+        "pick": 42,
+        "school": "Notre Dame",
+        "similarity": 93
+      }
+    ]
   },
   {
     "id": "akheem mesidor-edge-miami",
@@ -1121,7 +1559,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Brandon Dorlus",
+        "year": 2024,
+        "pick": 109,
+        "school": "Oregon",
+        "similarity": 89
+      },
+      {
+        "name": "Tyler Lacy",
+        "year": 2023,
+        "pick": 130,
+        "school": "Oklahoma St.",
+        "similarity": 70
+      },
+      {
+        "name": "Zachary Carter",
+        "year": 2022,
+        "pick": 95,
+        "school": "Florida",
+        "similarity": 70
+      }
+    ]
   },
   {
     "id": "olaivavega ioane-og",
@@ -1160,7 +1621,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Penei Sewell",
+        "year": 2021,
+        "pick": 7,
+        "school": "Oregon",
+        "similarity": 96
+      },
+      {
+        "name": "Anthony Bradford",
+        "year": 2023,
+        "pick": 108,
+        "school": "LSU",
+        "similarity": 93
+      },
+      {
+        "name": "Kenyon Green",
+        "year": 2022,
+        "pick": 15,
+        "school": "Texas A&M",
+        "similarity": 76
+      }
+    ]
   },
   {
     "id": "ty simpson-qb-alabama",
@@ -1230,7 +1714,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Max Duggan",
+        "year": 2023,
+        "pick": 239,
+        "school": "TCU",
+        "similarity": 95
+      },
+      {
+        "name": "Matt Corral",
+        "year": 2022,
+        "pick": 94,
+        "school": "Mississippi",
+        "similarity": 81
+      },
+      {
+        "name": "Dorian Thompson-Robinson",
+        "year": 2023,
+        "pick": 140,
+        "school": "UCLA",
+        "similarity": 77
+      }
+    ]
   },
   {
     "id": "dillon thieneman-s-oregon",
@@ -1276,7 +1783,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Caelen Carson",
+        "year": 2024,
+        "pick": 174,
+        "school": "Wake Forest",
+        "similarity": 74
+      },
+      {
+        "name": "Kool-Aid McKinstry",
+        "year": 2024,
+        "pick": 41,
+        "school": "Alabama",
+        "similarity": 74
+      },
+      {
+        "name": "Trevon Diggs",
+        "year": 2020,
+        "pick": 51,
+        "school": "Alabama",
+        "similarity": 74
+      }
+    ]
   },
   {
     "id": "monroe freeling-ot-georgia",
@@ -1316,7 +1846,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Walker Little",
+        "year": 2021,
+        "pick": 45,
+        "school": "Stanford",
+        "similarity": 93
+      },
+      {
+        "name": "Matt Peart",
+        "year": 2020,
+        "pick": 99,
+        "school": "Connecticut",
+        "similarity": 89
+      },
+      {
+        "name": "Josh Ball",
+        "year": 2021,
+        "pick": 138,
+        "school": "Marshall",
+        "similarity": 76
+      }
+    ]
   },
   {
     "id": "kayden mcdonald-dt-ohio state",
@@ -1375,7 +1928,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "DJ Davidson",
+        "year": 2022,
+        "pick": 147,
+        "school": "Arizona St.",
+        "similarity": 98
+      },
+      {
+        "name": "Mazi Smith",
+        "year": 2023,
+        "pick": 26,
+        "school": "Michigan",
+        "similarity": 94
+      },
+      {
+        "name": "Justin Rogers",
+        "year": 2024,
+        "pick": 244,
+        "school": "Auburn",
+        "similarity": 92
+      }
+    ]
   },
   {
     "id": "lee hunter-dt-texas tech",
@@ -1421,7 +1997,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Otito Ogbonnia",
+        "year": 2022,
+        "pick": 160,
+        "school": "UCLA",
+        "similarity": 98
+      },
+      {
+        "name": "Javon Kinlaw",
+        "year": 2020,
+        "pick": 14,
+        "school": "South Carolina",
+        "similarity": 68
+      },
+      {
+        "name": "Mazi Smith",
+        "year": 2023,
+        "pick": 26,
+        "school": "Michigan",
+        "similarity": 68
+      }
+    ]
   },
   {
     "id": "t j parker-edge-clemson",
@@ -1480,7 +2079,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Tuli Tuipulotu",
+        "year": 2023,
+        "pick": 54,
+        "school": "USC",
+        "similarity": 96
+      },
+      {
+        "name": "Marshawn Kneeland",
+        "year": 2024,
+        "pick": 56,
+        "school": "Western Michigan",
+        "similarity": 71
+      },
+      {
+        "name": "Cameron Thomas",
+        "year": 2022,
+        "pick": 87,
+        "school": "San Diego St.",
+        "similarity": 70
+      }
+    ]
   },
   {
     "id": "kadyn proctor-ot-alabama",
@@ -1520,7 +2142,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Mekhi Becton",
+        "year": 2020,
+        "pick": 11,
+        "school": "Louisville",
+        "similarity": 93
+      },
+      {
+        "name": "Dawand Jones",
+        "year": 2023,
+        "pick": 111,
+        "school": "Ohio St.",
+        "similarity": 64
+      },
+      {
+        "name": "Isaiah Wilson",
+        "year": 2020,
+        "pick": 29,
+        "school": "Georgia",
+        "similarity": 50
+      }
+    ]
   },
   {
     "id": "avieon terrell-cb-clemson",
@@ -1579,7 +2224,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kris Abrams-Draine",
+        "year": 2024,
+        "pick": 145,
+        "school": "Missouri",
+        "similarity": 91
+      },
+      {
+        "name": "Cobie Durant",
+        "year": 2022,
+        "pick": 142,
+        "school": "South Carolina St.",
+        "similarity": 74
+      },
+      {
+        "name": "Devon Witherspoon",
+        "year": 2023,
+        "pick": 5,
+        "school": "Illinois",
+        "similarity": 74
+      }
+    ]
   },
   {
     "id": "colton hood-cb-tennessee",
@@ -1625,7 +2293,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Andrew Booth",
+        "year": 2022,
+        "pick": 42,
+        "school": "Clemson",
+        "similarity": 95
+      },
+      {
+        "name": "Derion Kendrick",
+        "year": 2022,
+        "pick": 212,
+        "school": "Georgia",
+        "similarity": 95
+      },
+      {
+        "name": "Shaun Wade",
+        "year": 2021,
+        "pick": 160,
+        "school": "Ohio St.",
+        "similarity": 95
+      }
+    ]
   },
   {
     "id": "emmanuel mcneil warren-s-toledo",
@@ -1671,7 +2362,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Martin Emerson",
+        "year": 2022,
+        "pick": 68,
+        "school": "Mississippi St.",
+        "similarity": 93
+      },
+      {
+        "name": "Jaylen Watson",
+        "year": 2022,
+        "pick": 243,
+        "school": "Washington St.",
+        "similarity": 78
+      },
+      {
+        "name": "Ashtyn Davis",
+        "year": 2020,
+        "pick": 68,
+        "school": "California",
+        "similarity": 74
+      }
+    ]
   },
   {
     "id": "cj allen-lb-georgia",
@@ -1717,7 +2431,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Shaun Bradley",
+        "year": 2020,
+        "pick": 196,
+        "school": "Temple",
+        "similarity": 100
+      },
+      {
+        "name": "JD Bertrand",
+        "year": 2024,
+        "pick": 143,
+        "school": "Notre Dame",
+        "similarity": 100
+      },
+      {
+        "name": "Edefuan Ulofoshio",
+        "year": 2024,
+        "pick": 160,
+        "school": "Washington",
+        "similarity": 95
+      }
+    ]
   },
   {
     "id": "cashius howell-edge-texas am",
@@ -1770,7 +2507,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jonah Elliss",
+        "year": 2024,
+        "pick": 76,
+        "school": "Utah",
+        "similarity": 100
+      },
+      {
+        "name": "Malcolm Koonce",
+        "year": 2021,
+        "pick": 79,
+        "school": "Buffalo",
+        "similarity": 96
+      },
+      {
+        "name": "Chris Rumph",
+        "year": 2021,
+        "pick": 118,
+        "school": "Duke",
+        "similarity": 86
+      }
+    ]
   },
   {
     "id": "max iheanachor-ot-arizona state",
@@ -1810,7 +2570,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Thayer Munford",
+        "year": 2022,
+        "pick": 238,
+        "school": "Ohio St.",
+        "similarity": 93
+      },
+      {
+        "name": "Taliese Fuaga",
+        "year": 2024,
+        "pick": 14,
+        "school": "Oregon St.",
+        "similarity": 79
+      },
+      {
+        "name": "O'Cyrus Torrence",
+        "year": 2023,
+        "pick": 59,
+        "school": "Florida",
+        "similarity": 72
+      }
+    ]
   },
   {
     "id": "brandon cisse-cb-south carolina",
@@ -1856,7 +2639,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Derek Stingley",
+        "year": 2022,
+        "pick": 3,
+        "school": "LSU",
+        "similarity": 100
+      },
+      {
+        "name": "L'Jarius Sneed",
+        "year": 2020,
+        "pick": 138,
+        "school": "Louisiana Tech",
+        "similarity": 91
+      },
+      {
+        "name": "Julian Blackmon",
+        "year": 2020,
+        "pick": 85,
+        "school": "Utah",
+        "similarity": 86
+      }
+    ]
   },
   {
     "id": "kc concepcion-wr-texas am",
@@ -1902,7 +2708,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Bo Melton",
+        "year": 2022,
+        "pick": 229,
+        "school": "Rutgers",
+        "similarity": 97
+      },
+      {
+        "name": "Kyle Philips",
+        "year": 2022,
+        "pick": 163,
+        "school": "UCLA",
+        "similarity": 97
+      },
+      {
+        "name": "Henry Ruggs III",
+        "year": 2020,
+        "pick": 12,
+        "school": "Alabama",
+        "similarity": 94
+      }
+    ]
   },
   {
     "id": "omar cooper jr-wr-indiana",
@@ -1959,7 +2788,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Ja'Marr Chase",
+        "year": 2021,
+        "pick": 5,
+        "school": "LSU",
+        "similarity": 100
+      },
+      {
+        "name": "Frank Darby",
+        "year": 2021,
+        "pick": 187,
+        "school": "Arizona St.",
+        "similarity": 100
+      },
+      {
+        "name": "Malik Nabers",
+        "year": 2024,
+        "pick": 6,
+        "school": "LSU",
+        "similarity": 97
+      }
+    ]
   },
   {
     "id": "zion young-edge-missouri",
@@ -2012,7 +2864,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Micheal Clemons",
+        "year": 2022,
+        "pick": 117,
+        "school": "Texas A&M",
+        "similarity": 96
+      },
+      {
+        "name": "Jordan Smith",
+        "year": 2021,
+        "pick": 121,
+        "school": "Ala-Birmingham",
+        "similarity": 93
+      },
+      {
+        "name": "Isaiah Foskey",
+        "year": 2023,
+        "pick": 40,
+        "school": "Notre Dame",
+        "similarity": 93
+      }
+    ]
   },
   {
     "id": "caleb banks-dt-florida",
@@ -2071,7 +2946,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Quincy Roche",
+        "year": 2021,
+        "pick": 216,
+        "school": "Miami (FL)",
+        "similarity": 70
+      },
+      {
+        "name": "Javon Kinlaw",
+        "year": 2020,
+        "pick": 14,
+        "school": "South Carolina",
+        "similarity": 67
+      },
+      {
+        "name": "Leki Fotu",
+        "year": 2020,
+        "pick": 114,
+        "school": "Utah",
+        "similarity": 62
+      }
+    ]
   },
   {
     "id": "emmanuel pregnon-og-oregon",
@@ -2111,7 +3009,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Marquis Hayes",
+        "year": 2022,
+        "pick": 257,
+        "school": "Oklahoma",
+        "similarity": 100
+      },
+      {
+        "name": "Matthew Bergeron",
+        "year": 2023,
+        "pick": 38,
+        "school": "Syracuse",
+        "similarity": 100
+      },
+      {
+        "name": "Joshua Jones",
+        "year": 2020,
+        "pick": 72,
+        "school": "Houston",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "malachi fields-wr-notre dame",
@@ -2157,7 +3078,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Antonio Gandy-Golden",
+        "year": 2020,
+        "pick": 142,
+        "school": "Liberty",
+        "similarity": 100
+      },
+      {
+        "name": "Michael Pittman",
+        "year": 2020,
+        "pick": 34,
+        "school": "USC",
+        "similarity": 100
+      },
+      {
+        "name": "Dezmon Patmon",
+        "year": 2020,
+        "pick": 212,
+        "school": "Washington State",
+        "similarity": 94
+      }
+    ]
   },
   {
     "id": "anthony hill jr-lb-texas",
@@ -2216,7 +3160,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kamal Martin",
+        "year": 2020,
+        "pick": 175,
+        "school": "Minnesota",
+        "similarity": 90
+      },
+      {
+        "name": "Jabril Cox",
+        "year": 2021,
+        "pick": 115,
+        "school": "LSU",
+        "similarity": 73
+      },
+      {
+        "name": "Junior Colson",
+        "year": 2024,
+        "pick": 69,
+        "school": "Michigan",
+        "similarity": 72
+      }
+    ]
   },
   {
     "id": "blake miller-ot-clemson",
@@ -2256,7 +3223,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Lucas Niang",
+        "year": 2020,
+        "pick": 96,
+        "school": "TCU",
+        "similarity": 100
+      },
+      {
+        "name": "Abraham Lucas",
+        "year": 2022,
+        "pick": 72,
+        "school": "Washington St.",
+        "similarity": 100
+      },
+      {
+        "name": "Cordell Volson",
+        "year": 2022,
+        "pick": 136,
+        "school": "North Dakota St.",
+        "similarity": 100
+      }
+    ]
   },
   {
     "id": "r mason thomas-edge-oklahoma",
@@ -2321,7 +3311,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Malcolm Koonce",
+        "year": 2021,
+        "pick": 79,
+        "school": "Buffalo",
+        "similarity": 100
+      },
+      {
+        "name": "BJ Ojulari",
+        "year": 2023,
+        "pick": 41,
+        "school": "LSU",
+        "similarity": 96
+      },
+      {
+        "name": "Jonah Elliss",
+        "year": 2024,
+        "pick": 76,
+        "school": "Utah",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "zachariah branch-wr-georgia",
@@ -2367,7 +3380,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Marquez Stevenson",
+        "year": 2021,
+        "pick": 203,
+        "school": "Houston",
+        "similarity": 100
+      },
+      {
+        "name": "Tyler Scott",
+        "year": 2023,
+        "pick": 133,
+        "school": "Cincinnati",
+        "similarity": 91
+      },
+      {
+        "name": "Darnell Mooney",
+        "year": 2020,
+        "pick": 173,
+        "school": "Tulane",
+        "similarity": 88
+      }
+    ]
   },
   {
     "id": "jake golday-lb-cincinnati",
@@ -2420,7 +3456,30 @@
       "cone": 7.02,
       "shuttle": 4.34,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Drew Sanders",
+        "year": 2023,
+        "pick": 67,
+        "school": "Arkansas",
+        "similarity": 77
+      },
+      {
+        "name": "Kamal Martin",
+        "year": 2020,
+        "pick": 175,
+        "school": "Minnesota",
+        "similarity": 72
+      },
+      {
+        "name": "Darrian Beavers",
+        "year": 2022,
+        "pick": 182,
+        "school": "Cincinnati",
+        "similarity": 59
+      }
+    ]
   },
   {
     "id": "chris johnson-cb-san diego state",
@@ -2485,7 +3544,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kamari Lassiter",
+        "year": 2024,
+        "pick": 42,
+        "school": "Georgia",
+        "similarity": 95
+      },
+      {
+        "name": "Julian Blackmon",
+        "year": 2020,
+        "pick": 85,
+        "school": "Utah",
+        "similarity": 91
+      },
+      {
+        "name": "Devon Witherspoon",
+        "year": 2023,
+        "pick": 5,
+        "school": "Illinois",
+        "similarity": 82
+      }
+    ]
   },
   {
     "id": "derrick moore-edge-michigan",
@@ -2550,7 +3632,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Cedric Johnson",
+        "year": 2024,
+        "pick": 214,
+        "school": "Mississippi",
+        "similarity": 100
+      },
+      {
+        "name": "YaYa Diaby",
+        "year": 2023,
+        "pick": 82,
+        "school": "Louisville",
+        "similarity": 89
+      },
+      {
+        "name": "Felix Anudike-Uzomah",
+        "year": 2023,
+        "pick": 31,
+        "school": "Kansas St.",
+        "similarity": 82
+      }
+    ]
   },
   {
     "id": "chris brazzell ii-wr-tennessee",
@@ -2602,7 +3707,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "A.T. Perry",
+        "year": 2023,
+        "pick": 195,
+        "school": "Wake Forest",
+        "similarity": 80
+      },
+      {
+        "name": "Devaughn Vele",
+        "year": 2024,
+        "pick": 235,
+        "school": "Utah",
+        "similarity": 79
+      },
+      {
+        "name": "Christian Watson",
+        "year": 2022,
+        "pick": 34,
+        "school": "North Dakota St.",
+        "similarity": 72
+      }
+    ]
   },
   {
     "id": "chris bell-wr-louisville",
@@ -2664,7 +3792,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jonathan Mingo",
+        "year": 2023,
+        "pick": 39,
+        "school": "Mississippi",
+        "similarity": 100
+      },
+      {
+        "name": "Racey McMath",
+        "year": 2021,
+        "pick": 205,
+        "school": "LSU",
+        "similarity": 91
+      },
+      {
+        "name": "Gabriel Davis",
+        "year": 2020,
+        "pick": 128,
+        "school": "UCF",
+        "similarity": 88
+      }
+    ]
   },
   {
     "id": "d angelo ponds-cb-indiana",
@@ -2717,7 +3868,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Marcus Jones",
+        "year": 2022,
+        "pick": 85,
+        "school": "Houston",
+        "similarity": 70
+      },
+      {
+        "name": "Daequan Hardy",
+        "year": 2024,
+        "pick": 219,
+        "school": "Penn St.",
+        "similarity": 62
+      },
+      {
+        "name": "Cobie Durant",
+        "year": 2022,
+        "pick": 142,
+        "school": "South Carolina St.",
+        "similarity": 56
+      }
+    ]
   },
   {
     "id": "davison igbinosun-cb-ohio state",
@@ -2776,7 +3950,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kamal Hadden",
+        "year": 2024,
+        "pick": 211,
+        "school": "Tennessee",
+        "similarity": 74
+      },
+      {
+        "name": "Trevon Moehrig",
+        "year": 2021,
+        "pick": 43,
+        "school": "TCU",
+        "similarity": 73
+      },
+      {
+        "name": "Jaylen Watson",
+        "year": 2022,
+        "pick": 243,
+        "school": "Washington St.",
+        "similarity": 72
+      }
+    ]
   },
   {
     "id": "germie bernard-wr-alabama",
@@ -2828,7 +4025,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Mike Woods",
+        "year": 2022,
+        "pick": 202,
+        "school": "Oklahoma",
+        "similarity": 100
+      },
+      {
+        "name": "Rashee Rice",
+        "year": 2023,
+        "pick": 55,
+        "school": "SMU",
+        "similarity": 100
+      },
+      {
+        "name": "Jordan Whittington",
+        "year": 2024,
+        "pick": 213,
+        "school": "Texas",
+        "similarity": 97
+      }
+    ]
   },
   {
     "id": "christen miller-dt-georgia",
@@ -2887,7 +4107,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jordan Elliott",
+        "year": 2020,
+        "pick": 88,
+        "school": "Missouri",
+        "similarity": 94
+      },
+      {
+        "name": "Jaden Crumedy",
+        "year": 2024,
+        "pick": 200,
+        "school": "Mississippi St.",
+        "similarity": 92
+      },
+      {
+        "name": "Keeanu Benton",
+        "year": 2023,
+        "pick": 49,
+        "school": "Wisconsin",
+        "similarity": 92
+      }
+    ]
   },
   {
     "id": "jacob rodriguez-lb-texas tech",
@@ -2952,7 +4195,30 @@
       "cone": 6.9,
       "shuttle": 4.19,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Clay Johnston",
+        "year": 2020,
+        "pick": 234,
+        "school": "Baylor",
+        "similarity": 86
+      },
+      {
+        "name": "SirVocea Dennis",
+        "year": 2023,
+        "pick": 153,
+        "school": "Pittsburgh",
+        "similarity": 81
+      },
+      {
+        "name": "JD Bertrand",
+        "year": 2024,
+        "pick": 143,
+        "school": "Notre Dame",
+        "similarity": 77
+      }
+    ]
   },
   {
     "id": "connor lew-c-auburn",
@@ -2992,7 +4258,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Drew Dalman",
+        "year": 2021,
+        "pick": 114,
+        "school": "Stanford",
+        "similarity": 96
+      },
+      {
+        "name": "Juice Scruggs",
+        "year": 2023,
+        "pick": 62,
+        "school": "Penn St.",
+        "similarity": 96
+      },
+      {
+        "name": "Dylan McMahon",
+        "year": 2024,
+        "pick": 190,
+        "school": "North Carolina St.",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "gabe jacas-edge-illinois",
@@ -3057,7 +4346,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Joshua Paschal",
+        "year": 2022,
+        "pick": 46,
+        "school": "Kentucky",
+        "similarity": 76
+      },
+      {
+        "name": "Brandon Dorlus",
+        "year": 2024,
+        "pick": 109,
+        "school": "Oregon",
+        "similarity": 73
+      },
+      {
+        "name": "Tuli Tuipulotu",
+        "year": 2023,
+        "pick": 54,
+        "school": "USC",
+        "similarity": 71
+      }
+    ]
   },
   {
     "id": "a j haulcy-s-lsu",
@@ -3103,7 +4415,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kyle Dugger",
+        "year": 2020,
+        "pick": 37,
+        "school": "Lenoir-Rhyne",
+        "similarity": 66
+      },
+      {
+        "name": "Daniel Thomas",
+        "year": 2020,
+        "pick": 157,
+        "school": "Auburn",
+        "similarity": 50
+      },
+      {
+        "name": "Antoine Brooks Jr.",
+        "year": 2020,
+        "pick": 198,
+        "school": "Maryland",
+        "similarity": 49
+      }
+    ]
   },
   {
     "id": "keionte scott-cb-miami",
@@ -3149,7 +4484,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kaiir Elam",
+        "year": 2022,
+        "pick": 23,
+        "school": "Florida",
+        "similarity": 95
+      },
+      {
+        "name": "JT Woods",
+        "year": 2022,
+        "pick": 79,
+        "school": "Baylor",
+        "similarity": 86
+      },
+      {
+        "name": "Cameron Dantzler",
+        "year": 2020,
+        "pick": 89,
+        "school": "Mississippi State",
+        "similarity": 82
+      }
+    ]
   },
   {
     "id": "antonio williams-wr-clemson",
@@ -3211,7 +4569,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Bo Melton",
+        "year": 2022,
+        "pick": 229,
+        "school": "Rutgers",
+        "similarity": 97
+      },
+      {
+        "name": "Kyle Philips",
+        "year": 2022,
+        "pick": 163,
+        "school": "UCLA",
+        "similarity": 97
+      },
+      {
+        "name": "Henry Ruggs III",
+        "year": 2020,
+        "pick": 12,
+        "school": "Alabama",
+        "similarity": 94
+      }
+    ]
   },
   {
     "id": "lt overton-edge-alabama",
@@ -3257,7 +4638,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Esezi Otomewo",
+        "year": 2022,
+        "pick": 165,
+        "school": "Minnesota",
+        "similarity": 86
+      },
+      {
+        "name": "Keion White",
+        "year": 2023,
+        "pick": 46,
+        "school": "Georgia Tech",
+        "similarity": 76
+      },
+      {
+        "name": "Alex Wright",
+        "year": 2022,
+        "pick": 78,
+        "school": "Alabama-Birmingham",
+        "similarity": 76
+      }
+    ]
   },
   {
     "id": "chase bisontis-og-texas am",
@@ -3297,7 +4701,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Ben Bredeson",
+        "year": 2020,
+        "pick": 143,
+        "school": "Michigan",
+        "similarity": 100
+      },
+      {
+        "name": "Andrew Thomas",
+        "year": 2020,
+        "pick": 4,
+        "school": "Georgia",
+        "similarity": 100
+      },
+      {
+        "name": "Samuel Cosmi",
+        "year": 2021,
+        "pick": 51,
+        "school": "Texas",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "kyle louis-lb-pittsburgh",
@@ -3356,7 +4783,30 @@
       "cone": 6.97,
       "shuttle": 4.26,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Akeem Davis-Gaither",
+        "year": 2020,
+        "pick": 107,
+        "school": "Appalachian State",
+        "similarity": 81
+      },
+      {
+        "name": "SirVocea Dennis",
+        "year": 2023,
+        "pick": 153,
+        "school": "Pittsburgh",
+        "similarity": 73
+      },
+      {
+        "name": "Clay Johnston",
+        "year": 2020,
+        "pick": 234,
+        "school": "Baylor",
+        "similarity": 69
+      }
+    ]
   },
   {
     "id": "devin moore-cb-florida",
@@ -3421,7 +4871,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Julius Brents",
+        "year": 2023,
+        "pick": 44,
+        "school": "Kansas St.",
+        "similarity": 85
+      },
+      {
+        "name": "Cam Hart",
+        "year": 2024,
+        "pick": 140,
+        "school": "Notre Dame",
+        "similarity": 82
+      },
+      {
+        "name": "Benjamin St-Juste",
+        "year": 2021,
+        "pick": 74,
+        "school": "Minnesota",
+        "similarity": 82
+      }
+    ]
   },
   {
     "id": "deontae lawson-lb-alabama",
@@ -3486,7 +4959,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Chazz Surratt",
+        "year": 2021,
+        "pick": 78,
+        "school": "North Carolina",
+        "similarity": 95
+      },
+      {
+        "name": "Channing Tindall",
+        "year": 2022,
+        "pick": 102,
+        "school": "Georgia",
+        "similarity": 90
+      },
+      {
+        "name": "Edgerrin Cooper",
+        "year": 2024,
+        "pick": 45,
+        "school": "Texas A&M",
+        "similarity": 90
+      }
+    ]
   },
   {
     "id": "elijah sarratt-wr-indiana",
@@ -3538,7 +5034,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Tyrie Cleveland",
+        "year": 2020,
+        "pick": 252,
+        "school": "Florida",
+        "similarity": 100
+      },
+      {
+        "name": "Erik Ezukanma",
+        "year": 2022,
+        "pick": 125,
+        "school": "Texas Tech",
+        "similarity": 100
+      },
+      {
+        "name": "Brenden Rice",
+        "year": 2024,
+        "pick": 225,
+        "school": "USC",
+        "similarity": 97
+      }
+    ]
   },
   {
     "id": "garrett nussmeier-qb-lsu",
@@ -3609,7 +5128,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jordan Travis",
+        "year": 2024,
+        "pick": 171,
+        "school": "Florida St.",
+        "similarity": 77
+      },
+      {
+        "name": "Jake Haener",
+        "year": 2023,
+        "pick": 127,
+        "school": "Fresno St.",
+        "similarity": 75
+      },
+      {
+        "name": "Jaren Hall",
+        "year": 2023,
+        "pick": 164,
+        "school": "BYU",
+        "similarity": 75
+      }
+    ]
   },
   {
     "id": "joshua josephs-edge-tennessee",
@@ -3674,7 +5216,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "DeAngelo Malone",
+        "year": 2022,
+        "pick": 82,
+        "school": "Western Kentucky",
+        "similarity": 89
+      },
+      {
+        "name": "Dallas Turner",
+        "year": 2024,
+        "pick": 17,
+        "school": "Alabama",
+        "similarity": 76
+      },
+      {
+        "name": "Nik Bonitto",
+        "year": 2022,
+        "pick": 64,
+        "school": "Oklahoma",
+        "similarity": 73
+      }
+    ]
   },
   {
     "id": "keylan rutledge-og-georgia tech",
@@ -3714,7 +5279,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Saahdiq Charles",
+        "year": 2020,
+        "pick": 108,
+        "school": "LSU",
+        "similarity": 96
+      },
+      {
+        "name": "John Simpson",
+        "year": 2020,
+        "pick": 109,
+        "school": "Clemson",
+        "similarity": 96
+      },
+      {
+        "name": "Jackson Carman",
+        "year": 2021,
+        "pick": 46,
+        "school": "Clemson",
+        "similarity": 89
+      }
+    ]
   },
   {
     "id": "ja kobi lane-wr-usc",
@@ -3771,7 +5359,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "A.T. Perry",
+        "year": 2023,
+        "pick": 195,
+        "school": "Wake Forest",
+        "similarity": 94
+      },
+      {
+        "name": "Devaughn Vele",
+        "year": 2024,
+        "pick": 235,
+        "school": "Utah",
+        "similarity": 91
+      },
+      {
+        "name": "Christian Watson",
+        "year": 2022,
+        "pick": 34,
+        "school": "North Dakota St.",
+        "similarity": 78
+      }
+    ]
   },
   {
     "id": "darrell jackson jr-dt-florida state",
@@ -3817,7 +5428,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jonathan Ford",
+        "year": 2022,
+        "pick": 234,
+        "school": "Miami",
+        "similarity": 92
+      },
+      {
+        "name": "Leki Fotu",
+        "year": 2020,
+        "pick": 114,
+        "school": "Utah",
+        "similarity": 87
+      },
+      {
+        "name": "Derrick Brown",
+        "year": 2020,
+        "pick": 7,
+        "school": "Auburn",
+        "similarity": 80
+      }
+    ]
   },
   {
     "id": "kamari ramsey-s-usc",
@@ -3870,7 +5504,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Caelen Carson",
+        "year": 2024,
+        "pick": 174,
+        "school": "Wake Forest",
+        "similarity": 74
+      },
+      {
+        "name": "Kool-Aid McKinstry",
+        "year": 2024,
+        "pick": 41,
+        "school": "Alabama",
+        "similarity": 74
+      },
+      {
+        "name": "Trevon Diggs",
+        "year": 2020,
+        "pick": 51,
+        "school": "Alabama",
+        "similarity": 74
+      }
+    ]
   },
   {
     "id": "eli stowers-te-vanderbilt",
@@ -3922,7 +5579,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Devin Culp",
+        "year": 2024,
+        "pick": 246,
+        "school": "Washington",
+        "similarity": 61
+      },
+      {
+        "name": "Cameron Latu",
+        "year": 2023,
+        "pick": 101,
+        "school": "Alabama",
+        "similarity": 61
+      },
+      {
+        "name": "Brock Bowers",
+        "year": 2024,
+        "pick": 13,
+        "school": "Georgia",
+        "similarity": 52
+      }
+    ]
   },
   {
     "id": "gracen halton-dt-oklahoma",
@@ -3987,7 +5667,30 @@
       "cone": 8.09,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jer'Zhan Newton",
+        "year": 2024,
+        "pick": 36,
+        "school": "Illinois",
+        "similarity": 78
+      },
+      {
+        "name": "Broderick Washington",
+        "year": 2020,
+        "pick": 170,
+        "school": "Texas Tech",
+        "similarity": 77
+      },
+      {
+        "name": "Neville Gallimore",
+        "year": 2020,
+        "pick": 82,
+        "school": "Oklahoma",
+        "similarity": 74
+      }
+    ]
   },
   {
     "id": "jadarian price-rb-notre dame",
@@ -4048,7 +5751,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Rasheen Ali",
+        "year": 2024,
+        "pick": 165,
+        "school": "Marshall",
+        "similarity": 87
+      },
+      {
+        "name": "Will Shipley",
+        "year": 2024,
+        "pick": 127,
+        "school": "Clemson",
+        "similarity": 87
+      },
+      {
+        "name": "Kendre Miller",
+        "year": 2023,
+        "pick": 71,
+        "school": "TCU",
+        "similarity": 76
+      }
+    ]
   },
   {
     "id": "julian neal-cb-arkansas",
@@ -4094,7 +5820,30 @@
       "cone": 7.13,
       "shuttle": 4.2,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jaylen Watson",
+        "year": 2022,
+        "pick": 243,
+        "school": "Washington St.",
+        "similarity": 83
+      },
+      {
+        "name": "Martin Emerson",
+        "year": 2022,
+        "pick": 68,
+        "school": "Mississippi St.",
+        "similarity": 80
+      },
+      {
+        "name": "Ashtyn Davis",
+        "year": 2020,
+        "pick": 68,
+        "school": "California",
+        "similarity": 73
+      }
+    ]
   },
   {
     "id": "malik muhammad-cb-texas",
@@ -4153,7 +5902,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Julian Blackmon",
+        "year": 2020,
+        "pick": 85,
+        "school": "Utah",
+        "similarity": 95
+      },
+      {
+        "name": "Derek Stingley",
+        "year": 2022,
+        "pick": 3,
+        "school": "LSU",
+        "similarity": 91
+      },
+      {
+        "name": "Kamari Lassiter",
+        "year": 2024,
+        "pick": 42,
+        "school": "Georgia",
+        "similarity": 91
+      }
+    ]
   },
   {
     "id": "max klare-te-ohio state",
@@ -4199,7 +5971,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Harrison Bryant",
+        "year": 2020,
+        "pick": 115,
+        "school": "Florida Atlantic",
+        "similarity": 100
+      },
+      {
+        "name": "Charlie Woerner",
+        "year": 2020,
+        "pick": 190,
+        "school": "Georgia",
+        "similarity": 93
+      },
+      {
+        "name": "Tanner McLachlan",
+        "year": 2024,
+        "pick": 194,
+        "school": "Arizona",
+        "similarity": 93
+      }
+    ]
   },
   {
     "id": "josiah trotter-lb-missouri",
@@ -4245,7 +6040,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Evan Weaver",
+        "year": 2020,
+        "pick": 202,
+        "school": "California",
+        "similarity": 100
+      },
+      {
+        "name": "Zack Baun",
+        "year": 2020,
+        "pick": 74,
+        "school": "Wisconsin",
+        "similarity": 95
+      },
+      {
+        "name": "Chapelle Russell",
+        "year": 2020,
+        "pick": 241,
+        "school": "Temple",
+        "similarity": 95
+      }
+    ]
   },
   {
     "id": "jonah coleman-rb-washington",
@@ -4298,7 +6116,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "keith abney ii-cb-arizona state",
@@ -4344,7 +6163,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Derek Stingley",
+        "year": 2022,
+        "pick": 3,
+        "school": "LSU",
+        "similarity": 100
+      },
+      {
+        "name": "Brian Branch",
+        "year": 2023,
+        "pick": 45,
+        "school": "Alabama",
+        "similarity": 100
+      },
+      {
+        "name": "Marcellas Dial",
+        "year": 2024,
+        "pick": 180,
+        "school": "South Carolina",
+        "similarity": 100
+      }
+    ]
   },
   {
     "id": "carson beck-qb-miami",
@@ -4390,7 +6232,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Drake Maye",
+        "year": 2024,
+        "pick": 3,
+        "school": "North Carolina",
+        "similarity": 86
+      },
+      {
+        "name": "Jordan Love",
+        "year": 2020,
+        "pick": 26,
+        "school": "Utah State",
+        "similarity": 81
+      },
+      {
+        "name": "Clayton Tune",
+        "year": 2023,
+        "pick": 139,
+        "school": "Houston",
+        "similarity": 76
+      }
+    ]
   },
   {
     "id": "cameron ball-dt",
@@ -4429,7 +6294,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Derrick Brown",
+        "year": 2020,
+        "pick": 7,
+        "school": "Auburn",
+        "similarity": 100
+      },
+      {
+        "name": "Javon Kinlaw",
+        "year": 2020,
+        "pick": 14,
+        "school": "South Carolina",
+        "similarity": 96
+      },
+      {
+        "name": "Leki Fotu",
+        "year": 2020,
+        "pick": 114,
+        "school": "Utah",
+        "similarity": 92
+      }
+    ]
   },
   {
     "id": "emmett johnson-rb-nebraska",
@@ -4490,7 +6378,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Zach Evans",
+        "year": 2023,
+        "pick": 215,
+        "school": "Mississippi",
+        "similarity": 91
+      },
+      {
+        "name": "Rasheen Ali",
+        "year": 2024,
+        "pick": 165,
+        "school": "Marshall",
+        "similarity": 76
+      },
+      {
+        "name": "Will Shipley",
+        "year": 2024,
+        "pick": 127,
+        "school": "Clemson",
+        "similarity": 76
+      }
+    ]
   },
   {
     "id": "dani dennis sutton-edge-penn state",
@@ -4554,7 +6465,30 @@
       "cone": 6.9,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Will Anderson Jr.",
+        "year": 2023,
+        "pick": 3,
+        "school": "Alabama",
+        "similarity": 86
+      },
+      {
+        "name": "Kayvon Thibodeaux",
+        "year": 2022,
+        "pick": 5,
+        "school": "Oregon",
+        "similarity": 84
+      },
+      {
+        "name": "Arnold Ebiketie",
+        "year": 2022,
+        "pick": 38,
+        "school": "Penn St.",
+        "similarity": 65
+      }
+    ]
   },
   {
     "id": "zakee wheatley-s-penn state",
@@ -4619,7 +6553,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Martin Emerson",
+        "year": 2022,
+        "pick": 68,
+        "school": "Mississippi St.",
+        "similarity": 95
+      },
+      {
+        "name": "Jaylen Watson",
+        "year": 2022,
+        "pick": 243,
+        "school": "Washington St.",
+        "similarity": 86
+      },
+      {
+        "name": "Quentin Lake",
+        "year": 2022,
+        "pick": 211,
+        "school": "UCLA",
+        "similarity": 74
+      }
+    ]
   },
   {
     "id": "charles demmings-cb",
@@ -4658,7 +6615,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jay Ward",
+        "year": 2023,
+        "pick": 134,
+        "school": "LSU",
+        "similarity": 91
+      },
+      {
+        "name": "Tyson Campbell",
+        "year": 2021,
+        "pick": 33,
+        "school": "Georgia",
+        "similarity": 86
+      },
+      {
+        "name": "Coby Bryant",
+        "year": 2022,
+        "pick": 109,
+        "school": "Cincinnati",
+        "similarity": 86
+      }
+    ]
   },
   {
     "id": "genesis smith-s-arizona",
@@ -4716,7 +6696,30 @@
       "cone": null,
       "shuttle": 4.18,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Tariq Woolen",
+        "year": 2022,
+        "pick": 153,
+        "school": "Texas-San Antonio",
+        "similarity": 84
+      },
+      {
+        "name": "Caden Sterns",
+        "year": 2021,
+        "pick": 152,
+        "school": "Texas",
+        "similarity": 82
+      },
+      {
+        "name": "Chamarri Conner",
+        "year": 2023,
+        "pick": 119,
+        "school": "Virginia Tech",
+        "similarity": 64
+      }
+    ]
   },
   {
     "id": "mike washington jr-rb-arkansas",
@@ -4762,7 +6765,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Hassan Haskins",
+        "year": 2022,
+        "pick": 131,
+        "school": "Michigan",
+        "similarity": 80
+      },
+      {
+        "name": "Jonathon Brooks",
+        "year": 2024,
+        "pick": 46,
+        "school": "Texas",
+        "similarity": 50
+      },
+      {
+        "name": "Isaac Guerendo",
+        "year": 2024,
+        "pick": 129,
+        "school": "Louisville",
+        "similarity": 47
+      }
+    ]
   },
   {
     "id": "caleb tiernan-ot-northwestern",
@@ -4802,7 +6828,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Trevor Penning",
+        "year": 2022,
+        "pick": 19,
+        "school": "Northern Iowa",
+        "similarity": 100
+      },
+      {
+        "name": "Andrew Stueber",
+        "year": 2022,
+        "pick": 245,
+        "school": "Michigan",
+        "similarity": 100
+      },
+      {
+        "name": "Matt Peart",
+        "year": 2020,
+        "pick": 99,
+        "school": "Connecticut",
+        "similarity": 76
+      }
+    ]
   },
   {
     "id": "chandler rivers-cb-duke",
@@ -4867,7 +6916,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Cobie Durant",
+        "year": 2022,
+        "pick": 142,
+        "school": "South Carolina St.",
+        "similarity": 76
+      },
+      {
+        "name": "Josiah Scott",
+        "year": 2020,
+        "pick": 137,
+        "school": "Michigan State",
+        "similarity": 73
+      },
+      {
+        "name": "Garrett Williams",
+        "year": 2023,
+        "pick": 72,
+        "school": "Syracuse",
+        "similarity": 71
+      }
+    ]
   },
   {
     "id": "gennings dunker-ot-iowa",
@@ -4907,7 +6979,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Ben Bredeson",
+        "year": 2020,
+        "pick": 143,
+        "school": "Michigan",
+        "similarity": 100
+      },
+      {
+        "name": "Andrew Thomas",
+        "year": 2020,
+        "pick": 4,
+        "school": "Georgia",
+        "similarity": 100
+      },
+      {
+        "name": "Samuel Cosmi",
+        "year": 2021,
+        "pick": 51,
+        "school": "Texas",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "nicholas singleton-rb-penn state",
@@ -4975,7 +7070,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Keaontay Ingram",
+        "year": 2022,
+        "pick": 201,
+        "school": "USC",
+        "similarity": 87
+      },
+      {
+        "name": "Isaac Guerendo",
+        "year": 2024,
+        "pick": 129,
+        "school": "Louisville",
+        "similarity": 87
+      },
+      {
+        "name": "Roschon Johnson",
+        "year": 2023,
+        "pick": 115,
+        "school": "Texas",
+        "similarity": 80
+      }
+    ]
   },
   {
     "id": "treydan stukes-cb-arizona",
@@ -5039,7 +7157,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Carrington Valentine",
+        "year": 2023,
+        "pick": 232,
+        "school": "Kentucky",
+        "similarity": 74
+      },
+      {
+        "name": "Eric Stokes",
+        "year": 2021,
+        "pick": 29,
+        "school": "Georgia",
+        "similarity": 73
+      },
+      {
+        "name": "Kaiir Elam",
+        "year": 2022,
+        "pick": 23,
+        "school": "Florida",
+        "similarity": 72
+      }
+    ]
   },
   {
     "id": "ted hurst-wr-georgia state",
@@ -5091,7 +7232,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Tyquan Thornton",
+        "year": 2022,
+        "pick": 50,
+        "school": "Baylor",
+        "similarity": 78
+      },
+      {
+        "name": "Jameson Williams",
+        "year": 2022,
+        "pick": 12,
+        "school": "Alabama",
+        "similarity": 75
+      },
+      {
+        "name": "George Pickens",
+        "year": 2022,
+        "pick": 52,
+        "school": "Georgia",
+        "similarity": 73
+      }
+    ]
   },
   {
     "id": "michael trigg-te-baylor",
@@ -5143,7 +7307,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Grant Calcaterra",
+        "year": 2022,
+        "pick": 198,
+        "school": "SMU",
+        "similarity": 93
+      },
+      {
+        "name": "Brayden Willis",
+        "year": 2023,
+        "pick": 247,
+        "school": "Oklahoma",
+        "similarity": 93
+      },
+      {
+        "name": "Cameron Latu",
+        "year": 2023,
+        "pick": 101,
+        "school": "Alabama",
+        "similarity": 87
+      }
+    ]
   },
   {
     "id": "domonique orange-dt-iowa state",
@@ -5208,7 +7395,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Travis Jones",
+        "year": 2022,
+        "pick": 76,
+        "school": "Connecticut",
+        "similarity": 100
+      },
+      {
+        "name": "Otito Ogbonnia",
+        "year": 2022,
+        "pick": 160,
+        "school": "UCLA",
+        "similarity": 98
+      },
+      {
+        "name": "DaVon Hamilton",
+        "year": 2020,
+        "pick": 73,
+        "school": "Ohio State",
+        "similarity": 90
+      }
+    ]
   },
   {
     "id": "deion burks-wr-oklahoma",
@@ -5260,7 +7470,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jha'Quan Jackson",
+        "year": 2024,
+        "pick": 182,
+        "school": "Tulane",
+        "similarity": 100
+      },
+      {
+        "name": "Ainias Smith",
+        "year": 2024,
+        "pick": 152,
+        "school": "Texas A&M",
+        "similarity": 94
+      },
+      {
+        "name": "Malcolm Perry",
+        "year": 2020,
+        "pick": 246,
+        "school": "Navy",
+        "similarity": 94
+      }
+    ]
   },
   {
     "id": "anthony lucas-edge-usc",
@@ -5318,7 +7551,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "billy schrauth-og-notre dame",
@@ -5358,7 +7592,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Cole Van Lanen",
+        "year": 2021,
+        "pick": 214,
+        "school": "Wisconsin",
+        "similarity": 100
+      },
+      {
+        "name": "Nick Broeker",
+        "year": 2023,
+        "pick": 230,
+        "school": "Mississippi",
+        "similarity": 100
+      },
+      {
+        "name": "Danny Pinter",
+        "year": 2020,
+        "pick": 149,
+        "school": "Ball State",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "chris mcclellan-dl-missouri",
@@ -5410,7 +7667,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Cameron Young",
+        "year": 2023,
+        "pick": 123,
+        "school": "Mississippi St.",
+        "similarity": 80
+      },
+      {
+        "name": "Keeanu Benton",
+        "year": 2023,
+        "pick": 49,
+        "school": "Wisconsin",
+        "similarity": 79
+      },
+      {
+        "name": "Zion Logue",
+        "year": 2024,
+        "pick": 197,
+        "school": "Georgia",
+        "similarity": 78
+      }
+    ]
   },
   {
     "id": "keyron crawford-edge-auburn",
@@ -5463,7 +7743,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kayvon Thibodeaux",
+        "year": 2022,
+        "pick": 5,
+        "school": "Oregon",
+        "similarity": 96
+      },
+      {
+        "name": "Jared Verse",
+        "year": 2024,
+        "pick": 19,
+        "school": "Florida St.",
+        "similarity": 96
+      },
+      {
+        "name": "Dylan Horton",
+        "year": 2023,
+        "pick": 109,
+        "school": "TCU",
+        "similarity": 93
+      }
+    ]
   },
   {
     "id": "sam hecht-c-kansas state",
@@ -5503,7 +7806,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Luke Wattenberg",
+        "year": 2022,
+        "pick": 171,
+        "school": "Washington",
+        "similarity": 96
+      },
+      {
+        "name": "Hakeem Adeniji",
+        "year": 2020,
+        "pick": 180,
+        "school": "Kansas",
+        "similarity": 93
+      },
+      {
+        "name": "Creed Humphrey",
+        "year": 2021,
+        "pick": 63,
+        "school": "Oklahoma",
+        "similarity": 93
+      }
+    ]
   },
   {
     "id": "skyler bell-wr-uconn",
@@ -5554,7 +7880,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "drew shelton-ot-penn state",
@@ -5594,7 +7921,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Christian Jones",
+        "year": 2024,
+        "pick": 162,
+        "school": "Texas",
+        "similarity": 100
+      },
+      {
+        "name": "Jack Driscoll",
+        "year": 2020,
+        "pick": 145,
+        "school": "Auburn",
+        "similarity": 96
+      },
+      {
+        "name": "Jarrett Patterson",
+        "year": 2023,
+        "pick": 201,
+        "school": "Notre Dame",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "bud clark-s-tcu",
@@ -5659,7 +8009,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kaiir Elam",
+        "year": 2022,
+        "pick": 23,
+        "school": "Florida",
+        "similarity": 73
+      },
+      {
+        "name": "Ahmad Gardner",
+        "year": 2022,
+        "pick": 4,
+        "school": "Cincinnati",
+        "similarity": 68
+      },
+      {
+        "name": "Riley Moss",
+        "year": 2023,
+        "pick": 83,
+        "school": "Iowa",
+        "similarity": 57
+      }
+    ]
   },
   {
     "id": "dametrious crownover-ot-texas am",
@@ -5699,7 +8072,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Marcus McKethan",
+        "year": 2022,
+        "pick": 173,
+        "school": "North Carolina",
+        "similarity": 86
+      },
+      {
+        "name": "Evan Neal",
+        "year": 2022,
+        "pick": 7,
+        "school": "Alabama",
+        "similarity": 72
+      },
+      {
+        "name": "Amarius Mims",
+        "year": 2024,
+        "pick": 18,
+        "school": "Georgia",
+        "similarity": 70
+      }
+    ]
   },
   {
     "id": "isaiah world-ot-oregon",
@@ -5739,7 +8135,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Luke Tenuta",
+        "year": 2022,
+        "pick": 209,
+        "school": "Virginia Tech",
+        "similarity": 96
+      },
+      {
+        "name": "Tyler Guyton",
+        "year": 2024,
+        "pick": 29,
+        "school": "Oklahoma",
+        "similarity": 86
+      },
+      {
+        "name": "Matt Waletzko",
+        "year": 2022,
+        "pick": 155,
+        "school": "North Dakota",
+        "similarity": 79
+      }
+    ]
   },
   {
     "id": "joe royer-te-cincinnati",
@@ -5791,7 +8210,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jake Ferguson",
+        "year": 2022,
+        "pick": 129,
+        "school": "Wisconsin",
+        "similarity": 100
+      },
+      {
+        "name": "Jeremy Ruckert",
+        "year": 2022,
+        "pick": 101,
+        "school": "Ohio St.",
+        "similarity": 100
+      },
+      {
+        "name": "Luke Farrell",
+        "year": 2021,
+        "pick": 145,
+        "school": "Ohio St.",
+        "similarity": 93
+      }
+    ]
   },
   {
     "id": "brenen thompson-wr-mississippi state",
@@ -5837,7 +8279,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Josh Downs",
+        "year": 2023,
+        "pick": 79,
+        "school": "North Carolina",
+        "similarity": 97
+      },
+      {
+        "name": "Calvin Austin",
+        "year": 2022,
+        "pick": 138,
+        "school": "Memphis",
+        "similarity": 81
+      },
+      {
+        "name": "Jacob Cowing",
+        "year": 2024,
+        "pick": 135,
+        "school": "Arizona",
+        "similarity": 80
+      }
+    ]
   },
   {
     "id": "quintayvious hutchins-edge",
@@ -5876,7 +8341,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "DeAngelo Malone",
+        "year": 2022,
+        "pick": 82,
+        "school": "Western Kentucky",
+        "similarity": 89
+      },
+      {
+        "name": "Dallas Turner",
+        "year": 2024,
+        "pick": 17,
+        "school": "Alabama",
+        "similarity": 76
+      },
+      {
+        "name": "Nik Bonitto",
+        "year": 2022,
+        "pick": 64,
+        "school": "Oklahoma",
+        "similarity": 73
+      }
+    ]
   },
   {
     "id": "logan jones-c-iowa",
@@ -5916,7 +8404,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jimmy Morrissey",
+        "year": 2021,
+        "pick": 230,
+        "school": "Pittsburgh",
+        "similarity": 96
+      },
+      {
+        "name": "Cameron Jurgens",
+        "year": 2022,
+        "pick": 51,
+        "school": "Nebraska",
+        "similarity": 96
+      },
+      {
+        "name": "Juice Scruggs",
+        "year": 2023,
+        "pick": 62,
+        "school": "Penn St.",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "will lee iii-cb-texas am",
@@ -5969,7 +8480,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Coby Bryant",
+        "year": 2022,
+        "pick": 109,
+        "school": "Cincinnati",
+        "similarity": 80
+      },
+      {
+        "name": "Derek Stingley",
+        "year": 2022,
+        "pick": 3,
+        "school": "LSU",
+        "similarity": 74
+      },
+      {
+        "name": "Julian Blackmon",
+        "year": 2020,
+        "pick": 85,
+        "school": "Utah",
+        "similarity": 73
+      }
+    ]
   },
   {
     "id": "josh cameron-wr-baylor",
@@ -6031,7 +8565,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Laviska Shenault Jr.",
+        "year": 2020,
+        "pick": 42,
+        "school": "Colorado",
+        "similarity": 91
+      },
+      {
+        "name": "Xavier Legette",
+        "year": 2024,
+        "pick": 32,
+        "school": "South Carolina",
+        "similarity": 91
+      },
+      {
+        "name": "Joe Reed",
+        "year": 2020,
+        "pick": 151,
+        "school": "Virginia",
+        "similarity": 81
+      }
+    ]
   },
   {
     "id": "malachi lawrence-edge-ucf",
@@ -6096,7 +8653,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kayvon Thibodeaux",
+        "year": 2022,
+        "pick": 5,
+        "school": "Oregon",
+        "similarity": 79
+      },
+      {
+        "name": "Will Anderson Jr.",
+        "year": 2023,
+        "pick": 3,
+        "school": "Alabama",
+        "similarity": 76
+      },
+      {
+        "name": "Felix Anudike-Uzomah",
+        "year": 2023,
+        "pick": 31,
+        "school": "Kansas St.",
+        "similarity": 67
+      }
+    ]
   },
   {
     "id": "austin barber-ot-florida",
@@ -6136,7 +8716,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Lucas Niang",
+        "year": 2020,
+        "pick": 96,
+        "school": "TCU",
+        "similarity": 96
+      },
+      {
+        "name": "Abraham Lucas",
+        "year": 2022,
+        "pick": 72,
+        "school": "Washington St.",
+        "similarity": 96
+      },
+      {
+        "name": "Cordell Volson",
+        "year": 2022,
+        "pick": 136,
+        "school": "North Dakota St.",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "dallen bentley-te-utah",
@@ -6193,7 +8796,30 @@
       "cone": null,
       "shuttle": 4.42,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Teagan Quitoriano",
+        "year": 2022,
+        "pick": 170,
+        "school": "Oregon St.",
+        "similarity": 45
+      },
+      {
+        "name": "Erick All",
+        "year": 2024,
+        "pick": 115,
+        "school": "Iowa",
+        "similarity": 43
+      },
+      {
+        "name": "Albert Okwuegbunam",
+        "year": 2020,
+        "pick": 118,
+        "school": "Missouri",
+        "similarity": 41
+      }
+    ]
   },
   {
     "id": "romello height-edge-texas tech",
@@ -6239,7 +8865,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "DeAngelo Malone",
+        "year": 2022,
+        "pick": 82,
+        "school": "Western Kentucky",
+        "similarity": 73
+      },
+      {
+        "name": "Nick Herbig",
+        "year": 2023,
+        "pick": 132,
+        "school": "Wisconsin",
+        "similarity": 67
+      },
+      {
+        "name": "Chris Rumph",
+        "year": 2021,
+        "pick": 118,
+        "school": "Duke",
+        "similarity": 61
+      }
+    ]
   },
   {
     "id": "jake slaughter-c-florida",
@@ -6279,7 +8928,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Beaux Limmer",
+        "year": 2024,
+        "pick": 217,
+        "school": "Arkansas",
+        "similarity": 96
+      },
+      {
+        "name": "Dillon Radunz",
+        "year": 2021,
+        "pick": 53,
+        "school": "North Dakota St.",
+        "similarity": 93
+      },
+      {
+        "name": "Christian Jones",
+        "year": 2024,
+        "pick": 162,
+        "school": "Texas",
+        "similarity": 93
+      }
+    ]
   },
   {
     "id": "roman hemby-rb",
@@ -6318,7 +8990,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Chuba Hubbard",
+        "year": 2021,
+        "pick": 126,
+        "school": "Oklahoma St.",
+        "similarity": 91
+      },
+      {
+        "name": "Tank Bigsby",
+        "year": 2023,
+        "pick": 88,
+        "school": "Auburn",
+        "similarity": 91
+      },
+      {
+        "name": "Tyrion Davis-Price",
+        "year": 2022,
+        "pick": 93,
+        "school": "LSU",
+        "similarity": 87
+      }
+    ]
   },
   {
     "id": "justin joly-te-nc state",
@@ -6370,7 +9065,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Erick All",
+        "year": 2024,
+        "pick": 115,
+        "school": "Iowa",
+        "similarity": 71
+      },
+      {
+        "name": "Ben Sinnott",
+        "year": 2024,
+        "pick": 53,
+        "school": "Kansas St.",
+        "similarity": 71
+      },
+      {
+        "name": "James Mitchell",
+        "year": 2022,
+        "pick": 177,
+        "school": "Virginia Tech",
+        "similarity": 69
+      }
+    ]
   },
   {
     "id": "skyler gill howard-dt-texas tech",
@@ -6416,7 +9134,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Calijah Kancey",
+        "year": 2023,
+        "pick": 19,
+        "school": "Pittsburgh",
+        "similarity": 83
+      },
+      {
+        "name": "Kalia Davis",
+        "year": 2022,
+        "pick": 220,
+        "school": "Central Florida",
+        "similarity": 78
+      },
+      {
+        "name": "Marcus Harris",
+        "year": 2024,
+        "pick": 247,
+        "school": "Auburn",
+        "similarity": 68
+      }
+    ]
   },
   {
     "id": "jalon kilgore-s-south carolina",
@@ -6475,7 +9216,30 @@
       "cone": null,
       "shuttle": 4.32,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Bryan Cook",
+        "year": 2022,
+        "pick": 62,
+        "school": "Cincinnati",
+        "similarity": 78
+      },
+      {
+        "name": "Trevon Diggs",
+        "year": 2020,
+        "pick": 51,
+        "school": "Alabama",
+        "similarity": 74
+      },
+      {
+        "name": "Grant Delpit",
+        "year": 2020,
+        "pick": 44,
+        "school": "LSU",
+        "similarity": 73
+      }
+    ]
   },
   {
     "id": "taurean york-lb-texas am",
@@ -6533,7 +9297,30 @@
       "cone": 7.32,
       "shuttle": 4.48,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Henry To'oTo'o",
+        "year": 2023,
+        "pick": 167,
+        "school": "Alabama",
+        "similarity": 66
+      },
+      {
+        "name": "Tony Fields",
+        "year": 2021,
+        "pick": 153,
+        "school": "West Virginia",
+        "similarity": 60
+      },
+      {
+        "name": "Tyrice Knight",
+        "year": 2024,
+        "pick": 118,
+        "school": "Texas-El Paso",
+        "similarity": 56
+      }
+    ]
   },
   {
     "id": "harold perkins jr-lb-lsu",
@@ -6578,7 +9365,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "aamil wagner-ot-notre dame",
@@ -6618,7 +9406,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Ryan Hayes",
+        "year": 2023,
+        "pick": 238,
+        "school": "Michigan",
+        "similarity": 93
+      },
+      {
+        "name": "Bernhard Raimann",
+        "year": 2022,
+        "pick": 77,
+        "school": "Central Michigan",
+        "similarity": 76
+      },
+      {
+        "name": "Brenden Jaimes",
+        "year": 2021,
+        "pick": 159,
+        "school": "Nebraska",
+        "similarity": 72
+      }
+    ]
   },
   {
     "id": "mikail kamara-edge-indiana",
@@ -6670,7 +9481,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "parker brailsford-iol-alabama",
@@ -6709,7 +9521,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "kaytron allen-rb-penn state",
@@ -6777,7 +9590,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Breece Hall",
+        "year": 2022,
+        "pick": 36,
+        "school": "Iowa St.",
+        "similarity": 100
+      },
+      {
+        "name": "La'Mical Perine",
+        "year": 2020,
+        "pick": 120,
+        "school": "Florida",
+        "similarity": 96
+      },
+      {
+        "name": "Kendre Miller",
+        "year": 2023,
+        "pick": 71,
+        "school": "TCU",
+        "similarity": 91
+      }
+    ]
   },
   {
     "id": "bryson eason-dt",
@@ -6816,7 +9652,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jalen Carter",
+        "year": 2023,
+        "pick": 9,
+        "school": "Georgia",
+        "similarity": 98
+      },
+      {
+        "name": "Daviyon Nixon",
+        "year": 2021,
+        "pick": 158,
+        "school": "Iowa",
+        "similarity": 96
+      },
+      {
+        "name": "Jordan Jefferson",
+        "year": 2024,
+        "pick": 116,
+        "school": "LSU",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "brian parker ii-og-duke",
@@ -6856,7 +9715,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Dillon Radunz",
+        "year": 2021,
+        "pick": 53,
+        "school": "North Dakota St.",
+        "similarity": 96
+      },
+      {
+        "name": "Brenden Jaimes",
+        "year": 2021,
+        "pick": 159,
+        "school": "Nebraska",
+        "similarity": 93
+      },
+      {
+        "name": "Beaux Limmer",
+        "year": 2024,
+        "pick": 217,
+        "school": "Arkansas",
+        "similarity": 93
+      }
+    ]
   },
   {
     "id": "jack endries-te-texas",
@@ -6902,7 +9784,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Grant Calcaterra",
+        "year": 2022,
+        "pick": 198,
+        "school": "SMU",
+        "similarity": 93
+      },
+      {
+        "name": "Cameron Latu",
+        "year": 2023,
+        "pick": 101,
+        "school": "Alabama",
+        "similarity": 87
+      },
+      {
+        "name": "Brock Bowers",
+        "year": 2024,
+        "pick": 13,
+        "school": "Georgia",
+        "similarity": 67
+      }
+    ]
   },
   {
     "id": "dontay corleone-dt-cincinnati",
@@ -6967,7 +9872,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "John Penisini",
+        "year": 2020,
+        "pick": 197,
+        "school": "Utah",
+        "similarity": 71
+      },
+      {
+        "name": "Keondre Coburn",
+        "year": 2023,
+        "pick": 194,
+        "school": "Texas",
+        "similarity": 68
+      },
+      {
+        "name": "McKinnley Jackson",
+        "year": 2024,
+        "pick": 97,
+        "school": "Texas A&M",
+        "similarity": 65
+      }
+    ]
   },
   {
     "id": "nyjalik kelly-edge",
@@ -7006,7 +9934,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Ochaun Mathis",
+        "year": 2023,
+        "pick": 189,
+        "school": "Nebraska",
+        "similarity": 100
+      },
+      {
+        "name": "Dominique Robinson",
+        "year": 2022,
+        "pick": 174,
+        "school": "Miami (Ohio)",
+        "similarity": 89
+      },
+      {
+        "name": "Amar\u00e9 Barno",
+        "year": 2022,
+        "pick": 189,
+        "school": "Virginia Tech",
+        "similarity": 86
+      }
+    ]
   },
   {
     "id": "kage casey-ot-boise state",
@@ -7045,7 +9996,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "rayshaun benny-dt-michigan",
@@ -7110,7 +10062,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jordan Elliott",
+        "year": 2020,
+        "pick": 88,
+        "school": "Missouri",
+        "similarity": 94
+      },
+      {
+        "name": "Jaden Crumedy",
+        "year": 2024,
+        "pick": 200,
+        "school": "Mississippi St.",
+        "similarity": 92
+      },
+      {
+        "name": "Keeanu Benton",
+        "year": 2023,
+        "pick": 49,
+        "school": "Wisconsin",
+        "similarity": 92
+      }
+    ]
   },
   {
     "id": "jaishawn barham-edge-michigan",
@@ -7163,7 +10138,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "DeAngelo Malone",
+        "year": 2022,
+        "pick": 82,
+        "school": "Western Kentucky",
+        "similarity": 100
+      },
+      {
+        "name": "Chris Rumph",
+        "year": 2021,
+        "pick": 118,
+        "school": "Duke",
+        "similarity": 70
+      },
+      {
+        "name": "Nick Herbig",
+        "year": 2023,
+        "pick": 132,
+        "school": "Wisconsin",
+        "similarity": 69
+      }
+    ]
   },
   {
     "id": "louis moore-s-indiana",
@@ -7222,7 +10220,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Terrell Burgess",
+        "year": 2020,
+        "pick": 104,
+        "school": "Utah",
+        "similarity": 91
+      },
+      {
+        "name": "Brandon Jones",
+        "year": 2020,
+        "pick": 70,
+        "school": "Texas",
+        "similarity": 91
+      },
+      {
+        "name": "Caden Sterns",
+        "year": 2021,
+        "pick": 152,
+        "school": "Texas",
+        "similarity": 91
+      }
+    ]
   },
   {
     "id": "caleb douglas-wr",
@@ -7261,7 +10282,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Isaiah Hodgins",
+        "year": 2020,
+        "pick": 207,
+        "school": "Oregon State",
+        "similarity": 100
+      },
+      {
+        "name": "Christian Watson",
+        "year": 2022,
+        "pick": 34,
+        "school": "North Dakota St.",
+        "similarity": 94
+      },
+      {
+        "name": "Nico Collins",
+        "year": 2021,
+        "pick": 89,
+        "school": "Michigan",
+        "similarity": 86
+      }
+    ]
   },
   {
     "id": "daylen everette-cb-georgia",
@@ -7326,7 +10370,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kamal Hadden",
+        "year": 2024,
+        "pick": 211,
+        "school": "Tennessee",
+        "similarity": 74
+      },
+      {
+        "name": "Derek Stingley",
+        "year": 2022,
+        "pick": 3,
+        "school": "LSU",
+        "similarity": 74
+      },
+      {
+        "name": "Kaiir Elam",
+        "year": 2022,
+        "pick": 23,
+        "school": "Florida",
+        "similarity": 74
+      }
+    ]
   },
   {
     "id": "cj daniels-wr-miami",
@@ -7371,7 +10438,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "nate boerkircher-te-texas am",
@@ -7416,7 +10484,30 @@
       "cone": null,
       "shuttle": 4.4,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Cole Turner",
+        "year": 2022,
+        "pick": 149,
+        "school": "Nevada",
+        "similarity": 92
+      },
+      {
+        "name": "Harrison Bryant",
+        "year": 2020,
+        "pick": 115,
+        "school": "Florida Atlantic",
+        "similarity": 83
+      },
+      {
+        "name": "Greg Dulcich",
+        "year": 2022,
+        "pick": 80,
+        "school": "UCLA",
+        "similarity": 83
+      }
+    ]
   },
   {
     "id": "tim keenan iii-dt-alabama",
@@ -7481,7 +10572,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jer'Zhan Newton",
+        "year": 2024,
+        "pick": 36,
+        "school": "Illinois",
+        "similarity": 72
+      },
+      {
+        "name": "Broderick Washington",
+        "year": 2020,
+        "pick": 170,
+        "school": "Texas Tech",
+        "similarity": 69
+      },
+      {
+        "name": "Jalen Carter",
+        "year": 2023,
+        "pick": 9,
+        "school": "Georgia",
+        "similarity": 67
+      }
+    ]
   },
   {
     "id": "domani jackson-cb-alabama",
@@ -7534,7 +10648,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kamal Hadden",
+        "year": 2024,
+        "pick": 211,
+        "school": "Tennessee",
+        "similarity": 100
+      },
+      {
+        "name": "A.J. Terrell",
+        "year": 2020,
+        "pick": 16,
+        "school": "Clemson",
+        "similarity": 93
+      },
+      {
+        "name": "Jalyn Armour-Davis",
+        "year": 2022,
+        "pick": 119,
+        "school": "Alabama",
+        "similarity": 89
+      }
+    ]
   },
   {
     "id": "jack pyburn-edge",
@@ -7573,7 +10710,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Brennan Jackson",
+        "year": 2024,
+        "pick": 154,
+        "school": "Washington St.",
+        "similarity": 100
+      },
+      {
+        "name": "George Karlaftis",
+        "year": 2022,
+        "pick": 30,
+        "school": "Purdue",
+        "similarity": 93
+      },
+      {
+        "name": "Cameron Thomas",
+        "year": 2022,
+        "pick": 87,
+        "school": "San Diego St.",
+        "similarity": 89
+      }
+    ]
   },
   {
     "id": "zane durant-dt-penn state",
@@ -7638,7 +10798,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kalia Davis",
+        "year": 2022,
+        "pick": 220,
+        "school": "Central Florida",
+        "similarity": 85
+      },
+      {
+        "name": "Khalil Davis",
+        "year": 2020,
+        "pick": 194,
+        "school": "Nebraska",
+        "similarity": 75
+      },
+      {
+        "name": "Calijah Kancey",
+        "year": 2023,
+        "pick": 19,
+        "school": "Pittsburgh",
+        "similarity": 72
+      }
+    ]
   },
   {
     "id": "harrison wallace iii-wr",
@@ -7677,7 +10860,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jalen Tolbert",
+        "year": 2022,
+        "pick": 88,
+        "school": "South Alabama",
+        "similarity": 97
+      },
+      {
+        "name": "Jaxon Smith-Njigba",
+        "year": 2023,
+        "pick": 20,
+        "school": "Ohio St.",
+        "similarity": 97
+      },
+      {
+        "name": "Jalen McMillan",
+        "year": 2024,
+        "pick": 92,
+        "school": "Washington",
+        "similarity": 94
+      }
+    ]
   },
   {
     "id": "scooby williams-lb",
@@ -7716,7 +10922,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Channing Tindall",
+        "year": 2022,
+        "pick": 102,
+        "school": "Georgia",
+        "similarity": 100
+      },
+      {
+        "name": "Edgerrin Cooper",
+        "year": 2024,
+        "pick": 45,
+        "school": "Texas A&M",
+        "similarity": 100
+      },
+      {
+        "name": "Chazz Surratt",
+        "year": 2021,
+        "pick": 78,
+        "school": "North Carolina",
+        "similarity": 95
+      }
+    ]
   },
   {
     "id": "ar maj reed adams-og-texas am",
@@ -7756,7 +10985,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Aaron Banks",
+        "year": 2021,
+        "pick": 48,
+        "school": "Notre Dame",
+        "similarity": 100
+      },
+      {
+        "name": "Tyler Smith",
+        "year": 2022,
+        "pick": 24,
+        "school": "Tulsa",
+        "similarity": 96
+      },
+      {
+        "name": "Kingsley Suamataia",
+        "year": 2024,
+        "pick": 63,
+        "school": "BYU",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "matt gulbin-c",
@@ -7795,7 +11047,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jedrick Wills",
+        "year": 2020,
+        "pick": 10,
+        "school": "Alabama",
+        "similarity": 100
+      },
+      {
+        "name": "Simon Stepaniak",
+        "year": 2020,
+        "pick": 209,
+        "school": "Indiana",
+        "similarity": 96
+      },
+      {
+        "name": "James Hudson",
+        "year": 2021,
+        "pick": 110,
+        "school": "Cincinnati",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "jude bowry-ot-boston college",
@@ -7834,7 +11109,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "bryce boettcher-lb",
@@ -7873,7 +11149,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Chance Campbell",
+        "year": 2022,
+        "pick": 219,
+        "school": "Mississippi",
+        "similarity": 100
+      },
+      {
+        "name": "Ty'Ron Hopper",
+        "year": 2024,
+        "pick": 91,
+        "school": "Missouri",
+        "similarity": 95
+      },
+      {
+        "name": "Tommy Eichenberg",
+        "year": 2024,
+        "pick": 148,
+        "school": "Ohio St.",
+        "similarity": 95
+      }
+    ]
   },
   {
     "id": "de zhaun stribling-wr-ole miss",
@@ -7919,7 +11218,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Romeo Doubs",
+        "year": 2022,
+        "pick": 132,
+        "school": "Nevada",
+        "similarity": 97
+      },
+      {
+        "name": "Puka Nacua",
+        "year": 2023,
+        "pick": 177,
+        "school": "BYU",
+        "similarity": 97
+      },
+      {
+        "name": "Antoine Green",
+        "year": 2023,
+        "pick": 219,
+        "school": "North Carolina",
+        "similarity": 97
+      }
+    ]
   },
   {
     "id": "markel bell-ot-miami",
@@ -7958,7 +11280,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "sam roush-te-stanford",
@@ -8020,7 +11343,30 @@
       "cone": 7.08,
       "shuttle": 4.37,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Teagan Quitoriano",
+        "year": 2022,
+        "pick": 170,
+        "school": "Oregon St.",
+        "similarity": 69
+      },
+      {
+        "name": "Pat Freiermuth",
+        "year": 2021,
+        "pick": 55,
+        "school": "Penn St.",
+        "similarity": 53
+      },
+      {
+        "name": "Erick All",
+        "year": 2024,
+        "pick": 115,
+        "school": "Iowa",
+        "similarity": 52
+      }
+    ]
   },
   {
     "id": "caden curry-edge",
@@ -8059,7 +11405,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Cedric Johnson",
+        "year": 2024,
+        "pick": 214,
+        "school": "Mississippi",
+        "similarity": 100
+      },
+      {
+        "name": "YaYa Diaby",
+        "year": 2023,
+        "pick": 82,
+        "school": "Louisville",
+        "similarity": 89
+      },
+      {
+        "name": "Felix Anudike-Uzomah",
+        "year": 2023,
+        "pick": 31,
+        "school": "Kansas St.",
+        "similarity": 82
+      }
+    ]
   },
   {
     "id": "demond claiborne-rb-wake forest",
@@ -8126,7 +11495,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jahmyr Gibbs",
+        "year": 2023,
+        "pick": 12,
+        "school": "Alabama",
+        "similarity": 83
+      },
+      {
+        "name": "Kenneth Gainwell",
+        "year": 2021,
+        "pick": 150,
+        "school": "Memphis",
+        "similarity": 68
+      },
+      {
+        "name": "James Cook",
+        "year": 2022,
+        "pick": 63,
+        "school": "Georgia",
+        "similarity": 67
+      }
+    ]
   },
   {
     "id": "adam randall-rb",
@@ -8165,7 +11557,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Hassan Haskins",
+        "year": 2022,
+        "pick": 131,
+        "school": "Michigan",
+        "similarity": 91
+      },
+      {
+        "name": "Brian Robinson",
+        "year": 2022,
+        "pick": 98,
+        "school": "Alabama",
+        "similarity": 80
+      },
+      {
+        "name": "Braelon Allen",
+        "year": 2024,
+        "pick": 134,
+        "school": "Wisconsin",
+        "similarity": 68
+      }
+    ]
   },
   {
     "id": "reggie virgil-wr-texas tech",
@@ -8210,7 +11625,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "fernando carmona-ot",
@@ -8249,7 +11665,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Aaron Banks",
+        "year": 2021,
+        "pick": 48,
+        "school": "Notre Dame",
+        "similarity": 100
+      },
+      {
+        "name": "Tyler Smith",
+        "year": 2022,
+        "pick": 24,
+        "school": "Tulsa",
+        "similarity": 96
+      },
+      {
+        "name": "Kingsley Suamataia",
+        "year": 2024,
+        "pick": 63,
+        "school": "BYU",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "drew allar-qb-penn state",
@@ -8320,7 +11759,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Joe Milton",
+        "year": 2024,
+        "pick": 193,
+        "school": "Tennessee",
+        "similarity": 100
+      },
+      {
+        "name": "Kyle Trask",
+        "year": 2021,
+        "pick": 64,
+        "school": "Florida",
+        "similarity": 95
+      },
+      {
+        "name": "Nate Stanley",
+        "year": 2020,
+        "pick": 244,
+        "school": "Iowa",
+        "similarity": 76
+      }
+    ]
   },
   {
     "id": "lander barton-lb-utah",
@@ -8384,7 +11846,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "kaelon black-rb",
@@ -8423,7 +11886,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Chase Brown",
+        "year": 2023,
+        "pick": 163,
+        "school": "Illinois",
+        "similarity": 96
+      },
+      {
+        "name": "Eric Gray",
+        "year": 2023,
+        "pick": 172,
+        "school": "Oklahoma",
+        "similarity": 87
+      },
+      {
+        "name": "Ke'Shawn Vaughn",
+        "year": 2020,
+        "pick": 76,
+        "school": "Vanderbilt",
+        "similarity": 83
+      }
+    ]
   },
   {
     "id": "tanner koziol-te",
@@ -8462,7 +11948,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Davis Allen",
+        "year": 2023,
+        "pick": 175,
+        "school": "Clemson",
+        "similarity": 61
+      },
+      {
+        "name": "Cole Turner",
+        "year": 2022,
+        "pick": 149,
+        "school": "Nevada",
+        "similarity": 58
+      },
+      {
+        "name": "Josh Whyle",
+        "year": 2023,
+        "pick": 147,
+        "school": "Cincinnati",
+        "similarity": 57
+      }
+    ]
   },
   {
     "id": "alex harkey-ot-oregon",
@@ -8501,7 +12010,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "aiden fisher-lb-indiana",
@@ -8554,7 +12064,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "D'Marco Jackson",
+        "year": 2022,
+        "pick": 161,
+        "school": "Appalachian St.",
+        "similarity": 100
+      },
+      {
+        "name": "Tyrice Knight",
+        "year": 2024,
+        "pick": 118,
+        "school": "Texas-El Paso",
+        "similarity": 100
+      },
+      {
+        "name": "Shaun Bradley",
+        "year": 2020,
+        "pick": 196,
+        "school": "Temple",
+        "similarity": 90
+      }
+    ]
   },
   {
     "id": "oscar delp-te-georgia",
@@ -8615,7 +12148,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "tyreak sapp-edge-florida",
@@ -8679,7 +12213,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Tyler Lacy",
+        "year": 2023,
+        "pick": 130,
+        "school": "Oklahoma St.",
+        "similarity": 70
+      },
+      {
+        "name": "Adetomiwa Adebawore",
+        "year": 2023,
+        "pick": 110,
+        "school": "Northwestern",
+        "similarity": 69
+      },
+      {
+        "name": "Zach Harrison",
+        "year": 2023,
+        "pick": 75,
+        "school": "Ohio St.",
+        "similarity": 67
+      }
+    ]
   },
   {
     "id": "jager burton-iol-kentucky",
@@ -8718,7 +12275,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "eli raridon-te-notre dame",
@@ -8775,7 +12333,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Charlie Kolar",
+        "year": 2022,
+        "pick": 128,
+        "school": "Iowa St.",
+        "similarity": 93
+      },
+      {
+        "name": "AJ Barner",
+        "year": 2024,
+        "pick": 121,
+        "school": "Michigan",
+        "similarity": 71
+      },
+      {
+        "name": "Luke Musgrave",
+        "year": 2023,
+        "pick": 42,
+        "school": "Oregon St.",
+        "similarity": 65
+      }
+    ]
   },
   {
     "id": "fernando carmona jr-ot-arkansas",
@@ -8814,7 +12395,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "le veon moss-rb",
@@ -8853,7 +12435,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Jerome Ford",
+        "year": 2022,
+        "pick": 156,
+        "school": "Cincinnati",
+        "similarity": 100
+      },
+      {
+        "name": "Jaylen Wright",
+        "year": 2024,
+        "pick": 120,
+        "school": "Tennessee",
+        "similarity": 100
+      },
+      {
+        "name": "Chris Evans",
+        "year": 2021,
+        "pick": 202,
+        "school": "Michigan",
+        "similarity": 96
+      }
+    ]
   },
   {
     "id": "kevin coleman jr-wr-missouri",
@@ -8898,7 +12503,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "trey zuhn iii-ot-texas am",
@@ -8937,7 +12543,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "ephesians prysock-cb-washington",
@@ -8989,7 +12596,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Trent McDuffie",
+        "year": 2022,
+        "pick": 21,
+        "school": "Washington",
+        "similarity": 85
+      },
+      {
+        "name": "Tyrique Stevenson",
+        "year": 2023,
+        "pick": 56,
+        "school": "Miami",
+        "similarity": 85
+      },
+      {
+        "name": "Darnay Holmes",
+        "year": 2020,
+        "pick": 110,
+        "school": "UCLA",
+        "similarity": 85
+      }
+    ]
   },
   {
     "id": "tacario davis-cb-washington",
@@ -9034,7 +12664,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Damarri Mathis",
+        "year": 2022,
+        "pick": 115,
+        "school": "Pittsburgh",
+        "similarity": 86
+      },
+      {
+        "name": "Trent McDuffie",
+        "year": 2022,
+        "pick": 21,
+        "school": "Washington",
+        "similarity": 85
+      },
+      {
+        "name": "Kaiir Elam",
+        "year": 2022,
+        "pick": 23,
+        "school": "Florida",
+        "similarity": 83
+      }
+    ]
   },
   {
     "id": "jaeden roberts-og-alabama",
@@ -9074,7 +12727,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Kingsley Suamataia",
+        "year": 2024,
+        "pick": 63,
+        "school": "BYU",
+        "similarity": 96
+      },
+      {
+        "name": "Aaron Banks",
+        "year": 2021,
+        "pick": 48,
+        "school": "Notre Dame",
+        "similarity": 93
+      },
+      {
+        "name": "Tyler Smith",
+        "year": 2022,
+        "pick": 24,
+        "school": "Tulsa",
+        "similarity": 89
+      }
+    ]
   },
   {
     "id": "bryce lance-wr-north dakota state",
@@ -9124,7 +12800,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "beau stephens-iol-iowa",
@@ -9163,7 +12840,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "demonte capehart-dl-clemson",
@@ -9227,7 +12905,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Carlos Davis",
+        "year": 2020,
+        "pick": 232,
+        "school": "Nebraska",
+        "similarity": 93
+      },
+      {
+        "name": "Eyioma Uwazurike",
+        "year": 2022,
+        "pick": 116,
+        "school": "Iowa St.",
+        "similarity": 91
+      },
+      {
+        "name": "Christian Barmore",
+        "year": 2021,
+        "pick": 38,
+        "school": "Alabama",
+        "similarity": 81
+      }
+    ]
   },
   {
     "id": "j c davis-ot-illinois",
@@ -9266,7 +12967,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "hezekiah masses-cb-california",
@@ -9311,7 +13013,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Trevon Moehrig",
+        "year": 2021,
+        "pick": 43,
+        "school": "TCU",
+        "similarity": 72
+      },
+      {
+        "name": "Ennis Rakestraw Jr.",
+        "year": 2024,
+        "pick": 61,
+        "school": "Missouri",
+        "similarity": 71
+      },
+      {
+        "name": "Kris Abrams-Draine",
+        "year": 2024,
+        "pick": 145,
+        "school": "Missouri",
+        "similarity": 70
+      }
+    ]
   },
   {
     "id": "zxavian harris-dt-ole miss",
@@ -9376,7 +13101,30 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Eyioma Uwazurike",
+        "year": 2022,
+        "pick": 116,
+        "school": "Iowa St.",
+        "similarity": 68
+      },
+      {
+        "name": "Zion Logue",
+        "year": 2024,
+        "pick": 197,
+        "school": "Georgia",
+        "similarity": 67
+      },
+      {
+        "name": "Raekwon Davis",
+        "year": 2020,
+        "pick": 56,
+        "school": "Alabama",
+        "similarity": 65
+      }
+    ]
   },
   {
     "id": "tj hall-cb-iowa",
@@ -9440,7 +13188,30 @@
       "cone": 7.19,
       "shuttle": 4.19,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Elijah Molden",
+        "year": 2021,
+        "pick": 100,
+        "school": "Washington",
+        "similarity": 79
+      },
+      {
+        "name": "Kalen King",
+        "year": 2024,
+        "pick": 255,
+        "school": "Penn St.",
+        "similarity": 78
+      },
+      {
+        "name": "Brian Branch",
+        "year": 2023,
+        "pick": 45,
+        "school": "Alabama",
+        "similarity": 77
+      }
+    ]
   },
   {
     "id": "michael taaffe-s-texas",
@@ -9504,7 +13275,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Roger McCreary",
+        "year": 2022,
+        "pick": 35,
+        "school": "Auburn",
+        "similarity": 100
+      },
+      {
+        "name": "Rodarius Williams",
+        "year": 2021,
+        "pick": 201,
+        "school": "Oklahoma St.",
+        "similarity": 95
+      },
+      {
+        "name": "Terrion Arnold",
+        "year": 2024,
+        "pick": 24,
+        "school": "Alabama",
+        "similarity": 95
+      }
+    ]
   },
   {
     "id": "max llewellyn-edge-iowa",
@@ -9568,7 +13362,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Micheal Clemons",
+        "year": 2022,
+        "pick": 117,
+        "school": "Texas A&M",
+        "similarity": 81
+      },
+      {
+        "name": "Jordan Smith",
+        "year": 2021,
+        "pick": 121,
+        "school": "Ala-Birmingham",
+        "similarity": 74
+      },
+      {
+        "name": "Ronnie Perkins",
+        "year": 2021,
+        "pick": 96,
+        "school": "Oklahoma",
+        "similarity": 69
+      }
+    ]
   },
   {
     "id": "aaron anderson-wr-lsu",
@@ -9624,7 +13441,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "eric mcalister-wr-tcu",
@@ -9675,7 +13493,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "cade klubnik-qb-clemson",
@@ -9745,7 +13564,8 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "albert regis-dl-texas am",
@@ -9809,7 +13629,30 @@
       "cone": 7.77,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Perrion Winfrey",
+        "year": 2022,
+        "pick": 108,
+        "school": "Oklahoma",
+        "similarity": 90
+      },
+      {
+        "name": "Braden Fiske",
+        "year": 2024,
+        "pick": 39,
+        "school": "Florida St.",
+        "similarity": 76
+      },
+      {
+        "name": "Ruke Orhorhoro",
+        "year": 2024,
+        "pick": 35,
+        "school": "Clemson",
+        "similarity": 74
+      }
+    ]
   },
   {
     "id": "dj campbell-iol-texas",
@@ -9848,7 +13691,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "ethan burke-edge-texas",
@@ -9912,7 +13756,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "sawyer robertson-qb-baylor",
@@ -9974,7 +13819,8 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "eric rivers-wr-georgia tech",
@@ -10019,7 +13865,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "bishop fitzgerald-s-usc",
@@ -10064,7 +13911,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Martin Emerson",
+        "year": 2022,
+        "pick": 68,
+        "school": "Mississippi St.",
+        "similarity": 90
+      },
+      {
+        "name": "Quentin Lake",
+        "year": 2022,
+        "pick": 211,
+        "school": "UCLA",
+        "similarity": 81
+      },
+      {
+        "name": "Montaric Brown",
+        "year": 2022,
+        "pick": 222,
+        "school": "Arkansas",
+        "similarity": 78
+      }
+    ]
   },
   {
     "id": "marlin klein-te-michigan",
@@ -10120,7 +13990,30 @@
       "cone": 7.42,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Isaiah Likely",
+        "year": 2022,
+        "pick": 139,
+        "school": "Coastal Carolina",
+        "similarity": 81
+      },
+      {
+        "name": "Tanner McLachlan",
+        "year": 2024,
+        "pick": 194,
+        "school": "Arizona",
+        "similarity": 70
+      },
+      {
+        "name": "Cade Stover",
+        "year": 2024,
+        "pick": 123,
+        "school": "Ohio St.",
+        "similarity": 68
+      }
+    ]
   },
   {
     "id": "j mari taylor-rb-virginia",
@@ -10165,7 +14058,30 @@
       "cone": null,
       "shuttle": null,
       "participated": true
-    }
+    },
+    "playerComps": [
+      {
+        "name": "Blake Corum",
+        "year": 2024,
+        "pick": 83,
+        "school": "Michigan",
+        "similarity": 85
+      },
+      {
+        "name": "Jahmyr Gibbs",
+        "year": 2023,
+        "pick": 12,
+        "school": "Alabama",
+        "similarity": 76
+      },
+      {
+        "name": "Khalil Herbert",
+        "year": 2021,
+        "pick": 217,
+        "school": "Virginia Tech",
+        "similarity": 70
+      }
+    ]
   },
   {
     "id": "charlie becker-wr-indiana",
@@ -10221,7 +14137,8 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   },
   {
     "id": "brandon finney jr-cb-oregon",
@@ -10277,6 +14194,7 @@
       "cone": null,
       "shuttle": null,
       "participated": false
-    }
+    },
+    "playerComps": []
   }
 ]
