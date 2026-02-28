@@ -10245,7 +10245,17 @@
       "actualRound": 2,
       "actualPick": 47,
       "actualTeam": "LAC",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 180,
+        "forty": 4.45,
+        "bench": 12.0,
+        "vertical": 35.0,
+        "broadJump": 124.0,
+        "cone": 6.95,
+        "shuttle": 4.13,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "pbus": 6.0,
@@ -10632,7 +10642,17 @@
       "actualRound": 2,
       "actualPick": 59,
       "actualTeam": "CAR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 205,
+        "forty": 4.4,
+        "bench": 19.0,
+        "vertical": 39.0,
+        "broadJump": 125.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "receptions": 48.0,
@@ -12366,7 +12386,17 @@
       "actualRound": 4,
       "actualPick": 111,
       "actualTeam": "CIN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 267,
+        "forty": 4.72,
+        "bench": 23.0,
+        "vertical": 37.0,
+        "broadJump": 116.0,
+        "cone": 7.39,
+        "shuttle": 4.48,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "pbus": 1.0,
@@ -12734,7 +12764,17 @@
       "actualRound": 4,
       "actualPick": 123,
       "actualTeam": "PHI",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 191,
+        "forty": 4.48,
+        "bench": 14.0,
+        "vertical": 40.5,
+        "broadJump": 130.0,
+        "cone": 6.88,
+        "shuttle": 4.0,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "pbus": 6.0,
@@ -12765,7 +12805,17 @@
       "actualRound": 4,
       "actualPick": 124,
       "actualTeam": "WAS",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 250,
+        "forty": 4.84,
+        "bench": 19.0,
+        "vertical": 31.5,
+        "broadJump": 120.0,
+        "cone": 6.85,
+        "shuttle": 4.35,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "receptions": 12.0,
@@ -13286,7 +13336,17 @@
       "actualRound": 4,
       "actualPick": 139,
       "actualTeam": "CIN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 305,
+        "forty": 5.29,
+        "bench": 24.0,
+        "vertical": 29.0,
+        "broadJump": 113.0,
+        "cone": 7.96,
+        "shuttle": 4.81,
+        "participated": true
+      },
       "collegeStats": {
         "2019": {
           "pbus": 0.0,
@@ -13336,7 +13396,17 @@
       "actualRound": 4,
       "actualPick": 141,
       "actualTeam": "LAR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 219,
+        "forty": 4.39,
+        "bench": 15.0,
+        "vertical": 40.5,
+        "broadJump": 133.0,
+        "cone": 6.54,
+        "shuttle": 4.31,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "receptions": 30.0,
@@ -13359,7 +13429,17 @@
       "actualRound": 4,
       "actualPick": 142,
       "actualTeam": "GNB",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 310,
+        "forty": 5.14,
+        "bench": 23.0,
+        "vertical": 28.0,
+        "broadJump": 104.0,
+        "cone": 7.91,
+        "shuttle": 4.75,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "pbus": 0.0,
@@ -13614,7 +13694,17 @@
       "actualRound": 5,
       "actualPick": 149,
       "actualTeam": "CIN",
-      "combineData": null
+      "combineData": {
+        "height": "5-11",
+        "weight": 185,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "kenneth gainwell-rb-memphis",
@@ -13786,7 +13876,17 @@
       "actualRound": 5,
       "actualPick": 155,
       "actualTeam": "SFO",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 311,
+        "forty": 5.25,
+        "bench": 27.0,
+        "vertical": 30.0,
+        "broadJump": 106.0,
+        "cone": 7.77,
+        "shuttle": 4.67,
+        "participated": true
+      },
       "collegeStats": {
         "2019": {
           "pbus": 1.0,
@@ -14194,7 +14294,17 @@
       "actualRound": 5,
       "actualPick": 167,
       "actualTeam": "LVR",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 196,
+        "forty": 4.48,
+        "bench": 17.0,
+        "vertical": 40.5,
+        "broadJump": 135.0,
+        "cone": 6.85,
+        "shuttle": 4.17,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "pbus": 2.0,
@@ -14225,7 +14335,17 @@
       "actualRound": 5,
       "actualPick": 168,
       "actualTeam": "MIN",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 245,
+        "forty": 4.58,
+        "bench": 17.0,
+        "vertical": 37.5,
+        "broadJump": 117.0,
+        "cone": 6.95,
+        "shuttle": 4.19,
+        "participated": true
+      }
     },
     {
       "id": "richard lecounte-db-georgia",
@@ -14421,7 +14541,17 @@
       "actualRound": 5,
       "actualPick": 174,
       "actualTeam": "LAR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 270,
+        "forty": 5.01,
+        "bench": 25.0,
+        "vertical": 31.0,
+        "broadJump": 115.0,
+        "cone": 7.19,
+        "shuttle": 4.5,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "pbus": 4.0,
@@ -14452,7 +14582,17 @@
       "actualRound": 5,
       "actualPick": 175,
       "actualTeam": "NYJ",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 204,
+        "forty": 4.49,
+        "bench": 15.0,
+        "vertical": 39.5,
+        "broadJump": 128.0,
+        "cone": 6.9,
+        "shuttle": 4.1,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "pbus": 5.0,
@@ -14549,7 +14689,17 @@
       "actualRound": 5,
       "actualPick": 178,
       "actualTeam": "GNB",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 184,
+        "forty": 4.47,
+        "bench": 19.0,
+        "vertical": 35.0,
+        "broadJump": 124.0,
+        "cone": 7.19,
+        "shuttle": 4.27,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "pbus": 16.0,
@@ -14779,7 +14929,17 @@
       "actualRound": 5,
       "actualPick": 184,
       "actualTeam": "BAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 246,
+        "forty": 4.73,
+        "bench": 29.0,
+        "vertical": 37.5,
+        "broadJump": 117.0,
+        "cone": 6.96,
+        "shuttle": 4.42,
+        "participated": true
+      },
       "collegeStats": {
         "2019": {
           "rushingAttempts": 1.0,
@@ -14804,7 +14964,17 @@
       "actualRound": 6,
       "actualPick": 185,
       "actualTeam": "LAC",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 234,
+        "forty": 4.45,
+        "bench": null,
+        "vertical": 33.5,
+        "broadJump": 121.0,
+        "cone": 6.67,
+        "shuttle": 4.14,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "pbus": 0.0,
@@ -15048,7 +15218,17 @@
       "actualRound": 6,
       "actualPick": 192,
       "actualTeam": "DAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 327,
+        "forty": 5.46,
+        "bench": null,
+        "vertical": 29.0,
+        "broadJump": 99.0,
+        "cone": 8.21,
+        "shuttle": 5.15,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "pbus": 2.0,
@@ -15144,7 +15324,17 @@
       "actualRound": 6,
       "actualPick": 195,
       "actualTeam": "HOU",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 304,
+        "forty": 5.19,
+        "bench": 36.0,
+        "vertical": 31.0,
+        "broadJump": 105.0,
+        "cone": 7.39,
+        "shuttle": 4.51,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "pbus": 0.0,
@@ -15296,7 +15486,17 @@
       "actualRound": 6,
       "actualPick": 200,
       "actualTeam": "NYJ",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 179,
+        "forty": 4.34,
+        "bench": 13.0,
+        "vertical": 42.5,
+        "broadJump": 136.0,
+        "cone": 6.84,
+        "shuttle": 4.12,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "pbus": 2.0,
@@ -15524,7 +15724,17 @@
       "actualRound": 6,
       "actualPick": 207,
       "actualTeam": "NYJ",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 310,
+        "forty": 4.88,
+        "bench": 36.0,
+        "vertical": 32.0,
+        "broadJump": 114.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "pbus": 1.0,
@@ -15576,7 +15786,17 @@
       "actualRound": 6,
       "actualPick": 209,
       "actualTeam": "JAX",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 226,
+        "forty": 4.48,
+        "bench": 29.0,
+        "vertical": 39.5,
+        "broadJump": 125.0,
+        "cone": 7.0,
+        "shuttle": 4.14,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "receptions": 25.0,
@@ -16066,7 +16286,17 @@
       "actualRound": 6,
       "actualPick": 222,
       "actualTeam": "CAR",
-      "combineData": null
+      "combineData": {
+        "height": null,
+        "weight": null,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "tay gowan-db-central florida",
@@ -16210,7 +16440,17 @@
       "actualRound": 6,
       "actualPick": 228,
       "actualTeam": "CHI",
-      "combineData": null
+      "combineData": {
+        "height": "5-10",
+        "weight": 192,
+        "forty": 4.49,
+        "bench": 13.0,
+        "vertical": 34.5,
+        "broadJump": 121.0,
+        "cone": 7.08,
+        "shuttle": 4.21,
+        "participated": true
+      }
     },
     {
       "id": "mike strachan-wr-charleston wv",
@@ -16278,7 +16518,17 @@
       "actualRound": 7,
       "actualPick": 232,
       "actualTeam": "CAR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 313,
+        "forty": 5.23,
+        "bench": 20.0,
+        "vertical": 30.5,
+        "broadJump": 103.0,
+        "cone": 7.87,
+        "shuttle": 4.85,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "pbus": 0.0,
@@ -16485,7 +16735,17 @@
       "actualRound": 7,
       "actualPick": 238,
       "actualTeam": "DAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 311,
+        "forty": 5.2,
+        "bench": 28.0,
+        "vertical": 33.0,
+        "broadJump": 105.0,
+        "cone": 7.14,
+        "shuttle": 4.8,
+        "participated": true
+      },
       "collegeStats": {
         "2019": {
           "pbus": 0.0,
@@ -16700,7 +16960,17 @@
       "actualRound": 7,
       "actualPick": 244,
       "actualTeam": "MIA",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 228,
+        "forty": 4.58,
+        "bench": 19.0,
+        "vertical": 39.5,
+        "broadJump": 120.0,
+        "cone": 7.2,
+        "shuttle": 4.27,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "rushingAttempts": 144.0,
@@ -16835,7 +17105,17 @@
       "actualRound": 7,
       "actualPick": 249,
       "actualTeam": "LAR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 220,
+        "forty": null,
+        "bench": 13.0,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "receptions": 29.0,
@@ -16977,7 +17257,17 @@
       "actualRound": 7,
       "actualPick": 254,
       "actualTeam": "PIT",
-      "combineData": null
+      "combineData": {
+        "height": "5-11",
+        "weight": 263,
+        "forty": null,
+        "bench": 14.0,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "kawaan baker-wr-south alabama",
@@ -16988,7 +17278,17 @@
       "actualRound": 7,
       "actualPick": 255,
       "actualTeam": "NOR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 210,
+        "forty": 4.44,
+        "bench": 21.0,
+        "vertical": 39.5,
+        "broadJump": 129.0,
+        "cone": 7.42,
+        "shuttle": 4.41,
+        "participated": true
+      },
       "collegeStats": {
         "2020": {
           "receptions": 50.0,
@@ -23562,7 +23862,17 @@
       "actualRound": 6,
       "actualPick": 186,
       "actualTeam": "CHI",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 308,
+        "forty": 4.96,
+        "bench": 21.0,
+        "vertical": 22.5,
+        "broadJump": 107.0,
+        "cone": 7.4,
+        "shuttle": 4.65,
+        "participated": true
+      }
     },
     {
       "id": "nick zakelj-ol-fordham",
@@ -26120,7 +26430,17 @@
       "actualRound": 1,
       "actualPick": 13,
       "actualTeam": "GNB",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 272,
+        "forty": 4.58,
+        "bench": 17.0,
+        "vertical": 31.0,
+        "broadJump": 118.0,
+        "cone": 7.02,
+        "shuttle": 4.32,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "pbus": 0.0,
@@ -26166,7 +26486,17 @@
       "actualRound": 1,
       "actualPick": 15,
       "actualTeam": "NYJ",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 239,
+        "forty": null,
+        "bench": null,
+        "vertical": 36.0,
+        "broadJump": 132.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "pbus": 4.0,
@@ -26962,7 +27292,17 @@
       "actualRound": 2,
       "actualPick": 36,
       "actualTeam": "LAR",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 332,
+        "forty": 5.21,
+        "bench": null,
+        "vertical": 29.5,
+        "broadJump": 98.0,
+        "cone": 7.85,
+        "shuttle": 4.74,
+        "participated": true
+      }
     },
     {
       "id": "derick hall-de-auburn",
@@ -27342,7 +27682,17 @@
       "actualRound": 2,
       "actualPick": 48,
       "actualTeam": "TAM",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 302,
+        "forty": 5.08,
+        "bench": null,
+        "vertical": 29.0,
+        "broadJump": 108.0,
+        "cone": 7.33,
+        "shuttle": 4.55,
+        "participated": true
+      }
     },
     {
       "id": "keeanu benton-nt-wisconsin",
@@ -27678,7 +28028,17 @@
       "actualRound": 2,
       "actualPick": 57,
       "actualTeam": "NYG",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 301,
+        "forty": 5.35,
+        "bench": null,
+        "vertical": 29.5,
+        "broadJump": 104.0,
+        "cone": null,
+        "shuttle": 4.56,
+        "participated": true
+      }
     },
     {
       "id": "luke schoonmaker-te-michigan",
@@ -28392,7 +28752,17 @@
       "actualRound": 3,
       "actualPick": 78,
       "actualTeam": "GNB",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 254,
+        "forty": null,
+        "bench": 23.0,
+        "vertical": 34.0,
+        "broadJump": 122.0,
+        "cone": 7.08,
+        "shuttle": 4.29,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "receptions": 22.0,
@@ -28453,7 +28823,17 @@
       "actualRound": 3,
       "actualPick": 80,
       "actualTeam": "CAR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 260,
+        "forty": 4.49,
+        "bench": 28.0,
+        "vertical": 32.0,
+        "broadJump": 110.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "pbus": 2.0,
@@ -29263,7 +29643,17 @@
       "actualRound": 4,
       "actualPick": 103,
       "actualTeam": "NOR",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 318,
+        "forty": 5.21,
+        "bench": null,
+        "vertical": 31.0,
+        "broadJump": 111.0,
+        "cone": null,
+        "shuttle": 4.69,
+        "participated": true
+      }
     },
     {
       "id": "jakorian bennett-db-maryland",
@@ -29644,7 +30034,17 @@
       "actualRound": 4,
       "actualPick": 117,
       "actualTeam": "NWE",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 323,
+        "forty": 5.07,
+        "bench": null,
+        "vertical": 32.0,
+        "broadJump": 110.0,
+        "cone": 7.62,
+        "shuttle": 4.69,
+        "participated": true
+      }
     },
     {
       "id": "braeden daniels-ol-utah",
@@ -29655,7 +30055,17 @@
       "actualRound": 4,
       "actualPick": 118,
       "actualTeam": "WAS",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 294,
+        "forty": 4.99,
+        "bench": null,
+        "vertical": 30.5,
+        "broadJump": 109.0,
+        "cone": 7.53,
+        "shuttle": 4.6,
+        "participated": true
+      }
     },
     {
       "id": "chamarri conner-db-virginia tech",
@@ -29769,7 +30179,17 @@
       "actualRound": 4,
       "actualPick": 122,
       "actualTeam": "ARI",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 303,
+        "forty": 5.01,
+        "bench": null,
+        "vertical": 32.5,
+        "broadJump": 114.0,
+        "cone": 7.31,
+        "shuttle": 4.45,
+        "participated": true
+      }
     },
     {
       "id": "cameron young-dt-mississippi st",
@@ -29821,7 +30241,17 @@
       "actualRound": 4,
       "actualPick": 124,
       "actualTeam": "BAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-6",
+        "weight": 257,
+        "forty": 4.66,
+        "bench": 23.0,
+        "vertical": 33.5,
+        "broadJump": 120.0,
+        "cone": null,
+        "shuttle": 4.62,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "pbus": 1.0,
@@ -30025,7 +30455,17 @@
       "actualRound": 4,
       "actualPick": 129,
       "actualTeam": "DAL",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 276,
+        "forty": null,
+        "bench": 24.0,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "tyler lacy-de-oklahoma st",
@@ -30950,7 +31390,17 @@
       "actualRound": 5,
       "actualPick": 154,
       "actualTeam": "SEA",
-      "combineData": null
+      "combineData": {
+        "height": "6-3",
+        "weight": 309,
+        "forty": 5.38,
+        "bench": null,
+        "vertical": 29.0,
+        "broadJump": 110.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "darrell luter-cb-south alabama",
@@ -31003,7 +31453,17 @@
       "actualRound": 5,
       "actualPick": 157,
       "actualTeam": "BAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 191,
+        "forty": 4.52,
+        "bench": null,
+        "vertical": 36.0,
+        "broadJump": 131.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "pbus": 6.0,
@@ -31311,7 +31771,17 @@
       "actualRound": 5,
       "actualPick": 165,
       "actualTeam": "CHI",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 204,
+        "forty": 4.41,
+        "bench": 14.0,
+        "vertical": 34.0,
+        "broadJump": 120.0,
+        "cone": 7.02,
+        "shuttle": 4.3,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "pbus": 5.0,
@@ -31659,7 +32129,17 @@
       "actualRound": 5,
       "actualPick": 176,
       "actualTeam": "IND",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 209,
+        "forty": 4.47,
+        "bench": null,
+        "vertical": 37.0,
+        "broadJump": 123.0,
+        "cone": 6.9,
+        "shuttle": 4.38,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "rushingAttempts": 221.0,
@@ -31793,7 +32273,17 @@
       "actualRound": 6,
       "actualPick": 180,
       "actualTeam": "ARI",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 181,
+        "forty": 4.42,
+        "bench": null,
+        "vertical": 34.5,
+        "broadJump": 122.0,
+        "cone": null,
+        "shuttle": 4.21,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "pbus": 4.0,
@@ -31970,7 +32460,17 @@
       "actualRound": 6,
       "actualPick": 186,
       "actualTeam": "TEN",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 306,
+        "forty": 5.1,
+        "bench": null,
+        "vertical": 31.5,
+        "broadJump": 113.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "kayshon boutte-wr-lsu",
@@ -32185,7 +32685,17 @@
       "actualRound": 6,
       "actualPick": 193,
       "actualTeam": "WAS",
-      "combineData": null
+      "combineData": {
+        "height": "6-0",
+        "weight": 217,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "keondre coburn-dt-texas",
@@ -32275,7 +32785,17 @@
       "actualRound": 6,
       "actualPick": 196,
       "actualTeam": "TAM",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 242,
+        "forty": 4.73,
+        "bench": 21.0,
+        "vertical": 34.5,
+        "broadJump": 118.0,
+        "cone": 6.95,
+        "shuttle": 4.3,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "pbus": 2.0,
@@ -32533,7 +33053,17 @@
       "actualRound": 6,
       "actualPick": 206,
       "actualTeam": "CIN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 205,
+        "forty": 4.43,
+        "bench": 19.0,
+        "vertical": 39.0,
+        "broadJump": 128.0,
+        "cone": 6.85,
+        "shuttle": 4.12,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "receptions": 66.0,
@@ -32551,7 +33081,17 @@
       "actualRound": 6,
       "actualPick": 207,
       "actualTeam": "GNB",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 218,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "erick hallett-db-pittsburgh",
@@ -32618,7 +33158,17 @@
       "actualRound": 6,
       "actualPick": 210,
       "actualTeam": "NWE",
-      "combineData": null
+      "combineData": {
+        "height": "5-8",
+        "weight": 179,
+        "forty": 4.44,
+        "bench": null,
+        "vertical": 39.5,
+        "broadJump": 134.0,
+        "cone": null,
+        "shuttle": 4.29,
+        "participated": true
+      }
     },
     {
       "id": "titus leo-lb-wagner",
@@ -32855,7 +33405,17 @@
       "actualRound": 6,
       "actualPick": 217,
       "actualTeam": "CIN",
-      "combineData": null
+      "combineData": {
+        "height": "6-1",
+        "weight": 199,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "travis bell-dl-kennesaw st",
@@ -32929,7 +33489,17 @@
       "actualRound": 7,
       "actualPick": 220,
       "actualTeam": "NYJ",
-      "combineData": null,
+      "combineData": {
+        "height": "6-7",
+        "weight": 255,
+        "forty": null,
+        "bench": 23.0,
+        "vertical": 40.0,
+        "broadJump": 128.0,
+        "cone": 6.87,
+        "shuttle": 4.12,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "receptions": 12.0,
@@ -32993,7 +33563,17 @@
       "actualRound": 7,
       "actualPick": 222,
       "actualTeam": "MIN",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 209,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "rushingAttempts": 233.0,
@@ -33077,7 +33657,17 @@
       "actualRound": 7,
       "actualPick": 225,
       "actualTeam": "ATL",
-      "combineData": null
+      "combineData": {
+        "height": "6-2",
+        "weight": 297,
+        "forty": 5.12,
+        "bench": null,
+        "vertical": 27.5,
+        "broadJump": 109.0,
+        "cone": 7.9,
+        "shuttle": 4.8,
+        "participated": true
+      }
     },
     {
       "id": "cooper hodges-ol-appalachian st",
@@ -33195,7 +33785,17 @@
       "actualRound": 7,
       "actualPick": 231,
       "actualTeam": "LVR",
-      "combineData": null
+      "combineData": {
+        "height": "6-2",
+        "weight": 304,
+        "forty": 5.16,
+        "bench": null,
+        "vertical": 29.5,
+        "broadJump": 110.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "carrington valentine-db-kentucky",
@@ -33247,7 +33847,17 @@
       "actualRound": 7,
       "actualPick": 233,
       "actualTeam": "WAS",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 248,
+        "forty": null,
+        "bench": null,
+        "vertical": 29.0,
+        "broadJump": 116.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "pbus": 1.0,
@@ -33278,7 +33888,17 @@
       "actualRound": 7,
       "actualPick": 234,
       "actualTeam": "LAR",
-      "combineData": null
+      "combineData": {
+        "height": "6-0",
+        "weight": 204,
+        "forty": 4.5,
+        "bench": 14.0,
+        "vertical": 43.0,
+        "broadJump": 129.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "lew nichols-rb-central michigan",
@@ -33518,7 +34138,17 @@
       "actualRound": 7,
       "actualPick": 242,
       "actualTeam": "GNB",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 205,
+        "forty": 4.63,
+        "bench": 15.0,
+        "vertical": 30.5,
+        "broadJump": 116.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2022": {
           "pbus": 12.0,
@@ -33993,7 +34623,17 @@
       "actualRound": 7,
       "actualPick": 256,
       "actualTeam": "GNB",
-      "combineData": null
+      "combineData": {
+        "height": "6-2",
+        "weight": 201,
+        "forty": 4.57,
+        "bench": null,
+        "vertical": 35.0,
+        "broadJump": 125.0,
+        "cone": 6.89,
+        "shuttle": 4.32,
+        "participated": true
+      }
     },
     {
       "id": "alex forsyth-ol-oregon",
@@ -34434,7 +35074,17 @@
       "actualRound": 1,
       "actualPick": 11,
       "actualTeam": "NYJ",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 312,
+        "forty": 5.11,
+        "bench": null,
+        "vertical": 32.0,
+        "broadJump": 109.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "bo nix-qb-oregon",
@@ -34586,7 +35236,17 @@
       "actualRound": 1,
       "actualPick": 16,
       "actualTeam": "SEA",
-      "combineData": null
+      "combineData": {
+        "height": "6-1",
+        "weight": 297,
+        "forty": 4.87,
+        "bench": 28.0,
+        "vertical": 33.0,
+        "broadJump": 111.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "dallas turner-lb-alabama",
@@ -34721,7 +35381,17 @@
       "actualRound": 1,
       "actualPick": 21,
       "actualTeam": "MIA",
-      "combineData": null
+      "combineData": {
+        "height": "6-3",
+        "weight": 254,
+        "forty": 4.48,
+        "bench": null,
+        "vertical": 34.5,
+        "broadJump": 128.0,
+        "cone": null,
+        "shuttle": 4.25,
+        "participated": true
+      }
     },
     {
       "id": "quinyon mitchell-cb-toledo",
@@ -36537,7 +37207,17 @@
       "actualRound": 3,
       "actualPick": 75,
       "actualTeam": "CHI",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 323,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "jonah elliss-de-utah",
@@ -36651,7 +37331,17 @@
       "actualRound": 3,
       "actualPick": 79,
       "actualTeam": "IND",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 327,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "jermaine burton-wr-alabama",
@@ -37158,7 +37848,17 @@
       "actualRound": 3,
       "actualPick": 94,
       "actualTeam": "PHI",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 252,
+        "forty": 4.64,
+        "bench": 19.0,
+        "vertical": 37.5,
+        "broadJump": 128.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2023": {
           "pbus": 0.0,
@@ -37984,7 +38684,17 @@
       "actualRound": 4,
       "actualPick": 117,
       "actualTeam": "IND",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 303,
+        "forty": 4.94,
+        "bench": null,
+        "vertical": 32.5,
+        "broadJump": 112.0,
+        "cone": 7.16,
+        "shuttle": 4.28,
+        "participated": true
+      }
     },
     {
       "id": "tyrice knight-lb-texas el paso",
@@ -38036,7 +38746,17 @@
       "actualRound": 4,
       "actualPick": 119,
       "actualTeam": "PIT",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 309,
+        "forty": 5.08,
+        "bench": null,
+        "vertical": 35.5,
+        "broadJump": 117.0,
+        "cone": 7.59,
+        "shuttle": 4.45,
+        "participated": true
+      }
     },
     {
       "id": "jaylen wright-rb-tennessee",
@@ -38778,7 +39498,17 @@
       "actualRound": 5,
       "actualPick": 141,
       "actualTeam": "BUF",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 298,
+        "forty": 5.2,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": 7.46,
+        "shuttle": 4.82,
+        "participated": true
+      }
     },
     {
       "id": "anthony gould-wr-oregon st",
@@ -39957,7 +40687,17 @@
       "actualRound": 5,
       "actualPick": 173,
       "actualTeam": "NYJ",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 218,
+        "forty": 4.57,
+        "bench": 23.0,
+        "vertical": 34.5,
+        "broadJump": 119.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2023": {
           "rushingAttempts": 227.0,
@@ -40580,7 +41320,17 @@
       "actualRound": 6,
       "actualPick": 192,
       "actualTeam": "SEA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 175,
+        "forty": 4.42,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2023": {
           "pbus": 9.0,
@@ -40808,7 +41558,17 @@
       "actualRound": 6,
       "actualPick": 198,
       "actualTeam": "MIA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 207,
+        "forty": null,
+        "bench": 14.0,
+        "vertical": 31.0,
+        "broadJump": 112.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2023": {
           "pbus": 7.0,
@@ -41091,7 +41851,17 @@
       "actualRound": 6,
       "actualPick": 208,
       "actualTeam": "LVR",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 206,
+        "forty": 4.54,
+        "bench": 23.0,
+        "vertical": 37.0,
+        "broadJump": 118.0,
+        "cone": 6.84,
+        "shuttle": 4.02,
+        "participated": true
+      },
       "collegeStats": {
         "2023": {
           "rushingAttempts": 158.0,
@@ -41329,7 +42099,17 @@
       "actualRound": 6,
       "actualPick": 216,
       "actualTeam": "DAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 202,
+        "forty": 4.44,
+        "bench": 19.0,
+        "vertical": 39.5,
+        "broadJump": 132.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2023": {
           "receptions": 57.0,
@@ -41683,7 +42463,17 @@
       "actualRound": 7,
       "actualPick": 227,
       "actualTeam": "CLE",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 195,
+        "forty": 4.5,
+        "bench": 13.0,
+        "vertical": 35.5,
+        "broadJump": 118.0,
+        "cone": 6.88,
+        "shuttle": 3.98,
+        "participated": true
+      },
       "collegeStats": {
         "2023": {
           "pbus": 0.0,
@@ -41826,7 +42616,17 @@
       "actualRound": 7,
       "actualPick": 233,
       "actualTeam": "DAL",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 332,
+        "forty": 5.19,
+        "bench": null,
+        "vertical": 25.0,
+        "broadJump": 107.0,
+        "cone": 8.01,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "jonah laulu-dl-oklahoma",
@@ -41947,7 +42747,17 @@
       "actualRound": 7,
       "actualPick": 237,
       "actualTeam": "CIN",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 301,
+        "forty": 5.03,
+        "bench": null,
+        "vertical": 31.0,
+        "broadJump": 111.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "solomon byrd-de-usc",
@@ -41958,7 +42768,17 @@
       "actualRound": 7,
       "actualPick": 238,
       "actualTeam": "HOU",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 255,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2023": {
           "pbus": 1.0,
@@ -41989,7 +42809,17 @@
       "actualRound": 7,
       "actualPick": 239,
       "actualTeam": "NOR",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 329,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "michael barrett-lb-michigan",
@@ -42041,7 +42871,17 @@
       "actualRound": 7,
       "actualPick": 241,
       "actualTeam": "MIA",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 174,
+        "forty": null,
+        "bench": null,
+        "vertical": 35.0,
+        "broadJump": 122.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2023": {
           "receptions": 59.0,
@@ -42308,7 +43148,17 @@
       "actualRound": 7,
       "actualPick": 248,
       "actualTeam": "KAN",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 300,
+        "forty": 5.0,
+        "bench": null,
+        "vertical": 33.5,
+        "broadJump": 115.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "ladarius henderson-ol-michigan",
@@ -42597,7 +43447,17 @@
       "actualRound": 1,
       "actualPick": 1,
       "actualTeam": "TEN",
-      "combineData": null
+      "combineData": {
+        "height": "6-2",
+        "weight": 219,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "travis hunter-wr-colorado",
@@ -42608,7 +43468,17 @@
       "actualRound": 1,
       "actualPick": 2,
       "actualTeam": "JAX",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 188,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 96.0,
@@ -42636,7 +43506,17 @@
       "actualRound": 1,
       "actualPick": 3,
       "actualTeam": "NYG",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 250,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 4.0,
@@ -42667,7 +43547,17 @@
       "actualRound": 1,
       "actualPick": 4,
       "actualTeam": "NWE",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 319,
+        "forty": 4.98,
+        "bench": null,
+        "vertical": 32.0,
+        "broadJump": 113.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "mason graham-dt-michigan",
@@ -42678,7 +43568,17 @@
       "actualRound": 1,
       "actualPick": 5,
       "actualTeam": "CLE",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 296,
+        "forty": null,
+        "bench": 24.0,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -42709,7 +43609,17 @@
       "actualRound": 1,
       "actualPick": 6,
       "actualTeam": "LVR",
-      "combineData": null,
+      "combineData": {
+        "height": "5-9",
+        "weight": 211,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 374.0,
@@ -42743,7 +43653,17 @@
       "actualRound": 1,
       "actualPick": 7,
       "actualTeam": "NYJ",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 332,
+        "forty": 4.91,
+        "bench": null,
+        "vertical": 34.0,
+        "broadJump": 115.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "tetairoa mcmillan-wr-arizona",
@@ -42754,7 +43674,17 @@
       "actualRound": 1,
       "actualPick": 8,
       "actualTeam": "CAR",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 219,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "kelvin banks-ol-texas",
@@ -42765,7 +43695,17 @@
       "actualRound": 1,
       "actualPick": 9,
       "actualTeam": "NOR",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 315,
+        "forty": 5.16,
+        "bench": null,
+        "vertical": 32.0,
+        "broadJump": 104.0,
+        "cone": 7.81,
+        "shuttle": 4.66,
+        "participated": true
+      }
     },
     {
       "id": "colston loveland-te-michigan",
@@ -42776,7 +43716,17 @@
       "actualRound": 1,
       "actualPick": 10,
       "actualTeam": "CHI",
-      "combineData": null,
+      "combineData": {
+        "height": "6-6",
+        "weight": 248,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 56.0,
@@ -42804,7 +43754,17 @@
       "actualRound": 1,
       "actualPick": 11,
       "actualTeam": "SFO",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 260,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -42835,7 +43795,17 @@
       "actualRound": 1,
       "actualPick": 12,
       "actualTeam": "DAL",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 321,
+        "forty": 5.38,
+        "bench": null,
+        "vertical": 27.0,
+        "broadJump": 94.0,
+        "cone": 7.96,
+        "shuttle": 4.84,
+        "participated": true
+      }
     },
     {
       "id": "kenneth grant-dt-michigan",
@@ -42846,7 +43816,17 @@
       "actualRound": 1,
       "actualPick": 13,
       "actualTeam": "MIA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 331,
+        "forty": null,
+        "bench": 22.0,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 5.0,
@@ -42877,7 +43857,17 @@
       "actualRound": 1,
       "actualPick": 14,
       "actualTeam": "IND",
-      "combineData": null,
+      "combineData": {
+        "height": "6-6",
+        "weight": 256,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 104.0,
@@ -42905,7 +43895,17 @@
       "actualRound": 1,
       "actualPick": 15,
       "actualTeam": "ATL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 243,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -42936,7 +43936,17 @@
       "actualRound": 1,
       "actualPick": 16,
       "actualTeam": "ARI",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 296,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -42967,7 +43977,17 @@
       "actualRound": 1,
       "actualPick": 17,
       "actualTeam": "CIN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 267,
+        "forty": 4.59,
+        "bench": null,
+        "vertical": 40.0,
+        "broadJump": 131.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -42998,7 +44018,17 @@
       "actualRound": 1,
       "actualPick": 18,
       "actualTeam": "SEA",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 312,
+        "forty": null,
+        "bench": null,
+        "vertical": 36.5,
+        "broadJump": 111.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "emeka egbuka-wr-ohio st",
@@ -43009,7 +44039,17 @@
       "actualRound": 1,
       "actualPick": 19,
       "actualTeam": "TAM",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 202,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 81.0,
@@ -43037,7 +44077,17 @@
       "actualRound": 1,
       "actualPick": 20,
       "actualTeam": "DEN",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 194,
+        "forty": 4.39,
+        "bench": null,
+        "vertical": 35.0,
+        "broadJump": 123.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 10.0,
@@ -43068,7 +44118,17 @@
       "actualRound": 1,
       "actualPick": 21,
       "actualTeam": "PIT",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 313,
+        "forty": 4.95,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -43099,7 +44159,17 @@
       "actualRound": 1,
       "actualPick": 22,
       "actualTeam": "LAC",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 221,
+        "forty": 4.46,
+        "bench": 18.0,
+        "vertical": 38.0,
+        "broadJump": 130.0,
+        "cone": null,
+        "shuttle": 4.4,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 281.0,
@@ -43133,7 +44203,17 @@
       "actualRound": 1,
       "actualPick": 23,
       "actualTeam": "GNB",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 191,
+        "forty": 4.29,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 58.0,
@@ -43161,7 +44241,17 @@
       "actualRound": 1,
       "actualPick": 24,
       "actualTeam": "MIN",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 315,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "jaxson dart-qb-mississippi",
@@ -43172,7 +44262,17 @@
       "actualRound": 1,
       "actualPick": 25,
       "actualTeam": "NYG",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 223,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "attempts": 398.0,
@@ -43209,7 +44309,17 @@
       "actualRound": 1,
       "actualPick": 26,
       "actualTeam": "ATL",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 245,
+        "forty": 4.47,
+        "bench": null,
+        "vertical": 31.0,
+        "broadJump": 123.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "malaki starks-saf-georgia",
@@ -43220,7 +44330,17 @@
       "actualRound": 1,
       "actualPick": 27,
       "actualTeam": "BAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 197,
+        "forty": 4.5,
+        "bench": null,
+        "vertical": 33.0,
+        "broadJump": null,
+        "cone": 7.26,
+        "shuttle": 4.45,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 3.0,
@@ -43251,7 +44371,17 @@
       "actualRound": 1,
       "actualPick": 28,
       "actualTeam": "DET",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 334,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -43282,7 +44412,17 @@
       "actualRound": 1,
       "actualPick": 29,
       "actualTeam": "WAS",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 311,
+        "forty": 5.05,
+        "bench": null,
+        "vertical": 34.5,
+        "broadJump": 103.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "maxwell hairston-cb-kentucky",
@@ -43293,7 +44433,17 @@
       "actualRound": 1,
       "actualPick": 30,
       "actualTeam": "BUF",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 183,
+        "forty": 4.28,
+        "bench": null,
+        "vertical": 39.5,
+        "broadJump": 129.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 4.0,
@@ -43324,7 +44474,17 @@
       "actualRound": 1,
       "actualPick": 31,
       "actualTeam": "PHI",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 235,
+        "forty": 4.52,
+        "bench": null,
+        "vertical": null,
+        "broadJump": 127.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -43355,7 +44515,17 @@
       "actualRound": 1,
       "actualPick": 32,
       "actualTeam": "KAN",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 317,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "carson schwesinger-lb-ucla",
@@ -43366,7 +44536,17 @@
       "actualRound": 2,
       "actualPick": 33,
       "actualTeam": "CLE",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 242,
+        "forty": null,
+        "bench": 20.0,
+        "vertical": 39.5,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 3.0,
@@ -43397,7 +44577,17 @@
       "actualRound": 2,
       "actualPick": 34,
       "actualTeam": "HOU",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 214,
+        "forty": 4.47,
+        "bench": null,
+        "vertical": 39.0,
+        "broadJump": 128.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 87.0,
@@ -43425,7 +44615,17 @@
       "actualRound": 2,
       "actualPick": 35,
       "actualTeam": "SEA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 220,
+        "forty": 4.38,
+        "bench": 20.0,
+        "vertical": 43.0,
+        "broadJump": 138.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -43456,7 +44656,17 @@
       "actualRound": 2,
       "actualPick": 36,
       "actualTeam": "CLE",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 221,
+        "forty": 4.48,
+        "bench": null,
+        "vertical": 38.5,
+        "broadJump": 132.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 194.0,
@@ -43490,7 +44700,17 @@
       "actualRound": 2,
       "actualPick": 37,
       "actualTeam": "MIA",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 324,
+        "forty": 4.95,
+        "bench": null,
+        "vertical": 29.0,
+        "broadJump": 106.0,
+        "cone": null,
+        "shuttle": 4.66,
+        "participated": true
+      }
     },
     {
       "id": "treveyon henderson-rb-ohio st",
@@ -43501,7 +44721,17 @@
       "actualRound": 2,
       "actualPick": 38,
       "actualTeam": "NWE",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 202,
+        "forty": 4.43,
+        "bench": null,
+        "vertical": 38.5,
+        "broadJump": 128.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 144.0,
@@ -43546,7 +44776,17 @@
       "actualRound": 2,
       "actualPick": 40,
       "actualTeam": "NOR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 219,
+        "forty": 4.63,
+        "bench": null,
+        "vertical": 32.0,
+        "broadJump": 117.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "attempts": 389.0,
@@ -43583,7 +44823,17 @@
       "actualRound": 2,
       "actualPick": 41,
       "actualTeam": "BUF",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 297,
+        "forty": null,
+        "bench": null,
+        "vertical": 31.5,
+        "broadJump": 112.0,
+        "cone": 7.7,
+        "shuttle": 4.67,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -43614,7 +44864,17 @@
       "actualRound": 2,
       "actualPick": 42,
       "actualTeam": "NYJ",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 251,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 55.0,
@@ -43642,7 +44902,17 @@
       "actualRound": 2,
       "actualPick": 43,
       "actualTeam": "SFO",
-      "combineData": null,
+      "combineData": {
+        "height": "6-6",
+        "weight": 332,
+        "forty": null,
+        "bench": null,
+        "vertical": 26.0,
+        "broadJump": 96.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 6.0,
@@ -43673,7 +44943,17 @@
       "actualRound": 2,
       "actualPick": 44,
       "actualTeam": "DAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 248,
+        "forty": null,
+        "bench": 22.0,
+        "vertical": 35.5,
+        "broadJump": 119.0,
+        "cone": 6.94,
+        "shuttle": 4.19,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -43704,7 +44984,17 @@
       "actualRound": 2,
       "actualPick": 45,
       "actualTeam": "IND",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 265,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "terrance ferguson-te-oregon",
@@ -43715,7 +45005,17 @@
       "actualRound": 2,
       "actualPick": 46,
       "actualTeam": "LAR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 247,
+        "forty": 4.63,
+        "bench": null,
+        "vertical": 39.0,
+        "broadJump": 122.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 43.0,
@@ -43743,7 +45043,17 @@
       "actualRound": 2,
       "actualPick": 47,
       "actualTeam": "ARI",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 194,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 3.0,
@@ -43774,7 +45084,17 @@
       "actualRound": 2,
       "actualPick": 48,
       "actualTeam": "HOU",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 331,
+        "forty": 5.01,
+        "bench": null,
+        "vertical": 29.5,
+        "broadJump": 111.0,
+        "cone": 7.81,
+        "shuttle": 4.82,
+        "participated": true
+      }
     },
     {
       "id": "demetrius knight-lb-south carolina",
@@ -43785,7 +45105,17 @@
       "actualRound": 2,
       "actualPick": 49,
       "actualTeam": "CIN",
-      "combineData": null
+      "combineData": {
+        "height": "6-2",
+        "weight": 235,
+        "forty": 4.58,
+        "bench": 22.0,
+        "vertical": 31.5,
+        "broadJump": 118.0,
+        "cone": 7.12,
+        "shuttle": 4.25,
+        "participated": true
+      }
     },
     {
       "id": "elijah arroyo-te-miami fl",
@@ -43796,7 +45126,17 @@
       "actualRound": 2,
       "actualPick": 50,
       "actualTeam": "SEA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 250,
+        "forty": null,
+        "bench": 22.0,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 35.0,
@@ -43824,7 +45164,17 @@
       "actualRound": 2,
       "actualPick": 51,
       "actualTeam": "CAR",
-      "combineData": null
+      "combineData": {
+        "height": "6-3",
+        "weight": 257,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "oluwafemi oladejo-de-ucla",
@@ -43835,7 +45185,17 @@
       "actualRound": 2,
       "actualPick": 52,
       "actualTeam": "TEN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 259,
+        "forty": null,
+        "bench": 20.0,
+        "vertical": 36.5,
+        "broadJump": 120.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -43866,7 +45226,17 @@
       "actualRound": 2,
       "actualPick": 53,
       "actualTeam": "TAM",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 193,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 3.0,
@@ -43897,7 +45267,17 @@
       "actualRound": 2,
       "actualPick": 54,
       "actualTeam": "GNB",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 336,
+        "forty": 5.26,
+        "bench": null,
+        "vertical": 29.5,
+        "broadJump": 107.0,
+        "cone": 7.77,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "tre harris-wr-mississippi",
@@ -43936,7 +45316,17 @@
       "actualRound": 2,
       "actualPick": 56,
       "actualTeam": "CHI",
-      "combineData": null
+      "combineData": {
+        "height": "6-8",
+        "weight": 316,
+        "forty": 5.21,
+        "bench": null,
+        "vertical": null,
+        "broadJump": 106.0,
+        "cone": 7.71,
+        "shuttle": 4.7,
+        "participated": true
+      }
     },
     {
       "id": "tate ratledge-ol-georgia",
@@ -43947,7 +45337,17 @@
       "actualRound": 2,
       "actualPick": 57,
       "actualTeam": "DET",
-      "combineData": null
+      "combineData": {
+        "height": "6-7",
+        "weight": 308,
+        "forty": 4.97,
+        "bench": null,
+        "vertical": 32.0,
+        "broadJump": 113.0,
+        "cone": 7.38,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "jack bech-wr-tcu",
@@ -43958,7 +45358,17 @@
       "actualRound": 2,
       "actualPick": 58,
       "actualTeam": "LVR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 214,
+        "forty": null,
+        "bench": 19.0,
+        "vertical": 34.5,
+        "broadJump": 125.0,
+        "cone": 6.84,
+        "shuttle": 4.21,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 62.0,
@@ -43986,7 +45396,17 @@
       "actualRound": 2,
       "actualPick": 59,
       "actualTeam": "BAL",
-      "combineData": null
+      "combineData": {
+        "height": "6-3",
+        "weight": 251,
+        "forty": null,
+        "bench": 28.0,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "rj harvey-rb-central florida",
@@ -43997,7 +45417,17 @@
       "actualRound": 2,
       "actualPick": 60,
       "actualTeam": "DEN",
-      "combineData": null,
+      "combineData": {
+        "height": "5-8",
+        "weight": 205,
+        "forty": 4.4,
+        "bench": 16.0,
+        "vertical": 38.0,
+        "broadJump": 127.0,
+        "cone": null,
+        "shuttle": 4.34,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 232.0,
@@ -44031,7 +45461,17 @@
       "actualRound": 2,
       "actualPick": 61,
       "actualTeam": "WAS",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 195,
+        "forty": 4.43,
+        "bench": 13.0,
+        "vertical": 32.5,
+        "broadJump": 126.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 13.0,
@@ -44062,7 +45502,17 @@
       "actualRound": 2,
       "actualPick": 62,
       "actualTeam": "CHI",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 290,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -44093,7 +45543,17 @@
       "actualRound": 2,
       "actualPick": 63,
       "actualTeam": "KAN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 291,
+        "forty": null,
+        "bench": null,
+        "vertical": 31.5,
+        "broadJump": 113.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -44124,7 +45584,17 @@
       "actualRound": 2,
       "actualPick": 64,
       "actualTeam": "PHI",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 186,
+        "forty": 4.45,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 6.0,
@@ -44155,7 +45625,17 @@
       "actualRound": 3,
       "actualPick": 65,
       "actualTeam": "NYG",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 305,
+        "forty": 4.95,
+        "bench": 28.0,
+        "vertical": 31.5,
+        "broadJump": 111.0,
+        "cone": 7.6,
+        "shuttle": 4.79,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 4.0,
@@ -44186,7 +45666,17 @@
       "actualRound": 3,
       "actualPick": 66,
       "actualTeam": "KAN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 264,
+        "forty": null,
+        "bench": 24.0,
+        "vertical": 36.5,
+        "broadJump": 120.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -44217,7 +45707,17 @@
       "actualRound": 3,
       "actualPick": 67,
       "actualTeam": "CLE",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 241,
+        "forty": 4.71,
+        "bench": 22.0,
+        "vertical": 34.0,
+        "broadJump": 118.0,
+        "cone": 6.97,
+        "shuttle": 4.39,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 117.0,
@@ -44245,7 +45745,17 @@
       "actualRound": 3,
       "actualPick": 68,
       "actualTeam": "LVR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 195,
+        "forty": 4.3,
+        "bench": null,
+        "vertical": 36.5,
+        "broadJump": 131.0,
+        "cone": 6.71,
+        "shuttle": 4.04,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -44276,7 +45786,17 @@
       "actualRound": 3,
       "actualPick": 69,
       "actualTeam": "NWE",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 190,
+        "forty": 4.4,
+        "bench": null,
+        "vertical": 36.5,
+        "broadJump": 119.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 70.0,
@@ -44304,7 +45824,17 @@
       "actualRound": 3,
       "actualPick": 70,
       "actualTeam": "DET",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 214,
+        "forty": 4.43,
+        "bench": 17.0,
+        "vertical": 39.5,
+        "broadJump": 129.0,
+        "cone": 6.85,
+        "shuttle": 4.05,
+        "participated": true
+      }
     },
     {
       "id": "vernon broughton-dt-texas",
@@ -44315,7 +45845,17 @@
       "actualRound": 3,
       "actualPick": 71,
       "actualTeam": "NOR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 311,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -44346,7 +45886,17 @@
       "actualRound": 3,
       "actualPick": 72,
       "actualTeam": "BUF",
-      "combineData": null,
+      "combineData": {
+        "height": "6-6",
+        "weight": 264,
+        "forty": 4.68,
+        "bench": null,
+        "vertical": 40.5,
+        "broadJump": 129.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 3.0,
@@ -44377,7 +45927,17 @@
       "actualRound": 3,
       "actualPick": 73,
       "actualTeam": "NYJ",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 197,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": 122.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 4.0,
@@ -44408,7 +45968,17 @@
       "actualRound": 3,
       "actualPick": 74,
       "actualTeam": "DEN",
-      "combineData": null
+      "combineData": {
+        "height": "6-2",
+        "weight": 204,
+        "forty": 4.61,
+        "bench": null,
+        "vertical": 37.5,
+        "broadJump": 124.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "nick martin-lb-oklahoma st",
@@ -44430,7 +46000,17 @@
       "actualRound": 3,
       "actualPick": 76,
       "actualTeam": "DAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 194,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -44461,7 +46041,17 @@
       "actualRound": 3,
       "actualPick": 77,
       "actualTeam": "CAR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 244,
+        "forty": 4.72,
+        "bench": null,
+        "vertical": 38.0,
+        "broadJump": 126.0,
+        "cone": 7.33,
+        "shuttle": 4.46,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -44492,7 +46082,17 @@
       "actualRound": 3,
       "actualPick": 78,
       "actualTeam": "ARI",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 279,
+        "forty": 4.67,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 5.0,
@@ -44523,7 +46123,17 @@
       "actualRound": 3,
       "actualPick": 79,
       "actualTeam": "HOU",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 194,
+        "forty": 4.39,
+        "bench": 23.0,
+        "vertical": 41.5,
+        "broadJump": 134.0,
+        "cone": 6.82,
+        "shuttle": 4.17,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 81.0,
@@ -44551,7 +46161,17 @@
       "actualRound": 3,
       "actualPick": 80,
       "actualTeam": "IND",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 190,
+        "forty": 4.4,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 10.0,
@@ -44582,7 +46202,17 @@
       "actualRound": 3,
       "actualPick": 81,
       "actualTeam": "CIN",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 318,
+        "forty": null,
+        "bench": null,
+        "vertical": 27.5,
+        "broadJump": 111.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "kevin winston-saf-penn st",
@@ -44593,7 +46223,17 @@
       "actualRound": 3,
       "actualPick": 82,
       "actualTeam": "TEN",
-      "combineData": null
+      "combineData": {
+        "height": "6-2",
+        "weight": 215,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "kaleb johnson-rb-iowa",
@@ -44604,7 +46244,17 @@
       "actualRound": 3,
       "actualPick": 83,
       "actualTeam": "PIT",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 224,
+        "forty": 4.57,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 240.0,
@@ -44638,7 +46288,17 @@
       "actualRound": 3,
       "actualPick": 84,
       "actualTeam": "TAM",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 191,
+        "forty": 4.35,
+        "bench": 12.0,
+        "vertical": 37.5,
+        "broadJump": 129.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 7.0,
@@ -44669,7 +46329,17 @@
       "actualRound": 3,
       "actualPick": 85,
       "actualTeam": "KAN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 199,
+        "forty": 4.5,
+        "bench": 19.0,
+        "vertical": 33.5,
+        "broadJump": 120.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 8.0,
@@ -44700,7 +46370,17 @@
       "actualRound": 3,
       "actualPick": 86,
       "actualTeam": "LAC",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 332,
+        "forty": 5.16,
+        "bench": null,
+        "vertical": 27.0,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 3.0,
@@ -44731,7 +46411,17 @@
       "actualRound": 3,
       "actualPick": 87,
       "actualTeam": "GNB",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 222,
+        "forty": 4.48,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 60.0,
@@ -44759,7 +46449,17 @@
       "actualRound": 3,
       "actualPick": 88,
       "actualTeam": "JAX",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 197,
+        "forty": 4.33,
+        "bench": 16.0,
+        "vertical": 40.0,
+        "broadJump": 129.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -44790,7 +46490,17 @@
       "actualRound": 3,
       "actualPick": 89,
       "actualTeam": "JAX",
-      "combineData": null
+      "combineData": {
+        "height": "6-7",
+        "weight": 313,
+        "forty": 5.27,
+        "bench": null,
+        "vertical": 30.0,
+        "broadJump": 108.0,
+        "cone": null,
+        "shuttle": 4.69,
+        "participated": true
+      }
     },
     {
       "id": "josaiah stewart-de-michigan",
@@ -44801,7 +46511,17 @@
       "actualRound": 3,
       "actualPick": 90,
       "actualTeam": "LAR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 249,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -44832,7 +46552,17 @@
       "actualRound": 3,
       "actualPick": 91,
       "actualTeam": "BAL",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 315,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "jalen milroe-qb-alabama",
@@ -44843,7 +46573,17 @@
       "actualRound": 3,
       "actualPick": 92,
       "actualTeam": "SEA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 217,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "attempts": 319.0,
@@ -44880,7 +46620,17 @@
       "actualRound": 3,
       "actualPick": 93,
       "actualTeam": "NOR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 206,
+        "forty": 4.48,
+        "bench": 12.0,
+        "vertical": 36.5,
+        "broadJump": 128.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 4.0,
@@ -44911,7 +46661,17 @@
       "actualRound": 3,
       "actualPick": 94,
       "actualTeam": "CLE",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 205,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "attempts": 447.0,
@@ -44948,7 +46708,17 @@
       "actualRound": 3,
       "actualPick": 95,
       "actualTeam": "NWE",
-      "combineData": null
+      "combineData": {
+        "height": "6-3",
+        "weight": 310,
+        "forty": 4.84,
+        "bench": null,
+        "vertical": 32.0,
+        "broadJump": 112.0,
+        "cone": null,
+        "shuttle": 4.56,
+        "participated": true
+      }
     },
     {
       "id": "xavier watts-saf-notre dame",
@@ -44959,7 +46729,17 @@
       "actualRound": 3,
       "actualPick": 96,
       "actualTeam": "ATL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 204,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 9.0,
@@ -44990,7 +46770,17 @@
       "actualRound": 3,
       "actualPick": 97,
       "actualTeam": "HOU",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 187,
+        "forty": 4.45,
+        "bench": null,
+        "vertical": 32.5,
+        "broadJump": 122.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -45021,7 +46811,17 @@
       "actualRound": 3,
       "actualPick": 98,
       "actualTeam": "LVR",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 312,
+        "forty": 5.1,
+        "bench": null,
+        "vertical": 34.0,
+        "broadJump": 111.0,
+        "cone": 7.43,
+        "shuttle": 4.49,
+        "participated": true
+      }
     },
     {
       "id": "charles grant-ol-william mary",
@@ -45032,7 +46832,17 @@
       "actualRound": 3,
       "actualPick": 99,
       "actualTeam": "LVR",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 311,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "upton stout-cb-western kentucky",
@@ -45043,7 +46853,17 @@
       "actualRound": 3,
       "actualPick": 100,
       "actualTeam": "SFO",
-      "combineData": null,
+      "combineData": {
+        "height": "5-9",
+        "weight": 181,
+        "forty": 4.44,
+        "bench": 21.0,
+        "vertical": 37.5,
+        "broadJump": 128.0,
+        "cone": null,
+        "shuttle": 4.29,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -45074,7 +46894,17 @@
       "actualRound": 3,
       "actualPick": 101,
       "actualTeam": "DEN",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 280,
+        "forty": null,
+        "bench": 19.0,
+        "vertical": 33.0,
+        "broadJump": 119.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "tai felton-wr-maryland",
@@ -45085,7 +46915,17 @@
       "actualRound": 3,
       "actualPick": 102,
       "actualTeam": "MIN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 183,
+        "forty": 4.37,
+        "bench": null,
+        "vertical": 39.5,
+        "broadJump": 130.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 96.0,
@@ -45113,7 +46953,17 @@
       "actualRound": 4,
       "actualPick": 103,
       "actualTeam": "TEN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 196,
+        "forty": 4.34,
+        "bench": null,
+        "vertical": 38.5,
+        "broadJump": 128.0,
+        "cone": 6.82,
+        "shuttle": 4.27,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 42.0,
@@ -45141,7 +46991,17 @@
       "actualRound": 4,
       "actualPick": 104,
       "actualTeam": "JAX",
-      "combineData": null,
+      "combineData": {
+        "height": "5-9",
+        "weight": 206,
+        "forty": 4.32,
+        "bench": null,
+        "vertical": 40.5,
+        "broadJump": 130.0,
+        "cone": null,
+        "shuttle": 4.41,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 183.0,
@@ -45175,7 +47035,17 @@
       "actualRound": 4,
       "actualPick": 105,
       "actualTeam": "NYG",
-      "combineData": null
+      "combineData": {
+        "height": "5-10",
+        "weight": 219,
+        "forty": null,
+        "bench": null,
+        "vertical": 39.5,
+        "broadJump": 123.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "craig woodson-saf-california",
@@ -45186,7 +47056,17 @@
       "actualRound": 4,
       "actualPick": 106,
       "actualTeam": "NWE",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 200,
+        "forty": 4.45,
+        "bench": 13.0,
+        "vertical": 36.0,
+        "broadJump": 127.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 7.0,
@@ -45217,7 +47097,17 @@
       "actualRound": 4,
       "actualPick": 107,
       "actualTeam": "JAX",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 231,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -45248,7 +47138,17 @@
       "actualRound": 4,
       "actualPick": 108,
       "actualTeam": "LVR",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 205,
+        "forty": 4.3,
+        "bench": null,
+        "vertical": 33.0,
+        "broadJump": 126.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "deone walker-dt-kentucky",
@@ -45259,7 +47159,17 @@
       "actualRound": 4,
       "actualPick": 109,
       "actualTeam": "BUF",
-      "combineData": null,
+      "combineData": {
+        "height": "6-7",
+        "weight": 331,
+        "forty": null,
+        "bench": null,
+        "vertical": 25.0,
+        "broadJump": 104.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -45290,7 +47200,17 @@
       "actualRound": 4,
       "actualPick": 110,
       "actualTeam": "NYJ",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 179,
+        "forty": 4.36,
+        "bench": null,
+        "vertical": 38.0,
+        "broadJump": 127.0,
+        "cone": 6.82,
+        "shuttle": 4.19,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 48.0,
@@ -45318,7 +47238,17 @@
       "actualRound": 4,
       "actualPick": 111,
       "actualTeam": "PHI",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 288,
+        "forty": 4.83,
+        "bench": 28.0,
+        "vertical": 33.5,
+        "broadJump": 119.0,
+        "cone": 7.58,
+        "shuttle": 4.5,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 4.0,
@@ -45349,7 +47279,17 @@
       "actualRound": 4,
       "actualPick": 112,
       "actualTeam": "NOR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 233,
+        "forty": 4.52,
+        "bench": null,
+        "vertical": 34.0,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -45380,7 +47320,17 @@
       "actualRound": 4,
       "actualPick": 113,
       "actualTeam": "SFO",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 316,
+        "forty": 4.95,
+        "bench": null,
+        "vertical": 33.0,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -45411,7 +47361,17 @@
       "actualRound": 4,
       "actualPick": 114,
       "actualTeam": "CAR",
-      "combineData": null,
+      "combineData": {
+        "height": "5-9",
+        "weight": 198,
+        "forty": 4.42,
+        "bench": 15.0,
+        "vertical": 35.0,
+        "broadJump": 124.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 122.0,
@@ -45445,7 +47405,17 @@
       "actualRound": 4,
       "actualPick": 115,
       "actualTeam": "ARI",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 229,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 7.0,
@@ -45476,7 +47446,17 @@
       "actualRound": 4,
       "actualPick": 116,
       "actualTeam": "HOU",
-      "combineData": null
+      "combineData": {
+        "height": "5-10",
+        "weight": 207,
+        "forty": 4.54,
+        "bench": 18.0,
+        "vertical": 35.0,
+        "broadJump": 119.0,
+        "cone": null,
+        "shuttle": 4.24,
+        "participated": true
+      }
     },
     {
       "id": "jarquez hunter-rb-auburn",
@@ -45487,7 +47467,17 @@
       "actualRound": 4,
       "actualPick": 117,
       "actualTeam": "LAR",
-      "combineData": null,
+      "combineData": {
+        "height": "5-9",
+        "weight": 204,
+        "forty": 4.44,
+        "bench": 21.0,
+        "vertical": 33.5,
+        "broadJump": 120.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 187.0,
@@ -45521,7 +47511,17 @@
       "actualRound": 4,
       "actualPick": 118,
       "actualTeam": "ATL",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 192,
+        "forty": 4.42,
+        "bench": 17.0,
+        "vertical": 35.5,
+        "broadJump": 123.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 3.0,
@@ -45552,7 +47552,17 @@
       "actualRound": 4,
       "actualPick": 119,
       "actualTeam": "CIN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 231,
+        "forty": null,
+        "bench": null,
+        "vertical": 34.5,
+        "broadJump": 116.0,
+        "cone": null,
+        "shuttle": 4.41,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 6.0,
@@ -45583,7 +47593,17 @@
       "actualRound": 4,
       "actualPick": 120,
       "actualTeam": "TEN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 241,
+        "forty": 4.84,
+        "bench": null,
+        "vertical": 30.0,
+        "broadJump": null,
+        "cone": 7.15,
+        "shuttle": 4.4,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 60.0,
@@ -45611,7 +47631,17 @@
       "actualRound": 4,
       "actualPick": 121,
       "actualTeam": "TAM",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 263,
+        "forty": 4.69,
+        "bench": 26.0,
+        "vertical": 35.0,
+        "broadJump": 118.0,
+        "cone": 7.15,
+        "shuttle": 4.39,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -45642,7 +47672,17 @@
       "actualRound": 4,
       "actualPick": 122,
       "actualTeam": "CAR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 206,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -45673,7 +47713,17 @@
       "actualRound": 4,
       "actualPick": 123,
       "actualTeam": "PIT",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 260,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 6.0,
@@ -45704,7 +47754,17 @@
       "actualRound": 4,
       "actualPick": 124,
       "actualTeam": "GNB",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 256,
+        "forty": 4.68,
+        "bench": 28.0,
+        "vertical": 34.0,
+        "broadJump": 121.0,
+        "cone": 7.06,
+        "shuttle": 4.36,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -45735,7 +47795,17 @@
       "actualRound": 4,
       "actualPick": 125,
       "actualTeam": "LAC",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 254,
+        "forty": 4.73,
+        "bench": 23.0,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -45766,7 +47836,17 @@
       "actualRound": 4,
       "actualPick": 126,
       "actualTeam": "CLE",
-      "combineData": null,
+      "combineData": {
+        "height": "5-8",
+        "weight": 200,
+        "forty": null,
+        "bench": 13.0,
+        "vertical": 35.0,
+        "broadJump": 124.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 258.0,
@@ -45800,7 +47880,17 @@
       "actualRound": 4,
       "actualPick": 127,
       "actualTeam": "IND",
-      "combineData": null
+      "combineData": {
+        "height": "6-8",
+        "weight": 339,
+        "forty": 5.14,
+        "bench": null,
+        "vertical": 35.0,
+        "broadJump": 112.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "jaylin lane-wr-virginia tech",
@@ -45839,7 +47929,17 @@
       "actualRound": 4,
       "actualPick": 129,
       "actualTeam": "BAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 233,
+        "forty": 4.6,
+        "bench": 26.0,
+        "vertical": 40.0,
+        "broadJump": 125.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 4.0,
@@ -45870,7 +47970,17 @@
       "actualRound": 4,
       "actualPick": 130,
       "actualTeam": "NYJ",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 196,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 8.0,
@@ -45901,7 +48011,17 @@
       "actualRound": 4,
       "actualPick": 131,
       "actualTeam": "NOR",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 194,
+        "forty": 4.48,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 9.0,
@@ -45943,7 +48063,17 @@
       "actualRound": 4,
       "actualPick": 133,
       "actualTeam": "KAN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 205,
+        "forty": 4.42,
+        "bench": 13.0,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 55.0,
@@ -45997,7 +48127,17 @@
       "actualRound": 4,
       "actualPick": 135,
       "actualTeam": "LVR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 284,
+        "forty": null,
+        "bench": null,
+        "vertical": 32.0,
+        "broadJump": 112.0,
+        "cone": 7.36,
+        "shuttle": 4.48,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -46028,7 +48168,17 @@
       "actualRound": 4,
       "actualPick": 136,
       "actualTeam": "TEN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 206,
+        "forty": 4.44,
+        "bench": null,
+        "vertical": 38.5,
+        "broadJump": 127.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 63.0,
@@ -46051,7 +48201,17 @@
       "actualRound": 4,
       "actualPick": 137,
       "actualTeam": "NWE",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 305,
+        "forty": 5.11,
+        "bench": 26.0,
+        "vertical": 29.0,
+        "broadJump": 112.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -46082,7 +48242,17 @@
       "actualRound": 4,
       "actualPick": 138,
       "actualTeam": "SFO",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 196,
+        "forty": 4.37,
+        "bench": null,
+        "vertical": 36.5,
+        "broadJump": 119.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 49.0,
@@ -46110,7 +48280,17 @@
       "actualRound": 5,
       "actualPick": 139,
       "actualTeam": "MIN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 276,
+        "forty": 4.86,
+        "bench": null,
+        "vertical": 36.0,
+        "broadJump": 124.0,
+        "cone": 7.28,
+        "shuttle": 4.34,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -46141,7 +48321,17 @@
       "actualRound": 5,
       "actualPick": 140,
       "actualTeam": "CAR",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 328,
+        "forty": 5.17,
+        "bench": null,
+        "vertical": 24.5,
+        "broadJump": 93.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "carson vinson-ot-alabama am",
@@ -46152,7 +48342,17 @@
       "actualRound": 5,
       "actualPick": 141,
       "actualTeam": "BAL",
-      "combineData": null
+      "combineData": {
+        "height": "6-7",
+        "weight": 314,
+        "forty": 5.12,
+        "bench": null,
+        "vertical": 28.5,
+        "broadJump": 111.0,
+        "cone": 7.51,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "rylie mills-dl-notre dame",
@@ -46163,7 +48363,17 @@
       "actualRound": 5,
       "actualPick": 142,
       "actualTeam": "SEA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 291,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -46194,7 +48404,17 @@
       "actualRound": 5,
       "actualPick": 143,
       "actualTeam": "MIA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 312,
+        "forty": null,
+        "bench": 29.0,
+        "vertical": 31.0,
+        "broadJump": 108.0,
+        "cone": 8.19,
+        "shuttle": 4.65,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -46225,7 +48445,17 @@
       "actualRound": 5,
       "actualPick": 144,
       "actualTeam": "CLE",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 212,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "attempts": 477.0,
@@ -46293,7 +48523,17 @@
       "actualRound": 5,
       "actualPick": 146,
       "actualTeam": "NWE",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 255,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": 7.13,
+        "shuttle": 4.33,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 3.0,
@@ -46324,7 +48564,17 @@
       "actualRound": 5,
       "actualPick": 147,
       "actualTeam": "SFO",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 205,
+        "forty": 4.55,
+        "bench": null,
+        "vertical": null,
+        "broadJump": 117.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 233.0,
@@ -46358,7 +48608,17 @@
       "actualRound": 5,
       "actualPick": 148,
       "actualTeam": "LAR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 299,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -46389,7 +48649,17 @@
       "actualRound": 5,
       "actualPick": 149,
       "actualTeam": "DAL",
-      "combineData": null,
+      "combineData": {
+        "height": "5-9",
+        "weight": 196,
+        "forty": 4.38,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 134.0,
@@ -46421,7 +48691,17 @@
       "actualRound": 5,
       "actualPick": 150,
       "actualTeam": "MIA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 194,
+        "forty": 4.49,
+        "bench": null,
+        "vertical": 37.5,
+        "broadJump": 125.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2023": {
           "pbus": 0.0,
@@ -46440,7 +48720,17 @@
       "actualRound": 5,
       "actualPick": 151,
       "actualTeam": "IND",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 212,
+        "forty": 4.43,
+        "bench": null,
+        "vertical": 39.5,
+        "broadJump": 130.0,
+        "cone": null,
+        "shuttle": 4.33,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 205.0,
@@ -46474,7 +48764,17 @@
       "actualRound": 5,
       "actualPick": 152,
       "actualTeam": "DAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 222,
+        "forty": 4.69,
+        "bench": null,
+        "vertical": 32.0,
+        "broadJump": 117.0,
+        "cone": 7.09,
+        "shuttle": 4.27,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 3.0,
@@ -46505,7 +48805,17 @@
       "actualRound": 5,
       "actualPick": 153,
       "actualTeam": "CIN",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 319,
+        "forty": 5.29,
+        "bench": null,
+        "vertical": null,
+        "broadJump": 108.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "marcus mbow-ol-purdue",
@@ -46516,7 +48826,17 @@
       "actualRound": 5,
       "actualPick": 154,
       "actualTeam": "NYG",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 303,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": 4.67,
+        "participated": true
+      }
     },
     {
       "id": "dante trader-saf-maryland",
@@ -46527,7 +48847,17 @@
       "actualRound": 5,
       "actualPick": 155,
       "actualTeam": "MIA",
-      "combineData": null
+      "combineData": {
+        "height": "5-11",
+        "weight": 196,
+        "forty": null,
+        "bench": 12.0,
+        "vertical": 31.0,
+        "broadJump": 117.0,
+        "cone": 7.09,
+        "shuttle": 4.32,
+        "participated": true
+      }
     },
     {
       "id": "jeffrey bassa-lb-oregon",
@@ -46538,7 +48868,17 @@
       "actualRound": 5,
       "actualPick": 156,
       "actualTeam": "KAN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 232,
+        "forty": 4.63,
+        "bench": 21.0,
+        "vertical": 38.5,
+        "broadJump": 118.0,
+        "cone": 7.34,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -46569,7 +48909,17 @@
       "actualRound": 5,
       "actualPick": 157,
       "actualTeam": "TAM",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 285,
+        "forty": 4.78,
+        "bench": null,
+        "vertical": 31.5,
+        "broadJump": 116.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -46600,7 +48950,17 @@
       "actualRound": 5,
       "actualPick": 158,
       "actualTeam": "LAC",
-      "combineData": null
+      "combineData": {
+        "height": "6-1",
+        "weight": 190,
+        "forty": 4.37,
+        "bench": null,
+        "vertical": 34.5,
+        "broadJump": 124.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "collin oliver-de-oklahoma st",
@@ -46611,7 +48971,17 @@
       "actualRound": 5,
       "actualPick": 159,
       "actualTeam": "GNB",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 240,
+        "forty": 4.56,
+        "bench": null,
+        "vertical": 39.0,
+        "broadJump": 126.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -46642,7 +49012,17 @@
       "actualRound": 5,
       "actualPick": 160,
       "actualTeam": "SFO",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 199,
+        "forty": 4.37,
+        "bench": null,
+        "vertical": 38.0,
+        "broadJump": 130.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 3.0,
@@ -46673,7 +49053,17 @@
       "actualRound": 5,
       "actualPick": 161,
       "actualTeam": "PHI",
-      "combineData": null
+      "combineData": {
+        "height": "6-2",
+        "weight": 224,
+        "forty": 4.58,
+        "bench": null,
+        "vertical": null,
+        "broadJump": 130.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "francisco mauigoa-lb-miami fl",
@@ -46684,7 +49074,17 @@
       "actualRound": 5,
       "actualPick": 162,
       "actualTeam": "NYJ",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 233,
+        "forty": 4.6,
+        "bench": null,
+        "vertical": 35.0,
+        "broadJump": 121.0,
+        "cone": 7.15,
+        "shuttle": 4.24,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 5.0,
@@ -46715,7 +49115,17 @@
       "actualRound": 5,
       "actualPick": 163,
       "actualTeam": "CAR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 258,
+        "forty": 4.74,
+        "bench": null,
+        "vertical": 31.0,
+        "broadJump": 115.0,
+        "cone": 7.25,
+        "shuttle": 4.4,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 43.0,
@@ -46743,7 +49153,17 @@
       "actualRound": 5,
       "actualPick": 164,
       "actualTeam": "PIT",
-      "combineData": null,
+      "combineData": {
+        "height": "6-6",
+        "weight": 336,
+        "forty": 5.39,
+        "bench": null,
+        "vertical": 25.5,
+        "broadJump": 101.0,
+        "cone": 7.63,
+        "shuttle": 4.72,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -46774,7 +49194,17 @@
       "actualRound": 5,
       "actualPick": 165,
       "actualTeam": "LAC",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 243,
+        "forty": null,
+        "bench": null,
+        "vertical": 34.0,
+        "broadJump": 114.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 72.0,
@@ -46802,7 +49232,17 @@
       "actualRound": 5,
       "actualPick": 166,
       "actualTeam": "SEA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 196,
+        "forty": 4.41,
+        "bench": null,
+        "vertical": 37.5,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 25.0,
@@ -46830,7 +49270,17 @@
       "actualRound": 5,
       "actualPick": 167,
       "actualTeam": "TEN",
-      "combineData": null
+      "combineData": {
+        "height": "6-3",
+        "weight": 311,
+        "forty": 5.01,
+        "bench": null,
+        "vertical": 28.5,
+        "broadJump": 108.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "drew kendall-c-boston col",
@@ -46841,7 +49291,17 @@
       "actualRound": 5,
       "actualPick": 168,
       "actualTeam": "PHI",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 308,
+        "forty": 5.05,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": 7.56,
+        "shuttle": 4.51,
+        "participated": true
+      }
     },
     {
       "id": "zah frazier-cb-texas san antonio",
@@ -46852,7 +49312,17 @@
       "actualRound": 5,
       "actualPick": 169,
       "actualTeam": "CHI",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 186,
+        "forty": 4.36,
+        "bench": null,
+        "vertical": 36.5,
+        "broadJump": 126.0,
+        "cone": 7.0,
+        "shuttle": 4.26,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 9.0,
@@ -46883,7 +49353,17 @@
       "actualRound": 5,
       "actualPick": 170,
       "actualTeam": "BUF",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 195,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 8.0,
@@ -46914,7 +49394,17 @@
       "actualRound": 5,
       "actualPick": 171,
       "actualTeam": "DET",
-      "combineData": null,
+      "combineData": {
+        "height": "6-6",
+        "weight": 317,
+        "forty": 5.24,
+        "bench": null,
+        "vertical": 31.0,
+        "broadJump": 108.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -46950,7 +49440,17 @@
       "actualRound": 5,
       "actualPick": 173,
       "actualTeam": "BUF",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 253,
+        "forty": 4.82,
+        "bench": 16.0,
+        "vertical": 34.5,
+        "broadJump": 121.0,
+        "cone": null,
+        "shuttle": 4.4,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 16.0,
@@ -46978,7 +49478,17 @@
       "actualRound": 5,
       "actualPick": 174,
       "actualTeam": "ARI",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 186,
+        "forty": 4.48,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -47009,7 +49519,17 @@
       "actualRound": 5,
       "actualPick": 175,
       "actualTeam": "SEA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 274,
+        "forty": 4.91,
+        "bench": 26.0,
+        "vertical": 34.0,
+        "broadJump": 119.0,
+        "cone": 7.34,
+        "shuttle": 4.45,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 8.0,
@@ -47037,7 +49557,17 @@
       "actualRound": 5,
       "actualPick": 176,
       "actualTeam": "NYJ",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 258,
+        "forty": 4.62,
+        "bench": 19.0,
+        "vertical": 35.5,
+        "broadJump": 121.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -47068,7 +49598,17 @@
       "actualRound": 6,
       "actualPick": 177,
       "actualTeam": "BUF",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 185,
+        "forty": 4.5,
+        "bench": 15.0,
+        "vertical": 36.0,
+        "broadJump": 116.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 6.0,
@@ -47099,7 +49639,17 @@
       "actualRound": 6,
       "actualPick": 178,
       "actualTeam": "BAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 190,
+        "forty": 4.43,
+        "bench": null,
+        "vertical": 31.5,
+        "broadJump": 124.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 8.0,
@@ -47130,7 +49680,17 @@
       "actualRound": 6,
       "actualPick": 179,
       "actualTeam": "MIA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 226,
+        "forty": 4.61,
+        "bench": null,
+        "vertical": 34.5,
+        "broadJump": 120.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 189.0,
@@ -47164,7 +49724,17 @@
       "actualRound": 6,
       "actualPick": 180,
       "actualTeam": "LVR",
-      "combineData": null
+      "combineData": {
+        "height": "6-3",
+        "weight": 309,
+        "forty": 5.15,
+        "bench": null,
+        "vertical": 27.5,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "kyle mccord-qb-syracuse",
@@ -47175,7 +49745,17 @@
       "actualRound": 6,
       "actualPick": 181,
       "actualTeam": "PHI",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 218,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "attempts": 592.0,
@@ -47212,7 +49792,17 @@
       "actualRound": 6,
       "actualPick": 182,
       "actualTeam": "NWE",
-      "combineData": null
+      "combineData": {
+        "height": "5-11",
+        "weight": 199,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "marcus harris-db-california",
@@ -47223,7 +49813,17 @@
       "actualRound": 6,
       "actualPick": 183,
       "actualTeam": "TEN",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 189,
+        "forty": 4.45,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 5.0,
@@ -47254,7 +49854,17 @@
       "actualRound": 6,
       "actualPick": 184,
       "actualTeam": "NOR",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 213,
+        "forty": 4.58,
+        "bench": null,
+        "vertical": 37.5,
+        "broadJump": 124.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 219.0,
@@ -47288,7 +49898,17 @@
       "actualRound": 6,
       "actualPick": 185,
       "actualTeam": "PIT",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 236,
+        "forty": null,
+        "bench": null,
+        "vertical": 31.5,
+        "broadJump": 112.0,
+        "cone": 7.13,
+        "shuttle": 4.33,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "attempts": 423.0,
@@ -47325,7 +49945,17 @@
       "actualRound": 6,
       "actualPick": 186,
       "actualTeam": "BAL",
-      "combineData": null
+      "combineData": {
+        "height": "5-11",
+        "weight": 191,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "jaylen reed-saf-penn st",
@@ -47336,7 +49966,17 @@
       "actualRound": 6,
       "actualPick": 187,
       "actualTeam": "HOU",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 211,
+        "forty": 4.49,
+        "bench": 19.0,
+        "vertical": 33.5,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 2.0,
@@ -47367,7 +50007,17 @@
       "actualRound": 6,
       "actualPick": 188,
       "actualTeam": "TEN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 226,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 185.0,
@@ -47399,7 +50049,17 @@
       "actualRound": 6,
       "actualPick": 189,
       "actualTeam": "IND",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 216,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "attempts": 403.0,
@@ -47436,7 +50096,17 @@
       "actualRound": 6,
       "actualPick": 190,
       "actualTeam": "IND",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 302,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -47467,7 +50137,17 @@
       "actualRound": 6,
       "actualPick": 191,
       "actualTeam": "PHI",
-      "combineData": null
+      "combineData": {
+        "height": "6-7",
+        "weight": 323,
+        "forty": null,
+        "bench": null,
+        "vertical": 31.5,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": 4.96,
+        "participated": true
+      }
     },
     {
       "id": "bryce cabeldue-ot-kansas",
@@ -47489,7 +50169,17 @@
       "actualRound": 6,
       "actualPick": 193,
       "actualTeam": "CIN",
-      "combineData": null,
+      "combineData": {
+        "height": "5-9",
+        "weight": 214,
+        "forty": 4.52,
+        "bench": 16.0,
+        "vertical": 35.0,
+        "broadJump": 120.0,
+        "cone": 6.9,
+        "shuttle": 4.06,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 286.0,
@@ -47523,7 +50213,17 @@
       "actualRound": 6,
       "actualPick": 194,
       "actualTeam": "JAX",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 241,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -47573,7 +50273,17 @@
       "actualRound": 6,
       "actualPick": 196,
       "actualTeam": "DET",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 267,
+        "forty": 4.77,
+        "bench": 27.0,
+        "vertical": 32.5,
+        "broadJump": 113.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -47604,7 +50314,17 @@
       "actualRound": 6,
       "actualPick": 197,
       "actualTeam": "HOU",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 212,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "attempts": 94.0,
@@ -47641,7 +50361,17 @@
       "actualRound": 6,
       "actualPick": 198,
       "actualTeam": "GNB",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 315,
+        "forty": 5.09,
+        "bench": null,
+        "vertical": 31.0,
+        "broadJump": 115.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -47672,7 +50402,17 @@
       "actualRound": 6,
       "actualPick": 199,
       "actualTeam": "LAC",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 321,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "rayuan lane-fs-navy",
@@ -47714,7 +50454,17 @@
       "actualRound": 6,
       "actualPick": 201,
       "actualTeam": "MIN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 236,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -47745,7 +50495,17 @@
       "actualRound": 6,
       "actualPick": 202,
       "actualTeam": "MIN",
-      "combineData": null,
+      "combineData": {
+        "height": "6-5",
+        "weight": 246,
+        "forty": 4.7,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 38.0,
@@ -47773,7 +50533,17 @@
       "actualRound": 6,
       "actualPick": 203,
       "actualTeam": "BAL",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 163,
+        "forty": 4.46,
+        "bench": null,
+        "vertical": 32.0,
+        "broadJump": 121.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 74.0,
@@ -47801,7 +50571,17 @@
       "actualRound": 6,
       "actualPick": 204,
       "actualTeam": "DAL",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 310,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "kain medrano-lb-ucla",
@@ -47812,7 +50592,17 @@
       "actualRound": 6,
       "actualPick": 205,
       "actualTeam": "WAS",
-      "combineData": null,
+      "combineData": {
+        "height": "6-3",
+        "weight": 222,
+        "forty": 4.46,
+        "bench": null,
+        "vertical": 38.0,
+        "broadJump": 125.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 4.0,
@@ -47843,7 +50633,17 @@
       "actualRound": 6,
       "actualPick": 206,
       "actualTeam": "BUF",
-      "combineData": null
+      "combineData": {
+        "height": "6-8",
+        "weight": 304,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "cameron williams-ol-texas",
@@ -47854,7 +50654,17 @@
       "actualRound": 6,
       "actualPick": 207,
       "actualTeam": "PHI",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 317,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "jimmy horn-wr-colorado",
@@ -47876,7 +50686,17 @@
       "actualRound": 6,
       "actualPick": 209,
       "actualTeam": "PHI",
-      "combineData": null
+      "combineData": {
+        "height": "6-3",
+        "weight": 258,
+        "forty": 4.69,
+        "bench": null,
+        "vertical": 36.5,
+        "broadJump": 124.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "aeneas peebles-dt-virginia tech",
@@ -47887,7 +50707,17 @@
       "actualRound": 6,
       "actualPick": 210,
       "actualTeam": "BAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 282,
+        "forty": 4.94,
+        "bench": null,
+        "vertical": 32.5,
+        "broadJump": 109.0,
+        "cone": null,
+        "shuttle": 4.7,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 3.0,
@@ -47918,7 +50748,17 @@
       "actualRound": 6,
       "actualPick": 211,
       "actualTeam": "ARI",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 314,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": 7.9,
+        "shuttle": 4.88,
+        "participated": true
+      }
     },
     {
       "id": "robert longerbeam-db-rutgers",
@@ -47929,7 +50769,17 @@
       "actualRound": 6,
       "actualPick": 212,
       "actualTeam": "BAL",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 175,
+        "forty": 4.39,
+        "bench": null,
+        "vertical": 36.5,
+        "broadJump": 134.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 11.0,
@@ -47997,7 +50847,17 @@
       "actualRound": 6,
       "actualPick": 214,
       "actualTeam": "LAC",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 199,
+        "forty": 4.49,
+        "bench": null,
+        "vertical": 41.5,
+        "broadJump": 121.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 7.0,
@@ -48065,7 +50925,17 @@
       "actualRound": 6,
       "actualPick": 216,
       "actualTeam": "DEN",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 198,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "jay toia-dt-ucla",
@@ -48076,7 +50946,17 @@
       "actualRound": 7,
       "actualPick": 217,
       "actualTeam": "DAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 342,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -48107,7 +50987,17 @@
       "actualRound": 7,
       "actualPick": 218,
       "actualTeam": "ATL",
-      "combineData": null
+      "combineData": {
+        "height": "6-7",
+        "weight": 314,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "thomas fidone-te-nebraska",
@@ -48118,7 +51008,17 @@
       "actualRound": 7,
       "actualPick": 219,
       "actualTeam": "NYG",
-      "combineData": null
+      "combineData": {
+        "height": "6-5",
+        "weight": 243,
+        "forty": 4.7,
+        "bench": null,
+        "vertical": 35.5,
+        "broadJump": 126.0,
+        "cone": 7.01,
+        "shuttle": 4.29,
+        "participated": true
+      }
     },
     {
       "id": "marcus bryant-ol-missouri",
@@ -48140,7 +51040,17 @@
       "actualRound": 7,
       "actualPick": 221,
       "actualTeam": "JAX",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 302,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "cody lindenberg-lb-minnesota",
@@ -48151,7 +51061,17 @@
       "actualRound": 7,
       "actualPick": 222,
       "actualTeam": "LVR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 236,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 6.0,
@@ -48182,7 +51102,17 @@
       "actualRound": 7,
       "actualPick": 223,
       "actualTeam": "SEA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-0",
+        "weight": 217,
+        "forty": 4.51,
+        "bench": null,
+        "vertical": 35.0,
+        "broadJump": 124.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 159.0,
@@ -48247,7 +51177,17 @@
       "actualRound": 7,
       "actualPick": 225,
       "actualTeam": "ARI",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 202,
+        "forty": 4.41,
+        "bench": 18.0,
+        "vertical": 41.5,
+        "broadJump": 128.0,
+        "cone": 6.81,
+        "shuttle": 4.03,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 6.0,
@@ -48278,7 +51218,17 @@
       "actualRound": 7,
       "actualPick": 226,
       "actualTeam": "PIT",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 227,
+        "forty": 4.58,
+        "bench": null,
+        "vertical": 33.5,
+        "broadJump": 119.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 5.0,
@@ -48309,7 +51259,17 @@
       "actualRound": 7,
       "actualPick": 227,
       "actualTeam": "SFO",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 220,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "attempts": 320.0,
@@ -48346,7 +51306,17 @@
       "actualRound": 7,
       "actualPick": 228,
       "actualTeam": "KAN",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 194,
+        "forty": 4.39,
+        "bench": null,
+        "vertical": 32.5,
+        "broadJump": 117.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 234.0,
@@ -48411,7 +51381,17 @@
       "actualRound": 7,
       "actualPick": 230,
       "actualTeam": "DET",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 193,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": 6.78,
+        "shuttle": 4.07,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 3.0,
@@ -48442,7 +51422,17 @@
       "actualRound": 7,
       "actualPick": 231,
       "actualTeam": "MIA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 214,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "attempts": 445.0,
@@ -48479,7 +51469,17 @@
       "actualRound": 7,
       "actualPick": 232,
       "actualTeam": "IND",
-      "combineData": null,
+      "combineData": {
+        "height": "6-2",
+        "weight": 213,
+        "forty": 4.57,
+        "bench": null,
+        "vertical": 37.0,
+        "broadJump": 120.0,
+        "cone": 6.72,
+        "shuttle": 4.25,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 6.0,
@@ -48510,7 +51510,17 @@
       "actualRound": 7,
       "actualPick": 233,
       "actualTeam": "CHI",
-      "combineData": null,
+      "combineData": {
+        "height": "5-8",
+        "weight": 211,
+        "forty": 4.6,
+        "bench": null,
+        "vertical": 34.5,
+        "broadJump": 117.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 256.0,
@@ -48555,7 +51565,17 @@
       "actualRound": 7,
       "actualPick": 235,
       "actualTeam": "TAM",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 154,
+        "forty": 4.51,
+        "bench": null,
+        "vertical": 37.0,
+        "broadJump": 131.0,
+        "cone": 6.65,
+        "shuttle": 4.15,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 83.0,
@@ -48583,7 +51603,17 @@
       "actualRound": 7,
       "actualPick": 236,
       "actualTeam": "JAX",
-      "combineData": null
+      "combineData": {
+        "height": "6-0",
+        "weight": 204,
+        "forty": null,
+        "bench": null,
+        "vertical": 35.0,
+        "broadJump": 120.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "micah robinson-cb-tulane",
@@ -48653,7 +51683,17 @@
       "actualRound": 7,
       "actualPick": 239,
       "actualTeam": "DAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-1",
+        "weight": 234,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "rushingAttempts": 216.0,
@@ -48687,7 +51727,17 @@
       "actualRound": 7,
       "actualPick": 240,
       "actualTeam": "BUF",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 204,
+        "forty": 4.46,
+        "bench": null,
+        "vertical": 30.0,
+        "broadJump": 114.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 56.0,
@@ -48733,7 +51783,17 @@
       "actualRound": 7,
       "actualPick": 242,
       "actualTeam": "LAR",
-      "combineData": null,
+      "combineData": {
+        "height": "5-11",
+        "weight": 186,
+        "forty": 4.59,
+        "bench": null,
+        "vertical": 36.0,
+        "broadJump": 124.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 52.0,
@@ -48761,7 +51821,17 @@
       "actualRound": 7,
       "actualPick": 243,
       "actualTeam": "BAL",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 325,
+        "forty": null,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      }
     },
     {
       "id": "dominic lovett-wr-georgia",
@@ -48772,7 +51842,17 @@
       "actualRound": 7,
       "actualPick": 244,
       "actualTeam": "DET",
-      "combineData": null,
+      "combineData": {
+        "height": "5-10",
+        "weight": 185,
+        "forty": 4.4,
+        "bench": null,
+        "vertical": 33.5,
+        "broadJump": 120.0,
+        "cone": null,
+        "shuttle": 4.27,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 59.0,
@@ -48842,7 +51922,17 @@
       "actualRound": 7,
       "actualPick": 247,
       "actualTeam": "DAL",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 306,
+        "forty": 5.09,
+        "bench": null,
+        "vertical": 28.0,
+        "broadJump": 103.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 0.0,
@@ -48873,7 +51963,17 @@
       "actualRound": 7,
       "actualPick": 248,
       "actualTeam": "NOR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-6",
+        "weight": 260,
+        "forty": 4.81,
+        "bench": null,
+        "vertical": 32.5,
+        "broadJump": 114.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 41.0,
@@ -48901,7 +52001,17 @@
       "actualRound": 7,
       "actualPick": 249,
       "actualTeam": "SFO",
-      "combineData": null
+      "combineData": {
+        "height": "6-6",
+        "weight": 309,
+        "forty": 5.11,
+        "bench": null,
+        "vertical": 28.5,
+        "broadJump": 110.0,
+        "cone": 7.78,
+        "shuttle": 4.63,
+        "participated": true
+      }
     },
     {
       "id": "john williams-ol-cincinnati",
@@ -48912,7 +52022,17 @@
       "actualRound": 7,
       "actualPick": 250,
       "actualTeam": "GNB",
-      "combineData": null
+      "combineData": {
+        "height": "6-4",
+        "weight": 322,
+        "forty": 5.17,
+        "bench": null,
+        "vertical": null,
+        "broadJump": null,
+        "cone": 7.93,
+        "shuttle": 4.72,
+        "participated": true
+      }
     },
     {
       "id": "julian ashby-ls-vanderbilt",
@@ -48962,7 +52082,17 @@
       "actualRound": 7,
       "actualPick": 253,
       "actualTeam": "MIA",
-      "combineData": null,
+      "combineData": {
+        "height": "6-6",
+        "weight": 321,
+        "forty": 5.14,
+        "bench": null,
+        "vertical": 34.5,
+        "broadJump": 111.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 3.0,
@@ -48993,7 +52123,17 @@
       "actualRound": 7,
       "actualPick": 254,
       "actualTeam": "NOR",
-      "combineData": null,
+      "combineData": {
+        "height": "6-4",
+        "weight": 257,
+        "forty": 4.57,
+        "bench": null,
+        "vertical": 30.5,
+        "broadJump": 121.0,
+        "cone": null,
+        "shuttle": null,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "pbus": 1.0,
@@ -49024,7 +52164,17 @@
       "actualRound": 7,
       "actualPick": 255,
       "actualTeam": "HOU",
-      "combineData": null,
+      "combineData": {
+        "height": "6-6",
+        "weight": 251,
+        "forty": null,
+        "bench": null,
+        "vertical": 35.0,
+        "broadJump": 120.0,
+        "cone": 7.18,
+        "shuttle": 4.47,
+        "participated": true
+      },
       "collegeStats": {
         "2024": {
           "receptions": 28.0,
