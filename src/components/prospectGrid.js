@@ -1,6 +1,7 @@
 import { applyFilters } from '../utils/filters.js'
 import { renderProspectCard, wireCardEvents } from './prospectCard.js'
-import { getState } from '../state.js'
+import { getState, setState } from '../state.js'
+import { trendArrow } from '../utils/format.js'
 
 const PAGE_SIZE = 30
 
@@ -8,32 +9,94 @@ let eventsWired = false
 let visibleCount = PAGE_SIZE
 let prevFilterKey = ''
 
+function renderListView(filtered, watchlist, expandedCardId) {
+  const watchSet = new Set(watchlist)
+  const rows = filtered.map(p => {
+    const trend = trendArrow(p.rankHistory, 30)
+    const rankColor = p.consensusRank <= 5 ? 'text-yellow-400'
+      : p.consensusRank <= 32 ? 'text-blue-400'
+      : p.consensusRank <= 64 ? 'text-green-400'
+      : 'text-gray-400'
+    const isStarred = watchSet.has(p.id)
+    const gradeColor = p.espnGrade >= 90 ? 'text-green-400' : p.espnGrade >= 85 ? 'text-yellow-400' : 'text-gray-500'
+    return `
+      <tr class="list-row border-t border-gray-700/50 hover:bg-gray-700/30 cursor-pointer transition-colors ${p.id === expandedCardId ? 'bg-gray-700/40' : ''}"
+          data-id="${p.id}">
+        <td class="py-2.5 pl-3 pr-2 text-sm font-bold ${rankColor} w-10">#${p.consensusRank}</td>
+        <td class="py-2.5 pr-3 min-w-0">
+          <div class="font-semibold text-white text-sm truncate">${p.name}</div>
+          <div class="text-xs text-gray-500 truncate">${p.school}</div>
+        </td>
+        <td class="py-2.5 pr-3 text-xs whitespace-nowrap">
+          <span class="text-gray-300">${p.position}</span>
+          <span class="text-gray-600 ml-1">${p.positionGroup !== p.position ? p.positionGroup : ''}</span>
+        </td>
+        <td class="py-2.5 pr-3 text-xs text-gray-400 whitespace-nowrap hidden sm:table-cell">Rd ${p.projectedRound || '?'}</td>
+        <td class="py-2.5 pr-3 text-xs whitespace-nowrap hidden md:table-cell ${trend.cls}">${trend.arrow}</td>
+        <td class="py-2.5 pr-3 text-xs ${gradeColor} whitespace-nowrap hidden sm:table-cell">${p.espnGrade || '—'}</td>
+        <td class="py-2.5 pr-3 text-center">
+          <button class="star-btn text-lg leading-none transition-colors ${isStarred ? 'text-yellow-400' : 'text-gray-700 hover:text-gray-400'}"
+                  data-id="${p.id}" title="${isStarred ? 'Remove from watchlist' : 'Add to watchlist'}">★</button>
+        </td>
+      </tr>`
+  }).join('')
+
+  return `
+    <div class="col-span-full overflow-x-auto">
+      <table class="w-full">
+        <thead>
+          <tr class="text-[10px] text-gray-600 uppercase tracking-wider">
+            <th class="pb-2 pl-3 pr-2 text-left font-medium">#</th>
+            <th class="pb-2 pr-3 text-left font-medium">Player</th>
+            <th class="pb-2 pr-3 text-left font-medium">Pos</th>
+            <th class="pb-2 pr-3 text-left font-medium hidden sm:table-cell">Round</th>
+            <th class="pb-2 pr-3 text-left font-medium hidden md:table-cell">Trend</th>
+            <th class="pb-2 pr-3 text-left font-medium hidden sm:table-cell">Grade</th>
+            <th class="pb-2 pr-3 text-center font-medium">★</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`
+}
+
 export function renderProspectGrid() {
   const container = document.getElementById('prospect-grid')
   const countEl = document.getElementById('result-count')
   if (!container) return
 
-  const { prospects, filters, sort, expandedCardId } = getState()
+  const { prospects, filters, sort, expandedCardId, viewMode, watchlist } = getState()
 
   // Reset pagination when filters or sort change
-  const filterKey = JSON.stringify({ filters, sort })
+  const filterKey = JSON.stringify({ filters, sort, viewMode })
   if (filterKey !== prevFilterKey) {
     visibleCount = PAGE_SIZE
     prevFilterKey = filterKey
   }
 
-  const filtered = applyFilters(prospects, filters, sort)
+  const filtered = applyFilters(prospects, filters, sort, watchlist)
 
-  // Update result count
+  // Update result count + view toggle
   if (countEl) {
-    if (filters.positionGroup !== 'ALL' || filters.round !== 'ALL' || filters.search) {
-      countEl.textContent = `${filtered.length} of ${prospects.length} prospects`
-    } else {
-      countEl.textContent = `${prospects.length} prospects`
-    }
+    const activeFilters = filters.positionGroup !== 'ALL' || filters.round !== 'ALL'
+      || filters.search || filters.trend !== 'ALL' || filters.watchlistOnly
+    const countText = activeFilters
+      ? `${filtered.length} of ${prospects.length} prospects`
+      : `${prospects.length} prospects`
+    countEl.innerHTML = `
+      <span>${countText}</span>
+      <span class="ml-3 flex items-center gap-1">
+        <button class="view-toggle px-2 py-0.5 rounded text-xs transition-colors ${viewMode === 'grid' ? 'bg-blue-600 text-white' : 'text-gray-500 hover:text-gray-300'}" data-mode="grid">⊞ Grid</button>
+        <button class="view-toggle px-2 py-0.5 rounded text-xs transition-colors ${viewMode === 'list' ? 'bg-blue-600 text-white' : 'text-gray-500 hover:text-gray-300'}" data-mode="list">☰ List</button>
+      </span>`
+    countEl.classList.add('flex', 'items-center')
+    countEl.querySelectorAll('.view-toggle').forEach(btn => {
+      btn.addEventListener('click', () => setState({ viewMode: btn.dataset.mode }))
+    })
   }
 
   if (filtered.length === 0) {
+    container.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'
     container.innerHTML = `
       <div class="col-span-full text-center py-16 text-gray-500">
         <div class="text-4xl mb-3">🏈</div>
@@ -43,6 +106,32 @@ export function renderProspectGrid() {
     return
   }
 
+  // List view — render all filtered as a compact table (no pagination needed)
+  if (viewMode === 'list') {
+    container.className = 'grid grid-cols-1'
+    container.innerHTML = renderListView(filtered, watchlist, expandedCardId)
+
+    // Wire star buttons and row clicks
+    container.querySelectorAll('.star-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation()
+        const id = btn.dataset.id
+        const { watchlist: wl } = getState()
+        const next = wl.includes(id) ? wl.filter(x => x !== id) : [...wl, id]
+        setState({ watchlist: next })
+      })
+    })
+    container.querySelectorAll('.list-row').forEach(row => {
+      row.addEventListener('click', () => {
+        // Switch to grid and expand that card
+        setState({ viewMode: 'grid', expandedCardId: row.dataset.id })
+      })
+    })
+    return
+  }
+
+  // Grid view
+  container.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'
   const visible = filtered.slice(0, visibleCount)
   container.innerHTML = visible.map(p => renderProspectCard(p, p.id === expandedCardId)).join('')
 

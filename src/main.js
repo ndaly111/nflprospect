@@ -137,12 +137,21 @@ renderApp()
 renderSkeleton()
 renderFilterBar()
 
-// Grid only re-renders when data/filters/sort change — NOT on card expand
+// Load watchlist from localStorage
+const savedWatchlist = JSON.parse(localStorage.getItem('nfl-watchlist') || '[]')
+if (savedWatchlist.length) setState({ watchlist: savedWatchlist })
+
+// Sync watchlist changes to localStorage
+subscribe(state => {
+  localStorage.setItem('nfl-watchlist', JSON.stringify(state.watchlist))
+}, ['watchlist'])
+
+// Grid re-renders when data/filters/sort/viewMode/watchlist change — NOT on card expand
 subscribe(state => {
   if (!state.loading) {
     renderProspectGrid()
   }
-}, ['prospects', 'filters', 'sort', 'loading'])
+}, ['prospects', 'filters', 'sort', 'loading', 'viewMode', 'watchlist'])
 
 // News renders once on data load
 subscribe(state => {
@@ -158,10 +167,10 @@ subscribe(state => {
   }
 }, ['meta', 'prospects', 'loading'])
 
-// Filter bar re-renders on filter/sort/historical changes
+// Filter bar re-renders on filter/sort/historical/view/watchlist changes
 subscribe(() => {
   renderFilterBar()
-}, ['filters', 'sort', 'historical', 'historicalYear'])
+}, ['filters', 'sort', 'historical', 'historicalYear', 'viewMode', 'watchlist'])
 
 // When historicalYear changes, update the combine tab for the currently expanded card
 subscribe(state => {

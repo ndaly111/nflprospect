@@ -1,6 +1,7 @@
 import { trendArrow } from './format.js'
 
-export function applyFilters(prospects, filters, sort) {
+export function applyFilters(prospects, filters, sort, watchlist = []) {
+  const watchSet = new Set(watchlist)
   let result = prospects.slice()
 
   // Position group filter
@@ -19,6 +20,11 @@ export function applyFilters(prospects, filters, sort) {
     result = result.filter(p => trendArrow(p.rankHistory, 30).delta > 0)
   } else if (filters.trend === 'FALLING') {
     result = result.filter(p => trendArrow(p.rankHistory, 30).delta < 0)
+  }
+
+  // Watchlist filter
+  if (filters.watchlistOnly) {
+    result = result.filter(p => watchSet.has(p.id))
   }
 
   // Search filter

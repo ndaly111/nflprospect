@@ -9,8 +9,11 @@ const state = {
     round: 'ALL',
     search: '',
     trend: 'ALL',
+    watchlistOnly: false,
   },
   sort: 'consensusRank',
+  viewMode: 'grid',  // 'grid' | 'list'
+  watchlist: [],     // array of prospect IDs, synced to localStorage
   expandedCardId: null,
   loading: true,
   error: null,

@@ -1,5 +1,6 @@
 import { getState, setState } from '../state.js'
 
+
 const POSITION_GROUPS = ['ALL', 'QB', 'RB', 'WR', 'TE', 'OL', 'DL', 'EDGE', 'LB', 'DB']
 
 const SORT_OPTIONS = [
@@ -21,7 +22,7 @@ export function renderFilterBar() {
   const container = document.getElementById('filter-bar')
   if (!container) return
 
-  const { filters, sort, historical, historicalYear } = getState()
+  const { filters, sort, historical, historicalYear, watchlist } = getState()
 
   // Build year options from available historical buckets
   const histYears = Object.keys(historical || {})
@@ -58,6 +59,11 @@ export function renderFilterBar() {
             : 'bg-gray-800 text-gray-400 hover:bg-gray-700'}"
           data-trend="${t.value}">${t.label}</button>`
       ).join('')}
+      ${watchlist.length > 0 ? `
+        <button id="watchlist-toggle" class="px-3 py-1.5 rounded-full text-sm font-medium transition-colors
+          ${filters.watchlistOnly ? 'bg-yellow-600 text-white' : 'bg-gray-800 text-yellow-500/70 hover:bg-gray-700'}">
+          ★ Watchlist${filters.watchlistOnly ? '' : ` (${watchlist.length})`}
+        </button>` : ''}
     </div>
     <div class="flex flex-wrap items-center gap-3">
       <div class="flex items-center gap-2">
@@ -83,7 +89,7 @@ export function renderFilterBar() {
           value="${filters.search}"
           class="w-full bg-gray-800 border border-gray-700 text-gray-200 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-blue-500 placeholder-gray-600">
       </div>
-      ${(filters.positionGroup !== 'ALL' || filters.round !== 'ALL' || filters.search || filters.trend !== 'ALL')
+      ${(filters.positionGroup !== 'ALL' || filters.round !== 'ALL' || filters.search || filters.trend !== 'ALL' || filters.watchlistOnly)
         ? `<button id="clear-filters-btn" class="text-xs text-gray-500 hover:text-red-400 transition-colors whitespace-nowrap">✕ Clear</button>`
         : ''}
     </div>`
@@ -133,12 +139,21 @@ function wireFilterEvents() {
     })
   }
 
+  // Watchlist toggle
+  const watchlistToggle = document.getElementById('watchlist-toggle')
+  if (watchlistToggle) {
+    watchlistToggle.addEventListener('click', () => {
+      const { filters: f } = getState()
+      setState({ filters: { ...f, watchlistOnly: !f.watchlistOnly }, expandedCardId: null })
+    })
+  }
+
   // Clear all filters
   const clearBtn = document.getElementById('clear-filters-btn')
   if (clearBtn) {
     clearBtn.addEventListener('click', () => {
       setState({
-        filters: { positionGroup: 'ALL', round: 'ALL', search: '', trend: 'ALL' },
+        filters: { positionGroup: 'ALL', round: 'ALL', search: '', trend: 'ALL', watchlistOnly: false },
         sort: 'consensusRank',
         expandedCardId: null,
       })

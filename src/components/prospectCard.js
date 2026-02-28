@@ -57,6 +57,7 @@ const SOURCE_LABELS = {
 export function renderProspectCard(prospect, isExpanded = false) {
   const statPct = buildCollegeStatPct(getState().prospects)
   const trend = trendArrow(prospect.rankHistory, 30)
+  const isStarred = getState().watchlist.includes(prospect.id)
   const posColor = POSITION_COLORS[prospect.positionGroup] || 'bg-gray-800 text-gray-300'
   const chartId = `chart-${prospect.id}`
 
@@ -136,6 +137,7 @@ export function renderProspectCard(prospect, isExpanded = false) {
             ${headshotUrl ? `<img src="${headshotUrl}" alt="" loading="lazy"
               class="w-10 h-10 rounded-full object-cover object-top bg-gray-700 border border-gray-700"
               onerror="this.style.display='none'">` : ''}
+            <button class="star-btn text-lg leading-none transition-colors ${isStarred ? 'text-yellow-400' : 'text-gray-700 hover:text-gray-400'}" data-id="${prospect.id}" title="${isStarred ? 'Remove from watchlist' : 'Add to watchlist'}">★</button>
             <button class="share-btn text-gray-600 hover:text-gray-300 transition-colors text-xs p-1" data-id="${prospect.id}" title="Copy link">⎘</button>
             <div class="text-gray-600 text-xs card-chevron" data-id="${prospect.id}">${isExpanded ? '▲' : '▼'}</div>
           </div>
@@ -173,6 +175,17 @@ export function renderProspectCard(prospect, isExpanded = false) {
 
 export function wireCardEvents(container) {
   container.addEventListener('click', e => {
+    // Star / watchlist button
+    const starBtn = e.target.closest('.star-btn')
+    if (starBtn) {
+      e.stopPropagation()
+      const id = starBtn.dataset.id
+      const { watchlist } = getState()
+      const next = watchlist.includes(id) ? watchlist.filter(x => x !== id) : [...watchlist, id]
+      setState({ watchlist: next })
+      return
+    }
+
     // Share button
     const shareBtn = e.target.closest('.share-btn')
     if (shareBtn) {
