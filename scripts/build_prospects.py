@@ -26,9 +26,10 @@ logger = logging.getLogger(__name__)
 DATA_DIR = Path(__file__).parent.parent / 'data'
 DATA_DIR.mkdir(exist_ok=True)
 
-DRAFT_YEAR = 2026
-# NFL Draft ends ~April 25; after that date nflverse will have the actual picks.
-# Update DRAFT_YEAR each season — everything else is automatic.
+# Automatically advance each year: before April 25 = current year's draft;
+# after April 25 = current year's draft is done, track next year.
+_now = datetime.now(timezone.utc)
+DRAFT_YEAR = _now.year + 1 if (_now.month, _now.day) >= (4, 25) else _now.year
 DRAFT_DATE = datetime(DRAFT_YEAR, 4, 25, tzinfo=timezone.utc)
 NFLVERSE_PICKS_URL = 'https://github.com/nflverse/nflverse-data/releases/download/draft_picks/draft_picks.csv'
 
