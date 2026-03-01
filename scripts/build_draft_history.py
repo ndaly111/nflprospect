@@ -228,6 +228,22 @@ def build_draft_history() -> dict[str, list[dict]]:
     except Exception as e:
         logger.warning(f'NFL career stats fetch failed: {e}')
 
+    # Fetch OL offensive snap counts (used as career value proxy for OL)
+    logger.info('Fetching OL snap counts...')
+    try:
+        from fetch_ol_snaps import fetch_ol_snaps
+        ol_snaps = fetch_ol_snaps(all_flat)
+        for yr, prsp in result.items():
+            n = 0
+            for p in prsp:
+                if p['name'] in ol_snaps:
+                    p['olSnaps'] = ol_snaps[p['name']]
+                    n += 1
+            if n:
+                logger.info(f'{yr}: {n} OL prospects with snap data')
+    except Exception as e:
+        logger.warning(f'OL snap fetch failed: {e}')
+
     # Fetch career accolades (AP All-Pro + annual awards)
     logger.info('Fetching NFL career accolades...')
     try:

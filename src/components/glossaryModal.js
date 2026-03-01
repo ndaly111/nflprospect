@@ -75,7 +75,7 @@ export function initGlossaryModal() {
             <div><span class="text-gray-500">DL/EDGE</span> sacks×20 + TFL×5 + tackles×0.5 + QB hits×3</div>
             <div><span class="text-gray-500">LB</span>  sacks×15 + TFL×5 + tackles×1 + int×20 + PD×8</div>
             <div><span class="text-gray-500">DB</span>  int×30 + PD×8 + tackles×0.5</div>
-            <div><span class="text-gray-500">OL</span>  accolades only (no reliable stats)</div>
+            <div><span class="text-gray-500">OL</span>  offense_snaps×0.1 (full starter ≈ 110 pts/season)</div>
           </div>
 
           <h4 class="text-gray-300 font-medium mb-1 text-xs uppercase tracking-wider">Accolade bonuses (added to score)</h4>

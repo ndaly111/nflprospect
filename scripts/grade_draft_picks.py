@@ -73,8 +73,20 @@ def _accolade_bonus(accolades) -> float:
     return total
 
 
+MIN_OL_SNAPS = 200  # snaps per season to count as qualifying for OL
+
+
 def count_qualifying_seasons(prospect, min_games: int = 4) -> int:
-    """Count NFL seasons where the prospect played at least min_games games."""
+    """Count NFL seasons where the prospect played meaningfully.
+
+    For OL: seasons with >= MIN_OL_SNAPS offensive snaps (no nflStats available).
+    For all others: seasons with >= min_games games played.
+    """
+    pos_group = prospect.get('positionGroup', '')
+    if pos_group == 'OL':
+        ol_snaps = prospect.get('olSnaps') or {}
+        return sum(1 for snaps in ol_snaps.values()
+                   if isinstance(snaps, (int, float)) and snaps >= MIN_OL_SNAPS)
     nfl_stats = prospect.get('nflStats') or {}
     count = 0
     for season_stats in nfl_stats.values():
@@ -156,8 +168,17 @@ def compute_career_value(prospect) -> float:
               + g('pass_defended') * 8
               + g('tackles_combined') * 0.5)
 
+    elif pos_group == 'OL':
+        # Sum offensive snaps across qualifying seasons (>= MIN_OL_SNAPS per season)
+        ol_snaps = prospect.get('olSnaps') or {}
+        total_snaps = sum(
+            v for v in ol_snaps.values()
+            if isinstance(v, (int, float)) and v >= MIN_OL_SNAPS
+        )
+        cv = total_snaps * 0.1  # ~110 pts/season for full-time starter
+
     else:
-        # OL and special teams: stats-only value is 0
+        # Special teams (K, P, LS): no meaningful stats
         cv = 0.0
 
     cv += _accolade_bonus(accolades)
@@ -185,14 +206,16 @@ def grade_all_classes(history: dict) -> None:
             p['_acc_bonus'] = _accolade_bonus(p.get('accolades') or {})
 
     # Step 2: build position-group pools for percentile ranking
-    # Pool: prospects with >= 1 qualifying season, or OL with accolade bonus > 0
+    # Pool: prospects with >= 1 qualifying season (OL uses snap-based seasons)
+    # Also include OL with accolade bonus but no snaps (e.g. injured starters)
     pos_pools: dict[str, list] = {}
     for prospects in history.values():
         for p in prospects:
             pos_group = p.get('positionGroup', '')
             if not pos_group:
                 continue
-            if p['_q'] >= 1 or (pos_group == 'OL' and p['_acc_bonus'] > 0):
+            in_pool = p['_q'] >= 1 or (pos_group == 'OL' and p['_acc_bonus'] > 0)
+            if in_pool:
                 if pos_group not in pos_pools:
                     pos_pools[pos_group] = []
                 pos_pools[pos_group].append(p)
