@@ -33,6 +33,37 @@ function accoladeBadges(accolades) {
   return `<div class="flex flex-wrap gap-1 mt-0.5 mb-1">${items.join('')}</div>`
 }
 
+function tierBadge(draftGrade) {
+  if (!draftGrade) return ''
+  const { tier, score, yearsEvaluated, provisional } = draftGrade
+  const STYLES = {
+    Elite:   'text-amber-300 bg-amber-900/50 border border-amber-700/40',
+    Starter: 'text-emerald-300 bg-emerald-900/50 border border-emerald-700/40',
+    Backup:  'text-slate-300 bg-slate-700/60 border border-slate-600/40',
+    Bust:    'text-red-300 bg-red-900/50 border border-red-700/40',
+  }
+  const style = STYLES[tier] || STYLES.Backup
+  const label = provisional ? `~${tier}` : tier
+  const tooltip = provisional
+    ? `Provisional (${yearsEvaluated} qualifying season${yearsEvaluated !== 1 ? 's' : ''})`
+    : `${tier} — ${score}/100`
+  return `<span class="text-[10px] font-bold px-1.5 py-0.5 rounded-full whitespace-nowrap ${provisional ? 'opacity-70' : ''} ${style}" title="${tooltip}">${label}</span>`
+}
+
+function classRankBadge(draftGrade) {
+  if (!draftGrade?.classRank) return ''
+  const { classRank, classSize } = draftGrade
+  const color = classRank === 1 ? 'text-yellow-400'
+    : classRank <= 3 ? 'text-amber-400'
+    : classRank <= 10 ? 'text-blue-400'
+    : 'text-gray-500'
+  const sfx = n => {
+    const s = ['th', 'st', 'nd', 'rd'], v = n % 100
+    return n + (s[(v - 20) % 10] || s[v] || s[0])
+  }
+  return `<span class="text-[11px] font-semibold ${color} whitespace-nowrap" title="${sfx(classRank)} best career in class of ${classSize}">${sfx(classRank)} in class</span>`
+}
+
 function renderProspectNews(name) {
   const { news } = getState()
   if (!news || news.length === 0) {
@@ -206,13 +237,17 @@ function renderHistoricalCard(prospect, isExpanded) {
     `<span class="text-xs font-semibold px-2 py-0.5 rounded-full ${posColor}">${prospect.position}</span>`,
     `<span class="school-filter-btn text-xs text-gray-400 hover:text-blue-400 transition-colors cursor-pointer truncate" data-school="${prospect.school}">${prospect.school}</span>`,
     histPickBadge,
+    tierBadge(prospect.draftGrade),
     `</div>`,
     `<h2 class="text-base font-bold text-white leading-snug mb-0.5">${prospect.name}</h2>`,
     accoladeBadges(prospect.accolades),
     `<div class="flex items-center gap-2 flex-wrap">`,
     `<span class="text-2xl font-black ${rankColor} leading-none">#${displayRank}</span>`,
     `<div class="text-xs text-gray-400 leading-snug">`,
-    `<div>Round ${prospect.actualRound || '?'}${teamSpan}</div>`,
+    `<div class="flex items-center gap-2 flex-wrap">`,
+    `<span>Round ${prospect.actualRound || '?'}${teamSpan}</span>`,
+    classRankBadge(prospect.draftGrade),
+    `</div>`,
     prospect.espnRank ? `<div class="text-gray-500 text-[11px]">ESPN pre-draft: #${prospect.espnRank}</div>` : '',
     hw ? `<div class="text-gray-500">${hw}</div>` : '',
     `</div>`,
@@ -243,7 +278,11 @@ function renderHistoricalCard(prospect, isExpanded) {
     `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">Overall Pick</span><span class="font-bold text-white">#${prospect.actualPick}</span></div>`,
     `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">Round</span><span class="text-white">${prospect.actualRound || '—'}</span></div>`,
     `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">Team</span><span class="text-amber-400 font-semibold">${prospect.actualTeam || '—'}</span></div>`,
-    `<div class="flex justify-between py-2"><span class="text-gray-500">Position</span><span class="text-white">${prospect.position}${prospect.positionGroup !== prospect.position ? ' (' + prospect.positionGroup + ')' : ''}</span></div>`,
+    `<div class="flex justify-between ${prospect.draftGrade ? 'border-b border-gray-700/60 ' : ''}py-2"><span class="text-gray-500">Position</span><span class="text-white">${prospect.position}${prospect.positionGroup !== prospect.position ? ' (' + prospect.positionGroup + ')' : ''}</span></div>`,
+    prospect.draftGrade ? [
+      `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">NFL Grade</span><span class="flex items-center gap-2">${tierBadge(prospect.draftGrade)}<span class="text-xs text-gray-400">${prospect.draftGrade.score}/100</span></span></div>`,
+      `<div class="flex justify-between py-2"><span class="text-gray-500">Class Rank</span>${classRankBadge(prospect.draftGrade)}</div>`,
+    ].join('') : '',
     `</div></div>`,
     `<div class="tab-content hidden" data-tab="stats" data-card="${prospect.id}">`,
     renderCollegeStats(prospect, {}),

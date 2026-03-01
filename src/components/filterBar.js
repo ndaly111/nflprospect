@@ -64,7 +64,8 @@ export function renderFilterBar() {
     ${isHistorical ? `
       <div class="flex items-center gap-2 mb-3 px-3 py-2 bg-blue-900/20 border border-blue-700/40 rounded-lg text-sm text-blue-300">
         <span>Viewing <strong>${draftYear} Draft Class</strong> — actual picks, rounds, and teams</span>
-        <button id="back-to-2026" class="ml-auto text-xs text-blue-400 hover:text-blue-200 underline whitespace-nowrap">Back to 2026</button>
+        <button id="glossary-btn" class="text-xs text-blue-400 hover:text-blue-200 underline whitespace-nowrap ml-auto" title="Explain these terms">What do these mean?</button>
+        <button id="back-to-2026" class="text-xs text-blue-400 hover:text-blue-200 underline whitespace-nowrap">Back to 2026</button>
       </div>` : ''}
     <div class="flex flex-wrap items-center gap-2 mb-3">
       ${POSITION_GROUPS.map(pos => `
@@ -175,6 +176,14 @@ function wireFilterEvents() {
   if (backBtn) {
     backBtn.addEventListener('click', () => {
       setState({ draftYear: 2026, expandedCardId: null })
+    })
+  }
+
+  // Glossary button
+  const glossaryBtn = document.getElementById('glossary-btn')
+  if (glossaryBtn) {
+    glossaryBtn.addEventListener('click', () => {
+      document.getElementById('glossary-modal')?.classList.remove('hidden')
     })
   }
 

@@ -6,6 +6,7 @@ import { renderNewsPanel } from './components/newsPanel.js'
 import { renderCombinePanel } from './components/combinePanel.js'
 import { renderCombineSpotlight } from './components/combineSpotlight.js'
 import { renderMockDraftBoard } from './components/mockDraftBoard.js'
+import { initGlossaryModal } from './components/glossaryModal.js'
 import { timeAgo } from './utils/format.js'
 
 const BASE = import.meta.env.BASE_URL
@@ -155,6 +156,7 @@ async function loadData() {
 
 // Boot
 renderApp()
+initGlossaryModal()
 renderSkeleton()
 renderFilterBar()
 

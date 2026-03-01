@@ -255,6 +255,15 @@ def main():
     data_dir = Path(__file__).parent.parent / 'data'
     data_dir.mkdir(exist_ok=True)
     history = build_draft_history()
+
+    try:
+        from grade_draft_picks import grade_all_classes
+        grade_all_classes(history)
+        graded = sum(1 for yr in history.values() for p in yr if 'draftGrade' in p)
+        logger.info(f'Draft grades computed for {graded} prospects')
+    except Exception as e:
+        logger.warning(f'Draft grade computation failed: {e}')
+
     out = data_dir / 'draft_history.json'
     out.write_text(json.dumps(history, indent=2))
     total = sum(len(v) for v in history.values())
