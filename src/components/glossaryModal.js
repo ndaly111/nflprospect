@@ -62,6 +62,43 @@ export function initGlossaryModal() {
           <p class="text-gray-500 mt-1 text-xs">A number prefix (e.g. 3× AP1) means the player won that award multiple times.</p>
         </section>
 
+        <section class="border-t border-gray-700/60 pt-4">
+          <h3 class="text-white font-semibold mb-2">Methodology</h3>
+          <p class="text-gray-400 mb-3">Career grades are computed from nflverse career stats using a position-specific scoring formula, then compared against all other players at that position drafted 2020–2025.</p>
+
+          <h4 class="text-gray-300 font-medium mb-1 text-xs uppercase tracking-wider">Scoring formulas</h4>
+          <div class="space-y-1 text-xs font-mono text-gray-400 bg-gray-800/60 rounded-lg p-3 mb-3">
+            <div><span class="text-gray-500">QB</span>  pass_yds×1 + pass_td×20 − int×20 + rush_yds×0.5 + rush_td×15</div>
+            <div><span class="text-gray-500">RB</span>  rush_yds×1 + rush_td×15 + rec_yds×0.8 + rec_td×15 + rec×0.5</div>
+            <div><span class="text-gray-500">WR</span>  rec_yds×1 + rec_td×20 + rec×0.5 + rush_yds×0.5</div>
+            <div><span class="text-gray-500">TE</span>  rec_yds×1 + rec_td×20 + rec×0.5</div>
+            <div><span class="text-gray-500">DL/EDGE</span> sacks×20 + TFL×5 + tackles×0.5 + QB hits×3</div>
+            <div><span class="text-gray-500">LB</span>  sacks×15 + TFL×5 + tackles×1 + int×20 + PD×8</div>
+            <div><span class="text-gray-500">DB</span>  int×30 + PD×8 + tackles×0.5</div>
+            <div><span class="text-gray-500">OL</span>  accolades only (no reliable stats)</div>
+          </div>
+
+          <h4 class="text-gray-300 font-medium mb-1 text-xs uppercase tracking-wider">Accolade bonuses (added to score)</h4>
+          <div class="grid grid-cols-2 gap-x-4 text-xs text-gray-400 mb-3">
+            <div>AP1 selection: +100 each</div>
+            <div>AP2 selection: +50 each</div>
+            <div>MVP: +150</div>
+            <div>SB MVP: +80</div>
+            <div>OPOY / DPOY: +80</div>
+            <div>OROY / DROY: +40</div>
+            <div>CPOY: +30</div>
+          </div>
+
+          <h4 class="text-gray-300 font-medium mb-1 text-xs uppercase tracking-wider">Tier cutoffs (percentile vs. same position)</h4>
+          <div class="text-xs text-gray-400 space-y-0.5">
+            <div><span class="text-amber-300 font-semibold">Elite</span> — 85th percentile and above</div>
+            <div><span class="text-emerald-300 font-semibold">Starter</span> — 60th–84th percentile</div>
+            <div><span class="text-slate-300 font-semibold">Backup</span> — 30th–59th percentile</div>
+            <div><span class="text-red-300 font-semibold">Bust</span> — below 30th percentile</div>
+          </div>
+          <p class="text-gray-600 mt-2 text-xs">Only seasons with 4+ games played count toward the score. Players with no qualifying seasons and no accolades receive no grade.</p>
+        </section>
+
       </div>
     </div>`
 
