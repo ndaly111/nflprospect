@@ -5,6 +5,34 @@ import { renderCombinePanel } from './combinePanel.js'
 import { renderNflCareerStats } from './nflCareerStats.js'
 import { getState, setState, subscribe } from '../state.js'
 
+// nflverse uses PFR-style abbreviations; ESPN CDN uses its own short codes
+const PFR_TO_ESPN = {
+  GNB: 'gb', KAN: 'kc', NOR: 'no', NWE: 'ne',
+  SFO: 'sf', TAM: 'tb', LVR: 'lv', WAS: 'wsh',
+}
+function nflTeamLogo(abbrev) {
+  if (!abbrev) return ''
+  const espn = (PFR_TO_ESPN[abbrev] || abbrev).toLowerCase()
+  return `<img src="https://a.espncdn.com/i/teamlogos/nfl/500/${espn}.png" class="w-4 h-4 inline-block align-middle flex-shrink-0" loading="lazy" alt="" onerror="this.style.display='none'">`
+}
+
+function accoladeBadges(accolades) {
+  if (!accolades) return ''
+  const b = (text, color) => `<span class="text-[10px] font-bold ${color} px-1.5 py-0.5 rounded-full whitespace-nowrap">${text}</span>`
+  const items = []
+  if (accolades.mvp)               items.push(b('MVP',  'text-purple-300 bg-purple-900/50'))
+  if (accolades.sbmvp)             items.push(b('SB MVP','text-yellow-200 bg-yellow-900/50'))
+  if (accolades.opoy)              items.push(b('OPOY', 'text-green-300 bg-green-900/50'))
+  if (accolades.dpoy)              items.push(b('DPOY', 'text-red-300 bg-red-900/50'))
+  if (accolades.oroy)              items.push(b('OROY', 'text-emerald-300 bg-emerald-900/50'))
+  if (accolades.droy)              items.push(b('DROY', 'text-orange-300 bg-orange-900/50'))
+  if (accolades.cpoy)              items.push(b('CPOY', 'text-sky-300 bg-sky-900/50'))
+  if (accolades.allpro1 > 0) items.push(b(`${accolades.allpro1 > 1 ? accolades.allpro1 + '× ' : ''}AP1`, 'text-yellow-400 bg-yellow-900/50'))
+  if (accolades.allpro2 > 0) items.push(b(`${accolades.allpro2 > 1 ? accolades.allpro2 + '× ' : ''}AP2`, 'text-gray-300 bg-gray-700/60'))
+  if (!items.length) return ''
+  return `<div class="flex flex-wrap gap-1 mt-0.5 mb-1">${items.join('')}</div>`
+}
+
 function renderProspectNews(name) {
   const { news } = getState()
   if (!news || news.length === 0) {
@@ -166,7 +194,7 @@ function renderHistoricalCard(prospect, isExpanded) {
   })()
 
   const teamSpan = prospect.actualTeam
-    ? ` · <span class="text-amber-400 font-semibold">${prospect.actualTeam}</span>`
+    ? ` · ${nflTeamLogo(prospect.actualTeam)}<span class="text-amber-400 font-semibold ml-0.5">${prospect.actualTeam}</span>`
     : ''
 
   return [
@@ -179,7 +207,8 @@ function renderHistoricalCard(prospect, isExpanded) {
     `<span class="school-filter-btn text-xs text-gray-400 hover:text-blue-400 transition-colors cursor-pointer truncate" data-school="${prospect.school}">${prospect.school}</span>`,
     histPickBadge,
     `</div>`,
-    `<h2 class="text-base font-bold text-white leading-snug mb-1">${prospect.name}</h2>`,
+    `<h2 class="text-base font-bold text-white leading-snug mb-0.5">${prospect.name}</h2>`,
+    accoladeBadges(prospect.accolades),
     `<div class="flex items-center gap-2 flex-wrap">`,
     `<span class="text-2xl font-black ${rankColor} leading-none">#${displayRank}</span>`,
     `<div class="text-xs text-gray-400 leading-snug">`,
@@ -315,7 +344,7 @@ export function renderProspectCard(prospect, isExpanded = false) {
         '<div>',
         `Round ${prospect.actualRound}`,
         ` · <span class="font-bold text-green-400">#${prospect.actualPick} overall</span>`,
-        ` · <span class="team-filter-btn text-amber-400 font-semibold hover:text-amber-300 cursor-pointer transition-colors" data-team="${prospect.actualTeam}">${prospect.actualTeam}</span>`,
+        ` · ${nflTeamLogo(prospect.actualTeam)}<span class="team-filter-btn text-amber-400 font-semibold hover:text-amber-300 cursor-pointer transition-colors ml-0.5" data-team="${prospect.actualTeam}">${prospect.actualTeam}</span>`,
         '</div>',
       ].join('')
     }

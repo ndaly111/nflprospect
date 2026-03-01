@@ -207,27 +207,46 @@ def build_draft_history() -> dict[str, list[dict]]:
         except Exception as exc:
             logger.warning(f'{year}: ESPN pre-draft fetch failed: {exc}')
 
+    # Tag each prospect with its draft year (needed by NFL stats + accolades fetchers)
+    for yr, prsp in result.items():
+        for p in prsp:
+            p['_draftYear'] = int(yr)
+    all_flat = [p for prsp in result.values() for p in prsp]
+
     # Fetch NFL career stats for all historical prospects
     logger.info('Fetching NFL career stats for historical classes...')
     try:
         from fetch_nfl_career_stats import fetch_nfl_career_stats
-
-        # Tag each prospect with its draft year so the fetcher can filter seasons
-        for yr, prsp in result.items():
-            for p in prsp:
-                p['_draftYear'] = int(yr)
-        all_flat = [p for prsp in result.values() for p in prsp]
         career = fetch_nfl_career_stats(all_flat)
         for yr, prsp in result.items():
             n = 0
             for p in prsp:
-                p.pop('_draftYear', None)
                 if p['name'] in career:
                     p['nflStats'] = career[p['name']]
                     n += 1
             logger.info(f'{yr}: {n}/{len(prsp)} prospects with NFL career stats')
     except Exception as e:
         logger.warning(f'NFL career stats fetch failed: {e}')
+
+    # Fetch career accolades (AP All-Pro + annual awards)
+    logger.info('Fetching NFL career accolades...')
+    try:
+        from fetch_nfl_accolades import fetch_nfl_accolades
+        accolades = fetch_nfl_accolades(all_flat)
+        for yr, prsp in result.items():
+            n = 0
+            for p in prsp:
+                if p['name'] in accolades:
+                    p['accolades'] = accolades[p['name']]
+                    n += 1
+            logger.info(f'{yr}: {n}/{len(prsp)} prospects with accolades')
+    except Exception as e:
+        logger.warning(f'Accolades fetch failed: {e}')
+
+    # Clean up temporary draft year tag
+    for prsp in result.values():
+        for p in prsp:
+            p.pop('_draftYear', None)
 
     return result
 
