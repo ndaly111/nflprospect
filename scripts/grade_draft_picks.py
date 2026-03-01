@@ -233,19 +233,27 @@ def grade_all_classes(history: dict) -> None:
         for p in prospects:
             p['_cv'] = compute_career_value(p)
             p['_q']  = count_qualifying_seasons(p)
-            # OL with accolade bonuses should be included in the pool
             p['_acc_bonus'] = _accolade_bonus(p.get('accolades') or {})
 
-    # Step 2: build position-group pools for percentile ranking
-    # Pool: prospects with >= 1 qualifying season (OL uses snap-based seasons)
-    # Also include OL with accolade bonus but no snaps (e.g. injured starters)
+    # Step 2: build position-group pools for percentile ranking.
+    # Pool mirrors the grade gate so ungraded players don't distort percentiles:
+    #   - 2+ qualifying seasons (mature career sample), OR
+    #   - 1 qualifying season + a strong accolade (AP1/AP2/OPOY/DPOY/MVP/etc.), OR
+    #   - OL with any accolade bonus (snap-based; accolade-only elite OL included)
     pos_pools: dict[str, list] = {}
     for prospects in history.values():
         for p in prospects:
             pos_group = p.get('positionGroup', '')
             if not pos_group:
                 continue
-            in_pool = p['_q'] >= 1 or (pos_group == 'OL' and p['_acc_bonus'] > 0)
+            has_strong_acc = any(
+                (p.get('accolades') or {}).get(k) for k in STRONG_ACCOLADES
+            )
+            in_pool = (
+                p['_q'] >= 2
+                or (has_strong_acc and p['_q'] >= 1)
+                or (pos_group == 'OL' and p['_acc_bonus'] > 0)
+            )
             if in_pool:
                 if pos_group not in pos_pools:
                     pos_pools[pos_group] = []
@@ -263,7 +271,6 @@ def grade_all_classes(history: dict) -> None:
         if n <= 1:
             return 100.0
         cv = prospect['_cv']
-        # Count how many in pool have strictly lower cv
         rank_from_bottom = sum(1 for x in sorted_pool if x['_cv'] < cv)
         return round(rank_from_bottom / (n - 1) * 100, 1)
 
