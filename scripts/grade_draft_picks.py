@@ -141,7 +141,8 @@ def compute_career_value(prospect) -> float:
               + g('passing_tds') * 20
               - g('interceptions') * 20
               + g('rushing_yards') * 0.5
-              + g('rushing_tds') * 15)
+              + g('rushing_tds') * 15
+              + g('attempts') * 0.5)   # rewards starters vs backups (~+275/season for starter)
 
     elif pos_group == 'RB':
         cv = (g('rushing_yards') * 1.0
@@ -256,13 +257,13 @@ def grade_all_classes(history: dict) -> None:
         return round(rank_from_bottom / (n - 1) * 100, 1)
 
     def tier_from_pct(pct: float, accolades: dict, pos_group: str = '') -> str:
-        if pos_group == 'OL':
-            # OL Elite requires multiple sustained recognition:
-            #   >= 2 AP All-Pro selections (1st + 2nd combined) OR >= 2 Pro Bowls
+        # OL and TE have thin draft-class pools, so Elite requires multiple sustained
+        # recognition (not just a single AP or Pro Bowl selection).
+        if pos_group in ('OL', 'TE'):
             ap_total = (accolades.get('allpro1') or 0) + (accolades.get('allpro2') or 0)
             probowl  = accolades.get('probowl') or 0
-            has_ol_elite = ap_total >= OL_ELITE_AP_TOTAL or probowl >= OL_ELITE_PROBOWL
-            if pct >= ELITE_STRONG_PCT and has_ol_elite:
+            has_multi = ap_total >= OL_ELITE_AP_TOTAL or probowl >= OL_ELITE_PROBOWL
+            if pct >= ELITE_STRONG_PCT and has_multi:
                 return 'Elite'
         else:
             has_strong = any(accolades.get(k) for k in STRONG_ACCOLADES)

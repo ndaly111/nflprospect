@@ -68,7 +68,7 @@ export function initGlossaryModal() {
 
           <h4 class="text-gray-300 font-medium mb-1 text-xs uppercase tracking-wider">Scoring formulas</h4>
           <div class="space-y-1 text-xs font-mono text-gray-400 bg-gray-800/60 rounded-lg p-3 mb-3">
-            <div><span class="text-gray-500">QB</span>  pass_yds×1 + pass_td×20 − int×20 + rush_yds×0.5 + rush_td×15</div>
+            <div><span class="text-gray-500">QB</span>  pass_yds×1 + pass_td×20 − int×20 + rush_yds×0.5 + rush_td×15 + attempts×0.5</div>
             <div><span class="text-gray-500">RB</span>  rush_yds×1 + rush_td×15 + rec_yds×0.8 + rec_td×15 + rec×0.5</div>
             <div><span class="text-gray-500">WR</span>  rec_yds×1 + rec_td×20 + rec×0.5 + rush_yds×0.5</div>
             <div><span class="text-gray-500">TE</span>  rec_yds×1 + rec_td×20 + rec×0.5</div>
@@ -92,7 +92,7 @@ export function initGlossaryModal() {
           <h4 class="text-gray-300 font-medium mb-1 text-xs uppercase tracking-wider">Tier cutoffs (percentile vs. same position)</h4>
           <div class="text-xs text-gray-400 space-y-0.5">
             <div><span class="text-amber-300 font-semibold">Elite</span> — 88th+ pct with a strong accolade (AP1/AP2, OPOY/DPOY, MVP)</div>
-            <div class="text-gray-500 pl-3">OL Elite requires 2+ AP All-Pro selections OR 2+ Pro Bowls at 88th+ pct</div>
+            <div class="text-gray-500 pl-3">OL and TE Elite requires 2+ AP All-Pro selections OR 2+ Pro Bowls at 88th+ pct</div>
             <div><span class="text-emerald-300 font-semibold">Starter</span> — 60th–87th percentile</div>
             <div><span class="text-slate-300 font-semibold">Backup</span> — 30th–59th percentile</div>
             <div><span class="text-red-300 font-semibold">Bust</span> — below 30th percentile</div>
