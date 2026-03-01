@@ -116,6 +116,9 @@
           "team": "CIN"
         }
       },
+      "accolades": {
+        "cpoy": true
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 96.9,
@@ -205,10 +208,13 @@
           "qb_hits": 21
         }
       },
+      "accolades": {
+        "droy": true
+      },
       "draftGrade": {
         "tier": "Elite",
-        "score": 85.4,
-        "classRank": 51,
+        "score": 89.0,
+        "classRank": 48,
         "classSize": 169,
         "yearsEvaluated": 4,
         "provisional": false
@@ -271,7 +277,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 65.7,
+        "score": 65.2,
         "classRank": 103,
         "classSize": 169,
         "yearsEvaluated": 4,
@@ -314,6 +320,17 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "accolades": {
+        "allpro2": 1
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 21.1,
+        "classRank": null,
+        "classSize": 0,
+        "yearsEvaluated": 0,
+        "provisional": true
       }
     },
     {
@@ -557,6 +574,9 @@
           "team": "LAC"
         }
       },
+      "accolades": {
+        "oroy": true
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 100.0,
@@ -743,7 +763,7 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 90.7,
-        "classRank": 56,
+        "classRank": 57,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -800,7 +820,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 68.6,
+        "score": 68.1,
         "classRank": 100,
         "classSize": 169,
         "yearsEvaluated": 3,
@@ -982,6 +1002,18 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "accolades": {
+        "allpro1": 2,
+        "allpro2": 1
+      },
+      "draftGrade": {
+        "tier": "Starter",
+        "score": 67.6,
+        "classRank": null,
+        "classSize": 0,
+        "yearsEvaluated": 0,
+        "provisional": true
       }
     },
     {
@@ -1229,10 +1261,13 @@
           "pass_defended": 6
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 96.1,
-        "classRank": 54,
+        "classRank": 50,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -1329,6 +1364,10 @@
           "rushing_yards": 70,
           "team": "DAL"
         }
+      },
+      "accolades": {
+        "allpro1": 1,
+        "allpro2": 2
       },
       "draftGrade": {
         "tier": "Elite",
@@ -1528,7 +1567,7 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 78.0,
-        "classRank": 76,
+        "classRank": 77,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -1629,7 +1668,7 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 62.9,
-        "classRank": 30,
+        "classRank": 31,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -1721,6 +1760,11 @@
           "rushing_yards": 3,
           "team": "MIN"
         }
+      },
+      "accolades": {
+        "opoy": true,
+        "allpro1": 2,
+        "allpro2": 2
       },
       "draftGrade": {
         "tier": "Elite",
@@ -1819,7 +1863,7 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 91.9,
-        "classRank": 52,
+        "classRank": 54,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -2142,10 +2186,13 @@
           "pass_defended": 6
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 96.5,
-        "classRank": 42,
+        "classRank": 39,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -2236,10 +2283,13 @@
           "pass_defended": 7
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
-        "score": 97.7,
-        "classRank": 35,
+        "score": 98.8,
+        "classRank": 34,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -2334,7 +2384,7 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 49.0,
+        "score": 48.0,
         "classRank": 118,
         "classSize": 169,
         "yearsEvaluated": 3,
@@ -2902,10 +2952,14 @@
           "pass_defended": 11
         }
       },
+      "accolades": {
+        "allpro1": 1,
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 99.5,
-        "classRank": 39,
+        "classRank": 35,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -2968,8 +3022,8 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 94.1,
-        "classRank": 62,
+        "score": 93.6,
+        "classRank": 63,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -3058,7 +3112,7 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 82.9,
-        "classRank": 61,
+        "classRank": 62,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -3274,6 +3328,9 @@
           "receiving_tds": 1,
           "team": "IND"
         }
+      },
+      "accolades": {
+        "allpro1": 1
       },
       "draftGrade": {
         "tier": "Elite",
@@ -3517,8 +3574,8 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 84.3,
-        "classRank": 73,
+        "score": 83.3,
+        "classRank": 74,
         "classSize": 169,
         "yearsEvaluated": 4,
         "provisional": false
@@ -3599,10 +3656,13 @@
           "pass_defended": 3
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 94.1,
-        "classRank": 63,
+        "classRank": 55,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -3967,10 +4027,13 @@
           "pass_defended": 8
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 95.6,
-        "classRank": 55,
+        "classRank": 51,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -4051,10 +4114,13 @@
           "pass_defended": 11
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 100.0,
-        "classRank": 32,
+        "classRank": 30,
         "classSize": 169,
         "yearsEvaluated": 4,
         "provisional": false
@@ -4288,6 +4354,9 @@
           "team": "PHI"
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 93.8,
@@ -4379,8 +4448,8 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 89.0,
-        "classRank": 49,
+        "score": 87.8,
+        "classRank": 52,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -4809,8 +4878,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 50.8,
-        "classRank": 53,
+        "score": 50.0,
+        "classRank": 56,
         "classSize": 169,
         "yearsEvaluated": 3,
         "provisional": false
@@ -4883,8 +4952,8 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 82.6,
-        "classRank": 70,
+        "score": 81.4,
+        "classRank": 71,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -4961,8 +5030,8 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 89.2,
-        "classRank": 69,
+        "score": 87.7,
+        "classRank": 70,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -5155,8 +5224,8 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 81.9,
-        "classRank": 77,
+        "score": 80.4,
+        "classRank": 78,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -5520,7 +5589,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 79.4,
+        "score": 78.4,
         "classRank": 81,
         "classSize": 169,
         "yearsEvaluated": 4,
@@ -5656,8 +5725,8 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 84.8,
-        "classRank": 72,
+        "score": 83.8,
+        "classRank": 73,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -5713,7 +5782,7 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 100.0,
-        "classRank": 37,
+        "classRank": 38,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -5764,7 +5833,7 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 33.3,
+        "score": 32.8,
         "classRank": 130,
         "classSize": 169,
         "yearsEvaluated": 2,
@@ -5919,10 +5988,13 @@
           "pass_defended": 4
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
         "tier": "Starter",
-        "score": 77.9,
-        "classRank": 79,
+        "score": 82.6,
+        "classRank": 68,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -6138,7 +6210,7 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 31.9,
+        "score": 31.4,
         "classRank": 133,
         "classSize": 169,
         "yearsEvaluated": 1,
@@ -6308,7 +6380,7 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 34.1,
+        "score": 33.3,
         "classRank": 86,
         "classSize": 169,
         "yearsEvaluated": 2,
@@ -6658,7 +6730,7 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 93.6,
+        "score": 93.1,
         "classRank": 64,
         "classSize": 169,
         "yearsEvaluated": 5,
@@ -6856,7 +6928,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 70.9,
+        "score": 69.8,
         "classRank": 89,
         "classSize": 169,
         "yearsEvaluated": 4,
@@ -7011,7 +7083,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 71.6,
+        "score": 71.1,
         "classRank": 95,
         "classSize": 169,
         "yearsEvaluated": 3,
@@ -7095,7 +7167,7 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 100.0,
-        "classRank": 31,
+        "classRank": 32,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -7255,10 +7327,13 @@
           "team": "JAX"
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
         "tier": "Starter",
-        "score": 64.4,
-        "classRank": 29,
+        "score": 66.7,
+        "classRank": 28,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -7453,7 +7528,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 57.1,
-        "classRank": 68,
+        "classRank": 69,
         "classSize": 169,
         "yearsEvaluated": 3,
         "provisional": false
@@ -7987,8 +8062,8 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 98.8,
-        "classRank": 34,
+        "score": 97.7,
+        "classRank": 36,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -8204,7 +8279,7 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 80.4,
-        "classRank": 28,
+        "classRank": 29,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -8309,7 +8384,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 68.6,
+        "score": 67.4,
         "classRank": 96,
         "classSize": 169,
         "yearsEvaluated": 5,
@@ -8463,7 +8538,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 76.0,
+        "score": 75.0,
         "classRank": 88,
         "classSize": 169,
         "yearsEvaluated": 5,
@@ -8928,7 +9003,7 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 97.6,
-        "classRank": 41,
+        "classRank": 42,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -9011,7 +9086,7 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 64.3,
-        "classRank": 59,
+        "classRank": 60,
         "classSize": 169,
         "yearsEvaluated": 3,
         "provisional": false
@@ -9098,7 +9173,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 76.7,
+        "score": 75.6,
         "classRank": 84,
         "classSize": 169,
         "yearsEvaluated": 5,
@@ -9560,7 +9635,7 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 30.9,
+        "score": 30.4,
         "classRank": 135,
         "classSize": 169,
         "yearsEvaluated": 5,
@@ -9896,7 +9971,7 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 46.5,
+        "score": 45.3,
         "classRank": 123,
         "classSize": 169,
         "yearsEvaluated": 3,
@@ -9988,7 +10063,7 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 73.2,
-        "classRank": 36,
+        "classRank": 37,
         "classSize": 169,
         "yearsEvaluated": 4,
         "provisional": false
@@ -10070,7 +10145,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 67.6,
+        "score": 67.2,
         "classRank": 101,
         "classSize": 169,
         "yearsEvaluated": 4,
@@ -10253,7 +10328,7 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 47.1,
+        "score": 46.1,
         "classRank": 121,
         "classSize": 169,
         "yearsEvaluated": 3,
@@ -10337,8 +10412,8 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 97.5,
-        "classRank": 48,
+        "score": 96.6,
+        "classRank": 49,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -10421,7 +10496,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 77.9,
+        "score": 77.0,
         "classRank": 83,
         "classSize": 169,
         "yearsEvaluated": 4,
@@ -10747,7 +10822,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 55.6,
-        "classRank": 38,
+        "classRank": 40,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -11609,7 +11684,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 58.3,
-        "classRank": 40,
+        "classRank": 41,
         "classSize": 169,
         "yearsEvaluated": 3,
         "provisional": false
@@ -11702,7 +11777,7 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 43.0,
+        "score": 41.9,
         "classRank": 124,
         "classSize": 169,
         "yearsEvaluated": 2,
@@ -11786,7 +11861,7 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 53.4,
+        "score": 52.9,
         "classRank": 115,
         "classSize": 169,
         "yearsEvaluated": 4,
@@ -11931,7 +12006,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 36.4,
-        "classRank": 74,
+        "classRank": 75,
         "classSize": 169,
         "yearsEvaluated": 2,
         "provisional": true
@@ -12007,7 +12082,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 45.5,
-        "classRank": 60,
+        "classRank": 61,
         "classSize": 169,
         "yearsEvaluated": 2,
         "provisional": true
@@ -12287,7 +12362,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 72.4,
+        "score": 71.4,
         "classRank": 105,
         "classSize": 169,
         "yearsEvaluated": 4,
@@ -12638,7 +12713,7 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 20.9,
+        "score": 19.8,
         "classRank": 149,
         "classSize": 169,
         "yearsEvaluated": 1,
@@ -12785,8 +12860,8 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 86.6,
-        "classRank": 50,
+        "score": 85.4,
+        "classRank": 53,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -13226,7 +13301,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 78.4,
+        "score": 77.5,
         "classRank": 82,
         "classSize": 169,
         "yearsEvaluated": 4,
@@ -13317,7 +13392,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 78.8,
+        "score": 78.0,
         "classRank": 25,
         "classSize": 169,
         "yearsEvaluated": 4,
@@ -13975,9 +14050,9 @@
         }
       },
       "draftGrade": {
-        "tier": "Elite",
-        "score": 85.8,
-        "classRank": 71,
+        "tier": "Starter",
+        "score": 84.8,
+        "classRank": 72,
         "classSize": 169,
         "yearsEvaluated": 4,
         "provisional": false
@@ -14336,7 +14411,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 74.5,
+        "score": 73.5,
         "classRank": 90,
         "classSize": 169,
         "yearsEvaluated": 4,
@@ -14491,7 +14566,7 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 53.8,
+        "score": 53.0,
         "classRank": 46,
         "classSize": 169,
         "yearsEvaluated": 2,
@@ -14643,7 +14718,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 66.7,
+        "score": 66.2,
         "classRank": 102,
         "classSize": 169,
         "yearsEvaluated": 4,
@@ -14828,7 +14903,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 47.0,
-        "classRank": 58,
+        "classRank": 59,
         "classSize": 169,
         "yearsEvaluated": 2,
         "provisional": true
@@ -14912,8 +14987,8 @@
         }
       },
       "draftGrade": {
-        "tier": "Backup",
-        "score": 30.2,
+        "tier": "Bust",
+        "score": 29.1,
         "classRank": 136,
         "classSize": 169,
         "yearsEvaluated": 2,
@@ -14996,8 +15071,8 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 83.8,
-        "classRank": 75,
+        "score": 82.8,
+        "classRank": 76,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -15243,7 +15318,7 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 92.6,
+        "score": 92.2,
         "classRank": 65,
         "classSize": 169,
         "yearsEvaluated": 4,
@@ -15439,7 +15514,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 46.9,
-        "classRank": 57,
+        "classRank": 58,
         "classSize": 169,
         "yearsEvaluated": 2,
         "provisional": true
@@ -16256,8 +16331,8 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 81.4,
-        "classRank": 78,
+        "score": 79.9,
+        "classRank": 79,
         "classSize": 169,
         "yearsEvaluated": 5,
         "provisional": false
@@ -16644,7 +16719,7 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 8.6,
+        "score": 7.4,
         "classRank": 126,
         "classSize": 169,
         "yearsEvaluated": 1,
@@ -16982,7 +17057,7 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 17.4,
+        "score": 16.3,
         "classRank": 152,
         "classSize": 169,
         "yearsEvaluated": 1,
@@ -17049,7 +17124,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 69.8,
+        "score": 68.6,
         "classRank": 93,
         "classSize": 169,
         "yearsEvaluated": 3,
@@ -17165,7 +17240,7 @@
         "tier": "Elite",
         "score": 87.5,
         "classRank": 1,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -17263,8 +17338,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 68.8,
-        "classRank": 4,
-        "classSize": 159,
+        "classRank": 5,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -17336,8 +17411,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 21.9,
-        "classRank": 29,
-        "classSize": 159,
+        "classRank": 30,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -17416,11 +17491,14 @@
           "team": "ATL"
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 98.2,
         "classRank": 16,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -17502,11 +17580,17 @@
           "team": "CIN"
         }
       },
+      "accolades": {
+        "oroy": true,
+        "opoy": true,
+        "allpro1": 2,
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 98.5,
-        "classRank": 5,
-        "classSize": 159,
+        "classRank": 4,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -17587,7 +17671,7 @@
         "tier": "Elite",
         "score": 93.9,
         "classRank": 9,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -17624,6 +17708,17 @@
           "games": 1,
           "team": "DET"
         }
+      },
+      "accolades": {
+        "allpro1": 3
+      },
+      "draftGrade": {
+        "tier": "Elite",
+        "score": 100.0,
+        "classRank": 79,
+        "classSize": 163,
+        "yearsEvaluated": 0,
+        "provisional": true
       }
     },
     {
@@ -17697,9 +17792,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 78.9,
+        "score": 77.9,
         "classRank": 70,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -17773,11 +17868,15 @@
           "pass_defended": 11
         }
       },
+      "accolades": {
+        "allpro1": 2,
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
-        "score": 98.5,
-        "classRank": 37,
-        "classSize": 159,
+        "score": 99.0,
+        "classRank": 29,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -17858,7 +17957,7 @@
         "tier": "Elite",
         "score": 93.2,
         "classRank": 10,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -17970,7 +18069,7 @@
         "tier": "Starter",
         "score": 78.1,
         "classRank": 3,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -18046,11 +18145,16 @@
           "pass_defended": 1
         }
       },
+      "accolades": {
+        "droy": true,
+        "allpro1": 3,
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 100.0,
-        "classRank": 27,
-        "classSize": 159,
+        "classRank": 25,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -18077,7 +18181,18 @@
       },
       "espnRank": 8,
       "espnGrade": 93.0,
-      "espnId": "104761"
+      "espnId": "104761",
+      "accolades": {
+        "allpro2": 1
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 142,
+        "classSize": 163,
+        "yearsEvaluated": 0,
+        "provisional": true
+      }
     },
     {
       "id": "alijah vera tucker-ol-usc",
@@ -18210,7 +18325,7 @@
         "tier": "Starter",
         "score": 84.4,
         "classRank": 2,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -18294,9 +18409,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 88.4,
+        "score": 87.2,
         "classRank": 53,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -18396,7 +18511,7 @@
         "tier": "Elite",
         "score": 97.1,
         "classRank": 39,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -18480,9 +18595,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 81.4,
-        "classRank": 65,
-        "classSize": 159,
+        "score": 80.2,
+        "classRank": 66,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -18572,8 +18687,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 59.1,
-        "classRank": 33,
-        "classSize": 159,
+        "classRank": 34,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -18654,8 +18769,8 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 98.1,
-        "classRank": 35,
-        "classSize": 159,
+        "classRank": 36,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -18710,8 +18825,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 5.4,
-        "classRank": 157,
-        "classSize": 159,
+        "classRank": 161,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -18815,8 +18930,8 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 98.8,
-        "classRank": 7,
-        "classSize": 159,
+        "classRank": 8,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -18906,7 +19021,7 @@
         "tier": "Elite",
         "score": 92.6,
         "classRank": 13,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -18982,9 +19097,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 83.3,
-        "classRank": 66,
-        "classSize": 159,
+        "score": 82.4,
+        "classRank": 67,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -19075,7 +19190,7 @@
         "tier": "Starter",
         "score": 83.3,
         "classRank": 21,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -19156,8 +19271,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 57.3,
-        "classRank": 94,
-        "classSize": 159,
+        "classRank": 97,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -19233,9 +19348,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 56.4,
-        "classRank": 96,
-        "classSize": 159,
+        "score": 55.9,
+        "classRank": 99,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -19310,8 +19425,8 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 99.0,
-        "classRank": 32,
-        "classSize": 159,
+        "classRank": 33,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -19362,8 +19477,8 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 96.3,
-        "classRank": 36,
-        "classSize": 159,
+        "classRank": 37,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -19450,9 +19565,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 92.2,
+        "score": 91.7,
         "classRank": 54,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -19543,7 +19658,7 @@
         "tier": "Elite",
         "score": 85.6,
         "classRank": 19,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -19642,9 +19757,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 86.4,
+        "score": 85.2,
         "classRank": 15,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -19714,9 +19829,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 86.8,
-        "classRank": 61,
-        "classSize": 159,
+        "score": 85.3,
+        "classRank": 62,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -19805,8 +19920,8 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 90.5,
-        "classRank": 60,
-        "classSize": 159,
+        "classRank": 61,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -19906,9 +20021,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 73.5,
+        "score": 72.5,
         "classRank": 77,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -19976,8 +20091,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 64.8,
-        "classRank": 102,
-        "classSize": 159,
+        "classRank": 105,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -20057,9 +20172,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 90.7,
+        "score": 90.2,
         "classRank": 56,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -20130,8 +20245,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 17.6,
-        "classRank": 142,
-        "classSize": 159,
+        "classRank": 146,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -20277,9 +20392,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 91.7,
+        "score": 91.2,
         "classRank": 55,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -20383,8 +20498,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 69.7,
-        "classRank": 26,
-        "classSize": 159,
+        "classRank": 27,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -20466,7 +20581,7 @@
         "tier": "Starter",
         "score": 84.1,
         "classRank": 44,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -20570,7 +20685,7 @@
         "tier": "Elite",
         "score": 93.0,
         "classRank": 42,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -20695,8 +20810,8 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 95.2,
-        "classRank": 50,
-        "classSize": 159,
+        "classRank": 51,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -20779,7 +20894,7 @@
         "tier": "Elite",
         "score": 96.4,
         "classRank": 17,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -20859,8 +20974,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 20.5,
-        "classRank": 97,
-        "classSize": 159,
+        "classRank": 100,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -20923,8 +21038,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 70.5,
-        "classRank": 25,
-        "classSize": 159,
+        "classRank": 26,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -21010,7 +21125,7 @@
         "tier": "Elite",
         "score": 94.2,
         "classRank": 41,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -21070,8 +21185,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 18.2,
-        "classRank": 104,
-        "classSize": 159,
+        "classRank": 107,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -21155,9 +21270,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 73.3,
+        "score": 72.1,
         "classRank": 72,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -21219,7 +21334,19 @@
       },
       "espnRank": 55,
       "espnGrade": 81.0,
-      "espnId": "104819"
+      "espnId": "104819",
+      "accolades": {
+        "allpro1": 2,
+        "allpro2": 1
+      },
+      "draftGrade": {
+        "tier": "Starter",
+        "score": 80.0,
+        "classRank": 86,
+        "classSize": 163,
+        "yearsEvaluated": 0,
+        "provisional": true
+      }
     },
     {
       "id": "kyle trask-qb-florida",
@@ -21383,9 +21510,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 89.7,
+        "score": 89.2,
         "classRank": 57,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -21552,7 +21679,7 @@
         "tier": "Starter",
         "score": 65.6,
         "classRank": 6,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -21643,8 +21770,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 62.8,
-        "classRank": 85,
-        "classSize": 159,
+        "classRank": 87,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -21733,8 +21860,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 14.7,
-        "classRank": 145,
-        "classSize": 159,
+        "classRank": 149,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -21804,9 +21931,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 88.6,
-        "classRank": 62,
-        "classSize": 159,
+        "score": 87.6,
+        "classRank": 63,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -21887,8 +22014,8 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 91.4,
-        "classRank": 59,
-        "classSize": 159,
+        "classRank": 60,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -21958,9 +22085,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 79.9,
+        "score": 78.9,
         "classRank": 69,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -22032,7 +22159,7 @@
         "tier": "Elite",
         "score": 96.2,
         "classRank": 48,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -22102,9 +22229,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 98.0,
+        "score": 97.1,
         "classRank": 40,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -22185,7 +22312,7 @@
         "tier": "Elite",
         "score": 86.4,
         "classRank": 18,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -22248,8 +22375,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 9.3,
-        "classRank": 148,
-        "classSize": 159,
+        "classRank": 152,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -22323,8 +22450,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 65.9,
-        "classRank": 82,
-        "classSize": 159,
+        "classRank": 83,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -22400,9 +22527,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 41.7,
-        "classRank": 107,
-        "classSize": 159,
+        "score": 40.7,
+        "classRank": 110,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -22458,8 +22585,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 5.4,
-        "classRank": 131,
-        "classSize": 159,
+        "classRank": 134,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -22549,8 +22676,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 57.6,
-        "classRank": 34,
-        "classSize": 159,
+        "classRank": 35,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -22627,8 +22754,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 69.6,
-        "classRank": 31,
-        "classSize": 159,
+        "classRank": 32,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -22710,7 +22837,7 @@
         "tier": "Starter",
         "score": 81.0,
         "classRank": 78,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -22790,8 +22917,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 29.5,
-        "classRank": 79,
-        "classSize": 159,
+        "classRank": 80,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -22940,7 +23067,7 @@
         "tier": "Backup",
         "score": 45.7,
         "classRank": 46,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -23024,9 +23151,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 91.7,
+        "score": 90.9,
         "classRank": 14,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -23106,9 +23233,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 87.6,
-        "classRank": 63,
-        "classSize": 159,
+        "score": 86.7,
+        "classRank": 64,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -23178,8 +23305,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 25.8,
-        "classRank": 83,
-        "classSize": 159,
+        "classRank": 84,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -23255,9 +23382,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 41.9,
-        "classRank": 117,
-        "classSize": 159,
+        "score": 40.7,
+        "classRank": 121,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -23385,8 +23512,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 13.4,
-        "classRank": 154,
-        "classSize": 159,
+        "classRank": 158,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -23452,8 +23579,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 12.5,
-        "classRank": 109,
-        "classSize": 159,
+        "classRank": 112,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -23480,7 +23607,18 @@
       },
       "espnRank": 61,
       "espnGrade": 80.0,
-      "espnId": "105181"
+      "espnId": "105181",
+      "accolades": {
+        "allpro1": 2
+      },
+      "draftGrade": {
+        "tier": "Starter",
+        "score": 60.0,
+        "classRank": 96,
+        "classSize": 163,
+        "yearsEvaluated": 0,
+        "provisional": true
+      }
     },
     {
       "id": "nahshon wright-db-oregon st",
@@ -23540,10 +23678,10 @@
         }
       },
       "draftGrade": {
-        "tier": "Backup",
-        "score": 30.4,
-        "classRank": 127,
-        "classSize": 159,
+        "tier": "Bust",
+        "score": 29.9,
+        "classRank": 131,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -23619,9 +23757,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 75.5,
+        "score": 74.5,
         "classRank": 75,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -23697,9 +23835,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 51.5,
-        "classRank": 101,
-        "classSize": 159,
+        "score": 50.5,
+        "classRank": 104,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -23763,9 +23901,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 54.9,
-        "classRank": 98,
-        "classSize": 159,
+        "score": 54.4,
+        "classRank": 101,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -23847,11 +23985,14 @@
           "pass_defended": 2
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
-        "score": 89.5,
-        "classRank": 52,
-        "classSize": 159,
+        "score": 88.4,
+        "classRank": 50,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -23911,9 +24052,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 82.8,
-        "classRank": 67,
-        "classSize": 159,
+        "score": 81.4,
+        "classRank": 68,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -23997,9 +24138,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 75.6,
+        "score": 74.4,
         "classRank": 71,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -24074,8 +24215,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 32.4,
-        "classRank": 141,
-        "classSize": 159,
+        "classRank": 145,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -24176,7 +24317,7 @@
         "tier": "Starter",
         "score": 69.1,
         "classRank": 23,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -24240,9 +24381,9 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 29.9,
-        "classRank": 128,
-        "classSize": 159,
+        "score": 29.4,
+        "classRank": 132,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -24450,11 +24591,15 @@
           "team": "DET"
         }
       },
+      "accolades": {
+        "allpro1": 2,
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 97.7,
-        "classRank": 8,
-        "classSize": 159,
+        "classRank": 7,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -24535,8 +24680,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 61.0,
-        "classRank": 89,
-        "classSize": 159,
+        "classRank": 91,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -24719,8 +24864,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 43.8,
-        "classRank": 124,
-        "classSize": 159,
+        "classRank": 128,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -24774,8 +24919,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 43.9,
-        "classRank": 112,
-        "classSize": 159,
+        "classRank": 116,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -24861,11 +25006,14 @@
           "team": "NYJ"
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Bust",
-        "score": 7.4,
-        "classRank": 129,
-        "classSize": 159,
+        "score": 13.6,
+        "classRank": 115,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -24959,7 +25107,7 @@
         "tier": "Elite",
         "score": 95.1,
         "classRank": 11,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -25109,8 +25257,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 11.3,
-        "classRank": 149,
-        "classSize": 159,
+        "classRank": 153,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -25193,7 +25341,7 @@
         "tier": "Starter",
         "score": 66.1,
         "classRank": 45,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -25269,9 +25417,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 93.1,
-        "classRank": 51,
-        "classSize": 159,
+        "score": 92.6,
+        "classRank": 52,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -25372,7 +25520,7 @@
         "tier": "Elite",
         "score": 93.8,
         "classRank": 12,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -25439,8 +25587,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 71.4,
-        "classRank": 30,
-        "classSize": 159,
+        "classRank": 31,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -25534,8 +25682,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 6.1,
-        "classRank": 137,
-        "classSize": 159,
+        "classRank": 140,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -25605,9 +25753,9 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 28.4,
-        "classRank": 130,
-        "classSize": 159,
+        "score": 27.9,
+        "classRank": 133,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -25697,8 +25845,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 28.0,
-        "classRank": 81,
-        "classSize": 159,
+        "classRank": 82,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -25772,8 +25920,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 45.7,
-        "classRank": 122,
-        "classSize": 159,
+        "classRank": 126,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -25895,8 +26043,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 29.3,
-        "classRank": 138,
-        "classSize": 159,
+        "classRank": 141,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -25963,9 +26111,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 71.4,
-        "classRank": 88,
-        "classSize": 159,
+        "score": 70.5,
+        "classRank": 90,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -26041,9 +26189,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 68.6,
-        "classRank": 84,
-        "classSize": 159,
+        "score": 68.1,
+        "classRank": 85,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -26119,9 +26267,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 50.0,
-        "classRank": 103,
-        "classSize": 159,
+        "score": 49.0,
+        "classRank": 106,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -26483,7 +26631,7 @@
         "tier": "Backup",
         "score": 39.3,
         "classRank": 74,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -26559,9 +26707,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 35.3,
-        "classRank": 118,
-        "classSize": 159,
+        "score": 34.8,
+        "classRank": 122,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -26644,7 +26792,7 @@
         "tier": "Starter",
         "score": 62.5,
         "classRank": 47,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -26725,8 +26873,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 53.3,
-        "classRank": 119,
-        "classSize": 159,
+        "classRank": 123,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -26844,7 +26992,7 @@
         "tier": "Starter",
         "score": 70.4,
         "classRank": 22,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -26931,10 +27079,10 @@
         }
       },
       "draftGrade": {
-        "tier": "Starter",
-        "score": 60.3,
-        "classRank": 91,
-        "classSize": 159,
+        "tier": "Backup",
+        "score": 59.8,
+        "classRank": 93,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -26990,9 +27138,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 31.4,
-        "classRank": 126,
-        "classSize": 159,
+        "score": 30.2,
+        "classRank": 130,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -27069,8 +27217,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 8.8,
-        "classRank": 152,
-        "classSize": 159,
+        "classRank": 156,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -27182,8 +27330,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 25.6,
-        "classRank": 140,
-        "classSize": 159,
+        "classRank": 144,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -27273,8 +27421,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 11.4,
-        "classRank": 120,
-        "classSize": 159,
+        "classRank": 124,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -27335,8 +27483,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 13.3,
-        "classRank": 153,
-        "classSize": 159,
+        "classRank": 157,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -27431,8 +27579,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 9.8,
-        "classRank": 151,
-        "classSize": 159,
+        "classRank": 155,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -27529,7 +27677,7 @@
         "tier": "Starter",
         "score": 83.9,
         "classRank": 28,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -27606,8 +27754,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 63.7,
-        "classRank": 86,
-        "classSize": 159,
+        "classRank": 88,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -27765,9 +27913,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 31.4,
-        "classRank": 125,
-        "classSize": 159,
+        "score": 30.9,
+        "classRank": 129,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -27842,9 +27990,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 76.5,
+        "score": 76.0,
         "classRank": 73,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -27986,9 +28134,9 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 24.4,
-        "classRank": 135,
-        "classSize": 159,
+        "score": 23.3,
+        "classRank": 138,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -28108,9 +28256,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 88.7,
-        "classRank": 58,
-        "classSize": 159,
+        "score": 87.3,
+        "classRank": 59,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -28191,8 +28339,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 59.0,
-        "classRank": 111,
-        "classSize": 159,
+        "classRank": 114,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -28259,8 +28407,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 7.3,
-        "classRank": 158,
-        "classSize": 159,
+        "classRank": 162,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -28336,8 +28484,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 62.7,
-        "classRank": 87,
-        "classSize": 159,
+        "classRank": 89,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -28421,9 +28569,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 34.9,
-        "classRank": 121,
-        "classSize": 159,
+        "score": 33.7,
+        "classRank": 125,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -28531,8 +28679,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 19.6,
-        "classRank": 139,
-        "classSize": 159,
+        "classRank": 143,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -28612,8 +28760,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 12.9,
-        "classRank": 113,
-        "classSize": 159,
+        "classRank": 117,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -28687,11 +28835,14 @@
           "pass_defended": 0
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
-        "tier": "Starter",
-        "score": 80.9,
-        "classRank": 68,
-        "classSize": 159,
+        "tier": "Elite",
+        "score": 88.7,
+        "classRank": 58,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -28806,8 +28957,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 61.0,
-        "classRank": 108,
-        "classSize": 159,
+        "classRank": 111,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -28865,8 +29016,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 7.8,
-        "classRank": 156,
-        "classSize": 159,
+        "classRank": 160,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -28980,9 +29131,9 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 26.7,
-        "classRank": 132,
-        "classSize": 159,
+        "score": 25.6,
+        "classRank": 135,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -29218,8 +29369,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 56.2,
-        "classRank": 114,
-        "classSize": 159,
+        "classRank": 118,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -29303,8 +29454,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 20.7,
-        "classRank": 143,
-        "classSize": 159,
+        "classRank": 147,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -29378,8 +29529,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 8.6,
-        "classRank": 155,
-        "classSize": 159,
+        "classRank": 159,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -29493,7 +29644,7 @@
         "tier": "Starter",
         "score": 67.9,
         "classRank": 24,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -29574,8 +29725,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 68.6,
-        "classRank": 92,
-        "classSize": 159,
+        "classRank": 94,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -29664,8 +29815,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 21.0,
-        "classRank": 95,
-        "classSize": 159,
+        "classRank": 98,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -29743,9 +29894,9 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 11.1,
-        "classRank": 115,
-        "classSize": 159,
+        "score": 9.9,
+        "classRank": 119,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -29853,9 +30004,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 74.0,
+        "score": 73.0,
         "classRank": 76,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -29995,8 +30146,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 34.6,
-        "classRank": 80,
-        "classSize": 159,
+        "classRank": 81,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -30097,8 +30248,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 37.9,
-        "classRank": 64,
-        "classSize": 159,
+        "classRank": 65,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -30168,8 +30319,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 6.8,
-        "classRank": 136,
-        "classSize": 159,
+        "classRank": 139,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -30403,8 +30554,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 53.7,
-        "classRank": 99,
-        "classSize": 159,
+        "classRank": 102,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -30482,8 +30633,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 25.9,
-        "classRank": 90,
-        "classSize": 159,
+        "classRank": 92,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -30559,9 +30710,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 53.9,
-        "classRank": 100,
-        "classSize": 159,
+        "score": 53.4,
+        "classRank": 103,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -30626,8 +30777,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 14.2,
-        "classRank": 146,
-        "classSize": 159,
+        "classRank": 150,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -30764,8 +30915,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 54.3,
-        "classRank": 116,
-        "classSize": 159,
+        "classRank": 120,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -30866,7 +31017,7 @@
         "tier": "Starter",
         "score": 74.1,
         "classRank": 20,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -30952,7 +31103,7 @@
         "tier": "Bust",
         "score": 9.4,
         "classRank": 49,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -31072,8 +31223,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 54.7,
-        "classRank": 93,
-        "classSize": 159,
+        "classRank": 95,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -31339,9 +31490,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 43.6,
-        "classRank": 106,
-        "classSize": 159,
+        "score": 42.6,
+        "classRank": 109,
+        "classSize": 163,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -31432,8 +31583,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 7.6,
-        "classRank": 133,
-        "classSize": 159,
+        "classRank": 136,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -31551,8 +31702,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 0.0,
-        "classRank": 159,
-        "classSize": 159,
+        "classRank": 163,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -31703,8 +31854,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 15.9,
-        "classRank": 150,
-        "classSize": 159,
+        "classRank": 154,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -31939,7 +32090,7 @@
         "tier": "Elite",
         "score": 93.9,
         "classRank": 38,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -32227,9 +32378,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 32.4,
-        "classRank": 123,
-        "classSize": 159,
+        "score": 31.9,
+        "classRank": 127,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -32416,9 +32567,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 51.5,
+        "score": 50.8,
         "classRank": 43,
-        "classSize": 159,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -32499,8 +32650,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 37.1,
-        "classRank": 134,
-        "classSize": 159,
+        "classRank": 137,
+        "classSize": 163,
         "yearsEvaluated": 4,
         "provisional": false
       }
@@ -32732,8 +32883,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 1.2,
-        "classRank": 147,
-        "classSize": 159,
+        "classRank": 151,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -32811,8 +32962,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 14.8,
-        "classRank": 110,
-        "classSize": 159,
+        "classRank": 113,
+        "classSize": 163,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -32882,8 +33033,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 17.4,
-        "classRank": 105,
-        "classSize": 159,
+        "classRank": 108,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -32950,8 +33101,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 12.8,
-        "classRank": 144,
-        "classSize": 159,
+        "classRank": 148,
+        "classSize": 163,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -33027,8 +33178,8 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 92.7,
-        "classRank": 39,
-        "classSize": 174,
+        "classRank": 41,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -33099,11 +33250,14 @@
           "qb_hits": 17
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 98.8,
-        "classRank": 34,
-        "classSize": 174,
+        "classRank": 33,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -33171,11 +33325,14 @@
           "pass_defended": 18
         }
       },
+      "accolades": {
+        "allpro1": 2
+      },
       "draftGrade": {
         "tier": "Elite",
-        "score": 95.1,
-        "classRank": 48,
-        "classSize": 174,
+        "score": 98.0,
+        "classRank": 36,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -33189,7 +33346,19 @@
       "actualRound": 1,
       "actualPick": 4,
       "actualTeam": "NYJ",
-      "combineData": null
+      "combineData": null,
+      "accolades": {
+        "droy": true,
+        "allpro1": 2
+      },
+      "draftGrade": {
+        "tier": "Starter",
+        "score": 66.2,
+        "classRank": null,
+        "classSize": 0,
+        "yearsEvaluated": 0,
+        "provisional": true
+      }
     },
     {
       "id": "kayvon thibodeaux-de-oregon",
@@ -33259,9 +33428,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 87.8,
-        "classRank": 43,
-        "classSize": 174,
+        "score": 86.6,
+        "classRank": 45,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -33411,8 +33580,8 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 90.2,
-        "classRank": 9,
-        "classSize": 174,
+        "classRank": 10,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -33513,11 +33682,14 @@
           "team": "NYJ"
         }
       },
+      "accolades": {
+        "oroy": true
+      },
       "draftGrade": {
         "tier": "Elite",
-        "score": 90.9,
+        "score": 91.7,
         "classRank": 7,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -33594,11 +33766,14 @@
           "team": "NO"
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
-        "score": 88.6,
-        "classRank": 14,
-        "classSize": 174,
+        "score": 87.9,
+        "classRank": 13,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -33679,7 +33854,7 @@
         "tier": "Starter",
         "score": 74.2,
         "classRank": 25,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -33754,7 +33929,7 @@
         "tier": "Starter",
         "score": 61.9,
         "classRank": 121,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -33822,11 +33997,15 @@
           "pass_defended": 9
         }
       },
+      "accolades": {
+        "allpro1": 2,
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
-        "score": 86.3,
-        "classRank": 62,
-        "classSize": 174,
+        "score": 94.6,
+        "classRank": 48,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -33931,7 +34110,7 @@
         "tier": "Starter",
         "score": 71.2,
         "classRank": 29,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -34034,9 +34213,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 53.0,
-        "classRank": 41,
-        "classSize": 174,
+        "score": 52.3,
+        "classRank": 43,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -34159,7 +34338,7 @@
         "tier": "Backup",
         "score": 59.4,
         "classRank": 2,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -34227,11 +34406,15 @@
           "pass_defended": 13
         }
       },
+      "accolades": {
+        "allpro1": 1,
+        "allpro2": 1
+      },
       "draftGrade": {
-        "tier": "Starter",
-        "score": 77.0,
-        "classRank": 75,
-        "classSize": 174,
+        "tier": "Elite",
+        "score": 88.2,
+        "classRank": 56,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -34306,10 +34489,10 @@
         }
       },
       "draftGrade": {
-        "tier": "Elite",
-        "score": 87.2,
-        "classRank": 52,
-        "classSize": 174,
+        "tier": "Starter",
+        "score": 84.9,
+        "classRank": 54,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -34379,9 +34562,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 42.2,
+        "score": 41.2,
         "classRank": 124,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -34414,6 +34597,17 @@
           "games": 1,
           "team": "DAL"
         }
+      },
+      "accolades": {
+        "allpro2": 1
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 144,
+        "classSize": 175,
+        "yearsEvaluated": 0,
+        "provisional": true
       }
     },
     {
@@ -34491,9 +34685,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 74.4,
-        "classRank": 74,
-        "classSize": 174,
+        "score": 73.3,
+        "classRank": 76,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -34567,11 +34761,14 @@
           "pass_defended": 4
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 86.0,
-        "classRank": 54,
-        "classSize": 174,
+        "classRank": 52,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -34645,8 +34842,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 83.8,
-        "classRank": 67,
-        "classSize": 174,
+        "classRank": 69,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -34724,8 +34921,8 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 95.1,
-        "classRank": 38,
-        "classSize": 174,
+        "classRank": 39,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -34895,8 +35092,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 70.7,
-        "classRank": 82,
-        "classSize": 174,
+        "classRank": 83,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -34960,7 +35157,7 @@
         "tier": "Starter",
         "score": 76.5,
         "classRank": 20,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -35030,9 +35227,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 70.1,
-        "classRank": 90,
-        "classSize": 174,
+        "score": 69.1,
+        "classRank": 91,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -35122,7 +35319,7 @@
         "tier": "Elite",
         "score": 90.1,
         "classRank": 6,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -35191,10 +35388,10 @@
         }
       },
       "draftGrade": {
-        "tier": "Elite",
-        "score": 85.3,
-        "classRank": 63,
-        "classSize": 174,
+        "tier": "Starter",
+        "score": 84.3,
+        "classRank": 64,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -35268,8 +35465,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 80.5,
-        "classRank": 56,
-        "classSize": 174,
+        "classRank": 58,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -35339,9 +35536,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 77.5,
-        "classRank": 73,
-        "classSize": 174,
+        "score": 76.5,
+        "classRank": 75,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -35415,8 +35612,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 81.7,
-        "classRank": 49,
-        "classSize": 174,
+        "classRank": 50,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -35474,7 +35671,7 @@
         "tier": "Starter",
         "score": 60.5,
         "classRank": 30,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -35525,8 +35722,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 12.3,
-        "classRank": 159,
-        "classSize": 174,
+        "classRank": 160,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -35607,7 +35804,7 @@
         "tier": "Starter",
         "score": 73.5,
         "classRank": 26,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -35667,8 +35864,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 28.8,
-        "classRank": 83,
-        "classSize": 174,
+        "classRank": 84,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -35738,9 +35935,9 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 19.8,
-        "classRank": 148,
-        "classSize": 174,
+        "score": 18.6,
+        "classRank": 149,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -35795,7 +35992,7 @@
         "tier": "Starter",
         "score": 62.2,
         "classRank": 97,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -35862,8 +36059,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 13.3,
-        "classRank": 163,
-        "classSize": 174,
+        "classRank": 164,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -35933,9 +36130,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 71.1,
-        "classRank": 84,
-        "classSize": 174,
+        "score": 70.1,
+        "classRank": 85,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -36005,9 +36202,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 87.7,
-        "classRank": 60,
-        "classSize": 174,
+        "score": 86.3,
+        "classRank": 62,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -36087,8 +36284,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 39.4,
-        "classRank": 57,
-        "classSize": 174,
+        "classRank": 59,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -36176,11 +36373,14 @@
           "team": "PIT"
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 89.4,
         "classRank": 11,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -36261,7 +36461,7 @@
         "tier": "Starter",
         "score": 81.1,
         "classRank": 17,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -36341,8 +36541,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 41.7,
-        "classRank": 50,
-        "classSize": 174,
+        "classRank": 51,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -36413,11 +36613,14 @@
           "team": "ARI"
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 94.6,
         "classRank": 16,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -36484,8 +36687,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 72.0,
-        "classRank": 80,
-        "classSize": 174,
+        "classRank": 81,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -36579,9 +36782,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 44.2,
+        "score": 43.0,
         "classRank": 126,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -36669,9 +36872,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 91.2,
-        "classRank": 51,
-        "classSize": 174,
+        "score": 90.7,
+        "classRank": 53,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -36739,7 +36942,7 @@
         "tier": "Backup",
         "score": 54.9,
         "classRank": 112,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -36809,9 +37012,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 61.3,
+        "score": 60.8,
         "classRank": 100,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -36897,11 +37100,14 @@
           "team": "BUF"
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 91.4,
         "classRank": 5,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -36975,8 +37181,8 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 90.2,
-        "classRank": 40,
-        "classSize": 174,
+        "classRank": 42,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -37093,8 +37299,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 3.5,
-        "classRank": 169,
-        "classSize": 174,
+        "classRank": 170,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -37188,9 +37394,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 88.2,
-        "classRank": 58,
-        "classSize": 174,
+        "score": 86.8,
+        "classRank": 60,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -37298,9 +37504,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 32.6,
+        "score": 31.4,
         "classRank": 136,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -37360,8 +37566,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 5.3,
-        "classRank": 146,
-        "classSize": 174,
+        "classRank": 147,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -37443,8 +37649,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 46.4,
-        "classRank": 69,
-        "classSize": 174,
+        "classRank": 71,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -37543,7 +37749,7 @@
         "tier": "Backup",
         "score": 50.0,
         "classRank": 3,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -37619,9 +37825,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 72.1,
-        "classRank": 76,
-        "classSize": 174,
+        "score": 70.9,
+        "classRank": 77,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -37690,7 +37896,7 @@
         "tier": "Starter",
         "score": 66.7,
         "classRank": 114,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -37789,7 +37995,7 @@
         "tier": "Backup",
         "score": 58.5,
         "classRank": 104,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -37921,8 +38127,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 55.4,
-        "classRank": 59,
-        "classSize": 174,
+        "classRank": 61,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -37992,9 +38198,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 60.8,
+        "score": 60.3,
         "classRank": 102,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -38069,7 +38275,7 @@
         "tier": "Backup",
         "score": 45.1,
         "classRank": 125,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -38147,7 +38353,7 @@
         "tier": "Starter",
         "score": 64.0,
         "classRank": 94,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -38221,8 +38427,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 35.2,
-        "classRank": 144,
-        "classSize": 174,
+        "classRank": 145,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -38290,11 +38496,15 @@
           "pass_defended": 10
         }
       },
+      "accolades": {
+        "allpro1": 1,
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Starter",
-        "score": 69.6,
-        "classRank": 92,
-        "classSize": 174,
+        "score": 81.9,
+        "classRank": 67,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -38384,8 +38594,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 18.8,
-        "classRank": 33,
-        "classSize": 174,
+        "classRank": 34,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -38460,7 +38670,7 @@
         "tier": "Backup",
         "score": 51.2,
         "classRank": 115,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -38541,7 +38751,7 @@
         "tier": "Starter",
         "score": 61.4,
         "classRank": 31,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -38617,9 +38827,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 84.9,
-        "classRank": 55,
-        "classSize": 174,
+        "score": 82.6,
+        "classRank": 57,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -38723,10 +38933,10 @@
         }
       },
       "draftGrade": {
-        "tier": "Elite",
-        "score": 85.2,
-        "classRank": 8,
-        "classSize": 174,
+        "tier": "Starter",
+        "score": 84.0,
+        "classRank": 9,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -38838,9 +39048,9 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 9.9,
+        "score": 8.6,
         "classRank": 131,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -38965,7 +39175,7 @@
         "tier": "Backup",
         "score": 34.1,
         "classRank": 138,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -39037,7 +39247,7 @@
         "tier": "Starter",
         "score": 64.2,
         "classRank": 96,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -39105,11 +39315,14 @@
           "pass_defended": 12
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
         "tier": "Elite",
-        "score": 99.0,
-        "classRank": 36,
-        "classSize": 174,
+        "score": 98.5,
+        "classRank": 35,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -39199,7 +39412,7 @@
         "tier": "Starter",
         "score": 81.5,
         "classRank": 12,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -39279,8 +39492,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 38.6,
-        "classRank": 61,
-        "classSize": 174,
+        "classRank": 63,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -39348,7 +39561,7 @@
         "tier": "Backup",
         "score": 41.5,
         "classRank": 132,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -39422,8 +39635,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 33.9,
-        "classRank": 85,
-        "classSize": 174,
+        "classRank": 86,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -39561,9 +39774,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 67.4,
-        "classRank": 89,
-        "classSize": 174,
+        "score": 66.3,
+        "classRank": 90,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -39642,8 +39855,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 1.5,
-        "classRank": 166,
-        "classSize": 174,
+        "classRank": 167,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -39718,7 +39931,7 @@
         "tier": "Elite",
         "score": 91.1,
         "classRank": 24,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -39808,7 +40021,7 @@
         "tier": "Starter",
         "score": 71.6,
         "classRank": 22,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -39869,8 +40082,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 18.1,
-        "classRank": 158,
-        "classSize": 174,
+        "classRank": 159,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -39942,7 +40155,7 @@
         "tier": "Starter",
         "score": 63.2,
         "classRank": 98,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -40064,8 +40277,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 67.9,
-        "classRank": 44,
-        "classSize": 174,
+        "classRank": 46,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -40135,9 +40348,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 36.3,
+        "score": 35.8,
         "classRank": 130,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -40207,9 +40420,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 70.6,
-        "classRank": 86,
-        "classSize": 174,
+        "score": 69.6,
+        "classRank": 87,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -40273,9 +40486,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 37.7,
+        "score": 37.3,
         "classRank": 127,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -40342,8 +40555,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 17.1,
-        "classRank": 157,
-        "classSize": 174,
+        "classRank": 158,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -40417,8 +40630,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 78.1,
-        "classRank": 87,
-        "classSize": 174,
+        "classRank": 88,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -40488,9 +40701,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 45.1,
+        "score": 44.1,
         "classRank": 123,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -40678,9 +40891,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 80.4,
-        "classRank": 72,
-        "classSize": 174,
+        "score": 79.4,
+        "classRank": 74,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -40769,8 +40982,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 51.9,
-        "classRank": 37,
-        "classSize": 174,
+        "classRank": 38,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -40849,7 +41062,7 @@
         "tier": "Bust",
         "score": 19.8,
         "classRank": 111,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -41000,8 +41213,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 7.6,
-        "classRank": 167,
-        "classSize": 174,
+        "classRank": 168,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -41082,9 +41295,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 49.4,
-        "classRank": 46,
-        "classSize": 174,
+        "score": 48.1,
+        "classRank": 49,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -41158,8 +41371,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 32.1,
-        "classRank": 91,
-        "classSize": 174,
+        "classRank": 92,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -41234,7 +41447,7 @@
         "tier": "Elite",
         "score": 89.3,
         "classRank": 27,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -41261,7 +41474,10 @@
       },
       "espnRank": 182,
       "espnGrade": 58.0,
-      "espnId": "106042"
+      "espnId": "106042",
+      "accolades": {
+        "allpro1": 1
+      }
     },
     {
       "id": "hassan haskins-rb-michigan",
@@ -41334,8 +41550,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 37.0,
-        "classRank": 79,
-        "classSize": 174,
+        "classRank": 80,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -41414,9 +41630,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 78.0,
+        "score": 77.3,
         "classRank": 19,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -41514,9 +41730,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 58.8,
+        "score": 58.3,
         "classRank": 103,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -41653,7 +41869,7 @@
         "tier": "Bust",
         "score": 28.1,
         "classRank": 18,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -41704,7 +41920,7 @@
         "tier": "Bust",
         "score": 23.5,
         "classRank": 95,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -41779,7 +41995,7 @@
         "tier": "Elite",
         "score": 87.5,
         "classRank": 28,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -41862,8 +42078,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 11.8,
-        "classRank": 160,
-        "classSize": 174,
+        "classRank": 161,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -41913,9 +42129,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 73.0,
-        "classRank": 81,
-        "classSize": 174,
+        "score": 72.1,
+        "classRank": 82,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -41977,7 +42193,7 @@
         "tier": "Starter",
         "score": 75.0,
         "classRank": 32,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -42076,7 +42292,7 @@
         "tier": "Backup",
         "score": 46.9,
         "classRank": 4,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -42190,9 +42406,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 80.2,
-        "classRank": 64,
-        "classSize": 174,
+        "score": 79.1,
+        "classRank": 65,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -42257,7 +42473,7 @@
         "tier": "Backup",
         "score": 44.8,
         "classRank": 133,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -42338,7 +42554,7 @@
         "tier": "Starter",
         "score": 75.8,
         "classRank": 23,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -42405,7 +42621,7 @@
         "tier": "Bust",
         "score": 16.1,
         "classRank": 119,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -42473,7 +42689,7 @@
         "tier": "Backup",
         "score": 31.7,
         "classRank": 139,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -42562,8 +42778,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 80.2,
-        "classRank": 13,
-        "classSize": 174,
+        "classRank": 14,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -42628,8 +42844,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 8.3,
-        "classRank": 164,
-        "classSize": 174,
+        "classRank": 165,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -42679,9 +42895,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 97.1,
-        "classRank": 45,
-        "classSize": 174,
+        "score": 95.1,
+        "classRank": 47,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -42749,7 +42965,7 @@
         "tier": "Bust",
         "score": 4.9,
         "classRank": 141,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -42863,7 +43079,7 @@
         "tier": "Starter",
         "score": 72.8,
         "classRank": 21,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -42921,9 +43137,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 75.0,
-        "classRank": 77,
-        "classSize": 174,
+        "score": 74.0,
+        "classRank": 78,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -43028,8 +43244,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 28.6,
-        "classRank": 153,
-        "classSize": 174,
+        "classRank": 154,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -43103,8 +43319,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 29.5,
-        "classRank": 152,
-        "classSize": 174,
+        "classRank": 153,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -43205,8 +43421,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 2.3,
-        "classRank": 162,
-        "classSize": 174,
+        "classRank": 163,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -43276,8 +43492,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 26.5,
-        "classRank": 88,
-        "classSize": 174,
+        "classRank": 89,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -43363,11 +43579,14 @@
           "team": "LA"
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
-        "tier": "Starter",
-        "score": 84.0,
-        "classRank": 10,
-        "classSize": 174,
+        "tier": "Elite",
+        "score": 86.4,
+        "classRank": 8,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -43434,8 +43653,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 3.8,
-        "classRank": 170,
-        "classSize": 174,
+        "classRank": 171,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -43525,11 +43744,14 @@
           "pass_defended": 5
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
         "tier": "Elite",
-        "score": 96.6,
-        "classRank": 47,
-        "classSize": 174,
+        "score": 97.5,
+        "classRank": 40,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -43632,8 +43854,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 53.1,
-        "classRank": 35,
-        "classSize": 174,
+        "classRank": 37,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -43700,7 +43922,7 @@
         "tier": "Bust",
         "score": 17.9,
         "classRank": 118,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -43763,9 +43985,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 57.8,
+        "score": 57.4,
         "classRank": 105,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -43858,7 +44080,7 @@
         "tier": "Backup",
         "score": 39.0,
         "classRank": 135,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -43932,8 +44154,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 11.4,
-        "classRank": 165,
-        "classSize": 174,
+        "classRank": 166,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -44011,7 +44233,7 @@
         "tier": "Backup",
         "score": 52.3,
         "classRank": 113,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -44078,7 +44300,7 @@
         "tier": "Bust",
         "score": 14.3,
         "classRank": 122,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -44146,8 +44368,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 16.2,
-        "classRank": 161,
-        "classSize": 174,
+        "classRank": 162,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -44221,8 +44443,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 75.6,
-        "classRank": 70,
-        "classSize": 174,
+        "classRank": 72,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -44412,7 +44634,7 @@
         "tier": "Bust",
         "score": 24.7,
         "classRank": 106,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -44482,9 +44704,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 82.4,
-        "classRank": 68,
-        "classSize": 174,
+        "score": 80.9,
+        "classRank": 70,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -44610,7 +44832,7 @@
         "tier": "Backup",
         "score": 57.0,
         "classRank": 101,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -44678,8 +44900,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 9.8,
-        "classRank": 168,
-        "classSize": 174,
+        "classRank": 169,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -44782,9 +45004,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 52.3,
-        "classRank": 42,
-        "classSize": 174,
+        "score": 51.5,
+        "classRank": 44,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -44822,8 +45044,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 37.5,
-        "classRank": 78,
-        "classSize": 174,
+        "classRank": 79,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -44929,8 +45151,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 25.7,
-        "classRank": 154,
-        "classSize": 174,
+        "classRank": 155,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -45122,8 +45344,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 50.0,
-        "classRank": 66,
-        "classSize": 174,
+        "classRank": 68,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -45190,8 +45412,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 1.2,
-        "classRank": 174,
-        "classSize": 174,
+        "classRank": 175,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -45270,7 +45492,7 @@
         "tier": "Bust",
         "score": 22.2,
         "classRank": 107,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -45351,7 +45573,7 @@
         "tier": "Bust",
         "score": 6.2,
         "classRank": 140,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -45410,9 +45632,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 36.8,
+        "score": 36.3,
         "classRank": 129,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -45509,8 +45731,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 23.2,
-        "classRank": 149,
-        "classSize": 174,
+        "classRank": 150,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -45598,8 +45820,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 51.8,
-        "classRank": 65,
-        "classSize": 174,
+        "classRank": 66,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -45725,9 +45947,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 48.0,
+        "score": 47.1,
         "classRank": 120,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -45791,9 +46013,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 54.4,
+        "score": 53.9,
         "classRank": 110,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -45901,9 +46123,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 51.5,
+        "score": 50.5,
         "classRank": 117,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -46009,7 +46231,7 @@
         "tier": "Backup",
         "score": 53.5,
         "classRank": 108,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -46060,7 +46282,7 @@
         "tier": "Bust",
         "score": 8.9,
         "classRank": 128,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -46175,8 +46397,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 1.0,
-        "classRank": 172,
-        "classSize": 174,
+        "classRank": 173,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -46298,9 +46520,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 52.5,
+        "score": 51.5,
         "classRank": 116,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -46367,8 +46589,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 18.3,
-        "classRank": 155,
-        "classSize": 174,
+        "classRank": 156,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -46463,9 +46685,9 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 16.3,
-        "classRank": 151,
-        "classSize": 174,
+        "score": 15.1,
+        "classRank": 152,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -46647,8 +46869,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 34.8,
-        "classRank": 71,
-        "classSize": 174,
+        "classRank": 73,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -46756,9 +46978,9 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 23.3,
+        "score": 22.1,
         "classRank": 143,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -46895,8 +47117,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 3.8,
-        "classRank": 171,
-        "classSize": 174,
+        "classRank": 172,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -46976,7 +47198,7 @@
         "tier": "Bust",
         "score": 23.0,
         "classRank": 142,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -47099,7 +47321,7 @@
         "tier": "Starter",
         "score": 65.1,
         "classRank": 93,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -47153,8 +47375,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 1.5,
-        "classRank": 173,
-        "classSize": 174,
+        "classRank": 174,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -47302,7 +47524,7 @@
         "tier": "Starter",
         "score": 61.8,
         "classRank": 99,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -47336,8 +47558,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 13.7,
-        "classRank": 156,
-        "classSize": 174,
+        "classRank": 157,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -47444,8 +47666,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 6.2,
-        "classRank": 53,
-        "classSize": 174,
+        "classRank": 55,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -47605,7 +47827,7 @@
         "tier": "Starter",
         "score": 76.5,
         "classRank": 15,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -47699,7 +47921,7 @@
         "tier": "Bust",
         "score": 27.5,
         "classRank": 137,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -47759,8 +47981,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 19.1,
-        "classRank": 145,
-        "classSize": 174,
+        "classRank": 146,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -47859,9 +48081,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 33.7,
+        "score": 32.6,
         "classRank": 134,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -47940,7 +48162,7 @@
         "tier": "Bust",
         "score": 21.2,
         "classRank": 109,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -47988,8 +48210,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 17.2,
-        "classRank": 150,
-        "classSize": 174,
+        "classRank": 151,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -48022,8 +48244,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 3.7,
-        "classRank": 147,
-        "classSize": 174,
+        "classRank": 148,
+        "classSize": 175,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -48135,7 +48357,7 @@
         "tier": "Starter",
         "score": 81.2,
         "classRank": 1,
-        "classSize": 174,
+        "classSize": 175,
         "yearsEvaluated": 3,
         "provisional": false
       }
@@ -48223,7 +48445,7 @@
         "tier": "Starter",
         "score": 62.5,
         "classRank": 2,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -48297,11 +48519,14 @@
           "team": "HOU"
         }
       },
+      "accolades": {
+        "oroy": true
+      },
       "draftGrade": {
         "tier": "Starter",
         "score": 71.9,
         "classRank": 1,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -48347,11 +48572,15 @@
           "pass_defended": 2
         }
       },
+      "accolades": {
+        "droy": true,
+        "allpro1": 1
+      },
       "draftGrade": {
-        "tier": "Starter",
-        "score": 83.7,
-        "classRank": 43,
-        "classSize": 160,
+        "tier": "Elite",
+        "score": 89.5,
+        "classRank": 37,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -48436,8 +48665,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 34.4,
-        "classRank": 7,
-        "classSize": 160,
+        "classRank": 8,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -48499,11 +48728,14 @@
           "pass_defended": 9
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Starter",
-        "score": 72.5,
-        "classRank": 62,
-        "classSize": 160,
+        "score": 75.5,
+        "classRank": 60,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -48594,8 +48826,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 64.6,
-        "classRank": 67,
-        "classSize": 160,
+        "classRank": 69,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -48670,11 +48902,15 @@
           "team": "ATL"
         }
       },
+      "accolades": {
+        "allpro1": 1,
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 88.9,
         "classRank": 5,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -48738,11 +48974,14 @@
           "qb_hits": 16
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
-        "tier": "Starter",
-        "score": 84.8,
-        "classRank": 54,
-        "classSize": 160,
+        "tier": "Elite",
+        "score": 88.6,
+        "classRank": 47,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -48769,7 +49008,18 @@
       },
       "espnRank": 18,
       "espnGrade": 90.0,
-      "espnId": "106727"
+      "espnId": "106727",
+      "accolades": {
+        "allpro2": 1
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 134,
+        "classSize": 161,
+        "yearsEvaluated": 0,
+        "provisional": true
+      }
     },
     {
       "id": "peter skoronski-ol-northwestern",
@@ -48869,7 +49119,7 @@
         "tier": "Elite",
         "score": 87.7,
         "classRank": 6,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -48930,8 +49180,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 79.0,
-        "classRank": 65,
-        "classSize": 160,
+        "classRank": 67,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -49022,8 +49272,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 79.3,
-        "classRank": 49,
-        "classSize": 160,
+        "classRank": 50,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -49087,9 +49337,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 45.1,
+        "score": 44.1,
         "classRank": 101,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -49151,11 +49401,14 @@
           "pass_defended": 11
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Starter",
-        "score": 65.2,
-        "classRank": 78,
-        "classSize": 160,
+        "score": 70.6,
+        "classRank": 65,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -49221,11 +49474,14 @@
           "pass_defended": 5
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
         "tier": "Starter",
-        "score": 66.3,
-        "classRank": 68,
-        "classSize": 160,
+        "score": 76.7,
+        "classRank": 58,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -49290,10 +49546,10 @@
         }
       },
       "draftGrade": {
-        "tier": "Elite",
-        "score": 85.7,
-        "classRank": 50,
-        "classSize": 160,
+        "tier": "Starter",
+        "score": 84.8,
+        "classRank": 51,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -49360,11 +49616,14 @@
           "team": "SEA"
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
         "tier": "Starter",
-        "score": 77.3,
-        "classRank": 12,
-        "classSize": 160,
+        "score": 79.5,
+        "classRank": 11,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -49435,7 +49694,7 @@
         "tier": "Starter",
         "score": 67.4,
         "classRank": 19,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -49506,7 +49765,7 @@
         "tier": "Starter",
         "score": 81.8,
         "classRank": 10,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -49577,7 +49836,7 @@
         "tier": "Starter",
         "score": 82.6,
         "classRank": 9,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -49641,9 +49900,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 72.1,
-        "classRank": 63,
-        "classSize": 160,
+        "score": 71.6,
+        "classRank": 64,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -49710,7 +49969,7 @@
         "tier": "Starter",
         "score": 78.6,
         "classRank": 23,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -49778,7 +50037,7 @@
         "tier": "Backup",
         "score": 57.1,
         "classRank": 116,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -49870,7 +50129,7 @@
         "tier": "Backup",
         "score": 42.7,
         "classRank": 114,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -49938,7 +50197,7 @@
         "tier": "Starter",
         "score": 82.9,
         "classRank": 56,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -50005,8 +50264,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 63.4,
-        "classRank": 71,
-        "classSize": 160,
+        "classRank": 72,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -50054,7 +50313,7 @@
         "tier": "Backup",
         "score": 48.8,
         "classRank": 97,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -50118,9 +50377,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 66.2,
-        "classRank": 76,
-        "classSize": 160,
+        "score": 65.7,
+        "classRank": 77,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -50206,7 +50465,7 @@
         "tier": "Backup",
         "score": 43.8,
         "classRank": 3,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -50269,11 +50528,14 @@
           "team": "DET"
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 92.9,
         "classRank": 13,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -50339,8 +50601,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 58.9,
-        "classRank": 40,
-        "classSize": 160,
+        "classRank": 41,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -50431,8 +50693,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 68.3,
-        "classRank": 60,
-        "classSize": 160,
+        "classRank": 62,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -50526,8 +50788,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 43.2,
-        "classRank": 37,
-        "classSize": 160,
+        "classRank": 38,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -50594,8 +50856,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 12.4,
-        "classRank": 147,
-        "classSize": 160,
+        "classRank": 148,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -50656,7 +50918,7 @@
         "tier": "Backup",
         "score": 46.3,
         "classRank": 103,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -50722,8 +50984,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 53.6,
-        "classRank": 51,
-        "classSize": 160,
+        "classRank": 52,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -50811,9 +51073,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 34.3,
+        "score": 33.8,
         "classRank": 120,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -50877,9 +51139,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 90.2,
-        "classRank": 41,
-        "classSize": 160,
+        "score": 89.7,
+        "classRank": 42,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -50939,9 +51201,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 74.3,
-        "classRank": 70,
-        "classSize": 160,
+        "score": 73.3,
+        "classRank": 71,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -50972,9 +51234,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 55.4,
+        "score": 54.9,
         "classRank": 90,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -51066,7 +51328,7 @@
         "tier": "Backup",
         "score": 58.1,
         "classRank": 111,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -51135,9 +51397,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 79.5,
-        "classRank": 11,
-        "classSize": 160,
+        "score": 78.8,
+        "classRank": 12,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -51202,8 +51464,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 4.4,
-        "classRank": 152,
-        "classSize": 160,
+        "classRank": 153,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -51282,7 +51544,7 @@
         "tier": "Starter",
         "score": 65.4,
         "classRank": 17,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -51349,8 +51611,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 80.0,
-        "classRank": 64,
-        "classSize": 160,
+        "classRank": 66,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -51418,7 +51680,7 @@
         "tier": "Elite",
         "score": 89.5,
         "classRank": 44,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -51489,7 +51751,7 @@
         "tier": "Starter",
         "score": 62.1,
         "classRank": 26,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -51553,9 +51815,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 87.3,
+        "score": 85.8,
         "classRank": 46,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -51641,7 +51903,7 @@
         "tier": "Backup",
         "score": 44.6,
         "classRank": 57,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -51729,9 +51991,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 49.5,
+        "score": 48.5,
         "classRank": 98,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -51797,8 +52059,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 60.7,
-        "classRank": 39,
-        "classSize": 160,
+        "classRank": 40,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -51879,11 +52141,15 @@
           "team": "DEN"
         }
       },
+      "accolades": {
+        "allpro1": 1,
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Backup",
-        "score": 48.5,
-        "classRank": 34,
-        "classSize": 160,
+        "score": 53.8,
+        "classRank": 31,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -51951,7 +52217,7 @@
         "tier": "Backup",
         "score": 40.0,
         "classRank": 131,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -52039,9 +52305,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 39.7,
+        "score": 39.2,
         "classRank": 113,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -52110,8 +52376,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 5.8,
-        "classRank": 146,
-        "classSize": 160,
+        "classRank": 147,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -52217,7 +52483,7 @@
         "tier": "Starter",
         "score": 72.7,
         "classRank": 16,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -52285,9 +52551,9 @@
       },
       "draftGrade": {
         "tier": "Elite",
-        "score": 86.7,
-        "classRank": 48,
-        "classSize": 160,
+        "score": 85.7,
+        "classRank": 49,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -52366,7 +52632,7 @@
         "tier": "Backup",
         "score": 40.7,
         "classRank": 45,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -52430,9 +52696,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 59.8,
+        "score": 59.3,
         "classRank": 84,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -52502,8 +52768,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 37.1,
-        "classRank": 47,
-        "classSize": 160,
+        "classRank": 48,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -52574,7 +52840,7 @@
         "tier": "Backup",
         "score": 44.7,
         "classRank": 35,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -52642,7 +52908,7 @@
         "tier": "Backup",
         "score": 47.6,
         "classRank": 99,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -52690,9 +52956,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 42.6,
+        "score": 41.7,
         "classRank": 106,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -52760,9 +53026,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 79.1,
-        "classRank": 52,
-        "classSize": 160,
+        "score": 77.9,
+        "classRank": 53,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -52824,7 +53090,7 @@
         "tier": "Starter",
         "score": 82.1,
         "classRank": 22,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -52895,7 +53161,7 @@
         "tier": "Starter",
         "score": 75.0,
         "classRank": 15,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -53012,7 +53278,7 @@
         "tier": "Starter",
         "score": 61.7,
         "classRank": 18,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -53079,8 +53345,8 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 92.4,
-        "classRank": 42,
-        "classSize": 160,
+        "classRank": 43,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -53144,9 +53410,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 41.2,
+        "score": 40.2,
         "classRank": 108,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -53191,7 +53457,7 @@
         "tier": "Backup",
         "score": 58.0,
         "classRank": 25,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -53261,7 +53527,7 @@
         "tier": "Starter",
         "score": 61.6,
         "classRank": 79,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -53329,9 +53595,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 45.3,
+        "score": 44.2,
         "classRank": 112,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -53395,9 +53661,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 59.3,
+        "score": 58.8,
         "classRank": 85,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -53476,7 +53742,7 @@
         "tier": "Backup",
         "score": 56.8,
         "classRank": 27,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -53527,8 +53793,8 @@
       "draftGrade": {
         "tier": "Elite",
         "score": 94.3,
-        "classRank": 38,
-        "classSize": 160,
+        "classRank": 39,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -53590,7 +53856,7 @@
         "tier": "Starter",
         "score": 60.5,
         "classRank": 80,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -53658,9 +53924,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 47.7,
+        "score": 46.5,
         "classRank": 110,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -53756,8 +54022,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 35.7,
-        "classRank": 61,
-        "classSize": 160,
+        "classRank": 63,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -53826,9 +54092,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 65.2,
+        "score": 64.4,
         "classRank": 21,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -53892,9 +54158,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 51.0,
+        "score": 50.0,
         "classRank": 96,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -54116,7 +54382,7 @@
         "tier": "Backup",
         "score": 59.8,
         "classRank": 28,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -54210,9 +54476,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 39.2,
+        "score": 38.7,
         "classRank": 115,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -54300,9 +54566,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 38.2,
+        "score": 37.7,
         "classRank": 118,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -54362,7 +54628,7 @@
         "tier": "Bust",
         "score": 26.0,
         "classRank": 128,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -54501,8 +54767,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 19.0,
-        "classRank": 141,
-        "classSize": 160,
+        "classRank": 142,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -54570,7 +54836,7 @@
         "tier": "Backup",
         "score": 48.6,
         "classRank": 122,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -54652,9 +54918,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 44.1,
+        "score": 43.1,
         "classRank": 104,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -54747,7 +55013,7 @@
         "tier": "Backup",
         "score": 54.3,
         "classRank": 29,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -54814,8 +55080,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 24.4,
-        "classRank": 136,
-        "classSize": 160,
+        "classRank": 137,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -54927,9 +55193,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 52.9,
+        "score": 52.5,
         "classRank": 93,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -55013,9 +55279,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 36.0,
+        "score": 34.9,
         "classRank": 121,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -55099,8 +55365,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 8.6,
-        "classRank": 148,
-        "classSize": 160,
+        "classRank": 149,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -55168,7 +55434,7 @@
         "tier": "Backup",
         "score": 52.4,
         "classRank": 91,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -55235,11 +55501,14 @@
           "team": "LAC"
         }
       },
+      "accolades": {
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Backup",
-        "score": 30.3,
+        "score": 34.1,
         "classRank": 59,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -55307,7 +55576,7 @@
         "tier": "Starter",
         "score": 60.0,
         "classRank": 109,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -55379,8 +55648,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 3.1,
-        "classRank": 77,
-        "classSize": 160,
+        "classRank": 78,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -55521,8 +55790,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 19.5,
-        "classRank": 139,
-        "classSize": 160,
+        "classRank": 140,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -55588,7 +55857,7 @@
         "tier": "Bust",
         "score": 9.8,
         "classRank": 126,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -55655,8 +55924,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 67.1,
-        "classRank": 66,
-        "classSize": 160,
+        "classRank": 68,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -55727,7 +55996,7 @@
         "tier": "Bust",
         "score": 22.0,
         "classRank": 87,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -55792,8 +56061,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 5.4,
-        "classRank": 151,
-        "classSize": 160,
+        "classRank": 152,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -55879,7 +56148,7 @@
         "tier": "Backup",
         "score": 37.5,
         "classRank": 4,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -55948,8 +56217,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 4.7,
-        "classRank": 149,
-        "classSize": 160,
+        "classRank": 150,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -56007,7 +56276,7 @@
         "tier": "Backup",
         "score": 30.5,
         "classRank": 129,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -56145,7 +56414,7 @@
         "tier": "Bust",
         "score": 0.0,
         "classRank": 132,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -56230,8 +56499,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 12.5,
-        "classRank": 31,
-        "classSize": 160,
+        "classRank": 32,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -56299,7 +56568,7 @@
         "tier": "Backup",
         "score": 42.9,
         "classRank": 125,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -56364,8 +56633,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 18.6,
-        "classRank": 134,
-        "classSize": 160,
+        "classRank": 135,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -56431,9 +56700,9 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 12.3,
+        "score": 11.1,
         "classRank": 117,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -56512,8 +56781,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 2.5,
-        "classRank": 154,
-        "classSize": 160,
+        "classRank": 155,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -56577,9 +56846,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 47.1,
+        "score": 46.1,
         "classRank": 100,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -56646,7 +56915,7 @@
         "tier": "Backup",
         "score": 48.2,
         "classRank": 55,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -57184,7 +57453,7 @@
         "tier": "Starter",
         "score": 63.6,
         "classRank": 24,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -57248,9 +57517,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 43.1,
+        "score": 42.2,
         "classRank": 105,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -57317,8 +57586,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 1.2,
-        "classRank": 158,
-        "classSize": 160,
+        "classRank": 159,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -57384,8 +57653,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 30.4,
-        "classRank": 72,
-        "classSize": 160,
+        "classRank": 73,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -57464,7 +57733,7 @@
         "tier": "Starter",
         "score": 66.7,
         "classRank": 14,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -57585,9 +57854,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 45.1,
+        "score": 44.1,
         "classRank": 102,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -57679,7 +57948,7 @@
         "tier": "Backup",
         "score": 58.1,
         "classRank": 83,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -57747,9 +58016,9 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 17.4,
-        "classRank": 137,
-        "classSize": 160,
+        "score": 16.3,
+        "classRank": 138,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -57892,7 +58161,7 @@
         "tier": "Bust",
         "score": 28.6,
         "classRank": 81,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -57971,7 +58240,7 @@
         "tier": "Bust",
         "score": 18.5,
         "classRank": 92,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -58018,8 +58287,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 6.1,
-        "classRank": 156,
-        "classSize": 160,
+        "classRank": 157,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -58110,7 +58379,7 @@
         "tier": "Bust",
         "score": 21.4,
         "classRank": 94,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -58237,11 +58506,15 @@
           "team": "LA"
         }
       },
+      "accolades": {
+        "allpro1": 1,
+        "allpro2": 1
+      },
       "draftGrade": {
         "tier": "Elite",
-        "score": 87.9,
-        "classRank": 8,
-        "classSize": 160,
+        "score": 88.6,
+        "classRank": 7,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -58328,9 +58601,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 73.3,
-        "classRank": 73,
-        "classSize": 160,
+        "score": 72.4,
+        "classRank": 74,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -58394,9 +58667,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 33.8,
+        "score": 33.3,
         "classRank": 123,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -58448,8 +58721,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 15.2,
-        "classRank": 140,
-        "classSize": 160,
+        "classRank": 141,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -58475,8 +58748,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 1.0,
-        "classRank": 157,
-        "classSize": 160,
+        "classRank": 158,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -58624,7 +58897,7 @@
         "tier": "Backup",
         "score": 43.9,
         "classRank": 36,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -58717,9 +58990,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 49.2,
-        "classRank": 33,
-        "classSize": 160,
+        "score": 48.5,
+        "classRank": 34,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -58935,9 +59208,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 50.0,
-        "classRank": 32,
-        "classSize": 160,
+        "score": 49.2,
+        "classRank": 33,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -59006,7 +59279,7 @@
         "tier": "Bust",
         "score": 27.2,
         "classRank": 82,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -59073,8 +59346,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 2.9,
-        "classRank": 153,
-        "classSize": 160,
+        "classRank": 154,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -59133,9 +59406,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 33.3,
-        "classRank": 58,
-        "classSize": 160,
+        "score": 32.6,
+        "classRank": 61,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -59258,8 +59531,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 35.6,
-        "classRank": 53,
-        "classSize": 160,
+        "classRank": 54,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -59365,8 +59638,8 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 31.4,
-        "classRank": 138,
-        "classSize": 160,
+        "classRank": 139,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -59483,9 +59756,9 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 20.9,
-        "classRank": 135,
-        "classSize": 160,
+        "score": 19.8,
+        "classRank": 136,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -59577,8 +59850,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 24.2,
-        "classRank": 75,
-        "classSize": 160,
+        "classRank": 76,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -59639,7 +59912,7 @@
         "tier": "Backup",
         "score": 54.5,
         "classRank": 30,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -59741,8 +60014,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 10.3,
-        "classRank": 143,
-        "classSize": 160,
+        "classRank": 144,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -59794,9 +60067,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 65.9,
+        "score": 65.2,
         "classRank": 20,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -59912,7 +60185,7 @@
         "tier": "Bust",
         "score": 17.3,
         "classRank": 95,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -59979,8 +60252,8 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 75.2,
-        "classRank": 69,
-        "classSize": 160,
+        "classRank": 70,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -60086,8 +60359,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 0.0,
-        "classRank": 144,
-        "classSize": 160,
+        "classRank": 145,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -60155,9 +60428,9 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 27.9,
+        "score": 26.7,
         "classRank": 127,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -60368,9 +60641,9 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 67.2,
-        "classRank": 74,
-        "classSize": 160,
+        "score": 66.7,
+        "classRank": 75,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -60487,8 +60760,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 6.4,
-        "classRank": 150,
-        "classSize": 160,
+        "classRank": 151,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -60741,9 +61014,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 57.4,
+        "score": 56.9,
         "classRank": 88,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -60810,8 +61083,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 0.0,
-        "classRank": 160,
-        "classSize": 160,
+        "classRank": 161,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -60959,7 +61232,7 @@
         "tier": "Bust",
         "score": 23.5,
         "classRank": 89,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -61126,7 +61399,7 @@
         "tier": "Bust",
         "score": 21.6,
         "classRank": 133,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -61192,7 +61465,7 @@
         "tier": "Bust",
         "score": 25.5,
         "classRank": 130,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -61246,8 +61519,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 19.0,
-        "classRank": 142,
-        "classSize": 160,
+        "classRank": 143,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -61315,7 +61588,7 @@
         "tier": "Bust",
         "score": 22.7,
         "classRank": 86,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -61341,8 +61614,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 2.5,
-        "classRank": 155,
-        "classSize": 160,
+        "classRank": 156,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -61535,8 +61808,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 14.6,
-        "classRank": 145,
-        "classSize": 160,
+        "classRank": 146,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -61666,9 +61939,9 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 34.8,
+        "score": 34.3,
         "classRank": 119,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -61739,7 +62012,7 @@
         "tier": "Bust",
         "score": 14.4,
         "classRank": 107,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -61842,8 +62115,8 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 0.0,
-        "classRank": 159,
-        "classSize": 160,
+        "classRank": 160,
+        "classSize": 161,
         "yearsEvaluated": 1,
         "provisional": true
       }
@@ -61979,7 +62252,7 @@
         "tier": "Backup",
         "score": 46.7,
         "classRank": 124,
-        "classSize": 160,
+        "classSize": 161,
         "yearsEvaluated": 2,
         "provisional": true
       }
@@ -62123,6 +62396,9 @@
           "team": "WAS"
         }
       },
+      "accolades": {
+        "oroy": true
+      },
       "draftGrade": {
         "tier": "Backup",
         "score": 56.2,
@@ -62195,6 +62471,9 @@
           "sacks": 34,
           "team": "NE"
         }
+      },
+      "accolades": {
+        "allpro2": 1
       },
       "draftGrade": {
         "tier": "Backup",
@@ -62345,7 +62624,7 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 68.2,
-        "classRank": 7,
+        "classRank": 8,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -62677,10 +62956,13 @@
           "team": "LV"
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
         "tier": "Elite",
         "score": 85.7,
-        "classRank": 9,
+        "classRank": 7,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -62759,7 +63041,7 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 63.8,
-        "classRank": 50,
+        "classRank": 52,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -62861,8 +63143,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 40.7,
-        "classRank": 65,
+        "score": 39.5,
+        "classRank": 67,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -62944,10 +63226,13 @@
           "qb_hits": 18
         }
       },
+      "accolades": {
+        "droy": true
+      },
       "draftGrade": {
         "tier": "Starter",
-        "score": 70.5,
-        "classRank": 40,
+        "score": 74.3,
+        "classRank": 33,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -63012,7 +63297,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 59.8,
-        "classRank": 41,
+        "classRank": 42,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -63069,10 +63354,13 @@
           "pass_defended": 12
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
-        "tier": "Backup",
-        "score": 40.2,
-        "classRank": 57,
+        "tier": "Starter",
+        "score": 61.3,
+        "classRank": 41,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -63176,8 +63464,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 37.3,
-        "classRank": 62,
+        "score": 36.8,
+        "classRank": 64,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -63410,8 +63698,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 48.5,
-        "classRank": 51,
+        "score": 47.5,
+        "classRank": 53,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -63654,7 +63942,7 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 66.7,
+        "score": 65.9,
         "classRank": 10,
         "classSize": 124,
         "yearsEvaluated": 1,
@@ -63777,7 +64065,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 54.3,
-        "classRank": 63,
+        "classRank": 65,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -63838,7 +64126,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 15.9,
-        "classRank": 55,
+        "classRank": 58,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -63899,7 +64187,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 39.0,
-        "classRank": 82,
+        "classRank": 83,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -64017,10 +64305,13 @@
           "pass_defended": 6
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
-        "tier": "Bust",
-        "score": 27.9,
-        "classRank": 77,
+        "tier": "Backup",
+        "score": 52.0,
+        "classRank": 48,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -64080,7 +64371,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 26.5,
-        "classRank": 78,
+        "classRank": 79,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -64139,8 +64430,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 56.9,
-        "classRank": 43,
+        "score": 56.4,
+        "classRank": 44,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -64200,7 +64491,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 22.1,
-        "classRank": 85,
+        "classRank": 86,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -64286,7 +64577,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 59.3,
-        "classRank": 39,
+        "classRank": 40,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -64461,7 +64752,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 49.5,
-        "classRank": 70,
+        "classRank": 72,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -64522,7 +64813,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 51.4,
-        "classRank": 67,
+        "classRank": 69,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -64581,8 +64872,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 58.3,
-        "classRank": 42,
+        "score": 57.8,
+        "classRank": 43,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -64666,7 +64957,7 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 32.6,
+        "score": 31.8,
         "classRank": 28,
         "classSize": 124,
         "yearsEvaluated": 1,
@@ -64726,7 +65017,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 1.8,
-        "classRank": 87,
+        "classRank": 88,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -64767,7 +65058,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 38.1,
-        "classRank": 84,
+        "classRank": 85,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -64911,10 +65202,13 @@
           "pass_defended": 0
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
-        "tier": "Bust",
-        "score": 15.1,
-        "classRank": 96,
+        "tier": "Backup",
+        "score": 47.7,
+        "classRank": 56,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -65205,8 +65499,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 50.5,
-        "classRank": 49,
+        "score": 49.5,
+        "classRank": 51,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -65503,7 +65797,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 25.0,
-        "classRank": 80,
+        "classRank": 81,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -65588,8 +65882,8 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 25.6,
-        "classRank": 83,
+        "score": 24.4,
+        "classRank": 84,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -65742,7 +66036,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 50.0,
-        "classRank": 47,
+        "classRank": 49,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -65825,8 +66119,8 @@
       },
       "draftGrade": {
         "tier": "Starter",
-        "score": 68.1,
-        "classRank": 35,
+        "score": 67.6,
+        "classRank": 36,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -65911,7 +66205,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 12.9,
-        "classRank": 59,
+        "classRank": 61,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -65994,7 +66288,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 0.0,
-        "classRank": 93,
+        "classRank": 94,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -66062,7 +66356,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 29.6,
-        "classRank": 33,
+        "classRank": 34,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -66206,8 +66500,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 37.2,
-        "classRank": 68,
+        "score": 36.0,
+        "classRank": 70,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -66326,8 +66620,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 44.1,
-        "classRank": 54,
+        "score": 43.1,
+        "classRank": 57,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -66588,7 +66882,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 28.0,
-        "classRank": 88,
+        "classRank": 89,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -66649,7 +66943,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 30.5,
-        "classRank": 94,
+        "classRank": 95,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -66708,8 +67002,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 38.7,
-        "classRank": 60,
+        "score": 38.2,
+        "classRank": 62,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -66831,8 +67125,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 39.5,
-        "classRank": 66,
+        "score": 38.4,
+        "classRank": 68,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -66891,8 +67185,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 55.9,
-        "classRank": 44,
+        "score": 55.4,
+        "classRank": 45,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -66948,7 +67242,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 19.7,
-        "classRank": 45,
+        "classRank": 46,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -67062,7 +67356,7 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 31.8,
+        "score": 31.1,
         "classRank": 29,
         "classSize": 124,
         "yearsEvaluated": 1,
@@ -67127,7 +67421,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 21.1,
-        "classRank": 86,
+        "classRank": 87,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -67500,8 +67794,8 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 28.9,
-        "classRank": 75,
+        "score": 28.4,
+        "classRank": 77,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -67697,7 +67991,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 23.2,
-        "classRank": 46,
+        "classRank": 47,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -67843,8 +68137,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 37.2,
-        "classRank": 69,
+        "score": 36.0,
+        "classRank": 71,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -67936,7 +68230,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 29.6,
-        "classRank": 34,
+        "classRank": 35,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -68043,7 +68337,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 19.6,
-        "classRank": 48,
+        "classRank": 50,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -68102,8 +68396,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 32.8,
-        "classRank": 71,
+        "score": 32.4,
+        "classRank": 73,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -68229,8 +68523,8 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 13.6,
-        "classRank": 58,
+        "score": 12.3,
+        "classRank": 60,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -68271,9 +68565,12 @@
           "team": "BUF"
         }
       },
+      "accolades": {
+        "allpro1": 1
+      },
       "draftGrade": {
         "tier": "Backup",
-        "score": 48.1,
+        "score": 49.4,
         "classRank": 16,
         "classSize": 124,
         "yearsEvaluated": 1,
@@ -68526,8 +68823,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 46.6,
-        "classRank": 53,
+        "score": 45.6,
+        "classRank": 55,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -68768,7 +69065,7 @@
       "draftGrade": {
         "tier": "Starter",
         "score": 62.3,
-        "classRank": 37,
+        "classRank": 38,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -68829,7 +69126,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 36.6,
-        "classRank": 73,
+        "classRank": 75,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -68932,8 +69229,8 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 29.4,
-        "classRank": 74,
+        "score": 28.9,
+        "classRank": 76,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -69109,7 +69406,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 41.0,
-        "classRank": 79,
+        "classRank": 80,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -69169,7 +69466,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 19.6,
-        "classRank": 90,
+        "classRank": 91,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -69228,8 +69525,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 40.7,
-        "classRank": 56,
+        "score": 39.7,
+        "classRank": 59,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -69408,8 +69705,8 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 35.8,
-        "classRank": 64,
+        "score": 35.3,
+        "classRank": 66,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -69482,7 +69779,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 25.0,
-        "classRank": 8,
+        "classRank": 9,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -69891,7 +70188,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 20.6,
-        "classRank": 89,
+        "classRank": 90,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -70402,7 +70699,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 37.8,
-        "classRank": 72,
+        "classRank": 74,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -70488,7 +70785,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 16.7,
-        "classRank": 52,
+        "classRank": 54,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -70690,7 +70987,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 18.1,
-        "classRank": 92,
+        "classRank": 93,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -70968,7 +71265,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 28.4,
-        "classRank": 38,
+        "classRank": 39,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -71082,8 +71379,8 @@
       },
       "draftGrade": {
         "tier": "Bust",
-        "score": 29.1,
-        "classRank": 76,
+        "score": 27.9,
+        "classRank": 78,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -71144,7 +71441,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 25.0,
-        "classRank": 36,
+        "classRank": 37,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -71205,7 +71502,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 7.6,
-        "classRank": 81,
+        "classRank": 82,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -71984,7 +72281,10 @@
       },
       "espnRank": 323,
       "espnGrade": 33.0,
-      "espnId": "107111"
+      "espnId": "107111",
+      "accolades": {
+        "allpro1": 1
+      }
     },
     {
       "id": "tylan grable-ol-central florida",
@@ -72363,7 +72663,7 @@
       },
       "draftGrade": {
         "tier": "Backup",
-        "score": 31.1,
+        "score": 30.3,
         "classRank": 30,
         "classSize": 124,
         "yearsEvaluated": 1,
@@ -72425,7 +72725,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 22.0,
-        "classRank": 95,
+        "classRank": 96,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -72505,7 +72805,7 @@
       "draftGrade": {
         "tier": "Bust",
         "score": 12.1,
-        "classRank": 61,
+        "classRank": 63,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -73167,7 +73467,7 @@
       "draftGrade": {
         "tier": "Backup",
         "score": 34.3,
-        "classRank": 91,
+        "classRank": 92,
         "classSize": 124,
         "yearsEvaluated": 1,
         "provisional": true
@@ -77995,7 +78295,18 @@
       },
       "espnRank": 173,
       "espnGrade": 55.0,
-      "espnId": "109453"
+      "espnId": "109453",
+      "accolades": {
+        "allpro1": 1
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 12.1,
+        "classRank": null,
+        "classSize": 0,
+        "yearsEvaluated": 0,
+        "provisional": true
+      }
     },
     {
       "id": "bhayshul tuten-rb-virginia tech",
