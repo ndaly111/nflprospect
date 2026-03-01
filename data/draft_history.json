@@ -115,6 +115,9 @@
           "sacks": 48,
           "team": "CIN"
         }
+      },
+      "accolades": {
+        "cpoy": true
       }
     },
     {
@@ -196,6 +199,9 @@
           "tackles_for_loss": 8,
           "qb_hits": 21
         }
+      },
+      "accolades": {
+        "droy": true
       }
     },
     {
@@ -290,6 +296,9 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -524,6 +533,9 @@
           "sacks": 41,
           "team": "LAC"
         }
+      },
+      "accolades": {
+        "oroy": true
       }
     },
     {
@@ -918,6 +930,10 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "accolades": {
+        "allpro1": 2,
+        "allpro2": 1
       }
     },
     {
@@ -1148,6 +1164,9 @@
           "interceptions": 2,
           "pass_defended": 6
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -1241,6 +1260,10 @@
           "rushing_yards": 70,
           "team": "DAL"
         }
+      },
+      "accolades": {
+        "allpro1": 1,
+        "allpro2": 2
       }
     },
     {
@@ -1601,6 +1624,11 @@
           "rushing_yards": 3,
           "team": "MIN"
         }
+      },
+      "accolades": {
+        "opoy": true,
+        "allpro1": 2,
+        "allpro2": 2
       }
     },
     {
@@ -1989,6 +2017,9 @@
           "interceptions": 0,
           "pass_defended": 6
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -2075,6 +2106,9 @@
           "interceptions": 0,
           "pass_defended": 7
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -2685,6 +2719,10 @@
           "interceptions": 8,
           "pass_defended": 11
         }
+      },
+      "accolades": {
+        "allpro1": 1,
+        "allpro2": 1
       }
     },
     {
@@ -3026,6 +3064,9 @@
           "receiving_tds": 1,
           "team": "IND"
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -3318,6 +3359,9 @@
           "interceptions": 0,
           "pass_defended": 3
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -3654,6 +3698,9 @@
           "interceptions": 2,
           "pass_defended": 8
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -3730,6 +3777,9 @@
           "interceptions": 2,
           "pass_defended": 11
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -3951,6 +4001,9 @@
           "sacks": 38,
           "team": "PHI"
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -5438,6 +5491,9 @@
           "interceptions": 1,
           "pass_defended": 4
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -6654,6 +6710,9 @@
           "rushing_yards": 3,
           "team": "JAX"
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -16039,6 +16098,9 @@
           "receiving_tds": 4,
           "team": "ATL"
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -16117,6 +16179,12 @@
           "rushing_yards": 32,
           "team": "CIN"
         }
+      },
+      "accolades": {
+        "oroy": true,
+        "opoy": true,
+        "allpro1": 2,
+        "allpro2": 1
       }
     },
     {
@@ -16224,6 +16292,9 @@
           "games": 1,
           "team": "DET"
         }
+      },
+      "accolades": {
+        "allpro1": 3
       }
     },
     {
@@ -16364,6 +16435,10 @@
           "interceptions": 4,
           "pass_defended": 11
         }
+      },
+      "accolades": {
+        "allpro1": 2,
+        "allpro2": 1
       }
     },
     {
@@ -16613,6 +16688,11 @@
           "interceptions": 0,
           "pass_defended": 1
         }
+      },
+      "accolades": {
+        "droy": true,
+        "allpro1": 3,
+        "allpro2": 1
       }
     },
     {
@@ -16637,7 +16717,10 @@
       },
       "espnRank": 8,
       "espnGrade": 93.0,
-      "espnId": "104761"
+      "espnId": "104761",
+      "accolades": {
+        "allpro2": 1
+      }
     },
     {
       "id": "alijah vera tucker-ol-usc",
@@ -19499,7 +19582,11 @@
       },
       "espnRank": 55,
       "espnGrade": 81.0,
-      "espnId": "104819"
+      "espnId": "104819",
+      "accolades": {
+        "allpro1": 2,
+        "allpro2": 1
+      }
     },
     {
       "id": "kyle trask-qb-florida",
@@ -21560,7 +21647,10 @@
       },
       "espnRank": 61,
       "espnGrade": 80.0,
-      "espnId": "105181"
+      "espnId": "105181",
+      "accolades": {
+        "allpro1": 2
+      }
     },
     {
       "id": "nahshon wright-db-oregon st",
@@ -21894,6 +21984,9 @@
           "interceptions": 0,
           "pass_defended": 2
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -22449,6 +22542,10 @@
           "rushing_yards": 6,
           "team": "DET"
         }
+      },
+      "accolades": {
+        "allpro1": 2,
+        "allpro2": 1
       }
     },
     {
@@ -22828,6 +22925,9 @@
           "receiving_tds": 0,
           "team": "NYJ"
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -26342,6 +26442,9 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -30466,6 +30569,9 @@
           "tackles_for_loss": 7,
           "qb_hits": 17
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -30530,6 +30636,9 @@
           "interceptions": 5,
           "pass_defended": 18
         }
+      },
+      "accolades": {
+        "allpro1": 2
       }
     },
     {
@@ -30541,7 +30650,11 @@
       "actualRound": 1,
       "actualPick": 4,
       "actualTeam": "NYJ",
-      "combineData": null
+      "combineData": null,
+      "accolades": {
+        "droy": true,
+        "allpro1": 2
+      }
     },
     {
       "id": "kayvon thibodeaux-de-oregon",
@@ -30848,6 +30961,9 @@
           "rushing_yards": 5,
           "team": "NYJ"
         }
+      },
+      "accolades": {
+        "oroy": true
       }
     },
     {
@@ -30921,6 +31037,9 @@
           "rushing_yards": 7,
           "team": "NO"
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -31125,6 +31244,10 @@
           "interceptions": 1,
           "pass_defended": 9
         }
+      },
+      "accolades": {
+        "allpro1": 2,
+        "allpro2": 1
       }
     },
     {
@@ -31498,6 +31621,10 @@
           "interceptions": 2,
           "pass_defended": 13
         }
+      },
+      "accolades": {
+        "allpro1": 1,
+        "allpro2": 1
       }
     },
     {
@@ -31662,6 +31789,9 @@
           "games": 1,
           "team": "DAL"
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -31806,6 +31936,9 @@
           "interceptions": 1,
           "pass_defended": 4
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -33247,6 +33380,9 @@
           "rushing_yards": -6,
           "team": "PIT"
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -33460,6 +33596,9 @@
           "receiving_tds": 2,
           "team": "ARI"
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -33896,6 +34035,9 @@
           "receiving_tds": 2,
           "team": "BUF"
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -35161,6 +35303,10 @@
           "interceptions": 1,
           "pass_defended": 10
         }
+      },
+      "accolades": {
+        "allpro1": 1,
+        "allpro2": 1
       }
     },
     {
@@ -35904,6 +36050,9 @@
           "interceptions": 9,
           "pass_defended": 12
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -37861,7 +38010,10 @@
       },
       "espnRank": 182,
       "espnGrade": 58.0,
-      "espnId": "106042"
+      "espnId": "106042",
+      "accolades": {
+        "allpro1": 1
+      }
     },
     {
       "id": "hassan haskins-rb-michigan",
@@ -39762,6 +39914,9 @@
           "receiving_tds": 2,
           "team": "LA"
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -39908,6 +40063,9 @@
           "interceptions": 0,
           "pass_defended": 5
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -44272,6 +44430,9 @@
           "sacks": 52,
           "team": "HOU"
         }
+      },
+      "accolades": {
+        "oroy": true
       }
     },
     {
@@ -44314,6 +44475,10 @@
           "interceptions": 0,
           "pass_defended": 2
         }
+      },
+      "accolades": {
+        "droy": true,
+        "allpro1": 1
       }
     },
     {
@@ -44450,6 +44615,9 @@
           "interceptions": 0,
           "pass_defended": 9
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -44605,6 +44773,10 @@
           "receiving_tds": 1,
           "team": "ATL"
         }
+      },
+      "accolades": {
+        "allpro1": 1,
+        "allpro2": 1
       }
     },
     {
@@ -44665,6 +44837,9 @@
           "tackles_for_loss": 12,
           "qb_hits": 16
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -44689,7 +44864,10 @@
       },
       "espnRank": 18,
       "espnGrade": 90.0,
-      "espnId": "106727"
+      "espnId": "106727",
+      "accolades": {
+        "allpro2": 1
+      }
     },
     {
       "id": "peter skoronski-ol-northwestern",
@@ -45038,6 +45216,9 @@
           "interceptions": 2,
           "pass_defended": 11
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -45100,6 +45281,9 @@
           "interceptions": 0,
           "pass_defended": 5
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -45223,6 +45407,9 @@
           "rushing_yards": 26,
           "team": "SEA"
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -46028,6 +46215,9 @@
           "receiving_tds": 7,
           "team": "DET"
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -47462,6 +47652,10 @@
           "rushing_yards": 42,
           "team": "DEN"
         }
+      },
+      "accolades": {
+        "allpro1": 1,
+        "allpro2": 1
       }
     },
     {
@@ -50482,6 +50676,9 @@
           "rushing_yards": 39,
           "team": "LAC"
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -53236,6 +53433,10 @@
           "rushing_yards": 46,
           "team": "LA"
         }
+      },
+      "accolades": {
+        "allpro1": 1,
+        "allpro2": 1
       }
     },
     {
@@ -56818,6 +57019,9 @@
           "sacks": 47,
           "team": "WAS"
         }
+      },
+      "accolades": {
+        "oroy": true
       }
     },
     {
@@ -56883,6 +57087,9 @@
           "sacks": 34,
           "team": "NE"
         }
+      },
+      "accolades": {
+        "allpro2": 1
       }
     },
     {
@@ -57316,6 +57523,9 @@
           "receiving_tds": 5,
           "team": "LV"
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -57551,6 +57761,9 @@
           "tackles_for_loss": 11,
           "qb_hits": 18
         }
+      },
+      "accolades": {
+        "droy": true
       }
     },
     {
@@ -57660,6 +57873,9 @@
           "interceptions": 0,
           "pass_defended": 12
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -58488,6 +58704,9 @@
           "interceptions": 0,
           "pass_defended": 6
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -59278,6 +59497,9 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -62318,6 +62540,9 @@
           "receiving_tds": 3,
           "team": "BUF"
         }
+      },
+      "accolades": {
+        "allpro1": 1
       }
     },
     {
@@ -65776,7 +66001,10 @@
       },
       "espnRank": 323,
       "espnGrade": 33.0,
-      "espnId": "107111"
+      "espnId": "107111",
+      "accolades": {
+        "allpro1": 1
+      }
     },
     {
       "id": "tylan grable-ol-central florida",
@@ -71707,7 +71935,10 @@
       },
       "espnRank": 173,
       "espnGrade": 55.0,
-      "espnId": "109453"
+      "espnId": "109453",
+      "accolades": {
+        "allpro1": 1
+      }
     },
     {
       "id": "bhayshul tuten-rb-virginia tech",
