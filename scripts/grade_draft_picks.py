@@ -343,10 +343,19 @@ def grade_all_classes(history: dict) -> None:
                 }
                 continue
 
-            # Suppress grade for players with only 1 qualifying season and no strong
-            # accolade — comparing 1 season against multi-year careers gives misleading
-            # results (affects 2024 class QBs, RBs, etc.).
+            # Players with only 1 qualifying season and no strong accolade:
+            #   - If enough time has passed (2+ seasons elapsed), they've had their chance → Bust
+            #   - Otherwise suppress — too early to grade (protects 2024 rookies)
             if q < 2 and not has_strong:
+                if seasons_elapsed >= 2:
+                    p['draftGrade'] = {
+                        'tier':           'Bust',
+                        'score':          0.0,
+                        'classRank':      p.get('_classRank'),
+                        'classSize':      p.get('_classSize', 0),
+                        'yearsEvaluated': q,
+                        'provisional':    False,
+                    }
                 continue
 
             sorted_pool = pos_sorted.get(pos_group, [])

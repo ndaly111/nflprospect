@@ -1526,6 +1526,14 @@
           "interceptions": 0,
           "pass_defended": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 193,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -2523,6 +2531,14 @@
           "interceptions": 0,
           "pass_defended": 3
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 179,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -5210,6 +5226,14 @@
           "receiving_tds": 0,
           "team": "GB"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 46,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -6341,6 +6365,14 @@
           "interceptions": 0,
           "pass_defended": 2
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 162,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -6454,6 +6486,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 205,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -7392,6 +7432,14 @@
           "receiving_tds": 0,
           "team": "CIN"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 175,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -7814,6 +7862,14 @@
         "2021": 7,
         "2022": 0,
         "2023": 1
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 164,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -8040,6 +8096,14 @@
         "2023": 1,
         "2024": 2,
         "2025": 1
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 173,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -8309,6 +8373,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 192,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -8805,6 +8877,14 @@
       "olStarts": {
         "2020": 11,
         "2021": 2
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 153,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -9499,6 +9579,14 @@
           "receiving_tds": 0,
           "team": "KC"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 110,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -9545,6 +9633,14 @@
       "olStarts": {
         "2021": 0,
         "2022": 3
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 190,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -9744,6 +9840,14 @@
           "receiving_tds": 0,
           "team": "PIT"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 143,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -10889,6 +10993,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 196,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -11008,6 +11120,14 @@
           "rushing_yards": 22,
           "team": "WAS"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 197,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -11619,6 +11739,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 201,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -11856,6 +11984,14 @@
       "olStarts": {
         "2020": 0,
         "2021": 6
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 178,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -12068,6 +12204,14 @@
         "2021": 1,
         "2023": 4,
         "2024": 1
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 185,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -12686,6 +12830,14 @@
           "rushing_yards": 1,
           "team": "PHI"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 138,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -12750,6 +12902,14 @@
           "interceptions": 0,
           "pass_defended": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 177,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -13197,6 +13357,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 182,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -13474,6 +13642,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 206,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -13554,6 +13730,14 @@
         "2021": 5,
         "2022": 0,
         "2023": 0
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 183,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -13659,6 +13843,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 202,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -14317,6 +14509,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 157,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -14431,6 +14631,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 198,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -15231,6 +15439,14 @@
         "2022": 1,
         "2023": 3,
         "2024": 1
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 189,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -15449,6 +15665,14 @@
           "rushing_yards": 0,
           "team": "IND"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 186,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -15900,6 +16124,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 188,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -16041,6 +16273,14 @@
           "rushing_yards": 0,
           "team": "LAC"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 161,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -16078,6 +16318,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 204,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -16323,6 +16571,14 @@
           "tackles_for_loss": 2,
           "qb_hits": 7
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 160,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -16623,6 +16879,14 @@
           "tackles_for_loss": 1,
           "qb_hits": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 200,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -16871,6 +17135,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 203,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -17161,6 +17433,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 199,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -17441,6 +17721,14 @@
           "receiving_tds": 1,
           "team": "MIA"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 156,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -17743,6 +18031,14 @@
           "rushing_yards": 0,
           "team": "DEN"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 169,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -17825,6 +18121,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 187,
+        "classSize": 206,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -19270,6 +19574,14 @@
       "olStarts": {
         "2021": 16,
         "2022": 0
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 128,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -21277,6 +21589,14 @@
         "2022": 0,
         "2023": 0,
         "2024": 1
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 161,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -22188,6 +22508,14 @@
           "rushing_yards": 0,
           "team": "CAR"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 131,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -22764,6 +23092,14 @@
       "olStarts": {
         "2021": 16,
         "2023": 1
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 133,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -22946,6 +23282,14 @@
           "interceptions": 0,
           "pass_defended": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 180,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -23453,6 +23797,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 184,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -23655,6 +24007,14 @@
           "receiving_tds": 0,
           "team": "LA"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 163,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -24568,6 +24928,14 @@
         "2023": 2,
         "2024": 0,
         "2025": 0
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 171,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -24667,6 +25035,14 @@
           "tackles_for_loss": 2,
           "qb_hits": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 190,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -26965,6 +27341,14 @@
           "rushing_yards": 0,
           "team": "CLE"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 169,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -27029,6 +27413,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 162,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -28596,6 +28988,14 @@
           "interceptions": 0,
           "pass_defended": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 188,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -28814,6 +29214,14 @@
           "rushing_yards": 0,
           "team": "NYG"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 152,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -28914,6 +29322,14 @@
         "2023": 3,
         "2024": 0,
         "2025": 0
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 179,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -28978,6 +29394,14 @@
           "interceptions": 0,
           "pass_defended": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 187,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -29854,6 +30278,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 194,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -30126,6 +30558,14 @@
           "interceptions": 1,
           "pass_defended": 2
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 172,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -30199,6 +30639,14 @@
           "rushing_yards": 0,
           "team": "LAC"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 145,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -30456,6 +30904,14 @@
           "interceptions": 0,
           "pass_defended": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 192,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -30873,6 +31329,14 @@
       "olStarts": {
         "2021": 3,
         "2022": 0
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 181,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -30926,6 +31390,14 @@
           "tackles_for_loss": 2,
           "qb_hits": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 176,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -31293,6 +31765,14 @@
           "receiving_tds": 0,
           "team": "NYG"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 120,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -31379,6 +31859,14 @@
           "receiving_tds": 0,
           "team": "LAC"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 147,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -32335,6 +32823,14 @@
           "interceptions": 0,
           "pass_defended": 3
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 182,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -32495,6 +32991,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 148,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -32674,6 +33178,14 @@
           "sacks": 14,
           "team": "IND"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 51,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -33228,6 +33740,14 @@
           "rushing_yards": 0,
           "team": "CAR"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 165,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -33262,6 +33782,14 @@
         "2021": 4,
         "2022": 1,
         "2023": 0
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 177,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -33363,6 +33891,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 195,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -34705,6 +35241,14 @@
           "receiving_tds": 0,
           "team": "GB"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 183,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -34776,6 +35320,14 @@
           "receiving_tds": 0,
           "team": "DET"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 140,
+        "classSize": 195,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -37676,6 +38228,14 @@
           "receiving_tds": 1,
           "team": "SEA"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 30,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -37862,6 +38422,14 @@
           "rushing_yards": 0,
           "team": "HOU"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 106,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -37926,6 +38494,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 183,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -39643,6 +40219,14 @@
           "rushing_yards": 51,
           "team": "CHI"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 181,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -39738,6 +40322,14 @@
           "receiving_tds": 3,
           "team": "IND"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 88,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -40236,6 +40828,14 @@
           "receiving_tds": 0,
           "team": "DEN"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 71,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -41188,6 +41788,14 @@
           "receiving_tds": 0,
           "team": "PHI"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 163,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -41699,6 +42307,14 @@
           "tackles_for_loss": 1,
           "qb_hits": 2
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 164,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -42008,6 +42624,14 @@
           "rushing_yards": 9,
           "team": "SF"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 203,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -42227,6 +42851,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 195,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -43422,6 +44054,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 204,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -44156,6 +44796,14 @@
           "rushing_yards": 57,
           "team": "PIT"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 121,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -44327,6 +44975,14 @@
           "interceptions": 0,
           "pass_defended": 2
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 197,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -44532,6 +45188,14 @@
           "sacks": 4,
           "team": "SEA"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 4,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -44578,6 +45242,14 @@
       "olStarts": {
         "2024": 1,
         "2025": 3
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 189,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -45085,6 +45757,14 @@
           "interceptions": 0,
           "pass_defended": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 201,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -45200,6 +45880,14 @@
           "receiving_tds": 0,
           "team": "JAX"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 175,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -45683,6 +46371,14 @@
           "rushing_yards": 30,
           "team": "DEN"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 199,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -45908,6 +46604,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 2
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 207,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -46197,6 +46901,14 @@
           "receiving_tds": 0,
           "team": "HOU"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 149,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -46312,6 +47024,14 @@
       },
       "olStarts": {
         "2023": 5
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 177,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -46593,6 +47313,14 @@
           "receiving_tds": 0,
           "team": "DET"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 154,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -47266,6 +47994,14 @@
           "tackles_for_loss": 1,
           "qb_hits": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 205,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -47525,6 +48261,14 @@
           "tackles_for_loss": 1,
           "qb_hits": 2
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 190,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -47834,6 +48578,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 211,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -47994,6 +48746,14 @@
           "receiving_tds": 0,
           "team": "CHI"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 174,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -48097,6 +48857,14 @@
         "2023": 1,
         "2024": 0,
         "2025": 7
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 170,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -48630,6 +49398,14 @@
         "2022": 3,
         "2024": 0,
         "2025": 1
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 192,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -48763,6 +49539,14 @@
           "receiving_tds": 1,
           "team": "TB"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 160,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -48879,6 +49663,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 209,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -49071,6 +49863,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 191,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -49168,6 +49968,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 186,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -49505,6 +50313,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 178,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -49651,6 +50467,14 @@
           "tackles_for_loss": 1,
           "qb_hits": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 208,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -49937,6 +50761,14 @@
           "interceptions": 0,
           "pass_defended": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 210,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -50128,6 +50960,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 193,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -50250,6 +51090,14 @@
           "sacks": 6,
           "team": "MIA"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 59,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -50844,6 +51692,14 @@
           "interceptions": 0,
           "pass_defended": 3
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 185,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -50870,6 +51726,14 @@
           "receiving_tds": 2,
           "team": "LAC"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 182,
+        "classSize": 211,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -52047,6 +52911,14 @@
           "interceptions": 1,
           "pass_defended": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 121,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -53682,6 +54554,14 @@
           "tackles_for_loss": 5,
           "qb_hits": 6
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 123,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -53849,6 +54729,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 144,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -54252,6 +55140,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 186,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -54533,6 +55429,14 @@
           "rushing_yards": 1,
           "team": "KC"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 26,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -55224,6 +56128,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 180,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -56273,6 +57185,14 @@
           "interceptions": 1,
           "pass_defended": 8
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 128,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -56313,6 +57233,14 @@
       },
       "accolades": {
         "probowl": 1
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 25,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -56445,6 +57373,14 @@
           "interceptions": 0,
           "pass_defended": 4
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 132,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -56696,6 +57632,14 @@
           "interceptions": 1,
           "pass_defended": 4
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 93,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -57374,6 +58318,14 @@
           "interceptions": 1,
           "pass_defended": 8
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 136,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -57406,6 +58358,14 @@
       "olStarts": {
         "2023": 0,
         "2024": 5
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 164,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -57564,6 +58524,14 @@
       "olStarts": {
         "2023": 10,
         "2024": 0
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 141,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -57596,6 +58564,14 @@
       "olStarts": {
         "2023": 1,
         "2025": 16
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 114,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -58097,6 +59073,14 @@
         "2023": 13,
         "2024": 2,
         "2025": 0
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 133,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -58227,6 +59211,14 @@
       "olStarts": {
         "2023": 6,
         "2024": 3
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 159,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -58281,6 +59273,14 @@
           "interceptions": 0,
           "pass_defended": 3
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 145,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -58313,6 +59313,14 @@
       "olStarts": {
         "2024": 0,
         "2025": 6
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 162,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -58366,6 +59374,14 @@
           "tackles_for_loss": 1,
           "qb_hits": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 182,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -58568,6 +59584,14 @@
           "tackles_for_loss": 8,
           "qb_hits": 9
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 129,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -58633,6 +59657,14 @@
           "sacks": 6,
           "team": "NO"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 83,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -58849,6 +59881,14 @@
           "rushing_yards": 0,
           "team": "CIN"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 151,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -58983,6 +60023,14 @@
       },
       "accolades": {
         "probowl": 1
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 101,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -59197,6 +60245,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 183,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -59247,6 +60303,14 @@
           "tackles_for_loss": 1,
           "qb_hits": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 156,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -59673,6 +60737,14 @@
           "receiving_tds": 0,
           "team": "NYJ"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 139,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -59695,6 +60767,14 @@
       "olStarts": {
         "2023": 8,
         "2025": 3
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 152,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -59753,6 +60833,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 188,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -60152,6 +61240,14 @@
       },
       "olStarts": {
         "2023": 4
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 172,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -60656,6 +61752,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 192,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -61137,6 +62241,14 @@
         "2023": 0,
         "2024": 2,
         "2025": 5
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 163,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -61383,6 +62495,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 190,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -61844,6 +62964,14 @@
           "interceptions": 0,
           "pass_defended": 3
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 174,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -61863,6 +62991,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 191,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -62059,6 +63195,14 @@
       "olStarts": {
         "2023": 7,
         "2024": 0
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 160,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -62122,6 +63266,14 @@
           "rushing_yards": 0,
           "team": "NE"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 34,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -62293,6 +63445,14 @@
       "olStarts": {
         "2023": 1,
         "2025": 4
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 171,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -62433,6 +63593,14 @@
           "receiving_tds": 0,
           "team": "WAS"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 95,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -62554,6 +63722,14 @@
           "rushing_yards": 0,
           "team": "NO"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 72,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -63227,6 +64403,14 @@
           "interceptions": 1,
           "pass_defended": 2
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 177,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -63580,6 +64764,14 @@
           "receiving_tds": 0,
           "team": "LA"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 178,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -64021,6 +65213,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 184,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -64420,6 +65620,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 194,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -64584,6 +65792,14 @@
           "receiving_tds": 0,
           "team": "SEA"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 104,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -64767,6 +65983,14 @@
           "interceptions": 1,
           "pass_defended": 2
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 161,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -64825,6 +66049,14 @@
           "interceptions": 0,
           "pass_defended": 1
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 157,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -64940,6 +66172,14 @@
           "rushing_yards": 0,
           "team": "DAL"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 99,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -64959,6 +66199,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 189,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -65169,6 +66417,14 @@
           "tackles_for_loss": 0,
           "qb_hits": 5
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 179,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -65390,6 +66646,14 @@
           "rushing_yards": 0,
           "team": "SF"
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 127,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -65494,6 +66758,14 @@
           "interceptions": 0,
           "pass_defended": 0
         }
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 193,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {
@@ -65570,6 +66842,14 @@
       "olStarts": {
         "2024": 4,
         "2025": 2
+      },
+      "draftGrade": {
+        "tier": "Bust",
+        "score": 0.0,
+        "classRank": 169,
+        "classSize": 194,
+        "yearsEvaluated": 1,
+        "provisional": false
       }
     },
     {

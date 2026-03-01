@@ -181,8 +181,51 @@ export function renderProspectGrid() {
 
   // Grid view
   container.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'
-  const visible = filtered.slice(0, visibleCount)
-  container.innerHTML = visible.map(p => renderProspectCard(p, p.id === expandedCardId)).join('')
+
+  // Historical + all rounds → group by round with divider headers, no pagination
+  if (isHistorical && filters.round === 'ALL') {
+    const byRound = {}
+    for (const p of filtered) {
+      const r = p.actualRound ?? 'Unknown'
+      if (!byRound[r]) byRound[r] = []
+      byRound[r].push(p)
+    }
+    const rounds = Object.keys(byRound).map(Number).filter(Boolean).sort((a, b) => a - b)
+    const parts = []
+    for (const r of rounds) {
+      const picks = byRound[r]
+      parts.push(
+        `<div class="col-span-full flex items-center gap-3 mt-2 mb-1">`,
+        `<span class="text-sm font-bold text-gray-300 whitespace-nowrap">Round ${r}</span>`,
+        `<div class="flex-1 border-t border-gray-700/60"></div>`,
+        `<span class="text-xs text-gray-500">${picks.length} pick${picks.length !== 1 ? 's' : ''}</span>`,
+        `</div>`,
+        ...picks.map(p => renderProspectCard(p, p.id === expandedCardId)),
+      )
+    }
+    container.innerHTML = parts.join('')
+  } else {
+    const visible = filtered.slice(0, visibleCount)
+    container.innerHTML = visible.map(p => renderProspectCard(p, p.id === expandedCardId)).join('')
+
+    // "Load more" button if there are hidden prospects
+    if (filtered.length > visibleCount) {
+      const remaining = filtered.length - visibleCount
+      const btnWrap = document.createElement('div')
+      btnWrap.className = 'col-span-full flex justify-center py-6'
+      btnWrap.innerHTML = [
+        `<button class="load-more-btn px-6 py-2.5 bg-gray-800 hover:bg-gray-700 border border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white rounded-lg text-sm font-medium transition-colors">`,
+        `Load ${Math.min(PAGE_SIZE, remaining)} more`,
+        `<span class="text-gray-500 text-xs ml-1">(${remaining} left)</span>`,
+        `</button>`,
+      ].join('')
+      btnWrap.querySelector('.load-more-btn').addEventListener('click', () => {
+        visibleCount += PAGE_SIZE
+        renderProspectGrid()
+      })
+      container.appendChild(btnWrap)
+    }
+  }
 
   // Wire events once using event delegation on the container
   if (!eventsWired) {
@@ -190,26 +233,9 @@ export function renderProspectGrid() {
     eventsWired = true
   }
 
-  // "Load more" button if there are hidden prospects
-  if (filtered.length > visibleCount) {
-    const remaining = filtered.length - visibleCount
-    const btnWrap = document.createElement('div')
-    btnWrap.className = 'col-span-full flex justify-center py-6'
-    btnWrap.innerHTML = [
-      `<button class="load-more-btn px-6 py-2.5 bg-gray-800 hover:bg-gray-700 border border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white rounded-lg text-sm font-medium transition-colors">`,
-      `Load ${Math.min(PAGE_SIZE, remaining)} more`,
-      `<span class="text-gray-500 text-xs ml-1">(${remaining} left)</span>`,
-      `</button>`,
-    ].join('')
-    btnWrap.querySelector('.load-more-btn').addEventListener('click', () => {
-      visibleCount += PAGE_SIZE
-      renderProspectGrid()
-    })
-    container.appendChild(btnWrap)
-  }
-
   // If a card should be expanded, init its chart after render
-  if (expandedCardId && visible.some(p => p.id === expandedCardId)) {
+  const allVisible = isHistorical && filters.round === 'ALL' ? filtered : filtered.slice(0, visibleCount)
+  if (expandedCardId && allVisible.some(p => p.id === expandedCardId)) {
     const expandedProspect = activeProspects.find(p => p.id === expandedCardId)
     if (expandedProspect && expandedProspect.rankHistory) {
       setTimeout(() => renderRankingChart(`chart-${expandedCardId}`, expandedProspect.rankHistory), 60)

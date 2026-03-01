@@ -162,6 +162,11 @@ def fetch_player_stats(prospects: list[dict], years: list[int] = None) -> dict[s
             pos_group = p.get('positionGroup', '')
             category = POSITION_CATEGORY.get(pos_group)
             if not category:
+                # OL: no individual blocking stats exist; collect games played only
+                if pos_group == 'OL' and name in gp_by_name:
+                    if name not in result:
+                        result[name] = {}
+                    result[name][str(year)] = {'games': gp_by_name[name]}
                 continue
 
             # Try exact (name, school) first; fall back to name-only
