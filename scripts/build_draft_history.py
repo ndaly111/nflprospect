@@ -38,7 +38,7 @@ POS_GROUP_MAP = {
     'RB': 'RB', 'FB': 'RB',
     'WR': 'WR',
     'TE': 'TE',
-    'OT': 'OL', 'OG': 'OL', 'C': 'OL', 'IOL': 'OL', 'OL': 'OL',
+    'OT': 'OL', 'T': 'OL', 'OG': 'OL', 'G': 'OL', 'C': 'OL', 'IOL': 'OL', 'OL': 'OL',
     'DT': 'DL', 'NT': 'DL', 'DL': 'DL',
     'DE': 'EDGE', 'EDGE': 'EDGE', 'OLB': 'EDGE',
     'ILB': 'LB', 'MLB': 'LB', 'LB': 'LB',
@@ -228,17 +228,19 @@ def build_draft_history() -> dict[str, list[dict]]:
     except Exception as e:
         logger.warning(f'NFL career stats fetch failed: {e}')
 
-    # Fetch OL offensive snap counts (used as career value proxy for OL)
-    logger.info('Fetching OL snap counts...')
+    # Fetch OL offensive snap counts and games started (career value proxy for OL)
+    logger.info('Fetching OL snap counts and games started...')
     try:
         from fetch_ol_snaps import fetch_ol_snaps
-        ol_snaps = fetch_ol_snaps(all_flat)
+        ol_snaps, ol_starts = fetch_ol_snaps(all_flat)
         for yr, prsp in result.items():
             n = 0
             for p in prsp:
                 if p['name'] in ol_snaps:
                     p['olSnaps'] = ol_snaps[p['name']]
                     n += 1
+                if p['name'] in ol_starts:
+                    p['olStarts'] = ol_starts[p['name']]
             if n:
                 logger.info(f'{yr}: {n} OL prospects with snap data')
     except Exception as e:

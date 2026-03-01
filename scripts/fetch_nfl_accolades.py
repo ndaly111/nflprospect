@@ -56,6 +56,74 @@ def _build_award_map():
 # Wikipedia AP All-Pro scraper
 # ---------------------------------------------------------------------------
 
+def _fetch_wiki_page(page_title: str) -> str | None:
+    """Fetch Wikipedia page HTML via the API. Returns HTML string or None."""
+    time.sleep(DELAY)
+    try:
+        r = requests.get(
+            'https://en.wikipedia.org/w/api.php',
+            params={
+                'action': 'parse',
+                'page': page_title,
+                'prop': 'text',
+                'format': 'json',
+            },
+            headers={'User-Agent': 'NFLDraftTracker/1.0'},
+            timeout=TIMEOUT,
+        )
+        r.raise_for_status()
+        data = r.json()
+        if 'error' in data:
+            return None
+        return data['parse']['text']['*']
+    except Exception:
+        return None
+
+
+def _fetch_probowl_year(season: int) -> set[str]:
+    """
+    Scrape the Wikipedia Pro Bowl page for the Pro Bowl held after `season`.
+    Returns a set of player names selected to the Pro Bowl that year.
+    Pro Bowl game year = season + 1 (e.g. after 2020 season → 2021 Pro Bowl).
+    Handles both old format ("2021_Pro_Bowl") and new format ("2023_Pro_Bowl_Games").
+    """
+    pb_year = season + 1
+    # Try new format first (2023+), fall back to old format
+    page_titles = (
+        [f'{pb_year}_Pro_Bowl_Games', f'{pb_year}_Pro_Bowl']
+        if pb_year >= 2023
+        else [f'{pb_year}_Pro_Bowl']
+    )
+    html = None
+    for title in page_titles:
+        html = _fetch_wiki_page(title)
+        if html:
+            break
+    if not html:
+        logger.warning(f'Pro Bowl {pb_year}: Wikipedia page not found')
+        return set()
+
+    soup = BeautifulSoup(html, 'lxml')
+    names: set[str] = set()
+
+    # Pro Bowl pages list players as wikilinks in tables.
+    # Strategy: collect all linked names from wikitable cells.
+    for table in soup.find_all('table', class_='wikitable'):
+        for cell in table.find_all(['td', 'th']):
+            for a in cell.find_all('a', href=True):
+                text = a.get_text(strip=True)
+                # Filter out short/non-name entries and wiki nav links
+                if (len(text) > 4
+                        and not text.startswith('AFC')
+                        and not text.startswith('NFC')
+                        and not a['href'].startswith('#')
+                        and ':' not in a['href']):
+                    names.add(text)
+
+    logger.info(f'Pro Bowl {pb_year} (after {season} season): {len(names)} names found')
+    return names
+
+
 def _fetch_allpro_year(year: int) -> dict[str, dict]:
     """
     Scrape the Wikipedia All-Pro team page for `year`.
@@ -189,6 +257,21 @@ def fetch_nfl_accolades(prospects: list[dict]) -> dict[str, dict]:
             if target:
                 result[target]['allpro1'] = result[target].get('allpro1', 0) + counts['allpro1']
                 result[target]['allpro2'] = result[target].get('allpro2', 0) + counts['allpro2']
+
+    # ---- Wikipedia Pro Bowl (count selections per player) ----
+    logger.info(f'Fetching Pro Bowl pages for seasons: {seasons_to_fetch}')
+    for season in seasons_to_fetch:
+        pb_names = _fetch_probowl_year(season)
+        if not pb_names:
+            continue
+        for wiki_name in pb_names:
+            target = wiki_name if wiki_name in name_set else None
+            if target is None:
+                m = fuzzy_match_player(wiki_name, name_cands, threshold=88)
+                if m:
+                    target = m['name']
+            if target:
+                result[target]['probowl'] = result[target].get('probowl', 0) + 1
 
     # Clean up: remove zero counts
     cleaned = {}

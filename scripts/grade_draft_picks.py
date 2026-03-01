@@ -73,20 +73,31 @@ def _accolade_bonus(accolades) -> float:
     return total
 
 
-MIN_OL_SNAPS = 200  # snaps per season to count as qualifying for OL
+MIN_OL_SNAPS  = 200  # snaps per season to count as qualifying for OL
+MIN_OL_STARTS = 8    # games started per season (alternative qualifying threshold for OL)
+
+# OL Elite gate: must have >= OL_ELITE_AP_TOTAL AP selections (1st+2nd combined)
+# OR >= OL_ELITE_PROBOWL Pro Bowl selections
+OL_ELITE_AP_TOTAL = 2
+OL_ELITE_PROBOWL  = 2
 
 
 def count_qualifying_seasons(prospect, min_games: int = 4) -> int:
     """Count NFL seasons where the prospect played meaningfully.
 
-    For OL: seasons with >= MIN_OL_SNAPS offensive snaps (no nflStats available).
+    For OL: seasons with >= MIN_OL_SNAPS offensive snaps OR >= MIN_OL_STARTS games started.
     For all others: seasons with >= min_games games played.
     """
     pos_group = prospect.get('positionGroup', '')
     if pos_group == 'OL':
-        ol_snaps = prospect.get('olSnaps') or {}
-        return sum(1 for snaps in ol_snaps.values()
-                   if isinstance(snaps, (int, float)) and snaps >= MIN_OL_SNAPS)
+        ol_snaps  = prospect.get('olSnaps')  or {}
+        ol_starts = prospect.get('olStarts') or {}
+        all_seasons = set(ol_snaps) | set(ol_starts)
+        return sum(
+            1 for s in all_seasons
+            if (isinstance(ol_snaps.get(s),  (int, float)) and (ol_snaps.get(s)  or 0) >= MIN_OL_SNAPS)
+            or (isinstance(ol_starts.get(s), (int, float)) and (ol_starts.get(s) or 0) >= MIN_OL_STARTS)
+        )
     nfl_stats = prospect.get('nflStats') or {}
     count = 0
     for season_stats in nfl_stats.values():
@@ -169,13 +180,21 @@ def compute_career_value(prospect) -> float:
               + g('tackles_combined') * 0.5)
 
     elif pos_group == 'OL':
-        # Sum offensive snaps across qualifying seasons (>= MIN_OL_SNAPS per season)
-        ol_snaps = prospect.get('olSnaps') or {}
-        total_snaps = sum(
-            v for v in ol_snaps.values()
-            if isinstance(v, (int, float)) and v >= MIN_OL_SNAPS
-        )
-        cv = total_snaps * 0.1  # ~110 pts/season for full-time starter
+        # Career value = qualifying-season snaps × 0.1 + qualifying-season starts × 3
+        # A full-time starter (~1100 snaps, ~17 starts) earns ~110 + 51 = ~161 pts/season.
+        # Qualifying season: >= MIN_OL_SNAPS snaps OR >= MIN_OL_STARTS games started.
+        ol_snaps  = prospect.get('olSnaps')  or {}
+        ol_starts = prospect.get('olStarts') or {}
+        all_seasons = set(ol_snaps) | set(ol_starts)
+        total_snaps  = 0
+        total_starts = 0
+        for s in all_seasons:
+            snaps  = ol_snaps.get(s,  0) or 0
+            starts = ol_starts.get(s, 0) or 0
+            if snaps >= MIN_OL_SNAPS or starts >= MIN_OL_STARTS:
+                total_snaps  += snaps
+                total_starts += starts
+        cv = total_snaps * 0.1 + total_starts * 3
 
     else:
         # Special teams (K, P, LS): no meaningful stats
@@ -236,13 +255,22 @@ def grade_all_classes(history: dict) -> None:
         rank_from_bottom = sum(1 for x in sorted_pool if x['_cv'] < cv)
         return round(rank_from_bottom / (n - 1) * 100, 1)
 
-    def tier_from_pct(pct: float, accolades: dict) -> str:
-        has_strong = any(accolades.get(k) for k in STRONG_ACCOLADES)
-        has_weak   = any(accolades.get(k) for k in WEAK_ACCOLADES)
-        if pct >= ELITE_STRONG_PCT and has_strong:
-            return 'Elite'
-        if pct >= ELITE_WEAK_PCT and has_weak and not has_strong:
-            return 'Elite'
+    def tier_from_pct(pct: float, accolades: dict, pos_group: str = '') -> str:
+        if pos_group == 'OL':
+            # OL Elite requires multiple sustained recognition:
+            #   >= 2 AP All-Pro selections (1st + 2nd combined) OR >= 2 Pro Bowls
+            ap_total = (accolades.get('allpro1') or 0) + (accolades.get('allpro2') or 0)
+            probowl  = accolades.get('probowl') or 0
+            has_ol_elite = ap_total >= OL_ELITE_AP_TOTAL or probowl >= OL_ELITE_PROBOWL
+            if pct >= ELITE_STRONG_PCT and has_ol_elite:
+                return 'Elite'
+        else:
+            has_strong = any(accolades.get(k) for k in STRONG_ACCOLADES)
+            has_weak   = any(accolades.get(k) for k in WEAK_ACCOLADES)
+            if pct >= ELITE_STRONG_PCT and has_strong:
+                return 'Elite'
+            if pct >= ELITE_WEAK_PCT and has_weak and not has_strong:
+                return 'Elite'
         if pct >= STARTER_PCT:
             return 'Starter'
         if pct >= BACKUP_PCT:
@@ -277,7 +305,7 @@ def grade_all_classes(history: dict) -> None:
                 continue
 
             pct = percentile_rank(p, sorted_pool)
-            tier = tier_from_pct(pct, p.get('accolades') or {})
+            tier = tier_from_pct(pct, p.get('accolades') or {}, pos_group)
             years_evaluated = q
             provisional = years_evaluated < 3
             class_rank = p.get('_classRank')
