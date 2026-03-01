@@ -31,7 +31,7 @@ ACCOLADE_BONUS = {
 # Tier thresholds (percentile within position group)
 # ---------------------------------------------------------------------------
 TIERS = [
-    (85, 'Elite'),
+    (90, 'Elite'),
     (60, 'Starter'),
     (30, 'Backup'),
     (0,  'Bust'),

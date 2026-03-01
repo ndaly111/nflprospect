@@ -14,8 +14,8 @@ export function initGlossaryModal() {
           <h3 class="text-white font-semibold mb-1">Career Grade</h3>
           <p class="text-gray-400 mb-2">How well the player performed in the NFL, based on career stats relative to other players at the same position drafted 2020–2025.</p>
           <ul class="space-y-1">
-            <li><span class="text-amber-300 font-bold">Elite</span> — Franchise player, perennial starter, All-Pro caliber (top ~15%)</li>
-            <li><span class="text-emerald-300 font-bold">Starter</span> — Solid NFL starter, dependable contributor (~25%)</li>
+            <li><span class="text-amber-300 font-bold">Elite</span> — Franchise player, perennial starter, All-Pro caliber (top ~10%)</li>
+            <li><span class="text-emerald-300 font-bold">Starter</span> — Solid NFL starter, dependable contributor (~30%)</li>
             <li><span class="text-slate-300 font-bold">Backup</span> — Rotational player or depth contributor (~30%)</li>
             <li><span class="text-red-300 font-bold">Bust</span> — Minimal NFL impact, didn't stick (~30%)</li>
           </ul>
@@ -91,8 +91,8 @@ export function initGlossaryModal() {
 
           <h4 class="text-gray-300 font-medium mb-1 text-xs uppercase tracking-wider">Tier cutoffs (percentile vs. same position)</h4>
           <div class="text-xs text-gray-400 space-y-0.5">
-            <div><span class="text-amber-300 font-semibold">Elite</span> — 85th percentile and above</div>
-            <div><span class="text-emerald-300 font-semibold">Starter</span> — 60th–84th percentile</div>
+            <div><span class="text-amber-300 font-semibold">Elite</span> — 90th percentile and above</div>
+            <div><span class="text-emerald-300 font-semibold">Starter</span> — 60th–89th percentile</div>
             <div><span class="text-slate-300 font-semibold">Backup</span> — 30th–59th percentile</div>
             <div><span class="text-red-300 font-semibold">Bust</span> — below 30th percentile</div>
           </div>
