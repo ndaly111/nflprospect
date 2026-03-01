@@ -140,7 +140,7 @@ function findProspectById(id) {
 function renderHistoricalCard(prospect, isExpanded) {
   const posColor = POSITION_COLORS[prospect.positionGroup] || 'bg-gray-800 text-gray-300'
   const isStarred = getState().watchlist.includes(prospect.id)
-  const displayRank = prospect.espnRank || prospect.actualPick
+  const displayRank = prospect.actualPick
   const histPickBadge = (prospect.espnRank && prospect.actualPick)
     ? pickValueBadge(prospect.actualPick - prospect.espnRank)
     : ''
@@ -183,8 +183,8 @@ function renderHistoricalCard(prospect, isExpanded) {
     `<div class="flex items-center gap-2 flex-wrap">`,
     `<span class="text-2xl font-black ${rankColor} leading-none">#${displayRank}</span>`,
     `<div class="text-xs text-gray-400 leading-snug">`,
-    prospect.espnRank ? `<div class="text-gray-500 text-[11px]">Pick #${prospect.actualPick} overall</div>` : '',
     `<div>Round ${prospect.actualRound || '?'}${teamSpan}</div>`,
+    prospect.espnRank ? `<div class="text-gray-500 text-[11px]">ESPN pre-draft: #${prospect.espnRank}</div>` : '',
     hw ? `<div class="text-gray-500">${hw}</div>` : '',
     `</div>`,
     prospect.espnGrade ? [
