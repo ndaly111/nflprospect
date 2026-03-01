@@ -29,15 +29,23 @@ ACCOLADE_BONUS = {
 
 # ---------------------------------------------------------------------------
 # Tier thresholds (percentile within position group)
-# Elite requires EITHER:
-#   - pct >= ELITE_ACCOLADE_PCT  AND at least one quality accolade
-#   - pct >= ELITE_DOMINANCE_PCT (so rare dominant players aren't unfairly excluded)
+#
+# Elite requires at least one accolade — no pure statistical dominance path,
+# because thin position pools (e.g. RB 2020-2025) let volume accumulators
+# rank in the 95th+ pct without being genuinely elite.
+#
+# Accolades are split by weight:
+#   STRONG (AP1/AP2, OPOY/DPOY, MVP, SBMVP, CPOY) — annual sustained excellence
+#   WEAK   (OROY/DROY) — one-time rookie award; needs a higher pct bar
 # ---------------------------------------------------------------------------
-ELITE_ACCOLADE_PCT   = 90   # need an accolade to be Elite at this threshold
-ELITE_DOMINANCE_PCT  = 95   # statistically so far above peers → Elite regardless
+ELITE_STRONG_PCT = 88   # strong accolade + 88th pct → Elite
+ELITE_WEAK_PCT   = 95   # weak (rookie) accolade alone needs near-top pct → Elite
 
-# Accolades that signal "recognized excellence" for the Elite quality gate
-QUALITY_ACCOLADES = frozenset({'allpro1', 'allpro2', 'opoy', 'dpoy', 'oroy', 'droy', 'sbmvp', 'mvp', 'cpoy'})
+STRONG_ACCOLADES = frozenset({'allpro1', 'allpro2', 'opoy', 'dpoy', 'sbmvp', 'mvp', 'cpoy'})
+WEAK_ACCOLADES   = frozenset({'oroy', 'droy'})
+
+# Keep QUALITY_ACCOLADES for the _has_quality_accolade helper (union of both sets)
+QUALITY_ACCOLADES = STRONG_ACCOLADES | WEAK_ACCOLADES
 
 STARTER_PCT = 60
 BACKUP_PCT  = 30
@@ -206,9 +214,11 @@ def grade_all_classes(history: dict) -> None:
         return round(rank_from_bottom / (n - 1) * 100, 1)
 
     def tier_from_pct(pct: float, accolades: dict) -> str:
-        if pct >= ELITE_DOMINANCE_PCT:
+        has_strong = any(accolades.get(k) for k in STRONG_ACCOLADES)
+        has_weak   = any(accolades.get(k) for k in WEAK_ACCOLADES)
+        if pct >= ELITE_STRONG_PCT and has_strong:
             return 'Elite'
-        if pct >= ELITE_ACCOLADE_PCT and _has_quality_accolade(accolades):
+        if pct >= ELITE_WEAK_PCT and has_weak and not has_strong:
             return 'Elite'
         if pct >= STARTER_PCT:
             return 'Starter'
