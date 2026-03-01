@@ -8,9 +8,15 @@ Or imported by build_draft_history.py via grade_all_classes(history).
 """
 import json
 import logging
+from datetime import datetime as _dt
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
+
+# Most recent completed NFL season (season ends in Feb; new season starts Sep).
+# Jan–Jul → previous year is the last completed season.
+_now_utc = _dt.utcnow()
+CURRENT_NFL_SEASON: int = _now_utc.year - 1 if _now_utc.month < 8 else _now_utc.year
 
 # ---------------------------------------------------------------------------
 # Accolade bonuses
@@ -217,6 +223,11 @@ def grade_all_classes(history: dict) -> None:
         }
     or no draftGrade key if no qualifying seasons and no accolades.
     """
+    # Step 0: clear any pre-existing draftGrade fields so re-runs are idempotent
+    for prospects in history.values():
+        for p in prospects:
+            p.pop('draftGrade', None)
+
     # Step 1: compute _cv (career value) and _q (qualifying seasons) for all prospects
     for year_str, prospects in history.items():
         for p in prospects:
@@ -291,14 +302,39 @@ def grade_all_classes(history: dict) -> None:
             p['_classSize'] = class_size
 
     # Step 5: assign draftGrade to each prospect (no cleanup yet — pool members still need _cv)
-    for prospects in history.values():
+    for year_str, prospects in history.items():
+        draft_year = int(year_str)
+        seasons_elapsed = CURRENT_NFL_SEASON - draft_year
+
         for p in prospects:
             pos_group = p.get('positionGroup', '')
             q = p['_q']
             acc_bonus = p['_acc_bonus']
+            accolades = p.get('accolades') or {}
+            has_strong = any(accolades.get(k) for k in STRONG_ACCOLADES)
 
-            # No grade if no qualifying seasons and no accolades
+            # Brand-new draft class — no NFL seasons have elapsed; never grade.
+            if seasons_elapsed == 0:
+                continue
+
+            # No qualifying seasons and no accolades
             if q == 0 and acc_bonus == 0:
+                # Assign Bust if the player has had at least 1 full NFL season to establish
+                # themselves but never appeared in a meaningful game.
+                p['draftGrade'] = {
+                    'tier':           'Bust',
+                    'score':          0.0,
+                    'classRank':      None,
+                    'classSize':      p.get('_classSize', 0),
+                    'yearsEvaluated': 0,
+                    'provisional':    False,
+                }
+                continue
+
+            # Suppress grade for players with only 1 qualifying season and no strong
+            # accolade — comparing 1 season against multi-year careers gives misleading
+            # results (affects 2024 class QBs, RBs, etc.).
+            if q < 2 and not has_strong:
                 continue
 
             sorted_pool = pos_sorted.get(pos_group, [])
@@ -306,7 +342,7 @@ def grade_all_classes(history: dict) -> None:
                 continue
 
             pct = percentile_rank(p, sorted_pool)
-            tier = tier_from_pct(pct, p.get('accolades') or {}, pos_group)
+            tier = tier_from_pct(pct, accolades, pos_group)
             years_evaluated = q
             provisional = years_evaluated < 3
             class_rank = p.get('_classRank')

@@ -98,7 +98,7 @@ export function initGlossaryModal() {
             <div><span class="text-red-300 font-semibold">Bust</span> — below 30th percentile</div>
           </div>
           <p class="text-gray-600 mt-1 text-xs">OL qualifying season: ≥200 offensive snaps or ≥8 games started. Skill position qualifying season: ≥4 games played.</p>
-          <p class="text-gray-600 mt-2 text-xs">Players with no qualifying seasons and no accolades receive no grade.</p>
+          <p class="text-gray-600 mt-2 text-xs">Players with 0 qualifying seasons who have had at least 1 full NFL season receive a <span class="text-red-300">Bust</span> grade. Players with exactly 1 qualifying season and no strong accolade (AP1/AP2/OPOY/DPOY/MVP) receive no grade — too early to evaluate against multi-year careers.</p>
         </section>
 
       </div>
