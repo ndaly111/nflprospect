@@ -33,6 +33,17 @@ _draft_passed = _draft_month_day >= (4, 25)  # draft ends ~April 25 each year
 _last_completed = _current_year if _draft_passed else _current_year - 1
 YEARS = list(range(2020, _last_completed + 1))
 
+# nflverse uses 3-letter codes for some teams; normalize to standard abbreviations
+TEAM_ABBREV_MAP = {
+    'GNB': 'GB',
+    'KAN': 'KC',
+    'LVR': 'LV',
+    'NOR': 'NO',
+    'NWE': 'NE',
+    'SFO': 'SF',
+    'TAM': 'TB',
+}
+
 POS_GROUP_MAP = {
     'QB': 'QB',
     'RB': 'RB', 'FB': 'RB',
@@ -109,7 +120,8 @@ def build_draft_history() -> dict[str, list[dict]]:
             pos = str(row.get('position', '') or '').strip().upper()
             pos_group = POS_GROUP_MAP.get(pos, None)
             school = str(row.get('college', '') or '').strip()
-            team = str(row.get('team', '') or '').strip()
+            team = TEAM_ABBREV_MAP.get(str(row.get('team', '') or '').strip(),
+                                      str(row.get('team', '') or '').strip())
             rnd = _safe(row, 'round', int)
             pick = _safe(row, 'pick', int)
 
