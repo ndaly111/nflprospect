@@ -91,11 +91,12 @@ export function initGlossaryModal() {
 
           <h4 class="text-gray-300 font-medium mb-1 text-xs uppercase tracking-wider">Tier cutoffs (percentile vs. same position)</h4>
           <div class="text-xs text-gray-400 space-y-0.5">
-            <div><span class="text-amber-300 font-semibold">Elite</span> — 90th percentile and above</div>
-            <div><span class="text-emerald-300 font-semibold">Starter</span> — 60th–89th percentile</div>
+            <div><span class="text-amber-300 font-semibold">Elite</span> — 95th+ pct (any), or 90th+ pct with at least one All-Pro / major award</div>
+            <div><span class="text-emerald-300 font-semibold">Starter</span> — 60th–94th percentile</div>
             <div><span class="text-slate-300 font-semibold">Backup</span> — 30th–59th percentile</div>
             <div><span class="text-red-300 font-semibold">Bust</span> — below 30th percentile</div>
           </div>
+          <p class="text-gray-600 mt-1 text-xs">The accolade gate prevents high-volume players without award recognition from reaching Elite — production alone isn't enough at the 90th–94th range.</p>
           <p class="text-gray-600 mt-2 text-xs">Only seasons with 4+ games played count toward the score. Players with no qualifying seasons and no accolades receive no grade.</p>
         </section>
 

@@ -29,13 +29,25 @@ ACCOLADE_BONUS = {
 
 # ---------------------------------------------------------------------------
 # Tier thresholds (percentile within position group)
+# Elite requires EITHER:
+#   - pct >= ELITE_ACCOLADE_PCT  AND at least one quality accolade
+#   - pct >= ELITE_DOMINANCE_PCT (so rare dominant players aren't unfairly excluded)
 # ---------------------------------------------------------------------------
-TIERS = [
-    (90, 'Elite'),
-    (60, 'Starter'),
-    (30, 'Backup'),
-    (0,  'Bust'),
-]
+ELITE_ACCOLADE_PCT   = 90   # need an accolade to be Elite at this threshold
+ELITE_DOMINANCE_PCT  = 95   # statistically so far above peers → Elite regardless
+
+# Accolades that signal "recognized excellence" for the Elite quality gate
+QUALITY_ACCOLADES = frozenset({'allpro1', 'allpro2', 'opoy', 'dpoy', 'oroy', 'droy', 'sbmvp', 'mvp', 'cpoy'})
+
+STARTER_PCT = 60
+BACKUP_PCT  = 30
+
+
+def _has_quality_accolade(accolades) -> bool:
+    """Return True if the player has at least one award-recognition accolade."""
+    if not accolades:
+        return False
+    return any(accolades.get(k) for k in QUALITY_ACCOLADES)
 
 
 def _accolade_bonus(accolades) -> float:
@@ -193,10 +205,15 @@ def grade_all_classes(history: dict) -> None:
         rank_from_bottom = sum(1 for x in sorted_pool if x['_cv'] < cv)
         return round(rank_from_bottom / (n - 1) * 100, 1)
 
-    def tier_from_pct(pct: float) -> str:
-        for threshold, tier_name in TIERS:
-            if pct >= threshold:
-                return tier_name
+    def tier_from_pct(pct: float, accolades: dict) -> str:
+        if pct >= ELITE_DOMINANCE_PCT:
+            return 'Elite'
+        if pct >= ELITE_ACCOLADE_PCT and _has_quality_accolade(accolades):
+            return 'Elite'
+        if pct >= STARTER_PCT:
+            return 'Starter'
+        if pct >= BACKUP_PCT:
+            return 'Backup'
         return 'Bust'
 
     # Step 4: compute class rank within each draft year (by raw _cv desc)
@@ -227,7 +244,7 @@ def grade_all_classes(history: dict) -> None:
                 continue
 
             pct = percentile_rank(p, sorted_pool)
-            tier = tier_from_pct(pct)
+            tier = tier_from_pct(pct, p.get('accolades') or {})
             years_evaluated = q
             provisional = years_evaluated < 3
             class_rank = p.get('_classRank')
