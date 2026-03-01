@@ -108,7 +108,7 @@ def _process_group(prospects, df, stat_cols_map):
             if season is None:
                 continue
             season = int(season)
-            if season <= draft_year:
+            if season < draft_year:
                 continue
             stats = _extract_row_stats(row, stat_cols)
             if stats:
