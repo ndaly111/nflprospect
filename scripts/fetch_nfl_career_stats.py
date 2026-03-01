@@ -12,6 +12,12 @@ from utils import fuzzy_match_player
 
 logger = logging.getLogger(__name__)
 
+# Nickname → legal name mappings for players whose nflverse name differs from
+# the commonly used name in draft records / ESPN / PFR.
+PLAYER_NAME_ALIASES: dict[str, str] = {
+    'Sauce Gardner': 'Ahmad Gardner',
+}
+
 OFFENSE_URL = 'https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_season.csv'
 DEFENSE_URL = 'https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_def_season.csv'
 
@@ -90,14 +96,15 @@ def _process_group(prospects, df, stat_cols_map):
 
     for p in prospects:
         name = p.get('name', '').strip()
+        lookup_name = PLAYER_NAME_ALIASES.get(name, name)
         pos_group = p.get('positionGroup', '')
         draft_year = int(p.get('_draftYear', 0))
         stat_cols = stat_cols_map.get(pos_group, [])
 
-        # Exact match → fuzzy fallback
-        rows = name_index.get(name)
+        # Exact match (using alias if available) → fuzzy fallback
+        rows = name_index.get(lookup_name)
         if rows is None and name_candidates:
-            match = fuzzy_match_player(name, name_candidates, threshold=88)
+            match = fuzzy_match_player(lookup_name, name_candidates, threshold=88)
             if match:
                 rows = name_index.get(match['name'])
         if not rows:
@@ -112,7 +119,7 @@ def _process_group(prospects, df, stat_cols_map):
                 continue
             stats = _extract_row_stats(row, stat_cols)
             if stats:
-                result[name][str(season)] = stats
+                result[name][str(season)] = stats  # store under original (nickname) name
 
     return result
 
