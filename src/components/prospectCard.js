@@ -2,6 +2,7 @@ import { trendArrow, formatDate } from '../utils/format.js'
 import { renderRankingChart, destroyChart } from './rankingChart.js'
 import { renderCollegeStats } from './collegeStats.js'
 import { renderCombinePanel } from './combinePanel.js'
+import { renderNflCareerStats } from './nflCareerStats.js'
 import { getState, setState, subscribe } from '../state.js'
 
 function renderProspectNews(name) {
@@ -120,6 +121,16 @@ function renderSourceRankings(prospect) {
     </div>`
 }
 
+// delta = actualPick - predrraftRank: positive = value (slid), negative = reach (early)
+function pickValueBadge(delta) {
+  if (!Number.isFinite(delta)) return ''
+  if (delta >= 10) return `<span class="text-[10px] font-bold text-emerald-400 bg-emerald-900/40 px-1.5 py-0.5 rounded-full">Value +${delta}</span>`
+  if (delta >= 5)  return `<span class="text-[10px] font-bold text-green-400 bg-green-900/40 px-1.5 py-0.5 rounded-full">+${delta}</span>`
+  if (delta <= -10) return `<span class="text-[10px] font-bold text-red-400 bg-red-900/40 px-1.5 py-0.5 rounded-full">Reach ${delta}</span>`
+  if (delta <= -5)  return `<span class="text-[10px] font-bold text-orange-400 bg-orange-900/40 px-1.5 py-0.5 rounded-full">${delta}</span>`
+  return ''
+}
+
 function findProspectById(id) {
   const { prospects, draftYear, draftHistory } = getState()
   return prospects.find(p => p.id === id) ||
@@ -130,6 +141,9 @@ function renderHistoricalCard(prospect, isExpanded) {
   const posColor = POSITION_COLORS[prospect.positionGroup] || 'bg-gray-800 text-gray-300'
   const isStarred = getState().watchlist.includes(prospect.id)
   const displayRank = prospect.espnRank || prospect.actualPick
+  const histPickBadge = (prospect.espnRank && prospect.actualPick)
+    ? pickValueBadge(prospect.actualPick - prospect.espnRank)
+    : ''
   const rankColor = displayRank <= 5 ? 'text-yellow-400'
     : displayRank <= 32 ? 'text-blue-400'
     : displayRank <= 64 ? 'text-green-400'
@@ -163,6 +177,7 @@ function renderHistoricalCard(prospect, isExpanded) {
     `<div class="flex items-center gap-2 flex-wrap mb-1">`,
     `<span class="text-xs font-semibold px-2 py-0.5 rounded-full ${posColor}">${prospect.position}</span>`,
     `<span class="school-filter-btn text-xs text-gray-400 hover:text-blue-400 transition-colors cursor-pointer truncate" data-school="${prospect.school}">${prospect.school}</span>`,
+    histPickBadge,
     `</div>`,
     `<h2 class="text-base font-bold text-white leading-snug mb-1">${prospect.name}</h2>`,
     `<div class="flex items-center gap-2 flex-wrap">`,
@@ -189,6 +204,7 @@ function renderHistoricalCard(prospect, isExpanded) {
     `<button class="detail-tab flex-1 px-3 py-2 text-xs font-medium border-b-2 border-blue-500 text-blue-400 whitespace-nowrap" data-tab="draft" data-card="${prospect.id}">Draft Info</button>`,
     `<button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors whitespace-nowrap" data-tab="stats" data-card="${prospect.id}">Stats</button>`,
     `<button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors whitespace-nowrap" data-tab="combine" data-card="${prospect.id}">Combine</button>`,
+    `<button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors whitespace-nowrap" data-tab="nfl-career" data-card="${prospect.id}">NFL Career</button>`,
     `</div>`,
     `<div class="p-4">`,
     `<div class="tab-content" data-tab="draft" data-card="${prospect.id}">`,
@@ -205,7 +221,11 @@ function renderHistoricalCard(prospect, isExpanded) {
     `</div>`,
     `<div class="tab-content hidden" data-tab="combine" data-card="${prospect.id}">`,
     renderCombinePanel(prospect.combineData, prospect.positionGroup, null),
-    `</div></div></div></div>`,
+    `</div>`,
+    `<div class="tab-content hidden" data-tab="nfl-career" data-card="${prospect.id}">`,
+    renderNflCareerStats(prospect),
+    `</div>`,
+    `</div></div></div>`,
   ].join('')
 }
 
@@ -285,6 +305,9 @@ export function renderProspectCard(prospect, isExpanded = false) {
   const draftedBadge = prospect.actualPick
     ? '<span class="text-[10px] font-bold text-green-400 bg-green-900/40 px-1.5 py-0.5 rounded-full">✓ DRAFTED</span>'
     : ''
+  const postDraftPickBadge = (prospect.actualPick && prospect.consensusRank)
+    ? pickValueBadge(prospect.actualPick - prospect.consensusRank)
+    : ''
 
   const pickInfoLine = (() => {
     if (prospect.actualPick) {
@@ -317,7 +340,7 @@ export function renderProspectCard(prospect, isExpanded = false) {
               <span class="school-filter-btn text-xs text-gray-400 hover:text-blue-400 transition-colors cursor-pointer truncate"
                     data-school="${prospect.school}" title="Show all ${prospect.school} prospects">${prospect.school}</span>
               ${prospect.classYear ? `<span class="text-xs text-gray-600">${prospect.classYear}</span>` : ''}
-              ${draftedBadge}${moverBadge}
+              ${draftedBadge}${postDraftPickBadge}${moverBadge}
             </div>
             <h2 class="text-base font-bold text-white leading-snug mb-1">${prospect.name}</h2>
             <div class="flex items-center gap-2 flex-wrap">
