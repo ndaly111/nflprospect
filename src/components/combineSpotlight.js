@@ -12,11 +12,15 @@ export function renderCombineSpotlight() {
   const container = document.getElementById('combine-spotlight')
   if (!container) return
 
-  const { prospects } = getState()
-  if (!prospects || prospects.length === 0) return
+  const { prospects, draftYear, draftHistory } = getState()
+  // For historical years use that class; fall back to current prospects
+  const activeClass = (draftYear && draftHistory?.[String(draftYear)])
+    ? draftHistory[String(draftYear)]
+    : prospects
+  if (!activeClass || activeClass.length === 0) return
 
   // Collect prospects with at least one drill time
-  const withDrills = prospects.filter(p => {
+  const withDrills = activeClass.filter(p => {
     const c = p.combineData || {}
     return DRILLS.some(d => c[d.key] != null)
   })

@@ -181,17 +181,25 @@ subscribe(state => {
   }
 }, ['news', 'loading'])
 
-// Combine spotlight and mock draft render once when prospects load
+// Combine spotlight re-renders when prospects load or draft class changes
 subscribe(state => {
   if (!state.loading) {
+    const activeClass = (state.draftYear && state.draftHistory?.[String(state.draftYear)])
+      ? state.draftHistory[String(state.draftYear)]
+      : state.prospects
     renderCombineSpotlight()
     const combineSection = document.getElementById('combine-spotlight-section')
-    const hasAnyDrills = state.prospects.some(p => {
+    const hasAnyDrills = activeClass.some(p => {
       const c = p.combineData || {}
       return c.forty || c.vertical || c.broadJump || c.bench || c.cone
     })
     if (combineSection) combineSection.style.display = hasAnyDrills ? '' : 'none'
+  }
+}, ['prospects', 'draftYear', 'draftHistory', 'loading'])
 
+// Mock draft renders once when prospects load
+subscribe(state => {
+  if (!state.loading) {
     renderMockDraftBoard()
     const mockSection = document.getElementById('mock-draft-section')
     if (mockSection) mockSection.style.display = state.prospects.some(p => p.projectedPick) ? '' : 'none'
