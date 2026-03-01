@@ -26259,7 +26259,7 @@
         "allpro2": 1
       },
       "draftGrade": {
-        "tier": "Bust",
+        "tier": "Starter",
         "score": 13.6,
         "classRank": 142,
         "classSize": 195,
@@ -54980,7 +54980,7 @@
         "probowl": 2
       },
       "draftGrade": {
-        "tier": "Backup",
+        "tier": "Starter",
         "score": 53.8,
         "classRank": 32,
         "classSize": 194,
@@ -58502,7 +58502,7 @@
         "allpro2": 1
       },
       "draftGrade": {
-        "tier": "Backup",
+        "tier": "Starter",
         "score": 34.1,
         "classRank": 69,
         "classSize": 194,
@@ -65861,7 +65861,7 @@
         "probowl": 2
       },
       "draftGrade": {
-        "tier": "Backup",
+        "tier": "Starter",
         "score": 31.2,
         "classRank": 4,
         "classSize": 156,
@@ -67654,7 +67654,7 @@
         "probowl": 1
       },
       "draftGrade": {
-        "tier": "Backup",
+        "tier": "Starter",
         "score": 51.5,
         "classRank": 67,
         "classSize": 156,
@@ -68515,7 +68515,7 @@
         "probowl": 1
       },
       "draftGrade": {
-        "tier": "Backup",
+        "tier": "Starter",
         "score": 47.7,
         "classRank": 77,
         "classSize": 156,
@@ -71923,7 +71923,7 @@
         "allpro1": 1
       },
       "draftGrade": {
-        "tier": "Backup",
+        "tier": "Starter",
         "score": 49.4,
         "classRank": 16,
         "classSize": 156,

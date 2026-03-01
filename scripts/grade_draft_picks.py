@@ -285,6 +285,11 @@ def grade_all_classes(history: dict) -> None:
                 return 'Elite'
         if pct >= STARTER_PCT:
             return 'Starter'
+        # Strong accolade floor: AP1/AP2/OPOY/DPOY/MVP guarantees at least Starter.
+        # Prevents AP2 rookies with only 1 season of stats from showing as Backup
+        # when compared against players with 4-5 full seasons.
+        if any(accolades.get(k) for k in STRONG_ACCOLADES):
+            return 'Starter'
         if pct >= BACKUP_PCT:
             return 'Backup'
         return 'Bust'
