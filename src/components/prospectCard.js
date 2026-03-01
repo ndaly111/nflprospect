@@ -390,7 +390,7 @@ export function renderProspectCard(prospect, isExpanded = false) {
     const posInfo = `#${prospect.positionRank}${prospect.positionTotal ? '<span class="text-gray-600">/' + prospect.positionTotal + '</span>' : ''} ${prospect.positionGroup}`
     const rdInfo = `Rd ${prospect.projectedRound || '?'}${prospect.projectedPickRange ? ' <span class="text-gray-600">(#' + prospect.projectedPickRange[0] + '–' + prospect.projectedPickRange[1] + ')</span>' : ''}`
     const teamInfo = prospect.projectedTeam
-      ? ` &nbsp;·&nbsp; <span class="team-filter-btn text-amber-400 font-semibold hover:text-amber-300 cursor-pointer transition-colors" data-team="${prospect.projectedTeam}">${prospect.projectedPick ? '#' + prospect.projectedPick + ' ' : ''}${prospect.projectedTeam}</span>`
+      ? ` &nbsp;·&nbsp; <span class="team-filter-btn text-amber-400 font-semibold hover:text-amber-300 cursor-pointer transition-colors" data-team="${prospect.projectedTeam}">${prospect.projectedPick ? '#' + prospect.projectedPick + ' ' : ''}${prospect.projectedTeam.split(' ').pop()}</span>`
       : ''
     return `<div>${rdInfo} &nbsp;·&nbsp; ${posInfo}${teamInfo}</div>`
   })()
