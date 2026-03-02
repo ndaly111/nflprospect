@@ -19,9 +19,12 @@ const state = {
   expandedCardId: null,
   loading: true,
   error: null,
-  activePage: 'prospects',  // 'prospects' | 'analytics'
-  analyticsTab: 'year',     // 'year' | 'round' | 'position'
+  activePage: 'prospects',      // 'prospects' | 'analytics'
+  analyticsTab: 'year',         // 'year' | 'round' | 'position' | 'players'
   analyticsPos: 'QB',
+  analyticsPlayerPos:   'ALL',  // filter for players tab
+  analyticsPlayerYear:  'ALL',
+  analyticsPlayerRound: 'ALL',
 }
 
 // Subscribers can optionally declare which keys they care about.

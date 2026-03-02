@@ -202,12 +202,12 @@ subscribe(() => {
   updateNavTabs()
 }, ['activePage'])
 
-// Analytics page re-renders on data load or tab/pos change
+// Analytics page re-renders on data load or any analytics filter change
 subscribe(state => {
   if (!state.loading && state.activePage === 'analytics') {
     renderDraftAnalytics()
   }
-}, ['draftHistory', 'loading', 'activePage', 'analyticsTab', 'analyticsPos'])
+}, ['draftHistory', 'loading', 'activePage', 'analyticsTab', 'analyticsPos', 'analyticsPlayerPos', 'analyticsPlayerYear', 'analyticsPlayerRound'])
 
 // Grid re-renders when data/filters/sort/viewMode/watchlist/draftYear change — NOT on card expand
 subscribe(state => {
