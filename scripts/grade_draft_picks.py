@@ -82,6 +82,20 @@ def _accolade_bonus(accolades) -> float:
 MIN_OL_SNAPS  = 200  # snaps per season to count as qualifying for OL
 MIN_OL_STARTS = 8    # games started per season (alternative qualifying threshold for OL)
 
+# Minimum total career CV (unfiltered — all seasons, no games-played gate) required
+# to be graded above Bust after 3+ seasons elapsed. Prevents special-teams accolades
+# or one-off awards from masking near-zero skill-position production.
+MIN_CAREER_CV: dict[str, float] = {
+    'QB':   5000,
+    'RB':    500,
+    'WR':    500,
+    'TE':    300,
+    'EDGE':  150,
+    'DL':     80,
+    'LB':    120,
+    'DB':    150,
+}
+
 # OL Elite gate: must have >= OL_ELITE_AP_TOTAL AP selections (1st+2nd combined)
 # OR >= OL_ELITE_PROBOWL Pro Bowl selections
 OL_ELITE_AP_TOTAL = 2
@@ -114,22 +128,25 @@ def count_qualifying_seasons(prospect, min_games: int = 4) -> int:
     return count
 
 
-def compute_career_value(prospect) -> float:
+def compute_career_value(prospect, min_games: int = 4) -> float:
     """
     Compute raw career value from NFL stats (career totals across qualifying seasons)
     plus accolade bonuses.
+
+    min_games: seasons with fewer games than this are excluded. Pass 0 to include
+    all seasons regardless of games played (used for the career production floor).
     """
     pos_group = prospect.get('positionGroup', '')
     nfl_stats = prospect.get('nflStats') or {}
     accolades = prospect.get('accolades') or {}
 
-    # Accumulate totals across qualifying seasons (games >= 4)
+    # Accumulate totals across qualifying seasons
     totals: dict[str, float] = {}
     for season_stats in nfl_stats.values():
         if not isinstance(season_stats, dict):
             continue
         games = season_stats.get('games', 0) or 0
-        if games < 4:
+        if games < min_games:
             continue
         for k, v in season_stats.items():
             if k == 'games' or v is None:
@@ -231,8 +248,9 @@ def grade_all_classes(history: dict) -> None:
     # Step 1: compute _cv (career value) and _q (qualifying seasons) for all prospects
     for year_str, prospects in history.items():
         for p in prospects:
-            p['_cv'] = compute_career_value(p)
-            p['_q']  = count_qualifying_seasons(p)
+            p['_cv']      = compute_career_value(p)
+            p['_raw_cv']  = compute_career_value(p, min_games=0)  # unfiltered — all seasons
+            p['_q']       = count_qualifying_seasons(p)
             p['_acc_bonus'] = _accolade_bonus(p.get('accolades') or {})
 
     # Step 2: build position-group pools for percentile ranking.
@@ -358,6 +376,21 @@ def grade_all_classes(history: dict) -> None:
                     }
                 continue
 
+            # Minimum career production gate: after 3+ seasons, a player whose total
+            # NFL output (across all seasons, no games filter) falls below the position
+            # floor is a Bust — accolades (e.g. special-teams All-Pro) cannot override.
+            min_cv = MIN_CAREER_CV.get(pos_group, 0)
+            if seasons_elapsed >= 3 and p['_raw_cv'] < min_cv:
+                p['draftGrade'] = {
+                    'tier':           'Bust',
+                    'score':          0.0,
+                    'classRank':      p.get('_classRank'),
+                    'classSize':      p.get('_classSize', 0),
+                    'yearsEvaluated': q,
+                    'provisional':    False,
+                }
+                continue
+
             sorted_pool = pos_sorted.get(pos_group, [])
             if not sorted_pool:
                 continue
@@ -381,7 +414,7 @@ def grade_all_classes(history: dict) -> None:
     # Step 6: clean up all temp keys in a separate pass
     for prospects in history.values():
         for p in prospects:
-            for k in ('_cv', '_q', '_acc_bonus', '_classRank', '_classSize'):
+            for k in ('_cv', '_raw_cv', '_q', '_acc_bonus', '_classRank', '_classSize'):
                 p.pop(k, None)
 
     # Log tier distribution
