@@ -402,7 +402,16 @@ def grade_all_classes(history: dict) -> None:
             # AP1 = best at position in the NFL that year → Elite, provided the player
             # has at least 2 qualifying seasons. Single-season AP1s stay in the normal
             # percentile path until they prove it isn't a one-year anomaly.
+            pb = accolades.get('probowl') or 0
             if (accolades.get('allpro1') or 0) >= 1 and q >= 2:
+                tier = 'Elite'
+            # Multiple Pro Bowls + production confirms sustained elite-level play.
+            #   3+ Pro Bowls: strong signal on its own → Elite at 75th pct
+            #   2  Pro Bowls: meaningful but needs higher production bar → Elite at 82nd pct
+            # Both require 2+ qualifying seasons to guard against one-year anomalies.
+            elif pb >= 3 and pct >= 75 and q >= 2:
+                tier = 'Elite'
+            elif pb >= 2 and pct >= 82 and q >= 2:
                 tier = 'Elite'
             else:
                 tier = tier_from_pct(pct, accolades, pos_group)
