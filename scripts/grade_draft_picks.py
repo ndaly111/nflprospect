@@ -396,7 +396,14 @@ def grade_all_classes(history: dict) -> None:
                 continue
 
             pct = percentile_rank(p, sorted_pool)
-            tier = tier_from_pct(pct, accolades, pos_group)
+
+            # AP1 = best at position in the NFL that year → Elite, provided the player
+            # has at least 2 qualifying seasons. Single-season AP1s stay in the normal
+            # percentile path until they prove it isn't a one-year anomaly.
+            if (accolades.get('allpro1') or 0) >= 1 and q >= 2:
+                tier = 'Elite'
+            else:
+                tier = tier_from_pct(pct, accolades, pos_group)
             years_evaluated = q
             provisional = years_evaluated < 3
             class_rank = p.get('_classRank')
