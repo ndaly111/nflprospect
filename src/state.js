@@ -19,6 +19,9 @@ const state = {
   expandedCardId: null,
   loading: true,
   error: null,
+  activePage: 'prospects',  // 'prospects' | 'analytics'
+  analyticsTab: 'year',     // 'year' | 'round' | 'position'
+  analyticsPos: 'QB',
 }
 
 // Subscribers can optionally declare which keys they care about.

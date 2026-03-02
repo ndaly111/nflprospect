@@ -7,6 +7,7 @@ import { renderCombinePanel } from './components/combinePanel.js'
 import { renderCombineSpotlight } from './components/combineSpotlight.js'
 import { renderMockDraftBoard } from './components/mockDraftBoard.js'
 import { initGlossaryModal } from './components/glossaryModal.js'
+import { renderDraftAnalytics } from './components/draftAnalytics.js'
 import { timeAgo } from './utils/format.js'
 
 const BASE = import.meta.env.BASE_URL
@@ -27,45 +28,81 @@ function renderApp() {
               <p class="text-xs text-gray-400" id="header-meta">Loading…</p>
             </div>
           </div>
+          <nav class="flex items-center gap-1">
+            <button id="nav-prospects" class="nav-tab px-4 py-1.5 rounded-lg text-sm font-medium transition-colors bg-blue-600 text-white">
+              Prospects
+            </button>
+            <button id="nav-analytics" class="nav-tab px-4 py-1.5 rounded-lg text-sm font-medium transition-colors text-gray-400 hover:text-gray-200 hover:bg-gray-800">
+              Draft Results
+            </button>
+          </nav>
           <div id="source-status" class="hidden sm:flex items-center gap-2 flex-wrap text-xs"></div>
         </div>
       </header>
 
-      <div class="bg-gray-900 border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 py-3" id="filter-bar"></div>
+      <!-- Prospects page -->
+      <div id="page-prospects">
+        <div class="bg-gray-900 border-b border-gray-800">
+          <div class="max-w-7xl mx-auto px-4 py-3" id="filter-bar"></div>
+        </div>
+
+        <main class="max-w-7xl mx-auto px-4 py-6">
+          <div id="error-banner" class="hidden mb-4 p-3 bg-red-900 border border-red-700 rounded-lg text-red-200 text-sm"></div>
+          <div id="result-count" class="text-xs text-gray-500 mb-3"></div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="prospect-grid"></div>
+        </main>
+
+        <section class="max-w-7xl mx-auto px-4 pb-6" id="mock-draft-section" style="display:none">
+          <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+            Mock Draft Board
+            <span class="text-xs font-normal text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">Tankathon · Click to view prospect</span>
+          </h2>
+          <div class="bg-gray-800 border border-gray-700 rounded-xl p-4" id="mock-draft-board"></div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 pb-6" id="combine-spotlight-section" style="display:none">
+          <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+            Combine Spotlight
+            <span class="text-xs font-normal text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">2026 NFL Combine</span>
+          </h2>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3" id="combine-spotlight"></div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 pb-10">
+          <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+            Draft News <span class="text-xs font-normal text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">ESPN</span>
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="news-panel">
+            <div class="col-span-full text-gray-600 text-sm">Loading news…</div>
+          </div>
+        </section>
       </div>
 
-      <main class="max-w-7xl mx-auto px-4 py-6">
-        <div id="error-banner" class="hidden mb-4 p-3 bg-red-900 border border-red-700 rounded-lg text-red-200 text-sm"></div>
-        <div id="result-count" class="text-xs text-gray-500 mb-3"></div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="prospect-grid"></div>
-      </main>
-
-      <section class="max-w-7xl mx-auto px-4 pb-6" id="mock-draft-section" style="display:none">
-        <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-          Mock Draft Board
-          <span class="text-xs font-normal text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">Tankathon · Click to view prospect</span>
-        </h2>
-        <div class="bg-gray-800 border border-gray-700 rounded-xl p-4" id="mock-draft-board"></div>
-      </section>
-
-      <section class="max-w-7xl mx-auto px-4 pb-6" id="combine-spotlight-section" style="display:none">
-        <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-          Combine Spotlight
-          <span class="text-xs font-normal text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">2026 NFL Combine</span>
-        </h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3" id="combine-spotlight"></div>
-      </section>
-
-      <section class="max-w-7xl mx-auto px-4 pb-10">
-        <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-          Draft News <span class="text-xs font-normal text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">ESPN</span>
-        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="news-panel">
-          <div class="col-span-full text-gray-600 text-sm">Loading news…</div>
-        </div>
-      </section>
+      <!-- Analytics page -->
+      <div id="page-analytics" style="display:none">
+        <main class="max-w-7xl mx-auto px-4 py-8">
+          <div id="analytics-page"></div>
+        </main>
+      </div>
     </div>`
+}
+
+function updateNavTabs() {
+  const { activePage } = getState()
+  document.getElementById('nav-prospects')?.classList.toggle('bg-blue-600',  activePage === 'prospects')
+  document.getElementById('nav-prospects')?.classList.toggle('text-white',   activePage === 'prospects')
+  document.getElementById('nav-prospects')?.classList.toggle('text-gray-400', activePage !== 'prospects')
+  document.getElementById('nav-analytics')?.classList.toggle('bg-blue-600',  activePage === 'analytics')
+  document.getElementById('nav-analytics')?.classList.toggle('text-white',   activePage === 'analytics')
+  document.getElementById('nav-analytics')?.classList.toggle('text-gray-400', activePage !== 'analytics')
+
+  document.getElementById('page-prospects').style.display = activePage === 'prospects' ? '' : 'none'
+  document.getElementById('page-analytics').style.display = activePage === 'analytics' ? '' : 'none'
+}
+
+function bindNavTabs() {
+  document.getElementById('nav-prospects')?.addEventListener('click', () => setState({ activePage: 'prospects' }))
+  document.getElementById('nav-analytics')?.addEventListener('click', () => setState({ activePage: 'analytics' }))
 }
 
 function updateHeader() {
@@ -99,15 +136,6 @@ function updateHeader() {
   }
 }
 
-function updateResultCount() {
-  const el = document.getElementById('result-count')
-  if (!el) return
-  const { prospects, filters, sort } = getState()
-  const { applyFilters } = window.__filters || {}
-  // Just show total for now; filter count updated in grid render
-  el.textContent = ''
-}
-
 async function loadData() {
   setState({ loading: true, error: null })
 
@@ -136,7 +164,6 @@ async function loadData() {
       const match = prospects.find(p => p.id === deepId)
       if (match) {
         setState({ expandedCardId: deepId })
-        // Scroll to card after grid renders
         setTimeout(() => {
           const el = document.querySelector(`.prospect-card[data-id="${deepId}"]`)
           if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' })
@@ -159,6 +186,7 @@ renderApp()
 initGlossaryModal()
 renderSkeleton()
 renderFilterBar()
+bindNavTabs()
 
 // Load watchlist from localStorage
 const savedWatchlist = JSON.parse(localStorage.getItem('nfl-watchlist') || '[]')
@@ -168,6 +196,18 @@ if (savedWatchlist.length) setState({ watchlist: savedWatchlist })
 subscribe(state => {
   localStorage.setItem('nfl-watchlist', JSON.stringify(state.watchlist))
 }, ['watchlist'])
+
+// Page switching
+subscribe(() => {
+  updateNavTabs()
+}, ['activePage'])
+
+// Analytics page re-renders on data load or tab/pos change
+subscribe(state => {
+  if (!state.loading && state.activePage === 'analytics') {
+    renderDraftAnalytics()
+  }
+}, ['draftHistory', 'loading', 'activePage', 'analyticsTab', 'analyticsPos'])
 
 // Grid re-renders when data/filters/sort/viewMode/watchlist/draftYear change — NOT on card expand
 subscribe(state => {
