@@ -155,9 +155,20 @@ def _fetch_allpro_year(year: int) -> dict[str, dict]:
         return {}
 
     soup = BeautifulSoup(html, 'lxml')
-    result: dict[str, dict] = defaultdict(lambda: {'allpro1': 0, 'allpro2': 0})
+    result: dict[str, dict] = defaultdict(lambda: {
+        'allpro1': 0, 'allpro2': 0, 'allpro1_st': 0, 'allpro2_st': 0,
+    })
+
+    def _is_special_teams_table(table) -> bool:
+        """Return True if the first row of the table is a Special Teams section header."""
+        first_row = table.find('tr')
+        if first_row:
+            return 'special' in first_row.get_text(strip=True).lower()
+        return False
 
     for table in soup.find_all('table', class_='wikitable'):
+        is_st = _is_special_teams_table(table)
+
         # Find the header row containing 'First team' (may not be row 0 — row 0 is
         # often a spanning section title like 'Offense' / 'Defense')
         header_row_idx = None
@@ -177,10 +188,11 @@ def _fetch_allpro_year(year: int) -> dict[str, dict]:
             cells = row.find_all(['td', 'th'])
             if len(cells) <= max(first_idx, second_idx):
                 continue
-            for col_idx, accolade_key in [
+            for col_idx, base_key in [
                 (first_idx,  'allpro1'),
                 (second_idx, 'allpro2'),
             ]:
+                accolade_key = f'{base_key}_st' if is_st else base_key
                 cell_text = cells[col_idx].get_text(strip=True)
                 # Each entry: "Player Name,Team(AP, PFWA, ...)" or "Player Name,Team(AP-2)"
                 entries = re.findall(r'([^,\n]+),([^(\n]*)\(([^)\n]+)\)', cell_text)
@@ -189,13 +201,16 @@ def _fetch_allpro_year(year: int) -> dict[str, dict]:
                     if not player_name or len(player_name) < 3:
                         continue
                     sel_list = [s.strip() for s in selectors_str.split(',')]
-                    if accolade_key == 'allpro1' and 'AP' in sel_list:
-                        result[player_name]['allpro1'] += 1
-                    elif accolade_key == 'allpro2' and 'AP-2' in sel_list:
-                        result[player_name]['allpro2'] += 1
+                    if base_key == 'allpro1' and 'AP' in sel_list:
+                        result[player_name][accolade_key] += 1
+                    elif base_key == 'allpro2' and 'AP-2' in sel_list:
+                        result[player_name][accolade_key] += 1
 
-    # Drop entries where neither counter advanced
-    return {k: v for k, v in result.items() if v['allpro1'] or v['allpro2']}
+    # Drop entries where no counter advanced
+    return {
+        k: v for k, v in result.items()
+        if v['allpro1'] or v['allpro2'] or v['allpro1_st'] or v['allpro2_st']
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -255,8 +270,8 @@ def fetch_nfl_accolades(prospects: list[dict]) -> dict[str, dict]:
                 if m:
                     target = m['name']
             if target:
-                result[target]['allpro1'] = result[target].get('allpro1', 0) + counts['allpro1']
-                result[target]['allpro2'] = result[target].get('allpro2', 0) + counts['allpro2']
+                for key in ('allpro1', 'allpro2', 'allpro1_st', 'allpro2_st'):
+                    result[target][key] = result[target].get(key, 0) + counts.get(key, 0)
 
     # ---- Wikipedia Pro Bowl (count selections per player) ----
     logger.info(f'Fetching Pro Bowl pages for seasons: {seasons_to_fetch}')

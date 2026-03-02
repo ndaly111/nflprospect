@@ -22,15 +22,17 @@ CURRENT_NFL_SEASON: int = _now_utc.year - 1 if _now_utc.month < 8 else _now_utc.
 # Accolade bonuses
 # ---------------------------------------------------------------------------
 ACCOLADE_BONUS = {
-    'allpro1': 100,
-    'allpro2': 50,
-    'opoy':    80,
-    'dpoy':    80,
-    'mvp':     150,
-    'oroy':    40,
-    'droy':    40,
-    'cpoy':    30,
-    'sbmvp':   80,
+    'allpro1':    100,
+    'allpro2':     50,
+    'allpro1_st':  60,  # special-teams AP1 — meaningful but lower than skill-pos
+    'allpro2_st':  30,  # special-teams AP2
+    'opoy':        80,
+    'dpoy':        80,
+    'mvp':        150,
+    'oroy':        40,
+    'droy':        40,
+    'cpoy':        30,
+    'sbmvp':       80,
 }
 
 # ---------------------------------------------------------------------------
@@ -47,7 +49,7 @@ ACCOLADE_BONUS = {
 ELITE_STRONG_PCT = 88   # strong accolade + 88th pct → Elite
 ELITE_WEAK_PCT   = 95   # weak (rookie) accolade alone needs near-top pct → Elite
 
-STRONG_ACCOLADES = frozenset({'allpro1', 'allpro2', 'opoy', 'dpoy', 'sbmvp', 'mvp', 'cpoy'})
+STRONG_ACCOLADES = frozenset({'allpro1', 'allpro2', 'allpro1_st', 'allpro2_st', 'opoy', 'dpoy', 'sbmvp', 'mvp', 'cpoy'})
 WEAK_ACCOLADES   = frozenset({'oroy', 'droy'})
 
 # Keep QUALITY_ACCOLADES for the _has_quality_accolade helper (union of both sets)
@@ -72,7 +74,7 @@ def _accolade_bonus(accolades) -> float:
     for key, bonus in ACCOLADE_BONUS.items():
         val = accolades.get(key, 0) or 0
         # allpro1/allpro2 are counts; others are boolean-ish (0/1)
-        if key in ('allpro1', 'allpro2'):
+        if key in ('allpro1', 'allpro2', 'allpro1_st', 'allpro2_st'):
             total += int(val) * bonus
         elif val:
             total += bonus
