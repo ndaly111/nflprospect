@@ -20,7 +20,8 @@ from fetch_rankings import fetch_espn
 logger = logging.getLogger(__name__)
 
 DRAFT_PICKS_URL = 'https://github.com/nflverse/nflverse-data/releases/download/draft_picks/draft_picks.csv'
-COMBINE_URL     = 'https://github.com/nflverse/nflverse-data/releases/download/combine/combine.csv'
+# nflverse moved combine data to the "test" release (covers 2000-2022); gracefully handled for later years
+COMBINE_URL     = 'https://github.com/nflverse/nflverse-data/releases/download/test/combines.csv'
 
 # NFL Draft is held in late April; include the current year once the draft has passed.
 # This auto-advances each year without manual code changes.
@@ -29,9 +30,9 @@ _current_year = _now.year
 _draft_month_day = (_now.month, _now.day)
 _draft_passed = _draft_month_day >= (4, 25)  # draft ends ~April 25 each year
 
-# History starts 2020; include this year only after the draft
+# History starts 2012; include current year only after the draft
 _last_completed = _current_year if _draft_passed else _current_year - 1
-YEARS = list(range(2020, _last_completed + 1))
+YEARS = list(range(2012, _last_completed + 1))
 
 # nflverse uses 3-letter codes for some teams; normalize to standard abbreviations
 TEAM_ABBREV_MAP = {
@@ -85,8 +86,12 @@ def build_draft_history() -> dict[str, list[dict]]:
     logger.info('Fetching nflverse draft_picks.csv ...')
     picks_df = pd.read_csv(DRAFT_PICKS_URL)
 
-    logger.info('Fetching nflverse combine.csv ...')
-    combine_df = pd.read_csv(COMBINE_URL)
+    logger.info('Fetching nflverse combines.csv ...')
+    try:
+        combine_df = pd.read_csv(COMBINE_URL)
+    except Exception as e:
+        logger.warning(f'Combine data fetch failed ({e}); proceeding without combine measurements')
+        combine_df = pd.DataFrame()
 
     # Use 'season' for combine (draft_year is NaN for current-year class before the draft)
     yr_col = 'season'
@@ -96,7 +101,7 @@ def build_draft_history() -> dict[str, list[dict]]:
 
     for year in YEARS:
         picks = picks_df[picks_df[picks_yr_col] == year].copy()
-        combine = combine_df[combine_df[yr_col] == year].copy()
+        combine = combine_df[combine_df[yr_col] == year].copy() if not combine_df.empty else pd.DataFrame()
 
         if picks.empty:
             logger.warning(f'{year}: no draft picks found')

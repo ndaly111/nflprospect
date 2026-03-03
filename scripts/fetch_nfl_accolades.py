@@ -29,6 +29,42 @@ DELAY   = 1.2  # seconds between Wikipedia requests
 # ---------------------------------------------------------------------------
 ANNUAL_AWARDS = {
     # (season, award_key): player_name
+    # --- 2012 draft class ---
+    (2012, 'oroy'): 'Robert Griffin III',
+    (2012, 'droy'): 'Luke Kuechly',
+    (2013, 'dpoy'): 'Luke Kuechly',
+    # --- 2013 draft class ---
+    (2013, 'oroy'): 'Eddie Lacy',
+    # --- 2014 draft class ---
+    (2014, 'oroy'): 'Odell Beckham Jr.',
+    (2016, 'dpoy'): 'Khalil Mack',
+    (2017, 'dpoy'): 'Aaron Donald',
+    (2018, 'dpoy'): 'Aaron Donald',
+    (2020, 'dpoy'): 'Aaron Donald',
+    # --- 2015 draft class ---
+    (2015, 'oroy'): 'Todd Gurley',
+    (2017, 'opoy'): 'Todd Gurley',
+    # --- 2016 draft class ---
+    (2016, 'oroy'): 'Dak Prescott',
+    (2019, 'opoy'): 'Michael Thomas',
+    # --- 2017 draft class ---
+    (2017, 'oroy'): 'Kareem Hunt',
+    (2017, 'droy'): 'Marshon Lattimore',
+    (2018, 'mvp'):  'Patrick Mahomes',
+    (2022, 'mvp'):  'Patrick Mahomes',
+    (2019, 'sbmvp'): 'Patrick Mahomes',
+    (2022, 'sbmvp'): 'Patrick Mahomes',
+    (2023, 'sbmvp'): 'Patrick Mahomes',
+    # --- 2018 draft class ---
+    (2018, 'oroy'): 'Saquon Barkley',
+    (2018, 'droy'): 'Darius Leonard',
+    (2019, 'mvp'):  'Lamar Jackson',
+    (2023, 'mvp'):  'Lamar Jackson',
+    (2019, 'cpoy'): 'Lamar Jackson',
+    # --- 2019 draft class ---
+    (2019, 'oroy'): 'Kyler Murray',
+    (2019, 'droy'): 'Nick Bosa',
+    # --- 2020–2024 draft classes ---
     (2020, 'oroy'): 'Justin Herbert',
     (2020, 'droy'): 'Chase Young',
     (2021, 'oroy'): "Ja'Marr Chase",
