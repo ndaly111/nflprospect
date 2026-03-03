@@ -349,25 +349,30 @@ def grade_all_classes(history: dict) -> None:
             if seasons_elapsed == 0:
                 continue
 
-            # No qualifying seasons and no accolades
+            # No qualifying seasons and no accolades.
+            # QBs can sit for 2-3 years behind a veteran (e.g. Jordan Love behind
+            # Rodgers) — don't declare a QB Bust until 3 seasons have elapsed.
+            # Non-QBs: 1 season without a meaningful appearance → Bust.
             if q == 0 and acc_bonus == 0:
-                # Assign Bust if the player has had at least 1 full NFL season to establish
-                # themselves but never appeared in a meaningful game.
-                p['draftGrade'] = {
-                    'tier':           'Bust',
-                    'score':          0.0,
-                    'classRank':      None,
-                    'classSize':      p.get('_classSize', 0),
-                    'yearsEvaluated': 0,
-                    'provisional':    False,
-                }
+                qb_not_ready = pos_group == 'QB' and seasons_elapsed < 3
+                if not qb_not_ready:
+                    p['draftGrade'] = {
+                        'tier':           'Bust',
+                        'score':          0.0,
+                        'classRank':      None,
+                        'classSize':      p.get('_classSize', 0),
+                        'yearsEvaluated': 0,
+                        'provisional':    False,
+                    }
                 continue
 
             # Players with only 1 qualifying season and no strong accolade:
-            #   - If enough time has passed (2+ seasons elapsed), they've had their chance → Bust
-            #   - Otherwise suppress — too early to grade (protects 2024 rookies)
+            #   - Non-QB: 2+ seasons elapsed → Bust
+            #   - QB: 3+ seasons elapsed → Bust (more development time needed)
+            #   - Otherwise suppress — too early to grade
             if q < 2 and not has_strong:
-                if seasons_elapsed >= 2:
+                bust_at = 3 if pos_group == 'QB' else 2
+                if seasons_elapsed >= bust_at:
                     p['draftGrade'] = {
                         'tier':           'Bust',
                         'score':          0.0,
