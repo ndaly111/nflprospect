@@ -29,9 +29,9 @@ _current_year = _now.year
 _draft_month_day = (_now.month, _now.day)
 _draft_passed = _draft_month_day >= (4, 25)  # draft ends ~April 25 each year
 
-# History starts 2020; include this year only after the draft
+# History starts 2012; include this year only after the draft
 _last_completed = _current_year if _draft_passed else _current_year - 1
-YEARS = list(range(2020, _last_completed + 1))
+YEARS = list(range(2012, _last_completed + 1))
 
 # nflverse uses 3-letter codes for some teams; normalize to standard abbreviations
 TEAM_ABBREV_MAP = {
@@ -42,6 +42,10 @@ TEAM_ABBREV_MAP = {
     'NWE': 'NE',
     'SFO': 'SF',
     'TAM': 'TB',
+    # Pre-2020 team abbreviations
+    'OAK': 'OAK',   # Oakland Raiders (before 2020 move to LV)
+    'SDG': 'SD',     # San Diego Chargers (before 2017 move to LA)
+    'STL': 'STL',    # St. Louis Rams (before 2016 move to LA)
 }
 
 POS_GROUP_MAP = {

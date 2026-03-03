@@ -479,6 +479,14 @@ def main():
 
     # Spot-check notable players
     spot_check = [
+        ('2012', 'Andrew Luck', None),
+        ('2012', 'Russell Wilson', 'Elite'),
+        ('2012', 'Luke Kuechly', 'Elite'),
+        ('2014', 'Aaron Donald', 'Elite'),
+        ('2014', 'Odell Beckham Jr.', None),
+        ('2017', 'Patrick Mahomes', 'Elite'),
+        ('2018', 'Lamar Jackson', 'Elite'),
+        ('2019', 'Nick Bosa', 'Elite'),
         ('2020', 'Joe Burrow', 'Elite'),
         ('2020', 'Justin Jefferson', 'Elite'),
         ('2021', 'Micah Parsons', 'Elite'),

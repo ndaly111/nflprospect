@@ -25,23 +25,76 @@ DELAY   = 1.2  # seconds between Wikipedia requests
 
 # ---------------------------------------------------------------------------
 # Static award winners (one per award per season) — only players from the
-# 2020-2024 draft classes we track; uses exact names as stored in nflverse.
+# 2012-2024 draft classes we track; uses exact names as stored in nflverse.
 # ---------------------------------------------------------------------------
 ANNUAL_AWARDS = {
     # (season, award_key): player_name
+    # --- 2012 season ---
+    (2012, 'oroy'): 'Robert Griffin III',
+    (2012, 'droy'): 'Luke Kuechly',
+    # --- 2013 season ---
+    (2013, 'oroy'): 'Eddie Lacy',
+    (2013, 'droy'): 'Sheldon Richardson',
+    (2013, 'dpoy'): 'Luke Kuechly',
+    # --- 2014 season ---
+    (2014, 'oroy'): 'Odell Beckham Jr.',
+    (2014, 'droy'): 'Aaron Donald',
+    # --- 2015 season ---
+    (2015, 'oroy'): 'Todd Gurley',
+    (2015, 'droy'): 'Marcus Peters',
+    # --- 2016 season ---
+    (2016, 'oroy'): 'Dak Prescott',
+    (2016, 'droy'): 'Joey Bosa',
+    (2016, 'dpoy'): 'Khalil Mack',
+    # --- 2017 season ---
+    (2017, 'oroy'): 'Alvin Kamara',
+    (2017, 'droy'): 'Marshon Lattimore',
+    (2017, 'opoy'): 'Todd Gurley',
+    (2017, 'dpoy'): 'Aaron Donald',
+    (2017, 'cpoy'): 'Keenan Allen',
+    (2017, 'sbmvp'): 'Nick Foles',
+    # --- 2018 season ---
+    (2018, 'oroy'): 'Saquon Barkley',
+    (2018, 'droy'): 'Darius Leonard',
+    (2018, 'opoy'): 'Patrick Mahomes',
+    (2018, 'dpoy'): 'Aaron Donald',
+    (2018, 'mvp'): 'Patrick Mahomes',
+    (2018, 'cpoy'): 'Andrew Luck',
+    # --- 2019 season ---
+    (2019, 'oroy'): 'Kyler Murray',
+    (2019, 'droy'): 'Nick Bosa',
+    (2019, 'opoy'): 'Michael Thomas',
+    (2019, 'dpoy'): 'Stephon Gilmore',
+    (2019, 'mvp'): 'Lamar Jackson',
+    (2019, 'cpoy'): 'Ryan Tannehill',
+    (2019, 'sbmvp'): 'Patrick Mahomes',
+    # --- 2020 season ---
     (2020, 'oroy'): 'Justin Herbert',
     (2020, 'droy'): 'Chase Young',
+    (2020, 'opoy'): 'Derrick Henry',
+    (2020, 'dpoy'): 'Aaron Donald',
+    # --- 2021 season ---
     (2021, 'oroy'): "Ja'Marr Chase",
     (2021, 'droy'): 'Micah Parsons',
     (2021, 'cpoy'): 'Joe Burrow',
+    (2021, 'opoy'): 'Jonathan Taylor',
+    (2021, 'dpoy'): 'T.J. Watt',
+    # --- 2022 season ---
     (2022, 'oroy'): 'Garrett Wilson',
     (2022, 'droy'): 'Sauce Gardner',
     (2022, 'opoy'): 'Justin Jefferson',
+    (2022, 'dpoy'): 'Nick Bosa',
+    (2022, 'mvp'): 'Patrick Mahomes',
+    # --- 2023 season ---
     (2023, 'oroy'): 'C.J. Stroud',
     (2023, 'droy'): 'Will Anderson',
+    (2023, 'dpoy'): 'Myles Garrett',
+    (2023, 'mvp'): 'Lamar Jackson',
+    # --- 2024 season ---
     (2024, 'oroy'): 'Jayden Daniels',
     (2024, 'droy'): 'Jared Verse',
     (2024, 'opoy'): "Ja'Marr Chase",
+    (2024, 'mvp'): 'Lamar Jackson',
 }
 
 # Invert: player_name → {award_key: True}
@@ -242,7 +295,7 @@ def fetch_nfl_accolades(prospects: list[dict]) -> dict[str, dict]:
             for k, v in awards.items():
                 result[target][k] = v
 
-    # ---- Wikipedia All-Pro (2020-2024 seasons) ----
+    # ---- Wikipedia All-Pro (2012+ seasons) ----
     all_seasons = sorted({
         int(yr) for yr in
         [p.get('_draftYear', 0) for p in prospects]

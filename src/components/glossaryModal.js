@@ -12,7 +12,7 @@ export function initGlossaryModal() {
 
         <section>
           <h3 class="text-white font-semibold mb-1">Career Grade</h3>
-          <p class="text-gray-400 mb-2">How well the player performed in the NFL, based on career stats relative to other players at the same position drafted 2020–2025.</p>
+          <p class="text-gray-400 mb-2">How well the player performed in the NFL, based on career stats relative to other players at the same position drafted 2012–2025.</p>
           <ul class="space-y-1">
             <li><span class="text-amber-300 font-bold">Elite</span> — Franchise player, perennial starter, All-Pro caliber (top ~10%)</li>
             <li><span class="text-emerald-300 font-bold">Starter</span> — Solid NFL starter, dependable contributor (~30%)</li>
@@ -64,7 +64,7 @@ export function initGlossaryModal() {
 
         <section class="border-t border-gray-700/60 pt-4">
           <h3 class="text-white font-semibold mb-2">Methodology</h3>
-          <p class="text-gray-400 mb-3">Career grades are computed from nflverse career stats using a position-specific scoring formula, then compared against all other players at that position drafted 2020–2025.</p>
+          <p class="text-gray-400 mb-3">Career grades are computed from nflverse career stats using a position-specific scoring formula, then compared against all other players at that position drafted 2012–2025.</p>
 
           <h4 class="text-gray-300 font-medium mb-1 text-xs uppercase tracking-wider">Scoring formulas</h4>
           <div class="space-y-1 text-xs font-mono text-gray-400 bg-gray-800/60 rounded-lg p-3 mb-3">
