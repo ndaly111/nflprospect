@@ -55,6 +55,12 @@ WEAK_ACCOLADES   = frozenset({'oroy', 'droy'})
 # Keep QUALITY_ACCOLADES for the _has_quality_accolade helper (union of both sets)
 QUALITY_ACCOLADES = STRONG_ACCOLADES | WEAK_ACCOLADES
 
+# Skill-position strong accolades (AP1/AP2/major awards) confirm genuine NFL
+# production even when nflStats are missing/incomplete (e.g. name-matching gaps).
+# These bypass the MIN_CAREER_CV gate. Special-teams accolades (allpro1_st,
+# allpro2_st) are excluded since they can co-exist with near-zero skill production.
+SKILL_STRONG_ACCOLADES = frozenset({'allpro1', 'allpro2', 'opoy', 'dpoy', 'mvp', 'sbmvp', 'cpoy'})
+
 STARTER_PCT = 60
 BACKUP_PCT  = 30
 
@@ -247,6 +253,23 @@ def grade_all_classes(history: dict) -> None:
         for p in prospects:
             p.pop('draftGrade', None)
 
+    # Step 0b: sanitize corrupted OL snap/start data.
+    # When two players share a name (e.g. two "Connor McGovern"s), the snap-count
+    # database sums their seasonal totals together, producing impossible values
+    # (>17 starts in a 17-game season).  Clear corrupted seasons so we don't
+    # grade either player on combined data.
+    for prospects in history.values():
+        for p in prospects:
+            if p.get('positionGroup') != 'OL':
+                continue
+            ol_starts = p.get('olStarts') or {}
+            ol_snaps  = p.get('olSnaps')  or {}
+            bad = {s for s in ol_starts if (ol_starts.get(s) or 0) > 17}
+            if bad:
+                for s in bad:
+                    ol_starts.pop(s, None)
+                    ol_snaps.pop(s, None)
+
     # Step 1: compute _cv (career value) and _q (qualifying seasons) for all prospects
     for year_str, prospects in history.items():
         for p in prospects:
@@ -294,7 +317,7 @@ def grade_all_classes(history: dict) -> None:
         rank_from_bottom = sum(1 for x in sorted_pool if x['_cv'] < cv)
         return round(rank_from_bottom / (n - 1) * 100, 1)
 
-    def tier_from_pct(pct: float, accolades: dict, pos_group: str = '') -> str:
+    def tier_from_pct(pct: float, accolades: dict, pos_group: str = '', q: int = 0) -> str:
         # OL and TE have thin draft-class pools, so Elite requires multiple sustained
         # recognition (not just a single AP or Pro Bowl selection).
         if pos_group in ('OL', 'TE'):
@@ -315,7 +338,11 @@ def grade_all_classes(history: dict) -> None:
         # Strong accolade floor: AP1/AP2/OPOY/DPOY/MVP guarantees at least Starter.
         # Prevents AP2 rookies with only 1 season of stats from showing as Backup
         # when compared against players with 4-5 full seasons.
-        if any(accolades.get(k) for k in STRONG_ACCOLADES):
+        # For OL: require q >= 2 — accolades can be misattributed from same-name players
+        # at different positions (e.g. CB "Kyle Fuller" → OL "Kyle Fuller"), so we only
+        # trust the floor for OL who have proven themselves across multiple seasons.
+        apply_floor = (pos_group != 'OL') or (q >= 2)
+        if apply_floor and any(accolades.get(k) for k in STRONG_ACCOLADES):
             return 'Starter'
         if pct >= BACKUP_PCT:
             return 'Backup'
@@ -407,9 +434,12 @@ def grade_all_classes(history: dict) -> None:
 
             # Minimum career production gate: after 3+ seasons, a player whose total
             # NFL output (across all seasons, no games filter) falls below the position
-            # floor is a Bust — accolades (e.g. special-teams All-Pro) cannot override.
+            # floor is a Bust. Skill-position strong accolades (AP1/AP2/major awards)
+            # bypass this gate — they confirm real production even if nflStats have
+            # name-matching gaps (e.g. Jessie Bates III, whose stats were not pulled).
+            has_skill_strong = any(accolades.get(k) for k in SKILL_STRONG_ACCOLADES)
             min_cv = MIN_CAREER_CV.get(pos_group, 0)
-            if seasons_elapsed >= 3 and p['_raw_cv'] < min_cv:
+            if seasons_elapsed >= 3 and p['_raw_cv'] < min_cv and not has_skill_strong:
                 p['draftGrade'] = {
                     'tier':           'Bust',
                     'score':          0.0,
@@ -432,6 +462,11 @@ def grade_all_classes(history: dict) -> None:
             pb = accolades.get('probowl') or 0
             if (accolades.get('allpro1') or 0) >= 1 and q >= 2:
                 tier = 'Elite'
+            # AP2 + 2 Pro Bowls confirms sustained All-Pro caliber play. Career-length
+            # bias can suppress young stars' percentile rank, so we trust the accolade
+            # record over the pct rank for players with this level of recognition.
+            elif (accolades.get('allpro2') or 0) >= 1 and pb >= 2 and q >= 2:
+                tier = 'Elite'
             # Multiple Pro Bowls + production confirms sustained elite-level play.
             # OL career totals are suppressed by career-length bias (2-season OL compared
             # to 10-season veterans), so use a lower percentile bar for OL Pro Bowl paths.
@@ -439,12 +474,12 @@ def grade_all_classes(history: dict) -> None:
                 tier = 'Elite'
             elif pos_group == 'OL' and pb >= 2 and pct >= 70 and q >= 2:
                 tier = 'Elite'
-            elif pb >= 3 and pct >= 75 and q >= 2:
+            elif pb >= 3 and pct >= 65 and q >= 2:
                 tier = 'Elite'
             elif pb >= 2 and pct >= 82 and q >= 2:
                 tier = 'Elite'
             else:
-                tier = tier_from_pct(pct, accolades, pos_group)
+                tier = tier_from_pct(pct, accolades, pos_group, q=q)
 
             # OL committed-starter floor: a player who has been a full-time starter
             # for 2+ seasons (14+ starts each) is definitionally a Starter, regardless
