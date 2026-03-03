@@ -372,17 +372,51 @@ def grade_all_classes(history: dict) -> None:
             accolades = p.get('accolades') or {}
             has_strong = any(accolades.get(k) for k in STRONG_ACCOLADES)
 
+            # Accolade credibility: if a player has NFL game records but very little
+            # production relative to their alleged accolades, those accolades are likely
+            # misattributed via name collisions in the Wikipedia All-Pro/Pro Bowl scraper
+            # (e.g. a 2022 R5 DT named "Eric Johnson" inheriting selections from a
+            # veteran with the same name).
+            # Players with 0 tracked games are exempt — their stats may simply not have
+            # been pulled due to nflverse name-matching gaps (e.g. Jessie Bates III).
+            # OL are always exempt: they use snap-based grading, not nflStats.
+            _total_career_games = sum(
+                (s.get('games') or 0) for s in (p.get('nflStats') or {}).values()
+                if isinstance(s, dict)
+            )
+            _MIN_ACCOLADE_PROD = {
+                'QB':  1000, 'RB': 200, 'WR': 200, 'TE': 100,
+                'EDGE':  50, 'DL':  50, 'LB':  70, 'DB':  60,
+            }
+            _prod_cv = p['_cv'] - acc_bonus
+            _accolade_credible = (
+                pos_group == 'OL'
+                or _total_career_games == 0
+                or _prod_cv >= _MIN_ACCOLADE_PROD.get(pos_group, 0)
+            )
+            if not _accolade_credible:
+                logger.debug(
+                    f'Stripping likely-misattributed accolades for {p["name"]} '
+                    f'({pos_group}, games={_total_career_games}, prod_cv={_prod_cv:.0f})'
+                )
+                accolades  = {}
+                acc_bonus  = 0
+                has_strong = False
+
             # Brand-new draft class — no NFL seasons have elapsed; never grade.
             if seasons_elapsed == 0:
                 continue
 
             # No qualifying seasons and no accolades.
-            # QBs can sit for 2-3 years behind a veteran (e.g. Jordan Love behind
-            # Rodgers) — don't declare a QB Bust until 3 seasons have elapsed.
-            # Non-QBs: 1 season without a meaningful appearance → Bust.
+            # Apply the same patience thresholds as the q < 2 bust gate:
+            #   QB / OL: 3 seasons elapsed before Bust — QBs sit behind veterans;
+            #            OL may miss a full year to injury early in their career.
+            #   Everyone else: 2 seasons — consistent with the bust_at=2 window.
+            # This avoids busting players after just 1 season with no stats (e.g.
+            # an injured rookie who didn't play).
             if q == 0 and acc_bonus == 0:
-                qb_not_ready = pos_group == 'QB' and seasons_elapsed < 3
-                if not qb_not_ready:
+                bust_at_zero = 3 if pos_group in ('QB', 'OL') else 2
+                if seasons_elapsed >= bust_at_zero:
                     p['draftGrade'] = {
                         'tier':           'Bust',
                         'score':          0.0,
@@ -437,9 +471,12 @@ def grade_all_classes(history: dict) -> None:
             # floor is a Bust. Skill-position strong accolades (AP1/AP2/major awards)
             # bypass this gate — they confirm real production even if nflStats have
             # name-matching gaps (e.g. Jessie Bates III, whose stats were not pulled).
+            # When accolades were stripped as not credible, exclude their bonus from the
+            # raw CV comparison so the gate isn't fooled by the inflated original _raw_cv.
             has_skill_strong = any(accolades.get(k) for k in SKILL_STRONG_ACCOLADES)
             min_cv = MIN_CAREER_CV.get(pos_group, 0)
-            if seasons_elapsed >= 3 and p['_raw_cv'] < min_cv and not has_skill_strong:
+            _eff_raw_cv = p['_raw_cv'] if _accolade_credible else (p['_raw_cv'] - p['_acc_bonus'])
+            if seasons_elapsed >= 3 and _eff_raw_cv < min_cv and not has_skill_strong:
                 p['draftGrade'] = {
                     'tier':           'Bust',
                     'score':          0.0,
