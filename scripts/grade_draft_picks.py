@@ -81,7 +81,7 @@ def _accolade_bonus(accolades) -> float:
     return total
 
 
-MIN_OL_SNAPS  = 200  # snaps per season to count as qualifying for OL
+MIN_OL_SNAPS  = 500  # snaps per season to count as qualifying for OL (~8+ meaningful games)
 MIN_OL_STARTS = 8    # games started per season (alternative qualifying threshold for OL)
 
 # Minimum total career CV (unfiltered — all seasons, no games-played gate) required
@@ -366,6 +366,28 @@ def grade_all_classes(history: dict) -> None:
                     }
                 continue
 
+            # OL special case: 1 qualifying season but had a full starter year
+            # (15+ starts, 900+ snaps). This catches players who proved themselves
+            # then got injured (e.g. Joe Alt 2024: 16 starts, 1011 snaps → injured 2025).
+            # Give them a provisional Backup rather than no grade or Bust.
+            if pos_group == 'OL' and q == 1 and not has_strong:
+                ol_starts_d = p.get('olStarts') or {}
+                ol_snaps_d  = p.get('olSnaps')  or {}
+                has_full_szn = any(
+                    (ol_starts_d.get(s) or 0) >= 15 and (ol_snaps_d.get(s) or 0) >= 900
+                    for s in ol_starts_d
+                )
+                if has_full_szn:
+                    p['draftGrade'] = {
+                        'tier':           'Backup',
+                        'score':          0.0,
+                        'classRank':      p.get('_classRank'),
+                        'classSize':      p.get('_classSize', 0),
+                        'yearsEvaluated': q,
+                        'provisional':    True,
+                    }
+                    continue
+
             # Players with only 1 qualifying season and no strong accolade:
             #   - Non-QB: 2+ seasons elapsed → Bust
             #   - QB: 3+ seasons elapsed → Bust (more development time needed)
@@ -411,15 +433,38 @@ def grade_all_classes(history: dict) -> None:
             if (accolades.get('allpro1') or 0) >= 1 and q >= 2:
                 tier = 'Elite'
             # Multiple Pro Bowls + production confirms sustained elite-level play.
-            #   3+ Pro Bowls: strong signal on its own → Elite at 75th pct
-            #   2  Pro Bowls: meaningful but needs higher production bar → Elite at 82nd pct
-            # Both require 2+ qualifying seasons to guard against one-year anomalies.
+            # OL career totals are suppressed by career-length bias (2-season OL compared
+            # to 10-season veterans), so use a lower percentile bar for OL Pro Bowl paths.
+            elif pos_group == 'OL' and pb >= 3 and pct >= 50 and q >= 2:
+                tier = 'Elite'
+            elif pos_group == 'OL' and pb >= 2 and pct >= 70 and q >= 2:
+                tier = 'Elite'
             elif pb >= 3 and pct >= 75 and q >= 2:
                 tier = 'Elite'
             elif pb >= 2 and pct >= 82 and q >= 2:
                 tier = 'Elite'
             else:
                 tier = tier_from_pct(pct, accolades, pos_group)
+
+            # OL committed-starter floor: a player who has been a full-time starter
+            # for 2+ seasons (14+ starts each) is definitionally a Starter, regardless
+            # of where their career snap total ranks against 10-year veterans.
+            if pos_group == 'OL' and tier in ('Bust', 'Backup'):
+                ol_starts_d = p.get('olStarts') or {}
+                # 12+ starts = started 70%+ of a 17-game season — clearly a full-time
+                # starter even accounting for injury absences.
+                full_starter_szns = sum(
+                    1 for s in ol_starts_d if (ol_starts_d.get(s) or 0) >= 12
+                )
+                if full_starter_szns >= 2:
+                    tier = 'Starter'
+                # 8+ starts in 2 seasons = meaningful contributor, not a true Bust.
+                elif tier == 'Bust':
+                    contributor_szns = sum(
+                        1 for s in ol_starts_d if (ol_starts_d.get(s) or 0) >= 8
+                    )
+                    if contributor_szns >= 2:
+                        tier = 'Backup'
 
             # Committed-starter floor for QBs: a player who was the undisputed
             # starting QB for 2+ full seasons (14+ games, 370+ pass attempts) is
@@ -438,6 +483,20 @@ def grade_all_classes(history: dict) -> None:
                 )
                 if committed_szns >= 2:
                     tier = 'Starter'
+
+            # OL committed-starter floor: one full starter season (15+ starts and
+            # 900+ snaps) guarantees at least Backup. Guards against an injury-
+            # shortened follow-up season (like Alt's 4-start 2025) causing Bust.
+            if pos_group == 'OL' and tier == 'Bust':
+                ol_starts = p.get('olStarts') or {}
+                ol_snaps  = p.get('olSnaps')  or {}
+                full_szns = sum(
+                    1 for s in ol_starts
+                    if (ol_starts.get(s) or 0) >= 15
+                    and (ol_snaps.get(s) or 0) >= 900
+                )
+                if full_szns >= 1:
+                    tier = 'Backup'
 
             years_evaluated = q
             provisional = years_evaluated < 3
