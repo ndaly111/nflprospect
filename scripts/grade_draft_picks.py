@@ -393,7 +393,7 @@ def grade_all_classes(history: dict) -> None:
             #   - QB: 3+ seasons elapsed → Bust (more development time needed)
             #   - Otherwise suppress — too early to grade
             if q < 2 and not has_strong:
-                bust_at = 3 if pos_group == 'QB' else 2
+                bust_at = 3 if pos_group in ('QB', 'OL') else 2
                 if seasons_elapsed >= bust_at:
                     p['draftGrade'] = {
                         'tier':           'Bust',
