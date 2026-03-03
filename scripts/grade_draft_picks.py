@@ -415,6 +415,25 @@ def grade_all_classes(history: dict) -> None:
                 tier = 'Elite'
             else:
                 tier = tier_from_pct(pct, accolades, pos_group)
+
+            # Committed-starter floor for QBs: a player who was the undisputed
+            # starting QB for 2+ full seasons (14+ games, 370+ pass attempts) is
+            # definitionally a Starter. Guards against career-length bias that
+            # unfairly ranks young starters against veterans with 8-10 year totals.
+            # Threshold requires enough games and volume to rule out backup/injury
+            # appearance seasons — e.g. Fields (15g/318att or 13g/370att) doesn't
+            # qualify because he never had a full commitment with that volume.
+            if pos_group == 'QB' and tier == 'Backup':
+                nfl_stats = p.get('nflStats') or {}
+                committed_szns = sum(
+                    1 for s in nfl_stats.values()
+                    if isinstance(s, dict)
+                    and (s.get('games') or 0) >= 14
+                    and (s.get('attempts') or 0) >= 370
+                )
+                if committed_szns >= 2:
+                    tier = 'Starter'
+
             years_evaluated = q
             provisional = years_evaluated < 3
             class_rank = p.get('_classRank')
