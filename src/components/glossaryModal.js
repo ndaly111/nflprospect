@@ -12,7 +12,7 @@ export function initGlossaryModal() {
 
         <section>
           <h3 class="text-white font-semibold mb-1">Career Grade</h3>
-          <p class="text-gray-400 mb-2">How well the player performed in the NFL, based on career stats relative to other players at the same position drafted 2020–2025.</p>
+          <p class="text-gray-400 mb-2">How well the player performed in the NFL, based on career stats relative to other players at the same position drafted 2012–2025.</p>
           <ul class="space-y-1">
             <li><span class="text-amber-300 font-bold">Elite</span> — Franchise player, perennial starter, All-Pro caliber (top ~10%)</li>
             <li><span class="text-emerald-300 font-bold">Starter</span> — Solid NFL starter, dependable contributor (~30%)</li>
@@ -64,7 +64,7 @@ export function initGlossaryModal() {
 
         <section class="border-t border-gray-700/60 pt-4">
           <h3 class="text-white font-semibold mb-2">Methodology</h3>
-          <p class="text-gray-400 mb-3">Career grades are computed from nflverse career stats using a position-specific scoring formula, then compared against all other players at that position drafted 2020–2025.</p>
+          <p class="text-gray-400 mb-3">Career grades are computed from nflverse career stats using a position-specific scoring formula, then compared against all other players at that position drafted 2012–2025.</p>
 
           <h4 class="text-gray-300 font-medium mb-1 text-xs uppercase tracking-wider">Scoring formulas</h4>
           <div class="space-y-1 text-xs font-mono text-gray-400 bg-gray-800/60 rounded-lg p-3 mb-3">
@@ -91,14 +91,14 @@ export function initGlossaryModal() {
 
           <h4 class="text-gray-300 font-medium mb-1 text-xs uppercase tracking-wider">Tier cutoffs (percentile vs. same position)</h4>
           <div class="text-xs text-gray-400 space-y-0.5">
-            <div><span class="text-amber-300 font-semibold">Elite</span> — 88th+ pct with a strong accolade (AP1/AP2, OPOY/DPOY, MVP)</div>
-            <div class="text-gray-500 pl-3">OL and TE Elite requires 2+ AP All-Pro selections OR 2+ Pro Bowls at 88th+ pct</div>
+            <div><span class="text-amber-300 font-semibold">Elite</span> — 88th+ pct + strong accolade (AP1/AP2/OPOY/DPOY/MVP); or 3+ Pro Bowls at 65th+ pct; or 2+ Pro Bowls at 82nd+ pct (q≥2 required)</div>
+            <div class="text-gray-500 pl-3">OL/TE Elite: 88th+ pct + 2 AP selections OR 2 Pro Bowls; or 3+ Pro Bowls at 50th+ pct; or 2+ Pro Bowls at 70th+ pct</div>
             <div><span class="text-emerald-300 font-semibold">Starter</span> — 60th–87th percentile</div>
             <div><span class="text-slate-300 font-semibold">Backup</span> — 30th–59th percentile</div>
             <div><span class="text-red-300 font-semibold">Bust</span> — below 30th percentile</div>
           </div>
-          <p class="text-gray-600 mt-1 text-xs">OL qualifying season: ≥200 offensive snaps or ≥8 games started. Skill position qualifying season: ≥4 games played.</p>
-          <p class="text-gray-600 mt-2 text-xs">Players with 0 qualifying seasons who have had at least 1 full NFL season receive a <span class="text-red-300">Bust</span> grade. Players with exactly 1 qualifying season and no strong accolade (AP1/AP2/OPOY/DPOY/MVP) receive no grade — too early to evaluate against multi-year careers.</p>
+          <p class="text-gray-600 mt-1 text-xs">OL qualifying season: ≥500 offensive snaps or ≥8 games started. Skill position qualifying season: ≥4 games played.</p>
+          <p class="text-gray-600 mt-2 text-xs">Players with 0 qualifying seasons after 2+ NFL seasons (3+ for QB/OL) receive a <span class="text-red-300">Bust</span> grade. Players with fewer than 2 qualifying seasons and no strong accolade receive a <span class="text-gray-400">~provisional</span> grade — too early to evaluate against multi-year careers.</p>
         </section>
 
       </div>
