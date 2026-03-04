@@ -30,9 +30,9 @@ _current_year = _now.year
 _draft_month_day = (_now.month, _now.day)
 _draft_passed = _draft_month_day >= (4, 25)  # draft ends ~April 25 each year
 
-# History starts 2012; include current year only after the draft
+# History starts 2005; include current year only after the draft
 _last_completed = _current_year if _draft_passed else _current_year - 1
-YEARS = list(range(2012, _last_completed + 1))
+YEARS = list(range(2005, _last_completed + 1))
 
 # nflverse uses 3-letter codes for some teams; normalize to standard abbreviations
 TEAM_ABBREV_MAP = {

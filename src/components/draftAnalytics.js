@@ -78,7 +78,7 @@ function buildByYear(history) {
 
   return `
     <div>
-      <p class="text-xs text-gray-500 mb-3">Percentages shown against graded picks only. 2023–2025 classes are still maturing.</p>
+      <p class="text-xs text-gray-500 mb-3">Percentages shown against graded picks only. 2023–2025 classes are still maturing. Pre-2012 OL grades may be incomplete (snap data unavailable).</p>
       <div class="overflow-x-auto rounded-xl border border-gray-700">
         <table class="w-full text-sm">
           ${tableHeader('Draft Year')}
@@ -115,7 +115,7 @@ function buildByRound(history) {
 
   return `
     <div>
-      <p class="text-xs text-gray-500 mb-3">All draft classes combined (2012–2025). Percentages against graded picks only.</p>
+      <p class="text-xs text-gray-500 mb-3">All draft classes combined (2005–2025). Percentages against graded picks only.</p>
       <div class="overflow-x-auto rounded-xl border border-gray-700">
         <table class="w-full text-sm">
           ${tableHeader('Round')}
@@ -167,7 +167,7 @@ function buildByPosition(history, activePos) {
   return `
     <div>
       <div class="flex flex-wrap gap-2 mb-4">${posTabs}</div>
-      <p class="text-xs text-gray-500 mb-3">All draft classes combined (2012–2025). Percentages against graded picks only.</p>
+      <p class="text-xs text-gray-500 mb-3">All draft classes combined (2005–2025). Percentages against graded picks only.</p>
       <div class="overflow-x-auto rounded-xl border border-gray-700">
         <table class="w-full text-sm">
           ${tableHeader('Round')}
@@ -341,7 +341,7 @@ export function renderDraftAnalytics() {
     <div class="flex items-center justify-between flex-wrap gap-3 mb-6">
       <div>
         <h2 class="text-xl font-bold text-white">Historical Draft Results</h2>
-        <p class="text-sm text-gray-400 mt-0.5">2012–2025 draft classes · Grades based on career production + accolades</p>
+        <p class="text-sm text-gray-400 mt-0.5">2005–2025 draft classes · Grades based on career production + accolades</p>
       </div>
       <div class="flex items-center gap-3 flex-wrap">${legend}</div>
     </div>

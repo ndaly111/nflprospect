@@ -29,6 +29,36 @@ DELAY   = 1.2  # seconds between Wikipedia requests
 # ---------------------------------------------------------------------------
 ANNUAL_AWARDS = {
     # (season, award_key): player_name
+    # --- 2005 draft class ---
+    (2005, 'oroy'): 'Cadillac Williams',
+    (2005, 'droy'): 'Shawne Merriman',
+    (2011, 'mvp'):  'Aaron Rodgers',
+    (2014, 'mvp'):  'Aaron Rodgers',
+    (2020, 'mvp'):  'Aaron Rodgers',
+    (2021, 'mvp'):  'Aaron Rodgers',
+    (2010, 'sbmvp'): 'Aaron Rodgers',
+    (2011, 'opoy'): 'Aaron Rodgers',
+    # --- 2006 draft class ---
+    (2006, 'oroy'): 'Vince Young',
+    # --- 2007 draft class ---
+    (2007, 'oroy'): 'Adrian Peterson',
+    (2007, 'droy'): 'Patrick Willis',
+    (2012, 'mvp'):  'Adrian Peterson',
+    (2012, 'opoy'): 'Adrian Peterson',
+    # --- 2008 draft class ---
+    (2008, 'oroy'): 'Matt Ryan',
+    (2008, 'droy'): 'Jerod Mayo',
+    (2016, 'mvp'):  'Matt Ryan',
+    # --- 2009 draft class ---
+    (2009, 'oroy'): 'Percy Harvin',
+    # --- 2010 draft class ---
+    (2010, 'oroy'): 'Sam Bradford',
+    (2010, 'droy'): 'Ndamukong Suh',
+    # --- 2011 draft class ---
+    (2011, 'oroy'): 'Cam Newton',
+    (2011, 'droy'): 'Von Miller',
+    (2015, 'mvp'):  'Cam Newton',
+    (2015, 'opoy'): 'Cam Newton',
     # --- 2012 draft class ---
     (2012, 'oroy'): 'Robert Griffin III',
     (2012, 'droy'): 'Luke Kuechly',

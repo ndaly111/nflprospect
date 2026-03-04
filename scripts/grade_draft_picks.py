@@ -415,6 +415,10 @@ def grade_all_classes(history: dict) -> None:
             # This avoids busting players after just 1 season with no stats (e.g.
             # an injured rookie who didn't play).
             if q == 0 and acc_bonus == 0:
+                # OL snap counts only available from 2012 onward (nflverse limitation).
+                # Pre-2012 OL with no snap data may have had solid careers — don't Bust them.
+                if pos_group == 'OL' and draft_year < 2012:
+                    continue
                 bust_at_zero = 3 if pos_group in ('QB', 'OL') else 2
                 if seasons_elapsed >= bust_at_zero:
                     p['draftGrade'] = {
@@ -453,7 +457,11 @@ def grade_all_classes(history: dict) -> None:
             #   - Non-QB: 2+ seasons elapsed → Bust
             #   - QB: 3+ seasons elapsed → Bust (more development time needed)
             #   - Otherwise suppress — too early to grade
+            # Pre-2012 OL exception: snap counts only exist from 2012, so q=1 may simply
+            # mean they played their last season in 2012 — not that their career was bad.
             if q < 2 and not has_strong:
+                if pos_group == 'OL' and draft_year < 2012:
+                    continue
                 bust_at = 3 if pos_group in ('QB', 'OL') else 2
                 if seasons_elapsed >= bust_at:
                     p['draftGrade'] = {
@@ -496,20 +504,23 @@ def grade_all_classes(history: dict) -> None:
             # AP1 = best at position in the NFL that year → Elite, provided the player
             # has at least 2 qualifying seasons. Single-season AP1s stay in the normal
             # percentile path until they prove it isn't a one-year anomaly.
+            # Exception: pre-2012 OL where snap data is unavailable — trust the accolade.
             pb = accolades.get('probowl') or 0
-            if (accolades.get('allpro1') or 0) >= 1 and q >= 2:
+            ol_no_snap_data = (pos_group == 'OL' and draft_year < 2012)
+            q_ok = q >= 2 or ol_no_snap_data
+            if (accolades.get('allpro1') or 0) >= 1 and q_ok:
                 tier = 'Elite'
             # AP2 + 2 Pro Bowls confirms sustained All-Pro caliber play. Career-length
             # bias can suppress young stars' percentile rank, so we trust the accolade
             # record over the pct rank for players with this level of recognition.
-            elif (accolades.get('allpro2') or 0) >= 1 and pb >= 2 and q >= 2:
+            elif (accolades.get('allpro2') or 0) >= 1 and pb >= 2 and q_ok:
                 tier = 'Elite'
             # Multiple Pro Bowls + production confirms sustained elite-level play.
             # OL career totals are suppressed by career-length bias (2-season OL compared
             # to 10-season veterans), so use a lower percentile bar for OL Pro Bowl paths.
-            elif pos_group == 'OL' and pb >= 3 and pct >= 50 and q >= 2:
+            elif pos_group == 'OL' and pb >= 3 and pct >= 50 and q_ok:
                 tier = 'Elite'
-            elif pos_group == 'OL' and pb >= 2 and pct >= 70 and q >= 2:
+            elif pos_group == 'OL' and pb >= 2 and pct >= 70 and q_ok:
                 tier = 'Elite'
             elif pb >= 3 and pct >= 65 and q >= 2:
                 tier = 'Elite'
