@@ -6,12 +6,17 @@ export function renderMockDraftBoard() {
   const container = document.getElementById('mock-draft-board')
   if (!container) return
 
-  const { prospects } = getState()
+  const { prospects, filters } = getState()
   if (!prospects || prospects.length === 0) return
 
   // Build pick list from prospects with projectedPick
   const picks = prospects
     .filter(p => p.projectedPick)
+    .filter(p => {
+      if (filters.positionGroup === 'ALL') return true
+      if (filters.positionGroup === 'FANTASY') return ['QB', 'RB', 'WR', 'TE'].includes(p.positionGroup)
+      return p.positionGroup === filters.positionGroup
+    })
     .sort((a, b) => a.projectedPick - b.projectedPick)
 
   if (picks.length === 0) {
