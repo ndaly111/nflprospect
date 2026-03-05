@@ -185,7 +185,10 @@ function buildPlayerList(history, filterPos, filterYear, filterRound) {
   for (const [year, prospects] of Object.entries(history)) {
     if (filterYear !== 'ALL' && year !== filterYear) continue
     for (const p of prospects) {
-      if (filterPos !== 'ALL' && p.positionGroup !== filterPos) continue
+      if (filterPos !== 'ALL') {
+        if (filterPos === 'FANTASY' && !['QB', 'RB', 'WR', 'TE'].includes(p.positionGroup)) continue
+        if (filterPos !== 'FANTASY' && p.positionGroup !== filterPos) continue
+      }
       if (filterRound !== 'ALL' && String(p.actualRound) !== filterRound) continue
       players.push({ ...p, _year: year })
     }
@@ -202,8 +205,8 @@ function buildPlayerList(history, filterPos, filterYear, filterRound) {
   })
 
   // Filter controls
-  const posOpts = ['ALL', ...POSITIONS].map(p =>
-    `<option value="${p}" ${filterPos === p ? 'selected' : ''}>${p === 'ALL' ? 'All Positions' : p}</option>`
+  const posOpts = ['ALL', 'FANTASY', ...POSITIONS].map(p =>
+    `<option value="${p}" ${filterPos === p ? 'selected' : ''}>${p === 'ALL' ? 'All Positions' : p === 'FANTASY' ? 'Fantasy (QB/RB/WR/TE)' : p}</option>`
   ).join('')
 
   const yearOpts = ['ALL', ...years.reverse()].map(y =>

@@ -1,7 +1,7 @@
 import { getState, setState } from '../state.js'
 
 
-const POSITION_GROUPS = ['ALL', 'QB', 'RB', 'WR', 'TE', 'OL', 'DL', 'EDGE', 'LB', 'DB']
+const POSITION_GROUPS = ['ALL', 'FANTASY', 'QB', 'RB', 'WR', 'TE', 'OL', 'DL', 'EDGE', 'LB', 'DB']
 
 const SORT_OPTIONS = [
   { value: 'consensusRank', label: 'Consensus Rank' },
