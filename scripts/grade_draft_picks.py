@@ -109,6 +109,95 @@ MIN_CAREER_CV: dict[str, float] = {
 OL_ELITE_AP_TOTAL = 2
 OL_ELITE_PROBOWL  = 2
 
+# Tier order for trajectory-based downgrade
+_TIER_ORDER = ['Elite', 'Starter', 'Backup', 'Bust']
+
+# Minimum games in a season for trajectory computation
+_TRAJ_MIN_GAMES = 8
+
+
+def _season_metric(season_stats: dict, pos_group: str) -> float | None:
+    """Per-game production metric for a single season. None if ineligible."""
+    g = season_stats.get('games', 0) or 0
+    if g < _TRAJ_MIN_GAMES:
+        return None
+    if pos_group == 'QB':
+        val = ((season_stats.get('passing_yards') or 0) +
+               (season_stats.get('rushing_yards') or 0))
+    elif pos_group == 'RB':
+        val = ((season_stats.get('rushing_yards') or 0) +
+               (season_stats.get('receiving_yards') or 0))
+    elif pos_group in ('WR', 'TE'):
+        val = (season_stats.get('receiving_yards') or 0)
+    elif pos_group in ('EDGE', 'DL'):
+        val = ((season_stats.get('sacks') or 0) * 2 +
+               (season_stats.get('tackles_for_loss') or 0) +
+               (season_stats.get('qb_hits') or 0) * 0.3)
+    elif pos_group == 'LB':
+        val = ((season_stats.get('tackles_combined') or 0) +
+               (season_stats.get('interceptions') or 0) * 4 +
+               (season_stats.get('pass_defended') or 0) * 2)
+    elif pos_group == 'DB':
+        val = ((season_stats.get('interceptions') or 0) * 4 +
+               (season_stats.get('pass_defended') or 0) * 2 +
+               (season_stats.get('tackles_combined') or 0) * 0.3)
+    else:
+        return None
+    return val / g if g > 0 else None
+
+
+def compute_trajectory(p: dict, pos_group: str) -> tuple[str, float | None]:
+    """
+    Return (label, pct_change) comparing the two most recent qualifying seasons.
+    label: 'rising' | 'declining' | 'stable' | 'insufficient'
+    Requires >= 2 qualifying seasons (>= _TRAJ_MIN_GAMES games for skill positions,
+    >= 4 games started for OL).
+    """
+    if pos_group == 'OL':
+        ol_starts = p.get('olStarts') or {}
+        data = sorted(
+            [(int(s), float(v)) for s, v in ol_starts.items()
+             if v is not None and float(v) >= 4],
+            key=lambda x: x[0],
+        )
+        if len(data) < 2:
+            return 'insufficient', None
+        _, last  = data[-1]
+        _, prior = data[-2]
+        if prior <= 0:
+            return 'stable', None
+        pct = (last - prior) / prior * 100
+        if pct > 20:
+            return 'rising', round(pct, 1)
+        if pct < -20:
+            return 'declining', round(pct, 1)
+        return 'stable', round(pct, 1)
+
+    nfl_stats = p.get('nflStats') or {}
+    metrics = []
+    for season_str, ss in nfl_stats.items():
+        if not isinstance(ss, dict):
+            continue
+        m = _season_metric(ss, pos_group)
+        if m is not None:
+            try:
+                metrics.append((int(season_str), m))
+            except (ValueError, TypeError):
+                pass
+    metrics.sort()
+    if len(metrics) < 2:
+        return 'insufficient', None
+    _, last  = metrics[-1]
+    _, prior = metrics[-2]
+    if prior <= 0:
+        return 'stable', None
+    pct = (last - prior) / prior * 100
+    if pct > 20:
+        return 'rising', round(pct, 1)
+    if pct < -20:
+        return 'declining', round(pct, 1)
+    return 'stable', round(pct, 1)
+
 
 def count_qualifying_seasons(prospect, min_games: int = 4) -> int:
     """Count NFL seasons where the prospect played meaningfully.
@@ -393,6 +482,9 @@ def grade_all_classes(history: dict) -> None:
                 pos_group == 'OL'
                 or _total_career_games == 0
                 or _prod_cv >= _MIN_ACCOLADE_PROD.get(pos_group, 0)
+                # ST specialists (e.g. Devin Hester, Matthew Slater) have genuine
+                # ST All-Pro accolades but near-zero skill-position stats — exempt them.
+                or (p.get('accolades') or {}).get('allpro1_st', 0) >= 1
             )
             if not _accolade_credible:
                 logger.debug(
@@ -481,7 +573,12 @@ def grade_all_classes(history: dict) -> None:
             # name-matching gaps (e.g. Jessie Bates III, whose stats were not pulled).
             # When accolades were stripped as not credible, exclude their bonus from the
             # raw CV comparison so the gate isn't fooled by the inflated original _raw_cv.
-            has_skill_strong = any(accolades.get(k) for k in SKILL_STRONG_ACCOLADES)
+            has_skill_strong = (
+                any(accolades.get(k) for k in SKILL_STRONG_ACCOLADES)
+                # 2+ special-teams AP1 selections = genuine NFL contributor even if
+                # skill-position stats are minimal (e.g. Cordarrelle Patterson WR)
+                or (accolades.get('allpro1_st') or 0) >= 2
+            )
             min_cv = MIN_CAREER_CV.get(pos_group, 0)
             _eff_raw_cv = p['_raw_cv'] if _accolade_credible else (p['_raw_cv'] - p['_acc_bonus'])
             if seasons_elapsed >= 3 and _eff_raw_cv < min_cv and not has_skill_strong:
@@ -508,7 +605,14 @@ def grade_all_classes(history: dict) -> None:
             pb = accolades.get('probowl') or 0
             ol_no_snap_data = (pos_group == 'OL' and draft_year < 2012)
             q_ok = q >= 2 or ol_no_snap_data
-            if (accolades.get('allpro1') or 0) >= 1 and q_ok:
+            # Special-teams legends (e.g. Devin Hester, Matthew Slater) are drafted
+            # at skill positions but play almost exclusively on ST; their skill-position
+            # stats are near-zero, but extraordinary ST accolades confirm elite careers.
+            st_elite = (accolades.get('allpro1_st') or 0) >= 2 and pb >= 2
+            st_starter = (accolades.get('allpro1_st') or 0) >= 1 and pb >= 2
+            if st_elite:
+                tier = 'Elite'
+            elif (accolades.get('allpro1') or 0) >= 1 and q_ok:
                 tier = 'Elite'
             # AP2 + 2 Pro Bowls confirms sustained All-Pro caliber play. Career-length
             # bias can suppress young stars' percentile rank, so we trust the accolade
@@ -518,14 +622,18 @@ def grade_all_classes(history: dict) -> None:
             # Multiple Pro Bowls + production confirms sustained elite-level play.
             # OL career totals are suppressed by career-length bias (2-season OL compared
             # to 10-season veterans), so use a lower percentile bar for OL Pro Bowl paths.
-            elif pos_group == 'OL' and pb >= 3 and pct >= 50 and q_ok:
+            # Pre-2012 OL: snap data only covers post-peak years, so pct is deflated.
+            # Trust Pro Bowl count alone when snap data is unavailable.
+            elif pos_group == 'OL' and pb >= 3 and (pct >= 50 or ol_no_snap_data) and q_ok:
                 tier = 'Elite'
-            elif pos_group == 'OL' and pb >= 2 and pct >= 70 and q_ok:
+            elif pos_group == 'OL' and pb >= 2 and (pct >= 70 or ol_no_snap_data) and q_ok:
                 tier = 'Elite'
             elif pb >= 3 and pct >= 65 and q >= 2:
                 tier = 'Elite'
-            elif pb >= 2 and pct >= 82 and q >= 2:
+            elif pb >= 2 and pct >= 80 and q >= 2:
                 tier = 'Elite'
+            elif st_starter:
+                tier = 'Starter'
             else:
                 tier = tier_from_pct(pct, accolades, pos_group, q=q)
 
@@ -586,6 +694,16 @@ def grade_all_classes(history: dict) -> None:
             class_rank = p.get('_classRank')
             class_size = p.get('_classSize', 0)
 
+            # Trajectory: compare last two qualifying seasons' per-game production
+            trajectory, traj_pct = compute_trajectory(p, pos_group)
+            # Provisional players with a clear declining trajectory get downgraded one tier.
+            # Exception: pre-2012 OL — their snap data only covers post-peak/injury years,
+            # so the trend is unreliable and should not override strong accolade evidence.
+            if (trajectory == 'declining' and provisional
+                    and tier in _TIER_ORDER and tier != 'Bust'
+                    and not ol_no_snap_data):
+                tier = _TIER_ORDER[_TIER_ORDER.index(tier) + 1]
+
             p['draftGrade'] = {
                 'tier':           tier,
                 'score':          pct,
@@ -593,6 +711,8 @@ def grade_all_classes(history: dict) -> None:
                 'classSize':      class_size,
                 'yearsEvaluated': years_evaluated,
                 'provisional':    provisional,
+                'trajectory':     trajectory if trajectory != 'insufficient' else None,
+                'trajectoryPct':  traj_pct,
             }
 
     # Step 6: clean up all temp keys in a separate pass

@@ -281,6 +281,23 @@ def _fetch_allpro_year(year: int) -> dict[str, dict]:
 
 
 # ---------------------------------------------------------------------------
+# Manual accolade overrides for name-collision cases.
+# Some players' Wikipedia entries list them under a name that exactly matches
+# another prospect, causing accolades to be misattributed.
+# ---------------------------------------------------------------------------
+MANUAL_ACCOLADES: dict[str, dict] = {
+    # Josh Hines-Allen (2019 Jaguars LB/DE) goes by "Josh Allen" professionally,
+    # causing his All-Pro/Pro Bowl entries to match Josh Allen (2018 Bills QB).
+    # Career: 2019 Pro Bowl (rookie), 2023 AP2 All-Pro + Pro Bowl (17.5 sacks).
+    'Josh Hines-Allen': {'allpro2': 1, 'probowl': 2},
+    # Dallas Goedert's Pro Bowl selections are missed by the scraper because his
+    # name appears as unlinked text in the newer Pro Bowl Games format pages.
+    # Career: 2022 season Pro Bowl, 2023 season Pro Bowl.
+    'Dallas Goedert': {'probowl': 2},
+}
+
+
+# ---------------------------------------------------------------------------
 # Public entry point
 # ---------------------------------------------------------------------------
 
@@ -354,6 +371,12 @@ def fetch_nfl_accolades(prospects: list[dict]) -> dict[str, dict]:
                     target = m['name']
             if target:
                 result[target]['probowl'] = result[target].get('probowl', 0) + 1
+
+    # ---- Manual overrides for name-collision cases ----
+    for prospect_name, manual_acc in MANUAL_ACCOLADES.items():
+        if prospect_name in name_set:
+            for k, v in manual_acc.items():
+                result[prospect_name][k] = result[prospect_name].get(k, 0) + v
 
     # Clean up: remove zero counts
     cleaned = {}

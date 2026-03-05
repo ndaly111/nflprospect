@@ -16,6 +16,14 @@ logger = logging.getLogger(__name__)
 # the commonly used name in draft records / ESPN / PFR.
 PLAYER_NAME_ALIASES: dict[str, str] = {
     'Sauce Gardner': 'Ahmad Gardner',
+    # Players whose PFR draft name includes "Jr." suffix not present in nflverse
+    'Ted Ginn Jr.':   'Ted Ginn',
+    'Devin Bush Jr.': 'Devin Bush',
+    'Irv Smith Jr.':  'Irv Smith',
+    'Willie Gay Jr.': 'Willie Gay',
+    'Velus Jones Jr.': 'Velus Jones',
+    # nflverse name uses periods for initials differently than PFR draft records
+    'DJ Chark': 'D.J. Chark',
 }
 
 OFFENSE_URL = 'https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_season.csv'

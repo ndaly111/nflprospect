@@ -35,7 +35,7 @@ function accoladeBadges(accolades) {
 
 function tierBadge(draftGrade) {
   if (!draftGrade) return ''
-  const { tier, score, yearsEvaluated, provisional } = draftGrade
+  const { tier, score, yearsEvaluated, provisional, trajectory, trajectoryPct } = draftGrade
   const STYLES = {
     Elite:   'text-amber-300 bg-amber-900/50 border border-amber-700/40',
     Starter: 'text-emerald-300 bg-emerald-900/50 border border-emerald-700/40',
@@ -47,7 +47,15 @@ function tierBadge(draftGrade) {
   const tooltip = provisional
     ? `Provisional (${yearsEvaluated} qualifying season${yearsEvaluated !== 1 ? 's' : ''})`
     : `${tier} — ${score}/100`
-  return `<span class="text-[10px] font-bold px-1.5 py-0.5 rounded-full whitespace-nowrap ${provisional ? 'opacity-70' : ''} ${style}" title="${tooltip}">${label}</span>`
+  let arrow = ''
+  if (trajectory === 'rising') {
+    const pctStr = trajectoryPct != null ? ` +${trajectoryPct}%` : ''
+    arrow = `<span class="text-green-400 font-bold text-[11px]" title="Rising production${pctStr} vs prior season">↑</span>`
+  } else if (trajectory === 'declining') {
+    const pctStr = trajectoryPct != null ? ` ${trajectoryPct}%` : ''
+    arrow = `<span class="text-red-400 font-bold text-[11px]" title="Declining production${pctStr} vs prior season">↓</span>`
+  }
+  return `${arrow}<span class="text-[10px] font-bold px-1.5 py-0.5 rounded-full whitespace-nowrap ${provisional ? 'opacity-70' : ''} ${style}" title="${tooltip}">${label}</span>`
 }
 
 function classRankBadge(draftGrade) {

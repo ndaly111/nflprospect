@@ -20,8 +20,8 @@ from fetch_rankings import fetch_espn
 logger = logging.getLogger(__name__)
 
 DRAFT_PICKS_URL = 'https://github.com/nflverse/nflverse-data/releases/download/draft_picks/draft_picks.csv'
-# nflverse moved combine data to the "test" release (covers 2000-2022); gracefully handled for later years
-COMBINE_URL     = 'https://github.com/nflverse/nflverse-data/releases/download/test/combines.csv'
+# nflverse "combine" release covers 2000-present (updated annually after the combine)
+COMBINE_URL     = 'https://github.com/nflverse/nflverse-data/releases/download/combine/combine.csv'
 
 # NFL Draft is held in late April; include the current year once the draft has passed.
 # This auto-advances each year without manual code changes.
