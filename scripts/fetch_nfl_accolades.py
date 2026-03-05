@@ -48,6 +48,7 @@ ANNUAL_AWARDS = {
     # --- 2008 draft class ---
     (2008, 'oroy'): 'Matt Ryan',
     (2008, 'droy'): 'Jerod Mayo',
+    (2012, 'sbmvp'): 'Joe Flacco',
     (2016, 'mvp'):  'Matt Ryan',
     # --- 2009 draft class ---
     (2009, 'oroy'): 'Percy Harvin',

@@ -238,8 +238,11 @@ def build_draft_history() -> dict[str, list[dict]]:
         for yr, prsp in result.items():
             n = 0
             for p in prsp:
-                if p['name'] in career:
-                    p['nflStats'] = career[p['name']]
+                # Prefer position-specific key to avoid name collisions
+                pos_key = f"{p['name']}__{p.get('positionGroup', '')}"
+                stats = career.get(pos_key) or career.get(p['name'])
+                if stats:
+                    p['nflStats'] = stats
                     n += 1
             logger.info(f'{yr}: {n}/{len(prsp)} prospects with NFL career stats')
     except Exception as e:

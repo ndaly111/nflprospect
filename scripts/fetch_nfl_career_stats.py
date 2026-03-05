@@ -110,7 +110,22 @@ def _process_group(prospects, df, stat_cols_map):
         if not rows:
             continue
 
+        # Expected CSV position values for this position group (to avoid name collisions
+        # like QB "Alex Smith" being overwritten by TE "Alex Smith" in the same CSV).
+        POS_GROUP_POSITIONS = {
+            'QB': {'QB'},
+            'RB': {'RB', 'HB', 'FB'},
+            'WR': {'WR'},
+            'TE': {'TE'},
+        }
+        expected_positions = POS_GROUP_POSITIONS.get(pos_group)
+
         for row in rows:
+            # Skip rows whose position doesn't match the prospect's group (name collision).
+            if expected_positions:
+                row_pos = str(row.get('position', '') or '').strip().upper()
+                if row_pos and row_pos not in expected_positions:
+                    continue
             season = _fmt_val(row.get('season'))
             if season is None:
                 continue
@@ -119,7 +134,10 @@ def _process_group(prospects, df, stat_cols_map):
                 continue
             stats = _extract_row_stats(row, stat_cols)
             if stats:
-                result[name][str(season)] = stats  # store under original (nickname) name
+                # Key by name + pos_group to avoid collisions when two draftees share
+                # a name but play different positions (e.g. QB "Alex Smith" 2005 and
+                # TE "Alex Smith" 2005 — both in the same all_flat list).
+                result[f'{name}__{pos_group}'][str(season)] = stats
 
     return result
 
@@ -174,7 +192,14 @@ def fetch_nfl_career_stats(prospects: list[dict]) -> dict[str, dict]:
 
     total = len(result)
     logger.info(f'NFL career stats: found data for {total} prospects')
-    return dict(result)
+    # Also expose plain-name keys as fallback (for callers that don't pass pos_group)
+    out = dict(result)
+    for key, stats in result.items():
+        if '__' in key:
+            name_only = key.split('__')[0]
+            if name_only not in out:
+                out[name_only] = stats
+    return out
 
 
 if __name__ == '__main__':
