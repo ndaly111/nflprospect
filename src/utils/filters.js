@@ -6,7 +6,11 @@ export function applyFilters(prospects, filters, sort, watchlist = []) {
 
   // Position group filter
   if (filters.positionGroup !== 'ALL') {
-    result = result.filter(p => p.positionGroup === filters.positionGroup)
+    if (filters.positionGroup === 'FANTASY') {
+      result = result.filter(p => ['QB', 'RB', 'WR', 'TE'].includes(p.positionGroup))
+    } else {
+      result = result.filter(p => p.positionGroup === filters.positionGroup)
+    }
   }
 
   // Round filter — use actualRound for historical prospects, projectedRound for current
