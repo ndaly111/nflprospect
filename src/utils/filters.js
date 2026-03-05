@@ -5,7 +5,10 @@ export function applyFilters(prospects, filters, sort, watchlist = []) {
   let result = prospects.slice()
 
   // Position group filter
-  if (filters.positionGroup !== 'ALL') {
+  if (filters.positionGroup === 'FANTASY') {
+    const fantasyPositions = new Set(['QB', 'RB', 'WR', 'TE'])
+    result = result.filter(p => fantasyPositions.has(p.positionGroup))
+  } else if (filters.positionGroup !== 'ALL') {
     result = result.filter(p => p.positionGroup === filters.positionGroup)
   }
 
