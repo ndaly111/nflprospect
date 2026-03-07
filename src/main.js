@@ -207,7 +207,7 @@ subscribe(state => {
   if (!state.loading && state.activePage === 'analytics') {
     renderDraftAnalytics()
   }
-}, ['draftHistory', 'loading', 'activePage', 'analyticsTab', 'analyticsPos', 'analyticsPlayerPos', 'analyticsPlayerYear', 'analyticsPlayerRound'])
+}, ['draftHistory', 'prospects', 'loading', 'activePage', 'analyticsTab', 'analyticsPos', 'analyticsPlayerPos', 'analyticsPlayerYear', 'analyticsPlayerRound', 'comparePos', 'compareView', 'compareSort', 'compareSortDir', 'compareRound'])
 
 // Grid re-renders when data/filters/sort/viewMode/watchlist/draftYear change — NOT on card expand
 subscribe(state => {

@@ -290,17 +290,280 @@ function buildPlayerList(history, filterPos, filterYear, filterRound) {
     </div>`
 }
 
+// ── Cross-Draft Comparison ──────────────────────────────────────────
+
+const COMPARE_VIEWS = [
+  { id: 'grade',      label: 'ESPN Grade' },
+  { id: 'combine',    label: 'Combine' },
+  { id: 'production', label: 'Production' },
+]
+
+function getBestSeason(collegeStats, pos) {
+  if (!collegeStats) return {}
+  const seasons = Object.values(collegeStats)
+  if (!seasons.length) return {}
+  if (['QB'].includes(pos)) {
+    return seasons.reduce((best, s) => (s.passingYards || 0) > (best.passingYards || 0) ? s : best, {})
+  }
+  if (['RB'].includes(pos)) {
+    return seasons.reduce((best, s) => (s.rushingYards || 0) > (best.rushingYards || 0) ? s : best, {})
+  }
+  if (['WR', 'TE'].includes(pos)) {
+    return seasons.reduce((best, s) => (s.receivingYards || 0) > (best.receivingYards || 0) ? s : best, {})
+  }
+  if (['EDGE', 'DL', 'LB'].includes(pos)) {
+    return seasons.reduce((best, s) => (s.sacks || 0) > (best.sacks || 0) ? s : best, {})
+  }
+  if (['DB'].includes(pos)) {
+    return seasons.reduce((best, s) => (s.interceptions || 0) + (s.passesDefended || 0) > (best.interceptions || 0) + (best.passesDefended || 0) ? s : best, {})
+  }
+  return seasons[0] || {}
+}
+
+function fmtStat(v, decimals = 0) {
+  if (v == null || v === '') return '—'
+  return decimals ? Number(v).toFixed(decimals) : Math.round(Number(v)).toLocaleString()
+}
+
+function getCompareColumns(view, pos) {
+  if (view === 'grade') {
+    return [
+      { key: 'espnGrade', label: 'ESPN Grade', fmt: v => fmtStat(v, 1) },
+      { key: '_pick',     label: 'Pick',       fmt: v => v ? `#${v}` : '—' },
+      { key: '_round',    label: 'Rd',         fmt: v => v || '—' },
+      { key: '_team',     label: 'Team',       fmt: v => v || '—' },
+      { key: '_tier',     label: 'Tier',       fmt: (v, p) => {
+        const tc = TIER_COLORS[v]
+        return tc ? `<span class="px-2 py-0.5 rounded-full text-xs font-medium ${tc.badge}">${v}</span>` : '<span class="text-gray-600 text-xs">—</span>'
+      }},
+    ]
+  }
+  if (view === 'combine') {
+    return [
+      { key: '_forty',     label: '40 Yd',     fmt: v => fmtStat(v, 2) },
+      { key: '_weight',    label: 'Weight',     fmt: v => fmtStat(v) },
+      { key: '_height',    label: 'Height',     fmt: v => v || '—' },
+      { key: '_vertical',  label: 'Vert',       fmt: v => fmtStat(v, 1) },
+      { key: '_broadJump', label: 'Broad',      fmt: v => fmtStat(v) },
+      { key: '_bench',     label: 'Bench',      fmt: v => fmtStat(v) },
+      { key: '_cone',      label: '3-Cone',     fmt: v => fmtStat(v, 2) },
+      { key: '_shuttle',   label: 'Shuttle',    fmt: v => fmtStat(v, 2) },
+    ]
+  }
+  // production
+  if (pos === 'QB') {
+    return [
+      { key: '_passYds',  label: 'Pass Yds',  fmt: v => fmtStat(v) },
+      { key: '_passTDs',  label: 'Pass TD',   fmt: v => fmtStat(v) },
+      { key: '_ints',     label: 'INT',        fmt: v => fmtStat(v) },
+      { key: '_rushYds',  label: 'Rush Yds',  fmt: v => fmtStat(v) },
+      { key: '_rushTDs',  label: 'Rush TD',   fmt: v => fmtStat(v) },
+    ]
+  }
+  if (pos === 'RB') {
+    return [
+      { key: '_rushYds',  label: 'Rush Yds',  fmt: v => fmtStat(v) },
+      { key: '_rushTDs',  label: 'Rush TD',   fmt: v => fmtStat(v) },
+      { key: '_rushAtt',  label: 'Carries',   fmt: v => fmtStat(v) },
+      { key: '_recYds',   label: 'Rec Yds',   fmt: v => fmtStat(v) },
+      { key: '_recs',     label: 'Rec',        fmt: v => fmtStat(v) },
+    ]
+  }
+  if (pos === 'WR' || pos === 'TE') {
+    return [
+      { key: '_recYds',   label: 'Rec Yds',   fmt: v => fmtStat(v) },
+      { key: '_recTDs',   label: 'Rec TD',    fmt: v => fmtStat(v) },
+      { key: '_recs',     label: 'Rec',        fmt: v => fmtStat(v) },
+    ]
+  }
+  if (['EDGE', 'DL', 'LB'].includes(pos)) {
+    return [
+      { key: '_sacks',    label: 'Sacks',     fmt: v => fmtStat(v, 1) },
+      { key: '_tfl',      label: 'TFL',       fmt: v => fmtStat(v, 1) },
+      { key: '_tackles',  label: 'Tackles',   fmt: v => fmtStat(v) },
+    ]
+  }
+  if (pos === 'DB') {
+    return [
+      { key: '_dbInts',   label: 'INT',        fmt: v => fmtStat(v) },
+      { key: '_pd',       label: 'PD',         fmt: v => fmtStat(v) },
+      { key: '_tackles',  label: 'Tackles',   fmt: v => fmtStat(v) },
+    ]
+  }
+  return [
+    { key: 'espnGrade', label: 'ESPN Grade', fmt: v => fmtStat(v, 1) },
+  ]
+}
+
+function flattenPlayer(p, year, isCurrent) {
+  const cd = p.combineData || {}
+  const best = getBestSeason(p.collegeStats, p.positionGroup)
+  return {
+    name: p.name,
+    school: p.school,
+    positionGroup: p.positionGroup,
+    espnGrade: p.espnGrade,
+    _year: year,
+    _isCurrent: isCurrent,
+    _pick: isCurrent ? p.projectedPick : p.actualPick,
+    _round: isCurrent ? p.projectedRound : p.actualRound,
+    _team: isCurrent ? p.projectedTeam : p.actualTeam,
+    _tier: p.draftGrade?.tier || null,
+    _tierScore: p.draftGrade?.score,
+    // combine
+    _forty: cd.forty, _weight: cd.weight, _height: cd.height,
+    _vertical: cd.vertical, _broadJump: cd.broadJump,
+    _bench: cd.bench, _cone: cd.cone, _shuttle: cd.shuttle,
+    // production (best college season)
+    _passYds: best.passingYards, _passTDs: best.passingTDs, _ints: best.interceptions,
+    _rushYds: best.rushingYards, _rushTDs: best.rushingTDs, _rushAtt: best.rushingAttempts,
+    _recYds: best.receivingYards, _recTDs: best.receivingTDs, _recs: best.receptions,
+    _sacks: best.sacks, _tfl: best.tacklesForLoss, _tackles: best.tackles,
+    _dbInts: best.interceptions, _pd: best.passesDefended,
+  }
+}
+
+function buildCrossDraftComparison(history, prospects, pos, view, sortKey, sortDir, filterRound) {
+  const years = Object.keys(history).sort()
+
+  // Merge historical + current 2026 prospects
+  let players = []
+  for (const [year, list] of Object.entries(history)) {
+    for (const p of list) {
+      if (p.positionGroup !== pos) continue
+      players.push(flattenPlayer(p, year, false))
+    }
+  }
+  for (const p of prospects) {
+    if (p.positionGroup !== pos) continue
+    players.push(flattenPlayer(p, '2026', true))
+  }
+
+  // Filter by round
+  if (filterRound !== 'ALL') {
+    players = players.filter(p => String(p._round) === filterRound)
+  }
+
+  // Sort
+  const columns = getCompareColumns(view, pos)
+  const validSortKeys = ['espnGrade', '_year', ...columns.map(c => c.key)]
+  const actualSortKey = validSortKeys.includes(sortKey) ? sortKey : columns[0]?.key || 'espnGrade'
+  const dir = sortDir === 'asc' ? 1 : -1
+  players.sort((a, b) => {
+    const va = a[actualSortKey], vb = b[actualSortKey]
+    if (va == null && vb == null) return 0
+    if (va == null) return 1
+    if (vb == null) return -1
+    if (typeof va === 'string') return dir * va.localeCompare(vb)
+    return dir * (va - vb)
+  })
+
+  // Position tabs
+  const posTabs = POSITIONS.map(p => `
+    <button class="compare-pos-tab px-3 py-1.5 rounded-full text-sm font-medium transition-colors
+      ${p === pos ? 'bg-blue-600 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'}"
+      data-pos="${p}">${p}</button>`
+  ).join('')
+
+  // View tabs
+  const viewTabs = COMPARE_VIEWS.map(v => `
+    <button class="compare-view-tab px-3 py-1.5 rounded-lg text-xs font-medium transition-colors
+      ${v.id === view ? 'bg-gray-600 text-white' : 'bg-gray-800 text-gray-400 hover:bg-gray-700'}"
+      data-view="${v.id}">${v.label}</button>`
+  ).join('')
+
+  // Round filter
+  const roundOpts = ['ALL', ...ROUNDS.map(String)].map(r =>
+    `<option value="${r}" ${filterRound === r ? 'selected' : ''}>${r === 'ALL' ? 'All Rounds' : 'Round ' + r}</option>`
+  ).join('')
+
+  // Sort icon helper
+  const sortIcon = (key) => {
+    if (actualSortKey !== key) return ''
+    return sortDir === 'asc' ? ' ↑' : ' ↓'
+  }
+
+  // Table headers
+  const thCols = columns.map(c =>
+    `<th class="px-3 py-2 text-center text-xs text-gray-400 font-medium cursor-pointer hover:text-white select-none compare-sort-th" data-sort="${c.key}">${c.label}${sortIcon(c.key)}</th>`
+  ).join('')
+
+  // Table rows
+  const rows = players.map(p => {
+    const rowClass = p._isCurrent
+      ? 'border-b border-blue-800/40 bg-blue-950/30 hover:bg-blue-900/30'
+      : 'border-b border-gray-800/60 hover:bg-gray-800/30'
+    const yearBadge = p._isCurrent
+      ? `<span class="px-1.5 py-0.5 rounded text-xs font-bold bg-blue-600 text-white">2026</span>`
+      : `<span class="text-xs text-gray-400">${p._year}</span>`
+    const pc = POS_COLORS[p.positionGroup] || 'text-gray-400 bg-gray-800'
+
+    const dataCols = columns.map(c => {
+      const val = p[c.key]
+      const rendered = c.fmt(val, p)
+      return `<td class="px-3 py-2 text-center text-sm text-gray-300 whitespace-nowrap">${rendered}</td>`
+    }).join('')
+
+    return `
+      <tr class="${rowClass}">
+        <td class="px-3 py-2 text-sm font-medium text-white whitespace-nowrap sticky left-0 ${p._isCurrent ? 'bg-blue-950/80' : 'bg-gray-900/95'}">${p.name}</td>
+        <td class="px-3 py-2 text-center">${yearBadge}</td>
+        <td class="px-3 py-2 text-xs text-gray-500 whitespace-nowrap">${p.school || '—'}</td>
+        ${dataCols}
+      </tr>`
+  }).join('')
+
+  return `
+    <div>
+      <div class="flex flex-wrap gap-2 mb-4">${posTabs}</div>
+      <div class="flex flex-wrap items-center gap-3 mb-4">
+        <div class="flex gap-1">${viewTabs}</div>
+        <select id="compare-round-filter" class="bg-gray-800 border border-gray-700 text-gray-200 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-blue-500">
+          ${roundOpts}
+        </select>
+        <span class="text-xs text-gray-500">${players.length} player${players.length !== 1 ? 's' : ''}</span>
+        <span class="ml-auto flex items-center gap-1.5 text-xs text-blue-400">
+          <span class="w-2 h-2 rounded-full bg-blue-500 inline-block"></span>2026 prospects highlighted
+        </span>
+      </div>
+      <p class="text-xs text-gray-500 mb-3">
+        ${view === 'grade' ? 'Pre-draft ESPN grades across all draft classes. 2026 shows projected pick/round/team.' :
+          view === 'combine' ? 'NFL Combine measurements across draft classes. Click column headers to sort.' :
+          'Best college season stats. Click column headers to sort.'}
+      </p>
+      <div class="overflow-x-auto rounded-xl border border-gray-700">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-gray-700">
+              <th class="px-3 py-2 text-left text-xs text-gray-400 font-medium sticky left-0 bg-gray-900 cursor-pointer hover:text-white select-none compare-sort-th" data-sort="_year">Player</th>
+              <th class="px-3 py-2 text-center text-xs text-gray-400 font-medium cursor-pointer hover:text-white select-none compare-sort-th" data-sort="_year">Year${sortIcon('_year')}</th>
+              <th class="px-3 py-2 text-center text-xs text-gray-400 font-medium">School</th>
+              ${thCols}
+            </tr>
+          </thead>
+          <tbody>${rows || '<tr><td colspan="20" class="px-3 py-6 text-center text-gray-600">No players match these filters.</td></tr>'}</tbody>
+        </table>
+      </div>
+    </div>`
+}
+
 export function renderDraftAnalytics() {
   const container = document.getElementById('analytics-page')
   if (!container) return
 
   const {
     draftHistory,
+    prospects,
     analyticsTab      = 'year',
     analyticsPos      = 'QB',
     analyticsPlayerPos   = 'ALL',
     analyticsPlayerYear  = 'ALL',
     analyticsPlayerRound = 'ALL',
+    comparePos    = 'RB',
+    compareView   = 'grade',
+    compareSort   = 'espnGrade',
+    compareSortDir = 'desc',
+    compareRound  = 'ALL',
   } = getState()
 
   if (!draftHistory || !Object.keys(draftHistory).length) {
@@ -317,6 +580,7 @@ export function renderDraftAnalytics() {
     { id: 'round',    label: 'By Round'       },
     { id: 'position', label: 'By Position'    },
     { id: 'players',  label: 'Players'        },
+    { id: 'compare',  label: 'Compare Across Drafts' },
   ]
 
   const tabBar = tabs.map(t => `
@@ -332,6 +596,7 @@ export function renderDraftAnalytics() {
   else if (analyticsTab === 'round')   content = buildByRound(history)
   else if (analyticsTab === 'position') content = buildByPosition(history, analyticsPos)
   else if (analyticsTab === 'players') content = buildPlayerList(history, analyticsPlayerPos, analyticsPlayerYear, analyticsPlayerRound)
+  else if (analyticsTab === 'compare') content = buildCrossDraftComparison(history, prospects || [], comparePos, compareView, compareSort, compareSortDir, compareRound)
 
   const legend = TIERS.map(t => {
     const c = TIER_COLORS[t]
@@ -374,5 +639,31 @@ export function renderDraftAnalytics() {
   })
   container.querySelector('#player-filter-round')?.addEventListener('change', e => {
     setState({ analyticsPlayerRound: e.target.value })
+  })
+
+  // Compare tab: position tabs
+  container.querySelectorAll('.compare-pos-tab').forEach(btn => {
+    btn.addEventListener('click', () => setState({ comparePos: btn.dataset.pos }))
+  })
+  // Compare tab: view tabs (grade/combine/production)
+  container.querySelectorAll('.compare-view-tab').forEach(btn => {
+    btn.addEventListener('click', () => setState({ compareView: btn.dataset.view }))
+  })
+  // Compare tab: round filter
+  container.querySelector('#compare-round-filter')?.addEventListener('change', e => {
+    setState({ compareRound: e.target.value })
+  })
+  // Compare tab: sortable column headers
+  container.querySelectorAll('.compare-sort-th').forEach(th => {
+    th.addEventListener('click', () => {
+      const key = th.dataset.sort
+      if (!key) return
+      const { compareSort: curKey, compareSortDir: curDir } = getState()
+      if (curKey === key) {
+        setState({ compareSortDir: curDir === 'desc' ? 'asc' : 'desc' })
+      } else {
+        setState({ compareSort: key, compareSortDir: 'desc' })
+      }
+    })
   })
 }
