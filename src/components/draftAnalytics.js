@@ -488,11 +488,20 @@ function buildCrossDraftComparison(history, prospects, pos, view, sortKey, sortD
     `<th class="px-3 py-2 text-center text-xs text-gray-400 font-medium cursor-pointer hover:text-white select-none compare-sort-th" data-sort="${c.key}">${c.label}${sortIcon(c.key)}</th>`
   ).join('')
 
+  // Tier row tint styles (subtle left border + background)
+  const TIER_ROW = {
+    Elite:   'border-l-2 border-l-yellow-400/60 bg-yellow-500/[0.04]',
+    Starter: 'border-l-2 border-l-green-400/60 bg-green-500/[0.04]',
+    Backup:  'border-l-2 border-l-blue-400/40 bg-blue-500/[0.03]',
+    Bust:    'border-l-2 border-l-red-400/40 bg-red-500/[0.03]',
+  }
+
   // Table rows
   const rows = players.map(p => {
+    const tierTint = (!p._isCurrent && p._tier) ? TIER_ROW[p._tier] || '' : ''
     const rowClass = p._isCurrent
-      ? 'border-b border-blue-800/40 bg-blue-950/30 hover:bg-blue-900/30'
-      : 'border-b border-gray-800/60 hover:bg-gray-800/30'
+      ? 'border-b border-blue-800/40 bg-blue-950/30 hover:bg-blue-900/30 border-l-2 border-l-blue-400'
+      : `border-b border-gray-800/60 hover:bg-gray-800/30 ${tierTint}`
     const yearBadge = p._isCurrent
       ? `<span class="px-1.5 py-0.5 rounded text-xs font-bold bg-blue-600 text-white">2026</span>`
       : `<span class="text-xs text-gray-400">${p._year}</span>`
@@ -522,8 +531,12 @@ function buildCrossDraftComparison(history, prospects, pos, view, sortKey, sortD
           ${roundOpts}
         </select>
         <span class="text-xs text-gray-500">${players.length} player${players.length !== 1 ? 's' : ''}</span>
-        <span class="ml-auto flex items-center gap-1.5 text-xs text-blue-400">
-          <span class="w-2 h-2 rounded-full bg-blue-500 inline-block"></span>2026 prospects highlighted
+        <span class="ml-auto flex items-center gap-3 text-xs">
+          <span class="flex items-center gap-1.5 text-blue-400"><span class="w-2 h-2 rounded-full bg-blue-500 inline-block"></span>2026</span>
+          <span class="flex items-center gap-1.5 text-yellow-400"><span class="w-2 h-2 rounded-full bg-yellow-400 inline-block"></span>Elite</span>
+          <span class="flex items-center gap-1.5 text-green-400"><span class="w-2 h-2 rounded-full bg-green-400 inline-block"></span>Starter</span>
+          <span class="flex items-center gap-1.5 text-blue-300"><span class="w-2 h-2 rounded-full bg-blue-400 inline-block"></span>Backup</span>
+          <span class="flex items-center gap-1.5 text-red-400"><span class="w-2 h-2 rounded-full bg-red-400 inline-block"></span>Bust</span>
         </span>
       </div>
       <p class="text-xs text-gray-500 mb-3">
