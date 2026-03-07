@@ -25,6 +25,11 @@ const state = {
   analyticsPlayerPos:   'ALL',  // filter for players tab
   analyticsPlayerYear:  'ALL',
   analyticsPlayerRound: 'ALL',
+  comparePos:    'RB',          // cross-draft comparison position
+  compareView:   'grade',       // 'grade' | 'combine' | 'production'
+  compareSort:   'espnGrade',   // column to sort by
+  compareSortDir: 'desc',       // 'asc' | 'desc'
+  compareRound:  'ALL',         // round filter for comparison
 }
 
 // Subscribers can optionally declare which keys they care about.
