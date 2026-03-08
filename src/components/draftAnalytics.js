@@ -348,9 +348,17 @@ function getCompareColumns(view, pos) {
       { key: '_bench',     label: 'Bench',      fmt: v => fmtStat(v) },
       { key: '_cone',      label: '3-Cone',     fmt: v => fmtStat(v, 2) },
       { key: '_shuttle',   label: 'Shuttle',    fmt: v => fmtStat(v, 2) },
+      { key: '_tier',      label: 'Tier',       fmt: (v, p) => {
+        const tc = TIER_COLORS[v]
+        return tc ? `<span class="px-2 py-0.5 rounded-full text-xs font-medium ${tc.badge}">${v}</span>` : '<span class="text-gray-600 text-xs">—</span>'
+      }},
     ]
   }
   // production
+  const tierCol = { key: '_tier', label: 'Tier', fmt: (v, p) => {
+    const tc = TIER_COLORS[v]
+    return tc ? `<span class="px-2 py-0.5 rounded-full text-xs font-medium ${tc.badge}">${v}</span>` : '<span class="text-gray-600 text-xs">—</span>'
+  }}
   if (pos === 'QB') {
     return [
       { key: '_passYds',  label: 'Pass Yds',  fmt: v => fmtStat(v) },
@@ -358,6 +366,7 @@ function getCompareColumns(view, pos) {
       { key: '_ints',     label: 'INT',        fmt: v => fmtStat(v) },
       { key: '_rushYds',  label: 'Rush Yds',  fmt: v => fmtStat(v) },
       { key: '_rushTDs',  label: 'Rush TD',   fmt: v => fmtStat(v) },
+      tierCol,
     ]
   }
   if (pos === 'RB') {
@@ -367,6 +376,7 @@ function getCompareColumns(view, pos) {
       { key: '_rushAtt',  label: 'Carries',   fmt: v => fmtStat(v) },
       { key: '_recYds',   label: 'Rec Yds',   fmt: v => fmtStat(v) },
       { key: '_recs',     label: 'Rec',        fmt: v => fmtStat(v) },
+      tierCol,
     ]
   }
   if (pos === 'WR' || pos === 'TE') {
@@ -374,6 +384,7 @@ function getCompareColumns(view, pos) {
       { key: '_recYds',   label: 'Rec Yds',   fmt: v => fmtStat(v) },
       { key: '_recTDs',   label: 'Rec TD',    fmt: v => fmtStat(v) },
       { key: '_recs',     label: 'Rec',        fmt: v => fmtStat(v) },
+      tierCol,
     ]
   }
   if (['EDGE', 'DL', 'LB'].includes(pos)) {
@@ -381,6 +392,7 @@ function getCompareColumns(view, pos) {
       { key: '_sacks',    label: 'Sacks',     fmt: v => fmtStat(v, 1) },
       { key: '_tfl',      label: 'TFL',       fmt: v => fmtStat(v, 1) },
       { key: '_tackles',  label: 'Tackles',   fmt: v => fmtStat(v) },
+      tierCol,
     ]
   }
   if (pos === 'DB') {
@@ -388,10 +400,12 @@ function getCompareColumns(view, pos) {
       { key: '_dbInts',   label: 'INT',        fmt: v => fmtStat(v) },
       { key: '_pd',       label: 'PD',         fmt: v => fmtStat(v) },
       { key: '_tackles',  label: 'Tackles',   fmt: v => fmtStat(v) },
+      tierCol,
     ]
   }
   return [
     { key: 'espnGrade', label: 'ESPN Grade', fmt: v => fmtStat(v, 1) },
+    tierCol,
   ]
 }
 
@@ -488,11 +502,20 @@ function buildCrossDraftComparison(history, prospects, pos, view, sortKey, sortD
     `<th class="px-3 py-2 text-center text-xs text-gray-400 font-medium cursor-pointer hover:text-white select-none compare-sort-th" data-sort="${c.key}">${c.label}${sortIcon(c.key)}</th>`
   ).join('')
 
+  // Tier row tint styles (subtle left border + background)
+  const TIER_ROW = {
+    Elite:   'border-l-2 border-l-yellow-400/60 bg-yellow-500/[0.04]',
+    Starter: 'border-l-2 border-l-green-400/60 bg-green-500/[0.04]',
+    Backup:  'border-l-2 border-l-blue-400/40 bg-blue-500/[0.03]',
+    Bust:    'border-l-2 border-l-red-400/40 bg-red-500/[0.03]',
+  }
+
   // Table rows
   const rows = players.map(p => {
+    const tierTint = (!p._isCurrent && p._tier) ? TIER_ROW[p._tier] || '' : ''
     const rowClass = p._isCurrent
-      ? 'border-b border-blue-800/40 bg-blue-950/30 hover:bg-blue-900/30'
-      : 'border-b border-gray-800/60 hover:bg-gray-800/30'
+      ? 'border-b border-blue-800/40 bg-blue-950/30 hover:bg-blue-900/30 border-l-2 border-l-blue-400'
+      : `border-b border-gray-800/60 hover:bg-gray-800/30 ${tierTint}`
     const yearBadge = p._isCurrent
       ? `<span class="px-1.5 py-0.5 rounded text-xs font-bold bg-blue-600 text-white">2026</span>`
       : `<span class="text-xs text-gray-400">${p._year}</span>`
@@ -522,8 +545,12 @@ function buildCrossDraftComparison(history, prospects, pos, view, sortKey, sortD
           ${roundOpts}
         </select>
         <span class="text-xs text-gray-500">${players.length} player${players.length !== 1 ? 's' : ''}</span>
-        <span class="ml-auto flex items-center gap-1.5 text-xs text-blue-400">
-          <span class="w-2 h-2 rounded-full bg-blue-500 inline-block"></span>2026 prospects highlighted
+        <span class="ml-auto flex items-center gap-3 text-xs">
+          <span class="flex items-center gap-1.5 text-blue-400"><span class="w-2 h-2 rounded-full bg-blue-500 inline-block"></span>2026</span>
+          <span class="flex items-center gap-1.5 text-yellow-400"><span class="w-2 h-2 rounded-full bg-yellow-400 inline-block"></span>Elite</span>
+          <span class="flex items-center gap-1.5 text-green-400"><span class="w-2 h-2 rounded-full bg-green-400 inline-block"></span>Starter</span>
+          <span class="flex items-center gap-1.5 text-blue-300"><span class="w-2 h-2 rounded-full bg-blue-400 inline-block"></span>Backup</span>
+          <span class="flex items-center gap-1.5 text-red-400"><span class="w-2 h-2 rounded-full bg-red-400 inline-block"></span>Bust</span>
         </span>
       </div>
       <p class="text-xs text-gray-500 mb-3">
