@@ -397,10 +397,10 @@ export function renderProspectCard(prospect, isExpanded = false) {
     }
     const posInfo = `#${prospect.positionRank}${prospect.positionTotal ? '<span class="text-gray-600">/' + prospect.positionTotal + '</span>' : ''} ${prospect.positionGroup}`
     const rdInfo = `Rd ${prospect.projectedRound || '?'}${prospect.projectedPickRange ? ' <span class="text-gray-600">(#' + prospect.projectedPickRange[0] + '–' + prospect.projectedPickRange[1] + ')</span>' : ''}`
-    const teamInfo = prospect.projectedTeam
-      ? ` &nbsp;·&nbsp; <span class="team-filter-btn text-amber-400 font-semibold hover:text-amber-300 cursor-pointer transition-colors" data-team="${prospect.projectedTeam}">${prospect.projectedPick ? '#' + prospect.projectedPick + ' ' : ''}${prospect.projectedTeam.split(' ').pop()}</span>`
+    const teamOnly = prospect.projectedTeam
+      ? ` &nbsp;·&nbsp; <span class="team-filter-btn text-amber-400 font-semibold hover:text-amber-300 cursor-pointer transition-colors" data-team="${prospect.projectedTeam}">${prospect.projectedTeam.split(' ').pop()}</span>`
       : ''
-    return `<div>${rdInfo} &nbsp;·&nbsp; ${posInfo}${teamInfo}</div>`
+    return `<div>${rdInfo} &nbsp;·&nbsp; ${posInfo}${teamOnly}</div>`
   })()
 
   return `
@@ -420,7 +420,15 @@ export function renderProspectCard(prospect, isExpanded = false) {
             </div>
             <h2 class="text-base font-bold text-white leading-snug mb-1">${prospect.name}</h2>
             <div class="flex items-center gap-2 flex-wrap">
-              <span class="text-2xl font-black ${rankColor} leading-none">#${prospect.consensusRank}</span>
+              <div class="flex flex-col items-center mr-1">
+                <span class="text-2xl font-black ${rankColor} leading-none">#${prospect.consensusRank}</span>
+                <span class="text-[9px] text-gray-500 uppercase tracking-wider leading-tight mt-0.5">Rank</span>
+              </div>
+              ${(!prospect.actualPick && prospect.projectedPick) ? `
+              <div class="flex flex-col items-center mr-1">
+                <span class="text-2xl font-black text-gray-400 leading-none">#${prospect.projectedPick}</span>
+                <span class="text-[9px] text-gray-500 uppercase tracking-wider leading-tight mt-0.5">Mock</span>
+              </div>` : ''}
               <div class="text-xs text-gray-400 leading-snug">
                 ${pickInfoLine}
                 <div class="flex items-center gap-2">
