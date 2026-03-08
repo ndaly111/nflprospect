@@ -348,9 +348,17 @@ function getCompareColumns(view, pos) {
       { key: '_bench',     label: 'Bench',      fmt: v => fmtStat(v) },
       { key: '_cone',      label: '3-Cone',     fmt: v => fmtStat(v, 2) },
       { key: '_shuttle',   label: 'Shuttle',    fmt: v => fmtStat(v, 2) },
+      { key: '_tier',      label: 'Tier',       fmt: (v, p) => {
+        const tc = TIER_COLORS[v]
+        return tc ? `<span class="px-2 py-0.5 rounded-full text-xs font-medium ${tc.badge}">${v}</span>` : '<span class="text-gray-600 text-xs">—</span>'
+      }},
     ]
   }
   // production
+  const tierCol = { key: '_tier', label: 'Tier', fmt: (v, p) => {
+    const tc = TIER_COLORS[v]
+    return tc ? `<span class="px-2 py-0.5 rounded-full text-xs font-medium ${tc.badge}">${v}</span>` : '<span class="text-gray-600 text-xs">—</span>'
+  }}
   if (pos === 'QB') {
     return [
       { key: '_passYds',  label: 'Pass Yds',  fmt: v => fmtStat(v) },
@@ -358,6 +366,7 @@ function getCompareColumns(view, pos) {
       { key: '_ints',     label: 'INT',        fmt: v => fmtStat(v) },
       { key: '_rushYds',  label: 'Rush Yds',  fmt: v => fmtStat(v) },
       { key: '_rushTDs',  label: 'Rush TD',   fmt: v => fmtStat(v) },
+      tierCol,
     ]
   }
   if (pos === 'RB') {
@@ -367,6 +376,7 @@ function getCompareColumns(view, pos) {
       { key: '_rushAtt',  label: 'Carries',   fmt: v => fmtStat(v) },
       { key: '_recYds',   label: 'Rec Yds',   fmt: v => fmtStat(v) },
       { key: '_recs',     label: 'Rec',        fmt: v => fmtStat(v) },
+      tierCol,
     ]
   }
   if (pos === 'WR' || pos === 'TE') {
@@ -374,6 +384,7 @@ function getCompareColumns(view, pos) {
       { key: '_recYds',   label: 'Rec Yds',   fmt: v => fmtStat(v) },
       { key: '_recTDs',   label: 'Rec TD',    fmt: v => fmtStat(v) },
       { key: '_recs',     label: 'Rec',        fmt: v => fmtStat(v) },
+      tierCol,
     ]
   }
   if (['EDGE', 'DL', 'LB'].includes(pos)) {
@@ -381,6 +392,7 @@ function getCompareColumns(view, pos) {
       { key: '_sacks',    label: 'Sacks',     fmt: v => fmtStat(v, 1) },
       { key: '_tfl',      label: 'TFL',       fmt: v => fmtStat(v, 1) },
       { key: '_tackles',  label: 'Tackles',   fmt: v => fmtStat(v) },
+      tierCol,
     ]
   }
   if (pos === 'DB') {
@@ -388,10 +400,12 @@ function getCompareColumns(view, pos) {
       { key: '_dbInts',   label: 'INT',        fmt: v => fmtStat(v) },
       { key: '_pd',       label: 'PD',         fmt: v => fmtStat(v) },
       { key: '_tackles',  label: 'Tackles',   fmt: v => fmtStat(v) },
+      tierCol,
     ]
   }
   return [
     { key: 'espnGrade', label: 'ESPN Grade', fmt: v => fmtStat(v, 1) },
+    tierCol,
   ]
 }
 
