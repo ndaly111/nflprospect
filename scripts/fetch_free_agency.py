@@ -1,10 +1,14 @@
 """
-Build free agency / transaction data from nflverse CSVs.
+Build free agency / transaction data from nflverse CSVs + ESPN transactions API.
 
-Detects team changes between seasons from player_stats, enriches with
-contract data from OverTheCap (via nflverse), and includes trades from
-nflverse trades.csv. Cross-references draft_history.json for tier assignments.
+Data sources:
+1. nflverse player_stats_season.csv — detects team changes between seasons
+2. nflverse trades.csv — trade data with pick compensation
+3. nflverse historical_contracts.csv.gz — OverTheCap contract data
+4. nflverse players.csv — player bio/position info
+5. ESPN transactions API — real-time signings/trades/releases (--live mode)
 
+Cross-references draft_history.json for tier assignments.
 Writes public/data/free_agency.json keyed by year.
 """
 import gzip
@@ -12,7 +16,9 @@ import io
 import json
 import logging
 import math
+import re
 import sys
+import time
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -432,6 +438,198 @@ def calc_age(birth_date_str, ref_date_str):
         return None
 
 
+# ── ESPN Transactions API ─────────────────────────────────────────────────────
+
+# ESPN team ID → standard abbreviation
+ESPN_TEAM_ID_MAP = {
+    '1': 'ATL', '2': 'BUF', '3': 'CHI', '4': 'CIN', '5': 'CLE',
+    '6': 'DAL', '7': 'DEN', '8': 'DET', '9': 'GB', '10': 'TEN',
+    '11': 'IND', '12': 'KC', '13': 'LV', '14': 'LAR', '15': 'MIA',
+    '16': 'MIN', '17': 'NE', '18': 'NO', '19': 'NYG', '20': 'NYJ',
+    '21': 'PHI', '22': 'ARI', '23': 'PIT', '24': 'LAC', '25': 'SF',
+    '26': 'SEA', '27': 'TB', '28': 'WAS', '29': 'CAR', '30': 'JAX',
+    '33': 'BAL', '34': 'HOU',
+}
+
+ESPN_TEAM_SLUG_MAP = {
+    'arizona': 'ARI', 'atlanta': 'ATL', 'baltimore': 'BAL', 'buffalo': 'BUF',
+    'carolina': 'CAR', 'chicago': 'CHI', 'cincinnati': 'CIN', 'cleveland': 'CLE',
+    'dallas': 'DAL', 'denver': 'DEN', 'detroit': 'DET', 'green-bay': 'GB',
+    'houston': 'HOU', 'indianapolis': 'IND', 'jacksonville': 'JAX', 'kansas-city': 'KC',
+    'las-vegas': 'LV', 'la-chargers': 'LAC', 'la-rams': 'LAR', 'miami': 'MIA',
+    'minnesota': 'MIN', 'new-england': 'NE', 'new-orleans': 'NO', 'ny-giants': 'NYG',
+    'ny-jets': 'NYJ', 'philadelphia': 'PHI', 'pittsburgh': 'PIT', 'san-francisco': 'SF',
+    'seattle': 'SEA', 'tampa-bay': 'TB', 'tennessee': 'TEN', 'washington': 'WAS',
+}
+
+# Transaction types in ESPN API that correspond to notable FA moves
+SIGNING_KEYWORDS = ['signed', 'contract', 'agreed to terms', 're-signed', 'extended']
+TRADE_KEYWORDS = ['traded', 'acquired via trade']
+RELEASE_KEYWORDS = ['released', 'waived', 'cut']
+
+
+def fetch_espn_transactions(year, players_info=None, tier_lookup=None, stats=None):
+    """
+    Fetch real-time transactions from ESPN's per-team transactions pages.
+    Returns a list of transaction dicts compatible with our schema.
+    """
+    logger.info(f'Fetching ESPN transactions for {year} (all 32 teams)...')
+    transactions = []
+    seen = set()
+
+    for team_id, abbrev in sorted(ESPN_TEAM_ID_MAP.items(), key=lambda x: x[1]):
+        url = f'https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/{team_id}/transactions?season={year}'
+        try:
+            resp = requests.get(url, timeout=15)
+            if resp.status_code != 200:
+                logger.debug(f'  {abbrev}: HTTP {resp.status_code}')
+                continue
+            data = resp.json()
+        except Exception as e:
+            logger.debug(f'  {abbrev}: failed ({e})')
+            continue
+
+        items = data.get('items', data.get('transactions', []))
+        for item in items:
+            # ESPN transaction structure varies; try multiple formats
+            description = item.get('description', item.get('text', ''))
+            date_str = item.get('date', '')
+            tx_type_raw = item.get('type', {})
+            if isinstance(tx_type_raw, dict):
+                tx_type_text = tx_type_raw.get('text', '').lower()
+            else:
+                tx_type_text = str(tx_type_raw).lower()
+
+            if not description:
+                continue
+
+            # Parse player name from description
+            # Common formats: "Signed QB Sam Darnold to a 3-year contract"
+            #                 "Traded WR DK Metcalf to Saints"
+            #                 "Released CB Jalen Ramsey"
+            player_name = None
+            position = None
+
+            # Try to extract "Position PlayerName" pattern
+            pos_pattern = r'\b(QB|RB|WR|TE|OT|OG|C|DE|DT|NT|OLB|ILB|MLB|LB|CB|S|FS|SS|K|P|LS)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z\'-]+)+)'
+            match = re.search(pos_pattern, description)
+            if match:
+                position = match.group(1)
+                player_name = match.group(2).strip()
+
+            if not player_name:
+                continue
+
+            # Determine transaction type
+            desc_lower = description.lower()
+            if any(kw in desc_lower for kw in TRADE_KEYWORDS):
+                tx_type = 'trade'
+            elif any(kw in desc_lower for kw in SIGNING_KEYWORDS):
+                if 're-sign' in desc_lower or 'extend' in desc_lower:
+                    tx_type = 'extension'
+                else:
+                    tx_type = 'signing'
+            elif any(kw in desc_lower for kw in RELEASE_KEYWORDS):
+                continue  # Skip releases for now (we track where players go, not departures)
+            else:
+                continue
+
+            # Skip duplicates
+            name_norm = normalize_name(player_name)
+            dedup_key = (name_norm, abbrev, tx_type)
+            if dedup_key in seen:
+                continue
+            seen.add(dedup_key)
+
+            pg = pos_group(position) if position else None
+            if not pg or pg in ('K', 'P', 'LS'):
+                continue
+
+            # Determine from/to teams
+            if tx_type == 'extension':
+                from_team = abbrev
+                to_team = abbrev
+            elif tx_type == 'trade':
+                # For trades on a team's page, the team is typically the one acquiring
+                to_team = abbrev
+                from_team = None  # We don't always know
+            else:
+                to_team = abbrev
+                from_team = None  # FA signing — from_team will be filled later if we can
+
+            # Look up tier
+            tier = None
+            if tier_lookup:
+                tier = tier_lookup.get(name_norm)
+                if not tier:
+                    candidates = [{'name': k} for k in tier_lookup.keys()]
+                    m = fuzzy_match_player(player_name, candidates, threshold=90)
+                    if m:
+                        tier = tier_lookup.get(m['name'])
+
+            # Look up last season stats
+            last_stats = {}
+            if stats:
+                for (pid, season), sdata in stats.items():
+                    if normalize_name(str(sdata.get('name', '') or '')) == name_norm and season == year - 1:
+                        for key in ['games', 'passYds', 'passTD', 'int', 'rushYds', 'rushTD',
+                                    'rec', 'recYds', 'recTD', 'sacks', 'tackles', 'tfl', 'pd']:
+                            val = sdata.get(key)
+                            if val is not None:
+                                last_stats[key] = val
+                        # Also grab previous team as fromTeam
+                        if from_team is None and tx_type == 'signing':
+                            from_team = sdata.get('team')
+                        break
+
+            # Estimate tier if not found
+            if not tier:
+                tier = estimate_tier_from_stats(last_stats, pg)
+
+            # Get age from players_info
+            age = None
+            if players_info:
+                for pid, pinfo in players_info.items():
+                    if normalize_name(pinfo.get('name', '')) == name_norm:
+                        age = calc_age(pinfo.get('birth_date', ''), f'{year}-03-15')
+                        if from_team is None and tx_type == 'signing':
+                            # Use latest_team as from_team if it's different from to_team
+                            lt = pinfo.get('latest_team')
+                            if lt and lt != to_team:
+                                from_team = lt
+                        break
+
+            # Parse date
+            tx_date = f'{year}-03-15'
+            if date_str:
+                try:
+                    dt = datetime.fromisoformat(date_str.replace('Z', '+00:00'))
+                    tx_date = dt.strftime('%Y-%m-%d')
+                except (ValueError, TypeError):
+                    pass
+
+            tx_id = make_id(player_name, pg, f'{tx_type}-espn-{year}')
+            tx = {
+                'id': tx_id,
+                'type': tx_type,
+                'name': player_name,
+                'position': position or '',
+                'positionGroup': pg,
+                'fromTeam': from_team,
+                'toTeam': to_team,
+                'tier': tier,
+                'age': age,
+                'date': tx_date,
+                'lastSeasonStats': last_stats,
+            }
+            transactions.append(tx)
+
+        time.sleep(0.3)  # Rate limit
+
+    logger.info(f'  ESPN: found {len(transactions)} transactions for {year}')
+    return transactions
+
+
 # ── Main Builder ─────────────────────────────────────────────────────────────
 
 def detect_team_changes(stats, players_info):
@@ -505,13 +703,19 @@ def detect_team_changes(stats, players_info):
     return changes
 
 
-def build_free_agency(years=None):
-    """Build free agency data for specified years."""
+def build_free_agency(years=None, live=False):
+    """Build free agency data for specified years.
+    If live=True, also fetches real-time ESPN transactions for the current year.
+    """
     now = datetime.now(timezone.utc)
     current_year = now.year
 
     if years is None:
         years = list(range(2020, current_year + 1))
+
+    # In live mode, ensure the current year is in the list
+    if live and current_year not in years:
+        years.append(current_year)
 
     # Load all data sources
     stats = load_player_stats()
@@ -519,6 +723,16 @@ def build_free_agency(years=None):
     contracts = load_contracts()
     trade_list = load_trades()
     tier_lookup = load_draft_history()
+
+    # Fetch live ESPN transactions for the current year if requested
+    espn_transactions = {}
+    if live:
+        # Fetch for the current year (and optionally the most recent year if in early months)
+        live_year = current_year
+        logger.info(f'Live mode: fetching ESPN transactions for {live_year}')
+        espn_txs = fetch_espn_transactions(live_year, players_info, tier_lookup, stats)
+        if espn_txs:
+            espn_transactions[live_year] = espn_txs
 
     # Detect team changes from stats
     team_changes = detect_team_changes(stats, players_info)
@@ -630,6 +844,21 @@ def build_free_agency(years=None):
 
             transactions.append(tx)
 
+        # Merge ESPN live transactions for this year (if available)
+        if year in espn_transactions:
+            espn_seen = {normalize_name(tx['name']) for tx in transactions}
+            espn_txs = espn_transactions[year]
+            espn_added = 0
+            for etx in espn_txs:
+                etx_name = normalize_name(etx['name'])
+                etx_id = etx['id']
+                if etx_name in espn_seen or etx_id in existing_ids:
+                    continue
+                transactions.append(etx)
+                espn_seen.add(etx_name)
+                espn_added += 1
+            logger.info(f'  ESPN live: added {espn_added} new transactions for {year}')
+
         # Also add trades that weren't detected as team changes
         # (e.g., player was traded but didn't have stats in both seasons)
         seen_names = {normalize_name(tx['name']) for tx in transactions}
@@ -735,9 +964,11 @@ def main():
                         help='Specific years to build (default: 2020-current)')
     parser.add_argument('--output', type=str, default=str(DATA_DIR / 'free_agency.json'),
                         help='Output file path')
+    parser.add_argument('--live', action='store_true',
+                        help='Fetch real-time transactions from ESPN API for the current year')
     args = parser.parse_args()
 
-    result = build_free_agency(args.years)
+    result = build_free_agency(args.years, live=args.live)
 
     # Merge with existing data (don't overwrite years we didn't rebuild)
     output_path = Path(args.output)
