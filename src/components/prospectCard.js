@@ -1,20 +1,10 @@
 import { trendArrow, formatDate } from '../utils/format.js'
+import { nflTeamLogo } from '../utils/teams.js'
 import { renderRankingChart, destroyChart } from './rankingChart.js'
 import { renderCollegeStats } from './collegeStats.js'
 import { renderCombinePanel } from './combinePanel.js'
 import { renderNflCareerStats } from './nflCareerStats.js'
 import { getState, setState, subscribe } from '../state.js'
-
-// nflverse uses PFR-style abbreviations; ESPN CDN uses its own short codes
-const PFR_TO_ESPN = {
-  GNB: 'gb', KAN: 'kc', NOR: 'no', NWE: 'ne',
-  SFO: 'sf', TAM: 'tb', LVR: 'lv', WAS: 'wsh',
-}
-function nflTeamLogo(abbrev) {
-  if (!abbrev) return ''
-  const espn = (PFR_TO_ESPN[abbrev] || abbrev).toLowerCase()
-  return `<img src="https://a.espncdn.com/i/teamlogos/nfl/500/${espn}.png" class="w-4 h-4 inline-block align-middle flex-shrink-0" loading="lazy" alt="" onerror="this.style.display='none'">`
-}
 
 function accoladeBadges(accolades) {
   if (!accolades) return ''
