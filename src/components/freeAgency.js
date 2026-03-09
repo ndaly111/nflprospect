@@ -309,7 +309,15 @@ export function renderFreeAgency() {
   const container = document.getElementById('freeagency-page')
   if (!container) return
 
-  const { freeAgency, freeAgencyYear, freeAgencyTab } = getState()
+  let { freeAgency, freeAgencyYear, freeAgencyTab } = getState()
+
+  // Auto-select the most recent year if current selection doesn't exist
+  const availableYears = Object.keys(freeAgency).sort()
+  if (!freeAgency[freeAgencyYear] && availableYears.length) {
+    freeAgencyYear = availableYears[availableYears.length - 1]
+    setState({ freeAgencyYear })
+  }
+
   const yearData = freeAgency[freeAgencyYear]
   if (!yearData) {
     container.innerHTML = '<div class="text-gray-500 text-center py-12">No free agency data available.</div>'
