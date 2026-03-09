@@ -1,0 +1,759 @@
+"""
+Build free agency / transaction data from nflverse CSVs.
+
+Detects team changes between seasons from player_stats, enriches with
+contract data from OverTheCap (via nflverse), and includes trades from
+nflverse trades.csv. Cross-references draft_history.json for tier assignments.
+
+Writes public/data/free_agency.json keyed by year.
+"""
+import gzip
+import io
+import json
+import logging
+import math
+import sys
+from collections import defaultdict
+from datetime import datetime, timezone
+from pathlib import Path
+
+import pandas as pd
+import requests
+
+sys.path.insert(0, str(Path(__file__).parent))
+from utils import normalize_name, fuzzy_match_player
+
+logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
+
+# ── URLs ─────────────────────────────────────────────────────────────────────
+PLAYER_STATS_URL   = 'https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_season.csv'
+PLAYER_STATS_DEF_URL = 'https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_def_season.csv'
+CONTRACTS_URL      = 'https://github.com/nflverse/nflverse-data/releases/download/contracts/historical_contracts.csv.gz'
+TRADES_URL         = 'https://github.com/nflverse/nflverse-data/releases/download/trades/trades.csv'
+PLAYERS_URL        = 'https://github.com/nflverse/nflverse-data/releases/download/players/players.csv'
+
+DATA_DIR = Path(__file__).resolve().parent.parent / 'public' / 'data'
+
+# ── Mappings ─────────────────────────────────────────────────────────────────
+TEAM_ABBREV_MAP = {
+    'GNB': 'GB', 'KAN': 'KC', 'LVR': 'LV', 'NOR': 'NO',
+    'NWE': 'NE', 'SFO': 'SF', 'TAM': 'TB', 'OAK': 'LV',
+    'STL': 'LAR', 'SDG': 'LAC', 'SD': 'LAC',
+}
+
+# OTC uses full team names; map to abbreviations
+OTC_TEAM_MAP = {
+    'Cardinals': 'ARI', 'Falcons': 'ATL', 'Ravens': 'BAL', 'Bills': 'BUF',
+    'Panthers': 'CAR', 'Bears': 'CHI', 'Bengals': 'CIN', 'Browns': 'CLE',
+    'Cowboys': 'DAL', 'Broncos': 'DEN', 'Lions': 'DET', 'Packers': 'GB',
+    'Texans': 'HOU', 'Colts': 'IND', 'Jaguars': 'JAX', 'Chiefs': 'KC',
+    'Chargers': 'LAC', 'Rams': 'LAR', 'Raiders': 'LV', 'Dolphins': 'MIA',
+    'Vikings': 'MIN', 'Patriots': 'NE', 'Saints': 'NO', 'Giants': 'NYG',
+    'Jets': 'NYJ', 'Eagles': 'PHI', 'Steelers': 'PIT', 'Seahawks': 'SEA',
+    '49ers': 'SF', 'Buccaneers': 'TB', 'Titans': 'TEN', 'Commanders': 'WAS',
+    'Redskins': 'WAS', 'Washington': 'WAS', 'Football Team': 'WAS',
+}
+
+POS_GROUP_MAP = {
+    'QB': 'QB', 'RB': 'RB', 'FB': 'RB',
+    'WR': 'WR', 'TE': 'TE',
+    'OT': 'OL', 'T': 'OL', 'OG': 'OL', 'G': 'OL', 'C': 'OL', 'IOL': 'OL', 'OL': 'OL',
+    'DT': 'DL', 'NT': 'DL', 'DL': 'DL',
+    'DE': 'EDGE', 'EDGE': 'EDGE', 'OLB': 'EDGE',
+    'ILB': 'LB', 'MLB': 'LB', 'LB': 'LB',
+    'CB': 'DB', 'S': 'DB', 'FS': 'DB', 'SS': 'DB', 'DB': 'DB',
+}
+
+# Approximate pre-FA cap space by year (for major teams; rough estimates)
+CAP_SPACE_BY_YEAR = {}  # Will be populated for manually known years
+
+# ── Helpers ──────────────────────────────────────────────────────────────────
+
+def norm_team(abbrev):
+    """Normalize team abbreviation."""
+    if not abbrev or (isinstance(abbrev, float) and math.isnan(abbrev)):
+        return None
+    a = str(abbrev).strip().upper()
+    return TEAM_ABBREV_MAP.get(a, a)
+
+
+def norm_otc_team(name):
+    """Convert OTC team name (e.g. 'Packers') to abbreviation."""
+    if not name or (isinstance(name, float) and math.isnan(name)):
+        return None
+    return OTC_TEAM_MAP.get(str(name).strip(), None)
+
+
+def pos_group(pos):
+    if not pos or (isinstance(pos, float) and math.isnan(pos)):
+        return None
+    return POS_GROUP_MAP.get(str(pos).strip().upper(), None)
+
+
+def safe_int(val):
+    if val is None or (isinstance(val, float) and (math.isnan(val) or math.isinf(val))):
+        return None
+    try:
+        return int(val)
+    except (ValueError, TypeError):
+        return None
+
+
+def safe_float(val, ndigits=1):
+    if val is None or (isinstance(val, float) and (math.isnan(val) or math.isinf(val))):
+        return None
+    try:
+        return round(float(val), ndigits)
+    except (ValueError, TypeError):
+        return None
+
+
+def make_id(name, pos, suffix):
+    slug = normalize_name(f"{name} {pos} {suffix}")
+    return slug.replace(' ', '-')
+
+
+# ── Data Loading ─────────────────────────────────────────────────────────────
+
+def load_player_stats():
+    """Load offense + defense season stats into a dict keyed by (player_id, season)."""
+    logger.info('Fetching player_stats_season.csv ...')
+    off = pd.read_csv(PLAYER_STATS_URL)
+    off = off[off['season_type'] == 'REG']
+
+    logger.info('Fetching player_stats_def_season.csv ...')
+    defn = pd.read_csv(PLAYER_STATS_DEF_URL)
+    defn = defn[defn['season_type'] == 'REG']
+
+    stats = {}
+    for _, r in off.iterrows():
+        pid = r.get('player_id', '')
+        season = int(r.get('season', 0))
+        if not pid or not season:
+            continue
+        stats[(pid, season)] = {
+            'name': r.get('player_display_name', ''),
+            'position': r.get('position', ''),
+            'positionGroup': r.get('position_group', ''),
+            'team': norm_team(r.get('recent_team', '')),
+            'games': safe_int(r.get('games')),
+            'passYds': safe_int(r.get('passing_yards')),
+            'passTD': safe_int(r.get('passing_tds')),
+            'int': safe_int(r.get('interceptions')),
+            'rushYds': safe_int(r.get('rushing_yards')),
+            'rushTD': safe_int(r.get('rushing_tds')),
+            'rec': safe_int(r.get('receptions')),
+            'recYds': safe_int(r.get('receiving_yards')),
+            'recTD': safe_int(r.get('receiving_tds')),
+            'sacks': None,  # offense stats don't have sacks
+            'tackles': None,
+        }
+
+    for _, r in defn.iterrows():
+        pid = r.get('player_id', '')
+        season = int(r.get('season', 0))
+        if not pid or not season:
+            continue
+        key = (pid, season)
+        if key not in stats:
+            stats[key] = {
+                'name': r.get('player_display_name', ''),
+                'position': r.get('position', ''),
+                'positionGroup': r.get('position_group', ''),
+                'team': norm_team(r.get('recent_team', '')),
+                'games': safe_int(r.get('games')),
+            }
+        stats[key]['sacks'] = safe_float(r.get('def_sacks'))
+        stats[key]['tackles'] = safe_int(r.get('def_tackles'))
+        stats[key]['tfl'] = safe_int(r.get('def_tackles_for_loss'))
+        stats[key].setdefault('int', None)
+        if safe_int(r.get('def_interceptions')):
+            stats[key]['int'] = safe_int(r.get('def_interceptions'))
+        stats[key]['pd'] = safe_int(r.get('def_pass_defended'))
+
+    return stats
+
+
+def load_players():
+    """Load players.csv for bio info."""
+    logger.info('Fetching players.csv ...')
+    df = pd.read_csv(PLAYERS_URL, low_memory=False)
+    players = {}
+    for _, r in df.iterrows():
+        gsis = r.get('gsis_id', '')
+        if not gsis or (isinstance(gsis, float) and math.isnan(gsis)):
+            continue
+        players[gsis] = {
+            'name': r.get('display_name', ''),
+            'position': str(r.get('position', '')),
+            'positionGroup': str(r.get('position_group', '')),
+            'birth_date': str(r.get('birth_date', '')),
+            'college': str(r.get('college_name', '')),
+            'draft_year': safe_int(r.get('draft_year')),
+            'draft_round': safe_int(r.get('draft_round')),
+            'draft_pick': safe_int(r.get('draft_pick')),
+            'latest_team': norm_team(r.get('latest_team', '')),
+            'years_exp': safe_int(r.get('years_of_experience')),
+            'pfr_id': str(r.get('pfr_id', '')),
+        }
+    return players
+
+
+def load_contracts():
+    """Load historical contracts from OTC via nflverse."""
+    logger.info('Fetching historical_contracts.csv.gz ...')
+    resp = requests.get(CONTRACTS_URL, timeout=30)
+    resp.raise_for_status()
+    buf = io.BytesIO(resp.content)
+    with gzip.open(buf, 'rt') as f:
+        df = pd.read_csv(f)
+
+    contracts = {}
+    for _, r in df.iterrows():
+        name = str(r.get('player', '')).strip()
+        team = norm_otc_team(r.get('team', ''))
+        year_signed = safe_int(r.get('year_signed'))
+        if not name or not year_signed:
+            continue
+
+        key = normalize_name(name)
+        if key not in contracts or year_signed > contracts[key].get('year_signed', 0):
+            contracts[key] = {
+                'team': team,
+                'year_signed': year_signed,
+                'years': safe_int(r.get('years')),
+                'totalValue': safe_int(r.get('value')),
+                'aav': safe_int(r.get('apy')),
+                'guaranteed': safe_int(r.get('guaranteed')),
+            }
+    return contracts
+
+
+def load_trades():
+    """Load trades from nflverse."""
+    logger.info('Fetching trades.csv ...')
+    df = pd.read_csv(TRADES_URL)
+
+    # Group by trade_id to reconstruct full trades
+    trades_by_id = defaultdict(list)
+    for _, r in df.iterrows():
+        tid = r.get('trade_id')
+        if not tid:
+            continue
+        trades_by_id[tid].append(r)
+
+    trades = []
+    for tid, rows in trades_by_id.items():
+        season = safe_int(rows[0].get('season'))
+        date = str(rows[0].get('trade_date', ''))
+
+        # Find player rows (those with pfr_name)
+        for r in rows:
+            pfr_name = str(r.get('pfr_name', '')).strip()
+            if not pfr_name or pfr_name == 'nan':
+                continue
+            gave = norm_team(r.get('gave', ''))
+            received = norm_team(r.get('received', ''))
+
+            # The team that "gave" the player is the fromTeam
+            # The team that "received" the player is the toTeam
+            # But in nflverse trades, "gave" = team giving asset, "received" = team receiving
+            # For a player: "gave"=PHI means PHI gave up the player, "received"=BUF means BUF got them
+            trades.append({
+                'season': season,
+                'date': date,
+                'pfr_name': pfr_name,
+                'pfr_id': str(r.get('pfr_id', '')),
+                'fromTeam': gave,      # team giving up the player
+                'toTeam': received,     # team receiving the player
+                'trade_id': tid,
+            })
+
+            # Collect picks/assets in this trade for context
+            pick_details = []
+            for rr in rows:
+                if rr.get('trade_id') != tid:
+                    continue
+                pick_round = safe_int(rr.get('pick_round'))
+                pick_season = safe_int(rr.get('pick_season'))
+                # Only show what the receiving team sent back
+                if norm_team(rr.get('gave')) == received and pick_round:
+                    pick_details.append(f"{pick_season} round {pick_round} pick")
+            if pick_details:
+                trades[-1]['tradeDetails'] = {
+                    'fromGives': [pfr_name],
+                    'toGives': pick_details,
+                }
+
+    return trades
+
+
+def load_draft_history():
+    """Load existing draft_history.json for tier cross-reference."""
+    path = DATA_DIR / 'draft_history.json'
+    if not path.exists():
+        logger.warning('draft_history.json not found; tiers will be estimated')
+        return {}
+
+    with open(path) as f:
+        data = json.load(f)
+
+    # Build lookup: normalized name → tier
+    tiers = {}
+    for year, players in data.items():
+        for p in players:
+            key = normalize_name(p.get('name', ''))
+            grade = p.get('draftGrade', {})
+            if grade and grade.get('tier'):
+                tiers[key] = grade['tier']
+    return tiers
+
+
+def estimate_tier_from_contract(aav, pos_group):
+    """Estimate tier from AAV when draft history tier is unavailable."""
+    if not aav:
+        return None
+
+    # Position-specific AAV thresholds for tier estimation
+    thresholds = {
+        'QB':   {'elite': 35000000, 'starter': 15000000},
+        'WR':   {'elite': 20000000, 'starter': 10000000},
+        'EDGE': {'elite': 20000000, 'starter': 10000000},
+        'DB':   {'elite': 16000000, 'starter': 8000000},
+        'DL':   {'elite': 16000000, 'starter': 8000000},
+        'OL':   {'elite': 16000000, 'starter': 8000000},
+        'RB':   {'elite': 12000000, 'starter': 6000000},
+        'TE':   {'elite': 12000000, 'starter': 6000000},
+        'LB':   {'elite': 14000000, 'starter': 7000000},
+    }
+    t = thresholds.get(pos_group, {'elite': 15000000, 'starter': 7000000})
+
+    if aav >= t['elite']:
+        return 'Elite'
+    if aav >= t['starter']:
+        return 'Starter'
+    return 'Backup'
+
+
+def estimate_tier_from_stats(last_stats, pg):
+    """Estimate tier from last-season production stats."""
+    if not last_stats:
+        return 'Backup'
+
+    games = last_stats.get('games', 0) or 0
+    if games < 8:
+        return 'Backup'
+
+    # Position-specific production thresholds
+    if pg == 'QB':
+        yds = last_stats.get('passYds', 0) or 0
+        td = last_stats.get('passTD', 0) or 0
+        if yds >= 4000 or td >= 25:
+            return 'Elite'
+        if yds >= 2500 or td >= 15:
+            return 'Starter'
+        return 'Backup'
+
+    if pg == 'RB':
+        yds = (last_stats.get('rushYds', 0) or 0) + (last_stats.get('recYds', 0) or 0)
+        if yds >= 1200:
+            return 'Elite'
+        if yds >= 700:
+            return 'Starter'
+        return 'Backup'
+
+    if pg == 'WR':
+        yds = last_stats.get('recYds', 0) or 0
+        if yds >= 1000:
+            return 'Elite'
+        if yds >= 500:
+            return 'Starter'
+        return 'Backup'
+
+    if pg == 'TE':
+        yds = last_stats.get('recYds', 0) or 0
+        if yds >= 700:
+            return 'Elite'
+        if yds >= 350:
+            return 'Starter'
+        return 'Backup'
+
+    if pg == 'EDGE':
+        sacks = last_stats.get('sacks', 0) or 0
+        if sacks >= 10:
+            return 'Elite'
+        if sacks >= 5:
+            return 'Starter'
+        return 'Backup'
+
+    if pg == 'DL':
+        tkl = last_stats.get('tackles', 0) or 0
+        sacks = last_stats.get('sacks', 0) or 0
+        if tkl >= 50 or sacks >= 6:
+            return 'Elite'
+        if tkl >= 30 or sacks >= 3:
+            return 'Starter'
+        return 'Backup'
+
+    if pg == 'LB':
+        tkl = last_stats.get('tackles', 0) or 0
+        if tkl >= 100:
+            return 'Elite'
+        if tkl >= 60:
+            return 'Starter'
+        return 'Backup'
+
+    if pg == 'DB':
+        tkl = last_stats.get('tackles', 0) or 0
+        ints = last_stats.get('int', 0) or 0
+        if tkl >= 60 or ints >= 4:
+            return 'Elite'
+        if tkl >= 40 or ints >= 2:
+            return 'Starter'
+        return 'Backup'
+
+    # OL and others
+    if games >= 14:
+        return 'Starter'
+    return 'Backup'
+
+
+def calc_age(birth_date_str, ref_date_str):
+    """Calculate age from birth date string."""
+    try:
+        bd = datetime.strptime(birth_date_str, '%Y-%m-%d')
+        ref = datetime.strptime(ref_date_str, '%Y-%m-%d')
+        age = ref.year - bd.year
+        if (ref.month, ref.day) < (bd.month, bd.day):
+            age -= 1
+        return age
+    except (ValueError, TypeError):
+        return None
+
+
+# ── Main Builder ─────────────────────────────────────────────────────────────
+
+def detect_team_changes(stats, players_info):
+    """
+    Detect when a player's team changed between seasons.
+    Returns list of {season, player_id, name, position, positionGroup,
+                     fromTeam, toTeam, lastSeasonStats}.
+    """
+    # Group stats by player_id
+    by_player = defaultdict(dict)
+    for (pid, season), data in stats.items():
+        by_player[pid][season] = data
+
+    changes = []
+    for pid, seasons in by_player.items():
+        sorted_seasons = sorted(seasons.keys())
+        for i in range(1, len(sorted_seasons)):
+            prev_season = sorted_seasons[i - 1]
+            curr_season = sorted_seasons[i]
+
+            # Only consider consecutive seasons (gap of 1)
+            if curr_season - prev_season > 1:
+                continue
+
+            prev_data = seasons[prev_season]
+            curr_data = seasons[curr_season]
+            prev_team = prev_data.get('team')
+            curr_team = curr_data.get('team')
+
+            if not prev_team or not curr_team:
+                continue
+            if prev_team == curr_team:
+                continue
+            # Skip players with trivial involvement (< 3 games)
+            if (prev_data.get('games') or 0) < 3:
+                continue
+
+            # This player changed teams
+            pg = pos_group(prev_data.get('position') or prev_data.get('positionGroup', ''))
+            if not pg:
+                # Try from players info
+                pinfo = players_info.get(pid, {})
+                pg = pos_group(pinfo.get('position', ''))
+            if not pg or pg in ('K', 'P', 'LS'):
+                continue  # Skip special teams
+
+            # Build last season stats (from prev_season, the season before they moved)
+            last_stats = {}
+            for key in ['games', 'passYds', 'passTD', 'int', 'rushYds', 'rushTD',
+                        'rec', 'recYds', 'recTD', 'sacks', 'tackles', 'tfl', 'pd']:
+                val = prev_data.get(key)
+                if val is not None:
+                    last_stats[key] = val
+
+            name = prev_data.get('name', '')
+            pinfo = players_info.get(pid, {})
+            age = calc_age(pinfo.get('birth_date', ''), f'{curr_season}-03-15')
+
+            changes.append({
+                'season': curr_season,  # The year they joined the new team
+                'player_id': pid,
+                'name': name,
+                'position': prev_data.get('position', ''),
+                'positionGroup': pg,
+                'fromTeam': prev_team,
+                'toTeam': curr_team,
+                'lastSeasonStats': last_stats,
+                'age': age,
+            })
+
+    return changes
+
+
+def build_free_agency(years=None):
+    """Build free agency data for specified years."""
+    now = datetime.now(timezone.utc)
+    current_year = now.year
+
+    if years is None:
+        years = list(range(2020, current_year + 1))
+
+    # Load all data sources
+    stats = load_player_stats()
+    players_info = load_players()
+    contracts = load_contracts()
+    trade_list = load_trades()
+    tier_lookup = load_draft_history()
+
+    # Detect team changes from stats
+    team_changes = detect_team_changes(stats, players_info)
+    logger.info(f'Detected {len(team_changes)} team changes across all seasons')
+
+    # Build trade lookup: (normalized_name, season) → trade info
+    trade_lookup = {}
+    for t in trade_list:
+        key = (normalize_name(t['pfr_name']), t['season'])
+        trade_lookup[key] = t
+
+    # Load existing manual data (preserve manually curated entries)
+    existing_path = DATA_DIR / 'free_agency.json'
+    existing = {}
+    if existing_path.exists():
+        with open(existing_path) as f:
+            existing = json.load(f)
+
+    result = {}
+
+    for year in years:
+        logger.info(f'Building free agency data for {year} ...')
+        year_str = str(year)
+
+        # Start with existing manual data if present (for current year)
+        if year_str in existing:
+            existing_year = existing[year_str]
+            existing_ids = {tx['id'] for tx in existing_year.get('transactions', [])}
+        else:
+            existing_year = {'teamCap': {}, 'transactions': []}
+            existing_ids = set()
+
+        transactions = list(existing_year.get('transactions', []))
+
+        # Get team changes for this year
+        year_changes = [c for c in team_changes if c['season'] == year]
+        logger.info(f'  {len(year_changes)} team changes detected for {year}')
+
+        # Get trades for this year
+        year_trades = [t for t in trade_list if t['season'] == year]
+
+        # Process team changes (FA signings)
+        for change in year_changes:
+            name_norm = normalize_name(change['name'])
+            tx_id = make_id(change['name'], change['positionGroup'], str(year))
+
+            # Skip if already in existing data
+            if tx_id in existing_ids:
+                continue
+
+            # Check if this was a trade
+            trade_key = (name_norm, year)
+            is_trade = False
+            trade_info = None
+            # Also check pfr_id matching
+            for t in year_trades:
+                if normalize_name(t['pfr_name']) == name_norm:
+                    is_trade = True
+                    trade_info = t
+                    break
+
+            # Look up tier
+            tier = tier_lookup.get(name_norm)
+            if not tier:
+                # Try fuzzy match
+                candidates = [{'name': k} for k in tier_lookup.keys()]
+                match = fuzzy_match_player(change['name'], candidates, threshold=90)
+                if match:
+                    tier = tier_lookup.get(match['name'])
+
+            # Look up contract info
+            contract = None
+            c_data = contracts.get(name_norm)
+            if c_data and c_data.get('year_signed') and abs(c_data['year_signed'] - year) <= 1:
+                contract = {
+                    'years': c_data['years'],
+                    'totalValue': c_data['totalValue'],
+                    'aav': c_data['aav'],
+                }
+
+            # Estimate tier from contract or stats if needed
+            if not tier:
+                aav = contract['aav'] if contract else None
+                tier = estimate_tier_from_contract(aav, change['positionGroup'])
+            if not tier:
+                tier = estimate_tier_from_stats(change['lastSeasonStats'], change['positionGroup'])
+
+            tx = {
+                'id': tx_id,
+                'type': 'trade' if is_trade else 'signing',
+                'name': change['name'],
+                'position': change['position'],
+                'positionGroup': change['positionGroup'],
+                'fromTeam': change['fromTeam'],
+                'toTeam': change['toTeam'],
+                'tier': tier,
+                'age': change['age'],
+                'date': f'{year}-03-15',  # approximate FA date
+                'lastSeasonStats': change['lastSeasonStats'],
+            }
+
+            if contract:
+                tx['contract'] = contract
+
+            if is_trade and trade_info:
+                tx['date'] = trade_info.get('date', tx['date'])
+                if 'tradeDetails' in trade_info:
+                    tx['tradeDetails'] = trade_info['tradeDetails']
+
+            transactions.append(tx)
+
+        # Also add trades that weren't detected as team changes
+        # (e.g., player was traded but didn't have stats in both seasons)
+        seen_names = {normalize_name(tx['name']) for tx in transactions}
+        for t in year_trades:
+            name_norm = normalize_name(t['pfr_name'])
+            if name_norm in seen_names:
+                continue
+
+            # Try to find player info
+            pinfo = None
+            for pid, info in players_info.items():
+                if normalize_name(info.get('name', '')) == name_norm:
+                    pinfo = info
+                    break
+
+            if not pinfo:
+                continue
+
+            pg = pos_group(pinfo.get('position', ''))
+            if not pg or pg in ('K', 'P', 'LS'):
+                continue
+
+            tier = tier_lookup.get(name_norm)
+            age = calc_age(pinfo.get('birth_date', ''), f'{year}-03-15')
+
+            # Find last season stats if available
+            last_stats = {}
+            for (pid, season), data in stats.items():
+                if normalize_name(str(data.get('name', '') or '')) == name_norm and season == year - 1:
+                    for key in ['games', 'passYds', 'passTD', 'int', 'rushYds', 'rushTD',
+                                'rec', 'recYds', 'recTD', 'sacks', 'tackles', 'tfl', 'pd']:
+                        val = data.get(key)
+                        if val is not None:
+                            last_stats[key] = val
+                    break
+
+            # Estimate tier from stats if not found in draft history
+            if not tier:
+                tier = estimate_tier_from_stats(last_stats, pg)
+
+            tx_id = make_id(t['pfr_name'], pg, f'trade-{year}')
+            if tx_id in existing_ids:
+                continue
+
+            tx = {
+                'id': tx_id,
+                'type': 'trade',
+                'name': t['pfr_name'],
+                'position': pinfo.get('position', ''),
+                'positionGroup': pg,
+                'fromTeam': t['fromTeam'],
+                'toTeam': t['toTeam'],
+                'tier': tier,
+                'age': age,
+                'date': t.get('date', f'{year}-03-15'),
+                'lastSeasonStats': last_stats,
+            }
+            if 'tradeDetails' in t:
+                tx['tradeDetails'] = t['tradeDetails']
+
+            transactions.append(tx)
+            seen_names.add(name_norm)
+
+        # Sort by impact (rough: Elite first, then by name)
+        tier_sort = {'Elite': 0, 'Starter': 1, 'Backup': 2, 'Bust': 3}
+        transactions.sort(key=lambda t: (tier_sort.get(t.get('tier'), 9), t.get('name', '')))
+
+        # Filter to keep only notable transactions (skip minor Backup moves unless trades)
+        notable = []
+        for tx in transactions:
+            # Keep all manually curated entries
+            if tx['id'] in existing_ids:
+                notable.append(tx)
+                continue
+            # Keep all trades
+            if tx['type'] == 'trade':
+                notable.append(tx)
+                continue
+            # Keep Elite and Starter signings always
+            if tx.get('tier') in ('Elite', 'Starter'):
+                notable.append(tx)
+                continue
+            # Keep Backup signings only if they had meaningful production
+            stats_data = tx.get('lastSeasonStats', {})
+            games = stats_data.get('games', 0) or 0
+            if games >= 8:
+                notable.append(tx)
+                continue
+
+        result[year_str] = {
+            'teamCap': existing_year.get('teamCap', {}),
+            'transactions': notable,
+        }
+        logger.info(f'  {year}: {len(notable)} notable transactions (from {len(transactions)} total)')
+
+    return result
+
+
+def main():
+    import argparse
+    parser = argparse.ArgumentParser(description='Build free agency data')
+    parser.add_argument('--years', nargs='+', type=int, default=None,
+                        help='Specific years to build (default: 2020-current)')
+    parser.add_argument('--output', type=str, default=str(DATA_DIR / 'free_agency.json'),
+                        help='Output file path')
+    args = parser.parse_args()
+
+    result = build_free_agency(args.years)
+
+    # Merge with existing data (don't overwrite years we didn't rebuild)
+    output_path = Path(args.output)
+    if output_path.exists():
+        with open(output_path) as f:
+            existing = json.load(f)
+        for year, data in result.items():
+            existing[year] = data
+        result = existing
+
+    with open(output_path, 'w') as f:
+        json.dump(result, f, indent=2)
+
+    total = sum(len(d.get('transactions', [])) for d in result.values())
+    logger.info(f'Wrote {output_path} ({len(result)} years, {total} total transactions)')
+
+
+if __name__ == '__main__':
+    main()
