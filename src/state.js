@@ -30,6 +30,19 @@ const state = {
   compareSort:   'espnGrade',   // column to sort by
   compareSortDir: 'desc',       // 'asc' | 'desc'
   compareRound:  'ALL',         // round filter for comparison
+  // Free Agency tracker
+  freeAgency: {},                // loaded from free_agency.json, keyed by year
+  freeAgencyYear: '2025',        // which FA year to view
+  freeAgencyTab: 'teams',        // 'teams' | 'transactions'
+  freeAgencyFilters: {
+    positionGroup: 'ALL',
+    side: 'ALL',                 // 'ALL' | 'offense' | 'defense'
+    tier: 'ALL',
+    type: 'ALL',                 // 'ALL' | 'signing' | 'trade' | 'extension'
+    team: 'ALL',
+    search: '',
+  },
+  freeAgencySort: 'impact',      // 'impact' | 'division'
 }
 
 // Subscribers can optionally declare which keys they care about.

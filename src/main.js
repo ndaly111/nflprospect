@@ -8,6 +8,7 @@ import { renderCombineSpotlight } from './components/combineSpotlight.js'
 import { renderMockDraftBoard } from './components/mockDraftBoard.js'
 import { initGlossaryModal } from './components/glossaryModal.js'
 import { renderDraftAnalytics } from './components/draftAnalytics.js'
+import { renderFreeAgency } from './components/freeAgency.js'
 import { timeAgo } from './utils/format.js'
 
 const BASE = import.meta.env.BASE_URL
@@ -34,6 +35,9 @@ function renderApp() {
             </button>
             <button id="nav-analytics" class="nav-tab px-4 py-1.5 rounded-lg text-sm font-medium transition-colors text-gray-400 hover:text-gray-200 hover:bg-gray-800">
               Draft Results
+            </button>
+            <button id="nav-freeagency" class="nav-tab px-4 py-1.5 rounded-lg text-sm font-medium transition-colors text-gray-400 hover:text-gray-200 hover:bg-gray-800">
+              Free Agency
             </button>
           </nav>
           <div id="source-status" class="hidden sm:flex items-center gap-2 flex-wrap text-xs"></div>
@@ -84,25 +88,35 @@ function renderApp() {
           <div id="analytics-page"></div>
         </main>
       </div>
+
+      <!-- Free Agency page -->
+      <div id="page-freeagency" style="display:none">
+        <main class="max-w-7xl mx-auto px-4 py-8">
+          <div id="freeagency-page"></div>
+        </main>
+      </div>
     </div>`
 }
 
 function updateNavTabs() {
   const { activePage } = getState()
-  document.getElementById('nav-prospects')?.classList.toggle('bg-blue-600',  activePage === 'prospects')
-  document.getElementById('nav-prospects')?.classList.toggle('text-white',   activePage === 'prospects')
-  document.getElementById('nav-prospects')?.classList.toggle('text-gray-400', activePage !== 'prospects')
-  document.getElementById('nav-analytics')?.classList.toggle('bg-blue-600',  activePage === 'analytics')
-  document.getElementById('nav-analytics')?.classList.toggle('text-white',   activePage === 'analytics')
-  document.getElementById('nav-analytics')?.classList.toggle('text-gray-400', activePage !== 'analytics')
+  for (const [id, page] of [['nav-prospects', 'prospects'], ['nav-analytics', 'analytics'], ['nav-freeagency', 'freeAgency']]) {
+    const el = document.getElementById(id)
+    if (!el) continue
+    el.classList.toggle('bg-blue-600',  activePage === page)
+    el.classList.toggle('text-white',   activePage === page)
+    el.classList.toggle('text-gray-400', activePage !== page)
+  }
 
   document.getElementById('page-prospects').style.display = activePage === 'prospects' ? '' : 'none'
   document.getElementById('page-analytics').style.display = activePage === 'analytics' ? '' : 'none'
+  document.getElementById('page-freeagency').style.display = activePage === 'freeAgency' ? '' : 'none'
 }
 
 function bindNavTabs() {
   document.getElementById('nav-prospects')?.addEventListener('click', () => setState({ activePage: 'prospects' }))
   document.getElementById('nav-analytics')?.addEventListener('click', () => setState({ activePage: 'analytics' }))
+  document.getElementById('nav-freeagency')?.addEventListener('click', () => setState({ activePage: 'freeAgency' }))
 }
 
 function updateHeader() {
@@ -140,23 +154,25 @@ async function loadData() {
   setState({ loading: true, error: null })
 
   try {
-    const [prospectsRes, newsRes, metaRes, historicalRes, draftHistoryRes] = await Promise.all([
+    const [prospectsRes, newsRes, metaRes, historicalRes, draftHistoryRes, freeAgencyRes] = await Promise.all([
       fetch(getDataUrl('prospects.json')),
       fetch(getDataUrl('news.json')),
       fetch(getDataUrl('meta.json')),
       fetch(getDataUrl('historical.json')),
       fetch(getDataUrl('draft_history.json')),
+      fetch(getDataUrl('free_agency.json')),
     ])
 
-    const [prospects, news, meta, historical, draftHistory] = await Promise.all([
+    const [prospects, news, meta, historical, draftHistory, freeAgency] = await Promise.all([
       prospectsRes.ok ? prospectsRes.json() : [],
       newsRes.ok ? newsRes.json() : [],
       metaRes.ok ? metaRes.json() : {},
       historicalRes.ok ? historicalRes.json() : {},
       draftHistoryRes.ok ? draftHistoryRes.json() : {},
+      freeAgencyRes.ok ? freeAgencyRes.json() : {},
     ])
 
-    setState({ prospects, news, meta, historical, draftHistory, loading: false })
+    setState({ prospects, news, meta, historical, draftHistory, freeAgency, loading: false })
 
     // Deep-link: auto-expand a prospect from ?p=<id> query param
     const deepId = new URLSearchParams(location.search).get('p')
@@ -208,6 +224,13 @@ subscribe(state => {
     renderDraftAnalytics()
   }
 }, ['draftHistory', 'prospects', 'loading', 'activePage', 'analyticsTab', 'analyticsPos', 'analyticsPlayerPos', 'analyticsPlayerYear', 'analyticsPlayerRound', 'comparePos', 'compareView', 'compareSort', 'compareSortDir', 'compareRound'])
+
+// Free Agency page re-renders on data load or any FA filter/tab change
+subscribe(state => {
+  if (!state.loading && state.activePage === 'freeAgency') {
+    renderFreeAgency()
+  }
+}, ['freeAgency', 'loading', 'activePage', 'freeAgencyYear', 'freeAgencyTab', 'freeAgencyFilters', 'freeAgencySort'])
 
 // Grid re-renders when data/filters/sort/viewMode/watchlist/draftYear change — NOT on card expand
 subscribe(state => {
