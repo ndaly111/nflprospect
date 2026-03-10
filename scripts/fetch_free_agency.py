@@ -607,9 +607,20 @@ def fetch_espn_transactions(year, players_info=None, tier_lookup=None, stats=Non
                 from_team = abbrev
                 to_team = abbrev
             elif tx_type == 'trade':
-                # For trades on a team's page, the team is typically the one acquiring
-                to_team = abbrev
-                from_team = None  # We don't always know
+                # Both acquiring and departing teams list trades on their pages.
+                # Check description for direction hints before assuming.
+                if re.search(r'\btraded\b.*\bto\b', desc_lower):
+                    # "Traded WR X to Team" → this team is giving up the player
+                    from_team = abbrev
+                    to_team = None
+                elif re.search(r'\bacquired\b|\btraded for\b|\bobtained\b', desc_lower):
+                    # "Acquired WR X from Team" → this team is receiving
+                    to_team = abbrev
+                    from_team = None
+                else:
+                    # Ambiguous — will be corrected by nflverse trade data later
+                    to_team = abbrev
+                    from_team = None
             else:
                 to_team = abbrev
                 from_team = None  # FA signing — from_team will be filled later if we can
@@ -1077,6 +1088,24 @@ def build_free_agency(years=None, live=False):
                 espn_seen.add(etx_name)
                 espn_added += 1
             logger.info(f'  ESPN live: added {espn_added} new transactions for {year}')
+
+        # Correct trade team assignments using authoritative nflverse data
+        # ESPN trade parsing can assign wrong from/to teams since both the
+        # acquiring and departing teams list the trade on their pages.
+        tx_by_name = {normalize_name(tx['name']): tx for tx in transactions}
+        for t in year_trades:
+            name_norm = normalize_name(t['pfr_name'])
+            existing_tx = tx_by_name.get(name_norm)
+            if existing_tx and existing_tx.get('type') == 'trade':
+                # nflverse has authoritative from/to — override ESPN's guess
+                if t['fromTeam']:
+                    existing_tx['fromTeam'] = t['fromTeam']
+                if t['toTeam']:
+                    existing_tx['toTeam'] = t['toTeam']
+                if t.get('date'):
+                    existing_tx['date'] = t['date']
+                if 'tradeDetails' in t:
+                    existing_tx['tradeDetails'] = t['tradeDetails']
 
         # Also add trades that weren't detected as team changes
         # (e.g., player was traded but didn't have stats in both seasons)

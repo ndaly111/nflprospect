@@ -9,7 +9,8 @@ def normalize_name(name: str) -> str:
     name = unicodedata.normalize('NFD', name)
     name = ''.join(c for c in name if unicodedata.category(c) != 'Mn')
     name = name.lower()
-    name = re.sub(r"['\-\.]", ' ', name)
+    name = re.sub(r'\.', '', name)   # Remove periods (D.K. → DK, not D K)
+    name = re.sub(r"['\-]", ' ', name)
     name = re.sub(r'[^a-z0-9 ]', '', name)
     name = re.sub(r'\s+', ' ', name).strip()
     return name
