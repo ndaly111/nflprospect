@@ -271,6 +271,13 @@ def load_trades():
             pfr_name = str(r.get('pfr_name', '')).strip()
             if not pfr_name or pfr_name == 'nan':
                 continue
+
+            # Skip draft-pick trades: when a player row also has pick_round,
+            # the "trade" is really a pick swap — the player was drafted, not traded
+            pick_round = safe_int(r.get('pick_round'))
+            if pick_round is not None:
+                continue
+
             gave = norm_team(r.get('gave', ''))
             received = norm_team(r.get('received', ''))
 
@@ -887,15 +894,17 @@ def build_free_agency(years=None, live=False):
     trade_list = load_trades()
     tier_lookup = load_draft_history()
 
-    # Fetch live ESPN transactions for the current year if requested
+    # Fetch live ESPN transactions for recent years if requested
     espn_transactions = {}
     if live:
-        # Fetch for the current year (and optionally the most recent year if in early months)
-        live_year = current_year
-        logger.info(f'Live mode: fetching ESPN transactions for {live_year}')
-        espn_txs = fetch_espn_transactions(live_year, players_info, tier_lookup, stats)
-        if espn_txs:
-            espn_transactions[live_year] = espn_txs
+        # Always fetch current year
+        for fetch_year in [current_year - 1, current_year]:
+            if fetch_year not in years:
+                continue
+            logger.info(f'Live mode: fetching ESPN transactions for {fetch_year}')
+            espn_txs = fetch_espn_transactions(fetch_year, players_info, tier_lookup, stats)
+            if espn_txs:
+                espn_transactions[fetch_year] = espn_txs
 
     # Detect team changes from stats
     team_changes = detect_team_changes(stats, players_info)
@@ -924,8 +933,9 @@ def build_free_agency(years=None, live=False):
         logger.info(f'Building free agency data for {year} ...')
         year_str = str(year)
 
-        # Start with existing manual data if present (for current year)
-        if year_str in existing:
+        # Only preserve existing ESPN-sourced data for the current live year
+        # (all other years are fully rebuilt from nflverse + stats data)
+        if year_str in existing and year == current_year:
             existing_year = existing[year_str]
             existing_ids = {tx['id'] for tx in existing_year.get('transactions', [])}
         else:
