@@ -534,178 +534,186 @@ RELEASE_KEYWORDS = ['released', 'waived', 'cut']
 
 def fetch_espn_transactions(year, players_info=None, tier_lookup=None, stats=None):
     """
-    Fetch real-time transactions from ESPN's per-team transactions pages.
+    Fetch real-time transactions from ESPN's league-wide transactions endpoint.
+    Paginates through all pages and filters by date to match the requested year.
     Returns a list of transaction dicts compatible with our schema.
     """
-    logger.info(f'Fetching ESPN transactions for {year} (all 32 teams)...')
+    logger.info(f'Fetching ESPN transactions (league-wide) for {year}...')
     transactions = []
     seen = set()
 
-    for team_id, abbrev in sorted(ESPN_TEAM_ID_MAP.items(), key=lambda x: x[1]):
-        url = f'https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/{team_id}/transactions?season={year}'
+    # The ESPN league-wide endpoint returns current offseason transactions
+    # paginated, 25 per page. We fetch all pages and filter by date.
+    base_url = 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/transactions'
+    page = 1
+    total_raw = 0
+
+    while True:
         try:
-            resp = requests.get(url, timeout=15)
+            resp = requests.get(f'{base_url}?page={page}', timeout=15)
             if resp.status_code != 200:
-                logger.debug(f'  {abbrev}: HTTP {resp.status_code}')
-                continue
+                logger.debug(f'  ESPN transactions page {page}: HTTP {resp.status_code}')
+                break
             data = resp.json()
         except Exception as e:
-            logger.debug(f'  {abbrev}: failed ({e})')
-            continue
+            logger.debug(f'  ESPN transactions page {page}: failed ({e})')
+            break
 
-        items = data.get('items', data.get('transactions', []))
+        items = data.get('transactions', [])
+        if not items:
+            break
+
+        page_count = data.get('pageCount', page)
+
         for item in items:
-            # ESPN transaction structure varies; try multiple formats
             description = item.get('description', item.get('text', ''))
             date_str = item.get('date', '')
-            tx_type_raw = item.get('type', {})
-            if isinstance(tx_type_raw, dict):
-                tx_type_text = tx_type_raw.get('text', '').lower()
-            else:
-                tx_type_text = str(tx_type_raw).lower()
+            abbrev = item.get('team', {}).get('abbreviation', '')
 
-            if not description:
+            if not description or not abbrev:
                 continue
 
-            # Parse player name from description
-            # Common formats: "Signed QB Sam Darnold to a 3-year contract"
-            #                 "Traded WR DK Metcalf to Saints"
-            #                 "Released CB Jalen Ramsey"
-            player_name = None
-            position = None
-
-            # Try to extract "Position PlayerName" pattern
-            pos_pattern = r'\b(QB|RB|WR|TE|OT|OG|C|DE|DT|NT|OLB|ILB|MLB|LB|CB|S|FS|SS|K|P|LS)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z\'-]+)+)'
-            match = re.search(pos_pattern, description)
-            if match:
-                position = match.group(1)
-                player_name = match.group(2).strip()
-
-            if not player_name:
-                continue
-
-            # Determine transaction type
-            desc_lower = description.lower()
-            if any(kw in desc_lower for kw in TRADE_KEYWORDS):
-                tx_type = 'trade'
-            elif any(kw in desc_lower for kw in SIGNING_KEYWORDS):
-                if 're-sign' in desc_lower or 'extend' in desc_lower:
-                    tx_type = 'extension'
-                else:
-                    tx_type = 'signing'
-            elif any(kw in desc_lower for kw in RELEASE_KEYWORDS):
-                continue  # Skip releases for now (we track where players go, not departures)
-            else:
-                continue
-
-            # Skip duplicates
-            name_norm = normalize_name(player_name)
-            dedup_key = (name_norm, abbrev, tx_type)
-            if dedup_key in seen:
-                continue
-            seen.add(dedup_key)
-
-            pg = pos_group(position) if position else None
-            if not pg or pg in ('K', 'P', 'LS'):
-                continue
-
-            # Determine from/to teams
-            if tx_type == 'extension':
-                from_team = abbrev
-                to_team = abbrev
-            elif tx_type == 'trade':
-                # Both acquiring and departing teams list trades on their pages.
-                # Check description for direction hints before assuming.
-                if re.search(r'\btraded\b.*\bto\b', desc_lower):
-                    # "Traded WR X to Team" → this team is giving up the player
-                    from_team = abbrev
-                    to_team = None
-                elif re.search(r'\bacquired\b|\btraded for\b|\bobtained\b', desc_lower):
-                    # "Acquired WR X from Team" → this team is receiving
-                    to_team = abbrev
-                    from_team = None
-                else:
-                    # Ambiguous — will be corrected by nflverse trade data later
-                    to_team = abbrev
-                    from_team = None
-            else:
-                to_team = abbrev
-                from_team = None  # FA signing — from_team will be filled later if we can
-
-            # Look up tier
-            tier = None
-            if tier_lookup:
-                tier = tier_lookup.get(name_norm)
-                if not tier:
-                    candidates = [{'name': k} for k in tier_lookup.keys()]
-                    m = fuzzy_match_player(player_name, candidates, threshold=90)
-                    if m:
-                        tier = tier_lookup.get(m['name'])
-
-            # Look up last season stats
-            last_stats = {}
-            if stats:
-                for (pid, season), sdata in stats.items():
-                    if normalize_name(str(sdata.get('name', '') or '')) == name_norm and season == year - 1:
-                        for key in ['games', 'passYds', 'passTD', 'int', 'rushYds', 'rushTD',
-                                    'rec', 'recYds', 'recTD', 'sacks', 'tackles', 'tfl', 'pd']:
-                            val = sdata.get(key)
-                            if val is not None:
-                                last_stats[key] = val
-                        # Also grab previous team as fromTeam
-                        if from_team is None and tx_type == 'signing':
-                            from_team = sdata.get('team')
-                        break
-
-            # Estimate tier if not found
-            if not tier:
-                tier = estimate_tier_from_stats(last_stats, pg)
-            # Traded players are generally at least Starters
-            if not tier and tx_type == 'trade':
-                tier = 'Starter'
-            # Final fallback
-            if not tier:
-                games = last_stats.get('games', 0) or 0
-                tier = 'Starter' if games >= 12 else 'Backup'
-
-            # Get age from players_info
-            age = None
-            if players_info:
-                for pid, pinfo in players_info.items():
-                    if normalize_name(pinfo.get('name', '')) == name_norm:
-                        age = calc_age(pinfo.get('birth_date', ''), f'{year}-03-15')
-                        if from_team is None and tx_type == 'signing':
-                            # Use latest_team as from_team if it's different from to_team
-                            lt = pinfo.get('latest_team')
-                            if lt and lt != to_team:
-                                from_team = lt
-                        break
-
-            # Parse date
-            tx_date = f'{year}-03-15'
+            # Parse date and filter to requested year's offseason window
+            # NFL free agency for year Y runs roughly from March Y to late August Y
+            tx_date_str = f'{year}-03-15'
             if date_str:
                 try:
                     dt = datetime.fromisoformat(date_str.replace('Z', '+00:00'))
-                    tx_date = dt.strftime('%Y-%m-%d')
+                    tx_date_str = dt.strftime('%Y-%m-%d')
+                    # Filter: only include transactions from the target year
+                    if dt.year != year:
+                        continue
                 except (ValueError, TypeError):
                     pass
 
-            tx_id = make_id(player_name, pg, f'{tx_type}-espn-{year}')
-            tx = {
-                'id': tx_id,
-                'type': tx_type,
-                'name': player_name,
-                'position': position or '',
-                'positionGroup': pg,
-                'fromTeam': from_team,
-                'toTeam': to_team,
-                'tier': tier,
-                'age': age,
-                'date': tx_date,
-                'lastSeasonStats': last_stats,
-            }
-            transactions.append(tx)
+            total_raw += 1
 
+            # ESPN descriptions can contain multiple players:
+            # "Re-signed DE LaBryan Ray and OLB Thomas Incoom. Signed CB Robert Rochell..."
+            # Split on sentence boundaries and common conjunctions
+            segments = re.split(r'\.\s+', description)
+
+            for segment in segments:
+                if not segment.strip():
+                    continue
+
+                # Extract all "Position PlayerName" pairs from this segment
+                pos_pattern = r'\b(QB|RB|WR|TE|OT|OG|OL|C|DE|DT|NT|OLB|ILB|MLB|LB|CB|S|FS|SS|K|P|LS)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z\'.,-]+)+)'
+                matches = re.findall(pos_pattern, segment)
+                if not matches:
+                    continue
+
+                seg_lower = segment.lower()
+
+                # Determine transaction type from this segment
+                if any(kw in seg_lower for kw in TRADE_KEYWORDS):
+                    tx_type = 'trade'
+                elif any(kw in seg_lower for kw in SIGNING_KEYWORDS):
+                    if 're-sign' in seg_lower or 'extend' in seg_lower:
+                        tx_type = 'extension'
+                    else:
+                        tx_type = 'signing'
+                elif any(kw in seg_lower for kw in RELEASE_KEYWORDS):
+                    continue  # Skip releases
+                else:
+                    continue
+
+                for position, player_name in matches:
+                    player_name = player_name.strip().rstrip('.,')
+
+                    name_norm = normalize_name(player_name)
+                    dedup_key = (name_norm, tx_type)
+                    if dedup_key in seen:
+                        continue
+                    seen.add(dedup_key)
+
+                    pg = pos_group(position) if position else None
+                    if not pg or pg in ('K', 'P', 'LS'):
+                        continue
+
+                    # Determine from/to teams
+                    if tx_type == 'extension':
+                        from_team = abbrev
+                        to_team = abbrev
+                    elif tx_type == 'trade':
+                        # Check description for direction
+                        if re.search(r'\btraded\b.*\bto\b', seg_lower):
+                            from_team = abbrev
+                            to_team = None
+                        elif re.search(r'\bacquired\b|\btraded for\b|\bobtained\b', seg_lower):
+                            to_team = abbrev
+                            from_team = None
+                        else:
+                            to_team = abbrev
+                            from_team = None
+                    else:
+                        to_team = abbrev
+                        from_team = None
+
+                    # Look up tier
+                    tier = None
+                    if tier_lookup:
+                        tier = tier_lookup.get(name_norm)
+                        if not tier:
+                            candidates = [{'name': k} for k in tier_lookup.keys()]
+                            m = fuzzy_match_player(player_name, candidates, threshold=90)
+                            if m:
+                                tier = tier_lookup.get(m['name'])
+
+                    # Look up last season stats
+                    last_stats = {}
+                    if stats:
+                        for (pid, season), sdata in stats.items():
+                            if normalize_name(str(sdata.get('name', '') or '')) == name_norm and season == year - 1:
+                                for key in ['games', 'passYds', 'passTD', 'int', 'rushYds', 'rushTD',
+                                            'rec', 'recYds', 'recTD', 'sacks', 'tackles', 'tfl', 'pd']:
+                                    val = sdata.get(key)
+                                    if val is not None:
+                                        last_stats[key] = val
+                                if from_team is None and tx_type == 'signing':
+                                    from_team = sdata.get('team')
+                                break
+
+                    # Estimate tier
+                    if not tier:
+                        tier = estimate_tier_from_stats(last_stats, pg)
+                    if not tier and tx_type == 'trade':
+                        tier = 'Starter'
+                    if not tier:
+                        games = last_stats.get('games', 0) or 0
+                        tier = 'Starter' if games >= 12 else 'Backup'
+
+                    # Get age from players_info
+                    age = None
+                    if players_info:
+                        for pid, pinfo in players_info.items():
+                            if normalize_name(pinfo.get('name', '')) == name_norm:
+                                age = calc_age(pinfo.get('birth_date', ''), f'{year}-03-15')
+                                if from_team is None and tx_type == 'signing':
+                                    lt = pinfo.get('latest_team')
+                                    if lt and lt != to_team:
+                                        from_team = lt
+                                break
+
+                    tx_id = make_id(player_name, pg, f'{tx_type}-espn-{year}')
+                    tx = {
+                        'id': tx_id,
+                        'type': tx_type,
+                        'name': player_name,
+                        'position': position or '',
+                        'positionGroup': pg,
+                        'fromTeam': from_team,
+                        'toTeam': to_team,
+                        'tier': tier,
+                        'age': age,
+                        'date': tx_date_str,
+                        'lastSeasonStats': last_stats,
+                    }
+                    transactions.append(tx)
+
+        if page >= page_count:
+            break
+        page += 1
         time.sleep(0.3)  # Rate limit
 
     logger.info(f'  ESPN: found {len(transactions)} transactions for {year}')
@@ -1188,6 +1196,8 @@ def build_free_agency(years=None, live=False):
         transactions.sort(key=lambda t: (tier_sort.get(t.get('tier'), 9), t.get('name', '')))
 
         # Filter to keep only notable transactions (skip minor Backup moves unless trades)
+        # For the current year, be lenient since we lack prior-season stats
+        is_current = (year == current_year)
         notable = []
         for tx in transactions:
             # Keep all manually curated entries
@@ -1200,6 +1210,11 @@ def build_free_agency(years=None, live=False):
                 continue
             # Keep Elite and Starter signings always
             if tx.get('tier') in ('Elite', 'Starter'):
+                notable.append(tx)
+                continue
+            # For the current year, keep all ESPN signings/extensions
+            # (we can't reliably filter without prior-season stats)
+            if is_current:
                 notable.append(tx)
                 continue
             # Keep Backup signings only if they had meaningful production
@@ -1225,8 +1240,10 @@ def main():
                         help='Specific years to build (default: 2020-current)')
     parser.add_argument('--output', type=str, default=str(DATA_DIR / 'free_agency.json'),
                         help='Output file path')
-    parser.add_argument('--live', action='store_true',
-                        help='Fetch real-time transactions from ESPN API for the current year')
+    parser.add_argument('--live', action='store_true', default=True,
+                        help='Fetch real-time transactions from ESPN API (default: on)')
+    parser.add_argument('--no-live', dest='live', action='store_false',
+                        help='Skip ESPN API fetch')
     args = parser.parse_args()
 
     result = build_free_agency(args.years, live=args.live)
