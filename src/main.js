@@ -154,25 +154,27 @@ async function loadData() {
   setState({ loading: true, error: null })
 
   try {
-    const [prospectsRes, newsRes, metaRes, historicalRes, draftHistoryRes, freeAgencyRes] = await Promise.all([
+    const [prospectsRes, newsRes, metaRes, historicalRes, draftHistoryRes, freeAgencyRes, wrTargetRes] = await Promise.all([
       fetch(getDataUrl('prospects.json')),
       fetch(getDataUrl('news.json')),
       fetch(getDataUrl('meta.json')),
       fetch(getDataUrl('historical.json')),
       fetch(getDataUrl('draft_history.json')),
       fetch(getDataUrl('free_agency.json')),
+      fetch(getDataUrl('wr_target_history.json')),
     ])
 
-    const [prospects, news, meta, historical, draftHistory, freeAgency] = await Promise.all([
+    const [prospects, news, meta, historical, draftHistory, freeAgency, wrTargetHistory] = await Promise.all([
       prospectsRes.ok ? prospectsRes.json() : [],
       newsRes.ok ? newsRes.json() : [],
       metaRes.ok ? metaRes.json() : {},
       historicalRes.ok ? historicalRes.json() : {},
       draftHistoryRes.ok ? draftHistoryRes.json() : {},
       freeAgencyRes.ok ? freeAgencyRes.json() : {},
+      wrTargetRes.ok ? wrTargetRes.json() : null,
     ])
 
-    setState({ prospects, news, meta, historical, draftHistory, freeAgency, loading: false })
+    setState({ prospects, news, meta, historical, draftHistory, freeAgency, wrTargetHistory, loading: false })
 
     // Deep-link: auto-expand a prospect from ?p=<id> query param
     const deepId = new URLSearchParams(location.search).get('p')
@@ -237,7 +239,7 @@ subscribe(state => {
   if (!state.loading) {
     renderProspectGrid()
   }
-}, ['prospects', 'filters', 'sort', 'loading', 'viewMode', 'watchlist', 'draftYear', 'draftHistory'])
+}, ['prospects', 'filters', 'sort', 'listSort', 'loading', 'viewMode', 'watchlist', 'draftYear', 'draftHistory'])
 
 // News renders once on data load
 subscribe(state => {

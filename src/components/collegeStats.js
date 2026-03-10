@@ -4,8 +4,8 @@ import { formatStat } from '../utils/format.js'
 const CFBD_COLUMNS = {
   QB: ['games','completions','attempts','passingYards','completionPct','passingTDs','interceptions','rushingYards','rushingTDs'],
   RB: ['games','rushingAttempts','rushingYards','avgRush','rushingTDs','receptions','receivingYards'],
-  WR: ['games','receptions','receivingYards','avgRec','receivingTDs'],
-  TE: ['games','receptions','receivingYards','avgRec','receivingTDs'],
+  WR: ['games','receptions','receivingYards','avgRec','receivingTDs','recPerGame'],
+  TE: ['games','receptions','receivingYards','avgRec','receivingTDs','recPerGame'],
   OL: ['games'],
   DL: ['games','tackles','sacks','tfls','interceptions'],
   EDGE: ['games','tackles','sacks','tfls','pbus'],
@@ -17,12 +17,12 @@ const CFBD_LABELS = {
   games:'G', completions:'CMP', attempts:'ATT', passingYards:'PASS YDS', passingTDs:'TD',
   completionPct:'COMP%', interceptions:'INT', rushingYards:'RUSH YDS', rushingTDs:'RUSH TD',
   rushingAttempts:'ATT', avgRush:'YPC', receptions:'REC', receivingYards:'REC YDS',
-  avgRec:'YPR', receivingTDs:'TD',
+  avgRec:'YPR', receivingTDs:'TD', recPerGame:'REC/G',
   tackles:'TKL', sacks:'SACK', tfls:'TFL', pbus:'PBU',
 }
 
 // Columns that need 1 decimal place
-const DECIMAL_COLS = new Set(['completionPct', 'avgRush', 'avgRec'])
+const DECIMAL_COLS = new Set(['completionPct', 'avgRush', 'avgRec', 'recPerGame'])
 
 // Tankathon stat label → display label
 const TANK_LABELS = {
@@ -33,7 +33,32 @@ const TANK_LABELS = {
   'RUSH YDS': 'RUSH YDS', 'RUSH TD': 'RUSH TD',
 }
 
-export function renderCollegeStats(prospect, classPct = {}) {
+/**
+ * Compute percentile of val within a sorted array.
+ * Returns 0-100 integer.
+ */
+function computePercentile(val, sorted) {
+  if (!sorted || sorted.length < 2 || typeof val !== 'number' || isNaN(val)) return null
+  let below = 0
+  for (const v of sorted) { if (v < val) below++ }
+  return Math.round((below / sorted.length) * 100)
+}
+
+function percentileColor(pct) {
+  if (pct >= 80) return 'text-green-400'
+  if (pct >= 60) return 'text-green-300/70'
+  if (pct >= 40) return 'text-gray-200'
+  if (pct >= 20) return 'text-amber-400/70'
+  return 'text-red-400'
+}
+
+function ordinalSuffix(n) {
+  const s = ['th', 'st', 'nd', 'rd']
+  const v = n % 100
+  return n + (s[(v - 20) % 10] || s[v] || s[0])
+}
+
+export function renderCollegeStats(prospect, classPct = {}, wrTargetHistory = null) {
   const hasCFBD = prospect.collegeStats && Object.keys(prospect.collegeStats).length > 0
   const hasTankStats = prospect.tankStats && Object.keys(prospect.tankStats).length > 0
 
@@ -48,15 +73,26 @@ export function renderCollegeStats(prospect, classPct = {}) {
     return '<p class="text-gray-500 text-sm">No college stats available yet</p>'
   }
 
+  // Get the historical percentile distribution for TGT/G
+  const tgtPercentiles = wrTargetHistory?.percentiles || null
+  const isWrTe = prospect.positionGroup === 'WR' || prospect.positionGroup === 'TE'
+
   let html = ''
 
   // CFBD year-by-year table (if available)
   if (hasCFBD) {
     const cols = CFBD_COLUMNS[prospect.positionGroup] || CFBD_COLUMNS.DB
     const years = Object.keys(prospect.collegeStats).sort()
-    const headerCells = ['Year', ...cols.map(c => CFBD_LABELS[c] || c)]
-      .map(l => `<th class="text-left px-2 py-1.5 text-xs font-semibold text-gray-400 uppercase tracking-wider whitespace-nowrap">${l}</th>`)
-      .join('')
+    const thClass = 'text-left px-2 py-1.5 text-xs font-semibold text-gray-400 uppercase tracking-wider whitespace-nowrap'
+    const headerCells = [
+      `<th class="${thClass}">Year</th>`,
+      ...cols.map(c => {
+        const label = CFBD_LABELS[c] || c
+        const extra = (c === 'recPerGame' && isWrTe) ? ' title="Receptions per game vs first-round WRs (2013-2025)"' : ''
+        return `<th class="${thClass}"${extra}>${label}</th>`
+      })
+    ].join('')
+
     const rows = years.map(year => {
       const raw = prospect.collegeStats[year]
       // Compute derived stats for display when not directly available
@@ -70,15 +106,33 @@ export function renderCollegeStats(prospect, classPct = {}) {
       if (!s.avgRec && s.receivingYards && s.receptions) {
         s.avgRec = s.receivingYards / s.receptions
       }
+      if (!s.recPerGame && s.receptions && s.games) {
+        s.recPerGame = s.receptions / s.games
+      }
       const cells = cols.map(c => {
         const val = s[c]
+
+        // Special handling for TGT/G column: show percentile badge vs Rd1 WRs
+        if (c === 'recPerGame' && isWrTe) {
+          if (typeof val !== 'number' || isNaN(val)) {
+            return `<td class="px-2 py-1.5 text-sm text-gray-200 whitespace-nowrap">${formatStat(val, 1)}</td>`
+          }
+          const pct = computePercentile(val, tgtPercentiles)
+          const valStr = val.toFixed(1)
+          if (pct !== null) {
+            const color = percentileColor(pct)
+            const badge = `<span class="ml-1 text-[10px] font-semibold ${color} bg-gray-700/60 px-1 py-0.5 rounded" title="${ordinalSuffix(pct)} percentile vs first-round WRs (2013-2025)">${ordinalSuffix(pct)}</span>`
+            return `<td class="px-2 py-1.5 text-sm ${color} whitespace-nowrap">${valStr}${badge}</td>`
+          }
+          return `<td class="px-2 py-1.5 text-sm text-gray-200 whitespace-nowrap">${valStr}</td>`
+        }
+
+        // Standard stat coloring (in-class percentile)
         const sorted = classPct[c]
         let colorClass = 'text-gray-200'
         if (c !== 'games' && typeof val === 'number' && !isNaN(val) && sorted?.length > 1) {
-          let below = 0
-          for (const v of sorted) { if (v < val) below++ }
-          const pct = Math.round((below / sorted.length) * 100)
-          colorClass = pct >= 80 ? 'text-green-400' : pct >= 60 ? 'text-green-300/70' : pct >= 40 ? 'text-gray-200' : pct >= 20 ? 'text-amber-400/70' : 'text-red-400'
+          const pct = computePercentile(val, sorted)
+          if (pct !== null) colorClass = percentileColor(pct)
         }
         return `<td class="px-2 py-1.5 text-sm ${colorClass} whitespace-nowrap">${formatStat(val, DECIMAL_COLS.has(c) ? 1 : 0)}</td>`
       }).join('')

@@ -465,7 +465,7 @@ export function renderProspectCard(prospect, isExpanded = false) {
             </div>
           </div>
           <div class="tab-content hidden" data-tab="stats" data-card="${prospect.id}">
-            ${renderCollegeStats(prospect, statPct[prospect.positionGroup] || {})}
+            ${renderCollegeStats(prospect, statPct[prospect.positionGroup] || {}, getState().wrTargetHistory)}
           </div>
           <div class="tab-content hidden" data-tab="combine" data-card="${prospect.id}">
             ${renderCombinePanel(prospect.combineData, prospect.positionGroup, prospect.playerComps)}

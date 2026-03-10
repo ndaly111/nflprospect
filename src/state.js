@@ -6,6 +6,7 @@ const state = {
   historicalYear: 'all',
   draftYear: 2026,     // which draft class to view (2026 = current prospects)
   draftHistory: {},    // loaded from draft_history.json, keyed by year string
+  wrTargetHistory: null, // historical first-round WR TGT/G for percentile comparison
   filters: {
     positionGroup: 'ALL',
     round: 'ALL',
@@ -14,6 +15,7 @@ const state = {
     watchlistOnly: false,
   },
   sort: 'consensusRank',
+  listSort: { key: 'consensusRank', dir: 'asc' },
   viewMode: 'grid',  // 'grid' | 'list'
   watchlist: [],     // array of prospect IDs, synced to localStorage
   expandedCardId: null,
