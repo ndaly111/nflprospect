@@ -207,7 +207,11 @@ def load_players():
 
 
 def load_contracts():
-    """Load historical contracts from OTC via nflverse."""
+    """Load historical contracts from OTC via nflverse.
+    Returns two dicts:
+      - contracts: normalized_name → latest contract (for backward compat)
+      - contracts_by_year: (normalized_name, year_signed) → contract
+    """
     logger.info('Fetching historical_contracts.csv.gz ...')
     resp = requests.get(CONTRACTS_URL, timeout=30)
     resp.raise_for_status()
@@ -216,6 +220,7 @@ def load_contracts():
         df = pd.read_csv(f)
 
     contracts = {}
+    contracts_by_year = {}
     for _, r in df.iterrows():
         name = str(r.get('player', '')).strip()
         team = norm_otc_team(r.get('team', ''))
@@ -224,16 +229,23 @@ def load_contracts():
             continue
 
         key = normalize_name(name)
+        entry = {
+            'team': team,
+            'year_signed': year_signed,
+            'years': safe_int(r.get('years')),
+            'totalValue': safe_int(r.get('value')),
+            'aav': safe_int(r.get('apy')),
+            'guaranteed': safe_int(r.get('guaranteed')),
+        }
+
+        # Store latest contract per player
         if key not in contracts or year_signed > contracts[key].get('year_signed', 0):
-            contracts[key] = {
-                'team': team,
-                'year_signed': year_signed,
-                'years': safe_int(r.get('years')),
-                'totalValue': safe_int(r.get('value')),
-                'aav': safe_int(r.get('apy')),
-                'guaranteed': safe_int(r.get('guaranteed')),
-            }
-    return contracts
+            contracts[key] = entry
+
+        # Store every contract by (name, year_signed) for year-specific lookups
+        contracts_by_year[(key, year_signed)] = entry
+
+    return contracts, contracts_by_year
 
 
 def load_trades():
@@ -339,17 +351,22 @@ def estimate_tier_from_contract(aav, pos_group):
         return 'Elite'
     if aav >= t['starter']:
         return 'Starter'
-    return 'Backup'
+    # Any player with $10M+ AAV is at least a Starter regardless of position
+    if aav >= 10000000:
+        return 'Starter'
+    # $5M+ AAV is at least a solid Backup, but we return None to let
+    # stats-based estimation have a say
+    if aav >= 5000000:
+        return 'Starter'
+    return None
 
 
 def estimate_tier_from_stats(last_stats, pg):
     """Estimate tier from last-season production stats."""
     if not last_stats:
-        return 'Backup'
+        return None
 
     games = last_stats.get('games', 0) or 0
-    if games < 8:
-        return 'Backup'
 
     # Position-specific production thresholds
     if pg == 'QB':
@@ -357,72 +374,112 @@ def estimate_tier_from_stats(last_stats, pg):
         td = last_stats.get('passTD', 0) or 0
         if yds >= 4000 or td >= 25:
             return 'Elite'
-        if yds >= 2500 or td >= 15:
+        if yds >= 3000 or td >= 15:
             return 'Starter'
-        return 'Backup'
+        if yds >= 1500 or td >= 8:
+            return 'Starter'
+        if games >= 8:
+            return 'Backup'
+        return None
 
     if pg == 'RB':
         yds = (last_stats.get('rushYds', 0) or 0) + (last_stats.get('recYds', 0) or 0)
         if yds >= 1200:
             return 'Elite'
-        if yds >= 700:
+        if yds >= 600:
             return 'Starter'
-        return 'Backup'
+        if games >= 12:
+            return 'Starter'
+        if games >= 8:
+            return 'Backup'
+        return None
 
     if pg == 'WR':
         yds = last_stats.get('recYds', 0) or 0
+        rec = last_stats.get('rec', 0) or 0
         if yds >= 1000:
             return 'Elite'
-        if yds >= 500:
+        if yds >= 500 or rec >= 40:
             return 'Starter'
-        return 'Backup'
+        if games >= 12 and (yds >= 300 or rec >= 25):
+            return 'Starter'
+        if games >= 8:
+            return 'Backup'
+        return None
 
     if pg == 'TE':
         yds = last_stats.get('recYds', 0) or 0
+        rec = last_stats.get('rec', 0) or 0
         if yds >= 700:
             return 'Elite'
-        if yds >= 350:
+        if yds >= 350 or rec >= 30:
             return 'Starter'
-        return 'Backup'
+        if games >= 12:
+            return 'Starter'
+        if games >= 8:
+            return 'Backup'
+        return None
 
     if pg == 'EDGE':
         sacks = last_stats.get('sacks', 0) or 0
+        tfl = last_stats.get('tfl', 0) or 0
+        tkl = last_stats.get('tackles', 0) or 0
         if sacks >= 10:
             return 'Elite'
-        if sacks >= 5:
+        if sacks >= 5 or (sacks >= 3 and tfl >= 5):
             return 'Starter'
-        return 'Backup'
+        if games >= 12 and (sacks >= 2 or tkl >= 20):
+            return 'Starter'
+        if games >= 8:
+            return 'Backup'
+        return None
 
     if pg == 'DL':
         tkl = last_stats.get('tackles', 0) or 0
         sacks = last_stats.get('sacks', 0) or 0
+        tfl = last_stats.get('tfl', 0) or 0
         if tkl >= 50 or sacks >= 6:
             return 'Elite'
-        if tkl >= 30 or sacks >= 3:
+        if tkl >= 25 or sacks >= 3 or tfl >= 5:
             return 'Starter'
-        return 'Backup'
+        if games >= 12:
+            return 'Starter'
+        if games >= 8:
+            return 'Backup'
+        return None
 
     if pg == 'LB':
         tkl = last_stats.get('tackles', 0) or 0
         if tkl >= 100:
             return 'Elite'
-        if tkl >= 60:
+        if tkl >= 50:
             return 'Starter'
-        return 'Backup'
+        if games >= 12:
+            return 'Starter'
+        if games >= 8:
+            return 'Backup'
+        return None
 
     if pg == 'DB':
         tkl = last_stats.get('tackles', 0) or 0
         ints = last_stats.get('int', 0) or 0
+        pds = last_stats.get('pd', 0) or 0
         if tkl >= 60 or ints >= 4:
             return 'Elite'
-        if tkl >= 40 or ints >= 2:
+        if tkl >= 35 or ints >= 2 or pds >= 8:
             return 'Starter'
-        return 'Backup'
+        if games >= 12:
+            return 'Starter'
+        if games >= 8:
+            return 'Backup'
+        return None
 
     # OL and others
-    if games >= 14:
+    if games >= 12:
         return 'Starter'
-    return 'Backup'
+    if games >= 8:
+        return 'Starter'
+    return None
 
 
 def calc_age(birth_date_str, ref_date_str):
@@ -585,6 +642,13 @@ def fetch_espn_transactions(year, players_info=None, tier_lookup=None, stats=Non
             # Estimate tier if not found
             if not tier:
                 tier = estimate_tier_from_stats(last_stats, pg)
+            # Traded players are generally at least Starters
+            if not tier and tx_type == 'trade':
+                tier = 'Starter'
+            # Final fallback
+            if not tier:
+                games = last_stats.get('games', 0) or 0
+                tier = 'Starter' if games >= 12 else 'Backup'
 
             # Get age from players_info
             age = None
@@ -703,6 +767,94 @@ def detect_team_changes(stats, players_info):
     return changes
 
 
+def detect_extensions(stats, players_info, contracts_by_year):
+    """
+    Detect when a player re-signs with the same team (extension).
+    Uses contract data: if a player has a contract signed for year Y and their
+    team in year Y-1 matches the contract team, it's an extension.
+    Returns list of extension dicts.
+    """
+    # Group stats by player_id
+    by_player = defaultdict(dict)
+    for (pid, season), data in stats.items():
+        by_player[pid][season] = data
+
+    extensions = []
+    for pid, seasons in by_player.items():
+        sorted_seasons = sorted(seasons.keys())
+        for i in range(1, len(sorted_seasons)):
+            prev_season = sorted_seasons[i - 1]
+            curr_season = sorted_seasons[i]
+
+            if curr_season - prev_season > 1:
+                continue
+
+            prev_data = seasons[prev_season]
+            curr_data = seasons[curr_season]
+            prev_team = prev_data.get('team')
+            curr_team = curr_data.get('team')
+
+            if not prev_team or not curr_team:
+                continue
+            # Only extensions: player stays with same team
+            if prev_team != curr_team:
+                continue
+            # Must have meaningful playing time
+            if (prev_data.get('games') or 0) < 8:
+                continue
+
+            name = prev_data.get('name', '')
+            name_norm = normalize_name(name)
+
+            # Check if there's a contract signed for this year (or ±1 year)
+            contract = None
+            for check_year in [curr_season, curr_season - 1]:
+                c = contracts_by_year.get((name_norm, check_year))
+                if c and c.get('team') == curr_team:
+                    contract = c
+                    break
+
+            # Only include if we have contract evidence of a re-signing
+            if not contract:
+                continue
+
+            pg = pos_group(prev_data.get('position') or prev_data.get('positionGroup', ''))
+            if not pg:
+                pinfo = players_info.get(pid, {})
+                pg = pos_group(pinfo.get('position', ''))
+            if not pg or pg in ('K', 'P', 'LS'):
+                continue
+
+            last_stats = {}
+            for key in ['games', 'passYds', 'passTD', 'int', 'rushYds', 'rushTD',
+                        'rec', 'recYds', 'recTD', 'sacks', 'tackles', 'tfl', 'pd']:
+                val = prev_data.get(key)
+                if val is not None:
+                    last_stats[key] = val
+
+            pinfo = players_info.get(pid, {})
+            age = calc_age(pinfo.get('birth_date', ''), f'{curr_season}-03-15')
+
+            extensions.append({
+                'season': curr_season,
+                'player_id': pid,
+                'name': name,
+                'position': prev_data.get('position', ''),
+                'positionGroup': pg,
+                'fromTeam': curr_team,
+                'toTeam': curr_team,
+                'lastSeasonStats': last_stats,
+                'age': age,
+                'contract': {
+                    'years': contract.get('years'),
+                    'totalValue': contract.get('totalValue'),
+                    'aav': contract.get('aav'),
+                },
+            })
+
+    return extensions
+
+
 def build_free_agency(years=None, live=False):
     """Build free agency data for specified years.
     If live=True, also fetches real-time ESPN transactions for the current year.
@@ -720,7 +872,7 @@ def build_free_agency(years=None, live=False):
     # Load all data sources
     stats = load_player_stats()
     players_info = load_players()
-    contracts = load_contracts()
+    contracts, contracts_by_year = load_contracts()
     trade_list = load_trades()
     tier_lookup = load_draft_history()
 
@@ -737,6 +889,10 @@ def build_free_agency(years=None, live=False):
     # Detect team changes from stats
     team_changes = detect_team_changes(stats, players_info)
     logger.info(f'Detected {len(team_changes)} team changes across all seasons')
+
+    # Detect extensions (re-signings with same team)
+    extension_list = detect_extensions(stats, players_info, contracts_by_year)
+    logger.info(f'Detected {len(extension_list)} extensions across all seasons')
 
     # Build trade lookup: (normalized_name, season) → trade info
     trade_lookup = {}
@@ -803,15 +959,26 @@ def build_free_agency(years=None, live=False):
                 if match:
                     tier = tier_lookup.get(match['name'])
 
-            # Look up contract info
+            # Look up contract info — check year-specific contracts first
             contract = None
-            c_data = contracts.get(name_norm)
-            if c_data and c_data.get('year_signed') and abs(c_data['year_signed'] - year) <= 1:
-                contract = {
-                    'years': c_data['years'],
-                    'totalValue': c_data['totalValue'],
-                    'aav': c_data['aav'],
-                }
+            for check_year in [year, year - 1]:
+                c_data = contracts_by_year.get((name_norm, check_year))
+                if c_data:
+                    contract = {
+                        'years': c_data['years'],
+                        'totalValue': c_data['totalValue'],
+                        'aav': c_data['aav'],
+                    }
+                    break
+            # Fallback to latest contract if within range
+            if not contract:
+                c_data = contracts.get(name_norm)
+                if c_data and c_data.get('year_signed') and abs(c_data['year_signed'] - year) <= 1:
+                    contract = {
+                        'years': c_data['years'],
+                        'totalValue': c_data['totalValue'],
+                        'aav': c_data['aav'],
+                    }
 
             # Estimate tier from contract or stats if needed
             if not tier:
@@ -819,6 +986,14 @@ def build_free_agency(years=None, live=False):
                 tier = estimate_tier_from_contract(aav, change['positionGroup'])
             if not tier:
                 tier = estimate_tier_from_stats(change['lastSeasonStats'], change['positionGroup'])
+            # Traded players are generally at least Starters — teams don't trade for Backups
+            if not tier and is_trade:
+                tier = 'Starter'
+            # Final fallback
+            if not tier:
+                # If they played 12+ games, likely a Starter; otherwise Backup
+                games = (change['lastSeasonStats'] or {}).get('games', 0) or 0
+                tier = 'Starter' if games >= 12 else 'Backup'
 
             tx = {
                 'id': tx_id,
@@ -843,6 +1018,50 @@ def build_free_agency(years=None, live=False):
                     tx['tradeDetails'] = trade_info['tradeDetails']
 
             transactions.append(tx)
+
+        # Process extensions (re-signings with same team) for this year
+        year_extensions = [e for e in extension_list if e['season'] == year]
+        seen_names_ext = {normalize_name(tx['name']) for tx in transactions}
+        ext_added = 0
+        for ext in year_extensions:
+            name_norm = normalize_name(ext['name'])
+            if name_norm in seen_names_ext:
+                continue
+            tx_id = make_id(ext['name'], ext['positionGroup'], f'ext-{year}')
+            if tx_id in existing_ids:
+                continue
+
+            # Look up tier
+            tier = tier_lookup.get(name_norm)
+            if not tier:
+                aav = (ext.get('contract') or {}).get('aav')
+                tier = estimate_tier_from_contract(aav, ext['positionGroup'])
+            if not tier:
+                tier = estimate_tier_from_stats(ext['lastSeasonStats'], ext['positionGroup'])
+            if not tier:
+                games = (ext.get('lastSeasonStats') or {}).get('games', 0) or 0
+                tier = 'Starter' if games >= 12 else 'Backup'
+
+            tx = {
+                'id': tx_id,
+                'type': 'extension',
+                'name': ext['name'],
+                'position': ext['position'],
+                'positionGroup': ext['positionGroup'],
+                'fromTeam': ext['fromTeam'],
+                'toTeam': ext['toTeam'],
+                'tier': tier,
+                'age': ext['age'],
+                'date': f'{year}-03-15',
+                'lastSeasonStats': ext['lastSeasonStats'],
+            }
+            if ext.get('contract'):
+                tx['contract'] = ext['contract']
+            transactions.append(tx)
+            seen_names_ext.add(name_norm)
+            ext_added += 1
+        if ext_added:
+            logger.info(f'  Extensions: added {ext_added} for {year}')
 
         # Merge ESPN live transactions for this year (if available)
         if year in espn_transactions:
@@ -898,6 +1117,9 @@ def build_free_agency(years=None, live=False):
             # Estimate tier from stats if not found in draft history
             if not tier:
                 tier = estimate_tier_from_stats(last_stats, pg)
+            # Traded players are generally at least Starters
+            if not tier:
+                tier = 'Starter'
 
             tx_id = make_id(t['pfr_name'], pg, f'trade-{year}')
             if tx_id in existing_ids:
