@@ -34,7 +34,7 @@ const state = {
   compareRound:  'ALL',         // round filter for comparison
   // Free Agency tracker
   freeAgency: {},                // loaded from free_agency.json, keyed by year
-  freeAgencyYear: '2026',        // which FA year to view
+  freeAgencyYear: String(new Date().getFullYear()),  // default to current year
   freeAgencyTab: 'teams',        // 'teams' | 'transactions'
   freeAgencyFilters: {
     positionGroup: 'ALL',
