@@ -487,7 +487,7 @@ function renderFreeAgentRow(fa, showRank) {
       <div class="text-lg font-bold text-gray-600 w-8 text-right flex-shrink-0">${showRank ? fa.faRank : ''}</div>
       <div class="flex-1 min-w-0">
         <div class="flex items-center gap-2 flex-wrap mb-1">
-          ${posBadge(fa.positionGroup)}
+          ${posBadge(fa.positionGroup)}${fa.salaryGroup && fa.salaryGroup !== fa.positionGroup ? `<span class="text-[9px] text-gray-500 -ml-1">${fa.salaryGroup}</span>` : ''}
           ${tierBadge(fa.tier)}
           <span class="font-semibold text-white text-sm">${fa.name}</span>
           ${fa.type === 'trade' ? typeBadge('trade') : ''}

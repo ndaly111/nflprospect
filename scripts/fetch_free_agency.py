@@ -65,11 +65,30 @@ POS_GROUP_MAP = {
     'QB': 'QB', 'RB': 'RB', 'FB': 'RB',
     'WR': 'WR', 'TE': 'TE',
     'OT': 'OL', 'T': 'OL', 'OG': 'OL', 'G': 'OL', 'C': 'OL', 'IOL': 'OL', 'OL': 'OL',
-    'DT': 'DL', 'NT': 'DL', 'DL': 'DL',
-    'DE': 'EDGE', 'EDGE': 'EDGE', 'OLB': 'EDGE',
+    'LT': 'OL', 'RT': 'OL', 'LG': 'OL', 'RG': 'OL',  # OTC-specific OL positions
+    'DT': 'DL', 'NT': 'DL', 'DL': 'DL', 'IDL': 'DL',  # OTC uses IDL for interior DL
+    'DE': 'EDGE', 'EDGE': 'EDGE', 'OLB': 'EDGE', 'ED': 'EDGE',  # OTC uses ED for edge
     'ILB': 'LB', 'MLB': 'LB', 'LB': 'LB',
     'CB': 'DB', 'S': 'DB', 'FS': 'DB', 'SS': 'DB', 'DB': 'DB',
 }
+
+# Finer-grained position groups for salary estimation
+# Tackles are paid much more than guards/centers
+SALARY_GROUP_MAP = {
+    **POS_GROUP_MAP,
+    'OT': 'OT', 'T': 'OT', 'LT': 'OT', 'RT': 'OT',
+    'OG': 'IOL', 'G': 'IOL', 'LG': 'IOL', 'RG': 'IOL',
+    'C': 'IOL', 'IOL': 'IOL',
+    'OL': 'OL',  # generic OL stays as OL (used when we can't determine sub-position)
+}
+
+
+def salary_group(pos):
+    """Finer-grained position grouping for salary estimation.
+    Splits OL into OT (tackles) and IOL (guards/centers)."""
+    if not pos or (isinstance(pos, float) and math.isnan(pos)):
+        return None
+    return SALARY_GROUP_MAP.get(str(pos).strip().upper(), None)
 
 # NFL salary cap by year (official numbers)
 SALARY_CAP_BY_YEAR = {
@@ -237,6 +256,9 @@ def load_contracts():
             continue
 
         key = normalize_name(name)
+        position = str(r.get('position', '')).strip()
+        pg = pos_group(position)
+        sg = salary_group(position)
         entry = {
             'team': team,
             'year_signed': year_signed,
@@ -244,6 +266,11 @@ def load_contracts():
             'totalValue': safe_int(r.get('value')),
             'aav': safe_int(r.get('apy')),
             'guaranteed': safe_int(r.get('guaranteed')),
+            'position': position,
+            'positionGroup': pg,
+            'salaryGroup': sg,
+            'draftRound': safe_int(r.get('draft_round')),
+            'draftOverall': safe_int(r.get('draft_overall')),
         }
 
         # Store latest contract per player
@@ -1223,6 +1250,44 @@ def build_free_agency(years=None, live=False):
             transactions.append(tx)
             seen_names.add(name_norm)
 
+        # Enrich all transactions with contract data if missing
+        # This catches trades and ESPN-sourced entries that didn't go through
+        # the contract lookup in the team-changes path
+        enriched = 0
+        for tx in transactions:
+            if tx.get('contract'):
+                continue
+            name_norm = normalize_name(tx['name'])
+            contract = None
+            for check_year in [year, year - 1]:
+                c_data = contracts_by_year.get((name_norm, check_year))
+                if c_data:
+                    contract = {
+                        'years': c_data['years'],
+                        'totalValue': c_data['totalValue'],
+                        'aav': c_data['aav'],
+                    }
+                    break
+            if not contract:
+                c_data = contracts.get(name_norm)
+                if c_data and c_data.get('year_signed') and abs(c_data['year_signed'] - year) <= 1:
+                    contract = {
+                        'years': c_data['years'],
+                        'totalValue': c_data['totalValue'],
+                        'aav': c_data['aav'],
+                    }
+            if contract:
+                tx['contract'] = contract
+                enriched += 1
+            # Also enrich draft info from contract data if missing
+            if not tx.get('draftRound'):
+                c_data = contracts.get(name_norm)
+                if c_data and c_data.get('draftRound'):
+                    tx['draftRound'] = c_data['draftRound']
+                    tx['draftPick'] = c_data.get('draftOverall')
+        if enriched:
+            logger.info(f'  Contract enrichment: added {enriched} contracts from OTC data')
+
         # Sort by impact (rough: Elite first, then by name)
         tier_sort = {'Elite': 0, 'Starter': 1, 'Backup': 2, 'Bust': 3}
         transactions.sort(key=lambda t: (tier_sort.get(t.get('tier'), 9), t.get('name', '')))
@@ -1256,6 +1321,10 @@ def build_free_agency(years=None, live=False):
                 notable.append(tx)
                 continue
 
+        # Add salaryGroup to all transactions (finer OL split: OT vs IOL)
+        for tx in notable:
+            tx['salaryGroup'] = salary_group(tx.get('position', '')) or tx.get('positionGroup')
+
         result[year_str] = {
             'teamCap': existing_year.get('teamCap', {}),
             'salaryCap': SALARY_CAP_BY_YEAR.get(year),
@@ -1263,9 +1332,9 @@ def build_free_agency(years=None, live=False):
         }
         logger.info(f'  {year}: {len(notable)} notable transactions (from {len(transactions)} total)')
 
-    # Compute market rates: top-5 AAV as % of cap for each position group per year
-    # Uses all contracts (including extensions) across all years we have data for
-    market_rates = _compute_market_rates(result)
+    # Compute market rates from the full OTC contract database (not just matched txs)
+    # This gives us rates for ALL position groups including defense and OL sub-positions
+    market_rates = _compute_market_rates_from_contracts(contracts_by_year)
     for year_str, rates in market_rates.items():
         if year_str in result:
             result[year_str]['marketRates'] = rates
@@ -1273,43 +1342,48 @@ def build_free_agency(years=None, live=False):
     return result
 
 
-def _compute_market_rates(result):
+def _compute_market_rates_from_contracts(contracts_by_year):
     """
-    For each year and position group, compute the average AAV-as-%-of-cap
-    for the top 5 paid players.  This serves as the market benchmark for
-    salary estimation on the frontend.
+    Compute market rates from the full OTC contract database.
+    For each year and salary group, finds the top 5 paid new contracts
+    and computes their average AAV as a % of the salary cap.
 
-    Returns: { year_str: { posGroup: { top5AvgCapPct, top5Contracts: [...] } } }
+    Uses salary groups (OT, IOL separate from OL) for finer granularity.
+
+    Returns: { year_str: { salaryGroup: { top5AvgCapPct, top5Contracts: [...] } } }
     """
-    pos_groups = ['QB', 'RB', 'WR', 'TE', 'OL', 'EDGE', 'DL', 'LB', 'DB']
+    salary_groups = ['QB', 'RB', 'WR', 'TE', 'OT', 'IOL', 'OL', 'EDGE', 'DL', 'LB', 'DB']
     market = {}
 
-    for year_str, year_data in result.items():
-        cap = year_data.get('salaryCap')
-        if not cap:
-            continue
+    # Group all contracts by (salaryGroup, year_signed)
+    by_sg_year = defaultdict(list)
+    for (name, year_signed), c in contracts_by_year.items():
+        sg = c.get('salaryGroup')
+        aav = c.get('aav')
+        if sg and aav and year_signed:
+            by_sg_year[(sg, year_signed)].append({
+                'name': name,
+                'aav': aav,
+            })
 
-        txs = year_data.get('transactions', [])
-        by_pg = defaultdict(list)
-        for tx in txs:
-            aav = (tx.get('contract') or {}).get('aav')
-            if aav and tx.get('positionGroup'):
-                by_pg[tx['positionGroup']].append({
-                    'name': tx['name'],
-                    'aav': aav,
-                    'capPct': round(aav / cap * 100, 2),
-                })
-
+    for year, cap in SALARY_CAP_BY_YEAR.items():
+        year_str = str(year)
         year_market = {}
-        for pg in pos_groups:
-            contracts = sorted(by_pg.get(pg, []), key=lambda c: c['aav'], reverse=True)
-            top5 = contracts[:5]
-            if top5:
-                avg_pct = round(sum(c['capPct'] for c in top5) / len(top5), 2)
-                year_market[pg] = {
-                    'top5AvgCapPct': avg_pct,
-                    'top5Contracts': [{'name': c['name'], 'aav': c['aav'], 'capPct': c['capPct']} for c in top5],
-                }
+
+        for sg in salary_groups:
+            contracts = by_sg_year.get((sg, year), [])
+            if not contracts:
+                continue
+            contracts_sorted = sorted(contracts, key=lambda c: c['aav'], reverse=True)
+            top5 = contracts_sorted[:5]
+            for c in top5:
+                c['capPct'] = round(c['aav'] / cap * 100, 2)
+            avg_pct = round(sum(c['capPct'] for c in top5) / len(top5), 2)
+            year_market[sg] = {
+                'top5AvgCapPct': avg_pct,
+                'top5Contracts': [{'name': c['name'], 'aav': c['aav'], 'capPct': c['capPct']} for c in top5],
+            }
+
         market[year_str] = year_market
 
     return market

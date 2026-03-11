@@ -161,11 +161,11 @@ export function dealTier(aav) {
  */
 function draftCapitalMultiplier(player) {
   const round = player.draftRound
-  if (!round) return 1.0  // UDFA or unknown
-  if (round === 1) return 1.25
-  if (round === 2) return 1.12
-  if (round === 3) return 1.05
-  return 1.0
+  if (!round) return 0.92  // UDFAs are paid ~25% less than Rd1 at same tier
+  if (round === 1) return 1.20
+  if (round === 2) return 1.08
+  if (round === 3) return 1.0
+  return 0.95  // later rounds get slight discount
 }
 
 /*
@@ -218,35 +218,45 @@ export function freeAgentScore(player) {
 export function estimateSalary(player, marketRates, salaryCap) {
   if (!marketRates || !salaryCap) return null
 
-  const pg = player.positionGroup
-  const rates = marketRates[pg]
+  // Use salaryGroup for finer granularity (OT vs IOL), fall back to positionGroup
+  const sg = player.salaryGroup || player.positionGroup
+  const rates = marketRates[sg] || marketRates[player.positionGroup]
   if (!rates) return null
 
   const score = freeAgentScore(player)
   const topAvgPct = rates.top5AvgCapPct
 
-  // Map score (0-100) to a fraction of top-5 average
-  // Score 80+ → 85-110% of top-5 avg (elite)
-  // Score 50-80 → 35-85% (solid starter range)
-  // Score 25-50 → 15-35% (low-end starter / backup)
-  // Score 0-25 → 5-15% (minimum / depth)
+  // Map score (0-100) to a fraction of top-5 average.
+  // Calibrated against 2020-2023 historical contracts.
+  // Score 80+ → elite FA, near or above top-5 avg
+  // Score 50-80 → solid starter, moderate fraction of top-5
+  // Score 25-50 → low-end starter / rotational
+  // Score 0-25 → depth / veteran minimum territory
   let fraction
   if (score >= 80) {
-    fraction = 0.85 + (score - 80) / 80  // 0.85-1.10
+    fraction = 0.75 + (score - 80) / 80   // 0.75-1.00
   } else if (score >= 50) {
-    fraction = 0.35 + (score - 50) / 60   // 0.35-0.85
+    fraction = 0.25 + (score - 50) / 60    // 0.25-0.75
   } else if (score >= 25) {
-    fraction = 0.15 + (score - 25) / 125   // 0.15-0.35
+    fraction = 0.08 + (score - 25) / 147   // 0.08-0.25
   } else {
-    fraction = 0.05 + score / 500   // 0.05-0.10
+    fraction = 0.03 + score / 714           // 0.03-0.065
   }
 
-  const capPct = +(topAvgPct * fraction).toFixed(2)
-  const estimatedAAV = Math.round(salaryCap * capPct / 100)
+  let capPct = +(topAvgPct * fraction).toFixed(2)
+  let estimatedAAV = Math.round(salaryCap * capPct / 100)
 
-  // Range: ±25% for uncertainty
-  const low = Math.round(estimatedAAV * 0.75)
-  const high = Math.round(estimatedAAV * 1.25)
+  // Salary floor: veteran minimum (~$1.1M for experienced players)
+  const VET_MIN = 1100000
+  if (estimatedAAV < VET_MIN) {
+    estimatedAAV = VET_MIN
+    capPct = +(estimatedAAV / salaryCap * 100).toFixed(2)
+  }
+
+  // Range: ±30% for uncertainty (wider for less certain estimates)
+  const rangePct = score >= 60 ? 0.25 : 0.35
+  const low = Math.round(estimatedAAV * (1 - rangePct))
+  const high = Math.round(estimatedAAV * (1 + rangePct))
 
   return { capPct, estimatedAAV, low, high, score }
 }
