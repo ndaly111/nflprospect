@@ -151,3 +151,123 @@ export function dealTier(aav) {
   if (aav >= 8000000)  return { label: 'Mid-tier', cls: 'text-gray-300 bg-gray-500/20 border border-gray-500/30' }
   return { label: 'Bargain', cls: 'text-green-300 bg-green-500/20 border border-green-500/30' }
 }
+
+/* ── Free Agent Ranking & Salary Estimation ──────────────── */
+
+/*
+ * Draft capital bonus: first-round picks command a premium in FA,
+ * especially coming off rookie deals.  Undrafted players get no bonus.
+ * Scale: Round 1 → 1.25x, Round 2 → 1.12x, Round 3 → 1.05x, later → 1.0x
+ */
+function draftCapitalMultiplier(player) {
+  const round = player.draftRound
+  if (!round) return 1.0  // UDFA or unknown
+  if (round === 1) return 1.25
+  if (round === 2) return 1.12
+  if (round === 3) return 1.05
+  return 1.0
+}
+
+/*
+ * Age factor: younger FAs (24-26) get a premium, older ones (30+) a discount.
+ * Peak value age in FA is ~26.  Scale from 1.15x at 24 down to 0.7x at 33+.
+ */
+function ageFactor(player) {
+  const age = player.age
+  if (!age) return 1.0
+  if (age <= 24) return 1.15
+  if (age <= 26) return 1.10
+  if (age <= 28) return 1.0
+  if (age <= 30) return 0.88
+  if (age <= 32) return 0.78
+  return 0.70  // 33+
+}
+
+/*
+ * Composite free agent ranking score.  Combines:
+ *   - Production (existing impact score: tier × production multiplier)
+ *   - Draft capital (first-rounders command a premium)
+ *   - Age (younger = more valuable in FA)
+ *
+ * The score is on a 0-100 scale for display purposes.
+ */
+export function freeAgentScore(player) {
+  const impact = playerImpactScore(player)   // 0-3.75 range
+  const draftMult = draftCapitalMultiplier(player)
+  const ageMult = ageFactor(player)
+
+  // Raw composite: impact (0-3.75) × draft × age
+  const raw = impact * draftMult * ageMult
+
+  // Normalize to 0-100 where max theoretical = 3.75 × 1.25 × 1.15 ≈ 5.39
+  const normalized = Math.min(100, Math.round((raw / 5.4) * 100))
+  return normalized
+}
+
+/*
+ * Estimate expected salary for a free agent as a percentage of the salary cap.
+ *
+ * Method:
+ *   1. Look at the top 5 paid players at this position group (marketRates)
+ *   2. The player's FA score determines where they fall relative to that top-5 avg
+ *   3. Score of 100 → top-5 avg cap%. Score of 50 → ~40% of that. Score of 25 → ~20%.
+ *   4. Apply a floor (veteran minimum ~0.4% of cap) and a ceiling (top-5 avg × 1.2)
+ *
+ * Returns { capPct, estimatedAAV, low, high } or null if insufficient data.
+ */
+export function estimateSalary(player, marketRates, salaryCap) {
+  if (!marketRates || !salaryCap) return null
+
+  const pg = player.positionGroup
+  const rates = marketRates[pg]
+  if (!rates) return null
+
+  const score = freeAgentScore(player)
+  const topAvgPct = rates.top5AvgCapPct
+
+  // Map score (0-100) to a fraction of top-5 average
+  // Score 80+ → 85-110% of top-5 avg (elite)
+  // Score 50-80 → 35-85% (solid starter range)
+  // Score 25-50 → 15-35% (low-end starter / backup)
+  // Score 0-25 → 5-15% (minimum / depth)
+  let fraction
+  if (score >= 80) {
+    fraction = 0.85 + (score - 80) / 80  // 0.85-1.10
+  } else if (score >= 50) {
+    fraction = 0.35 + (score - 50) / 60   // 0.35-0.85
+  } else if (score >= 25) {
+    fraction = 0.15 + (score - 25) / 125   // 0.15-0.35
+  } else {
+    fraction = 0.05 + score / 500   // 0.05-0.10
+  }
+
+  const capPct = +(topAvgPct * fraction).toFixed(2)
+  const estimatedAAV = Math.round(salaryCap * capPct / 100)
+
+  // Range: ±25% for uncertainty
+  const low = Math.round(estimatedAAV * 0.75)
+  const high = Math.round(estimatedAAV * 1.25)
+
+  return { capPct, estimatedAAV, low, high, score }
+}
+
+/*
+ * Rank all free agents (new signings only, not extensions) by their FA score.
+ * Returns a sorted array with salary estimates attached.
+ */
+export function rankFreeAgents(transactions, marketRates, salaryCap) {
+  // Only rank new signings (players changing teams or entering FA)
+  const freeAgents = transactions
+    .filter(tx => tx.type === 'signing' || tx.type === 'trade')
+    .map(tx => {
+      const score = freeAgentScore(tx)
+      const salary = estimateSalary(tx, marketRates, salaryCap)
+      return { ...tx, faScore: score, salaryEstimate: salary }
+    })
+    .sort((a, b) => b.faScore - a.faScore)
+
+  // Assign rank
+  freeAgents.forEach((fa, i) => { fa.faRank = i + 1 })
+
+  return freeAgents
+}

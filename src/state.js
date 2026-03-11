@@ -35,7 +35,7 @@ const state = {
   // Free Agency tracker
   freeAgency: {},                // loaded from free_agency.json, keyed by year
   freeAgencyYear: String(new Date().getFullYear()),  // default to current year
-  freeAgencyTab: 'teams',        // 'teams' | 'transactions'
+  freeAgencyTab: 'board',         // 'board' | 'teams' | 'transactions'
   freeAgencyFilters: {
     positionGroup: 'ALL',
     side: 'ALL',                 // 'ALL' | 'offense' | 'defense'

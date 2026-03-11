@@ -71,8 +71,16 @@ POS_GROUP_MAP = {
     'CB': 'DB', 'S': 'DB', 'FS': 'DB', 'SS': 'DB', 'DB': 'DB',
 }
 
-# Approximate pre-FA cap space by year (for major teams; rough estimates)
-CAP_SPACE_BY_YEAR = {}  # Will be populated for manually known years
+# NFL salary cap by year (official numbers)
+SALARY_CAP_BY_YEAR = {
+    2020: 198200000,
+    2021: 182500000,
+    2022: 208200000,
+    2023: 224800000,
+    2024: 255400000,
+    2025: 272500000,
+    2026: 301200000,
+}
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -683,12 +691,18 @@ def fetch_espn_transactions(year, players_info=None, tier_lookup=None, stats=Non
                         games = last_stats.get('games', 0) or 0
                         tier = 'Starter' if games >= 12 else 'Backup'
 
-                    # Get age from players_info
+                    # Get age and draft info from players_info
                     age = None
+                    draft_round = None
+                    draft_pick = None
+                    years_exp = None
                     if players_info:
                         for pid, pinfo in players_info.items():
                             if normalize_name(pinfo.get('name', '')) == name_norm:
                                 age = calc_age(pinfo.get('birth_date', ''), f'{year}-03-15')
+                                draft_round = pinfo.get('draft_round')
+                                draft_pick = pinfo.get('draft_pick')
+                                years_exp = pinfo.get('years_exp')
                                 if from_team is None and tx_type == 'signing':
                                     lt = pinfo.get('latest_team')
                                     if lt and lt != to_team:
@@ -708,6 +722,9 @@ def fetch_espn_transactions(year, players_info=None, tier_lookup=None, stats=Non
                         'age': age,
                         'date': tx_date_str,
                         'lastSeasonStats': last_stats,
+                        'draftRound': draft_round,
+                        'draftPick': draft_pick,
+                        'yearsExp': years_exp,
                     }
                     transactions.append(tx)
 
@@ -788,6 +805,9 @@ def detect_team_changes(stats, players_info):
                 'toTeam': curr_team,
                 'lastSeasonStats': last_stats,
                 'age': age,
+                'draftRound': pinfo.get('draft_round'),
+                'draftPick': pinfo.get('draft_pick'),
+                'yearsExp': pinfo.get('years_exp'),
             })
 
     return changes
@@ -871,6 +891,9 @@ def detect_extensions(stats, players_info, contracts_by_year):
                 'toTeam': curr_team,
                 'lastSeasonStats': last_stats,
                 'age': age,
+                'draftRound': pinfo.get('draft_round'),
+                'draftPick': pinfo.get('draft_pick'),
+                'yearsExp': pinfo.get('years_exp'),
                 'contract': {
                     'years': contract.get('years'),
                     'totalValue': contract.get('totalValue'),
@@ -1036,6 +1059,9 @@ def build_free_agency(years=None, live=False):
                 'age': change['age'],
                 'date': f'{year}-03-15',  # approximate FA date
                 'lastSeasonStats': change['lastSeasonStats'],
+                'draftRound': change.get('draftRound'),
+                'draftPick': change.get('draftPick'),
+                'yearsExp': change.get('yearsExp'),
             }
 
             if contract:
@@ -1083,6 +1109,9 @@ def build_free_agency(years=None, live=False):
                 'age': ext['age'],
                 'date': f'{year}-03-15',
                 'lastSeasonStats': ext['lastSeasonStats'],
+                'draftRound': ext.get('draftRound'),
+                'draftPick': ext.get('draftPick'),
+                'yearsExp': ext.get('yearsExp'),
             }
             if ext.get('contract'):
                 tx['contract'] = ext['contract']
@@ -1184,6 +1213,9 @@ def build_free_agency(years=None, live=False):
                 'age': age,
                 'date': t.get('date', f'{year}-03-15'),
                 'lastSeasonStats': last_stats,
+                'draftRound': pinfo.get('draft_round'),
+                'draftPick': pinfo.get('draft_pick'),
+                'yearsExp': pinfo.get('years_exp'),
             }
             if 'tradeDetails' in t:
                 tx['tradeDetails'] = t['tradeDetails']
@@ -1226,11 +1258,61 @@ def build_free_agency(years=None, live=False):
 
         result[year_str] = {
             'teamCap': existing_year.get('teamCap', {}),
+            'salaryCap': SALARY_CAP_BY_YEAR.get(year),
             'transactions': notable,
         }
         logger.info(f'  {year}: {len(notable)} notable transactions (from {len(transactions)} total)')
 
+    # Compute market rates: top-5 AAV as % of cap for each position group per year
+    # Uses all contracts (including extensions) across all years we have data for
+    market_rates = _compute_market_rates(result)
+    for year_str, rates in market_rates.items():
+        if year_str in result:
+            result[year_str]['marketRates'] = rates
+
     return result
+
+
+def _compute_market_rates(result):
+    """
+    For each year and position group, compute the average AAV-as-%-of-cap
+    for the top 5 paid players.  This serves as the market benchmark for
+    salary estimation on the frontend.
+
+    Returns: { year_str: { posGroup: { top5AvgCapPct, top5Contracts: [...] } } }
+    """
+    pos_groups = ['QB', 'RB', 'WR', 'TE', 'OL', 'EDGE', 'DL', 'LB', 'DB']
+    market = {}
+
+    for year_str, year_data in result.items():
+        cap = year_data.get('salaryCap')
+        if not cap:
+            continue
+
+        txs = year_data.get('transactions', [])
+        by_pg = defaultdict(list)
+        for tx in txs:
+            aav = (tx.get('contract') or {}).get('aav')
+            if aav and tx.get('positionGroup'):
+                by_pg[tx['positionGroup']].append({
+                    'name': tx['name'],
+                    'aav': aav,
+                    'capPct': round(aav / cap * 100, 2),
+                })
+
+        year_market = {}
+        for pg in pos_groups:
+            contracts = sorted(by_pg.get(pg, []), key=lambda c: c['aav'], reverse=True)
+            top5 = contracts[:5]
+            if top5:
+                avg_pct = round(sum(c['capPct'] for c in top5) / len(top5), 2)
+                year_market[pg] = {
+                    'top5AvgCapPct': avg_pct,
+                    'top5Contracts': [{'name': c['name'], 'aav': c['aav'], 'capPct': c['capPct']} for c in top5],
+                }
+        market[year_str] = year_market
+
+    return market
 
 
 def main():

@@ -1,7 +1,7 @@
 import { getState, setState } from '../state.js'
 import { TIERS, TIER_COLORS, POSITIONS, POS_COLORS, OFFENSE_GROUPS, DEFENSE_GROUPS } from '../utils/tiers.js'
 import { nflTeamLogo, TEAM_NAMES, NFL_DIVISIONS, DIVISION_ORDER } from '../utils/teams.js'
-import { buildTeamImpacts, teamDirection, playerImpactScore, formatMoney, dealTier } from '../utils/freeAgencyCalc.js'
+import { buildTeamImpacts, teamDirection, playerImpactScore, formatMoney, dealTier, freeAgentScore, rankFreeAgents } from '../utils/freeAgencyCalc.js'
 
 const FA_PAGE_SIZE = 40
 
@@ -432,6 +432,148 @@ function renderTransactionFeed(transactions) {
     ${loadMoreBtn}`
 }
 
+/* ── Free Agent Board ─────────────────────────────────────── */
+
+function scoreBadge(score) {
+  let cls = 'text-gray-400 bg-gray-800'
+  if (score >= 80) cls = 'text-yellow-300 bg-yellow-500/20 border border-yellow-500/30'
+  else if (score >= 60) cls = 'text-green-300 bg-green-500/20 border border-green-500/30'
+  else if (score >= 40) cls = 'text-blue-300 bg-blue-500/20 border border-blue-500/30'
+  else if (score >= 20) cls = 'text-gray-300 bg-gray-700'
+  return `<span class="text-xs font-bold px-2 py-0.5 rounded-full ${cls}">${score}</span>`
+}
+
+function draftCapitalLabel(player) {
+  if (!player.draftRound) return '<span class="text-gray-600 text-[10px]">UDFA</span>'
+  const rd = player.draftRound
+  const pk = player.draftPick
+  const label = pk ? `Rd ${rd}, #${pk}` : `Rd ${rd}`
+  const cls = rd === 1 ? 'text-yellow-400' : rd === 2 ? 'text-blue-400' : 'text-gray-400'
+  return `<span class="${cls} text-[10px]">${label}</span>`
+}
+
+function salaryEstimateDisplay(est) {
+  if (!est) return '<span class="text-gray-600 text-xs">N/A</span>'
+  return `
+    <div class="text-right">
+      <div class="text-sm font-semibold text-white">${formatMoney(est.estimatedAAV)}<span class="text-gray-500 text-[10px] ml-0.5">/yr</span></div>
+      <div class="text-[10px] text-gray-500">${est.capPct}% of cap</div>
+      <div class="text-[9px] text-gray-600">${formatMoney(est.low)} – ${formatMoney(est.high)}</div>
+    </div>`
+}
+
+function renderFreeAgentRow(fa, showRank) {
+  const stats = statLine(fa)
+  const ageStr = fa.age ? `${fa.age} yrs` : ''
+  const expStr = fa.yearsExp != null ? `${fa.yearsExp} yr${fa.yearsExp !== 1 ? 's' : ''} exp` : ''
+  const actualContract = fa.contract
+    ? `<div class="mt-1 text-[10px] text-emerald-400/70 flex items-center gap-1">
+        <span class="text-gray-600">Signed:</span> ${fa.contract.years}yr / ${formatMoney(fa.contract.aav)} AAV
+       </div>`
+    : ''
+
+  const teamFlow = fa.type === 'trade'
+    ? `${nflTeamLogo(fa.fromTeam)} <span class="text-gray-500 text-[10px]">${fa.fromTeam || '?'}</span>
+       <span class="text-gray-600 mx-0.5 text-[10px]">→</span>
+       ${nflTeamLogo(fa.toTeam)} <span class="text-gray-300 text-[10px]">${fa.toTeam}</span>`
+    : fa.toTeam
+      ? `${nflTeamLogo(fa.fromTeam)} <span class="text-gray-500 text-[10px]">${fa.fromTeam || 'FA'}</span>
+         <span class="text-gray-600 mx-0.5 text-[10px]">→</span>
+         ${nflTeamLogo(fa.toTeam)} <span class="text-gray-300 text-[10px]">${fa.toTeam}</span>`
+      : `${nflTeamLogo(fa.fromTeam)} <span class="text-gray-500 text-[10px]">${fa.fromTeam || '?'}</span>`
+
+  return `
+    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-800/50 border border-gray-700/50 hover:border-gray-600 transition-colors">
+      <div class="text-lg font-bold text-gray-600 w-8 text-right flex-shrink-0">${showRank ? fa.faRank : ''}</div>
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-2 flex-wrap mb-1">
+          ${posBadge(fa.positionGroup)}
+          ${tierBadge(fa.tier)}
+          <span class="font-semibold text-white text-sm">${fa.name}</span>
+          ${fa.type === 'trade' ? typeBadge('trade') : ''}
+          <span class="text-[10px] text-gray-600">${[ageStr, expStr].filter(Boolean).join(' · ')}</span>
+        </div>
+        <div class="flex items-center gap-2 mb-1">
+          <div class="flex items-center gap-1">${teamFlow}</div>
+          <span class="text-gray-700 mx-1">|</span>
+          ${draftCapitalLabel(fa)}
+        </div>
+        ${stats ? `<div class="text-[11px] text-gray-400 mb-0.5">${stats}</div>` : ''}
+        ${actualContract}
+      </div>
+      <div class="flex items-center gap-4 flex-shrink-0">
+        <div class="text-center">
+          <div class="text-[9px] text-gray-600 uppercase mb-0.5">Score</div>
+          ${scoreBadge(fa.faScore)}
+        </div>
+        <div class="min-w-[90px]">
+          <div class="text-[9px] text-gray-600 uppercase mb-0.5 text-right">Est. Salary</div>
+          ${salaryEstimateDisplay(fa.salaryEstimate)}
+        </div>
+      </div>
+    </div>`
+}
+
+function renderFreeAgentBoard(transactions, marketRates, salaryCap) {
+  const filtered = applyFilters(transactions)
+  const ranked = rankFreeAgents(filtered, marketRates, salaryCap)
+
+  if (!ranked.length) {
+    return '<div class="text-gray-500 text-sm py-8 text-center">No free agents match your filters.</div>'
+  }
+
+  // Summary stats
+  const avgScore = Math.round(ranked.reduce((s, fa) => s + fa.faScore, 0) / ranked.length)
+  const withSalary = ranked.filter(fa => fa.salaryEstimate)
+  const avgAAV = withSalary.length
+    ? Math.round(withSalary.reduce((s, fa) => s + fa.salaryEstimate.estimatedAAV, 0) / withSalary.length)
+    : null
+
+  const summaryHtml = `
+    <div class="flex items-center gap-6 mb-4 p-3 bg-gray-800/30 rounded-xl border border-gray-700/50">
+      <div>
+        <div class="text-[10px] text-gray-500 uppercase tracking-wider">Free Agents</div>
+        <div class="text-lg font-bold text-white">${ranked.length}</div>
+      </div>
+      <div>
+        <div class="text-[10px] text-gray-500 uppercase tracking-wider">Avg Score</div>
+        <div class="text-lg font-bold text-white">${avgScore}</div>
+      </div>
+      ${avgAAV ? `<div>
+        <div class="text-[10px] text-gray-500 uppercase tracking-wider">Avg Est. AAV</div>
+        <div class="text-lg font-bold text-white">${formatMoney(avgAAV)}</div>
+      </div>` : ''}
+      ${salaryCap ? `<div class="ml-auto">
+        <div class="text-[10px] text-gray-500 uppercase tracking-wider">Salary Cap</div>
+        <div class="text-lg font-bold text-white">${formatMoney(salaryCap)}</div>
+      </div>` : ''}
+    </div>`
+
+  // Top 10 highlight
+  const top10 = ranked.slice(0, 10)
+  const rest = ranked.slice(10)
+
+  const top10Html = top10.length ? `
+    <div class="mb-4">
+      <div class="text-xs font-bold text-yellow-400 uppercase tracking-wider mb-2 flex items-center gap-2">
+        Top Free Agents
+      </div>
+      <div class="space-y-2">${top10.map(fa => renderFreeAgentRow(fa, true)).join('')}</div>
+    </div>` : ''
+
+  const restHtml = rest.length ? `
+    <div>
+      <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Remaining Free Agents</div>
+      <div class="space-y-1.5">${rest.map(fa => renderFreeAgentRow(fa, true)).join('')}</div>
+    </div>` : ''
+
+  const noMarketHint = !marketRates || !Object.keys(marketRates).length
+    ? '<div class="text-[10px] text-amber-500/70 mb-3">Salary estimates unavailable — no contract data for this year. Estimates use historical market rates.</div>'
+    : ''
+
+  return `${summaryHtml}${noMarketHint}${top10Html}${restHtml}`
+}
+
 /* ── Main Render ───────────────────────────────────────────── */
 
 let faVisibleCount = FA_PAGE_SIZE
@@ -459,6 +601,7 @@ export function renderFreeAgency() {
   const teamCap = yearData.teamCap || {}
 
   const tabs = [
+    { id: 'board', label: 'Free Agent Board' },
     { id: 'teams', label: 'Team Impact' },
     { id: 'transactions', label: 'Transactions' },
   ]
@@ -469,6 +612,7 @@ export function renderFreeAgency() {
       ${active ? 'border-blue-500 text-blue-400' : 'text-gray-400 hover:text-white border-transparent'}"
       data-tab="${t.id}">${t.label}
       ${t.id === 'transactions' ? `<span class="text-[10px] text-gray-600 ml-1">(${transactions.length})</span>` : ''}
+      ${t.id === 'board' ? `<span class="text-[10px] text-gray-600 ml-1">(${transactions.filter(tx => tx.type === 'signing' || tx.type === 'trade').length})</span>` : ''}
     </button>`
   }).join('')
 
@@ -480,8 +624,24 @@ export function renderFreeAgency() {
   // Winners/Losers summary (only for team impact tab)
   const summary = freeAgencyTab === 'teams' ? renderWinnersLosers(transactions) : ''
 
+  // Market rates and salary cap for the free agent board
+  const marketRates = yearData.marketRates || {}
+  const salaryCap = yearData.salaryCap || null
+
+  // If current year lacks market rates, try to use prior year's rates as fallback
+  let effectiveMarketRates = marketRates
+  if (!Object.keys(marketRates).length) {
+    const priorYear = String(parseInt(freeAgencyYear) - 1)
+    const priorData = freeAgency[priorYear]
+    if (priorData?.marketRates) {
+      effectiveMarketRates = priorData.marketRates
+    }
+  }
+
   let content = ''
-  if (freeAgencyTab === 'teams') {
+  if (freeAgencyTab === 'board') {
+    content = renderFreeAgentBoard(transactions, effectiveMarketRates, salaryCap)
+  } else if (freeAgencyTab === 'teams') {
     content = renderTeamImpactBoard(transactions, teamCap)
   } else {
     faVisibleCount = FA_PAGE_SIZE  // reset pagination on re-render
