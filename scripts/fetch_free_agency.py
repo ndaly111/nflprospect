@@ -590,16 +590,46 @@ def fetch_espn_transactions(year, players_info=None, tier_lookup=None, stats=Non
 
             # ESPN descriptions can contain multiple players:
             # "Re-signed DE LaBryan Ray and OLB Thomas Incoom. Signed CB Robert Rochell..."
-            # Split on sentence boundaries and common conjunctions
+            # "Signed DLs Jonathan Allen and Javon Hargrave to contracts."
+            # "Acquired T Tytus Howard from Houston"
+            # Split on sentence boundaries
             segments = re.split(r'\.\s+', description)
 
             for segment in segments:
                 if not segment.strip():
                     continue
 
-                # Extract all "Position PlayerName" pairs from this segment
+                # Normalize ESPN position abbreviations before matching:
+                # - Plurals: DLs→DL, LBs→LB, CBs→CB, etc.
+                # - Slash combos: C/G→G, OT/OG→OL
+                # - Missing from standard list: DL, T, G, DB
+                norm_seg = re.sub(r'\b([A-Z]{1,3})s\b', r'\1', segment)  # strip plural s
+                norm_seg = re.sub(r'\b[A-Z]{1,3}/[A-Z]{1,3}\b', 'OL', norm_seg)  # C/G, OT/OG → OL
+                norm_seg = norm_seg.replace(' DL ', ' DT ').replace(' T ', ' OT ')
+                norm_seg = norm_seg.replace(' G ', ' OG ').replace(' DB ', ' CB ')
+                # Handle start of string too
+                if norm_seg.startswith('DL '): norm_seg = 'DT' + norm_seg[2:]
+                if norm_seg.startswith('T '): norm_seg = 'OT' + norm_seg[1:]
+                if norm_seg.startswith('G '): norm_seg = 'OG' + norm_seg[1:]
+                if norm_seg.startswith('DB '): norm_seg = 'CB' + norm_seg[2:]
+
+                # Extract all "Position PlayerName" pairs
                 pos_pattern = r'\b(QB|RB|WR|TE|OT|OG|OL|C|DE|DT|NT|OLB|ILB|MLB|LB|CB|S|FS|SS|K|P|LS)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z\'.,-]+)+)'
-                matches = re.findall(pos_pattern, segment)
+                matches = re.findall(pos_pattern, norm_seg)
+
+                # Also catch "and FirstName LastName" when preceded by a position match
+                # e.g., "DLs Jonathan Allen and Javon Hargrave" → after normalization,
+                # we get "DT Jonathan Allen" but miss "Javon Hargrave"
+                and_pattern = r'\band\s+([A-Z][a-z]+\s+[A-Z][a-z\'.,-]+)'
+                and_matches = re.findall(and_pattern, segment)
+                if matches and and_matches:
+                    # Use the last matched position for "and" players
+                    last_pos = matches[-1][0]
+                    for name in and_matches:
+                        name = name.strip().rstrip('.,')
+                        if not any(m[1].strip().rstrip('.,') == name for m in matches):
+                            matches.append((last_pos, name))
+
                 if not matches:
                     continue
 
