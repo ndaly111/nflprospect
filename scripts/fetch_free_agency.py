@@ -704,16 +704,7 @@ def fetch_espn_transactions(year, players_info=None, tier_lookup=None, stats=Non
                                     from_team = sdata.get('team')
                                 break
 
-                    # Estimate tier
-                    if not tier:
-                        tier = estimate_tier_from_stats(last_stats, pg)
-                    if not tier and tx_type == 'trade':
-                        tier = 'Starter'
-                    if not tier:
-                        games = last_stats.get('games', 0) or 0
-                        tier = 'Starter' if games >= 12 else 'Backup'
-
-                    # Get age from players_info
+                    # Get age and from_team from players_info (needed for tier logic)
                     age = None
                     if players_info:
                         for pid, pinfo in players_info.items():
@@ -724,6 +715,25 @@ def fetch_espn_transactions(year, players_info=None, tier_lookup=None, stats=Non
                                     if lt and lt != to_team:
                                         from_team = lt
                                 break
+
+                    # Estimate tier: use production to validate/override draft pedigree
+                    stats_tier = estimate_tier_from_stats(last_stats, pg)
+                    if tier and stats_tier:
+                        # Use the lower of career grade and recent production
+                        tier_rank = {'Elite': 0, 'Starter': 1, 'Backup': 2, 'Bust': 3}
+                        tier = tier if tier_rank.get(tier, 9) >= tier_rank.get(stats_tier, 9) else stats_tier
+                    elif not tier and stats_tier:
+                        tier = stats_tier
+                    elif tier and not stats_tier and not last_stats:
+                        # No stats available — downgrade aging Elite players
+                        # (can't verify current production level)
+                        if tier == 'Elite' and age and age >= 30:
+                            tier = 'Starter'
+                    if not tier and tx_type == 'trade':
+                        tier = 'Starter'
+                    if not tier:
+                        games = last_stats.get('games', 0) or 0
+                        tier = 'Starter' if games >= 12 else 'Backup'
 
                     tx_id = make_id(player_name, pg, f'{tx_type}-espn-{year}')
                     tx = {
@@ -1035,18 +1045,22 @@ def build_free_agency(years=None, live=False):
                         'aav': c_data['aav'],
                     }
 
-            # Estimate tier from contract or stats if needed
+            # Estimate tier: use production to validate/override draft pedigree
+            stats_tier = estimate_tier_from_stats(change['lastSeasonStats'], change['positionGroup'])
             if not tier:
                 aav = contract['aav'] if contract else None
                 tier = estimate_tier_from_contract(aav, change['positionGroup'])
-            if not tier:
-                tier = estimate_tier_from_stats(change['lastSeasonStats'], change['positionGroup'])
+            if tier and stats_tier:
+                # Use the lower of career/contract grade and recent production
+                tier_rank = {'Elite': 0, 'Starter': 1, 'Backup': 2, 'Bust': 3}
+                tier = tier if tier_rank.get(tier, 9) >= tier_rank.get(stats_tier, 9) else stats_tier
+            elif not tier:
+                tier = stats_tier
             # Traded players are generally at least Starters — teams don't trade for Backups
             if not tier and is_trade:
                 tier = 'Starter'
             # Final fallback
             if not tier:
-                # If they played 12+ games, likely a Starter; otherwise Backup
                 games = (change['lastSeasonStats'] or {}).get('games', 0) or 0
                 tier = 'Starter' if games >= 12 else 'Backup'
 

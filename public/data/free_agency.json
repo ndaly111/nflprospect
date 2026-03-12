@@ -3,38 +3,6 @@
     "teamCap": {},
     "transactions": [
       {
-        "id": "adrian-peterson-rb-2020",
-        "type": "signing",
-        "name": "Adrian Peterson",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "WAS",
-        "toTeam": "DET",
-        "tier": "Elite",
-        "age": 34,
-        "date": "2020-03-15",
-        "lastSeasonStats": {
-          "games": 15,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 898,
-          "rushTD": 5,
-          "rec": 17,
-          "recYds": 142,
-          "recTD": 0,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 1050000,
-          "aav": 1050000
-        }
-      },
-      {
         "id": "alvin-kamara-rb-ext-2020",
         "type": "extension",
         "name": "Alvin Kamara",
@@ -60,38 +28,6 @@
           "years": 5,
           "totalValue": 75000000,
           "aav": 15000000
-        }
-      },
-      {
-        "id": "andy-dalton-qb-2020",
-        "type": "signing",
-        "name": "Andy Dalton",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "CIN",
-        "toTeam": "DAL",
-        "tier": "Elite",
-        "age": 32,
-        "date": "2020-03-15",
-        "lastSeasonStats": {
-          "games": 13,
-          "passYds": 3494,
-          "passTD": 16,
-          "int": 14,
-          "rushYds": 73,
-          "rushTD": 4,
-          "rec": 1,
-          "recYds": -4,
-          "recTD": 0,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 3000000,
-          "aav": 3000000
         }
       },
       {
@@ -367,46 +303,6 @@
         }
       },
       {
-        "id": "david-johnson-rb-2020",
-        "type": "trade",
-        "name": "David Johnson",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "ARI",
-        "toTeam": "HOU",
-        "tier": "Elite",
-        "age": 28,
-        "date": "2020-03-16",
-        "lastSeasonStats": {
-          "games": 12,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 346,
-          "rushTD": 2,
-          "rec": 36,
-          "recYds": 370,
-          "recTD": 4,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 5000000,
-          "aav": 5000000
-        },
-        "tradeDetails": {
-          "fromGives": [
-            "David Johnson"
-          ],
-          "toGives": [
-            "2020 round 4 pick"
-          ]
-        }
-      },
-      {
         "id": "deandre-hopkins-wr-2020",
         "type": "trade",
         "name": "DeAndre Hopkins",
@@ -606,38 +502,6 @@
         }
       },
       {
-        "id": "devonta-freeman-rb-2020",
-        "type": "signing",
-        "name": "Devonta Freeman",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "ATL",
-        "toTeam": "NYG",
-        "tier": "Elite",
-        "age": 28,
-        "date": "2020-03-15",
-        "lastSeasonStats": {
-          "games": 14,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 656,
-          "rushTD": 2,
-          "rec": 59,
-          "recYds": 410,
-          "recTD": 4,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 1350000,
-          "aav": 1350000
-        }
-      },
-      {
         "id": "everson-griffen-edge-trade-2020",
         "type": "trade",
         "name": "Everson Griffen",
@@ -698,34 +562,6 @@
         }
       },
       {
-        "id": "frank-gore-rb-2020",
-        "type": "signing",
-        "name": "Frank Gore",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "BUF",
-        "toTeam": "NYJ",
-        "tier": "Elite",
-        "age": 36,
-        "date": "2020-03-15",
-        "lastSeasonStats": {
-          "games": 15,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 599,
-          "rushTD": 2,
-          "rec": 13,
-          "recYds": 100,
-          "recTD": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 1050000,
-          "aav": 1050000
-        }
-      },
-      {
         "id": "george-kittle-te-ext-2020",
         "type": "extension",
         "name": "George Kittle",
@@ -755,34 +591,6 @@
           "years": 5,
           "totalValue": 75000000,
           "aav": 15000000
-        }
-      },
-      {
-        "id": "greg-olsen-te-2020",
-        "type": "signing",
-        "name": "Greg Olsen",
-        "position": "TE",
-        "positionGroup": "TE",
-        "fromTeam": "CAR",
-        "toTeam": "SEA",
-        "tier": "Elite",
-        "age": 35,
-        "date": "2020-03-15",
-        "lastSeasonStats": {
-          "games": 14,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 52,
-          "recYds": 597,
-          "recTD": 2
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 7000000,
-          "aav": 7000000
         }
       },
       {
@@ -845,62 +653,6 @@
           "years": 2,
           "totalValue": 15000000,
           "aav": 7500000
-        }
-      },
-      {
-        "id": "jimmy-graham-te-2020",
-        "type": "signing",
-        "name": "Jimmy Graham",
-        "position": "TE",
-        "positionGroup": "TE",
-        "fromTeam": "GB",
-        "toTeam": "CHI",
-        "tier": "Elite",
-        "age": 33,
-        "date": "2020-03-15",
-        "lastSeasonStats": {
-          "games": 16,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 38,
-          "recYds": 447,
-          "recTD": 3
-        },
-        "contract": {
-          "years": 2,
-          "totalValue": 16000000,
-          "aav": 8000000
-        }
-      },
-      {
-        "id": "joe-flacco-qb-2020",
-        "type": "signing",
-        "name": "Joe Flacco",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "DEN",
-        "toTeam": "NYJ",
-        "tier": "Elite",
-        "age": 35,
-        "date": "2020-03-15",
-        "lastSeasonStats": {
-          "games": 8,
-          "passYds": 1822,
-          "passTD": 6,
-          "int": 5,
-          "rushYds": 20,
-          "rushTD": 0,
-          "rec": 0,
-          "recYds": 0,
-          "recTD": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 1500000,
-          "aav": 1500000
         }
       },
       {
@@ -1139,34 +891,6 @@
         }
       },
       {
-        "id": "lesean-mccoy-rb-2020",
-        "type": "signing",
-        "name": "LeSean McCoy",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "KC",
-        "toTeam": "TB",
-        "tier": "Elite",
-        "age": 31,
-        "date": "2020-03-15",
-        "lastSeasonStats": {
-          "games": 13,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 465,
-          "rushTD": 4,
-          "rec": 28,
-          "recYds": 181,
-          "recTD": 1
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 1050000,
-          "aav": 1050000
-        }
-      },
-      {
         "id": "mark-ingram-rb-ext-2020",
         "type": "extension",
         "name": "Mark Ingram",
@@ -1196,38 +920,6 @@
           "years": 3,
           "totalValue": 15000000,
           "aav": 5000000
-        }
-      },
-      {
-        "id": "melvin-gordon-rb-2020",
-        "type": "signing",
-        "name": "Melvin Gordon",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "LAC",
-        "toTeam": "DEN",
-        "tier": "Elite",
-        "age": 26,
-        "date": "2020-03-15",
-        "lastSeasonStats": {
-          "games": 12,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 612,
-          "rushTD": 8,
-          "rec": 42,
-          "recYds": 296,
-          "recTD": 1,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 2,
-          "totalValue": 16000000,
-          "aav": 8000000
         }
       },
       {
@@ -1453,38 +1145,6 @@
         }
       },
       {
-        "id": "todd-gurley-rb-2020",
-        "type": "signing",
-        "name": "Todd Gurley",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "LA",
-        "toTeam": "ATL",
-        "tier": "Elite",
-        "age": 25,
-        "date": "2020-03-15",
-        "lastSeasonStats": {
-          "games": 15,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 857,
-          "rushTD": 12,
-          "rec": 31,
-          "recYds": 207,
-          "recTD": 2,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 5500000,
-          "aav": 5500000
-        }
-      },
-      {
         "id": "trai-turner-ol-trade-2020",
         "type": "trade",
         "name": "Trai Turner",
@@ -1704,6 +1364,38 @@
         }
       },
       {
+        "id": "adrian-peterson-rb-2020",
+        "type": "signing",
+        "name": "Adrian Peterson",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "WAS",
+        "toTeam": "DET",
+        "tier": "Starter",
+        "age": 34,
+        "date": "2020-03-15",
+        "lastSeasonStats": {
+          "games": 15,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 898,
+          "rushTD": 5,
+          "rec": 17,
+          "recYds": 142,
+          "recTD": 0,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 1050000,
+          "aav": 1050000
+        }
+      },
+      {
         "id": "alexander-mattison-rb-ext-2020",
         "type": "extension",
         "name": "Alexander Mattison",
@@ -1757,6 +1449,38 @@
           "years": 1,
           "totalValue": 1047500,
           "aav": 1047500
+        }
+      },
+      {
+        "id": "andy-dalton-qb-2020",
+        "type": "signing",
+        "name": "Andy Dalton",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "CIN",
+        "toTeam": "DAL",
+        "tier": "Starter",
+        "age": 32,
+        "date": "2020-03-15",
+        "lastSeasonStats": {
+          "games": 13,
+          "passYds": 3494,
+          "passTD": 16,
+          "int": 14,
+          "rushYds": 73,
+          "rushTD": 4,
+          "rec": 1,
+          "recYds": -4,
+          "recTD": 0,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 3000000,
+          "aav": 3000000
         }
       },
       {
@@ -2125,34 +1849,6 @@
         }
       },
       {
-        "id": "chris-thompson-rb-2020",
-        "type": "signing",
-        "name": "Chris Thompson",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "WAS",
-        "toTeam": "JAX",
-        "tier": "Starter",
-        "age": 29,
-        "date": "2020-03-15",
-        "lastSeasonStats": {
-          "games": 11,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 138,
-          "rushTD": 0,
-          "rec": 42,
-          "recYds": 378,
-          "recTD": 0
-        },
-        "contract": {
-          "years": 2,
-          "totalValue": 1260000,
-          "aav": 630000
-        }
-      },
-      {
         "id": "christian-covington-edge-trade-2020",
         "type": "trade",
         "name": "Christian Covington",
@@ -2356,6 +2052,46 @@
         }
       },
       {
+        "id": "david-johnson-rb-2020",
+        "type": "trade",
+        "name": "David Johnson",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "ARI",
+        "toTeam": "HOU",
+        "tier": "Starter",
+        "age": 28,
+        "date": "2020-03-16",
+        "lastSeasonStats": {
+          "games": 12,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 346,
+          "rushTD": 2,
+          "rec": 36,
+          "recYds": 370,
+          "recTD": 4,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 5000000,
+          "aav": 5000000
+        },
+        "tradeDetails": {
+          "fromGives": [
+            "David Johnson"
+          ],
+          "toGives": [
+            "2020 round 4 pick"
+          ]
+        }
+      },
+      {
         "id": "david-montgomery-rb-ext-2020",
         "type": "extension",
         "name": "David Montgomery",
@@ -2533,6 +2269,38 @@
           "years": 4,
           "totalValue": 3898000,
           "aav": 974500
+        }
+      },
+      {
+        "id": "devonta-freeman-rb-2020",
+        "type": "signing",
+        "name": "Devonta Freeman",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "ATL",
+        "toTeam": "NYG",
+        "tier": "Starter",
+        "age": 28,
+        "date": "2020-03-15",
+        "lastSeasonStats": {
+          "games": 14,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 656,
+          "rushTD": 2,
+          "rec": 59,
+          "recYds": 410,
+          "recTD": 4,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 1350000,
+          "aav": 1350000
         }
       },
       {
@@ -2835,6 +2603,34 @@
         }
       },
       {
+        "id": "frank-gore-rb-2020",
+        "type": "signing",
+        "name": "Frank Gore",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "BUF",
+        "toTeam": "NYJ",
+        "tier": "Starter",
+        "age": 36,
+        "date": "2020-03-15",
+        "lastSeasonStats": {
+          "games": 15,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 599,
+          "rushTD": 2,
+          "rec": 13,
+          "recYds": 100,
+          "recTD": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 1050000,
+          "aav": 1050000
+        }
+      },
+      {
         "id": "giovani-bernard-rb-ext-2020",
         "type": "extension",
         "name": "Giovani Bernard",
@@ -2896,6 +2692,34 @@
           "years": 4,
           "totalValue": 37500000,
           "aav": 9375000
+        }
+      },
+      {
+        "id": "greg-olsen-te-2020",
+        "type": "signing",
+        "name": "Greg Olsen",
+        "position": "TE",
+        "positionGroup": "TE",
+        "fromTeam": "CAR",
+        "toTeam": "SEA",
+        "tier": "Starter",
+        "age": 35,
+        "date": "2020-03-15",
+        "lastSeasonStats": {
+          "games": 14,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 52,
+          "recYds": 597,
+          "recTD": 2
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 7000000,
+          "aav": 7000000
         }
       },
       {
@@ -3335,6 +3159,62 @@
         }
       },
       {
+        "id": "jimmy-graham-te-2020",
+        "type": "signing",
+        "name": "Jimmy Graham",
+        "position": "TE",
+        "positionGroup": "TE",
+        "fromTeam": "GB",
+        "toTeam": "CHI",
+        "tier": "Starter",
+        "age": 33,
+        "date": "2020-03-15",
+        "lastSeasonStats": {
+          "games": 16,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 38,
+          "recYds": 447,
+          "recTD": 3
+        },
+        "contract": {
+          "years": 2,
+          "totalValue": 16000000,
+          "aav": 8000000
+        }
+      },
+      {
+        "id": "joe-flacco-qb-2020",
+        "type": "signing",
+        "name": "Joe Flacco",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "DEN",
+        "toTeam": "NYJ",
+        "tier": "Starter",
+        "age": 35,
+        "date": "2020-03-15",
+        "lastSeasonStats": {
+          "games": 8,
+          "passYds": 1822,
+          "passTD": 6,
+          "int": 5,
+          "rushYds": 20,
+          "rushTD": 0,
+          "rec": 0,
+          "recYds": 0,
+          "recTD": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 1500000,
+          "aav": 1500000
+        }
+      },
+      {
         "id": "john-brown-wr-ext-2020",
         "type": "extension",
         "name": "John Brown",
@@ -3638,6 +3518,34 @@
         }
       },
       {
+        "id": "lesean-mccoy-rb-2020",
+        "type": "signing",
+        "name": "LeSean McCoy",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "KC",
+        "toTeam": "TB",
+        "tier": "Starter",
+        "age": 31,
+        "date": "2020-03-15",
+        "lastSeasonStats": {
+          "games": 13,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 465,
+          "rushTD": 4,
+          "rec": 28,
+          "recYds": 181,
+          "recTD": 1
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 1050000,
+          "aav": 1050000
+        }
+      },
+      {
         "id": "leonard-fournette-rb-2020",
         "type": "signing",
         "name": "Leonard Fournette",
@@ -3873,6 +3781,38 @@
         }
       },
       {
+        "id": "melvin-gordon-rb-2020",
+        "type": "signing",
+        "name": "Melvin Gordon",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "LAC",
+        "toTeam": "DEN",
+        "tier": "Starter",
+        "age": 26,
+        "date": "2020-03-15",
+        "lastSeasonStats": {
+          "games": 12,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 612,
+          "rushTD": 8,
+          "rec": 42,
+          "recYds": 296,
+          "recTD": 1,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 2,
+          "totalValue": 16000000,
+          "aav": 8000000
+        }
+      },
+      {
         "id": "mike-thomas-wr-2020",
         "type": "signing",
         "name": "Mike Thomas",
@@ -3961,38 +3901,6 @@
         }
       },
       {
-        "id": "nelson-agholor-wr-2020",
-        "type": "signing",
-        "name": "Nelson Agholor",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "PHI",
-        "toTeam": "LV",
-        "tier": "Starter",
-        "age": 26,
-        "date": "2020-03-15",
-        "lastSeasonStats": {
-          "games": 11,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 7,
-          "rushTD": 0,
-          "rec": 39,
-          "recYds": 363,
-          "recTD": 3,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 1047500,
-          "aav": 1047500
-        }
-      },
-      {
         "id": "nick-foles-qb-2020",
         "type": "trade",
         "name": "Nick Foles",
@@ -4058,34 +3966,6 @@
           "years": 2,
           "totalValue": 3000000,
           "aav": 1500000
-        }
-      },
-      {
-        "id": "pharoh-cooper-wr-2020",
-        "type": "signing",
-        "name": "Pharoh Cooper",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "ARI",
-        "toTeam": "CAR",
-        "tier": "Starter",
-        "age": 25,
-        "date": "2020-03-15",
-        "lastSeasonStats": {
-          "games": 11,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 2,
-          "rushTD": 0,
-          "rec": 25,
-          "recYds": 243,
-          "recTD": 1
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 1210000,
-          "aav": 1210000
         }
       },
       {
@@ -4475,34 +4355,6 @@
         }
       },
       {
-        "id": "tavon-austin-wr-2020",
-        "type": "signing",
-        "name": "Tavon Austin",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "DAL",
-        "toTeam": "GB",
-        "tier": "Starter",
-        "age": 30,
-        "date": "2020-03-15",
-        "lastSeasonStats": {
-          "games": 13,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 47,
-          "rushTD": 1,
-          "rec": 13,
-          "recYds": 177,
-          "recTD": 1
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 1050000,
-          "aav": 1050000
-        }
-      },
-      {
         "id": "taysom-hill-te-ext-2020",
         "type": "extension",
         "name": "Taysom Hill",
@@ -4616,6 +4468,38 @@
           "years": 2,
           "totalValue": 8500000,
           "aav": 4250000
+        }
+      },
+      {
+        "id": "todd-gurley-rb-2020",
+        "type": "signing",
+        "name": "Todd Gurley",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "LA",
+        "toTeam": "ATL",
+        "tier": "Starter",
+        "age": 25,
+        "date": "2020-03-15",
+        "lastSeasonStats": {
+          "games": 15,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 857,
+          "rushTD": 12,
+          "rec": 31,
+          "recYds": 207,
+          "recTD": 2,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 5500000,
+          "aav": 5500000
         }
       },
       {
@@ -5220,6 +5104,34 @@
           "years": 1,
           "totalValue": 1125000,
           "aav": 1125000
+        }
+      },
+      {
+        "id": "chris-thompson-rb-2020",
+        "type": "signing",
+        "name": "Chris Thompson",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "WAS",
+        "toTeam": "JAX",
+        "tier": "Backup",
+        "age": 29,
+        "date": "2020-03-15",
+        "lastSeasonStats": {
+          "games": 11,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 138,
+          "rushTD": 0,
+          "rec": 42,
+          "recYds": 378,
+          "recTD": 0
+        },
+        "contract": {
+          "years": 2,
+          "totalValue": 1260000,
+          "aav": 630000
         }
       },
       {
@@ -5987,6 +5899,38 @@
         }
       },
       {
+        "id": "nelson-agholor-wr-2020",
+        "type": "signing",
+        "name": "Nelson Agholor",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "PHI",
+        "toTeam": "LV",
+        "tier": "Backup",
+        "age": 26,
+        "date": "2020-03-15",
+        "lastSeasonStats": {
+          "games": 11,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 7,
+          "rushTD": 0,
+          "rec": 39,
+          "recYds": 363,
+          "recTD": 3,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 1047500,
+          "aav": 1047500
+        }
+      },
+      {
         "id": "nick-boyle-te-ext-2020",
         "type": "extension",
         "name": "Nick Boyle",
@@ -6108,6 +6052,34 @@
           "years": 1,
           "totalValue": 142800,
           "aav": 142800
+        }
+      },
+      {
+        "id": "pharoh-cooper-wr-2020",
+        "type": "signing",
+        "name": "Pharoh Cooper",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "ARI",
+        "toTeam": "CAR",
+        "tier": "Backup",
+        "age": 25,
+        "date": "2020-03-15",
+        "lastSeasonStats": {
+          "games": 11,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 2,
+          "rushTD": 0,
+          "rec": 25,
+          "recYds": 243,
+          "recTD": 1
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 1210000,
+          "aav": 1210000
         }
       },
       {
@@ -6423,6 +6395,34 @@
           "years": 1,
           "totalValue": 204000,
           "aav": 204000
+        }
+      },
+      {
+        "id": "tavon-austin-wr-2020",
+        "type": "signing",
+        "name": "Tavon Austin",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "DAL",
+        "toTeam": "GB",
+        "tier": "Backup",
+        "age": 30,
+        "date": "2020-03-15",
+        "lastSeasonStats": {
+          "games": 13,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 47,
+          "rushTD": 1,
+          "rec": 13,
+          "recYds": 177,
+          "recTD": 1
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 1050000,
+          "aav": 1050000
         }
       },
       {
@@ -7251,34 +7251,6 @@
     "teamCap": {},
     "transactions": [
       {
-        "id": "adrian-peterson-rb-2021",
-        "type": "signing",
-        "name": "Adrian Peterson",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "DET",
-        "toTeam": "SEA",
-        "tier": "Elite",
-        "age": 35,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 16,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 604,
-          "rushTD": 7,
-          "rec": 12,
-          "recYds": 101,
-          "recTD": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 252000,
-          "aav": 252000
-        }
-      },
-      {
         "id": "alvin-kamara-rb-ext-2021",
         "type": "extension",
         "name": "Alvin Kamara",
@@ -7336,34 +7308,6 @@
           "years": 1,
           "totalValue": 1075000,
           "aav": 1075000
-        }
-      },
-      {
-        "id": "andy-dalton-qb-2021",
-        "type": "signing",
-        "name": "Andy Dalton",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "DAL",
-        "toTeam": "CHI",
-        "tier": "Elite",
-        "age": 33,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 11,
-          "passYds": 2170,
-          "passTD": 14,
-          "int": 8,
-          "rushYds": 114,
-          "rushTD": 0,
-          "rec": 1,
-          "recYds": -3,
-          "recTD": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 10000000,
-          "aav": 10000000
         }
       },
       {
@@ -7431,34 +7375,6 @@
         }
       },
       {
-        "id": "cam-newton-qb-2021",
-        "type": "signing",
-        "name": "Cam Newton",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "NE",
-        "toTeam": "CAR",
-        "tier": "Elite",
-        "age": 31,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 15,
-          "passYds": 2657,
-          "passTD": 8,
-          "int": 10,
-          "rushYds": 592,
-          "rushTD": 12,
-          "rec": 2,
-          "recYds": 35,
-          "recTD": 1
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 5100000,
-          "aav": 5100000
-        }
-      },
-      {
         "id": "ceedee-lamb-wr-ext-2021",
         "type": "extension",
         "name": "CeeDee Lamb",
@@ -7491,38 +7407,6 @@
         }
       },
       {
-        "id": "chris-conley-wr-2021",
-        "type": "signing",
-        "name": "Chris Conley",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "JAX",
-        "toTeam": "HOU",
-        "tier": "Elite",
-        "age": 28,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 14,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 40,
-          "recYds": 471,
-          "recTD": 2,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 1500000,
-          "aav": 1500000
-        }
-      },
-      {
         "id": "chris-godwin-wr-ext-2021",
         "type": "extension",
         "name": "Chris Godwin",
@@ -7552,34 +7436,6 @@
           "years": 1,
           "totalValue": 15983000,
           "aav": 15983000
-        }
-      },
-      {
-        "id": "cordarrelle-patterson-rb-2021",
-        "type": "signing",
-        "name": "Cordarrelle Patterson",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "CHI",
-        "toTeam": "ATL",
-        "tier": "Elite",
-        "age": 29,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 15,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 232,
-          "rushTD": 1,
-          "rec": 21,
-          "recYds": 132,
-          "recTD": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 3000000,
-          "aav": 3000000
         }
       },
       {
@@ -7847,66 +7703,6 @@
         }
       },
       {
-        "id": "jamaal-williams-rb-2021",
-        "type": "signing",
-        "name": "Jamaal Williams",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "GB",
-        "toTeam": "DET",
-        "tier": "Elite",
-        "age": 25,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 14,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 505,
-          "rushTD": 2,
-          "rec": 31,
-          "recYds": 236,
-          "recTD": 1
-        },
-        "contract": {
-          "years": 2,
-          "totalValue": 6000000,
-          "aav": 3000000
-        }
-      },
-      {
-        "id": "james-conner-rb-2021",
-        "type": "signing",
-        "name": "James Conner",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "PIT",
-        "toTeam": "ARI",
-        "tier": "Elite",
-        "age": 25,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 13,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 721,
-          "rushTD": 6,
-          "rec": 35,
-          "recYds": 215,
-          "recTD": 0,
-          "sacks": 0.0,
-          "tackles": 0,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 1750000,
-          "aav": 1750000
-        }
-      },
-      {
         "id": "james-robinson-rb-ext-2021",
         "type": "extension",
         "name": "James Robinson",
@@ -7936,65 +7732,6 @@
           "years": 3,
           "totalValue": 2290000,
           "aav": 763333
-        }
-      },
-      {
-        "id": "jared-cook-te-2021",
-        "type": "signing",
-        "name": "Jared Cook",
-        "position": "TE",
-        "positionGroup": "TE",
-        "fromTeam": "NO",
-        "toTeam": "LAC",
-        "tier": "Elite",
-        "age": 33,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 15,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 37,
-          "recYds": 504,
-          "recTD": 7,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 4500000,
-          "aav": 4500000
-        }
-      },
-      {
-        "id": "jared-goff-qb-2021",
-        "type": "trade",
-        "name": "Jared Goff",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "LA",
-        "toTeam": "DET",
-        "tier": "Elite",
-        "age": 26,
-        "date": "2021-03-18",
-        "lastSeasonStats": {
-          "games": 15,
-          "passYds": 3952,
-          "passTD": 20,
-          "int": 13,
-          "rushYds": 99,
-          "rushTD": 4,
-          "rec": 0,
-          "recYds": 0,
-          "recTD": 0,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
         }
       },
       {
@@ -8150,38 +7887,6 @@
           "years": 6,
           "totalValue": 258000000,
           "aav": 43000000
-        }
-      },
-      {
-        "id": "julio-jones-wr-2021",
-        "type": "trade",
-        "name": "Julio Jones",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "ATL",
-        "toTeam": "TEN",
-        "tier": "Elite",
-        "age": 32,
-        "date": "2021-06-09",
-        "lastSeasonStats": {
-          "games": 9,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 51,
-          "recYds": 771,
-          "recTD": 3
-        },
-        "tradeDetails": {
-          "fromGives": [
-            "Julio Jones"
-          ],
-          "toGives": [
-            "2022 round 2 pick",
-            "2023 round 4 pick"
-          ]
         }
       },
       {
@@ -8341,66 +8046,6 @@
         }
       },
       {
-        "id": "kyle-rudolph-te-2021",
-        "type": "signing",
-        "name": "Kyle Rudolph",
-        "position": "TE",
-        "positionGroup": "TE",
-        "fromTeam": "MIN",
-        "toTeam": "NYG",
-        "tier": "Elite",
-        "age": 31,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 12,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 28,
-          "recYds": 334,
-          "recTD": 1,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 2,
-          "totalValue": 12000000,
-          "aav": 6000000
-        }
-      },
-      {
-        "id": "le-veon-bell-rb-2021",
-        "type": "signing",
-        "name": "Le'Veon Bell",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "KC",
-        "toTeam": "TB",
-        "tier": "Elite",
-        "age": 29,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 11,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 328,
-          "rushTD": 2,
-          "rec": 16,
-          "recYds": 138,
-          "recTD": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 252000,
-          "aav": 252000
-        }
-      },
-      {
         "id": "mark-andrews-te-ext-2021",
         "type": "extension",
         "name": "Mark Andrews",
@@ -8430,42 +8075,6 @@
           "years": 4,
           "totalValue": 56000000,
           "aav": 14000000
-        }
-      },
-      {
-        "id": "mark-ingram-rb-2021",
-        "type": "trade",
-        "name": "Mark Ingram",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "HOU",
-        "toTeam": "NO",
-        "tier": "Elite",
-        "age": 31,
-        "date": "2021-10-29",
-        "lastSeasonStats": {
-          "games": 10,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 299,
-          "rushTD": 2,
-          "rec": 6,
-          "recYds": 50,
-          "recTD": 0
-        },
-        "contract": {
-          "years": 2,
-          "totalValue": 3625000,
-          "aav": 1812500
-        },
-        "tradeDetails": {
-          "fromGives": [
-            "Mark Ingram"
-          ],
-          "toGives": [
-            "2024 round 7 pick"
-          ]
         }
       },
       {
@@ -8823,46 +8432,6 @@
         }
       },
       {
-        "id": "zach-ertz-te-2021",
-        "type": "trade",
-        "name": "Zach Ertz",
-        "position": "TE",
-        "positionGroup": "TE",
-        "fromTeam": "PHI",
-        "toTeam": "ARI",
-        "tier": "Elite",
-        "age": 30,
-        "date": "2021-10-15",
-        "lastSeasonStats": {
-          "games": 11,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 36,
-          "recYds": 335,
-          "recTD": 1,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 3,
-          "totalValue": 31650000,
-          "aav": 10550000
-        },
-        "tradeDetails": {
-          "fromGives": [
-            "Zach Ertz"
-          ],
-          "toGives": [
-            "2022 round 5 pick"
-          ]
-        }
-      },
-      {
         "id": "aj-green-wr-2021",
         "type": "signing",
         "name": "A.J. Green",
@@ -8916,6 +8485,34 @@
           "years": 4,
           "totalValue": 48000000,
           "aav": 12000000
+        }
+      },
+      {
+        "id": "adrian-peterson-rb-2021",
+        "type": "signing",
+        "name": "Adrian Peterson",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "DET",
+        "toTeam": "SEA",
+        "tier": "Starter",
+        "age": 35,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 16,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 604,
+          "rushTD": 7,
+          "rec": 12,
+          "recYds": 101,
+          "recTD": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 252000,
+          "aav": 252000
         }
       },
       {
@@ -9004,6 +8601,34 @@
           "years": 1,
           "totalValue": 252000,
           "aav": 252000
+        }
+      },
+      {
+        "id": "andy-dalton-qb-2021",
+        "type": "signing",
+        "name": "Andy Dalton",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "DAL",
+        "toTeam": "CHI",
+        "tier": "Starter",
+        "age": 33,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 11,
+          "passYds": 2170,
+          "passTD": 14,
+          "int": 8,
+          "rushYds": 114,
+          "rushTD": 0,
+          "rec": 1,
+          "recYds": -3,
+          "recTD": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 10000000,
+          "aav": 10000000
         }
       },
       {
@@ -9295,6 +8920,34 @@
         }
       },
       {
+        "id": "cam-newton-qb-2021",
+        "type": "signing",
+        "name": "Cam Newton",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "NE",
+        "toTeam": "CAR",
+        "tier": "Starter",
+        "age": 31,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 15,
+          "passYds": 2657,
+          "passTD": 8,
+          "int": 10,
+          "rushYds": 592,
+          "rushTD": 12,
+          "rec": 2,
+          "recYds": 35,
+          "recTD": 1
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 5100000,
+          "aav": 5100000
+        }
+      },
+      {
         "id": "cameron-brate-te-ext-2021",
         "type": "extension",
         "name": "Cameron Brate",
@@ -9320,34 +8973,6 @@
           "years": 3,
           "totalValue": 18050000,
           "aav": 6016667
-        }
-      },
-      {
-        "id": "carlos-hyde-rb-2021",
-        "type": "signing",
-        "name": "Carlos Hyde",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "SEA",
-        "toTeam": "JAX",
-        "tier": "Starter",
-        "age": 30,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 10,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 356,
-          "rushTD": 4,
-          "rec": 16,
-          "recYds": 93,
-          "recTD": 0
-        },
-        "contract": {
-          "years": 2,
-          "totalValue": 4500000,
-          "aav": 2250000
         }
       },
       {
@@ -9439,6 +9064,38 @@
         }
       },
       {
+        "id": "chris-conley-wr-2021",
+        "type": "signing",
+        "name": "Chris Conley",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "JAX",
+        "toTeam": "HOU",
+        "tier": "Starter",
+        "age": 28,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 14,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 40,
+          "recYds": 471,
+          "recTD": 2,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 1500000,
+          "aav": 1500000
+        }
+      },
+      {
         "id": "christopher-herndon-te-2021",
         "type": "signing",
         "name": "Christopher Herndon",
@@ -9491,6 +9148,34 @@
           "years": 4,
           "totalValue": 7577786,
           "aav": 1894447
+        }
+      },
+      {
+        "id": "cordarrelle-patterson-rb-2021",
+        "type": "signing",
+        "name": "Cordarrelle Patterson",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "CHI",
+        "toTeam": "ATL",
+        "tier": "Starter",
+        "age": 29,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 15,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 232,
+          "rushTD": 1,
+          "rec": 21,
+          "recYds": 132,
+          "recTD": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 3000000,
+          "aav": 3000000
         }
       },
       {
@@ -9916,34 +9601,6 @@
         }
       },
       {
-        "id": "duke-johnson-rb-2021",
-        "type": "signing",
-        "name": "Duke Johnson",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "HOU",
-        "toTeam": "MIA",
-        "tier": "Starter",
-        "age": 27,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 11,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 235,
-          "rushTD": 1,
-          "rec": 28,
-          "recYds": 249,
-          "recTD": 1
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 252000,
-          "aav": 252000
-        }
-      },
-      {
         "id": "emmanuel-sanders-wr-2021",
         "type": "signing",
         "name": "Emmanuel Sanders",
@@ -10320,34 +9977,6 @@
         }
       },
       {
-        "id": "jacoby-brissett-qb-2021",
-        "type": "signing",
-        "name": "Jacoby Brissett",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "IND",
-        "toTeam": "MIA",
-        "tier": "Starter",
-        "age": 28,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 11,
-          "passYds": 17,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 19,
-          "rushTD": 3,
-          "rec": 0,
-          "recYds": 0,
-          "recTD": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 5000000,
-          "aav": 5000000
-        }
-      },
-      {
         "id": "jakeem-grant-wr-2021",
         "type": "trade",
         "name": "Jakeem Grant",
@@ -10413,6 +10042,66 @@
           "years": 2,
           "totalValue": 7000000,
           "aav": 3500000
+        }
+      },
+      {
+        "id": "jamaal-williams-rb-2021",
+        "type": "signing",
+        "name": "Jamaal Williams",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "GB",
+        "toTeam": "DET",
+        "tier": "Starter",
+        "age": 25,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 14,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 505,
+          "rushTD": 2,
+          "rec": 31,
+          "recYds": 236,
+          "recTD": 1
+        },
+        "contract": {
+          "years": 2,
+          "totalValue": 6000000,
+          "aav": 3000000
+        }
+      },
+      {
+        "id": "james-conner-rb-2021",
+        "type": "signing",
+        "name": "James Conner",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "PIT",
+        "toTeam": "ARI",
+        "tier": "Starter",
+        "age": 25,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 13,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 721,
+          "rushTD": 6,
+          "rec": 35,
+          "recYds": 215,
+          "recTD": 0,
+          "sacks": 0.0,
+          "tackles": 0,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 1750000,
+          "aav": 1750000
         }
       },
       {
@@ -10490,6 +10179,65 @@
           "years": 1,
           "totalValue": 5500000,
           "aav": 5500000
+        }
+      },
+      {
+        "id": "jared-cook-te-2021",
+        "type": "signing",
+        "name": "Jared Cook",
+        "position": "TE",
+        "positionGroup": "TE",
+        "fromTeam": "NO",
+        "toTeam": "LAC",
+        "tier": "Starter",
+        "age": 33,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 15,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 37,
+          "recYds": 504,
+          "recTD": 7,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 4500000,
+          "aav": 4500000
+        }
+      },
+      {
+        "id": "jared-goff-qb-2021",
+        "type": "trade",
+        "name": "Jared Goff",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "LA",
+        "toTeam": "DET",
+        "tier": "Starter",
+        "age": 26,
+        "date": "2021-03-18",
+        "lastSeasonStats": {
+          "games": 15,
+          "passYds": 3952,
+          "passTD": 20,
+          "int": 13,
+          "rushYds": 99,
+          "rushTD": 4,
+          "rec": 0,
+          "recYds": 0,
+          "recTD": 0,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
         }
       },
       {
@@ -10582,34 +10330,6 @@
           "years": 1,
           "totalValue": 1650000,
           "aav": 1650000
-        }
-      },
-      {
-        "id": "john-brown-wr-2021",
-        "type": "signing",
-        "name": "John Brown",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "BUF",
-        "toTeam": "JAX",
-        "tier": "Starter",
-        "age": 30,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 9,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 33,
-          "recYds": 458,
-          "recTD": 3
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 252000,
-          "aav": 252000
         }
       },
       {
@@ -10724,6 +10444,38 @@
           "years": 1,
           "totalValue": 8000000,
           "aav": 8000000
+        }
+      },
+      {
+        "id": "julio-jones-wr-2021",
+        "type": "trade",
+        "name": "Julio Jones",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "ATL",
+        "toTeam": "TEN",
+        "tier": "Starter",
+        "age": 32,
+        "date": "2021-06-09",
+        "lastSeasonStats": {
+          "games": 9,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 51,
+          "recYds": 771,
+          "recTD": 3
+        },
+        "tradeDetails": {
+          "fromGives": [
+            "Julio Jones"
+          ],
+          "toGives": [
+            "2022 round 2 pick",
+            "2023 round 4 pick"
+          ]
         }
       },
       {
@@ -10940,6 +10692,38 @@
           "years": 2,
           "totalValue": 11000000,
           "aav": 5500000
+        }
+      },
+      {
+        "id": "kyle-rudolph-te-2021",
+        "type": "signing",
+        "name": "Kyle Rudolph",
+        "position": "TE",
+        "positionGroup": "TE",
+        "fromTeam": "MIN",
+        "toTeam": "NYG",
+        "tier": "Starter",
+        "age": 31,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 12,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 28,
+          "recYds": 334,
+          "recTD": 1,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 2,
+          "totalValue": 12000000,
+          "aav": 6000000
         }
       },
       {
@@ -11524,74 +11308,6 @@
         }
       },
       {
-        "id": "randall-cobb-wr-2021",
-        "type": "trade",
-        "name": "Randall Cobb",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "HOU",
-        "toTeam": "GB",
-        "tier": "Starter",
-        "age": 30,
-        "date": "2021-07-29",
-        "lastSeasonStats": {
-          "games": 10,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 38,
-          "recYds": 441,
-          "recTD": 3,
-          "sacks": 0.0,
-          "tackles": 0,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 3,
-          "totalValue": 27000000,
-          "aav": 9000000
-        },
-        "tradeDetails": {
-          "fromGives": [
-            "Randall Cobb"
-          ],
-          "toGives": [
-            "2022 round 6 pick"
-          ]
-        }
-      },
-      {
-        "id": "rex-burkhead-rb-2021",
-        "type": "signing",
-        "name": "Rex Burkhead",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "NE",
-        "toTeam": "HOU",
-        "tier": "Starter",
-        "age": 30,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 10,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 274,
-          "rushTD": 3,
-          "rec": 25,
-          "recYds": 192,
-          "recTD": 3
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 1500000,
-          "aav": 1500000
-        }
-      },
-      {
         "id": "richard-rodgers-te-ext-2021",
         "type": "extension",
         "name": "Richard Rodgers",
@@ -11769,38 +11485,6 @@
         }
       },
       {
-        "id": "sammy-watkins-wr-2021",
-        "type": "signing",
-        "name": "Sammy Watkins",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "KC",
-        "toTeam": "BAL",
-        "tier": "Starter",
-        "age": 27,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 10,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 1,
-          "rushYds": 3,
-          "rushTD": 0,
-          "rec": 37,
-          "recYds": 421,
-          "recTD": 2,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 5000000,
-          "aav": 5000000
-        }
-      },
-      {
         "id": "shaq-lawson-edge-trade-2021",
         "type": "trade",
         "name": "Shaq Lawson",
@@ -11823,43 +11507,6 @@
             "Shaq Lawson"
           ],
           "toGives": [
-            "2022 round 6 pick"
-          ]
-        }
-      },
-      {
-        "id": "sony-michel-rb-2021",
-        "type": "trade",
-        "name": "Sony Michel",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "NE",
-        "toTeam": "LA",
-        "tier": "Starter",
-        "age": 26,
-        "date": "2021-08-25",
-        "lastSeasonStats": {
-          "games": 8,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 449,
-          "rushTD": 1,
-          "rec": 7,
-          "recYds": 114,
-          "recTD": 1
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 1750000,
-          "aav": 1750000
-        },
-        "tradeDetails": {
-          "fromGives": [
-            "Sony Michel"
-          ],
-          "toGives": [
-            "2023 round 4 pick",
             "2022 round 6 pick"
           ]
         }
@@ -12160,38 +11807,6 @@
         }
       },
       {
-        "id": "tyron-johnson-wr-2021",
-        "type": "signing",
-        "name": "Tyron Johnson",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "LAC",
-        "toTeam": "JAX",
-        "tier": "Starter",
-        "age": 25,
-        "date": "2021-03-15",
-        "lastSeasonStats": {
-          "games": 11,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 17,
-          "rushTD": 0,
-          "rec": 20,
-          "recYds": 398,
-          "recTD": 3,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 165600,
-          "aav": 165600
-        }
-      },
-      {
         "id": "will-fuller-wr-2021",
         "type": "signing",
         "name": "Will Fuller",
@@ -12269,6 +11884,46 @@
           ],
           "toGives": [
             "2022 round 7 pick"
+          ]
+        }
+      },
+      {
+        "id": "zach-ertz-te-2021",
+        "type": "trade",
+        "name": "Zach Ertz",
+        "position": "TE",
+        "positionGroup": "TE",
+        "fromTeam": "PHI",
+        "toTeam": "ARI",
+        "tier": "Starter",
+        "age": 30,
+        "date": "2021-10-15",
+        "lastSeasonStats": {
+          "games": 11,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 36,
+          "recYds": 335,
+          "recTD": 1,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 3,
+          "totalValue": 31650000,
+          "aav": 10550000
+        },
+        "tradeDetails": {
+          "fromGives": [
+            "Zach Ertz"
+          ],
+          "toGives": [
+            "2022 round 5 pick"
           ]
         }
       },
@@ -12830,6 +12485,34 @@
         }
       },
       {
+        "id": "carlos-hyde-rb-2021",
+        "type": "signing",
+        "name": "Carlos Hyde",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "SEA",
+        "toTeam": "JAX",
+        "tier": "Backup",
+        "age": 30,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 10,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 356,
+          "rushTD": 4,
+          "rec": 16,
+          "recYds": 93,
+          "recTD": 0
+        },
+        "contract": {
+          "years": 2,
+          "totalValue": 4500000,
+          "aav": 2250000
+        }
+      },
+      {
         "id": "cethan-carter-te-2021",
         "type": "signing",
         "name": "Cethan Carter",
@@ -13265,6 +12948,34 @@
         }
       },
       {
+        "id": "duke-johnson-rb-2021",
+        "type": "signing",
+        "name": "Duke Johnson",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "HOU",
+        "toTeam": "MIA",
+        "tier": "Backup",
+        "age": 27,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 11,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 235,
+          "rushTD": 1,
+          "rec": 28,
+          "recYds": 249,
+          "recTD": 1
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 252000,
+          "aav": 252000
+        }
+      },
+      {
         "id": "equanimeous-st-brown-wr-ext-2021",
         "type": "extension",
         "name": "Equanimeous St. Brown",
@@ -13444,6 +13155,34 @@
         }
       },
       {
+        "id": "jacoby-brissett-qb-2021",
+        "type": "signing",
+        "name": "Jacoby Brissett",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "IND",
+        "toTeam": "MIA",
+        "tier": "Backup",
+        "age": 28,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 11,
+          "passYds": 17,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 19,
+          "rushTD": 3,
+          "rec": 0,
+          "recYds": 0,
+          "recTD": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 5000000,
+          "aav": 5000000
+        }
+      },
+      {
         "id": "jalen-reagor-wr-ext-2021",
         "type": "extension",
         "name": "Jalen Reagor",
@@ -13593,6 +13332,34 @@
           "toGives": [
             "2022 round 6 pick"
           ]
+        }
+      },
+      {
+        "id": "john-brown-wr-2021",
+        "type": "signing",
+        "name": "John Brown",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "BUF",
+        "toTeam": "JAX",
+        "tier": "Backup",
+        "age": 30,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 9,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 33,
+          "recYds": 458,
+          "recTD": 3
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 252000,
+          "aav": 252000
         }
       },
       {
@@ -13821,6 +13588,34 @@
         }
       },
       {
+        "id": "le-veon-bell-rb-2021",
+        "type": "signing",
+        "name": "Le'Veon Bell",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "KC",
+        "toTeam": "TB",
+        "tier": "Backup",
+        "age": 29,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 11,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 328,
+          "rushTD": 2,
+          "rec": 16,
+          "recYds": 138,
+          "recTD": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 252000,
+          "aav": 252000
+        }
+      },
+      {
         "id": "lee-smith-te-2021",
         "type": "trade",
         "name": "Lee Smith",
@@ -13946,6 +13741,42 @@
           "years": 1,
           "totalValue": 1127500,
           "aav": 1127500
+        }
+      },
+      {
+        "id": "mark-ingram-rb-2021",
+        "type": "trade",
+        "name": "Mark Ingram",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "HOU",
+        "toTeam": "NO",
+        "tier": "Backup",
+        "age": 31,
+        "date": "2021-10-29",
+        "lastSeasonStats": {
+          "games": 10,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 299,
+          "rushTD": 2,
+          "rec": 6,
+          "recYds": 50,
+          "recTD": 0
+        },
+        "contract": {
+          "years": 2,
+          "totalValue": 3625000,
+          "aav": 1812500
+        },
+        "tradeDetails": {
+          "fromGives": [
+            "Mark Ingram"
+          ],
+          "toGives": [
+            "2024 round 7 pick"
+          ]
         }
       },
       {
@@ -14376,6 +14207,46 @@
         }
       },
       {
+        "id": "randall-cobb-wr-2021",
+        "type": "trade",
+        "name": "Randall Cobb",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "HOU",
+        "toTeam": "GB",
+        "tier": "Backup",
+        "age": 30,
+        "date": "2021-07-29",
+        "lastSeasonStats": {
+          "games": 10,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 38,
+          "recYds": 441,
+          "recTD": 3,
+          "sacks": 0.0,
+          "tackles": 0,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 3,
+          "totalValue": 27000000,
+          "aav": 9000000
+        },
+        "tradeDetails": {
+          "fromGives": [
+            "Randall Cobb"
+          ],
+          "toGives": [
+            "2022 round 6 pick"
+          ]
+        }
+      },
+      {
         "id": "rashard-higgins-wr-ext-2021",
         "type": "extension",
         "name": "Rashard Higgins",
@@ -14440,6 +14311,34 @@
         }
       },
       {
+        "id": "rex-burkhead-rb-2021",
+        "type": "signing",
+        "name": "Rex Burkhead",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "NE",
+        "toTeam": "HOU",
+        "tier": "Backup",
+        "age": 30,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 10,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 274,
+          "rushTD": 3,
+          "rec": 25,
+          "recYds": 192,
+          "recTD": 3
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 1500000,
+          "aav": 1500000
+        }
+      },
+      {
         "id": "ross-dwelley-te-ext-2021",
         "type": "extension",
         "name": "Ross Dwelley",
@@ -14500,6 +14399,38 @@
         }
       },
       {
+        "id": "sammy-watkins-wr-2021",
+        "type": "signing",
+        "name": "Sammy Watkins",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "KC",
+        "toTeam": "BAL",
+        "tier": "Backup",
+        "age": 27,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 10,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 1,
+          "rushYds": 3,
+          "rushTD": 0,
+          "rec": 37,
+          "recYds": 421,
+          "recTD": 2,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 5000000,
+          "aav": 5000000
+        }
+      },
+      {
         "id": "sidney-jones-db-trade-2021",
         "type": "trade",
         "name": "Sidney Jones",
@@ -14523,6 +14454,43 @@
             "Sidney Jones"
           ],
           "toGives": [
+            "2022 round 6 pick"
+          ]
+        }
+      },
+      {
+        "id": "sony-michel-rb-2021",
+        "type": "trade",
+        "name": "Sony Michel",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "NE",
+        "toTeam": "LA",
+        "tier": "Backup",
+        "age": 26,
+        "date": "2021-08-25",
+        "lastSeasonStats": {
+          "games": 8,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 449,
+          "rushTD": 1,
+          "rec": 7,
+          "recYds": 114,
+          "recTD": 1
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 1750000,
+          "aav": 1750000
+        },
+        "tradeDetails": {
+          "fromGives": [
+            "Sony Michel"
+          ],
+          "toGives": [
+            "2023 round 4 pick",
             "2022 round 6 pick"
           ]
         }
@@ -14668,6 +14636,38 @@
           "years": 1,
           "totalValue": 2000000,
           "aav": 2000000
+        }
+      },
+      {
+        "id": "tyron-johnson-wr-2021",
+        "type": "signing",
+        "name": "Tyron Johnson",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "LAC",
+        "toTeam": "JAX",
+        "tier": "Backup",
+        "age": 25,
+        "date": "2021-03-15",
+        "lastSeasonStats": {
+          "games": 11,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 17,
+          "rushTD": 0,
+          "rec": 20,
+          "recYds": 398,
+          "recTD": 3,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 165600,
+          "aav": 165600
         }
       },
       {
@@ -15622,38 +15622,6 @@
         }
       },
       {
-        "id": "amari-cooper-wr-2022",
-        "type": "trade",
-        "name": "Amari Cooper",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "DAL",
-        "toTeam": "CLE",
-        "tier": "Elite",
-        "age": 27,
-        "date": "2022-03-11",
-        "lastSeasonStats": {
-          "games": 15,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 68,
-          "recYds": 865,
-          "recTD": 8
-        },
-        "tradeDetails": {
-          "fromGives": [
-            "Amari Cooper"
-          ],
-          "toGives": [
-            "2022 round 6 pick",
-            "2022 round 5 pick"
-          ]
-        }
-      },
-      {
         "id": "amon-ra-st-brown-wr-ext-2022",
         "type": "extension",
         "name": "Amon-Ra St. Brown",
@@ -15686,133 +15654,6 @@
         }
       },
       {
-        "id": "andy-dalton-qb-2022",
-        "type": "signing",
-        "name": "Andy Dalton",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "CHI",
-        "toTeam": "NO",
-        "tier": "Elite",
-        "age": 34,
-        "date": "2022-03-15",
-        "lastSeasonStats": {
-          "games": 8,
-          "passYds": 1515,
-          "passTD": 8,
-          "int": 9,
-          "rushYds": 76,
-          "rushTD": 0,
-          "rec": 0,
-          "recYds": 0,
-          "recTD": 0,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 3000000,
-          "aav": 3000000
-        }
-      },
-      {
-        "id": "austin-hooper-te-2022",
-        "type": "signing",
-        "name": "Austin Hooper",
-        "position": "TE",
-        "positionGroup": "TE",
-        "fromTeam": "CLE",
-        "toTeam": "TEN",
-        "tier": "Elite",
-        "age": 27,
-        "date": "2022-03-15",
-        "lastSeasonStats": {
-          "games": 15,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 38,
-          "recYds": 345,
-          "recTD": 3,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 6000000,
-          "aav": 6000000
-        }
-      },
-      {
-        "id": "baker-mayfield-qb-2022",
-        "type": "trade",
-        "name": "Baker Mayfield",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "CLE",
-        "toTeam": "CAR",
-        "tier": "Elite",
-        "age": 26,
-        "date": "2022-07-06",
-        "lastSeasonStats": {
-          "games": 14,
-          "passYds": 3010,
-          "passTD": 17,
-          "int": 13,
-          "rushYds": 134,
-          "rushTD": 1,
-          "rec": 0,
-          "recYds": 0,
-          "recTD": 0
-        },
-        "tradeDetails": {
-          "fromGives": [
-            "Baker Mayfield"
-          ],
-          "toGives": [
-            "2024 round 4 pick"
-          ]
-        }
-      },
-      {
-        "id": "chris-conley-wr-2022",
-        "type": "signing",
-        "name": "Chris Conley",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "HOU",
-        "toTeam": "TEN",
-        "tier": "Elite",
-        "age": 29,
-        "date": "2022-03-15",
-        "lastSeasonStats": {
-          "games": 14,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 3,
-          "rushTD": 0,
-          "rec": 22,
-          "recYds": 323,
-          "recTD": 2,
-          "sacks": 0.0,
-          "tackles": 0,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 2000000,
-          "aav": 2000000
-        }
-      },
-      {
         "id": "chris-godwin-wr-ext-2022",
         "type": "extension",
         "name": "Chris Godwin",
@@ -15842,44 +15683,6 @@
           "years": 3,
           "totalValue": 60000000,
           "aav": 20000000
-        }
-      },
-      {
-        "id": "christian-mccaffrey-rb-2022",
-        "type": "trade",
-        "name": "Christian McCaffrey",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "CAR",
-        "toTeam": "SF",
-        "tier": "Elite",
-        "age": 25,
-        "date": "2022-10-20",
-        "lastSeasonStats": {
-          "games": 7,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 442,
-          "rushTD": 1,
-          "rec": 37,
-          "recYds": 343,
-          "recTD": 1,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "tradeDetails": {
-          "fromGives": [
-            "Christian McCaffrey"
-          ],
-          "toGives": [
-            "2023 round 2 pick",
-            "2023 round 3 pick",
-            "2023 round 4 pick",
-            "2024 round 5 pick"
-          ]
         }
       },
       {
@@ -16040,70 +15843,6 @@
         }
       },
       {
-        "id": "david-johnson-rb-2022",
-        "type": "signing",
-        "name": "David Johnson",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "HOU",
-        "toTeam": "NO",
-        "tier": "Elite",
-        "age": 30,
-        "date": "2022-03-15",
-        "lastSeasonStats": {
-          "games": 13,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 228,
-          "rushTD": 0,
-          "rec": 32,
-          "recYds": 225,
-          "recTD": 1,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 5000000,
-          "aav": 5000000
-        }
-      },
-      {
-        "id": "desean-jackson-wr-2022",
-        "type": "signing",
-        "name": "DeSean Jackson",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "LV",
-        "toTeam": "BAL",
-        "tier": "Elite",
-        "age": 35,
-        "date": "2022-03-15",
-        "lastSeasonStats": {
-          "games": 14,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 4,
-          "rushTD": 0,
-          "rec": 20,
-          "recYds": 454,
-          "recTD": 2,
-          "sacks": 0.0,
-          "tackles": 0,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 2000000,
-          "aav": 2000000
-        }
-      },
-      {
         "id": "derek-carr-qb-ext-2022",
         "type": "extension",
         "name": "Derek Carr",
@@ -16155,38 +15894,6 @@
             "2024 round 4 pick",
             "2022 round 4 pick"
           ]
-        }
-      },
-      {
-        "id": "evan-engram-te-2022",
-        "type": "signing",
-        "name": "Evan Engram",
-        "position": "TE",
-        "positionGroup": "TE",
-        "fromTeam": "NYG",
-        "toTeam": "JAX",
-        "tier": "Elite",
-        "age": 27,
-        "date": "2022-03-15",
-        "lastSeasonStats": {
-          "games": 15,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": -3,
-          "rushTD": 0,
-          "rec": 46,
-          "recYds": 408,
-          "recTD": 3,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 9000000,
-          "aav": 9000000
         }
       },
       {
@@ -16282,38 +15989,6 @@
         }
       },
       {
-        "id": "jarvis-landry-wr-2022",
-        "type": "signing",
-        "name": "Jarvis Landry",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "CLE",
-        "toTeam": "NO",
-        "tier": "Elite",
-        "age": 29,
-        "date": "2022-03-15",
-        "lastSeasonStats": {
-          "games": 12,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 40,
-          "rushTD": 2,
-          "rec": 52,
-          "recYds": 570,
-          "recTD": 2,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 3000000,
-          "aav": 3000000
-        }
-      },
-      {
         "id": "josh-allen-qb-ext-2022",
         "type": "extension",
         "name": "Josh Allen",
@@ -16343,33 +16018,6 @@
           "years": 6,
           "totalValue": 258000000,
           "aav": 43000000
-        }
-      },
-      {
-        "id": "julio-jones-wr-2022",
-        "type": "signing",
-        "name": "Julio Jones",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "TEN",
-        "toTeam": "TB",
-        "tier": "Elite",
-        "age": 33,
-        "date": "2022-03-15",
-        "lastSeasonStats": {
-          "games": 10,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 31,
-          "recYds": 434,
-          "recTD": 1,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
         }
       },
       {
@@ -16465,34 +16113,6 @@
         }
       },
       {
-        "id": "kyle-rudolph-te-2022",
-        "type": "signing",
-        "name": "Kyle Rudolph",
-        "position": "TE",
-        "positionGroup": "TE",
-        "fromTeam": "NYG",
-        "toTeam": "TB",
-        "tier": "Elite",
-        "age": 32,
-        "date": "2022-03-15",
-        "lastSeasonStats": {
-          "games": 15,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 26,
-          "recYds": 257,
-          "recTD": 1
-        },
-        "contract": {
-          "years": 2,
-          "totalValue": 12000000,
-          "aav": 6000000
-        }
-      },
-      {
         "id": "mark-andrews-te-ext-2022",
         "type": "extension",
         "name": "Mark Andrews",
@@ -16554,37 +16174,6 @@
           "years": 2,
           "totalValue": 3625000,
           "aav": 1812500
-        }
-      },
-      {
-        "id": "matt-ryan-qb-2022",
-        "type": "trade",
-        "name": "Matt Ryan",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "ATL",
-        "toTeam": "IND",
-        "tier": "Elite",
-        "age": 36,
-        "date": "2022-03-21",
-        "lastSeasonStats": {
-          "games": 17,
-          "passYds": 3968,
-          "passTD": 20,
-          "int": 12,
-          "rushYds": 82,
-          "rushTD": 1,
-          "rec": 0,
-          "recYds": 0,
-          "recTD": 0
-        },
-        "tradeDetails": {
-          "fromGives": [
-            "Matt Ryan"
-          ],
-          "toGives": [
-            "2022 round 3 pick"
-          ]
         }
       },
       {
@@ -16768,70 +16357,6 @@
           "years": 4,
           "totalValue": 96000000,
           "aav": 24000000
-        }
-      },
-      {
-        "id": "tj-hockenson-te-2022",
-        "type": "trade",
-        "name": "T.J. Hockenson",
-        "position": "TE",
-        "positionGroup": "TE",
-        "fromTeam": "DET",
-        "toTeam": "MIN",
-        "tier": "Elite",
-        "age": 24,
-        "date": "2022-11-01",
-        "lastSeasonStats": {
-          "games": 12,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 61,
-          "recYds": 583,
-          "recTD": 4,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "tradeDetails": {
-          "fromGives": [
-            "T.J. Hockenson"
-          ],
-          "toGives": [
-            "2023 round 2 pick",
-            "2024 round 3 pick"
-          ]
-        }
-      },
-      {
-        "id": "ty-hilton-wr-2022",
-        "type": "signing",
-        "name": "T.Y. Hilton",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "IND",
-        "toTeam": "DAL",
-        "tier": "Elite",
-        "age": 32,
-        "date": "2022-03-15",
-        "lastSeasonStats": {
-          "games": 10,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 23,
-          "recYds": 331,
-          "recTD": 3
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 8000000,
-          "aav": 8000000
         }
       },
       {
@@ -17152,6 +16677,38 @@
         }
       },
       {
+        "id": "amari-cooper-wr-2022",
+        "type": "trade",
+        "name": "Amari Cooper",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "DAL",
+        "toTeam": "CLE",
+        "tier": "Starter",
+        "age": 27,
+        "date": "2022-03-11",
+        "lastSeasonStats": {
+          "games": 15,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 68,
+          "recYds": 865,
+          "recTD": 8
+        },
+        "tradeDetails": {
+          "fromGives": [
+            "Amari Cooper"
+          ],
+          "toGives": [
+            "2022 round 6 pick",
+            "2022 round 5 pick"
+          ]
+        }
+      },
+      {
         "id": "ameer-abdullah-rb-2022",
         "type": "signing",
         "name": "Ameer Abdullah",
@@ -17177,6 +16734,38 @@
           "years": 1,
           "totalValue": 1187500,
           "aav": 1187500
+        }
+      },
+      {
+        "id": "andy-dalton-qb-2022",
+        "type": "signing",
+        "name": "Andy Dalton",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "CHI",
+        "toTeam": "NO",
+        "tier": "Starter",
+        "age": 34,
+        "date": "2022-03-15",
+        "lastSeasonStats": {
+          "games": 8,
+          "passYds": 1515,
+          "passTD": 8,
+          "int": 9,
+          "rushYds": 76,
+          "rushTD": 0,
+          "rec": 0,
+          "recYds": 0,
+          "recTD": 0,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 3000000,
+          "aav": 3000000
         }
       },
       {
@@ -17209,6 +16798,69 @@
           "years": 1,
           "totalValue": 1187500,
           "aav": 1187500
+        }
+      },
+      {
+        "id": "austin-hooper-te-2022",
+        "type": "signing",
+        "name": "Austin Hooper",
+        "position": "TE",
+        "positionGroup": "TE",
+        "fromTeam": "CLE",
+        "toTeam": "TEN",
+        "tier": "Starter",
+        "age": 27,
+        "date": "2022-03-15",
+        "lastSeasonStats": {
+          "games": 15,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 38,
+          "recYds": 345,
+          "recTD": 3,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 6000000,
+          "aav": 6000000
+        }
+      },
+      {
+        "id": "baker-mayfield-qb-2022",
+        "type": "trade",
+        "name": "Baker Mayfield",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "CLE",
+        "toTeam": "CAR",
+        "tier": "Starter",
+        "age": 26,
+        "date": "2022-07-06",
+        "lastSeasonStats": {
+          "games": 14,
+          "passYds": 3010,
+          "passTD": 17,
+          "int": 13,
+          "rushYds": 134,
+          "rushTD": 1,
+          "rec": 0,
+          "recYds": 0,
+          "recTD": 0
+        },
+        "tradeDetails": {
+          "fromGives": [
+            "Baker Mayfield"
+          ],
+          "toGives": [
+            "2024 round 4 pick"
+          ]
         }
       },
       {
@@ -17600,6 +17252,38 @@
         }
       },
       {
+        "id": "chris-conley-wr-2022",
+        "type": "signing",
+        "name": "Chris Conley",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "HOU",
+        "toTeam": "TEN",
+        "tier": "Starter",
+        "age": 29,
+        "date": "2022-03-15",
+        "lastSeasonStats": {
+          "games": 14,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 3,
+          "rushTD": 0,
+          "rec": 22,
+          "recYds": 323,
+          "recTD": 2,
+          "sacks": 0.0,
+          "tackles": 0,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 2000000,
+          "aav": 2000000
+        }
+      },
+      {
         "id": "christian-kirk-wr-2022",
         "type": "signing",
         "name": "Christian Kirk",
@@ -17625,6 +17309,44 @@
           "years": 4,
           "totalValue": 72000000,
           "aav": 18000000
+        }
+      },
+      {
+        "id": "christian-mccaffrey-rb-2022",
+        "type": "trade",
+        "name": "Christian McCaffrey",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "CAR",
+        "toTeam": "SF",
+        "tier": "Starter",
+        "age": 25,
+        "date": "2022-10-20",
+        "lastSeasonStats": {
+          "games": 7,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 442,
+          "rushTD": 1,
+          "rec": 37,
+          "recYds": 343,
+          "recTD": 1,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "tradeDetails": {
+          "fromGives": [
+            "Christian McCaffrey"
+          ],
+          "toGives": [
+            "2023 round 2 pick",
+            "2023 round 3 pick",
+            "2023 round 4 pick",
+            "2024 round 5 pick"
+          ]
         }
       },
       {
@@ -17836,6 +17558,38 @@
         }
       },
       {
+        "id": "david-johnson-rb-2022",
+        "type": "signing",
+        "name": "David Johnson",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "HOU",
+        "toTeam": "NO",
+        "tier": "Starter",
+        "age": 30,
+        "date": "2022-03-15",
+        "lastSeasonStats": {
+          "games": 13,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 228,
+          "rushTD": 0,
+          "rec": 32,
+          "recYds": 225,
+          "recTD": 1,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 5000000,
+          "aav": 5000000
+        }
+      },
+      {
         "id": "david-njoku-te-ext-2022",
         "type": "extension",
         "name": "David Njoku",
@@ -17865,6 +17619,38 @@
           "years": 1,
           "totalValue": 10931000,
           "aav": 10931000
+        }
+      },
+      {
+        "id": "desean-jackson-wr-2022",
+        "type": "signing",
+        "name": "DeSean Jackson",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "LV",
+        "toTeam": "BAL",
+        "tier": "Starter",
+        "age": 35,
+        "date": "2022-03-15",
+        "lastSeasonStats": {
+          "games": 14,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 4,
+          "rushTD": 0,
+          "rec": 20,
+          "recYds": 454,
+          "recTD": 2,
+          "sacks": 0.0,
+          "tackles": 0,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 2000000,
+          "aav": 2000000
         }
       },
       {
@@ -18105,6 +17891,38 @@
         }
       },
       {
+        "id": "evan-engram-te-2022",
+        "type": "signing",
+        "name": "Evan Engram",
+        "position": "TE",
+        "positionGroup": "TE",
+        "fromTeam": "NYG",
+        "toTeam": "JAX",
+        "tier": "Starter",
+        "age": 27,
+        "date": "2022-03-15",
+        "lastSeasonStats": {
+          "games": 15,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": -3,
+          "rushTD": 0,
+          "rec": 46,
+          "recYds": 408,
+          "recTD": 3,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 9000000,
+          "aav": 9000000
+        }
+      },
+      {
         "id": "gerald-everett-te-2022",
         "type": "signing",
         "name": "Gerald Everett",
@@ -18254,34 +18072,6 @@
           "years": 2,
           "totalValue": 7000000,
           "aav": 3500000
-        }
-      },
-      {
-        "id": "jacoby-brissett-qb-2022",
-        "type": "signing",
-        "name": "Jacoby Brissett",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "MIA",
-        "toTeam": "CLE",
-        "tier": "Starter",
-        "age": 29,
-        "date": "2022-03-15",
-        "lastSeasonStats": {
-          "games": 10,
-          "passYds": 1283,
-          "passTD": 5,
-          "int": 4,
-          "rushYds": 70,
-          "rushTD": 1,
-          "rec": 0,
-          "recYds": 0,
-          "recTD": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 4650000,
-          "aav": 4650000
         }
       },
       {
@@ -18437,6 +18227,38 @@
           "years": 3,
           "totalValue": 2460000,
           "aav": 820000
+        }
+      },
+      {
+        "id": "jarvis-landry-wr-2022",
+        "type": "signing",
+        "name": "Jarvis Landry",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "CLE",
+        "toTeam": "NO",
+        "tier": "Starter",
+        "age": 29,
+        "date": "2022-03-15",
+        "lastSeasonStats": {
+          "games": 12,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 40,
+          "rushTD": 2,
+          "rec": 52,
+          "recYds": 570,
+          "recTD": 2,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 3000000,
+          "aav": 3000000
         }
       },
       {
@@ -18957,6 +18779,34 @@
         }
       },
       {
+        "id": "kyle-rudolph-te-2022",
+        "type": "signing",
+        "name": "Kyle Rudolph",
+        "position": "TE",
+        "positionGroup": "TE",
+        "fromTeam": "NYG",
+        "toTeam": "TB",
+        "tier": "Starter",
+        "age": 32,
+        "date": "2022-03-15",
+        "lastSeasonStats": {
+          "games": 15,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 26,
+          "recYds": 257,
+          "recTD": 1
+        },
+        "contract": {
+          "years": 2,
+          "totalValue": 12000000,
+          "aav": 6000000
+        }
+      },
+      {
         "id": "larry-tripplett-dl-trade-2022",
         "type": "trade",
         "name": "Larry Tripplett",
@@ -19215,34 +19065,6 @@
         }
       },
       {
-        "id": "marquez-valdes-scantling-wr-2022",
-        "type": "signing",
-        "name": "Marquez Valdes-Scantling",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "GB",
-        "toTeam": "KC",
-        "tier": "Starter",
-        "age": 27,
-        "date": "2022-03-15",
-        "lastSeasonStats": {
-          "games": 11,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 26,
-          "recYds": 430,
-          "recTD": 3
-        },
-        "contract": {
-          "years": 3,
-          "totalValue": 30000000,
-          "aav": 10000000
-        }
-      },
-      {
         "id": "marquise-brown-wr-2022",
         "type": "trade",
         "name": "Marquise Brown",
@@ -19339,6 +19161,37 @@
           "years": 2,
           "totalValue": 12500000,
           "aav": 6250000
+        }
+      },
+      {
+        "id": "matt-ryan-qb-2022",
+        "type": "trade",
+        "name": "Matt Ryan",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "ATL",
+        "toTeam": "IND",
+        "tier": "Starter",
+        "age": 36,
+        "date": "2022-03-21",
+        "lastSeasonStats": {
+          "games": 17,
+          "passYds": 3968,
+          "passTD": 20,
+          "int": 12,
+          "rushYds": 82,
+          "rushTD": 1,
+          "rec": 0,
+          "recYds": 0,
+          "recTD": 0
+        },
+        "tradeDetails": {
+          "fromGives": [
+            "Matt Ryan"
+          ],
+          "toGives": [
+            "2022 round 3 pick"
+          ]
         }
       },
       {
@@ -19705,34 +19558,6 @@
           "toGives": [
             "2022 round 4 pick"
           ]
-        }
-      },
-      {
-        "id": "oj-howard-te-2022",
-        "type": "signing",
-        "name": "O.J. Howard",
-        "position": "TE",
-        "positionGroup": "TE",
-        "fromTeam": "TB",
-        "toTeam": "HOU",
-        "tier": "Starter",
-        "age": 27,
-        "date": "2022-03-15",
-        "lastSeasonStats": {
-          "games": 9,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 14,
-          "recYds": 135,
-          "recTD": 1
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 3500000,
-          "aav": 3500000
         }
       },
       {
@@ -20257,6 +20082,42 @@
         }
       },
       {
+        "id": "tj-hockenson-te-2022",
+        "type": "trade",
+        "name": "T.J. Hockenson",
+        "position": "TE",
+        "positionGroup": "TE",
+        "fromTeam": "DET",
+        "toTeam": "MIN",
+        "tier": "Starter",
+        "age": 24,
+        "date": "2022-11-01",
+        "lastSeasonStats": {
+          "games": 12,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 61,
+          "recYds": 583,
+          "recTD": 4,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "tradeDetails": {
+          "fromGives": [
+            "T.J. Hockenson"
+          ],
+          "toGives": [
+            "2023 round 2 pick",
+            "2024 round 3 pick"
+          ]
+        }
+      },
+      {
         "id": "taylor-heinicke-qb-ext-2022",
         "type": "extension",
         "name": "Taylor Heinicke",
@@ -20346,38 +20207,6 @@
           "years": 1,
           "totalValue": 6500000,
           "aav": 6500000
-        }
-      },
-      {
-        "id": "tevin-coleman-rb-2022",
-        "type": "signing",
-        "name": "Tevin Coleman",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "NYJ",
-        "toTeam": "SF",
-        "tier": "Starter",
-        "age": 28,
-        "date": "2022-03-15",
-        "lastSeasonStats": {
-          "games": 11,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 356,
-          "rushTD": 0,
-          "rec": 11,
-          "recYds": 49,
-          "recTD": 0,
-          "sacks": 0.0,
-          "tackles": 0,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 1500000,
-          "aav": 1500000
         }
       },
       {
@@ -21569,6 +21398,34 @@
         }
       },
       {
+        "id": "jacoby-brissett-qb-2022",
+        "type": "signing",
+        "name": "Jacoby Brissett",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "MIA",
+        "toTeam": "CLE",
+        "tier": "Backup",
+        "age": 29,
+        "date": "2022-03-15",
+        "lastSeasonStats": {
+          "games": 10,
+          "passYds": 1283,
+          "passTD": 5,
+          "int": 4,
+          "rushYds": 70,
+          "rushTD": 1,
+          "rec": 0,
+          "recYds": 0,
+          "recTD": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 4650000,
+          "aav": 4650000
+        }
+      },
+      {
         "id": "jakob-johnson-rb-2022",
         "type": "signing",
         "name": "Jakob Johnson",
@@ -21865,6 +21722,33 @@
           "years": 1,
           "totalValue": 1120000,
           "aav": 1120000
+        }
+      },
+      {
+        "id": "julio-jones-wr-2022",
+        "type": "signing",
+        "name": "Julio Jones",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "TEN",
+        "toTeam": "TB",
+        "tier": "Backup",
+        "age": 33,
+        "date": "2022-03-15",
+        "lastSeasonStats": {
+          "games": 10,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 31,
+          "recYds": 434,
+          "recTD": 1,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
         }
       },
       {
@@ -22311,6 +22195,34 @@
         }
       },
       {
+        "id": "marquez-valdes-scantling-wr-2022",
+        "type": "signing",
+        "name": "Marquez Valdes-Scantling",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "GB",
+        "toTeam": "KC",
+        "tier": "Backup",
+        "age": 27,
+        "date": "2022-03-15",
+        "lastSeasonStats": {
+          "games": 11,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 26,
+          "recYds": 430,
+          "recTD": 3
+        },
+        "contract": {
+          "years": 3,
+          "totalValue": 30000000,
+          "aav": 10000000
+        }
+      },
+      {
         "id": "matt-breida-rb-2022",
         "type": "signing",
         "name": "Matt Breida",
@@ -22488,6 +22400,34 @@
           "toGives": [
             "2023 round 5 pick"
           ]
+        }
+      },
+      {
+        "id": "oj-howard-te-2022",
+        "type": "signing",
+        "name": "O.J. Howard",
+        "position": "TE",
+        "positionGroup": "TE",
+        "fromTeam": "TB",
+        "toTeam": "HOU",
+        "tier": "Backup",
+        "age": 27,
+        "date": "2022-03-15",
+        "lastSeasonStats": {
+          "games": 9,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 14,
+          "recYds": 135,
+          "recTD": 1
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 3500000,
+          "aav": 3500000
         }
       },
       {
@@ -22806,6 +22746,66 @@
           "years": 1,
           "totalValue": 1187500,
           "aav": 1187500
+        }
+      },
+      {
+        "id": "ty-hilton-wr-2022",
+        "type": "signing",
+        "name": "T.Y. Hilton",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "IND",
+        "toTeam": "DAL",
+        "tier": "Backup",
+        "age": 32,
+        "date": "2022-03-15",
+        "lastSeasonStats": {
+          "games": 10,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 23,
+          "recYds": 331,
+          "recTD": 3
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 8000000,
+          "aav": 8000000
+        }
+      },
+      {
+        "id": "tevin-coleman-rb-2022",
+        "type": "signing",
+        "name": "Tevin Coleman",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "NYJ",
+        "toTeam": "SF",
+        "tier": "Backup",
+        "age": 28,
+        "date": "2022-03-15",
+        "lastSeasonStats": {
+          "games": 11,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 356,
+          "rushTD": 0,
+          "rec": 11,
+          "recYds": 49,
+          "recTD": 0,
+          "sacks": 0.0,
+          "tackles": 0,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 1500000,
+          "aav": 1500000
         }
       },
       {
@@ -23952,97 +23952,6 @@
         }
       },
       {
-        "id": "andy-dalton-qb-2023",
-        "type": "signing",
-        "name": "Andy Dalton",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "NO",
-        "toTeam": "CAR",
-        "tier": "Elite",
-        "age": 35,
-        "date": "2023-03-15",
-        "lastSeasonStats": {
-          "games": 14,
-          "passYds": 2871,
-          "passTD": 18,
-          "int": 9,
-          "rushYds": 54,
-          "rushTD": 0,
-          "rec": 0,
-          "recYds": 0,
-          "recTD": 0,
-          "sacks": 0.0,
-          "tackles": 0,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 3000000,
-          "aav": 3000000
-        }
-      },
-      {
-        "id": "austin-hooper-te-2023",
-        "type": "signing",
-        "name": "Austin Hooper",
-        "position": "TE",
-        "positionGroup": "TE",
-        "fromTeam": "TEN",
-        "toTeam": "LV",
-        "tier": "Elite",
-        "age": 28,
-        "date": "2023-03-15",
-        "lastSeasonStats": {
-          "games": 17,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 41,
-          "recYds": 444,
-          "recTD": 2,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 6000000,
-          "aav": 6000000
-        }
-      },
-      {
-        "id": "baker-mayfield-qb-2023",
-        "type": "signing",
-        "name": "Baker Mayfield",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "LA",
-        "toTeam": "TB",
-        "tier": "Elite",
-        "age": 27,
-        "date": "2023-03-15",
-        "lastSeasonStats": {
-          "games": 12,
-          "passYds": 2163,
-          "passTD": 10,
-          "int": 8,
-          "rushYds": 89,
-          "rushTD": 1,
-          "rec": 0,
-          "recYds": 0,
-          "recTD": 0,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        }
-      },
-      {
         "id": "chris-conley-wr-2023",
         "type": "signing",
         "name": "Chris Conley",
@@ -24162,61 +24071,6 @@
         }
       },
       {
-        "id": "deandre-hopkins-wr-2023",
-        "type": "signing",
-        "name": "DeAndre Hopkins",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "ARI",
-        "toTeam": "TEN",
-        "tier": "Elite",
-        "age": 30,
-        "date": "2023-03-15",
-        "lastSeasonStats": {
-          "games": 9,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 64,
-          "recYds": 717,
-          "recTD": 3,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        }
-      },
-      {
-        "id": "derek-carr-qb-2023",
-        "type": "signing",
-        "name": "Derek Carr",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "LV",
-        "toTeam": "NO",
-        "tier": "Elite",
-        "age": 31,
-        "date": "2023-03-15",
-        "lastSeasonStats": {
-          "games": 15,
-          "passYds": 3522,
-          "passTD": 24,
-          "int": 14,
-          "rushYds": 102,
-          "rushTD": 0,
-          "rec": 0,
-          "recYds": 0,
-          "recTD": 0
-        },
-        "contract": {
-          "years": 3,
-          "totalValue": 121422481,
-          "aav": 40474160
-        }
-      },
-      {
         "id": "evan-engram-te-ext-2023",
         "type": "extension",
         "name": "Evan Engram",
@@ -24249,33 +24103,6 @@
         }
       },
       {
-        "id": "ezekiel-elliott-rb-2023",
-        "type": "signing",
-        "name": "Ezekiel Elliott",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "DAL",
-        "toTeam": "NE",
-        "tier": "Elite",
-        "age": 27,
-        "date": "2023-03-15",
-        "lastSeasonStats": {
-          "games": 15,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 876,
-          "rushTD": 12,
-          "rec": 17,
-          "recYds": 92,
-          "recTD": 0,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        }
-      },
-      {
         "id": "jalen-ramsey-db-trade-2023",
         "type": "trade",
         "name": "Jalen Ramsey",
@@ -24301,29 +24128,6 @@
           "toGives": [
             "2023 round 3 pick"
           ]
-        }
-      },
-      {
-        "id": "jamaal-williams-rb-2023",
-        "type": "signing",
-        "name": "Jamaal Williams",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "DET",
-        "toTeam": "NO",
-        "tier": "Elite",
-        "age": 27,
-        "date": "2023-03-15",
-        "lastSeasonStats": {
-          "games": 17,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 1066,
-          "rushTD": 17,
-          "rec": 12,
-          "recYds": 73,
-          "recTD": 0
         }
       },
       {
@@ -24423,33 +24227,6 @@
         }
       },
       {
-        "id": "julio-jones-wr-2023",
-        "type": "signing",
-        "name": "Julio Jones",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "TB",
-        "toTeam": "PHI",
-        "tier": "Elite",
-        "age": 34,
-        "date": "2023-03-15",
-        "lastSeasonStats": {
-          "games": 10,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 45,
-          "rushTD": 0,
-          "rec": 24,
-          "recYds": 299,
-          "recTD": 2,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        }
-      },
-      {
         "id": "kevin-byard-db-trade-2023",
         "type": "trade",
         "name": "Kevin Byard",
@@ -24536,34 +24313,6 @@
             "2024 round 2 pick",
             "2025 round 5 pick"
           ]
-        }
-      },
-      {
-        "id": "melvin-gordon-rb-2023",
-        "type": "signing",
-        "name": "Melvin Gordon",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "DEN",
-        "toTeam": "BAL",
-        "tier": "Elite",
-        "age": 29,
-        "date": "2023-03-15",
-        "lastSeasonStats": {
-          "games": 10,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 318,
-          "rushTD": 2,
-          "rec": 25,
-          "recYds": 223,
-          "recTD": 0
-        },
-        "contract": {
-          "years": 1,
-          "totalValue": 2500000,
-          "aav": 2500000
         }
       },
       {
@@ -24843,42 +24592,6 @@
         }
       },
       {
-        "id": "allen-robinson-wr-2023",
-        "type": "trade",
-        "name": "Allen Robinson",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "LA",
-        "toTeam": "PIT",
-        "tier": "Starter",
-        "age": 29,
-        "date": "2023-04-18",
-        "lastSeasonStats": {
-          "games": 10,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 33,
-          "recYds": 339,
-          "recTD": 3
-        },
-        "contract": {
-          "years": 3,
-          "totalValue": 46500000,
-          "aav": 15500000
-        },
-        "tradeDetails": {
-          "fromGives": [
-            "Allen Robinson"
-          ],
-          "toGives": [
-            "2023 round 7 pick"
-          ]
-        }
-      },
-      {
         "id": "ameer-abdullah-rb-ext-2023",
         "type": "extension",
         "name": "Ameer Abdullah",
@@ -24904,6 +24617,97 @@
           "years": 1,
           "totalValue": 1187500,
           "aav": 1187500
+        }
+      },
+      {
+        "id": "andy-dalton-qb-2023",
+        "type": "signing",
+        "name": "Andy Dalton",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "NO",
+        "toTeam": "CAR",
+        "tier": "Starter",
+        "age": 35,
+        "date": "2023-03-15",
+        "lastSeasonStats": {
+          "games": 14,
+          "passYds": 2871,
+          "passTD": 18,
+          "int": 9,
+          "rushYds": 54,
+          "rushTD": 0,
+          "rec": 0,
+          "recYds": 0,
+          "recTD": 0,
+          "sacks": 0.0,
+          "tackles": 0,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 3000000,
+          "aav": 3000000
+        }
+      },
+      {
+        "id": "austin-hooper-te-2023",
+        "type": "signing",
+        "name": "Austin Hooper",
+        "position": "TE",
+        "positionGroup": "TE",
+        "fromTeam": "TEN",
+        "toTeam": "LV",
+        "tier": "Starter",
+        "age": 28,
+        "date": "2023-03-15",
+        "lastSeasonStats": {
+          "games": 17,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 41,
+          "recYds": 444,
+          "recTD": 2,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 6000000,
+          "aav": 6000000
+        }
+      },
+      {
+        "id": "baker-mayfield-qb-2023",
+        "type": "signing",
+        "name": "Baker Mayfield",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "LA",
+        "toTeam": "TB",
+        "tier": "Starter",
+        "age": 27,
+        "date": "2023-03-15",
+        "lastSeasonStats": {
+          "games": 12,
+          "passYds": 2163,
+          "passTD": 10,
+          "int": 8,
+          "rushYds": 89,
+          "rushTD": 1,
+          "rec": 0,
+          "recYds": 0,
+          "recTD": 0,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
         }
       },
       {
@@ -24941,38 +24745,6 @@
             "2023 round 5 pick",
             "2024 round 6 pick"
           ]
-        }
-      },
-      {
-        "id": "braxton-berrios-wr-2023",
-        "type": "signing",
-        "name": "Braxton Berrios",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "NYJ",
-        "toTeam": "MIA",
-        "tier": "Starter",
-        "age": 27,
-        "date": "2023-03-15",
-        "lastSeasonStats": {
-          "games": 15,
-          "passYds": 2,
-          "passTD": 1,
-          "int": 0,
-          "rushYds": 91,
-          "rushTD": 2,
-          "rec": 18,
-          "recYds": 145,
-          "recTD": 0,
-          "sacks": 0.0,
-          "tackles": 0,
-          "tfl": 0,
-          "pd": 0
-        },
-        "contract": {
-          "years": 2,
-          "totalValue": 12000000,
-          "aav": 6000000
         }
       },
       {
@@ -25541,6 +25313,33 @@
         }
       },
       {
+        "id": "deandre-hopkins-wr-2023",
+        "type": "signing",
+        "name": "DeAndre Hopkins",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "ARI",
+        "toTeam": "TEN",
+        "tier": "Starter",
+        "age": 30,
+        "date": "2023-03-15",
+        "lastSeasonStats": {
+          "games": 9,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 64,
+          "recYds": 717,
+          "recTD": 3,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        }
+      },
+      {
         "id": "demarcus-robinson-wr-2023",
         "type": "signing",
         "name": "Demarcus Robinson",
@@ -25600,6 +25399,34 @@
         }
       },
       {
+        "id": "derek-carr-qb-2023",
+        "type": "signing",
+        "name": "Derek Carr",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "LV",
+        "toTeam": "NO",
+        "tier": "Starter",
+        "age": 31,
+        "date": "2023-03-15",
+        "lastSeasonStats": {
+          "games": 15,
+          "passYds": 3522,
+          "passTD": 24,
+          "int": 14,
+          "rushYds": 102,
+          "rushTD": 0,
+          "rec": 0,
+          "recYds": 0,
+          "recTD": 0
+        },
+        "contract": {
+          "years": 3,
+          "totalValue": 121422481,
+          "aav": 40474160
+        }
+      },
+      {
         "id": "devin-singletary-rb-2023",
         "type": "signing",
         "name": "Devin Singletary",
@@ -25656,6 +25483,33 @@
           "years": 4,
           "totalValue": 21534472,
           "aav": 5383618
+        }
+      },
+      {
+        "id": "ezekiel-elliott-rb-2023",
+        "type": "signing",
+        "name": "Ezekiel Elliott",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "DAL",
+        "toTeam": "NE",
+        "tier": "Starter",
+        "age": 27,
+        "date": "2023-03-15",
+        "lastSeasonStats": {
+          "games": 15,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 876,
+          "rushTD": 12,
+          "rec": 17,
+          "recYds": 92,
+          "recTD": 0,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
         }
       },
       {
@@ -26012,6 +25866,29 @@
           "years": 1,
           "totalValue": 3986000,
           "aav": 3986000
+        }
+      },
+      {
+        "id": "jamaal-williams-rb-2023",
+        "type": "signing",
+        "name": "Jamaal Williams",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "DET",
+        "toTeam": "NO",
+        "tier": "Starter",
+        "age": 27,
+        "date": "2023-03-15",
+        "lastSeasonStats": {
+          "games": 17,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 1066,
+          "rushTD": 17,
+          "rec": 12,
+          "recYds": 73,
+          "recTD": 0
         }
       },
       {
@@ -27464,6 +27341,42 @@
         }
       },
       {
+        "id": "allen-robinson-wr-2023",
+        "type": "trade",
+        "name": "Allen Robinson",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "LA",
+        "toTeam": "PIT",
+        "tier": "Backup",
+        "age": 29,
+        "date": "2023-04-18",
+        "lastSeasonStats": {
+          "games": 10,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 33,
+          "recYds": 339,
+          "recTD": 3
+        },
+        "contract": {
+          "years": 3,
+          "totalValue": 46500000,
+          "aav": 15500000
+        },
+        "tradeDetails": {
+          "fromGives": [
+            "Allen Robinson"
+          ],
+          "toGives": [
+            "2023 round 7 pick"
+          ]
+        }
+      },
+      {
         "id": "andrew-beck-rb-2023",
         "type": "signing",
         "name": "Andrew Beck",
@@ -27585,6 +27498,38 @@
           "years": 1,
           "totalValue": 1035000,
           "aav": 1035000
+        }
+      },
+      {
+        "id": "braxton-berrios-wr-2023",
+        "type": "signing",
+        "name": "Braxton Berrios",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "NYJ",
+        "toTeam": "MIA",
+        "tier": "Backup",
+        "age": 27,
+        "date": "2023-03-15",
+        "lastSeasonStats": {
+          "games": 15,
+          "passYds": 2,
+          "passTD": 1,
+          "int": 0,
+          "rushYds": 91,
+          "rushTD": 2,
+          "rec": 18,
+          "recYds": 145,
+          "recTD": 0,
+          "sacks": 0.0,
+          "tackles": 0,
+          "tfl": 0,
+          "pd": 0
+        },
+        "contract": {
+          "years": 2,
+          "totalValue": 12000000,
+          "aav": 6000000
         }
       },
       {
@@ -28542,6 +28487,33 @@
         }
       },
       {
+        "id": "julio-jones-wr-2023",
+        "type": "signing",
+        "name": "Julio Jones",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "TB",
+        "toTeam": "PHI",
+        "tier": "Backup",
+        "age": 34,
+        "date": "2023-03-15",
+        "lastSeasonStats": {
+          "games": 10,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 45,
+          "rushTD": 0,
+          "rec": 24,
+          "recYds": 299,
+          "recTD": 2,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        }
+      },
+      {
         "id": "justin-watson-wr-ext-2023",
         "type": "extension",
         "name": "Justin Watson",
@@ -28790,6 +28762,34 @@
           "years": 1,
           "totalValue": 2000000,
           "aav": 2000000
+        }
+      },
+      {
+        "id": "melvin-gordon-rb-2023",
+        "type": "signing",
+        "name": "Melvin Gordon",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "DEN",
+        "toTeam": "BAL",
+        "tier": "Backup",
+        "age": 29,
+        "date": "2023-03-15",
+        "lastSeasonStats": {
+          "games": 10,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 318,
+          "rushTD": 2,
+          "rec": 25,
+          "recYds": 223,
+          "recTD": 0
+        },
+        "contract": {
+          "years": 1,
+          "totalValue": 2500000,
+          "aav": 2500000
         }
       },
       {
@@ -30568,33 +30568,6 @@
         }
       },
       {
-        "id": "austin-hooper-te-2024",
-        "type": "signing",
-        "name": "Austin Hooper",
-        "position": "TE",
-        "positionGroup": "TE",
-        "fromTeam": "LV",
-        "toTeam": "NE",
-        "tier": "Elite",
-        "age": 29,
-        "date": "2024-03-15",
-        "lastSeasonStats": {
-          "games": 16,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 25,
-          "recYds": 234,
-          "recTD": 0,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        }
-      },
-      {
         "id": "brian-burns-lb-trade-2024",
         "type": "trade",
         "name": "Brian Burns",
@@ -30621,52 +30594,6 @@
             "2024 round 5 pick",
             "2025 round 5 pick"
           ]
-        }
-      },
-      {
-        "id": "cordarrelle-patterson-rb-2024",
-        "type": "signing",
-        "name": "Cordarrelle Patterson",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "ATL",
-        "toTeam": "PIT",
-        "tier": "Elite",
-        "age": 32,
-        "date": "2024-03-15",
-        "lastSeasonStats": {
-          "games": 12,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 181,
-          "rushTD": 0,
-          "rec": 9,
-          "recYds": 38,
-          "recTD": 1
-        }
-      },
-      {
-        "id": "dalvin-cook-rb-2024",
-        "type": "signing",
-        "name": "Dalvin Cook",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "NYJ",
-        "toTeam": "DAL",
-        "tier": "Elite",
-        "age": 28,
-        "date": "2024-03-15",
-        "lastSeasonStats": {
-          "games": 14,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 214,
-          "rushTD": 0,
-          "rec": 15,
-          "recYds": 78,
-          "recTD": 0
         }
       },
       {
@@ -30747,33 +30674,6 @@
         }
       },
       {
-        "id": "ezekiel-elliott-rb-2024",
-        "type": "signing",
-        "name": "Ezekiel Elliott",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "NE",
-        "toTeam": "DAL",
-        "tier": "Elite",
-        "age": 28,
-        "date": "2024-03-15",
-        "lastSeasonStats": {
-          "games": 17,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 642,
-          "rushTD": 3,
-          "rec": 51,
-          "recYds": 313,
-          "recTD": 2,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        }
-      },
-      {
         "id": "haason-reddick-edge-trade-2024",
         "type": "trade",
         "name": "Haason Reddick",
@@ -30798,29 +30698,6 @@
           "toGives": [
             "2026 round 3 pick"
           ]
-        }
-      },
-      {
-        "id": "joe-flacco-qb-2024",
-        "type": "signing",
-        "name": "Joe Flacco",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "CLE",
-        "toTeam": "IND",
-        "tier": "Elite",
-        "age": 39,
-        "date": "2024-03-15",
-        "lastSeasonStats": {
-          "games": 5,
-          "passYds": 1616,
-          "passTD": 13,
-          "int": 8,
-          "rushYds": 2,
-          "rushTD": 0,
-          "rec": 0,
-          "recYds": 0,
-          "recTD": 0
         }
       },
       {
@@ -30855,33 +30732,6 @@
         }
       },
       {
-        "id": "josh-jacobs-rb-2024",
-        "type": "signing",
-        "name": "Josh Jacobs",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "LV",
-        "toTeam": "GB",
-        "tier": "Elite",
-        "age": 26,
-        "date": "2024-03-15",
-        "lastSeasonStats": {
-          "games": 13,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 805,
-          "rushTD": 6,
-          "rec": 37,
-          "recYds": 296,
-          "recTD": 0,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        }
-      },
-      {
         "id": "keenan-allen-wr-2024",
         "type": "trade",
         "name": "Keenan Allen",
@@ -30910,29 +30760,6 @@
           "toGives": [
             "2024 round 4 pick"
           ]
-        }
-      },
-      {
-        "id": "kirk-cousins-qb-2024",
-        "type": "signing",
-        "name": "Kirk Cousins",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "MIN",
-        "toTeam": "ATL",
-        "tier": "Elite",
-        "age": 35,
-        "date": "2024-03-15",
-        "lastSeasonStats": {
-          "games": 8,
-          "passYds": 2331,
-          "passTD": 18,
-          "int": 5,
-          "rushYds": 25,
-          "rushTD": 0,
-          "rec": 0,
-          "recYds": 0,
-          "recTD": 0
         }
       },
       {
@@ -31265,6 +31092,33 @@
         }
       },
       {
+        "id": "austin-hooper-te-2024",
+        "type": "signing",
+        "name": "Austin Hooper",
+        "position": "TE",
+        "positionGroup": "TE",
+        "fromTeam": "LV",
+        "toTeam": "NE",
+        "tier": "Starter",
+        "age": 29,
+        "date": "2024-03-15",
+        "lastSeasonStats": {
+          "games": 16,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 25,
+          "recYds": 234,
+          "recTD": 0,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        }
+      },
+      {
         "id": "brandon-codrington-db-trade-2024",
         "type": "trade",
         "name": "Brandon Codrington",
@@ -31334,6 +31188,29 @@
         }
       },
       {
+        "id": "cordarrelle-patterson-rb-2024",
+        "type": "signing",
+        "name": "Cordarrelle Patterson",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "ATL",
+        "toTeam": "PIT",
+        "tier": "Starter",
+        "age": 32,
+        "date": "2024-03-15",
+        "lastSeasonStats": {
+          "games": 12,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 181,
+          "rushTD": 0,
+          "rec": 9,
+          "recYds": 38,
+          "recTD": 1
+        }
+      },
+      {
         "id": "curtis-samuel-wr-2024",
         "type": "signing",
         "name": "Curtis Samuel",
@@ -31384,29 +31261,6 @@
         }
       },
       {
-        "id": "d-onta-foreman-rb-2024",
-        "type": "signing",
-        "name": "D'Onta Foreman",
-        "position": "RB",
-        "positionGroup": "RB",
-        "fromTeam": "CHI",
-        "toTeam": "CLE",
-        "tier": "Starter",
-        "age": 27,
-        "date": "2024-03-15",
-        "lastSeasonStats": {
-          "games": 9,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 425,
-          "rushTD": 4,
-          "rec": 11,
-          "recYds": 77,
-          "recTD": 1
-        }
-      },
-      {
         "id": "dj-chark-wr-2024",
         "type": "signing",
         "name": "DJ Chark",
@@ -31431,6 +31285,29 @@
           "tackles": 0,
           "tfl": 0,
           "pd": 0
+        }
+      },
+      {
+        "id": "dalvin-cook-rb-2024",
+        "type": "signing",
+        "name": "Dalvin Cook",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "NYJ",
+        "toTeam": "DAL",
+        "tier": "Starter",
+        "age": 28,
+        "date": "2024-03-15",
+        "lastSeasonStats": {
+          "games": 14,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 214,
+          "rushTD": 0,
+          "rec": 15,
+          "recYds": 78,
+          "recTD": 0
         }
       },
       {
@@ -31627,6 +31504,33 @@
         }
       },
       {
+        "id": "ezekiel-elliott-rb-2024",
+        "type": "signing",
+        "name": "Ezekiel Elliott",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "NE",
+        "toTeam": "DAL",
+        "tier": "Starter",
+        "age": 28,
+        "date": "2024-03-15",
+        "lastSeasonStats": {
+          "games": 17,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 642,
+          "rushTD": 3,
+          "rec": 51,
+          "recYds": 313,
+          "recTD": 2,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        }
+      },
+      {
         "id": "gabe-davis-wr-2024",
         "type": "signing",
         "name": "Gabe Davis",
@@ -31720,33 +31624,6 @@
           "rec": 12,
           "recYds": 180,
           "recTD": 0,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        }
-      },
-      {
-        "id": "hayden-hurst-te-2024",
-        "type": "signing",
-        "name": "Hayden Hurst",
-        "position": "TE",
-        "positionGroup": "TE",
-        "fromTeam": "CAR",
-        "toTeam": "LAC",
-        "tier": "Starter",
-        "age": 30,
-        "date": "2024-03-15",
-        "lastSeasonStats": {
-          "games": 9,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 18,
-          "recYds": 184,
-          "recTD": 1,
           "sacks": 0.0,
           "tackles": 1,
           "tfl": 0,
@@ -31856,6 +31733,29 @@
         }
       },
       {
+        "id": "joe-flacco-qb-2024",
+        "type": "signing",
+        "name": "Joe Flacco",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "CLE",
+        "toTeam": "IND",
+        "tier": "Starter",
+        "age": 39,
+        "date": "2024-03-15",
+        "lastSeasonStats": {
+          "games": 5,
+          "passYds": 1616,
+          "passTD": 13,
+          "int": 8,
+          "rushYds": 2,
+          "rushTD": 0,
+          "rec": 0,
+          "recYds": 0,
+          "recTD": 0
+        }
+      },
+      {
         "id": "john-franklin-myers-edge-trade-2024",
         "type": "trade",
         "name": "John Franklin-Myers",
@@ -31937,6 +31837,33 @@
         }
       },
       {
+        "id": "josh-jacobs-rb-2024",
+        "type": "signing",
+        "name": "Josh Jacobs",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "LV",
+        "toTeam": "GB",
+        "tier": "Starter",
+        "age": 26,
+        "date": "2024-03-15",
+        "lastSeasonStats": {
+          "games": 13,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 805,
+          "rushTD": 6,
+          "rec": 37,
+          "recYds": 296,
+          "recTD": 0,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        }
+      },
+      {
         "id": "josh-reynolds-wr-2024",
         "type": "signing",
         "name": "Josh Reynolds",
@@ -31960,33 +31887,6 @@
         }
       },
       {
-        "id": "juju-smith-schuster-wr-2024",
-        "type": "signing",
-        "name": "JuJu Smith-Schuster",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "NE",
-        "toTeam": "KC",
-        "tier": "Starter",
-        "age": 27,
-        "date": "2024-03-15",
-        "lastSeasonStats": {
-          "games": 11,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 29,
-          "recYds": 260,
-          "recTD": 1,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
-        }
-      },
-      {
         "id": "kareem-hunt-rb-2024",
         "type": "signing",
         "name": "Kareem Hunt",
@@ -32006,6 +31906,29 @@
           "rushTD": 9,
           "rec": 15,
           "recYds": 84,
+          "recTD": 0
+        }
+      },
+      {
+        "id": "kirk-cousins-qb-2024",
+        "type": "signing",
+        "name": "Kirk Cousins",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "MIN",
+        "toTeam": "ATL",
+        "tier": "Starter",
+        "age": 35,
+        "date": "2024-03-15",
+        "lastSeasonStats": {
+          "games": 8,
+          "passYds": 2331,
+          "passTD": 18,
+          "int": 5,
+          "rushYds": 25,
+          "rushTD": 0,
+          "rec": 0,
+          "recYds": 0,
           "recTD": 0
         }
       },
@@ -32404,29 +32327,6 @@
         }
       },
       {
-        "id": "sam-darnold-qb-2024",
-        "type": "signing",
-        "name": "Sam Darnold",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "SF",
-        "toTeam": "MIN",
-        "tier": "Starter",
-        "age": 26,
-        "date": "2024-03-15",
-        "lastSeasonStats": {
-          "games": 10,
-          "passYds": 297,
-          "passTD": 2,
-          "int": 1,
-          "rushYds": 15,
-          "rushTD": 1,
-          "rec": 0,
-          "recYds": 0,
-          "recTD": 0
-        }
-      },
-      {
         "id": "samaje-perine-rb-2024",
         "type": "signing",
         "name": "Samaje Perine",
@@ -32449,33 +32349,6 @@
           "recTD": 0,
           "sacks": 0.0,
           "tackles": 0,
-          "tfl": 0,
-          "pd": 0
-        }
-      },
-      {
-        "id": "sterling-shepard-wr-2024",
-        "type": "signing",
-        "name": "Sterling Shepard",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "NYG",
-        "toTeam": "TB",
-        "tier": "Starter",
-        "age": 31,
-        "date": "2024-03-15",
-        "lastSeasonStats": {
-          "games": 10,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 6,
-          "rushTD": 0,
-          "rec": 10,
-          "recYds": 57,
-          "recTD": 1,
-          "sacks": 0.0,
-          "tackles": 1,
           "tfl": 0,
           "pd": 0
         }
@@ -32562,29 +32435,6 @@
         }
       },
       {
-        "id": "tyrod-taylor-qb-2024",
-        "type": "signing",
-        "name": "Tyrod Taylor",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": "NYG",
-        "toTeam": "NYJ",
-        "tier": "Starter",
-        "age": 34,
-        "date": "2024-03-15",
-        "lastSeasonStats": {
-          "games": 10,
-          "passYds": 1341,
-          "passTD": 5,
-          "int": 3,
-          "rushYds": 197,
-          "rushTD": 0,
-          "rec": 0,
-          "recYds": 0,
-          "recTD": 0
-        }
-      },
-      {
         "id": "will-dissly-te-2024",
         "type": "signing",
         "name": "Will Dissly",
@@ -32628,33 +32478,6 @@
           "rec": 27,
           "recYds": 192,
           "recTD": 2
-        }
-      },
-      {
-        "id": "zay-jones-wr-2024",
-        "type": "signing",
-        "name": "Zay Jones",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "JAX",
-        "toTeam": "ARI",
-        "tier": "Starter",
-        "age": 28,
-        "date": "2024-03-15",
-        "lastSeasonStats": {
-          "games": 9,
-          "passYds": 0,
-          "passTD": 0,
-          "int": 0,
-          "rushYds": 0,
-          "rushTD": 0,
-          "rec": 34,
-          "recYds": 321,
-          "recTD": 2,
-          "sacks": 0.0,
-          "tackles": 1,
-          "tfl": 0,
-          "pd": 0
         }
       },
       {
@@ -32853,6 +32676,29 @@
           "rec": 25,
           "recYds": 247,
           "recTD": 2
+        }
+      },
+      {
+        "id": "d-onta-foreman-rb-2024",
+        "type": "signing",
+        "name": "D'Onta Foreman",
+        "position": "RB",
+        "positionGroup": "RB",
+        "fromTeam": "CHI",
+        "toTeam": "CLE",
+        "tier": "Backup",
+        "age": 27,
+        "date": "2024-03-15",
+        "lastSeasonStats": {
+          "games": 9,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 425,
+          "rushTD": 4,
+          "rec": 11,
+          "recYds": 77,
+          "recTD": 1
         }
       },
       {
@@ -33088,6 +32934,33 @@
         }
       },
       {
+        "id": "hayden-hurst-te-2024",
+        "type": "signing",
+        "name": "Hayden Hurst",
+        "position": "TE",
+        "positionGroup": "TE",
+        "fromTeam": "CAR",
+        "toTeam": "LAC",
+        "tier": "Backup",
+        "age": 30,
+        "date": "2024-03-15",
+        "lastSeasonStats": {
+          "games": 9,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 18,
+          "recYds": 184,
+          "recTD": 1,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
+        }
+      },
+      {
         "id": "jahan-dotson-wr-2024",
         "type": "trade",
         "name": "Jahan Dotson",
@@ -33163,6 +33036,33 @@
           "rec": 8,
           "recYds": 32,
           "recTD": 0
+        }
+      },
+      {
+        "id": "juju-smith-schuster-wr-2024",
+        "type": "signing",
+        "name": "JuJu Smith-Schuster",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "NE",
+        "toTeam": "KC",
+        "tier": "Backup",
+        "age": 27,
+        "date": "2024-03-15",
+        "lastSeasonStats": {
+          "games": 11,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 29,
+          "recYds": 260,
+          "recTD": 1,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
         }
       },
       {
@@ -33634,6 +33534,29 @@
         }
       },
       {
+        "id": "sam-darnold-qb-2024",
+        "type": "signing",
+        "name": "Sam Darnold",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "SF",
+        "toTeam": "MIN",
+        "tier": "Backup",
+        "age": 26,
+        "date": "2024-03-15",
+        "lastSeasonStats": {
+          "games": 10,
+          "passYds": 297,
+          "passTD": 2,
+          "int": 1,
+          "rushYds": 15,
+          "rushTD": 1,
+          "rec": 0,
+          "recYds": 0,
+          "recTD": 0
+        }
+      },
+      {
         "id": "scott-miller-wr-2024",
         "type": "signing",
         "name": "Scott Miller",
@@ -33656,6 +33579,33 @@
           "recTD": 2,
           "sacks": 0.0,
           "tackles": 0,
+          "tfl": 0,
+          "pd": 0
+        }
+      },
+      {
+        "id": "sterling-shepard-wr-2024",
+        "type": "signing",
+        "name": "Sterling Shepard",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "NYG",
+        "toTeam": "TB",
+        "tier": "Backup",
+        "age": 31,
+        "date": "2024-03-15",
+        "lastSeasonStats": {
+          "games": 10,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 6,
+          "rushTD": 0,
+          "rec": 10,
+          "recYds": 57,
+          "recTD": 1,
+          "sacks": 0.0,
+          "tackles": 1,
           "tfl": 0,
           "pd": 0
         }
@@ -33761,6 +33711,29 @@
         }
       },
       {
+        "id": "tyrod-taylor-qb-2024",
+        "type": "signing",
+        "name": "Tyrod Taylor",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": "NYG",
+        "toTeam": "NYJ",
+        "tier": "Backup",
+        "age": 34,
+        "date": "2024-03-15",
+        "lastSeasonStats": {
+          "games": 10,
+          "passYds": 1341,
+          "passTD": 5,
+          "int": 3,
+          "rushYds": 197,
+          "rushTD": 0,
+          "rec": 0,
+          "recYds": 0,
+          "recTD": 0
+        }
+      },
+      {
         "id": "van-jefferson-wr-2024",
         "type": "signing",
         "name": "Van Jefferson",
@@ -33820,6 +33793,33 @@
           "toGives": [
             "2024 round 6 pick"
           ]
+        }
+      },
+      {
+        "id": "zay-jones-wr-2024",
+        "type": "signing",
+        "name": "Zay Jones",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "JAX",
+        "toTeam": "ARI",
+        "tier": "Backup",
+        "age": 28,
+        "date": "2024-03-15",
+        "lastSeasonStats": {
+          "games": 9,
+          "passYds": 0,
+          "passTD": 0,
+          "int": 0,
+          "rushYds": 0,
+          "rushTD": 0,
+          "rec": 34,
+          "recYds": 321,
+          "recTD": 2,
+          "sacks": 0.0,
+          "tackles": 1,
+          "tfl": 0,
+          "pd": 0
         }
       },
       {
@@ -35580,71 +35580,6 @@
     "teamCap": {},
     "transactions": [
       {
-        "id": "dak-prescott-qb-signing-espn-2026",
-        "type": "signing",
-        "name": "Dak Prescott",
-        "position": "QB",
-        "positionGroup": "QB",
-        "fromTeam": null,
-        "toTeam": "DAL",
-        "tier": "Elite",
-        "age": 32,
-        "date": "2026-02-28",
-        "lastSeasonStats": {}
-      },
-      {
-        "id": "elgton-jenkins-ol-signing-espn-2026",
-        "type": "signing",
-        "name": "Elgton Jenkins",
-        "position": "OL",
-        "positionGroup": "OL",
-        "fromTeam": "GB",
-        "toTeam": "CLE",
-        "tier": "Elite",
-        "age": 30,
-        "date": "2026-03-11",
-        "lastSeasonStats": {}
-      },
-      {
-        "id": "javon-hargrave-dl-signing-espn-2026",
-        "type": "signing",
-        "name": "Javon Hargrave",
-        "position": "DT",
-        "positionGroup": "DL",
-        "fromTeam": null,
-        "toTeam": "MIN",
-        "tier": "Elite",
-        "age": 33,
-        "date": "2026-03-11",
-        "lastSeasonStats": {}
-      },
-      {
-        "id": "jonathan-allen-dl-signing-espn-2026",
-        "type": "signing",
-        "name": "Jonathan Allen",
-        "position": "DT",
-        "positionGroup": "DL",
-        "fromTeam": null,
-        "toTeam": "MIN",
-        "tier": "Elite",
-        "age": 31,
-        "date": "2026-03-11",
-        "lastSeasonStats": {}
-      },
-      {
-        "id": "mario-williams-wr-signing-espn-2026",
-        "type": "signing",
-        "name": "Mario Williams",
-        "position": "WR",
-        "positionGroup": "WR",
-        "fromTeam": "MIA",
-        "toTeam": "LAR",
-        "tier": "Elite",
-        "age": 41,
-        "date": "2026-01-15",
-        "lastSeasonStats": {}
-      },
-      {
         "id": "quincy-williams-lb-signing-espn-2026",
         "type": "signing",
         "name": "Quincy Williams",
@@ -35655,19 +35590,6 @@
         "tier": "Elite",
         "age": 29,
         "date": "2026-03-11",
-        "lastSeasonStats": {}
-      },
-      {
-        "id": "ryan-kelly-ol-signing-espn-2026",
-        "type": "signing",
-        "name": "Ryan Kelly",
-        "position": "C",
-        "positionGroup": "OL",
-        "fromTeam": null,
-        "toTeam": "MIN",
-        "tier": "Elite",
-        "age": 32,
-        "date": "2026-03-09",
         "lastSeasonStats": {}
       },
       {
@@ -35723,6 +35645,19 @@
         "lastSeasonStats": {}
       },
       {
+        "id": "dak-prescott-qb-signing-espn-2026",
+        "type": "signing",
+        "name": "Dak Prescott",
+        "position": "QB",
+        "positionGroup": "QB",
+        "fromTeam": null,
+        "toTeam": "DAL",
+        "tier": "Starter",
+        "age": 32,
+        "date": "2026-02-28",
+        "lastSeasonStats": {}
+      },
+      {
         "id": "dalton-risner-ol-extension-espn-2026",
         "type": "extension",
         "name": "Dalton Risner",
@@ -35762,6 +35697,19 @@
         "lastSeasonStats": {}
       },
       {
+        "id": "elgton-jenkins-ol-signing-espn-2026",
+        "type": "signing",
+        "name": "Elgton Jenkins",
+        "position": "OL",
+        "positionGroup": "OL",
+        "fromTeam": "GB",
+        "toTeam": "CLE",
+        "tier": "Starter",
+        "age": 30,
+        "date": "2026-03-11",
+        "lastSeasonStats": {}
+      },
+      {
         "id": "isaiah-simmons-db-extension-espn-2026",
         "type": "extension",
         "name": "Isaiah Simmons",
@@ -35785,6 +35733,19 @@
         "tier": "Starter",
         "age": 41,
         "date": "2026-01-05",
+        "lastSeasonStats": {}
+      },
+      {
+        "id": "javon-hargrave-dl-signing-espn-2026",
+        "type": "signing",
+        "name": "Javon Hargrave",
+        "position": "DT",
+        "positionGroup": "DL",
+        "fromTeam": null,
+        "toTeam": "MIN",
+        "tier": "Starter",
+        "age": 33,
+        "date": "2026-03-11",
         "lastSeasonStats": {}
       },
       {
@@ -35814,6 +35775,19 @@
         "lastSeasonStats": {}
       },
       {
+        "id": "jonathan-allen-dl-signing-espn-2026",
+        "type": "signing",
+        "name": "Jonathan Allen",
+        "position": "DT",
+        "positionGroup": "DL",
+        "fromTeam": null,
+        "toTeam": "MIN",
+        "tier": "Starter",
+        "age": 31,
+        "date": "2026-03-11",
+        "lastSeasonStats": {}
+      },
+      {
         "id": "marcedes-lewis-te-signing-espn-2026",
         "type": "signing",
         "name": "Marcedes Lewis",
@@ -35840,6 +35814,19 @@
         "lastSeasonStats": {}
       },
       {
+        "id": "mario-williams-wr-signing-espn-2026",
+        "type": "signing",
+        "name": "Mario Williams",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "MIA",
+        "toTeam": "LAR",
+        "tier": "Starter",
+        "age": 41,
+        "date": "2026-01-15",
+        "lastSeasonStats": {}
+      },
+      {
         "id": "mecole-hardman-ol-signing-espn-2026",
         "type": "signing",
         "name": "Mecole Hardman",
@@ -35850,6 +35837,19 @@
         "tier": "Starter",
         "age": 28,
         "date": "2026-01-19",
+        "lastSeasonStats": {}
+      },
+      {
+        "id": "ryan-kelly-ol-signing-espn-2026",
+        "type": "signing",
+        "name": "Ryan Kelly",
+        "position": "C",
+        "positionGroup": "OL",
+        "fromTeam": null,
+        "toTeam": "MIN",
+        "tier": "Starter",
+        "age": 32,
+        "date": "2026-03-09",
         "lastSeasonStats": {}
       },
       {
