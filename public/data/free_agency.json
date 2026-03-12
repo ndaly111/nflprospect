@@ -35694,7 +35694,10 @@
         "tier": "Starter",
         "age": 30,
         "date": "2026-03-02",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 1
+        }
       },
       {
         "id": "darnell-mooney-wr-signing-espn-2026",
@@ -35746,7 +35749,10 @@
         "tier": "Starter",
         "age": 29,
         "date": "2026-03-12",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 1
+        }
       },
       {
         "id": "isaac-seumalo-ol-signing-espn-2026",
@@ -35759,7 +35765,10 @@
         "tier": "Starter",
         "age": 32,
         "date": "2026-03-11",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 2
+        }
       },
       {
         "id": "isaiah-simmons-db-extension-espn-2026",
@@ -35811,7 +35820,10 @@
         "tier": "Starter",
         "age": 25,
         "date": "2026-02-21",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 3
+        }
       },
       {
         "id": "jayson-jones-dl-signing-espn-2026",
@@ -35837,7 +35849,10 @@
         "tier": "Starter",
         "age": 28,
         "date": "2026-03-12",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 1
+        }
       },
       {
         "id": "jonathan-allen-dl-signing-espn-2026",
@@ -35980,7 +35995,10 @@
         "tier": "Starter",
         "age": 31,
         "date": "2026-03-12",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 4
+        }
       },
       {
         "id": "tyler-biadasz-ol-signing-espn-2026",
@@ -35993,7 +36011,10 @@
         "tier": "Starter",
         "age": 28,
         "date": "2026-03-06",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 3
+        }
       },
       {
         "id": "willie-gay-jr-lb-extension-espn-2026",
@@ -36032,7 +36053,10 @@
         "tier": "Backup",
         "age": 26,
         "date": "2026-02-20",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 1
+        }
       },
       {
         "id": "alijah-vera-ol-signing-espn-2026",
@@ -36087,6 +36111,19 @@
         "lastSeasonStats": {}
       },
       {
+        "id": "benjamin-st-db-signing-espn-2026",
+        "type": "signing",
+        "name": "Benjamin St-",
+        "position": "CB",
+        "positionGroup": "DB",
+        "fromTeam": null,
+        "toTeam": "GB",
+        "tier": "Backup",
+        "age": null,
+        "date": "2026-03-12",
+        "lastSeasonStats": {}
+      },
+      {
         "id": "bo-richter-edge-extension-espn-2026",
         "type": "extension",
         "name": "Bo Richter",
@@ -36110,7 +36147,10 @@
         "tier": "Backup",
         "age": 27,
         "date": "2026-03-12",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 3
+        }
       },
       {
         "id": "bryan-cook-db-signing-espn-2026",
@@ -36123,7 +36163,10 @@
         "tier": "Backup",
         "age": 26,
         "date": "2026-03-12",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 3
+        }
       },
       {
         "id": "chris-brooks-rb-extension-espn-2026",
@@ -36136,7 +36179,10 @@
         "tier": "Backup",
         "age": 39,
         "date": "2026-03-04",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 2
+        }
       },
       {
         "id": "cornelius-lucas-ol-signing-espn-2026",
@@ -36178,6 +36224,19 @@
         "lastSeasonStats": {}
       },
       {
+        "id": "darrell-baker-jr-db-signing-espn-2026",
+        "type": "signing",
+        "name": "Darrell Baker Jr",
+        "position": "CB",
+        "positionGroup": "DB",
+        "fromTeam": "TEN",
+        "toTeam": "MIA",
+        "tier": "Backup",
+        "age": 27,
+        "date": "2026-03-12",
+        "lastSeasonStats": {}
+      },
+      {
         "id": "david-moore-wr-extension-espn-2026",
         "type": "extension",
         "name": "David Moore",
@@ -36201,7 +36260,10 @@
         "tier": "Backup",
         "age": 35,
         "date": "2026-02-18",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 1
+        }
       },
       {
         "id": "deatrich-wise-edge-signing-espn-2026",
@@ -36227,7 +36289,10 @@
         "tier": "Backup",
         "age": 31,
         "date": "2026-03-12",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 2
+        }
       },
       {
         "id": "eric-wilson-lb-signing-espn-2026",
@@ -36318,7 +36383,10 @@
         "tier": "Backup",
         "age": null,
         "date": "2026-03-12",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 1
+        }
       },
       {
         "id": "joshua-williams-cor-db-signing-espn-2026",
@@ -36357,7 +36425,26 @@
         "tier": "Backup",
         "age": 28,
         "date": "2026-02-18",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 1
+        }
+      },
+      {
+        "id": "kendrick-bourne-wr-signing-espn-2026",
+        "type": "signing",
+        "name": "Kendrick Bourne",
+        "position": "WR",
+        "positionGroup": "WR",
+        "fromTeam": "SF",
+        "toTeam": "ARI",
+        "tier": "Backup",
+        "age": 30,
+        "date": "2026-03-12",
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 2
+        }
       },
       {
         "id": "lonnie-johnson-jr-db-signing-espn-2026",
@@ -36396,7 +36483,10 @@
         "tier": "Backup",
         "age": 31,
         "date": "2026-03-12",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 1
+        }
       },
       {
         "id": "michael-bandy-wr-extension-espn-2026",
@@ -36474,7 +36564,10 @@
         "tier": "Backup",
         "age": null,
         "date": "2026-03-11",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 2
+        }
       },
       {
         "id": "starling-thomas-db-signing-espn-2026",
@@ -36487,7 +36580,10 @@
         "tier": "Backup",
         "age": null,
         "date": "2026-03-12",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 1
+        }
       },
       {
         "id": "tavierre-thomas-db-signing-espn-2026",
@@ -36526,7 +36622,10 @@
         "tier": "Backup",
         "age": 24,
         "date": "2026-02-05",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 1
+        }
       },
       {
         "id": "thomas-incoom-edge-extension-espn-2026",
@@ -36552,7 +36651,10 @@
         "tier": "Backup",
         "age": 25,
         "date": "2026-03-12",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 2
+        }
       },
       {
         "id": "zavier-scott-rb-extension-espn-2026",
@@ -36578,7 +36680,10 @@
         "tier": "Backup",
         "age": null,
         "date": "2026-03-12",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 1
+        }
       },
       {
         "id": "alex-austin-db-signing-espn-2026",
@@ -36643,7 +36748,10 @@
         "tier": "Bust",
         "age": 28,
         "date": "2026-03-11",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 1
+        }
       },
       {
         "id": "jesse-luketa-lb-signing-espn-2026",
@@ -36708,7 +36816,10 @@
         "tier": "Bust",
         "age": 27,
         "date": "2026-02-23",
-        "lastSeasonStats": {}
+        "lastSeasonStats": {},
+        "contract": {
+          "years": 1
+        }
       },
       {
         "id": "robert-rochell-db-signing-espn-2026",

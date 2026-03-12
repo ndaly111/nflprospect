@@ -337,7 +337,9 @@ function renderTeamImpactBoard(transactions, teamCap) {
 function renderTransactionRow(tx) {
   const deal = dealTier(tx.contract?.aav)
   const contractStr = tx.contract
-    ? `${tx.contract.years}yr / ${formatMoney(tx.contract.aav)} AAV`
+    ? (tx.contract.aav
+        ? `${tx.contract.years}yr / ${formatMoney(tx.contract.aav)} AAV`
+        : `${tx.contract.years}yr deal`)
     : ''
 
   const teamFlow = tx.type === 'extension'

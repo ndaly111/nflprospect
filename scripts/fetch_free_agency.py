@@ -735,6 +735,20 @@ def fetch_espn_transactions(year, players_info=None, tier_lookup=None, stats=Non
                         games = last_stats.get('games', 0) or 0
                         tier = 'Starter' if games >= 12 else 'Backup'
 
+                    # Parse contract years from description
+                    # Patterns: "three-year contract", "one-year deal", "4-year contract"
+                    contract = None
+                    word_to_num = {
+                        'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5,
+                        'six': 6, 'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10,
+                    }
+                    yr_match = re.search(r'(\w+)-year\b', seg_lower)
+                    if yr_match:
+                        yr_word = yr_match.group(1)
+                        yr_num = word_to_num.get(yr_word) or safe_int(yr_word)
+                        if yr_num:
+                            contract = {'years': yr_num}
+
                     tx_id = make_id(player_name, pg, f'{tx_type}-espn-{year}')
                     tx = {
                         'id': tx_id,
@@ -749,6 +763,8 @@ def fetch_espn_transactions(year, players_info=None, tier_lookup=None, stats=Non
                         'date': tx_date_str,
                         'lastSeasonStats': last_stats,
                     }
+                    if contract:
+                        tx['contract'] = contract
                     transactions.append(tx)
 
         if page >= page_count:
