@@ -971,16 +971,12 @@ def build_free_agency(years=None, live=False):
         logger.info(f'Building free agency data for {year} ...')
         year_str = str(year)
 
-        # Only preserve existing ESPN-sourced data for the current live year
-        # (all other years are fully rebuilt from nflverse + stats data)
-        if year_str in existing and year == current_year:
-            existing_year = existing[year_str]
-            existing_ids = {tx['id'] for tx in existing_year.get('transactions', [])}
-        else:
-            existing_year = {'teamCap': {}, 'transactions': []}
-            existing_ids = set()
+        # Always rebuild from scratch — existing data was causing stale entries
+        # to persist (fake draft trades, reserve/futures signings, etc.)
+        existing_year = existing.get(year_str, {'teamCap': {}, 'transactions': []})
+        existing_ids = set()  # Don't preserve any existing transaction IDs
 
-        transactions = list(existing_year.get('transactions', []))
+        transactions = []
 
         # Get team changes for this year
         year_changes = [c for c in team_changes if c['season'] == year]
@@ -1225,15 +1221,22 @@ def build_free_agency(years=None, live=False):
         tier_sort = {'Elite': 0, 'Starter': 1, 'Backup': 2, 'Bust': 3}
         transactions.sort(key=lambda t: (tier_sort.get(t.get('tier'), 9), t.get('name', '')))
 
-        # Filter to keep only notable transactions (skip minor Backup moves unless trades)
-        # For the current year, be lenient since we lack prior-season stats
-        is_current = (year == current_year)
+        # Filter to keep only notable transactions
+        # Skip reserve/futures signings (Jan-early Feb Backup signings are roster filler)
         notable = []
         for tx in transactions:
             # Keep all manually curated entries
             if tx['id'] in existing_ids:
                 notable.append(tx)
                 continue
+            # Skip reserve/futures signings: Jan-Feb Backup signings with no stats
+            tx_date = tx.get('date', '')
+            tx_month = int(tx_date[5:7]) if len(tx_date) >= 7 else 0
+            if tx_month <= 2 and tx.get('tier') == 'Backup' and tx['type'] == 'signing':
+                stats_data = tx.get('lastSeasonStats', {})
+                games = stats_data.get('games', 0) or 0
+                if games < 8:
+                    continue  # Skip reserve/futures filler
             # Keep all trades
             if tx['type'] == 'trade':
                 notable.append(tx)
@@ -1242,9 +1245,12 @@ def build_free_agency(years=None, live=False):
             if tx.get('tier') in ('Elite', 'Starter'):
                 notable.append(tx)
                 continue
-            # For the current year, keep all ESPN signings/extensions
-            # (we can't reliably filter without prior-season stats)
-            if is_current:
+            # Keep extensions (re-signings) always — team chose to keep them
+            if tx['type'] == 'extension':
+                notable.append(tx)
+                continue
+            # Keep Backup signings from March+ (actual FA period)
+            if tx_month >= 3:
                 notable.append(tx)
                 continue
             # Keep Backup signings only if they had meaningful production

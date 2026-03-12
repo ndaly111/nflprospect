@@ -1,6 +1,6 @@
 export const TIERS     = ['Elite', 'Starter', 'Backup', 'Bust']
 export const TIER_ORDER = { Elite: 0, Starter: 1, Backup: 2, Bust: 3 }
-export const TIER_POINTS = { Elite: 3, Starter: 2, Backup: 1, Bust: 0 }
+export const TIER_POINTS = { Elite: 3, Starter: 2, Backup: 0, Bust: 0 }
 
 export const TIER_COLORS = {
   Elite:   { bg: 'bg-yellow-500/20', text: 'text-yellow-300', dot: 'bg-yellow-400', badge: 'bg-yellow-500/20 text-yellow-300 border border-yellow-500/30' },

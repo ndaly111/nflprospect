@@ -285,10 +285,10 @@ function renderTeamCard(abbrev, data, draftProspects) {
       <div class="flex gap-4 mb-1">
         <div class="flex flex-col items-center">${sideSummary('OFF', data.offense)}</div>
         <div class="flex flex-col items-center">${sideSummary('DEF', data.defense)}</div>
-        <div class="flex flex-col items-center ml-auto">
+        ${data.totalSpent ? `<div class="flex flex-col items-center ml-auto">
           <span class="text-[10px] text-gray-500 uppercase tracking-wider">Spent</span>
           <span class="text-xs text-gray-300 font-medium">${formatMoney(data.totalSpent)}</span>
-        </div>
+        </div>` : ''}
       </div>
       ${capBar(remaining, data.totalSpent)}
       <div class="fa-team-detail hidden mt-3 pt-2 border-t border-gray-700/50 space-y-1">
