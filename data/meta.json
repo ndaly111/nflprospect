@@ -1,0 +1,23 @@
+{
+  "lastUpdated": "2026-03-15T06:42:43Z",
+  "prospectCount": 328,
+  "draftYear": 2026,
+  "sources": {
+    "walter_football": {
+      "status": "ok",
+      "count": 16
+    },
+    "cbs_sports": {
+      "status": "ok",
+      "count": 303
+    },
+    "tankathon": {
+      "status": "ok",
+      "count": 185
+    },
+    "espn": {
+      "status": "ok",
+      "count": 200
+    }
+  }
+}
