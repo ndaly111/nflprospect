@@ -1,5 +1,85 @@
 [
   {
+    "headline": "Chris Johnson's NFL draft profile",
+    "url": "https://www.espn.com/video/clip?id=48462025",
+    "published": "2026-04-12T01:06:23Z",
+    "image": "https://a.espncdn.com/media/motion/2026/0411/dm_260411_Chris_Johnsons_NFL_draft_profile/dm_260411_Chris_Johnsons_NFL_draft_profile.jpg",
+    "source": "ESPN",
+    "description": "Check out some of the top highlights from San Diego State's Chris Johnson."
+  },
+  {
+    "headline": "2026 NFL draft: Latest New England Patriots updates, intel, buzz",
+    "url": "https://www.espn.com/nfl/draft2026/story/_/id/48423365/2026-nfl-draft-new-england-patriots-updates-buzz-intel-picks-positions",
+    "published": "2026-04-12T05:03:26Z",
+    "image": "https://a.espncdn.com/photo/2026/0331/r1636761_608x342_16-9.jpg",
+    "source": "ESPN",
+    "description": "The Patriots pick late in Round 1 and have 11 total selections in the 2026 draft. Here's the latest on what New England might do."
+  },
+  {
+    "headline": "Keionte Scott's NFL draft profile",
+    "url": "https://www.espn.com/video/clip?id=48461940",
+    "published": "2026-04-12T00:55:31Z",
+    "image": "https://a.espncdn.com/media/motion/2026/0411/dm_260411_Keionte_Scotts_NFL_draft_profile/dm_260411_Keionte_Scotts_NFL_draft_profile.jpg",
+    "source": "ESPN",
+    "description": "Keionte Scott's NFL draft profile  Check out some of the top highlights from Miami's Keionte Scott."
+  },
+  {
+    "headline": "Emmanuel Pregnon's\u00a0NFL draft profile",
+    "url": "https://www.espn.com/video/clip?id=48461830",
+    "published": "2026-04-12T00:46:23Z",
+    "image": "https://a.espncdn.com/media/motion/2026/0411/dm_260411_Emmanuel_draft/dm_260411_Emmanuel_draft.jpg",
+    "source": "ESPN",
+    "description": "Check out some of the top highlights from Oregon's Emmanuel Pregnon."
+  },
+  {
+    "headline": "Keldric Faulk NFL draft profile",
+    "url": "https://www.espn.com/video/clip?id=48459852",
+    "published": "2026-04-11T21:19:06Z",
+    "image": "https://a.espncdn.com/media/motion/2026/0411/dm_260411_Keldric_Faulk_DHS/dm_260411_Keldric_Faulk_DHS.jpg",
+    "source": "ESPN",
+    "description": "Check out some of the top highlights from Auburn's Keldric Faulk."
+  },
+  {
+    "headline": "2026 NFL quarterback projections: Stats, rankings",
+    "url": "https://www.espn.com/nfl/draft2026/story/_/id/48446727/2026-nfl-draft-quarterback-projections-stats-rankings-comps-prospects",
+    "published": "2026-04-11T12:12:35Z",
+    "image": "https://a.espncdn.com/photo/2026/0410/mock_draft_1296x729.jpg",
+    "source": "ESPN",
+    "description": "Aaron Schatz uses his QBASE 2.0 model to project NFL career ceilings and floors for the 2026 draft class's top QBs."
+  },
+  {
+    "headline": "Will Jags draft by positional need or best player available?",
+    "url": "https://www.espn.com/nfl/story/_/id/48451110/jacksonville-jaguars-gm-james-gladstone-nfl-draft-positional-need-best-player-available",
+    "published": "2026-04-11T10:00:03Z",
+    "image": "https://a.espncdn.com/photo/2026/0410/r1641641_608x342_16-9.jpg",
+    "source": "ESPN",
+    "description": "GM James Gladstone and coach Liam Coen reveal what they are focusing on heading into 2026 NFL draft."
+  },
+  {
+    "headline": "How AI is pushing NFL draft prep to 'a different level'",
+    "url": "https://www.espn.com/nfl/story/_/id/48446759/nfl-draft-combine-artificial-intelligence-caleb-downs-arvell-reese-david-bailey",
+    "published": "2026-04-11T11:12:05Z",
+    "image": "https://a.espncdn.com/photo/2026/0410/r1641422_608x342_16-9.jpg",
+    "source": "ESPN",
+    "description": "When a prospect skips NFL combine workouts, teams can use artificial intelligence to project his measurables."
+  },
+  {
+    "headline": "How Schottenheimer is prepping for Cowboys draft in Year 2",
+    "url": "https://www.espn.com/nfl/story/_/id/48437117/nfl-dallas-cowboys-brian-schottenheimer-draft-arvell-reese",
+    "published": "2026-04-11T10:00:01Z",
+    "image": "https://a.espncdn.com/photo/2026/0409/r1640972_608x342_16-9.jpg",
+    "source": "ESPN",
+    "description": "Last year, Schottenheimer was just getting settled in as the new head coach in Dallas."
+  },
+  {
+    "headline": "What kind of edge player will Seahawks be looking to draft?",
+    "url": "https://www.espn.com/nfl/story/_/id/48441800/what-kind-edge-player-seattle-seahawks-looking-2026-nfl-draft-demarcus-lawrence",
+    "published": "2026-04-11T13:31:27Z",
+    "image": "https://a.espncdn.com/photo/2026/0409/r1641122_608x342_16-9.jpg",
+    "source": "ESPN",
+    "description": "Seahawks have to start planning for replacements as edge rushers age. Who will they target at the NFL draft?"
+  },
+  {
     "headline": "Jordyn Tyson's NFL draft profile",
     "url": "https://www.espn.com/video/clip?id=48454235",
     "published": "2026-04-11T05:44:41Z",
@@ -58,10 +138,10 @@
   {
     "headline": "Eagles get WR Dontayvion Wicks from Packers, sources say",
     "url": "https://www.espn.com/nfl/story/_/id/48451181/eagles-get-wr-dontayvion-wick-packers-sources-say",
-    "published": "2026-04-10T22:25:38Z",
+    "published": "2026-04-11T17:45:43Z",
     "image": "https://a.espncdn.com/photo/2025/0728/r1524760_1296x729_16-9.jpg",
     "source": "ESPN",
-    "description": "The Eagles have acquired wide receiver Dontayvion Wicks from the Packers for two draft picks, sources told ESPN's Adam Schefter."
+    "description": "The Eagles have acquired wide receiver Dontayvion Wicks from the Packers for two draft picks."
   },
   {
     "headline": "2026 NFL draft: Latest Kansas City Chiefs updates, intel, buzz",
@@ -78,85 +158,5 @@
     "image": "https://a.espncdn.com/photo/2026/0409/r1640907_1296x729_16-9.jpg",
     "source": "ESPN",
     "description": "The Giants pick early in Round 1 and have seven total selections in the 2026 draft. Here's the latest on what New York might do."
-  },
-  {
-    "headline": "2026 NFL draft: Latest intel, questions for 32 teams' picks",
-    "url": "https://www.espn.com/nfl/draft2026/story/_/id/48378778/2026-nfl-draft-latest-buzz-rumors-news-answering-questions-all-32-teams-picks",
-    "published": "2026-04-10T20:58:33Z",
-    "image": "https://a.espncdn.com/photo/2026/0302/ncf_jordan_reid_mock_draft_cr_16x9.jpg",
-    "source": "ESPN",
-    "description": "Our NFL reporters answer questions for every team two weeks out from the draft, and our analysts weigh in with some new intel on picks and moves."
-  },
-  {
-    "headline": "Why Caleb Downs' versatility excites NFL decision makers",
-    "url": "https://www.espn.com/video/clip?id=48450609",
-    "published": "2026-04-10T20:25:47Z",
-    "image": "https://a.espncdn.com/media/motion/2026/0410/dm_260410_Sal_Pal_on_Caleb_Downs/dm_260410_Sal_Pal_on_Caleb_Downs.jpg",
-    "source": "ESPN",
-    "description": "Sal Paolantonio breaks down why Caleb Downs excites NFL decision makers before the draft."
-  },
-  {
-    "headline": "2026 NFL draft: Latest Dallas Cowboys updates, intel, buzz",
-    "url": "https://www.espn.com/nfl/story/_/id/48421367/2026-nfl-draft-dallas-cowboys-updates-buzz-intel-picks-positions",
-    "published": "2026-04-10T20:05:48Z",
-    "image": "https://a.espncdn.com/photo/2026/0409/r1640907_576x324_16-9.jpg",
-    "source": "ESPN",
-    "description": "The Cowboys have eight picks, two in Round 1. Here's the latest on what Dallas might do in the 2026 NFL draft."
-  },
-  {
-    "headline": "2026 NFL draft: Latest Arizona Cardinals updates, intel, buzz",
-    "url": "https://www.espn.com/nfl/story/_/id/48428855/2026-nfl-draft-arizona-cardinals-updates-buzz-intel-picks-positions",
-    "published": "2026-04-10T20:00:17Z",
-    "image": "https://a.espncdn.com/photo/2026/0408/r1640374_1296x729_16-9.jpg",
-    "source": "ESPN",
-    "description": "The Cardinals are set to pick No. 3 and have seven total selections in the 2026 NFL draft. Here's the latest on what Arizona might do once it is on the clock."
-  },
-  {
-    "headline": "2026 NFL draft: Latest Washington Commanders updates, intel, buzz",
-    "url": "https://www.espn.com/nfl/draft2026/story/_/id/48413923/2026-nfl-draft-washington-commanders-updates-buzz-intel-picks-positions",
-    "published": "2026-04-10T19:58:50Z",
-    "image": "https://a.espncdn.com/photo/2025/1103/r1569989_608x342_16-9.jpg",
-    "source": "ESPN",
-    "description": "The Commanders will pick early in Round 1 and have six selections in the 2026 NFL draft. Here's the latest on what Washington might do."
-  },
-  {
-    "headline": "2026 NFL draft: Latest Miami Dolphins updates, intel, buzz",
-    "url": "https://www.espn.com/nfl/draft2026/story/_/id/48413572/2026-nfl-draft-miami-dolphins-updates-buzz-intel-picks-positions",
-    "published": "2026-04-10T19:49:49Z",
-    "image": "https://a.espncdn.com/photo/2025/1204/r1584869_608x342_16-9.jpg",
-    "source": "ESPN",
-    "description": "The Dolphins are set to pick early in Round 1 and have 11 total selections in the 2026 draft. Here's the latest on Miami."
-  },
-  {
-    "headline": "2026 NFL draft: Latest New England Patriots updates, intel, buzz",
-    "url": "https://www.espn.com/nfl/draft2026/story/_/id/48423365/2026-nfl-draft-new-england-patriots-updates-buzz-intel-picks-positions",
-    "published": "2026-04-10T15:24:25Z",
-    "image": "https://a.espncdn.com/photo/2026/0331/r1636761_608x342_16-9.jpg",
-    "source": "ESPN",
-    "description": "The Patriots pick late in Round 1 and have 11 total selections in the 2026 draft. Here's the latest on what New England might do."
-  },
-  {
-    "headline": "Ja'Kobi Lane's NFL draft profile",
-    "url": "https://www.espn.com/video/clip?id=48447834",
-    "published": "2026-04-10T15:14:09Z",
-    "image": "https://a.espncdn.com/media/motion/2026/0410/dm_260410_nfl_draf_hl_jakobi_lane_2026/dm_260410_nfl_draf_hl_jakobi_lane_2026.jpg",
-    "source": "ESPN",
-    "description": "Check out some of the top highlights from Southern California's Ja'Kobi Lane."
-  },
-  {
-    "headline": "2026 NFL draft: Latest Philadelphia Eagles updates, intel, buzz",
-    "url": "https://www.espn.com/nfl/story/_/id/48429936/2026-nfl-draft-philadelphia-eagles-updates-buzz-intel-picks-positions",
-    "published": "2026-04-10T14:29:11Z",
-    "image": "https://a.espncdn.com/photo/2025/0105/r1434835_1296x729_16-9.jpg",
-    "source": "ESPN",
-    "description": "The Eagles pick late in Round 1 and have nine total selections in the 2026 draft. Here's the latest on what Philadelphia might do."
-  },
-  {
-    "headline": "Caleb Lomu's  NFL draft profile",
-    "url": "https://www.espn.com/video/clip?id=48446912",
-    "published": "2026-04-10T13:13:28Z",
-    "image": "https://a.espncdn.com/media/motion/2026/0410/dm_260410_cero202_2026_nfl_draf_hl_caleb_lomu/dm_260410_cero202_2026_nfl_draf_hl_caleb_lomu.jpg",
-    "source": "ESPN",
-    "description": "Check out some of the top highlights from Utah's Caleb Lomu"
   }
 ]
