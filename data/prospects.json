@@ -209,6 +209,10 @@
       {
         "date": "2026-04-14",
         "rank": 1
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 1
       }
     ],
     "collegeStats": {
@@ -308,7 +312,7 @@
     "projectedPick": 2,
     "classYear": "Jr",
     "rankBySource": {
-      "walter_football": 2,
+      "walter_football": 3,
       "cbs_sports": 3,
       "tankathon": 1,
       "espn": 1
@@ -496,6 +500,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 2
+      },
+      {
+        "date": "2026-04-15",
         "rank": 2
       }
     ],
@@ -772,6 +780,10 @@
       {
         "date": "2026-04-14",
         "rank": 3
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 3
       }
     ],
     "collegeStats": {
@@ -868,6 +880,7 @@
     "projectedPick": 10,
     "classYear": "Jr",
     "rankBySource": {
+      "walter_football": 8,
       "cbs_sports": 8,
       "tankathon": 2,
       "espn": 6
@@ -1056,6 +1069,10 @@
       {
         "date": "2026-04-14",
         "rank": 4
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 4
       }
     ],
     "collegeStats": {
@@ -1128,11 +1145,11 @@
     ]
   },
   {
-    "id": "rueben bain jr-de-miami",
-    "name": "Rueben Bain Jr.",
+    "id": "david bailey-de-texas tech",
+    "name": "David Bailey",
     "position": "DE",
     "positionGroup": "EDGE",
-    "school": "Miami",
+    "school": "Texas Tech",
     "class": null,
     "yearsInCollege": null,
     "consensusRank": 5,
@@ -1142,6 +1159,297 @@
       10
     ],
     "positionRank": 1,
+    "espnGrade": 92.0,
+    "espnId": "109531",
+    "projectedTeam": "Washington Commanders",
+    "projectedPick": 7,
+    "classYear": "Sr",
+    "rankBySource": {
+      "walter_football": 2,
+      "cbs_sports": 20,
+      "tankathon": 4,
+      "espn": 3
+    },
+    "rankHistory": [
+      {
+        "date": "2026-02-28",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-01",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-02",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-03",
+        "rank": 7
+      },
+      {
+        "date": "2026-03-04",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-05",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-06",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-07",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-08",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-09",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-10",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-11",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-12",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-13",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-14",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-15",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-16",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-17",
+        "rank": 6
+      },
+      {
+        "date": "2026-03-18",
+        "rank": 8
+      },
+      {
+        "date": "2026-03-19",
+        "rank": 8
+      },
+      {
+        "date": "2026-03-20",
+        "rank": 8
+      },
+      {
+        "date": "2026-03-21",
+        "rank": 8
+      },
+      {
+        "date": "2026-03-22",
+        "rank": 8
+      },
+      {
+        "date": "2026-03-23",
+        "rank": 8
+      },
+      {
+        "date": "2026-03-24",
+        "rank": 8
+      },
+      {
+        "date": "2026-03-25",
+        "rank": 8
+      },
+      {
+        "date": "2026-03-26",
+        "rank": 8
+      },
+      {
+        "date": "2026-03-27",
+        "rank": 8
+      },
+      {
+        "date": "2026-03-28",
+        "rank": 8
+      },
+      {
+        "date": "2026-03-29",
+        "rank": 8
+      },
+      {
+        "date": "2026-03-30",
+        "rank": 8
+      },
+      {
+        "date": "2026-03-31",
+        "rank": 9
+      },
+      {
+        "date": "2026-04-01",
+        "rank": 9
+      },
+      {
+        "date": "2026-04-02",
+        "rank": 9
+      },
+      {
+        "date": "2026-04-03",
+        "rank": 6
+      },
+      {
+        "date": "2026-04-04",
+        "rank": 6
+      },
+      {
+        "date": "2026-04-05",
+        "rank": 6
+      },
+      {
+        "date": "2026-04-06",
+        "rank": 6
+      },
+      {
+        "date": "2026-04-07",
+        "rank": 6
+      },
+      {
+        "date": "2026-04-08",
+        "rank": 7
+      },
+      {
+        "date": "2026-04-09",
+        "rank": 7
+      },
+      {
+        "date": "2026-04-10",
+        "rank": 7
+      },
+      {
+        "date": "2026-04-11",
+        "rank": 7
+      },
+      {
+        "date": "2026-04-12",
+        "rank": 7
+      },
+      {
+        "date": "2026-04-13",
+        "rank": 7
+      },
+      {
+        "date": "2026-04-14",
+        "rank": 7
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 5
+      }
+    ],
+    "collegeStats": {
+      "2025": {
+        "pbus": 3.0,
+        "sacks": 14.5,
+        "tfls": 19.5,
+        "tackles": 51.0
+      },
+      "2024": {
+        "pbus": 0.0,
+        "sacks": 6.0,
+        "tfls": 8.0,
+        "tackles": 31.0
+      },
+      "2023": {
+        "pbus": 0.0,
+        "sacks": 5.0,
+        "tfls": 6.0,
+        "tackles": 31.0
+      },
+      "2022": {
+        "pbus": 0.0,
+        "sacks": 1.5,
+        "tfls": 7.5,
+        "tackles": 43.0
+      }
+    },
+    "cbsStats": {
+      "games": 14.0,
+      "tackles": 52.0,
+      "sacks": 14.5,
+      "interceptions": 0.0
+    },
+    "tankStats": {
+      "TACKLES": "52",
+      "SACKS": "14.5",
+      "PASS DEF": "3",
+      "INT": "0",
+      "FF": "3"
+    },
+    "combineData": {
+      "height": "6-3",
+      "weight": 250,
+      "forty": 4.5,
+      "bench": null,
+      "vertical": 35.0,
+      "broadJump": 129.0,
+      "cone": null,
+      "shuttle": null,
+      "participated": true
+    },
+    "positionTotal": 35,
+    "playerComps": [
+      {
+        "name": "Abdul Carter",
+        "year": 2025,
+        "pick": 3,
+        "school": "Penn St.",
+        "similarity": 100
+      },
+      {
+        "name": "Mike Green",
+        "year": 2025,
+        "pick": 59,
+        "school": "Marshall",
+        "similarity": 96
+      },
+      {
+        "name": "Felix Anudike-Uzomah",
+        "year": 2023,
+        "pick": 31,
+        "school": "Kansas St.",
+        "similarity": 82
+      }
+    ]
+  },
+  {
+    "id": "rueben bain jr-de-miami",
+    "name": "Rueben Bain Jr.",
+    "position": "DE",
+    "positionGroup": "EDGE",
+    "school": "Miami",
+    "class": null,
+    "yearsInCollege": null,
+    "consensusRank": 6,
+    "projectedRound": 1,
+    "projectedPickRange": [
+      1,
+      11
+    ],
+    "positionRank": 2,
     "espnGrade": 89.0,
     "espnId": "110720",
     "projectedTeam": "New York Jets",
@@ -1337,6 +1645,10 @@
       {
         "date": "2026-04-14",
         "rank": 5
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 6
       }
     ],
     "collegeStats": {
@@ -1409,262 +1721,11 @@
     ]
   },
   {
-    "id": "francis mauigoa-ot-miami",
-    "name": "Francis Mauigoa",
-    "position": "OT",
-    "positionGroup": "OL",
-    "school": "Miami",
-    "class": null,
-    "yearsInCollege": null,
-    "consensusRank": 6,
-    "projectedRound": 1,
-    "projectedPickRange": [
-      1,
-      11
-    ],
-    "positionRank": 1,
-    "espnGrade": 91.0,
-    "espnId": "110734",
-    "projectedTeam": "Arizona Cardinals",
-    "projectedPick": 3,
-    "classYear": "Jr",
-    "rankBySource": {
-      "walter_football": 3,
-      "cbs_sports": 16,
-      "tankathon": 8,
-      "espn": 5
-    },
-    "rankHistory": [
-      {
-        "date": "2026-02-28",
-        "rank": 7
-      },
-      {
-        "date": "2026-03-01",
-        "rank": 7
-      },
-      {
-        "date": "2026-03-02",
-        "rank": 7
-      },
-      {
-        "date": "2026-03-03",
-        "rank": 10
-      },
-      {
-        "date": "2026-03-04",
-        "rank": 9
-      },
-      {
-        "date": "2026-03-05",
-        "rank": 9
-      },
-      {
-        "date": "2026-03-06",
-        "rank": 9
-      },
-      {
-        "date": "2026-03-07",
-        "rank": 9
-      },
-      {
-        "date": "2026-03-08",
-        "rank": 9
-      },
-      {
-        "date": "2026-03-09",
-        "rank": 9
-      },
-      {
-        "date": "2026-03-10",
-        "rank": 9
-      },
-      {
-        "date": "2026-03-11",
-        "rank": 9
-      },
-      {
-        "date": "2026-03-12",
-        "rank": 9
-      },
-      {
-        "date": "2026-03-13",
-        "rank": 10
-      },
-      {
-        "date": "2026-03-14",
-        "rank": 10
-      },
-      {
-        "date": "2026-03-15",
-        "rank": 10
-      },
-      {
-        "date": "2026-03-16",
-        "rank": 10
-      },
-      {
-        "date": "2026-03-17",
-        "rank": 10
-      },
-      {
-        "date": "2026-03-18",
-        "rank": 13
-      },
-      {
-        "date": "2026-03-19",
-        "rank": 13
-      },
-      {
-        "date": "2026-03-20",
-        "rank": 13
-      },
-      {
-        "date": "2026-03-21",
-        "rank": 13
-      },
-      {
-        "date": "2026-03-22",
-        "rank": 13
-      },
-      {
-        "date": "2026-03-23",
-        "rank": 13
-      },
-      {
-        "date": "2026-03-24",
-        "rank": 10
-      },
-      {
-        "date": "2026-03-25",
-        "rank": 10
-      },
-      {
-        "date": "2026-03-26",
-        "rank": 10
-      },
-      {
-        "date": "2026-03-27",
-        "rank": 10
-      },
-      {
-        "date": "2026-03-28",
-        "rank": 10
-      },
-      {
-        "date": "2026-03-29",
-        "rank": 10
-      },
-      {
-        "date": "2026-03-30",
-        "rank": 10
-      },
-      {
-        "date": "2026-03-31",
-        "rank": 10
-      },
-      {
-        "date": "2026-04-01",
-        "rank": 10
-      },
-      {
-        "date": "2026-04-02",
-        "rank": 10
-      },
-      {
-        "date": "2026-04-03",
-        "rank": 8
-      },
-      {
-        "date": "2026-04-04",
-        "rank": 8
-      },
-      {
-        "date": "2026-04-05",
-        "rank": 8
-      },
-      {
-        "date": "2026-04-06",
-        "rank": 8
-      },
-      {
-        "date": "2026-04-07",
-        "rank": 8
-      },
-      {
-        "date": "2026-04-08",
-        "rank": 6
-      },
-      {
-        "date": "2026-04-09",
-        "rank": 6
-      },
-      {
-        "date": "2026-04-10",
-        "rank": 6
-      },
-      {
-        "date": "2026-04-11",
-        "rank": 6
-      },
-      {
-        "date": "2026-04-12",
-        "rank": 6
-      },
-      {
-        "date": "2026-04-13",
-        "rank": 6
-      },
-      {
-        "date": "2026-04-14",
-        "rank": 6
-      }
-    ],
-    "collegeStats": {},
-    "cbsStats": {},
-    "tankStats": {},
-    "combineData": {
-      "height": "6-6",
-      "weight": 315,
-      "forty": null,
-      "bench": null,
-      "vertical": null,
-      "broadJump": null,
-      "cone": null,
-      "shuttle": null,
-      "participated": true
-    },
-    "positionTotal": 93,
-    "playerComps": [
-      {
-        "name": "Abraham Lucas",
-        "year": 2022,
-        "pick": 72,
-        "school": "Washington St.",
-        "similarity": 100
-      },
-      {
-        "name": "Cordell Volson",
-        "year": 2022,
-        "pick": 136,
-        "school": "North Dakota St.",
-        "similarity": 100
-      },
-      {
-        "name": "Nick Zakelj",
-        "year": 2022,
-        "pick": 187,
-        "school": "Fordham",
-        "similarity": 96
-      }
-    ]
-  },
-  {
-    "id": "david bailey-de-texas tech",
-    "name": "David Bailey",
-    "position": "DE",
-    "positionGroup": "EDGE",
-    "school": "Texas Tech",
+    "id": "sonny styles-lb-ohio state",
+    "name": "Sonny Styles",
+    "position": "LB",
+    "positionGroup": "LB",
+    "school": "Ohio State",
     "class": null,
     "yearsInCollege": null,
     "consensusRank": 7,
@@ -1674,300 +1735,13 @@
       12
     ],
     "positionRank": 2,
-    "espnGrade": 92.0,
-    "espnId": "109531",
-    "projectedTeam": "Washington Commanders",
-    "projectedPick": 7,
-    "classYear": "Sr",
-    "rankBySource": {
-      "walter_football": 7,
-      "cbs_sports": 20,
-      "tankathon": 4,
-      "espn": 3
-    },
-    "rankHistory": [
-      {
-        "date": "2026-02-28",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-01",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-02",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-03",
-        "rank": 7
-      },
-      {
-        "date": "2026-03-04",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-05",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-06",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-07",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-08",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-09",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-10",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-11",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-12",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-13",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-14",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-15",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-16",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-17",
-        "rank": 6
-      },
-      {
-        "date": "2026-03-18",
-        "rank": 8
-      },
-      {
-        "date": "2026-03-19",
-        "rank": 8
-      },
-      {
-        "date": "2026-03-20",
-        "rank": 8
-      },
-      {
-        "date": "2026-03-21",
-        "rank": 8
-      },
-      {
-        "date": "2026-03-22",
-        "rank": 8
-      },
-      {
-        "date": "2026-03-23",
-        "rank": 8
-      },
-      {
-        "date": "2026-03-24",
-        "rank": 8
-      },
-      {
-        "date": "2026-03-25",
-        "rank": 8
-      },
-      {
-        "date": "2026-03-26",
-        "rank": 8
-      },
-      {
-        "date": "2026-03-27",
-        "rank": 8
-      },
-      {
-        "date": "2026-03-28",
-        "rank": 8
-      },
-      {
-        "date": "2026-03-29",
-        "rank": 8
-      },
-      {
-        "date": "2026-03-30",
-        "rank": 8
-      },
-      {
-        "date": "2026-03-31",
-        "rank": 9
-      },
-      {
-        "date": "2026-04-01",
-        "rank": 9
-      },
-      {
-        "date": "2026-04-02",
-        "rank": 9
-      },
-      {
-        "date": "2026-04-03",
-        "rank": 6
-      },
-      {
-        "date": "2026-04-04",
-        "rank": 6
-      },
-      {
-        "date": "2026-04-05",
-        "rank": 6
-      },
-      {
-        "date": "2026-04-06",
-        "rank": 6
-      },
-      {
-        "date": "2026-04-07",
-        "rank": 6
-      },
-      {
-        "date": "2026-04-08",
-        "rank": 7
-      },
-      {
-        "date": "2026-04-09",
-        "rank": 7
-      },
-      {
-        "date": "2026-04-10",
-        "rank": 7
-      },
-      {
-        "date": "2026-04-11",
-        "rank": 7
-      },
-      {
-        "date": "2026-04-12",
-        "rank": 7
-      },
-      {
-        "date": "2026-04-13",
-        "rank": 7
-      },
-      {
-        "date": "2026-04-14",
-        "rank": 7
-      }
-    ],
-    "collegeStats": {
-      "2025": {
-        "pbus": 3.0,
-        "sacks": 14.5,
-        "tfls": 19.5,
-        "tackles": 51.0
-      },
-      "2024": {
-        "pbus": 0.0,
-        "sacks": 6.0,
-        "tfls": 8.0,
-        "tackles": 31.0
-      },
-      "2023": {
-        "pbus": 0.0,
-        "sacks": 5.0,
-        "tfls": 6.0,
-        "tackles": 31.0
-      },
-      "2022": {
-        "pbus": 0.0,
-        "sacks": 1.5,
-        "tfls": 7.5,
-        "tackles": 43.0
-      }
-    },
-    "cbsStats": {
-      "games": 14.0,
-      "tackles": 52.0,
-      "sacks": 14.5,
-      "interceptions": 0.0
-    },
-    "tankStats": {
-      "TACKLES": "52",
-      "SACKS": "14.5",
-      "PASS DEF": "3",
-      "INT": "0",
-      "FF": "3"
-    },
-    "combineData": {
-      "height": "6-3",
-      "weight": 250,
-      "forty": 4.5,
-      "bench": null,
-      "vertical": 35.0,
-      "broadJump": 129.0,
-      "cone": null,
-      "shuttle": null,
-      "participated": true
-    },
-    "positionTotal": 35,
-    "playerComps": [
-      {
-        "name": "Abdul Carter",
-        "year": 2025,
-        "pick": 3,
-        "school": "Penn St.",
-        "similarity": 100
-      },
-      {
-        "name": "Mike Green",
-        "year": 2025,
-        "pick": 59,
-        "school": "Marshall",
-        "similarity": 96
-      },
-      {
-        "name": "Felix Anudike-Uzomah",
-        "year": 2023,
-        "pick": 31,
-        "school": "Kansas St.",
-        "similarity": 82
-      }
-    ]
-  },
-  {
-    "id": "sonny styles-lb-ohio state",
-    "name": "Sonny Styles",
-    "position": "LB",
-    "positionGroup": "LB",
-    "school": "Ohio State",
-    "class": null,
-    "yearsInCollege": null,
-    "consensusRank": 8,
-    "projectedRound": 1,
-    "projectedPickRange": [
-      3,
-      13
-    ],
-    "positionRank": 2,
     "espnGrade": 91.0,
     "espnId": "110775",
-    "projectedTeam": "New Orleans Saints",
+    "projectedTeam": "Cincinnati Bengals",
     "projectedPick": 5,
     "classYear": "Sr",
     "rankBySource": {
-      "walter_football": 8,
+      "walter_football": 10,
       "cbs_sports": 9,
       "tankathon": 6,
       "espn": 7
@@ -2156,6 +1930,10 @@
       {
         "date": "2026-04-14",
         "rank": 8
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 7
       }
     ],
     "collegeStats": {
@@ -2230,6 +2008,261 @@
         "pick": 33,
         "school": "UCLA",
         "similarity": 47
+      }
+    ]
+  },
+  {
+    "id": "francis mauigoa-ot-miami",
+    "name": "Francis Mauigoa",
+    "position": "OT",
+    "positionGroup": "OL",
+    "school": "Miami",
+    "class": null,
+    "yearsInCollege": null,
+    "consensusRank": 8,
+    "projectedRound": 1,
+    "projectedPickRange": [
+      3,
+      13
+    ],
+    "positionRank": 1,
+    "espnGrade": 91.0,
+    "espnId": "110734",
+    "projectedTeam": "Cleveland Browns",
+    "projectedPick": 3,
+    "classYear": "Jr",
+    "rankBySource": {
+      "walter_football": 6,
+      "cbs_sports": 16,
+      "tankathon": 8,
+      "espn": 5
+    },
+    "rankHistory": [
+      {
+        "date": "2026-02-28",
+        "rank": 7
+      },
+      {
+        "date": "2026-03-01",
+        "rank": 7
+      },
+      {
+        "date": "2026-03-02",
+        "rank": 7
+      },
+      {
+        "date": "2026-03-03",
+        "rank": 10
+      },
+      {
+        "date": "2026-03-04",
+        "rank": 9
+      },
+      {
+        "date": "2026-03-05",
+        "rank": 9
+      },
+      {
+        "date": "2026-03-06",
+        "rank": 9
+      },
+      {
+        "date": "2026-03-07",
+        "rank": 9
+      },
+      {
+        "date": "2026-03-08",
+        "rank": 9
+      },
+      {
+        "date": "2026-03-09",
+        "rank": 9
+      },
+      {
+        "date": "2026-03-10",
+        "rank": 9
+      },
+      {
+        "date": "2026-03-11",
+        "rank": 9
+      },
+      {
+        "date": "2026-03-12",
+        "rank": 9
+      },
+      {
+        "date": "2026-03-13",
+        "rank": 10
+      },
+      {
+        "date": "2026-03-14",
+        "rank": 10
+      },
+      {
+        "date": "2026-03-15",
+        "rank": 10
+      },
+      {
+        "date": "2026-03-16",
+        "rank": 10
+      },
+      {
+        "date": "2026-03-17",
+        "rank": 10
+      },
+      {
+        "date": "2026-03-18",
+        "rank": 13
+      },
+      {
+        "date": "2026-03-19",
+        "rank": 13
+      },
+      {
+        "date": "2026-03-20",
+        "rank": 13
+      },
+      {
+        "date": "2026-03-21",
+        "rank": 13
+      },
+      {
+        "date": "2026-03-22",
+        "rank": 13
+      },
+      {
+        "date": "2026-03-23",
+        "rank": 13
+      },
+      {
+        "date": "2026-03-24",
+        "rank": 10
+      },
+      {
+        "date": "2026-03-25",
+        "rank": 10
+      },
+      {
+        "date": "2026-03-26",
+        "rank": 10
+      },
+      {
+        "date": "2026-03-27",
+        "rank": 10
+      },
+      {
+        "date": "2026-03-28",
+        "rank": 10
+      },
+      {
+        "date": "2026-03-29",
+        "rank": 10
+      },
+      {
+        "date": "2026-03-30",
+        "rank": 10
+      },
+      {
+        "date": "2026-03-31",
+        "rank": 10
+      },
+      {
+        "date": "2026-04-01",
+        "rank": 10
+      },
+      {
+        "date": "2026-04-02",
+        "rank": 10
+      },
+      {
+        "date": "2026-04-03",
+        "rank": 8
+      },
+      {
+        "date": "2026-04-04",
+        "rank": 8
+      },
+      {
+        "date": "2026-04-05",
+        "rank": 8
+      },
+      {
+        "date": "2026-04-06",
+        "rank": 8
+      },
+      {
+        "date": "2026-04-07",
+        "rank": 8
+      },
+      {
+        "date": "2026-04-08",
+        "rank": 6
+      },
+      {
+        "date": "2026-04-09",
+        "rank": 6
+      },
+      {
+        "date": "2026-04-10",
+        "rank": 6
+      },
+      {
+        "date": "2026-04-11",
+        "rank": 6
+      },
+      {
+        "date": "2026-04-12",
+        "rank": 6
+      },
+      {
+        "date": "2026-04-13",
+        "rank": 6
+      },
+      {
+        "date": "2026-04-14",
+        "rank": 6
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 8
+      }
+    ],
+    "collegeStats": {},
+    "cbsStats": {},
+    "tankStats": {},
+    "combineData": {
+      "height": "6-6",
+      "weight": 315,
+      "forty": null,
+      "bench": null,
+      "vertical": null,
+      "broadJump": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": true
+    },
+    "positionTotal": 93,
+    "playerComps": [
+      {
+        "name": "Abraham Lucas",
+        "year": 2022,
+        "pick": 72,
+        "school": "Washington St.",
+        "similarity": 100
+      },
+      {
+        "name": "Cordell Volson",
+        "year": 2022,
+        "pick": 136,
+        "school": "North Dakota St.",
+        "similarity": 100
+      },
+      {
+        "name": "Nick Zakelj",
+        "year": 2022,
+        "pick": 187,
+        "school": "Fordham",
+        "similarity": 96
       }
     ]
   },
@@ -2442,6 +2475,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 9
+      },
+      {
+        "date": "2026-04-15",
         "rank": 9
       }
     ],
@@ -2694,6 +2731,10 @@
       {
         "date": "2026-04-14",
         "rank": 10
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 10
       }
     ],
     "collegeStats": {
@@ -2792,7 +2833,7 @@
     "projectedPick": 6,
     "classYear": "Jr",
     "rankBySource": {
-      "walter_football": 6,
+      "walter_football": 7,
       "cbs_sports": 18,
       "tankathon": 9,
       "espn": 13
@@ -2980,6 +3021,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 11
+      },
+      {
+        "date": "2026-04-15",
         "rank": 11
       }
     ],
@@ -3260,6 +3305,10 @@
       {
         "date": "2026-04-14",
         "rank": 12
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 12
       }
     ],
     "collegeStats": {
@@ -3538,6 +3587,10 @@
       {
         "date": "2026-04-14",
         "rank": 13
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 13
       }
     ],
     "collegeStats": {},
@@ -3788,6 +3841,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 14
+      },
+      {
+        "date": "2026-04-15",
         "rank": 14
       }
     ],
@@ -4058,6 +4115,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 15
+      },
+      {
+        "date": "2026-04-15",
         "rank": 15
       }
     ],
@@ -4336,6 +4397,10 @@
       {
         "date": "2026-04-14",
         "rank": 16
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 16
       }
     ],
     "collegeStats": {},
@@ -4583,6 +4648,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 17
+      },
+      {
+        "date": "2026-04-15",
         "rank": 17
       }
     ],
@@ -4841,6 +4910,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 18
+      },
+      {
+        "date": "2026-04-15",
         "rank": 18
       }
     ],
@@ -5119,6 +5192,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 19
+      },
+      {
+        "date": "2026-04-15",
         "rank": 19
       }
     ],
@@ -5400,6 +5477,10 @@
       {
         "date": "2026-04-14",
         "rank": 20
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 20
       }
     ],
     "collegeStats": {},
@@ -5442,287 +5523,6 @@
     ]
   },
   {
-    "id": "peter woods-dt-clemson",
-    "name": "Peter Woods",
-    "position": "DT",
-    "positionGroup": "DL",
-    "school": "Clemson",
-    "class": null,
-    "yearsInCollege": null,
-    "consensusRank": 21,
-    "projectedRound": 1,
-    "projectedPickRange": [
-      16,
-      26
-    ],
-    "positionRank": 1,
-    "espnGrade": 87.0,
-    "espnId": "110718",
-    "projectedTeam": "Carolina Panthers",
-    "projectedPick": 22,
-    "classYear": "Jr",
-    "rankBySource": {
-      "walter_football": 10,
-      "cbs_sports": 19,
-      "tankathon": 25,
-      "espn": 27
-    },
-    "rankHistory": [
-      {
-        "date": "2026-02-28",
-        "rank": 26
-      },
-      {
-        "date": "2026-03-01",
-        "rank": 14
-      },
-      {
-        "date": "2026-03-02",
-        "rank": 14
-      },
-      {
-        "date": "2026-03-03",
-        "rank": 14
-      },
-      {
-        "date": "2026-03-04",
-        "rank": 13
-      },
-      {
-        "date": "2026-03-05",
-        "rank": 16
-      },
-      {
-        "date": "2026-03-06",
-        "rank": 16
-      },
-      {
-        "date": "2026-03-07",
-        "rank": 16
-      },
-      {
-        "date": "2026-03-08",
-        "rank": 16
-      },
-      {
-        "date": "2026-03-09",
-        "rank": 16
-      },
-      {
-        "date": "2026-03-10",
-        "rank": 16
-      },
-      {
-        "date": "2026-03-11",
-        "rank": 16
-      },
-      {
-        "date": "2026-03-12",
-        "rank": 16
-      },
-      {
-        "date": "2026-03-13",
-        "rank": 18
-      },
-      {
-        "date": "2026-03-14",
-        "rank": 18
-      },
-      {
-        "date": "2026-03-15",
-        "rank": 18
-      },
-      {
-        "date": "2026-03-16",
-        "rank": 18
-      },
-      {
-        "date": "2026-03-17",
-        "rank": 18
-      },
-      {
-        "date": "2026-03-18",
-        "rank": 18
-      },
-      {
-        "date": "2026-03-19",
-        "rank": 18
-      },
-      {
-        "date": "2026-03-20",
-        "rank": 18
-      },
-      {
-        "date": "2026-03-21",
-        "rank": 17
-      },
-      {
-        "date": "2026-03-22",
-        "rank": 17
-      },
-      {
-        "date": "2026-03-23",
-        "rank": 17
-      },
-      {
-        "date": "2026-03-24",
-        "rank": 17
-      },
-      {
-        "date": "2026-03-25",
-        "rank": 17
-      },
-      {
-        "date": "2026-03-26",
-        "rank": 17
-      },
-      {
-        "date": "2026-03-27",
-        "rank": 17
-      },
-      {
-        "date": "2026-03-28",
-        "rank": 17
-      },
-      {
-        "date": "2026-03-29",
-        "rank": 17
-      },
-      {
-        "date": "2026-03-30",
-        "rank": 17
-      },
-      {
-        "date": "2026-03-31",
-        "rank": 17
-      },
-      {
-        "date": "2026-04-01",
-        "rank": 17
-      },
-      {
-        "date": "2026-04-02",
-        "rank": 17
-      },
-      {
-        "date": "2026-04-03",
-        "rank": 19
-      },
-      {
-        "date": "2026-04-04",
-        "rank": 19
-      },
-      {
-        "date": "2026-04-05",
-        "rank": 19
-      },
-      {
-        "date": "2026-04-06",
-        "rank": 19
-      },
-      {
-        "date": "2026-04-07",
-        "rank": 20
-      },
-      {
-        "date": "2026-04-08",
-        "rank": 21
-      },
-      {
-        "date": "2026-04-09",
-        "rank": 21
-      },
-      {
-        "date": "2026-04-10",
-        "rank": 21
-      },
-      {
-        "date": "2026-04-11",
-        "rank": 21
-      },
-      {
-        "date": "2026-04-12",
-        "rank": 21
-      },
-      {
-        "date": "2026-04-13",
-        "rank": 21
-      },
-      {
-        "date": "2026-04-14",
-        "rank": 21
-      }
-    ],
-    "collegeStats": {
-      "2024": {
-        "pbus": 0.0,
-        "sacks": 3.0,
-        "tfls": 7.0,
-        "tackles": 26.0
-      },
-      "2023": {
-        "pbus": 0.0,
-        "sacks": 0.0,
-        "tfls": 2.5,
-        "tackles": 26.0
-      },
-      "2025": {
-        "pbus": 1.0,
-        "sacks": 1.5,
-        "tfls": 2.5,
-        "tackles": 29.0
-      }
-    },
-    "cbsStats": {
-      "games": 11.0,
-      "tackles": 30.0,
-      "sacks": 2.0,
-      "interceptions": 0.0
-    },
-    "tankStats": {
-      "TACKLES": "30",
-      "SACKS": "2.0",
-      "PASS DEF": "1",
-      "INT": "0",
-      "FF": "0"
-    },
-    "combineData": {
-      "height": "6-3",
-      "weight": 315,
-      "forty": null,
-      "bench": null,
-      "vertical": null,
-      "broadJump": null,
-      "cone": null,
-      "shuttle": null,
-      "participated": false
-    },
-    "positionTotal": 48,
-    "playerComps": [
-      {
-        "name": "Jalen Carter",
-        "year": 2023,
-        "pick": 9,
-        "school": "Georgia",
-        "similarity": 98
-      },
-      {
-        "name": "Daviyon Nixon",
-        "year": 2021,
-        "pick": 158,
-        "school": "Iowa",
-        "similarity": 96
-      },
-      {
-        "name": "Jordan Jefferson",
-        "year": 2024,
-        "pick": 116,
-        "school": "LSU",
-        "similarity": 96
-      }
-    ]
-  },
-  {
     "id": "caleb lomu-ot-utah",
     "name": "Caleb Lomu",
     "position": "OT",
@@ -5730,11 +5530,11 @@
     "school": "Utah",
     "class": null,
     "yearsInCollege": null,
-    "consensusRank": 22,
+    "consensusRank": 21,
     "projectedRound": 1,
     "projectedPickRange": [
-      17,
-      27
+      16,
+      26
     ],
     "positionRank": 7,
     "espnGrade": 87.0,
@@ -5931,6 +5731,10 @@
       {
         "date": "2026-04-14",
         "rank": 22
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 21
       }
     ],
     "collegeStats": {},
@@ -5980,11 +5784,11 @@
     "school": "Indiana",
     "class": null,
     "yearsInCollege": null,
-    "consensusRank": 23,
+    "consensusRank": 22,
     "projectedRound": 1,
     "projectedPickRange": [
-      18,
-      28
+      17,
+      27
     ],
     "positionRank": 4,
     "espnGrade": 87.0,
@@ -6181,6 +5985,10 @@
       {
         "date": "2026-04-14",
         "rank": 23
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 22
       }
     ],
     "collegeStats": {
@@ -6258,11 +6066,11 @@
     "school": "Toledo",
     "class": null,
     "yearsInCollege": null,
-    "consensusRank": 24,
+    "consensusRank": 23,
     "projectedRound": 1,
     "projectedPickRange": [
-      19,
-      29
+      18,
+      28
     ],
     "positionRank": 5,
     "espnGrade": 87.0,
@@ -6459,6 +6267,10 @@
       {
         "date": "2026-04-14",
         "rank": 24
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 23
       }
     ],
     "collegeStats": {
@@ -6522,11 +6334,11 @@
     "school": "Miami",
     "class": null,
     "yearsInCollege": null,
-    "consensusRank": 25,
+    "consensusRank": 24,
     "projectedRound": 1,
     "projectedPickRange": [
-      20,
-      30
+      19,
+      29
     ],
     "positionRank": 3,
     "espnGrade": 88.0,
@@ -6723,6 +6535,10 @@
       {
         "date": "2026-04-14",
         "rank": 25
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 24
       }
     ],
     "collegeStats": {
@@ -6797,6 +6613,290 @@
         "pick": 78,
         "school": "Oregon",
         "similarity": 69
+      }
+    ]
+  },
+  {
+    "id": "peter woods-dl-clemson",
+    "name": "Peter Woods",
+    "position": "DL",
+    "positionGroup": "DL",
+    "school": "Clemson",
+    "class": null,
+    "yearsInCollege": null,
+    "consensusRank": 25,
+    "projectedRound": 1,
+    "projectedPickRange": [
+      20,
+      30
+    ],
+    "positionRank": 1,
+    "espnGrade": 87.0,
+    "espnId": "110718",
+    "projectedTeam": "Carolina Panthers",
+    "projectedPick": 22,
+    "classYear": "Jr",
+    "rankBySource": {
+      "cbs_sports": 19,
+      "tankathon": 25,
+      "espn": 27
+    },
+    "rankHistory": [
+      {
+        "date": "2026-02-28",
+        "rank": 26
+      },
+      {
+        "date": "2026-03-01",
+        "rank": 14
+      },
+      {
+        "date": "2026-03-02",
+        "rank": 14
+      },
+      {
+        "date": "2026-03-03",
+        "rank": 14
+      },
+      {
+        "date": "2026-03-04",
+        "rank": 13
+      },
+      {
+        "date": "2026-03-05",
+        "rank": 16
+      },
+      {
+        "date": "2026-03-06",
+        "rank": 16
+      },
+      {
+        "date": "2026-03-07",
+        "rank": 16
+      },
+      {
+        "date": "2026-03-08",
+        "rank": 16
+      },
+      {
+        "date": "2026-03-09",
+        "rank": 16
+      },
+      {
+        "date": "2026-03-10",
+        "rank": 16
+      },
+      {
+        "date": "2026-03-11",
+        "rank": 16
+      },
+      {
+        "date": "2026-03-12",
+        "rank": 16
+      },
+      {
+        "date": "2026-03-13",
+        "rank": 18
+      },
+      {
+        "date": "2026-03-14",
+        "rank": 18
+      },
+      {
+        "date": "2026-03-15",
+        "rank": 18
+      },
+      {
+        "date": "2026-03-16",
+        "rank": 18
+      },
+      {
+        "date": "2026-03-17",
+        "rank": 18
+      },
+      {
+        "date": "2026-03-18",
+        "rank": 18
+      },
+      {
+        "date": "2026-03-19",
+        "rank": 18
+      },
+      {
+        "date": "2026-03-20",
+        "rank": 18
+      },
+      {
+        "date": "2026-03-21",
+        "rank": 17
+      },
+      {
+        "date": "2026-03-22",
+        "rank": 17
+      },
+      {
+        "date": "2026-03-23",
+        "rank": 17
+      },
+      {
+        "date": "2026-03-24",
+        "rank": 17
+      },
+      {
+        "date": "2026-03-25",
+        "rank": 17
+      },
+      {
+        "date": "2026-03-26",
+        "rank": 17
+      },
+      {
+        "date": "2026-03-27",
+        "rank": 17
+      },
+      {
+        "date": "2026-03-28",
+        "rank": 17
+      },
+      {
+        "date": "2026-03-29",
+        "rank": 17
+      },
+      {
+        "date": "2026-03-30",
+        "rank": 17
+      },
+      {
+        "date": "2026-03-31",
+        "rank": 17
+      },
+      {
+        "date": "2026-04-01",
+        "rank": 17
+      },
+      {
+        "date": "2026-04-02",
+        "rank": 17
+      },
+      {
+        "date": "2026-04-03",
+        "rank": 19
+      },
+      {
+        "date": "2026-04-04",
+        "rank": 19
+      },
+      {
+        "date": "2026-04-05",
+        "rank": 19
+      },
+      {
+        "date": "2026-04-06",
+        "rank": 19
+      },
+      {
+        "date": "2026-04-07",
+        "rank": 20
+      },
+      {
+        "date": "2026-04-08",
+        "rank": 21
+      },
+      {
+        "date": "2026-04-09",
+        "rank": 21
+      },
+      {
+        "date": "2026-04-10",
+        "rank": 21
+      },
+      {
+        "date": "2026-04-11",
+        "rank": 21
+      },
+      {
+        "date": "2026-04-12",
+        "rank": 21
+      },
+      {
+        "date": "2026-04-13",
+        "rank": 21
+      },
+      {
+        "date": "2026-04-14",
+        "rank": 21
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 25
+      }
+    ],
+    "collegeStats": {
+      "2024": {
+        "pbus": 0.0,
+        "sacks": 3.0,
+        "tfls": 7.0,
+        "tackles": 26.0
+      },
+      "2023": {
+        "pbus": 0.0,
+        "sacks": 0.0,
+        "tfls": 2.5,
+        "tackles": 26.0
+      },
+      "2025": {
+        "pbus": 1.0,
+        "sacks": 1.5,
+        "tfls": 2.5,
+        "tackles": 29.0
+      }
+    },
+    "cbsStats": {
+      "games": 11.0,
+      "tackles": 30.0,
+      "sacks": 2.0,
+      "interceptions": 0.0
+    },
+    "tankStats": {
+      "TACKLES": "30",
+      "SACKS": "2.0",
+      "PASS DEF": "1",
+      "INT": "0",
+      "FF": "0"
+    },
+    "combineData": {
+      "height": "6-3",
+      "weight": 315,
+      "forty": null,
+      "bench": null,
+      "vertical": null,
+      "broadJump": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": false
+    },
+    "positionTotal": 48,
+    "playerComps": [
+      {
+        "name": "Jalen Carter",
+        "year": 2023,
+        "pick": 9,
+        "school": "Georgia",
+        "similarity": 98
+      },
+      {
+        "name": "Daviyon Nixon",
+        "year": 2021,
+        "pick": 158,
+        "school": "Iowa",
+        "similarity": 96
+      },
+      {
+        "name": "Jordan Jefferson",
+        "year": 2024,
+        "pick": 116,
+        "school": "LSU",
+        "similarity": 96
       }
     ]
   },
@@ -7008,6 +7108,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 26
+      },
+      {
+        "date": "2026-04-15",
         "rank": 26
       }
     ],
@@ -7289,6 +7393,10 @@
       {
         "date": "2026-04-14",
         "rank": 27
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 27
       }
     ],
     "collegeStats": {
@@ -7568,6 +7676,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 28
+      },
+      {
+        "date": "2026-04-15",
         "rank": 28
       }
     ],
@@ -7862,6 +7974,10 @@
       {
         "date": "2026-04-14",
         "rank": 29
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 29
       }
     ],
     "collegeStats": {
@@ -8141,6 +8257,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 30
+      },
+      {
+        "date": "2026-04-15",
         "rank": 30
       }
     ],
@@ -8424,6 +8544,10 @@
       {
         "date": "2026-04-14",
         "rank": 31
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 31
       }
     ],
     "collegeStats": {},
@@ -8679,6 +8803,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 32
+      },
+      {
+        "date": "2026-04-15",
         "rank": 32
       }
     ],
@@ -8966,6 +9094,10 @@
       {
         "date": "2026-04-14",
         "rank": 33
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 33
       }
     ],
     "collegeStats": {
@@ -9245,6 +9377,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 34
+      },
+      {
+        "date": "2026-04-15",
         "rank": 34
       }
     ],
@@ -9532,6 +9668,10 @@
       {
         "date": "2026-04-14",
         "rank": 35
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 35
       }
     ],
     "collegeStats": {},
@@ -9782,6 +9922,10 @@
       {
         "date": "2026-04-14",
         "rank": 36
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 36
       }
     ],
     "collegeStats": {},
@@ -10031,6 +10175,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 37
+      },
+      {
+        "date": "2026-04-15",
         "rank": 37
       }
     ],
@@ -10311,6 +10459,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 38
+      },
+      {
+        "date": "2026-04-15",
         "rank": 38
       }
     ],
@@ -10597,6 +10749,10 @@
       {
         "date": "2026-04-14",
         "rank": 39
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 39
       }
     ],
     "collegeStats": {
@@ -10858,6 +11014,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 40
+      },
+      {
+        "date": "2026-04-15",
         "rank": 40
       }
     ],
@@ -11134,6 +11294,10 @@
       {
         "date": "2026-04-14",
         "rank": 41
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 41
       }
     ],
     "collegeStats": {},
@@ -11383,6 +11547,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 42
+      },
+      {
+        "date": "2026-04-15",
         "rank": 42
       }
     ],
@@ -11663,6 +11831,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 43
+      },
+      {
+        "date": "2026-04-15",
         "rank": 43
       }
     ],
@@ -11947,6 +12119,10 @@
       {
         "date": "2026-04-14",
         "rank": 44
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 44
       }
     ],
     "collegeStats": {},
@@ -12196,6 +12372,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 45
+      },
+      {
+        "date": "2026-04-15",
         "rank": 45
       }
     ],
@@ -12476,6 +12656,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 46
+      },
+      {
+        "date": "2026-04-15",
         "rank": 46
       }
     ],
@@ -12763,6 +12947,10 @@
       {
         "date": "2026-04-14",
         "rank": 47
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 47
       }
     ],
     "collegeStats": {
@@ -13048,6 +13236,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 48
+      },
+      {
+        "date": "2026-04-15",
         "rank": 48
       }
     ],
@@ -13335,6 +13527,10 @@
       {
         "date": "2026-04-14",
         "rank": 49
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 49
       }
     ],
     "collegeStats": {
@@ -13618,6 +13814,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 50
+      },
+      {
+        "date": "2026-04-15",
         "rank": 50
       }
     ],
@@ -13905,6 +14105,10 @@
       {
         "date": "2026-04-14",
         "rank": 51
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 51
       }
     ],
     "collegeStats": {
@@ -14183,6 +14387,10 @@
       {
         "date": "2026-04-14",
         "rank": 52
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 52
       }
     ],
     "collegeStats": {
@@ -14460,6 +14668,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 53
+      },
+      {
+        "date": "2026-04-15",
         "rank": 53
       }
     ],
@@ -14743,6 +14955,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 54
+      },
+      {
+        "date": "2026-04-15",
         "rank": 54
       }
     ],
@@ -15030,6 +15246,10 @@
       {
         "date": "2026-04-14",
         "rank": 55
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 55
       }
     ],
     "collegeStats": {
@@ -15315,6 +15535,10 @@
       {
         "date": "2026-04-14",
         "rank": 56
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 56
       }
     ],
     "collegeStats": {
@@ -15596,6 +15820,10 @@
       {
         "date": "2026-04-14",
         "rank": 57
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 57
       }
     ],
     "collegeStats": {
@@ -15868,6 +16096,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 58
+      },
+      {
+        "date": "2026-04-15",
         "rank": 58
       }
     ],
@@ -16142,6 +16374,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 59
+      },
+      {
+        "date": "2026-04-15",
         "rank": 59
       }
     ],
@@ -16423,6 +16659,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 60
+      },
+      {
+        "date": "2026-04-15",
         "rank": 60
       }
     ],
@@ -16710,6 +16950,10 @@
       {
         "date": "2026-04-14",
         "rank": 61
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 61
       }
     ],
     "collegeStats": {
@@ -16974,6 +17218,10 @@
       {
         "date": "2026-04-14",
         "rank": 62
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 62
       }
     ],
     "collegeStats": {},
@@ -17223,6 +17471,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 63
+      },
+      {
+        "date": "2026-04-15",
         "rank": 63
       }
     ],
@@ -17506,6 +17758,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 64
+      },
+      {
+        "date": "2026-04-15",
         "rank": 64
       }
     ],
@@ -17793,6 +18049,10 @@
       {
         "date": "2026-04-14",
         "rank": 65
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 65
       }
     ],
     "collegeStats": {
@@ -18076,6 +18336,10 @@
       {
         "date": "2026-04-14",
         "rank": 66
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 66
       }
     ],
     "collegeStats": {},
@@ -18326,6 +18590,10 @@
       {
         "date": "2026-04-14",
         "rank": 67
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 67
       }
     ],
     "collegeStats": {},
@@ -18575,6 +18843,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 68
+      },
+      {
+        "date": "2026-04-15",
         "rank": 68
       }
     ],
@@ -18862,6 +19134,10 @@
       {
         "date": "2026-04-14",
         "rank": 69
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 69
       }
     ],
     "collegeStats": {
@@ -19142,6 +19418,10 @@
       {
         "date": "2026-04-14",
         "rank": 70
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 70
       }
     ],
     "collegeStats": {
@@ -19420,6 +19700,10 @@
       {
         "date": "2026-04-14",
         "rank": 71
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 71
       }
     ],
     "collegeStats": {},
@@ -19669,6 +19953,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 72
+      },
+      {
+        "date": "2026-04-15",
         "rank": 72
       }
     ],
@@ -19953,6 +20241,10 @@
       {
         "date": "2026-04-14",
         "rank": 73
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 73
       }
     ],
     "collegeStats": {
@@ -20232,6 +20524,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 74
+      },
+      {
+        "date": "2026-04-15",
         "rank": 74
       }
     ],
@@ -20515,6 +20811,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 75
+      },
+      {
+        "date": "2026-04-15",
         "rank": 75
       }
     ],
@@ -20802,6 +21102,10 @@
       {
         "date": "2026-04-14",
         "rank": 76
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 76
       }
     ],
     "collegeStats": {
@@ -21088,6 +21392,10 @@
       {
         "date": "2026-04-14",
         "rank": 77
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 77
       }
     ],
     "collegeStats": {
@@ -21368,6 +21676,10 @@
       {
         "date": "2026-04-14",
         "rank": 78
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 78
       }
     ],
     "collegeStats": {
@@ -21647,6 +21959,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 79
+      },
+      {
+        "date": "2026-04-15",
         "rank": 79
       }
     ],
@@ -21934,6 +22250,10 @@
       {
         "date": "2026-04-14",
         "rank": 80
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 80
       }
     ],
     "collegeStats": {
@@ -22220,6 +22540,10 @@
       {
         "date": "2026-04-14",
         "rank": 81
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 81
       }
     ],
     "collegeStats": {
@@ -22502,6 +22826,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 82
+      },
+      {
+        "date": "2026-04-15",
         "rank": 82
       }
     ],
@@ -22789,6 +23117,10 @@
       {
         "date": "2026-04-14",
         "rank": 83
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 83
       }
     ],
     "collegeStats": {
@@ -23072,6 +23404,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 84
+      },
+      {
+        "date": "2026-04-15",
         "rank": 84
       }
     ],
@@ -23367,6 +23703,10 @@
       {
         "date": "2026-04-14",
         "rank": 85
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 85
       }
     ],
     "collegeStats": {
@@ -23639,6 +23979,10 @@
       {
         "date": "2026-04-14",
         "rank": 86
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 86
       }
     ],
     "collegeStats": {},
@@ -23887,6 +24231,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 87
+      },
+      {
+        "date": "2026-04-15",
         "rank": 87
       }
     ],
@@ -24142,6 +24490,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 88
+      },
+      {
+        "date": "2026-04-15",
         "rank": 88
       }
     ],
@@ -24420,6 +24772,10 @@
       {
         "date": "2026-04-14",
         "rank": 89
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 89
       }
     ],
     "collegeStats": {
@@ -24681,6 +25037,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 90
+      },
+      {
+        "date": "2026-04-15",
         "rank": 90
       }
     ],
@@ -24968,6 +25328,10 @@
       {
         "date": "2026-04-14",
         "rank": 91
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 91
       }
     ],
     "collegeStats": {
@@ -25253,6 +25617,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 92
+      },
+      {
+        "date": "2026-04-15",
         "rank": 92
       }
     ],
@@ -25540,6 +25908,10 @@
       {
         "date": "2026-04-14",
         "rank": 93
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 93
       }
     ],
     "collegeStats": {
@@ -25813,6 +26185,10 @@
       {
         "date": "2026-04-14",
         "rank": 94
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 94
       }
     ],
     "collegeStats": {},
@@ -26062,6 +26438,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 95
+      },
+      {
+        "date": "2026-04-15",
         "rank": 95
       }
     ],
@@ -26346,6 +26726,10 @@
       {
         "date": "2026-04-14",
         "rank": 96
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 96
       }
     ],
     "collegeStats": {},
@@ -26595,6 +26979,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 97
+      },
+      {
+        "date": "2026-04-15",
         "rank": 97
       }
     ],
@@ -26875,6 +27263,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 98
+      },
+      {
+        "date": "2026-04-15",
         "rank": 98
       }
     ],
@@ -27159,6 +27551,10 @@
       {
         "date": "2026-04-14",
         "rank": 99
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 99
       }
     ],
     "collegeStats": {},
@@ -27408,6 +27804,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 100
+      },
+      {
+        "date": "2026-04-15",
         "rank": 100
       }
     ],
@@ -27678,6 +28078,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 101
+      },
+      {
+        "date": "2026-04-15",
         "rank": 101
       }
     ],
@@ -27962,6 +28366,10 @@
       {
         "date": "2026-04-14",
         "rank": 102
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 102
       }
     ],
     "collegeStats": {},
@@ -28211,6 +28619,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 103
+      },
+      {
+        "date": "2026-04-15",
         "rank": 103
       }
     ],
@@ -28498,6 +28910,10 @@
       {
         "date": "2026-04-14",
         "rank": 104
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 104
       }
     ],
     "collegeStats": {},
@@ -28747,6 +29163,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 105
+      },
+      {
+        "date": "2026-04-15",
         "rank": 105
       }
     ],
@@ -29030,6 +29450,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 106
+      },
+      {
+        "date": "2026-04-15",
         "rank": 106
       }
     ],
@@ -29315,6 +29739,10 @@
       {
         "date": "2026-04-14",
         "rank": 107
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 107
       }
     ],
     "collegeStats": {
@@ -29580,6 +30008,10 @@
       {
         "date": "2026-04-14",
         "rank": 108
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 108
       }
     ],
     "collegeStats": {},
@@ -29829,6 +30261,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 109
+      },
+      {
+        "date": "2026-04-15",
         "rank": 109
       }
     ],
@@ -30116,6 +30552,10 @@
       {
         "date": "2026-04-14",
         "rank": 110
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 110
       }
     ],
     "collegeStats": {
@@ -30402,6 +30842,10 @@
       {
         "date": "2026-04-14",
         "rank": 111
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 111
       }
     ],
     "collegeStats": {
@@ -30673,6 +31117,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 112
+      },
+      {
+        "date": "2026-04-15",
         "rank": 112
       }
     ],
@@ -30960,6 +31408,10 @@
       {
         "date": "2026-04-14",
         "rank": 113
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 113
       }
     ],
     "collegeStats": {
@@ -31245,6 +31697,10 @@
       {
         "date": "2026-04-14",
         "rank": 114
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 114
       }
     ],
     "collegeStats": {},
@@ -31495,6 +31951,10 @@
       {
         "date": "2026-04-14",
         "rank": 115
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 115
       }
     ],
     "collegeStats": {},
@@ -31744,6 +32204,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 116
+      },
+      {
+        "date": "2026-04-15",
         "rank": 116
       }
     ],
@@ -32031,6 +32495,10 @@
       {
         "date": "2026-04-14",
         "rank": 117
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 117
       }
     ],
     "collegeStats": {
@@ -32309,6 +32777,10 @@
       {
         "date": "2026-04-14",
         "rank": 118
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 118
       }
     ],
     "collegeStats": {
@@ -32570,6 +33042,10 @@
       {
         "date": "2026-04-14",
         "rank": 119
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 119
       }
     ],
     "collegeStats": {},
@@ -32819,6 +33295,10 @@
       {
         "date": "2026-04-14",
         "rank": 120
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 120
       }
     ],
     "collegeStats": {},
@@ -33046,6 +33526,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 121
+      },
+      {
+        "date": "2026-04-15",
         "rank": 121
       }
     ],
@@ -33324,6 +33808,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 122
+      },
+      {
+        "date": "2026-04-15",
         "rank": 122
       }
     ],
@@ -33608,6 +34096,10 @@
       {
         "date": "2026-04-14",
         "rank": 123
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 123
       }
     ],
     "collegeStats": {},
@@ -33857,6 +34349,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 124
+      },
+      {
+        "date": "2026-04-15",
         "rank": 124
       }
     ],
@@ -34141,6 +34637,10 @@
       {
         "date": "2026-04-14",
         "rank": 125
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 125
       }
     ],
     "collegeStats": {},
@@ -34390,6 +34890,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 126
+      },
+      {
+        "date": "2026-04-15",
         "rank": 126
       }
     ],
@@ -34641,6 +35145,10 @@
       {
         "date": "2026-04-14",
         "rank": 127
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 127
       }
     ],
     "collegeStats": {
@@ -34884,6 +35392,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 128
+      },
+      {
+        "date": "2026-04-15",
         "rank": 128
       }
     ],
@@ -35167,6 +35679,10 @@
       {
         "date": "2026-04-14",
         "rank": 129
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 129
       }
     ],
     "collegeStats": {
@@ -35442,6 +35958,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 130
+      },
+      {
+        "date": "2026-04-15",
         "rank": 130
       }
     ],
@@ -35723,6 +36243,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 131
+      },
+      {
+        "date": "2026-04-15",
         "rank": 131
       }
     ],
@@ -36007,6 +36531,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 132
+      },
+      {
+        "date": "2026-04-15",
         "rank": 132
       }
     ],
@@ -36297,6 +36825,10 @@
       {
         "date": "2026-04-14",
         "rank": 133
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 133
       }
     ],
     "collegeStats": {
@@ -36580,6 +37112,10 @@
       {
         "date": "2026-04-14",
         "rank": 134
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 134
       }
     ],
     "collegeStats": {
@@ -36849,6 +37385,10 @@
       {
         "date": "2026-04-14",
         "rank": 135
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 135
       }
     ],
     "collegeStats": {},
@@ -37098,6 +37638,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 136
+      },
+      {
+        "date": "2026-04-15",
         "rank": 136
       }
     ],
@@ -37379,6 +37923,10 @@
       {
         "date": "2026-04-14",
         "rank": 137
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 137
       }
     ],
     "collegeStats": {
@@ -37523,6 +38071,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 138
+      },
+      {
+        "date": "2026-04-15",
         "rank": 138
       }
     ],
@@ -37772,6 +38324,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 139
+      },
+      {
+        "date": "2026-04-15",
         "rank": 139
       }
     ],
@@ -38052,6 +38608,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 140
+      },
+      {
+        "date": "2026-04-15",
         "rank": 140
       }
     ],
@@ -38344,6 +38904,10 @@
       {
         "date": "2026-04-14",
         "rank": 141
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 141
       }
     ],
     "collegeStats": {
@@ -38635,6 +39199,10 @@
       {
         "date": "2026-04-14",
         "rank": 142
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 142
       }
     ],
     "collegeStats": {},
@@ -38884,6 +39452,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 143
+      },
+      {
+        "date": "2026-04-15",
         "rank": 143
       }
     ],
@@ -39167,6 +39739,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 144
+      },
+      {
+        "date": "2026-04-15",
         "rank": 144
       }
     ],
@@ -39462,6 +40038,10 @@
       {
         "date": "2026-04-14",
         "rank": 145
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 145
       }
     ],
     "collegeStats": {},
@@ -39710,6 +40290,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 146
+      },
+      {
+        "date": "2026-04-15",
         "rank": 146
       }
     ],
@@ -39985,6 +40569,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 147
+      },
+      {
+        "date": "2026-04-15",
         "rank": 147
       }
     ],
@@ -40264,6 +40852,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 148
+      },
+      {
+        "date": "2026-04-15",
         "rank": 148
       }
     ],
@@ -40551,6 +41143,10 @@
       {
         "date": "2026-04-14",
         "rank": 149
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 149
       }
     ],
     "collegeStats": {
@@ -40836,6 +41432,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 150
+      },
+      {
+        "date": "2026-04-15",
         "rank": 150
       }
     ],
@@ -41132,6 +41732,10 @@
       {
         "date": "2026-04-14",
         "rank": 151
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 151
       }
     ],
     "collegeStats": {
@@ -41342,6 +41946,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 152
+      },
+      {
+        "date": "2026-04-15",
         "rank": 152
       }
     ],
@@ -41623,6 +42231,10 @@
       {
         "date": "2026-04-14",
         "rank": 153
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 153
       }
     ],
     "collegeStats": {
@@ -41900,6 +42512,10 @@
       {
         "date": "2026-04-14",
         "rank": 154
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 154
       }
     ],
     "collegeStats": {
@@ -42176,6 +42792,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 155
+      },
+      {
+        "date": "2026-04-15",
         "rank": 155
       }
     ],
@@ -42467,6 +43087,10 @@
       {
         "date": "2026-04-14",
         "rank": 156
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 156
       }
     ],
     "collegeStats": {
@@ -42747,6 +43371,10 @@
       {
         "date": "2026-04-14",
         "rank": 157
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 157
       }
     ],
     "collegeStats": {},
@@ -42995,6 +43623,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 158
+      },
+      {
+        "date": "2026-04-15",
         "rank": 158
       }
     ],
@@ -43274,6 +43906,10 @@
       {
         "date": "2026-04-14",
         "rank": 159
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 159
       }
     ],
     "collegeStats": {},
@@ -43523,6 +44159,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 160
+      },
+      {
+        "date": "2026-04-15",
         "rank": 160
       }
     ],
@@ -43810,6 +44450,10 @@
       {
         "date": "2026-04-14",
         "rank": 161
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 161
       }
     ],
     "collegeStats": {
@@ -44092,6 +44736,10 @@
       {
         "date": "2026-04-14",
         "rank": 162
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 162
       }
     ],
     "collegeStats": {
@@ -44371,6 +45019,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 163
+      },
+      {
+        "date": "2026-04-15",
         "rank": 163
       }
     ],
@@ -44657,6 +45309,10 @@
       {
         "date": "2026-04-14",
         "rank": 164
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 164
       }
     ],
     "collegeStats": {
@@ -44935,6 +45591,10 @@
       {
         "date": "2026-04-14",
         "rank": 165
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 165
       }
     ],
     "collegeStats": {},
@@ -45183,6 +45843,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 166
+      },
+      {
+        "date": "2026-04-15",
         "rank": 166
       }
     ],
@@ -45441,6 +46105,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 167
+      },
+      {
+        "date": "2026-04-15",
         "rank": 167
       }
     ],
@@ -45725,6 +46393,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 168
+      },
+      {
+        "date": "2026-04-15",
         "rank": 168
       }
     ],
@@ -46012,6 +46684,10 @@
       {
         "date": "2026-04-14",
         "rank": 169
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 169
       }
     ],
     "collegeStats": {
@@ -46288,6 +46964,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 170
+      },
+      {
+        "date": "2026-04-15",
         "rank": 170
       }
     ],
@@ -46575,6 +47255,10 @@
       {
         "date": "2026-04-14",
         "rank": 171
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 171
       }
     ],
     "collegeStats": {
@@ -46860,6 +47544,10 @@
       {
         "date": "2026-04-14",
         "rank": 172
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 172
       }
     ],
     "collegeStats": {
@@ -47115,6 +47803,10 @@
       {
         "date": "2026-04-14",
         "rank": 173
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 173
       }
     ],
     "collegeStats": {},
@@ -47363,6 +48055,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 174
+      },
+      {
+        "date": "2026-04-15",
         "rank": 174
       }
     ],
@@ -47613,6 +48309,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 175
+      },
+      {
+        "date": "2026-04-15",
         "rank": 175
       }
     ],
@@ -47886,6 +48586,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 176
+      },
+      {
+        "date": "2026-04-15",
         "rank": 176
       }
     ],
@@ -48165,6 +48869,10 @@
       {
         "date": "2026-04-14",
         "rank": 177
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 177
       }
     ],
     "collegeStats": {
@@ -48443,6 +49151,10 @@
       {
         "date": "2026-04-14",
         "rank": 178
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 178
       }
     ],
     "collegeStats": {},
@@ -48691,6 +49403,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 179
+      },
+      {
+        "date": "2026-04-15",
         "rank": 179
       }
     ],
@@ -48941,6 +49657,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 180
+      },
+      {
+        "date": "2026-04-15",
         "rank": 180
       }
     ],
@@ -49220,6 +49940,10 @@
       {
         "date": "2026-04-14",
         "rank": 181
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 181
       }
     ],
     "collegeStats": {
@@ -49489,6 +50213,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 182
+      },
+      {
+        "date": "2026-04-15",
         "rank": 182
       }
     ],
@@ -49775,6 +50503,10 @@
       {
         "date": "2026-04-14",
         "rank": 183
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 183
       }
     ],
     "collegeStats": {
@@ -50053,6 +50785,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 184
+      },
+      {
+        "date": "2026-04-15",
         "rank": 184
       }
     ],
@@ -50333,6 +51069,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 185
+      },
+      {
+        "date": "2026-04-15",
         "rank": 185
       }
     ],
@@ -50620,6 +51360,10 @@
       {
         "date": "2026-04-14",
         "rank": 186
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 186
       }
     ],
     "collegeStats": {
@@ -50899,6 +51643,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 187
+      },
+      {
+        "date": "2026-04-15",
         "rank": 187
       }
     ],
@@ -51194,6 +51942,10 @@
       {
         "date": "2026-04-14",
         "rank": 188
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 188
       }
     ],
     "collegeStats": {
@@ -51478,6 +52230,10 @@
       {
         "date": "2026-04-14",
         "rank": 189
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 189
       }
     ],
     "collegeStats": {
@@ -51750,6 +52506,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 190
+      },
+      {
+        "date": "2026-04-15",
         "rank": 190
       }
     ],
@@ -52031,6 +52791,10 @@
       {
         "date": "2026-04-14",
         "rank": 191
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 191
       }
     ],
     "collegeStats": {},
@@ -52279,6 +53043,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 192
+      },
+      {
+        "date": "2026-04-15",
         "rank": 192
       }
     ],
@@ -52529,6 +53297,10 @@
       {
         "date": "2026-04-14",
         "rank": 193
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 193
       }
     ],
     "collegeStats": {},
@@ -52777,6 +53549,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 194
+      },
+      {
+        "date": "2026-04-15",
         "rank": 194
       }
     ],
@@ -53058,6 +53834,10 @@
       {
         "date": "2026-04-14",
         "rank": 195
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 195
       }
     ],
     "collegeStats": {
@@ -53338,6 +54118,10 @@
       {
         "date": "2026-04-14",
         "rank": 196
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 196
       }
     ],
     "collegeStats": {
@@ -53482,6 +54266,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 197
+      },
+      {
+        "date": "2026-04-15",
         "rank": 197
       }
     ],
@@ -53758,6 +54546,10 @@
       {
         "date": "2026-04-14",
         "rank": 198
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 198
       }
     ],
     "collegeStats": {
@@ -54023,6 +54815,10 @@
       {
         "date": "2026-04-14",
         "rank": 199
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 199
       }
     ],
     "collegeStats": {
@@ -54245,6 +55041,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 200
+      },
+      {
+        "date": "2026-04-15",
         "rank": 200
       }
     ],
@@ -54494,6 +55294,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 201
+      },
+      {
+        "date": "2026-04-15",
         "rank": 201
       }
     ],
@@ -54768,6 +55572,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 202
+      },
+      {
+        "date": "2026-04-15",
         "rank": 202
       }
     ],
@@ -55055,6 +55863,10 @@
       {
         "date": "2026-04-14",
         "rank": 203
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 203
       }
     ],
     "collegeStats": {
@@ -55325,6 +56137,10 @@
       {
         "date": "2026-04-14",
         "rank": 204
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 204
       }
     ],
     "collegeStats": {
@@ -55583,6 +56399,10 @@
       {
         "date": "2026-04-14",
         "rank": 205
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 205
       }
     ],
     "collegeStats": {
@@ -55803,6 +56623,10 @@
       {
         "date": "2026-04-14",
         "rank": 206
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 206
       }
     ],
     "collegeStats": {
@@ -55936,6 +56760,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 207
+      },
+      {
+        "date": "2026-04-15",
         "rank": 207
       }
     ],
@@ -56186,6 +57014,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 208
+      },
+      {
+        "date": "2026-04-15",
         "rank": 208
       }
     ],
@@ -56456,6 +57288,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 209
+      },
+      {
+        "date": "2026-04-15",
         "rank": 209
       }
     ],
@@ -56736,6 +57572,10 @@
       {
         "date": "2026-04-14",
         "rank": 210
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 210
       }
     ],
     "collegeStats": {},
@@ -56968,6 +57808,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 211
+      },
+      {
+        "date": "2026-04-15",
         "rank": 211
       }
     ],
@@ -57245,6 +58089,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 212
+      },
+      {
+        "date": "2026-04-15",
         "rank": 212
       }
     ],
@@ -57531,6 +58379,10 @@
       {
         "date": "2026-04-14",
         "rank": 213
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 213
       }
     ],
     "collegeStats": {
@@ -57809,6 +58661,10 @@
       {
         "date": "2026-04-14",
         "rank": 214
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 214
       }
     ],
     "collegeStats": {},
@@ -58057,6 +58913,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 215
+      },
+      {
+        "date": "2026-04-15",
         "rank": 215
       }
     ],
@@ -58313,6 +59173,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 216
+      },
+      {
+        "date": "2026-04-15",
         "rank": 216
       }
     ],
@@ -58593,6 +59457,10 @@
       {
         "date": "2026-04-14",
         "rank": 217
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 217
       }
     ],
     "collegeStats": {
@@ -58869,6 +59737,10 @@
       {
         "date": "2026-04-14",
         "rank": 218
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 218
       }
     ],
     "collegeStats": {
@@ -59144,6 +60016,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 219
+      },
+      {
+        "date": "2026-04-15",
         "rank": 219
       }
     ],
@@ -59424,6 +60300,10 @@
       {
         "date": "2026-04-14",
         "rank": 220
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 220
       }
     ],
     "collegeStats": {
@@ -59699,6 +60579,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 221
+      },
+      {
+        "date": "2026-04-15",
         "rank": 221
       }
     ],
@@ -59976,6 +60860,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 222
+      },
+      {
+        "date": "2026-04-15",
         "rank": 222
       }
     ],
@@ -60265,6 +61153,10 @@
       {
         "date": "2026-04-14",
         "rank": 223
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 223
       }
     ],
     "collegeStats": {
@@ -60550,6 +61442,10 @@
       {
         "date": "2026-04-14",
         "rank": 224
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 224
       }
     ],
     "collegeStats": {},
@@ -60799,6 +61695,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 225
+      },
+      {
+        "date": "2026-04-15",
         "rank": 225
       }
     ],
@@ -61078,6 +61978,10 @@
       {
         "date": "2026-04-14",
         "rank": 226
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 226
       }
     ],
     "collegeStats": {
@@ -61345,6 +62249,10 @@
       {
         "date": "2026-04-14",
         "rank": 227
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 227
       }
     ],
     "collegeStats": {},
@@ -61593,6 +62501,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 228
+      },
+      {
+        "date": "2026-04-15",
         "rank": 228
       }
     ],
@@ -61878,6 +62790,10 @@
       {
         "date": "2026-04-14",
         "rank": 229
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 229
       }
     ],
     "collegeStats": {},
@@ -62126,6 +63042,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 230
+      },
+      {
+        "date": "2026-04-15",
         "rank": 230
       }
     ],
@@ -62405,6 +63325,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 231
+      },
+      {
+        "date": "2026-04-15",
         "rank": 231
       }
     ],
@@ -62694,6 +63618,10 @@
       {
         "date": "2026-04-14",
         "rank": 232
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 232
       }
     ],
     "collegeStats": {
@@ -62973,6 +63901,10 @@
       {
         "date": "2026-04-14",
         "rank": 233
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 233
       }
     ],
     "collegeStats": {
@@ -63240,6 +64172,10 @@
       {
         "date": "2026-04-14",
         "rank": 234
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 234
       }
     ],
     "collegeStats": {
@@ -63503,6 +64439,10 @@
       {
         "date": "2026-04-14",
         "rank": 235
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 235
       }
     ],
     "collegeStats": {},
@@ -63751,6 +64691,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 236
+      },
+      {
+        "date": "2026-04-15",
         "rank": 236
       }
     ],
@@ -64031,6 +64975,10 @@
       {
         "date": "2026-04-14",
         "rank": 237
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 237
       }
     ],
     "collegeStats": {
@@ -64307,6 +65255,10 @@
       {
         "date": "2026-04-14",
         "rank": 238
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 238
       }
     ],
     "collegeStats": {
@@ -64580,6 +65532,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 239
+      },
+      {
+        "date": "2026-04-15",
         "rank": 239
       }
     ],
@@ -64866,6 +65822,10 @@
       {
         "date": "2026-04-14",
         "rank": 240
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 240
       }
     ],
     "collegeStats": {
@@ -65007,6 +65967,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 241
+      },
+      {
+        "date": "2026-04-15",
         "rank": 241
       }
     ],
@@ -65257,6 +66221,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 242
+      },
+      {
+        "date": "2026-04-15",
         "rank": 242
       }
     ],
@@ -65520,6 +66488,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 243
+      },
+      {
+        "date": "2026-04-15",
         "rank": 243
       }
     ],
@@ -65800,6 +66772,10 @@
       {
         "date": "2026-04-14",
         "rank": 244
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 244
       }
     ],
     "collegeStats": {
@@ -66071,6 +67047,10 @@
       {
         "date": "2026-04-14",
         "rank": 245
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 245
       }
     ],
     "collegeStats": {
@@ -66334,6 +67314,10 @@
       {
         "date": "2026-04-14",
         "rank": 246
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 246
       }
     ],
     "collegeStats": {},
@@ -66583,6 +67567,10 @@
       {
         "date": "2026-04-14",
         "rank": 247
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 247
       }
     ],
     "collegeStats": {
@@ -66721,6 +67709,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 248
+      },
+      {
+        "date": "2026-04-15",
         "rank": 248
       }
     ],
@@ -66996,6 +67988,10 @@
       {
         "date": "2026-04-14",
         "rank": 249
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 249
       }
     ],
     "collegeStats": {
@@ -67265,6 +68261,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 250
+      },
+      {
+        "date": "2026-04-15",
         "rank": 250
       }
     ],
@@ -67541,6 +68541,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 251
+      },
+      {
+        "date": "2026-04-15",
         "rank": 251
       }
     ],
@@ -67821,6 +68825,10 @@
       {
         "date": "2026-04-14",
         "rank": 252
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 252
       }
     ],
     "collegeStats": {
@@ -68097,6 +69105,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 253
+      },
+      {
+        "date": "2026-04-15",
         "rank": 253
       }
     ],
@@ -68386,6 +69398,10 @@
       {
         "date": "2026-04-14",
         "rank": 254
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 254
       }
     ],
     "collegeStats": {
@@ -68664,6 +69680,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 255
+      },
+      {
+        "date": "2026-04-15",
         "rank": 255
       }
     ],
@@ -68944,6 +69964,10 @@
       {
         "date": "2026-04-14",
         "rank": 256
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 256
       }
     ],
     "collegeStats": {},
@@ -69193,6 +70217,10 @@
       {
         "date": "2026-04-14",
         "rank": 257
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 257
       }
     ],
     "collegeStats": {},
@@ -69441,6 +70469,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 258
+      },
+      {
+        "date": "2026-04-15",
         "rank": 258
       }
     ],
@@ -69721,6 +70753,10 @@
       {
         "date": "2026-04-14",
         "rank": 259
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 259
       }
     ],
     "collegeStats": {
@@ -69991,6 +71027,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 260
+      },
+      {
+        "date": "2026-04-15",
         "rank": 260
       }
     ],
@@ -70265,6 +71305,10 @@
       {
         "date": "2026-04-14",
         "rank": 261
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 261
       }
     ],
     "collegeStats": {
@@ -70536,6 +71580,10 @@
       {
         "date": "2026-04-14",
         "rank": 262
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 262
       }
     ],
     "collegeStats": {
@@ -70795,6 +71843,10 @@
       {
         "date": "2026-04-14",
         "rank": 263
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 263
       }
     ],
     "collegeStats": {},
@@ -70906,6 +71958,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 264
+      },
+      {
+        "date": "2026-04-15",
         "rank": 264
       }
     ],
@@ -71180,6 +72236,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 265
+      },
+      {
+        "date": "2026-04-15",
         "rank": 265
       }
     ],
@@ -71458,6 +72518,10 @@
       {
         "date": "2026-04-14",
         "rank": 266
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 266
       }
     ],
     "collegeStats": {
@@ -71576,6 +72640,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 267
+      },
+      {
+        "date": "2026-04-15",
         "rank": 267
       }
     ],
@@ -71847,6 +72915,10 @@
       {
         "date": "2026-04-14",
         "rank": 268
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 268
       }
     ],
     "collegeStats": {},
@@ -71959,6 +73031,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 269
+      },
+      {
+        "date": "2026-04-15",
         "rank": 269
       }
     ],
@@ -72214,6 +73290,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 270
+      },
+      {
+        "date": "2026-04-15",
         "rank": 270
       }
     ],
@@ -72494,6 +73574,10 @@
       {
         "date": "2026-04-14",
         "rank": 271
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 271
       }
     ],
     "collegeStats": {
@@ -72770,6 +73854,10 @@
       {
         "date": "2026-04-14",
         "rank": 272
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 272
       }
     ],
     "collegeStats": {
@@ -73036,6 +74124,10 @@
       {
         "date": "2026-04-14",
         "rank": 273
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 273
       }
     ],
     "collegeStats": {
@@ -73174,6 +74266,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 274
+      },
+      {
+        "date": "2026-04-15",
         "rank": 274
       }
     ],
@@ -73423,6 +74519,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 275
+      },
+      {
+        "date": "2026-04-15",
         "rank": 275
       }
     ],
@@ -73703,6 +74803,10 @@
       {
         "date": "2026-04-14",
         "rank": 276
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 276
       }
     ],
     "collegeStats": {
@@ -73975,6 +75079,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 277
+      },
+      {
+        "date": "2026-04-15",
         "rank": 277
       }
     ],
@@ -74255,6 +75363,10 @@
       {
         "date": "2026-04-14",
         "rank": 278
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 278
       }
     ],
     "collegeStats": {
@@ -74532,6 +75644,10 @@
       {
         "date": "2026-04-14",
         "rank": 279
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 279
       }
     ],
     "collegeStats": {
@@ -74808,6 +75924,10 @@
       {
         "date": "2026-04-14",
         "rank": 280
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 280
       }
     ],
     "collegeStats": {
@@ -74903,6 +76023,10 @@
     "rankHistory": [
       {
         "date": "2026-04-14",
+        "rank": 281
+      },
+      {
+        "date": "2026-04-15",
         "rank": 281
       }
     ],
@@ -75177,6 +76301,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 282
+      },
+      {
+        "date": "2026-04-15",
         "rank": 282
       }
     ],
@@ -75457,6 +76585,10 @@
       {
         "date": "2026-04-14",
         "rank": 283
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 283
       }
     ],
     "collegeStats": {
@@ -75736,6 +76868,10 @@
       {
         "date": "2026-04-14",
         "rank": 284
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 284
       }
     ],
     "collegeStats": {
@@ -75874,6 +77010,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 285
+      },
+      {
+        "date": "2026-04-15",
         "rank": 285
       }
     ],
@@ -76123,6 +77263,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 286
+      },
+      {
+        "date": "2026-04-15",
         "rank": 286
       }
     ],
@@ -76408,6 +77552,10 @@
       {
         "date": "2026-04-14",
         "rank": 287
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 287
       }
     ],
     "collegeStats": {
@@ -76687,6 +77835,10 @@
       {
         "date": "2026-04-14",
         "rank": 288
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 288
       }
     ],
     "collegeStats": {
@@ -76963,6 +78115,10 @@
       {
         "date": "2026-04-14",
         "rank": 289
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 289
       }
     ],
     "collegeStats": {
@@ -77235,6 +78391,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 290
+      },
+      {
+        "date": "2026-04-15",
         "rank": 290
       }
     ],
@@ -77511,6 +78671,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 291
+      },
+      {
+        "date": "2026-04-15",
         "rank": 291
       }
     ],
@@ -77800,6 +78964,10 @@
       {
         "date": "2026-04-14",
         "rank": 292
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 292
       }
     ],
     "collegeStats": {
@@ -78070,6 +79238,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 293
+      },
+      {
+        "date": "2026-04-15",
         "rank": 293
       }
     ],
@@ -78346,6 +79518,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 294
+      },
+      {
+        "date": "2026-04-15",
         "rank": 294
       }
     ],
@@ -78635,6 +79811,10 @@
       {
         "date": "2026-04-14",
         "rank": 295
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 295
       }
     ],
     "collegeStats": {
@@ -78911,6 +80091,10 @@
       {
         "date": "2026-04-14",
         "rank": 296
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 296
       }
     ],
     "collegeStats": {
@@ -79186,6 +80370,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 297
+      },
+      {
+        "date": "2026-04-15",
         "rank": 297
       }
     ],
@@ -79475,6 +80663,10 @@
       {
         "date": "2026-04-14",
         "rank": 298
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 298
       }
     ],
     "collegeStats": {
@@ -79746,6 +80938,10 @@
       {
         "date": "2026-04-14",
         "rank": 299
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 299
       }
     ],
     "collegeStats": {},
@@ -79995,6 +81191,10 @@
       {
         "date": "2026-04-14",
         "rank": 300
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 300
       }
     ],
     "collegeStats": {},
@@ -80243,6 +81443,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 301
+      },
+      {
+        "date": "2026-04-15",
         "rank": 301
       }
     ],
@@ -80520,6 +81724,10 @@
       {
         "date": "2026-04-14",
         "rank": 302
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 302
       }
     ],
     "collegeStats": {},
@@ -80768,6 +81976,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 303
+      },
+      {
+        "date": "2026-04-15",
         "rank": 303
       }
     ],
@@ -81048,6 +82260,10 @@
       {
         "date": "2026-04-14",
         "rank": 304
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 304
       }
     ],
     "collegeStats": {},
@@ -81297,6 +82513,10 @@
       {
         "date": "2026-04-14",
         "rank": 305
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 305
       }
     ],
     "collegeStats": {},
@@ -81362,6 +82582,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 306
+      },
+      {
+        "date": "2026-04-15",
         "rank": 306
       }
     ],
@@ -81630,6 +82854,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 307
+      },
+      {
+        "date": "2026-04-15",
         "rank": 307
       }
     ],
@@ -81919,6 +83147,10 @@
       {
         "date": "2026-04-14",
         "rank": 308
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 308
       }
     ],
     "collegeStats": {
@@ -82159,6 +83391,10 @@
       {
         "date": "2026-04-14",
         "rank": 309
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 309
       }
     ],
     "collegeStats": {
@@ -82363,6 +83599,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 310
+      },
+      {
+        "date": "2026-04-15",
         "rank": 310
       }
     ],
@@ -82613,6 +83853,10 @@
       {
         "date": "2026-04-14",
         "rank": 311
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 311
       }
     ],
     "collegeStats": {
@@ -82790,6 +84034,10 @@
       {
         "date": "2026-04-14",
         "rank": 312
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 312
       }
     ],
     "collegeStats": {
@@ -82882,6 +84130,10 @@
     "rankHistory": [
       {
         "date": "2026-04-14",
+        "rank": 313
+      },
+      {
+        "date": "2026-04-15",
         "rank": 313
       }
     ],
@@ -83156,6 +84408,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 314
+      },
+      {
+        "date": "2026-04-15",
         "rank": 314
       }
     ],
@@ -83436,6 +84692,10 @@
       {
         "date": "2026-04-14",
         "rank": 315
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 315
       }
     ],
     "collegeStats": {
@@ -83715,6 +84975,10 @@
       {
         "date": "2026-04-14",
         "rank": 316
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 316
       }
     ],
     "collegeStats": {
@@ -83975,6 +85239,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 317
+      },
+      {
+        "date": "2026-04-15",
         "rank": 317
       }
     ],
@@ -84255,6 +85523,10 @@
       {
         "date": "2026-04-14",
         "rank": 318
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 318
       }
     ],
     "collegeStats": {
@@ -84526,6 +85798,10 @@
       {
         "date": "2026-04-14",
         "rank": 319
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 319
       }
     ],
     "collegeStats": {},
@@ -84775,6 +86051,10 @@
       {
         "date": "2026-04-14",
         "rank": 320
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 320
       }
     ],
     "collegeStats": {
@@ -84913,6 +86193,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 321
+      },
+      {
+        "date": "2026-04-15",
         "rank": 321
       }
     ],
@@ -85169,6 +86453,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 322
+      },
+      {
+        "date": "2026-04-15",
         "rank": 322
       }
     ],
@@ -85446,6 +86734,10 @@
       {
         "date": "2026-04-14",
         "rank": 323
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 323
       }
     ],
     "collegeStats": {
@@ -85721,6 +87013,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 324
+      },
+      {
+        "date": "2026-04-15",
         "rank": 324
       }
     ],
@@ -86001,6 +87297,10 @@
       {
         "date": "2026-04-14",
         "rank": 325
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 325
       }
     ],
     "collegeStats": {},
@@ -86250,6 +87550,10 @@
       {
         "date": "2026-04-14",
         "rank": 326
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 326
       }
     ],
     "collegeStats": {
@@ -86368,6 +87672,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 327
+      },
+      {
+        "date": "2026-04-15",
         "rank": 327
       }
     ],
@@ -86639,6 +87947,10 @@
       {
         "date": "2026-04-14",
         "rank": 328
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 328
       }
     ],
     "collegeStats": {},
@@ -86887,6 +88199,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 329
+      },
+      {
+        "date": "2026-04-15",
         "rank": 329
       }
     ],
@@ -87167,6 +88483,10 @@
       {
         "date": "2026-04-14",
         "rank": 330
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 330
       }
     ],
     "collegeStats": {
@@ -87282,6 +88602,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 331
+      },
+      {
+        "date": "2026-04-15",
         "rank": 331
       }
     ],
@@ -87552,6 +88876,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 332
+      },
+      {
+        "date": "2026-04-15",
         "rank": 332
       }
     ],
@@ -87832,6 +89160,10 @@
       {
         "date": "2026-04-14",
         "rank": 333
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 333
       }
     ],
     "collegeStats": {
@@ -87953,6 +89285,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 334
+      },
+      {
+        "date": "2026-04-15",
         "rank": 334
       }
     ],
@@ -88236,6 +89572,10 @@
       {
         "date": "2026-04-14",
         "rank": 335
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 335
       }
     ],
     "collegeStats": {
@@ -88338,6 +89678,10 @@
     "rankHistory": [
       {
         "date": "2026-04-14",
+        "rank": 336
+      },
+      {
+        "date": "2026-04-15",
         "rank": 336
       }
     ],
@@ -88472,6 +89816,10 @@
       {
         "date": "2026-04-14",
         "rank": 337
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 337
       }
     ],
     "collegeStats": {},
@@ -88560,6 +89908,10 @@
       {
         "date": "2026-04-14",
         "rank": 338
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 338
       }
     ],
     "collegeStats": {
@@ -88646,6 +89998,10 @@
     "rankHistory": [
       {
         "date": "2026-04-14",
+        "rank": 339
+      },
+      {
+        "date": "2026-04-15",
         "rank": 339
       }
     ],
@@ -88915,6 +90271,10 @@
       {
         "date": "2026-04-14",
         "rank": 340
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 340
       }
     ],
     "collegeStats": {},
@@ -89141,6 +90501,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 341
+      },
+      {
+        "date": "2026-04-15",
         "rank": 341
       }
     ],
@@ -89421,6 +90785,10 @@
       {
         "date": "2026-04-14",
         "rank": 342
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 342
       }
     ],
     "collegeStats": {
@@ -89518,6 +90886,10 @@
       {
         "date": "2026-04-14",
         "rank": 343
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 343
       }
     ],
     "collegeStats": {},
@@ -89585,6 +90957,10 @@
     "rankHistory": [
       {
         "date": "2026-04-14",
+        "rank": 344
+      },
+      {
+        "date": "2026-04-15",
         "rank": 344
       }
     ],
@@ -89698,6 +91074,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 345
+      },
+      {
+        "date": "2026-04-15",
         "rank": 345
       }
     ],
@@ -89973,6 +91353,10 @@
       {
         "date": "2026-04-14",
         "rank": 346
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 346
       }
     ],
     "collegeStats": {},
@@ -90200,6 +91584,10 @@
       {
         "date": "2026-04-14",
         "rank": 347
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 347
       }
     ],
     "collegeStats": {},
@@ -90269,6 +91657,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 348
+      },
+      {
+        "date": "2026-04-15",
         "rank": 348
       }
     ],
@@ -90391,6 +91783,10 @@
       {
         "date": "2026-04-14",
         "rank": 349
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 349
       }
     ],
     "collegeStats": {
@@ -90498,6 +91894,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 350
+      },
+      {
+        "date": "2026-04-15",
         "rank": 350
       }
     ],
@@ -90769,6 +92169,10 @@
       {
         "date": "2026-04-14",
         "rank": 351
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 351
       }
     ],
     "collegeStats": {},
@@ -90838,6 +92242,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 352
+      },
+      {
+        "date": "2026-04-15",
         "rank": 352
       }
     ],
@@ -90964,6 +92372,10 @@
       {
         "date": "2026-04-14",
         "rank": 353
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 353
       }
     ],
     "collegeStats": {
@@ -91085,6 +92497,10 @@
       {
         "date": "2026-04-14",
         "rank": 354
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 354
       }
     ],
     "collegeStats": {
@@ -91195,6 +92611,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 355
+      },
+      {
+        "date": "2026-04-15",
         "rank": 355
       }
     ],
@@ -91321,6 +92741,10 @@
       {
         "date": "2026-04-14",
         "rank": 356
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 356
       }
     ],
     "collegeStats": {
@@ -91409,6 +92833,10 @@
     "rankHistory": [
       {
         "date": "2026-04-14",
+        "rank": 357
+      },
+      {
+        "date": "2026-04-15",
         "rank": 357
       }
     ],
@@ -91518,6 +92946,10 @@
       {
         "date": "2026-04-14",
         "rank": 358
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 358
       }
     ],
     "collegeStats": {
@@ -91618,6 +93050,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 359
+      },
+      {
+        "date": "2026-04-15",
         "rank": 359
       }
     ],
@@ -91722,6 +93158,10 @@
       {
         "date": "2026-04-14",
         "rank": 360
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 360
       }
     ],
     "collegeStats": {
@@ -91825,6 +93265,10 @@
       {
         "date": "2026-04-14",
         "rank": 361
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 361
       }
     ],
     "collegeStats": {
@@ -91925,6 +93369,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 362
+      },
+      {
+        "date": "2026-04-15",
         "rank": 362
       }
     ],
@@ -92029,6 +93477,10 @@
       {
         "date": "2026-04-14",
         "rank": 363
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 363
       }
     ],
     "collegeStats": {},
@@ -92098,6 +93550,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 364
+      },
+      {
+        "date": "2026-04-15",
         "rank": 364
       }
     ],
@@ -92195,6 +93651,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 365
+      },
+      {
+        "date": "2026-04-15",
         "rank": 365
       }
     ],
@@ -92295,6 +93755,10 @@
       {
         "date": "2026-04-14",
         "rank": 366
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 366
       }
     ],
     "collegeStats": {},
@@ -92364,6 +93828,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 367
+      },
+      {
+        "date": "2026-04-15",
         "rank": 367
       }
     ],
@@ -92464,6 +93932,10 @@
       {
         "date": "2026-04-14",
         "rank": 368
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 368
       }
     ],
     "collegeStats": {
@@ -92555,6 +94027,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 369
+      },
+      {
+        "date": "2026-04-15",
         "rank": 369
       }
     ],
@@ -92655,6 +94131,10 @@
       {
         "date": "2026-04-14",
         "rank": 370
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 370
       }
     ],
     "collegeStats": {
@@ -92753,6 +94233,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 371
+      },
+      {
+        "date": "2026-04-15",
         "rank": 371
       }
     ],
@@ -92853,6 +94337,10 @@
       {
         "date": "2026-04-14",
         "rank": 372
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 372
       }
     ],
     "collegeStats": {
@@ -92951,6 +94439,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 373
+      },
+      {
+        "date": "2026-04-15",
         "rank": 373
       }
     ],
@@ -93051,6 +94543,10 @@
       {
         "date": "2026-04-14",
         "rank": 374
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 374
       }
     ],
     "collegeStats": {
@@ -93141,6 +94637,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 375
+      },
+      {
+        "date": "2026-04-15",
         "rank": 375
       }
     ],
@@ -93233,6 +94733,10 @@
       {
         "date": "2026-04-14",
         "rank": 376
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 376
       }
     ],
     "collegeStats": {},
@@ -93302,6 +94806,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 377
+      },
+      {
+        "date": "2026-04-15",
         "rank": 377
       }
     ],
@@ -93394,6 +94902,10 @@
       {
         "date": "2026-04-14",
         "rank": 378
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 378
       }
     ],
     "collegeStats": {
@@ -93485,6 +94997,10 @@
       {
         "date": "2026-04-14",
         "rank": 379
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 379
       }
     ],
     "collegeStats": {
@@ -93565,6 +95081,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 380
+      },
+      {
+        "date": "2026-04-15",
         "rank": 380
       }
     ],
@@ -93652,6 +95172,10 @@
       {
         "date": "2026-04-14",
         "rank": 381
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 381
       }
     ],
     "collegeStats": {
@@ -93737,6 +95261,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 382
+      },
+      {
+        "date": "2026-04-15",
         "rank": 382
       }
     ],
@@ -93829,6 +95357,10 @@
       {
         "date": "2026-04-14",
         "rank": 383
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 383
       }
     ],
     "collegeStats": {
@@ -93919,6 +95451,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 384
+      },
+      {
+        "date": "2026-04-15",
         "rank": 384
       }
     ],
@@ -94011,6 +95547,10 @@
       {
         "date": "2026-04-14",
         "rank": 385
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 385
       }
     ],
     "collegeStats": {
@@ -94101,6 +95641,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 386
+      },
+      {
+        "date": "2026-04-15",
         "rank": 386
       }
     ],
@@ -94350,6 +95894,10 @@
       {
         "date": "2026-04-14",
         "rank": 387
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 387
       }
     ],
     "collegeStats": {
@@ -94470,6 +96018,10 @@
       {
         "date": "2026-04-14",
         "rank": 388
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 388
       }
     ],
     "collegeStats": {
@@ -94561,6 +96113,10 @@
       {
         "date": "2026-04-14",
         "rank": 389
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 389
       }
     ],
     "collegeStats": {},
@@ -94630,6 +96186,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 390
+      },
+      {
+        "date": "2026-04-15",
         "rank": 390
       }
     ],
@@ -94716,6 +96276,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 391
+      },
+      {
+        "date": "2026-04-15",
         "rank": 391
       }
     ],
@@ -94808,6 +96372,10 @@
       {
         "date": "2026-04-14",
         "rank": 392
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 392
       }
     ],
     "collegeStats": {
@@ -94883,6 +96451,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 393
+      },
+      {
+        "date": "2026-04-15",
         "rank": 393
       }
     ],
@@ -94975,6 +96547,10 @@
       {
         "date": "2026-04-14",
         "rank": 394
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 394
       }
     ],
     "collegeStats": {
@@ -95050,6 +96626,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 395
+      },
+      {
+        "date": "2026-04-15",
         "rank": 395
       }
     ],
@@ -95133,6 +96713,10 @@
       {
         "date": "2026-04-14",
         "rank": 396
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 396
       }
     ],
     "collegeStats": {},
@@ -95198,6 +96782,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 397
+      },
+      {
+        "date": "2026-04-15",
         "rank": 397
       }
     ],
@@ -95265,6 +96853,10 @@
       {
         "date": "2026-04-14",
         "rank": 398
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 398
       }
     ],
     "collegeStats": {},
@@ -95330,6 +96922,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 399
+      },
+      {
+        "date": "2026-04-15",
         "rank": 399
       }
     ],
@@ -95397,6 +96993,10 @@
       {
         "date": "2026-04-14",
         "rank": 400
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 400
       }
     ],
     "collegeStats": {},
@@ -95462,6 +97062,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 401
+      },
+      {
+        "date": "2026-04-15",
         "rank": 401
       }
     ],
@@ -95529,6 +97133,10 @@
       {
         "date": "2026-04-14",
         "rank": 402
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 402
       }
     ],
     "collegeStats": {},
@@ -95594,6 +97202,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 403
+      },
+      {
+        "date": "2026-04-15",
         "rank": 403
       }
     ],
@@ -95661,6 +97273,10 @@
       {
         "date": "2026-04-14",
         "rank": 404
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 404
       }
     ],
     "collegeStats": {},
@@ -95726,6 +97342,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 405
+      },
+      {
+        "date": "2026-04-15",
         "rank": 405
       }
     ],
@@ -95793,6 +97413,10 @@
       {
         "date": "2026-04-14",
         "rank": 406
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 406
       }
     ],
     "collegeStats": {},
@@ -95858,6 +97482,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 407
+      },
+      {
+        "date": "2026-04-15",
         "rank": 407
       }
     ],
@@ -95925,6 +97553,10 @@
       {
         "date": "2026-04-14",
         "rank": 408
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 408
       }
     ],
     "collegeStats": {},
@@ -95990,6 +97622,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 409
+      },
+      {
+        "date": "2026-04-15",
         "rank": 409
       }
     ],
@@ -96057,6 +97693,10 @@
       {
         "date": "2026-04-14",
         "rank": 410
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 410
       }
     ],
     "collegeStats": {},
@@ -96122,6 +97762,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 411
+      },
+      {
+        "date": "2026-04-15",
         "rank": 411
       }
     ],
@@ -96189,6 +97833,10 @@
       {
         "date": "2026-04-14",
         "rank": 412
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 412
       }
     ],
     "collegeStats": {},
@@ -96254,6 +97902,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 413
+      },
+      {
+        "date": "2026-04-15",
         "rank": 413
       }
     ],
@@ -96321,6 +97973,10 @@
       {
         "date": "2026-04-14",
         "rank": 414
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 414
       }
     ],
     "collegeStats": {},
@@ -96386,6 +98042,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 415
+      },
+      {
+        "date": "2026-04-15",
         "rank": 415
       }
     ],
@@ -96453,6 +98113,10 @@
       {
         "date": "2026-04-14",
         "rank": 416
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 416
       }
     ],
     "collegeStats": {},
@@ -96518,6 +98182,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 417
+      },
+      {
+        "date": "2026-04-15",
         "rank": 417
       }
     ],
@@ -96585,6 +98253,10 @@
       {
         "date": "2026-04-14",
         "rank": 418
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 418
       }
     ],
     "collegeStats": {},
@@ -96650,6 +98322,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 419
+      },
+      {
+        "date": "2026-04-15",
         "rank": 419
       }
     ],
@@ -96717,6 +98393,10 @@
       {
         "date": "2026-04-14",
         "rank": 420
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 420
       }
     ],
     "collegeStats": {},
@@ -96782,6 +98462,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 421
+      },
+      {
+        "date": "2026-04-15",
         "rank": 421
       }
     ],
@@ -96849,6 +98533,10 @@
       {
         "date": "2026-04-14",
         "rank": 422
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 422
       }
     ],
     "collegeStats": {},
@@ -96914,6 +98602,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 423
+      },
+      {
+        "date": "2026-04-15",
         "rank": 423
       }
     ],
@@ -96981,6 +98673,10 @@
       {
         "date": "2026-04-14",
         "rank": 424
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 424
       }
     ],
     "collegeStats": {},
@@ -97046,6 +98742,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 425
+      },
+      {
+        "date": "2026-04-15",
         "rank": 425
       }
     ],
@@ -97138,6 +98838,10 @@
       {
         "date": "2026-04-14",
         "rank": 426
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 426
       }
     ],
     "collegeStats": {
@@ -97228,6 +98932,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 427
+      },
+      {
+        "date": "2026-04-15",
         "rank": 427
       }
     ],
@@ -97320,6 +99028,10 @@
       {
         "date": "2026-04-14",
         "rank": 428
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 428
       }
     ],
     "collegeStats": {
@@ -97411,6 +99123,10 @@
       {
         "date": "2026-04-14",
         "rank": 429
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 429
       }
     ],
     "collegeStats": {
@@ -97495,6 +99211,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 430
+      },
+      {
+        "date": "2026-04-15",
         "rank": 430
       }
     ],
@@ -97587,6 +99307,10 @@
       {
         "date": "2026-04-14",
         "rank": 431
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 431
       }
     ],
     "collegeStats": {
@@ -97678,6 +99402,10 @@
       {
         "date": "2026-04-14",
         "rank": 432
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 432
       }
     ],
     "collegeStats": {},
@@ -97743,6 +99471,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 433
+      },
+      {
+        "date": "2026-04-15",
         "rank": 433
       }
     ],
@@ -97835,6 +99567,10 @@
       {
         "date": "2026-04-14",
         "rank": 434
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 434
       }
     ],
     "collegeStats": {},
@@ -97901,6 +99637,10 @@
       {
         "date": "2026-04-14",
         "rank": 435
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 435
       }
     ],
     "collegeStats": {},
@@ -97966,6 +99706,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 436
+      },
+      {
+        "date": "2026-04-15",
         "rank": 436
       }
     ],
@@ -98058,6 +99802,10 @@
       {
         "date": "2026-04-14",
         "rank": 437
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 437
       }
     ],
     "collegeStats": {
@@ -98137,6 +99885,10 @@
       {
         "date": "2026-04-14",
         "rank": 438
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 438
       }
     ],
     "collegeStats": {
@@ -98209,6 +99961,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 439
+      },
+      {
+        "date": "2026-04-15",
         "rank": 439
       }
     ],
@@ -98301,6 +100057,10 @@
       {
         "date": "2026-04-14",
         "rank": 440
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 440
       }
     ],
     "collegeStats": {
@@ -98391,6 +100151,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 441
+      },
+      {
+        "date": "2026-04-15",
         "rank": 441
       }
     ],
@@ -98483,6 +100247,10 @@
       {
         "date": "2026-04-14",
         "rank": 442
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 442
       }
     ],
     "collegeStats": {
@@ -98574,6 +100342,10 @@
       {
         "date": "2026-04-14",
         "rank": 443
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 443
       }
     ],
     "collegeStats": {},
@@ -98639,6 +100411,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 444
+      },
+      {
+        "date": "2026-04-15",
         "rank": 444
       }
     ],
@@ -98731,6 +100507,10 @@
       {
         "date": "2026-04-14",
         "rank": 445
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 445
       }
     ],
     "collegeStats": {
@@ -98822,6 +100602,10 @@
       {
         "date": "2026-04-14",
         "rank": 446
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 446
       }
     ],
     "collegeStats": {},
@@ -98887,6 +100671,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 447
+      },
+      {
+        "date": "2026-04-15",
         "rank": 447
       }
     ],
@@ -98966,6 +100754,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 448
+      },
+      {
+        "date": "2026-04-15",
         "rank": 448
       }
     ],
@@ -99058,6 +100850,10 @@
       {
         "date": "2026-04-14",
         "rank": 449
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 449
       }
     ],
     "collegeStats": {
@@ -99143,6 +100939,10 @@
       {
         "date": "2026-04-14",
         "rank": 450
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 450
       }
     ],
     "collegeStats": {
@@ -99221,6 +101021,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 451
+      },
+      {
+        "date": "2026-04-15",
         "rank": 451
       }
     ],
@@ -99313,6 +101117,10 @@
       {
         "date": "2026-04-14",
         "rank": 452
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 452
       }
     ],
     "collegeStats": {
@@ -99398,6 +101206,10 @@
       {
         "date": "2026-04-14",
         "rank": 453
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 453
       }
     ],
     "collegeStats": {},
@@ -99463,6 +101275,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 454
+      },
+      {
+        "date": "2026-04-15",
         "rank": 454
       }
     ],
@@ -99548,6 +101364,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 455
+      },
+      {
+        "date": "2026-04-15",
         "rank": 455
       }
     ],
@@ -99640,6 +101460,10 @@
       {
         "date": "2026-04-14",
         "rank": 456
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 456
       }
     ],
     "collegeStats": {
@@ -99730,6 +101554,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 457
+      },
+      {
+        "date": "2026-04-15",
         "rank": 457
       }
     ],
@@ -99822,6 +101650,10 @@
       {
         "date": "2026-04-14",
         "rank": 458
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 458
       }
     ],
     "collegeStats": {
@@ -99907,6 +101739,10 @@
       {
         "date": "2026-04-14",
         "rank": 459
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 459
       }
     ],
     "collegeStats": {},
@@ -99972,6 +101808,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 460
+      },
+      {
+        "date": "2026-04-15",
         "rank": 460
       }
     ],
@@ -100058,6 +101898,10 @@
       {
         "date": "2026-04-14",
         "rank": 461
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 461
       }
     ],
     "collegeStats": {
@@ -100137,6 +101981,10 @@
       {
         "date": "2026-04-14",
         "rank": 462
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 462
       }
     ],
     "collegeStats": {},
@@ -100202,6 +102050,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 463
+      },
+      {
+        "date": "2026-04-15",
         "rank": 463
       }
     ],
@@ -100287,6 +102139,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 464
+      },
+      {
+        "date": "2026-04-15",
         "rank": 464
       }
     ],
@@ -100379,6 +102235,10 @@
       {
         "date": "2026-04-14",
         "rank": 465
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 465
       }
     ],
     "collegeStats": {
@@ -100469,6 +102329,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 466
+      },
+      {
+        "date": "2026-04-15",
         "rank": 466
       }
     ],
@@ -100561,6 +102425,10 @@
       {
         "date": "2026-04-14",
         "rank": 467
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 467
       }
     ],
     "collegeStats": {
@@ -100651,6 +102519,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 468
+      },
+      {
+        "date": "2026-04-15",
         "rank": 468
       }
     ],
@@ -100743,6 +102615,10 @@
       {
         "date": "2026-04-14",
         "rank": 469
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 469
       }
     ],
     "collegeStats": {},
@@ -100808,6 +102684,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 470
+      },
+      {
+        "date": "2026-04-15",
         "rank": 470
       }
     ],
@@ -100900,6 +102780,10 @@
       {
         "date": "2026-04-14",
         "rank": 471
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 471
       }
     ],
     "collegeStats": {
@@ -100990,6 +102874,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 472
+      },
+      {
+        "date": "2026-04-15",
         "rank": 472
       }
     ],
@@ -101082,6 +102970,10 @@
       {
         "date": "2026-04-14",
         "rank": 473
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 473
       }
     ],
     "collegeStats": {
@@ -101172,6 +103064,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 474
+      },
+      {
+        "date": "2026-04-15",
         "rank": 474
       }
     ],
@@ -101264,6 +103160,10 @@
       {
         "date": "2026-04-14",
         "rank": 475
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 475
       }
     ],
     "collegeStats": {
@@ -101355,6 +103255,10 @@
       {
         "date": "2026-04-14",
         "rank": 476
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 476
       }
     ],
     "collegeStats": {},
@@ -101420,6 +103324,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 477
+      },
+      {
+        "date": "2026-04-15",
         "rank": 477
       }
     ],
@@ -101512,6 +103420,10 @@
       {
         "date": "2026-04-14",
         "rank": 478
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 478
       }
     ],
     "collegeStats": {
@@ -101603,6 +103515,10 @@
       {
         "date": "2026-04-14",
         "rank": 479
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 479
       }
     ],
     "collegeStats": {
@@ -101688,6 +103604,10 @@
       {
         "date": "2026-04-14",
         "rank": 480
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 480
       }
     ],
     "collegeStats": {},
@@ -101753,6 +103673,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 481
+      },
+      {
+        "date": "2026-04-15",
         "rank": 481
       }
     ],
@@ -101820,6 +103744,10 @@
       {
         "date": "2026-04-14",
         "rank": 482
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 482
       }
     ],
     "collegeStats": {},
@@ -101885,6 +103813,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 483
+      },
+      {
+        "date": "2026-04-15",
         "rank": 483
       }
     ],
@@ -101977,6 +103909,10 @@
       {
         "date": "2026-04-14",
         "rank": 484
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 484
       }
     ],
     "collegeStats": {},
@@ -102042,6 +103978,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 485
+      },
+      {
+        "date": "2026-04-15",
         "rank": 485
       }
     ],
@@ -102128,6 +104068,10 @@
       {
         "date": "2026-04-14",
         "rank": 486
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 486
       }
     ],
     "collegeStats": {},
@@ -102194,6 +104138,10 @@
       {
         "date": "2026-04-14",
         "rank": 487
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 487
       }
     ],
     "collegeStats": {},
@@ -102259,6 +104207,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 488
+      },
+      {
+        "date": "2026-04-15",
         "rank": 488
       }
     ],
@@ -102333,6 +104285,10 @@
       {
         "date": "2026-04-14",
         "rank": 489
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 489
       }
     ],
     "collegeStats": {},
@@ -102399,6 +104355,10 @@
       {
         "date": "2026-04-14",
         "rank": 490
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 490
       }
     ],
     "collegeStats": {},
@@ -102464,6 +104424,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 491
+      },
+      {
+        "date": "2026-04-15",
         "rank": 491
       }
     ],
@@ -102544,6 +104508,10 @@
       {
         "date": "2026-04-14",
         "rank": 492
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 492
       }
     ],
     "collegeStats": {},
@@ -102609,6 +104577,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 493
+      },
+      {
+        "date": "2026-04-15",
         "rank": 493
       }
     ],
@@ -102683,6 +104655,10 @@
       {
         "date": "2026-04-14",
         "rank": 494
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 494
       }
     ],
     "collegeStats": {},
@@ -102749,6 +104725,10 @@
       {
         "date": "2026-04-14",
         "rank": 495
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 495
       }
     ],
     "collegeStats": {},
@@ -102814,6 +104794,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 496
+      },
+      {
+        "date": "2026-04-15",
         "rank": 496
       }
     ],
@@ -102891,6 +104875,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 497
+      },
+      {
+        "date": "2026-04-15",
         "rank": 497
       }
     ],
@@ -102983,6 +104971,10 @@
       {
         "date": "2026-04-14",
         "rank": 498
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 498
       }
     ],
     "collegeStats": {},
@@ -103048,6 +105040,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 499
+      },
+      {
+        "date": "2026-04-15",
         "rank": 499
       }
     ],
@@ -103140,6 +105136,10 @@
       {
         "date": "2026-04-14",
         "rank": 500
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 500
       }
     ],
     "collegeStats": {
@@ -103226,6 +105226,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 501
+      },
+      {
+        "date": "2026-04-15",
         "rank": 501
       }
     ],
@@ -103314,6 +105318,10 @@
       {
         "date": "2026-04-14",
         "rank": 502
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 502
       }
     ],
     "collegeStats": {
@@ -103395,6 +105403,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 503
+      },
+      {
+        "date": "2026-04-15",
         "rank": 503
       }
     ],
@@ -103642,6 +105654,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 504
+      },
+      {
+        "date": "2026-04-15",
         "rank": 504
       }
     ],
@@ -103891,6 +105907,10 @@
       },
       {
         "date": "2026-04-14",
+        "rank": 505
+      },
+      {
+        "date": "2026-04-15",
         "rank": 505
       }
     ],
