@@ -22,8 +22,8 @@
     "rankBySource": {
       "walter_football": 1,
       "cbs_sports": 1,
-      "tankathon": 3,
-      "espn": 2
+      "espn": 2,
+      "tankathon": 3
     },
     "rankHistory": [
       {
@@ -217,6 +217,10 @@
       {
         "date": "2026-04-16",
         "rank": 1
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 1
       }
     ],
     "collegeStats": {
@@ -318,8 +322,8 @@
     "rankBySource": {
       "walter_football": 3,
       "cbs_sports": 3,
-      "tankathon": 1,
-      "espn": 1
+      "espn": 1,
+      "tankathon": 1
     },
     "rankHistory": [
       {
@@ -513,6 +517,10 @@
       {
         "date": "2026-04-16",
         "rank": 2
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 2
       }
     ],
     "collegeStats": {
@@ -601,8 +609,8 @@
     "rankBySource": {
       "walter_football": 4,
       "cbs_sports": 7,
-      "tankathon": 5,
-      "espn": 4
+      "espn": 4,
+      "tankathon": 5
     },
     "rankHistory": [
       {
@@ -796,6 +804,10 @@
       {
         "date": "2026-04-16",
         "rank": 3
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 3
       }
     ],
     "collegeStats": {
@@ -894,8 +906,8 @@
     "rankBySource": {
       "walter_football": 8,
       "cbs_sports": 8,
-      "tankathon": 2,
-      "espn": 6
+      "espn": 6,
+      "tankathon": 2
     },
     "rankHistory": [
       {
@@ -1088,6 +1100,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 4
+      },
+      {
+        "date": "2026-04-17",
         "rank": 4
       }
     ],
@@ -1183,8 +1199,8 @@
     "rankBySource": {
       "walter_football": 2,
       "cbs_sports": 20,
-      "tankathon": 4,
-      "espn": 3
+      "espn": 3,
+      "tankathon": 4
     },
     "rankHistory": [
       {
@@ -1377,6 +1393,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 5
+      },
+      {
+        "date": "2026-04-17",
         "rank": 5
       }
     ],
@@ -1478,8 +1498,8 @@
     "rankBySource": {
       "walter_football": 7,
       "cbs_sports": 9,
-      "tankathon": 6,
-      "espn": 7
+      "espn": 7,
+      "tankathon": 6
     },
     "rankHistory": [
       {
@@ -1672,6 +1692,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 6
+      },
+      {
+        "date": "2026-04-17",
         "rank": 6
       }
     ],
@@ -1773,8 +1797,8 @@
     "rankBySource": {
       "walter_football": 9,
       "cbs_sports": 2,
-      "tankathon": 7,
-      "espn": 9
+      "espn": 9,
+      "tankathon": 7
     },
     "rankHistory": [
       {
@@ -1968,6 +1992,10 @@
       {
         "date": "2026-04-16",
         "rank": 7
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 7
       }
     ],
     "collegeStats": {
@@ -2062,8 +2090,8 @@
     "rankBySource": {
       "walter_football": 5,
       "cbs_sports": 5,
-      "tankathon": 11,
-      "espn": 19
+      "espn": 19,
+      "tankathon": 11
     },
     "rankHistory": [
       {
@@ -2257,6 +2285,10 @@
       {
         "date": "2026-04-16",
         "rank": 8
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 8
       }
     ],
     "collegeStats": {},
@@ -2321,8 +2353,8 @@
     "rankBySource": {
       "walter_football": 10,
       "cbs_sports": 14,
-      "tankathon": 10,
-      "espn": 8
+      "espn": 8,
+      "tankathon": 10
     },
     "rankHistory": [
       {
@@ -2516,6 +2548,10 @@
       {
         "date": "2026-04-16",
         "rank": 9
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 9
       }
     ],
     "collegeStats": {
@@ -2616,8 +2652,8 @@
     "rankBySource": {
       "walter_football": 12,
       "cbs_sports": 16,
-      "tankathon": 8,
-      "espn": 5
+      "espn": 5,
+      "tankathon": 8
     },
     "rankHistory": [
       {
@@ -2811,6 +2847,10 @@
       {
         "date": "2026-04-16",
         "rank": 10
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 10
       }
     ],
     "collegeStats": {},
@@ -2875,8 +2915,8 @@
     "rankBySource": {
       "walter_football": 6,
       "cbs_sports": 18,
-      "tankathon": 9,
-      "espn": 13
+      "espn": 13,
+      "tankathon": 9
     },
     "rankHistory": [
       {
@@ -3070,6 +3110,10 @@
       {
         "date": "2026-04-16",
         "rank": 11
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 11
       }
     ],
     "collegeStats": {
@@ -3162,8 +3206,8 @@
     "rankBySource": {
       "walter_football": 11,
       "cbs_sports": 17,
-      "tankathon": 12,
-      "espn": 10
+      "espn": 10,
+      "tankathon": 12
     },
     "rankHistory": [
       {
@@ -3357,6 +3401,10 @@
       {
         "date": "2026-04-16",
         "rank": 12
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 12
       }
     ],
     "collegeStats": {
@@ -3448,8 +3496,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 4,
-      "tankathon": 19,
-      "espn": 17
+      "espn": 17,
+      "tankathon": 19
     },
     "rankHistory": [
       {
@@ -3643,6 +3691,10 @@
       {
         "date": "2026-04-16",
         "rank": 13
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 13
       }
     ],
     "collegeStats": {},
@@ -3707,8 +3759,8 @@
     "rankBySource": {
       "walter_football": 15,
       "cbs_sports": 6,
-      "tankathon": 17,
-      "espn": 16
+      "espn": 16,
+      "tankathon": 17
     },
     "rankHistory": [
       {
@@ -3902,6 +3954,10 @@
       {
         "date": "2026-04-16",
         "rank": 14
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 14
       }
     ],
     "collegeStats": {
@@ -3985,8 +4041,8 @@
     "rankBySource": {
       "walter_football": 13,
       "cbs_sports": 23,
-      "tankathon": 13,
-      "espn": 12
+      "espn": 12,
+      "tankathon": 13
     },
     "rankHistory": [
       {
@@ -4179,6 +4235,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 15
+      },
+      {
+        "date": "2026-04-17",
         "rank": 15
       }
     ],
@@ -4465,6 +4525,10 @@
       {
         "date": "2026-04-16",
         "rank": 16
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 16
       }
     ],
     "collegeStats": {},
@@ -4721,6 +4785,10 @@
       {
         "date": "2026-04-16",
         "rank": 17
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 17
       }
     ],
     "collegeStats": {
@@ -4792,8 +4860,8 @@
     "rankBySource": {
       "walter_football": 14,
       "cbs_sports": 24,
-      "tankathon": 18,
-      "espn": 11
+      "espn": 11,
+      "tankathon": 18
     },
     "rankHistory": [
       {
@@ -4987,6 +5055,10 @@
       {
         "date": "2026-04-16",
         "rank": 18
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 18
       }
     ],
     "collegeStats": {
@@ -5078,8 +5150,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 10,
-      "tankathon": 22,
-      "espn": 22
+      "espn": 22,
+      "tankathon": 22
     },
     "rankHistory": [
       {
@@ -5273,6 +5345,10 @@
       {
         "date": "2026-04-16",
         "rank": 19
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 19
       }
     ],
     "collegeStats": {
@@ -5366,8 +5442,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 25,
-      "tankathon": 14,
-      "espn": 14
+      "espn": 14,
+      "tankathon": 14
     },
     "rankHistory": [
       {
@@ -5561,6 +5637,10 @@
       {
         "date": "2026-04-16",
         "rank": 20
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 20
       }
     ],
     "collegeStats": {},
@@ -5624,8 +5704,8 @@
     "classYear": "Soph",
     "rankBySource": {
       "cbs_sports": 13,
-      "tankathon": 23,
-      "espn": 28
+      "espn": 28,
+      "tankathon": 23
     },
     "rankHistory": [
       {
@@ -5819,6 +5899,10 @@
       {
         "date": "2026-04-16",
         "rank": 21
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 21
       }
     ],
     "collegeStats": {},
@@ -5882,8 +5966,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 21,
-      "tankathon": 24,
-      "espn": 24
+      "espn": 24,
+      "tankathon": 24
     },
     "rankHistory": [
       {
@@ -6077,6 +6161,10 @@
       {
         "date": "2026-04-16",
         "rank": 22
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 22
       }
     ],
     "collegeStats": {
@@ -6168,8 +6256,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 22,
-      "tankathon": 26,
-      "espn": 21
+      "espn": 21,
+      "tankathon": 26
     },
     "rankHistory": [
       {
@@ -6363,6 +6451,10 @@
       {
         "date": "2026-04-16",
         "rank": 23
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 23
       }
     ],
     "collegeStats": {
@@ -6440,8 +6532,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 30,
-      "tankathon": 21,
-      "espn": 18
+      "espn": 18,
+      "tankathon": 21
     },
     "rankHistory": [
       {
@@ -6635,6 +6727,10 @@
       {
         "date": "2026-04-16",
         "rank": 24
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 24
       }
     ],
     "collegeStats": {
@@ -6734,8 +6830,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 19,
-      "tankathon": 25,
-      "espn": 27
+      "espn": 27,
+      "tankathon": 25
     },
     "rankHistory": [
       {
@@ -6929,6 +7025,10 @@
       {
         "date": "2026-04-16",
         "rank": 25
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 25
       }
     ],
     "collegeStats": {
@@ -7022,8 +7122,8 @@
     "classYear": "Soph",
     "rankBySource": {
       "cbs_sports": 38,
-      "tankathon": 16,
-      "espn": 20
+      "espn": 20,
+      "tankathon": 16
     },
     "rankHistory": [
       {
@@ -7217,6 +7317,10 @@
       {
         "date": "2026-04-16",
         "rank": 26
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 26
       }
     ],
     "collegeStats": {
@@ -7310,8 +7414,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 34,
-      "tankathon": 20,
-      "espn": 25
+      "espn": 25,
+      "tankathon": 20
     },
     "rankHistory": [
       {
@@ -7505,6 +7609,10 @@
       {
         "date": "2026-04-16",
         "rank": 27
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 27
       }
     ],
     "collegeStats": {
@@ -7598,8 +7706,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 11,
-      "tankathon": 33,
-      "espn": 37
+      "espn": 37,
+      "tankathon": 33
     },
     "rankHistory": [
       {
@@ -7793,6 +7901,10 @@
       {
         "date": "2026-04-16",
         "rank": 28
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 28
       }
     ],
     "collegeStats": {
@@ -7899,8 +8011,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 32,
-      "tankathon": 29,
-      "espn": 26
+      "espn": 26,
+      "tankathon": 29
     },
     "rankHistory": [
       {
@@ -8094,6 +8206,10 @@
       {
         "date": "2026-04-16",
         "rank": 29
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 29
       }
     ],
     "collegeStats": {
@@ -8187,8 +8303,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 37,
-      "tankathon": 28,
-      "espn": 23
+      "espn": 23,
+      "tankathon": 28
     },
     "rankHistory": [
       {
@@ -8382,6 +8498,10 @@
       {
         "date": "2026-04-16",
         "rank": 30
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 30
       }
     ],
     "collegeStats": {
@@ -8477,8 +8597,8 @@
     "projectedPick": 37,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 27,
-      "espn": 32
+      "espn": 32,
+      "tankathon": 27
     },
     "rankHistory": [
       {
@@ -8672,6 +8792,10 @@
       {
         "date": "2026-04-16",
         "rank": 31
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 31
       }
     ],
     "collegeStats": {},
@@ -8741,8 +8865,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 33,
-      "tankathon": 35,
-      "espn": 30
+      "espn": 30,
+      "tankathon": 35
     },
     "rankHistory": [
       {
@@ -8936,6 +9060,10 @@
       {
         "date": "2026-04-16",
         "rank": 32
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 32
       }
     ],
     "collegeStats": {
@@ -9035,8 +9163,8 @@
     "classYear": "Soph",
     "rankBySource": {
       "cbs_sports": 40,
-      "tankathon": 30,
-      "espn": 31
+      "espn": 31,
+      "tankathon": 30
     },
     "rankHistory": [
       {
@@ -9230,6 +9358,10 @@
       {
         "date": "2026-04-16",
         "rank": 33
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 33
       }
     ],
     "collegeStats": {
@@ -9323,8 +9455,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 27,
-      "tankathon": 41,
-      "espn": 39
+      "espn": 39,
+      "tankathon": 41
     },
     "rankHistory": [
       {
@@ -9518,6 +9650,10 @@
       {
         "date": "2026-04-16",
         "rank": 34
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 34
       }
     ],
     "collegeStats": {
@@ -9617,8 +9753,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 31,
-      "tankathon": 37,
-      "espn": 41
+      "espn": 41,
+      "tankathon": 37
     },
     "rankHistory": [
       {
@@ -9812,6 +9948,10 @@
       {
         "date": "2026-04-16",
         "rank": 35
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 35
       }
     ],
     "collegeStats": {},
@@ -9875,8 +10015,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 29,
-      "tankathon": 32,
-      "espn": 52
+      "espn": 52,
+      "tankathon": 32
     },
     "rankHistory": [
       {
@@ -10070,6 +10210,10 @@
       {
         "date": "2026-04-16",
         "rank": 36
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 36
       }
     ],
     "collegeStats": {},
@@ -10133,8 +10277,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 35,
-      "tankathon": 43,
-      "espn": 35
+      "espn": 35,
+      "tankathon": 43
     },
     "rankHistory": [
       {
@@ -10328,6 +10472,10 @@
       {
         "date": "2026-04-16",
         "rank": 37
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 37
       }
     ],
     "collegeStats": {
@@ -10421,8 +10569,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 48,
-      "tankathon": 36,
-      "espn": 34
+      "espn": 34,
+      "tankathon": 36
     },
     "rankHistory": [
       {
@@ -10616,6 +10764,10 @@
       {
         "date": "2026-04-16",
         "rank": 38
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 38
       }
     ],
     "collegeStats": {
@@ -10714,8 +10866,8 @@
     "projectedPick": 28,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 34,
-      "espn": 45
+      "espn": 45,
+      "tankathon": 34
     },
     "rankHistory": [
       {
@@ -10909,6 +11061,10 @@
       {
         "date": "2026-04-16",
         "rank": 39
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 39
       }
     ],
     "collegeStats": {
@@ -10984,8 +11140,8 @@
     "projectedPick": 26,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 31,
-      "espn": 53
+      "espn": 53,
+      "tankathon": 31
     },
     "rankHistory": [
       {
@@ -11179,6 +11335,10 @@
       {
         "date": "2026-04-16",
         "rank": 40
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 40
       }
     ],
     "collegeStats": {
@@ -11267,8 +11427,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 51,
-      "tankathon": 48,
-      "espn": 33
+      "espn": 33,
+      "tankathon": 48
     },
     "rankHistory": [
       {
@@ -11462,6 +11622,10 @@
       {
         "date": "2026-04-16",
         "rank": 41
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 41
       }
     ],
     "collegeStats": {},
@@ -11525,8 +11689,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 42,
-      "tankathon": 44,
-      "espn": 49
+      "espn": 49,
+      "tankathon": 44
     },
     "rankHistory": [
       {
@@ -11720,6 +11884,10 @@
       {
         "date": "2026-04-16",
         "rank": 42
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 42
       }
     ],
     "collegeStats": {
@@ -11813,8 +11981,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 46,
-      "tankathon": 50,
-      "espn": 43
+      "espn": 43,
+      "tankathon": 50
     },
     "rankHistory": [
       {
@@ -12008,6 +12176,10 @@
       {
         "date": "2026-04-16",
         "rank": 43
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 43
       }
     ],
     "collegeStats": {
@@ -12104,8 +12276,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 52,
-      "tankathon": 40,
-      "espn": 47
+      "espn": 47,
+      "tankathon": 40
     },
     "rankHistory": [
       {
@@ -12299,6 +12471,10 @@
       {
         "date": "2026-04-16",
         "rank": 44
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 44
       }
     ],
     "collegeStats": {},
@@ -12362,8 +12538,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 61,
-      "tankathon": 39,
-      "espn": 38
+      "espn": 38,
+      "tankathon": 39
     },
     "rankHistory": [
       {
@@ -12557,6 +12733,10 @@
       {
         "date": "2026-04-16",
         "rank": 45
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 45
       }
     ],
     "collegeStats": {
@@ -12650,8 +12830,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 28,
-      "tankathon": 46,
-      "espn": 67
+      "espn": 67,
+      "tankathon": 46
     },
     "rankHistory": [
       {
@@ -12845,6 +13025,10 @@
       {
         "date": "2026-04-16",
         "rank": 46
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 46
       }
     ],
     "collegeStats": {
@@ -12944,8 +13128,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 76,
-      "tankathon": 38,
-      "espn": 29
+      "espn": 29,
+      "tankathon": 38
     },
     "rankHistory": [
       {
@@ -13139,6 +13323,10 @@
       {
         "date": "2026-04-16",
         "rank": 47
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 47
       }
     ],
     "collegeStats": {
@@ -13238,8 +13426,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 36,
-      "tankathon": 58,
-      "espn": 55
+      "espn": 55,
+      "tankathon": 58
     },
     "rankHistory": [
       {
@@ -13433,6 +13621,10 @@
       {
         "date": "2026-04-16",
         "rank": 48
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 48
       }
     ],
     "collegeStats": {
@@ -13532,8 +13724,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 57,
-      "tankathon": 45,
-      "espn": 50
+      "espn": 50,
+      "tankathon": 45
     },
     "rankHistory": [
       {
@@ -13727,6 +13919,10 @@
       {
         "date": "2026-04-16",
         "rank": 49
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 49
       }
     ],
     "collegeStats": {
@@ -13824,8 +14020,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 53,
-      "tankathon": 55,
-      "espn": 48
+      "espn": 48,
+      "tankathon": 55
     },
     "rankHistory": [
       {
@@ -14019,6 +14215,10 @@
       {
         "date": "2026-04-16",
         "rank": 50
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 50
       }
     ],
     "collegeStats": {
@@ -14118,8 +14318,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 68,
-      "tankathon": 53,
-      "espn": 36
+      "espn": 36,
+      "tankathon": 53
     },
     "rankHistory": [
       {
@@ -14313,6 +14513,10 @@
       {
         "date": "2026-04-16",
         "rank": 51
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 51
       }
     ],
     "collegeStats": {
@@ -14404,8 +14608,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 59,
-      "tankathon": 59,
-      "espn": 40
+      "espn": 40,
+      "tankathon": 59
     },
     "rankHistory": [
       {
@@ -14599,6 +14803,10 @@
       {
         "date": "2026-04-16",
         "rank": 52
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 52
       }
     ],
     "collegeStats": {
@@ -14690,8 +14898,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 62,
-      "tankathon": 54,
-      "espn": 42
+      "espn": 42,
+      "tankathon": 54
     },
     "rankHistory": [
       {
@@ -14885,6 +15093,10 @@
       {
         "date": "2026-04-16",
         "rank": 53
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 53
       }
     ],
     "collegeStats": {
@@ -14981,8 +15193,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 58,
-      "tankathon": 51,
-      "espn": 54
+      "espn": 54,
+      "tankathon": 51
     },
     "rankHistory": [
       {
@@ -15176,6 +15388,10 @@
       {
         "date": "2026-04-16",
         "rank": 54
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 54
       }
     ],
     "collegeStats": {
@@ -15275,8 +15491,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 66,
-      "tankathon": 52,
-      "espn": 44
+      "espn": 44,
+      "tankathon": 52
     },
     "rankHistory": [
       {
@@ -15470,6 +15686,10 @@
       {
         "date": "2026-04-16",
         "rank": 55
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 55
       }
     ],
     "collegeStats": {
@@ -15568,8 +15788,8 @@
     "projectedPick": 43,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 49,
-      "espn": 61
+      "espn": 61,
+      "tankathon": 49
     },
     "rankHistory": [
       {
@@ -15763,6 +15983,10 @@
       {
         "date": "2026-04-16",
         "rank": 56
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 56
       }
     ],
     "collegeStats": {
@@ -15857,8 +16081,8 @@
     "classYear": "Soph",
     "rankBySource": {
       "cbs_sports": 39,
-      "tankathon": 66,
-      "espn": 62
+      "espn": 62,
+      "tankathon": 66
     },
     "rankHistory": [
       {
@@ -16052,6 +16276,10 @@
       {
         "date": "2026-04-16",
         "rank": 57
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 57
       }
     ],
     "collegeStats": {
@@ -16118,11 +16346,11 @@
     ]
   },
   {
-    "id": "d angelo ponds-cb-indiana",
-    "name": "D'Angelo Ponds",
-    "position": "CB",
+    "id": "aj haulcy-s-lsu",
+    "name": "A.J. Haulcy",
+    "position": "S",
     "positionGroup": "DB",
-    "school": "Indiana",
+    "school": "LSU",
     "class": null,
     "yearsInCollege": null,
     "consensusRank": 58,
@@ -16132,296 +16360,14 @@
       64
     ],
     "positionRank": 11,
-    "espnGrade": 80.0,
-    "espnId": "110833",
-    "projectedTeam": "Miami Dolphins",
-    "projectedPick": 50,
-    "classYear": null,
-    "rankBySource": {
-      "tankathon": 47,
-      "espn": 66
-    },
-    "rankHistory": [
-      {
-        "date": "2026-02-28",
-        "rank": 63
-      },
-      {
-        "date": "2026-03-01",
-        "rank": 51
-      },
-      {
-        "date": "2026-03-02",
-        "rank": 49
-      },
-      {
-        "date": "2026-03-03",
-        "rank": 51
-      },
-      {
-        "date": "2026-03-04",
-        "rank": 51
-      },
-      {
-        "date": "2026-03-05",
-        "rank": 49
-      },
-      {
-        "date": "2026-03-06",
-        "rank": 48
-      },
-      {
-        "date": "2026-03-07",
-        "rank": 49
-      },
-      {
-        "date": "2026-03-08",
-        "rank": 49
-      },
-      {
-        "date": "2026-03-09",
-        "rank": 49
-      },
-      {
-        "date": "2026-03-10",
-        "rank": 49
-      },
-      {
-        "date": "2026-03-11",
-        "rank": 49
-      },
-      {
-        "date": "2026-03-12",
-        "rank": 48
-      },
-      {
-        "date": "2026-03-13",
-        "rank": 43
-      },
-      {
-        "date": "2026-03-14",
-        "rank": 43
-      },
-      {
-        "date": "2026-03-15",
-        "rank": 43
-      },
-      {
-        "date": "2026-03-16",
-        "rank": 43
-      },
-      {
-        "date": "2026-03-17",
-        "rank": 43
-      },
-      {
-        "date": "2026-03-18",
-        "rank": 43
-      },
-      {
-        "date": "2026-03-19",
-        "rank": 43
-      },
-      {
-        "date": "2026-03-20",
-        "rank": 43
-      },
-      {
-        "date": "2026-03-21",
-        "rank": 44
-      },
-      {
-        "date": "2026-03-22",
-        "rank": 43
-      },
-      {
-        "date": "2026-03-23",
-        "rank": 43
-      },
-      {
-        "date": "2026-03-24",
-        "rank": 43
-      },
-      {
-        "date": "2026-03-25",
-        "rank": 43
-      },
-      {
-        "date": "2026-03-26",
-        "rank": 44
-      },
-      {
-        "date": "2026-03-27",
-        "rank": 44
-      },
-      {
-        "date": "2026-03-28",
-        "rank": 44
-      },
-      {
-        "date": "2026-03-29",
-        "rank": 44
-      },
-      {
-        "date": "2026-03-30",
-        "rank": 43
-      },
-      {
-        "date": "2026-03-31",
-        "rank": 43
-      },
-      {
-        "date": "2026-04-01",
-        "rank": 42
-      },
-      {
-        "date": "2026-04-02",
-        "rank": 43
-      },
-      {
-        "date": "2026-04-03",
-        "rank": 58
-      },
-      {
-        "date": "2026-04-04",
-        "rank": 58
-      },
-      {
-        "date": "2026-04-05",
-        "rank": 57
-      },
-      {
-        "date": "2026-04-06",
-        "rank": 58
-      },
-      {
-        "date": "2026-04-07",
-        "rank": 58
-      },
-      {
-        "date": "2026-04-08",
-        "rank": 58
-      },
-      {
-        "date": "2026-04-09",
-        "rank": 57
-      },
-      {
-        "date": "2026-04-10",
-        "rank": 58
-      },
-      {
-        "date": "2026-04-11",
-        "rank": 57
-      },
-      {
-        "date": "2026-04-12",
-        "rank": 58
-      },
-      {
-        "date": "2026-04-13",
-        "rank": 57
-      },
-      {
-        "date": "2026-04-14",
-        "rank": 58
-      },
-      {
-        "date": "2026-04-15",
-        "rank": 58
-      },
-      {
-        "date": "2026-04-16",
-        "rank": 58
-      }
-    ],
-    "collegeStats": {
-      "2024": {
-        "pbus": 9.0,
-        "sacks": 0.0,
-        "tfls": 4.5,
-        "tackles": 55.0
-      },
-      "2025": {
-        "pbus": 10.0,
-        "sacks": 0.0,
-        "tfls": 4.0,
-        "tackles": 60.0
-      },
-      "2023": {
-        "pbus": 11.0,
-        "sacks": 0.0,
-        "tfls": 2.0,
-        "tackles": 51.0
-      }
-    },
-    "cbsStats": {},
-    "tankStats": {
-      "TACKLES": "61",
-      "SACKS": "0.0",
-      "PASS DEF": "11",
-      "INT": "2",
-      "FF": "1"
-    },
-    "combineData": {
-      "height": "5-9",
-      "weight": 170,
-      "forty": null,
-      "bench": null,
-      "vertical": 43.5,
-      "broadJump": null,
-      "cone": null,
-      "shuttle": null,
-      "participated": true
-    },
-    "positionTotal": 96,
-    "playerComps": [
-      {
-        "name": "Marcus Jones",
-        "year": 2022,
-        "pick": 85,
-        "school": "Houston",
-        "similarity": 69
-      },
-      {
-        "name": "Daequan Hardy",
-        "year": 2024,
-        "pick": 219,
-        "school": "Penn St.",
-        "similarity": 60
-      },
-      {
-        "name": "Jack Jones",
-        "year": 2022,
-        "pick": 121,
-        "school": "Arizona St.",
-        "similarity": 55
-      }
-    ]
-  },
-  {
-    "id": "aj haulcy-s-lsu",
-    "name": "A.J. Haulcy",
-    "position": "S",
-    "positionGroup": "DB",
-    "school": "LSU",
-    "class": null,
-    "yearsInCollege": null,
-    "consensusRank": 59,
-    "projectedRound": 2,
-    "projectedPickRange": [
-      33,
-      64
-    ],
-    "positionRank": 12,
     "espnGrade": 82.0,
     "espnId": "110785",
     "projectedTeam": "New York Jets",
     "projectedPick": 58,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 57,
-      "espn": 56
+      "espn": 56,
+      "tankathon": 57
     },
     "rankHistory": [
       {
@@ -16615,6 +16561,10 @@
       {
         "date": "2026-04-16",
         "rank": 59
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 58
       }
     ],
     "collegeStats": {
@@ -16688,6 +16638,292 @@
     ]
   },
   {
+    "id": "d angelo ponds-cb-indiana",
+    "name": "D'Angelo Ponds",
+    "position": "CB",
+    "positionGroup": "DB",
+    "school": "Indiana",
+    "class": null,
+    "yearsInCollege": null,
+    "consensusRank": 59,
+    "projectedRound": 2,
+    "projectedPickRange": [
+      33,
+      64
+    ],
+    "positionRank": 12,
+    "espnGrade": 80.0,
+    "espnId": "110833",
+    "projectedTeam": "Miami Dolphins",
+    "projectedPick": 50,
+    "classYear": null,
+    "rankBySource": {
+      "espn": 66,
+      "tankathon": 47
+    },
+    "rankHistory": [
+      {
+        "date": "2026-02-28",
+        "rank": 63
+      },
+      {
+        "date": "2026-03-01",
+        "rank": 51
+      },
+      {
+        "date": "2026-03-02",
+        "rank": 49
+      },
+      {
+        "date": "2026-03-03",
+        "rank": 51
+      },
+      {
+        "date": "2026-03-04",
+        "rank": 51
+      },
+      {
+        "date": "2026-03-05",
+        "rank": 49
+      },
+      {
+        "date": "2026-03-06",
+        "rank": 48
+      },
+      {
+        "date": "2026-03-07",
+        "rank": 49
+      },
+      {
+        "date": "2026-03-08",
+        "rank": 49
+      },
+      {
+        "date": "2026-03-09",
+        "rank": 49
+      },
+      {
+        "date": "2026-03-10",
+        "rank": 49
+      },
+      {
+        "date": "2026-03-11",
+        "rank": 49
+      },
+      {
+        "date": "2026-03-12",
+        "rank": 48
+      },
+      {
+        "date": "2026-03-13",
+        "rank": 43
+      },
+      {
+        "date": "2026-03-14",
+        "rank": 43
+      },
+      {
+        "date": "2026-03-15",
+        "rank": 43
+      },
+      {
+        "date": "2026-03-16",
+        "rank": 43
+      },
+      {
+        "date": "2026-03-17",
+        "rank": 43
+      },
+      {
+        "date": "2026-03-18",
+        "rank": 43
+      },
+      {
+        "date": "2026-03-19",
+        "rank": 43
+      },
+      {
+        "date": "2026-03-20",
+        "rank": 43
+      },
+      {
+        "date": "2026-03-21",
+        "rank": 44
+      },
+      {
+        "date": "2026-03-22",
+        "rank": 43
+      },
+      {
+        "date": "2026-03-23",
+        "rank": 43
+      },
+      {
+        "date": "2026-03-24",
+        "rank": 43
+      },
+      {
+        "date": "2026-03-25",
+        "rank": 43
+      },
+      {
+        "date": "2026-03-26",
+        "rank": 44
+      },
+      {
+        "date": "2026-03-27",
+        "rank": 44
+      },
+      {
+        "date": "2026-03-28",
+        "rank": 44
+      },
+      {
+        "date": "2026-03-29",
+        "rank": 44
+      },
+      {
+        "date": "2026-03-30",
+        "rank": 43
+      },
+      {
+        "date": "2026-03-31",
+        "rank": 43
+      },
+      {
+        "date": "2026-04-01",
+        "rank": 42
+      },
+      {
+        "date": "2026-04-02",
+        "rank": 43
+      },
+      {
+        "date": "2026-04-03",
+        "rank": 58
+      },
+      {
+        "date": "2026-04-04",
+        "rank": 58
+      },
+      {
+        "date": "2026-04-05",
+        "rank": 57
+      },
+      {
+        "date": "2026-04-06",
+        "rank": 58
+      },
+      {
+        "date": "2026-04-07",
+        "rank": 58
+      },
+      {
+        "date": "2026-04-08",
+        "rank": 58
+      },
+      {
+        "date": "2026-04-09",
+        "rank": 57
+      },
+      {
+        "date": "2026-04-10",
+        "rank": 58
+      },
+      {
+        "date": "2026-04-11",
+        "rank": 57
+      },
+      {
+        "date": "2026-04-12",
+        "rank": 58
+      },
+      {
+        "date": "2026-04-13",
+        "rank": 57
+      },
+      {
+        "date": "2026-04-14",
+        "rank": 58
+      },
+      {
+        "date": "2026-04-15",
+        "rank": 58
+      },
+      {
+        "date": "2026-04-16",
+        "rank": 58
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 59
+      }
+    ],
+    "collegeStats": {
+      "2024": {
+        "pbus": 9.0,
+        "sacks": 0.0,
+        "tfls": 4.5,
+        "tackles": 55.0
+      },
+      "2025": {
+        "pbus": 10.0,
+        "sacks": 0.0,
+        "tfls": 4.0,
+        "tackles": 60.0
+      },
+      "2023": {
+        "pbus": 11.0,
+        "sacks": 0.0,
+        "tfls": 2.0,
+        "tackles": 51.0
+      }
+    },
+    "cbsStats": {},
+    "tankStats": {
+      "TACKLES": "61",
+      "SACKS": "0.0",
+      "PASS DEF": "11",
+      "INT": "2",
+      "FF": "1"
+    },
+    "combineData": {
+      "height": "5-9",
+      "weight": 170,
+      "forty": null,
+      "bench": null,
+      "vertical": 43.5,
+      "broadJump": null,
+      "cone": null,
+      "shuttle": null,
+      "participated": true
+    },
+    "positionTotal": 96,
+    "playerComps": [
+      {
+        "name": "Marcus Jones",
+        "year": 2022,
+        "pick": 85,
+        "school": "Houston",
+        "similarity": 69
+      },
+      {
+        "name": "Daequan Hardy",
+        "year": 2024,
+        "pick": 219,
+        "school": "Penn St.",
+        "similarity": 60
+      },
+      {
+        "name": "Jack Jones",
+        "year": 2022,
+        "pick": 121,
+        "school": "Arizona St.",
+        "similarity": 55
+      }
+    ]
+  },
+  {
     "id": "jacob rodriguez-lb-texas tech",
     "name": "Jacob Rodriguez",
     "position": "LB",
@@ -16709,8 +16945,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 83,
-      "tankathon": 42,
-      "espn": 46
+      "espn": 46,
+      "tankathon": 42
     },
     "rankHistory": [
       {
@@ -16904,6 +17140,10 @@
       {
         "date": "2026-04-16",
         "rank": 60
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 60
       }
     ],
     "collegeStats": {
@@ -17003,8 +17243,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 43,
-      "tankathon": 67,
-      "espn": 75
+      "espn": 75,
+      "tankathon": 67
     },
     "rankHistory": [
       {
@@ -17198,6 +17438,10 @@
       {
         "date": "2026-04-16",
         "rank": 61
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 61
       }
     ],
     "collegeStats": {
@@ -17275,8 +17519,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 78,
-      "tankathon": 64,
-      "espn": 51
+      "espn": 51,
+      "tankathon": 64
     },
     "rankHistory": [
       {
@@ -17470,6 +17714,10 @@
       {
         "date": "2026-04-16",
         "rank": 62
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 62
       }
     ],
     "collegeStats": {},
@@ -17533,8 +17781,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 64,
-      "tankathon": 71,
-      "espn": 59
+      "espn": 59,
+      "tankathon": 71
     },
     "rankHistory": [
       {
@@ -17728,6 +17976,10 @@
       {
         "date": "2026-04-16",
         "rank": 63
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 63
       }
     ],
     "collegeStats": {
@@ -17824,8 +18076,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 71,
-      "tankathon": 63,
-      "espn": 69
+      "espn": 69,
+      "tankathon": 63
     },
     "rankHistory": [
       {
@@ -18019,6 +18271,10 @@
       {
         "date": "2026-04-16",
         "rank": 64
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 64
       }
     ],
     "collegeStats": {
@@ -18118,8 +18374,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 81,
-      "tankathon": 65,
-      "espn": 57
+      "espn": 57,
+      "tankathon": 65
     },
     "rankHistory": [
       {
@@ -18313,6 +18569,10 @@
       {
         "date": "2026-04-16",
         "rank": 65
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 65
       }
     ],
     "collegeStats": {
@@ -18409,8 +18669,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 60,
-      "tankathon": 62,
-      "espn": 84
+      "espn": 84,
+      "tankathon": 62
     },
     "rankHistory": [
       {
@@ -18604,6 +18864,10 @@
       {
         "date": "2026-04-16",
         "rank": 66
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 66
       }
     ],
     "collegeStats": {},
@@ -18667,8 +18931,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 45,
-      "tankathon": 70,
-      "espn": 104
+      "espn": 104,
+      "tankathon": 70
     },
     "rankHistory": [
       {
@@ -18862,6 +19126,10 @@
       {
         "date": "2026-04-16",
         "rank": 67
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 67
       }
     ],
     "collegeStats": {},
@@ -18925,8 +19193,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 98,
-      "tankathon": 60,
-      "espn": 60
+      "espn": 60,
+      "tankathon": 60
     },
     "rankHistory": [
       {
@@ -19119,6 +19387,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 68
+      },
+      {
+        "date": "2026-04-17",
         "rank": 68
       }
     ],
@@ -19219,8 +19491,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 55,
-      "tankathon": 78,
-      "espn": 89
+      "espn": 89,
+      "tankathon": 78
     },
     "rankHistory": [
       {
@@ -19414,6 +19686,10 @@
       {
         "date": "2026-04-16",
         "rank": 69
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 69
       }
     ],
     "collegeStats": {
@@ -19507,8 +19783,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 88,
-      "tankathon": 75,
-      "espn": 64
+      "espn": 64,
+      "tankathon": 75
     },
     "rankHistory": [
       {
@@ -19702,6 +19978,10 @@
       {
         "date": "2026-04-16",
         "rank": 70
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 70
       }
     ],
     "collegeStats": {
@@ -19793,8 +20073,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 101,
-      "tankathon": 69,
-      "espn": 58
+      "espn": 58,
+      "tankathon": 69
     },
     "rankHistory": [
       {
@@ -19988,6 +20268,10 @@
       {
         "date": "2026-04-16",
         "rank": 71
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 71
       }
     ],
     "collegeStats": {},
@@ -20051,8 +20335,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 82,
-      "tankathon": 77,
-      "espn": 73
+      "espn": 73,
+      "tankathon": 77
     },
     "rankHistory": [
       {
@@ -20246,6 +20530,10 @@
       {
         "date": "2026-04-16",
         "rank": 72
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 72
       }
     ],
     "collegeStats": {
@@ -20342,8 +20630,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 56,
-      "tankathon": 81,
-      "espn": 97
+      "espn": 97,
+      "tankathon": 81
     },
     "rankHistory": [
       {
@@ -20537,6 +20825,10 @@
       {
         "date": "2026-04-16",
         "rank": 73
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 73
       }
     ],
     "collegeStats": {
@@ -20630,8 +20922,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 102,
-      "tankathon": 56,
-      "espn": 77
+      "espn": 77,
+      "tankathon": 56
     },
     "rankHistory": [
       {
@@ -20825,6 +21117,10 @@
       {
         "date": "2026-04-16",
         "rank": 74
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 74
       }
     ],
     "collegeStats": {
@@ -20921,8 +21217,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 73,
-      "tankathon": 74,
-      "espn": 94
+      "espn": 94,
+      "tankathon": 74
     },
     "rankHistory": [
       {
@@ -21116,6 +21412,10 @@
       {
         "date": "2026-04-16",
         "rank": 75
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 75
       }
     ],
     "collegeStats": {
@@ -21215,8 +21515,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 87,
-      "tankathon": 76,
-      "espn": 78
+      "espn": 78,
+      "tankathon": 76
     },
     "rankHistory": [
       {
@@ -21410,6 +21710,10 @@
       {
         "date": "2026-04-16",
         "rank": 76
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 76
       }
     ],
     "collegeStats": {
@@ -21509,8 +21813,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 77,
-      "tankathon": 73,
-      "espn": 100
+      "espn": 100,
+      "tankathon": 73
     },
     "rankHistory": [
       {
@@ -21704,6 +22008,10 @@
       {
         "date": "2026-04-16",
         "rank": 77
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 77
       }
     ],
     "collegeStats": {
@@ -21797,8 +22105,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 110,
-      "tankathon": 82,
-      "espn": 65
+      "espn": 65,
+      "tankathon": 82
     },
     "rankHistory": [
       {
@@ -21992,6 +22300,10 @@
       {
         "date": "2026-04-16",
         "rank": 78
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 78
       }
     ],
     "collegeStats": {
@@ -22085,8 +22397,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 65,
-      "tankathon": 107,
-      "espn": 88
+      "espn": 88,
+      "tankathon": 107
     },
     "rankHistory": [
       {
@@ -22280,6 +22592,10 @@
       {
         "date": "2026-04-16",
         "rank": 79
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 79
       }
     ],
     "collegeStats": {
@@ -22379,8 +22695,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 89,
-      "tankathon": 99,
-      "espn": 74
+      "espn": 74,
+      "tankathon": 99
     },
     "rankHistory": [
       {
@@ -22574,6 +22890,10 @@
       {
         "date": "2026-04-16",
         "rank": 80
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 80
       }
     ],
     "collegeStats": {
@@ -22673,8 +22993,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 105,
-      "tankathon": 61,
-      "espn": 96
+      "espn": 96,
+      "tankathon": 61
     },
     "rankHistory": [
       {
@@ -22868,6 +23188,10 @@
       {
         "date": "2026-04-16",
         "rank": 81
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 81
       }
     ],
     "collegeStats": {
@@ -22964,8 +23288,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 96,
-      "tankathon": 72,
-      "espn": 98
+      "espn": 98,
+      "tankathon": 72
     },
     "rankHistory": [
       {
@@ -23159,6 +23483,10 @@
       {
         "date": "2026-04-16",
         "rank": 82
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 82
       }
     ],
     "collegeStats": {
@@ -23258,8 +23586,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 95,
-      "tankathon": 93,
-      "espn": 82
+      "espn": 82,
+      "tankathon": 93
     },
     "rankHistory": [
       {
@@ -23453,6 +23781,10 @@
       {
         "date": "2026-04-16",
         "rank": 83
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 83
       }
     ],
     "collegeStats": {
@@ -23550,8 +23882,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 100,
-      "tankathon": 96,
-      "espn": 87
+      "espn": 87,
+      "tankathon": 96
     },
     "rankHistory": [
       {
@@ -23745,6 +24077,10 @@
       {
         "date": "2026-04-16",
         "rank": 84
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 84
       }
     ],
     "collegeStats": {
@@ -23852,8 +24188,8 @@
     "projectedPick": 121,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 98,
-      "espn": 90
+      "espn": 90,
+      "tankathon": 98
     },
     "rankHistory": [
       {
@@ -24047,6 +24383,10 @@
       {
         "date": "2026-04-16",
         "rank": 85
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 85
       }
     ],
     "collegeStats": {
@@ -24132,8 +24472,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 115,
-      "tankathon": 91,
-      "espn": 79
+      "espn": 79,
+      "tankathon": 91
     },
     "rankHistory": [
       {
@@ -24327,6 +24667,10 @@
       {
         "date": "2026-04-16",
         "rank": 86
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 86
       }
     ],
     "collegeStats": {},
@@ -24389,8 +24733,8 @@
     "projectedPick": 101,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 92,
-      "espn": 101
+      "espn": 101,
+      "tankathon": 92
     },
     "rankHistory": [
       {
@@ -24584,6 +24928,10 @@
       {
         "date": "2026-04-16",
         "rank": 87
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 87
       }
     ],
     "collegeStats": {},
@@ -24652,8 +25000,8 @@
     "projectedPick": 126,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 119,
-      "espn": 76
+      "espn": 76,
+      "tankathon": 119
     },
     "rankHistory": [
       {
@@ -24847,6 +25195,10 @@
       {
         "date": "2026-04-16",
         "rank": 88
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 88
       }
     ],
     "collegeStats": {
@@ -24937,8 +25289,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 103,
-      "tankathon": 86,
-      "espn": 108
+      "espn": 108,
+      "tankathon": 86
     },
     "rankHistory": [
       {
@@ -25132,6 +25484,10 @@
       {
         "date": "2026-04-16",
         "rank": 89
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 89
       }
     ],
     "collegeStats": {
@@ -25207,8 +25563,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 72,
-      "tankathon": 118,
-      "espn": 109
+      "espn": 109,
+      "tankathon": 118
     },
     "rankHistory": [
       {
@@ -25402,6 +25758,10 @@
       {
         "date": "2026-04-16",
         "rank": 90
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 90
       }
     ],
     "collegeStats": {
@@ -25501,8 +25861,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 74,
-      "tankathon": 106,
-      "espn": 119
+      "espn": 119,
+      "tankathon": 106
     },
     "rankHistory": [
       {
@@ -25696,6 +26056,10 @@
       {
         "date": "2026-04-16",
         "rank": 91
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 91
       }
     ],
     "collegeStats": {
@@ -25795,8 +26159,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 133,
-      "tankathon": 80,
-      "espn": 91
+      "espn": 91,
+      "tankathon": 80
     },
     "rankHistory": [
       {
@@ -25990,6 +26354,10 @@
       {
         "date": "2026-04-16",
         "rank": 92
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 92
       }
     ],
     "collegeStats": {
@@ -26089,8 +26457,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 155,
-      "tankathon": 79,
-      "espn": 70
+      "espn": 70,
+      "tankathon": 79
     },
     "rankHistory": [
       {
@@ -26284,6 +26652,10 @@
       {
         "date": "2026-04-16",
         "rank": 93
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 93
       }
     ],
     "collegeStats": {
@@ -26370,8 +26742,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 47,
-      "tankathon": 152,
-      "espn": 106
+      "espn": 106,
+      "tankathon": 152
     },
     "rankHistory": [
       {
@@ -26565,6 +26937,10 @@
       {
         "date": "2026-04-16",
         "rank": 94
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 94
       }
     ],
     "collegeStats": {},
@@ -26628,8 +27004,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 49,
-      "tankathon": 112,
-      "espn": 144
+      "espn": 144,
+      "tankathon": 112
     },
     "rankHistory": [
       {
@@ -26823,6 +27199,10 @@
       {
         "date": "2026-04-16",
         "rank": 95
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 95
       }
     ],
     "collegeStats": {
@@ -26919,8 +27299,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 86,
-      "tankathon": 105,
-      "espn": 120
+      "espn": 120,
+      "tankathon": 105
     },
     "rankHistory": [
       {
@@ -27114,6 +27494,10 @@
       {
         "date": "2026-04-16",
         "rank": 96
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 96
       }
     ],
     "collegeStats": {},
@@ -27177,8 +27561,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 99,
-      "tankathon": 108,
-      "espn": 105
+      "espn": 105,
+      "tankathon": 108
     },
     "rankHistory": [
       {
@@ -27372,6 +27756,10 @@
       {
         "date": "2026-04-16",
         "rank": 97
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 97
       }
     ],
     "collegeStats": {
@@ -27465,8 +27853,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 154,
-      "tankathon": 85,
-      "espn": 72
+      "espn": 72,
+      "tankathon": 85
     },
     "rankHistory": [
       {
@@ -27660,6 +28048,10 @@
       {
         "date": "2026-04-16",
         "rank": 98
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 98
       }
     ],
     "collegeStats": {
@@ -27756,8 +28148,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 70,
-      "tankathon": 110,
-      "espn": 139
+      "espn": 139,
+      "tankathon": 110
     },
     "rankHistory": [
       {
@@ -27951,6 +28343,10 @@
       {
         "date": "2026-04-16",
         "rank": 99
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 99
       }
     ],
     "collegeStats": {},
@@ -28014,8 +28410,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 181,
-      "tankathon": 68,
-      "espn": 68
+      "espn": 68,
+      "tankathon": 68
     },
     "rankHistory": [
       {
@@ -28209,6 +28605,10 @@
       {
         "date": "2026-04-16",
         "rank": 100
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 100
       }
     ],
     "collegeStats": {
@@ -28292,8 +28692,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 67,
-      "tankathon": 114,
-      "espn": 148
+      "espn": 148,
+      "tankathon": 114
     },
     "rankHistory": [
       {
@@ -28487,6 +28887,10 @@
       {
         "date": "2026-04-16",
         "rank": 101
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 101
       }
     ],
     "collegeStats": {
@@ -28583,8 +28987,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 137,
-      "tankathon": 101,
-      "espn": 99
+      "espn": 99,
+      "tankathon": 101
     },
     "rankHistory": [
       {
@@ -28778,6 +29182,10 @@
       {
         "date": "2026-04-16",
         "rank": 102
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 102
       }
     ],
     "collegeStats": {},
@@ -28841,8 +29249,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 80,
-      "tankathon": 129,
-      "espn": 132
+      "espn": 132,
+      "tankathon": 129
     },
     "rankHistory": [
       {
@@ -29036,6 +29444,10 @@
       {
         "date": "2026-04-16",
         "rank": 103
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 103
       }
     ],
     "collegeStats": {
@@ -29135,8 +29547,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 85,
-      "tankathon": 121,
-      "espn": 137
+      "espn": 137,
+      "tankathon": 121
     },
     "rankHistory": [
       {
@@ -29330,6 +29742,10 @@
       {
         "date": "2026-04-16",
         "rank": 104
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 104
       }
     ],
     "collegeStats": {},
@@ -29393,8 +29809,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 172,
-      "tankathon": 88,
-      "espn": 81
+      "espn": 81,
+      "tankathon": 88
     },
     "rankHistory": [
       {
@@ -29588,6 +30004,10 @@
       {
         "date": "2026-04-16",
         "rank": 105
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 105
       }
     ],
     "collegeStats": {
@@ -29684,8 +30104,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 144,
-      "tankathon": 89,
-      "espn": 112
+      "espn": 112,
+      "tankathon": 89
     },
     "rankHistory": [
       {
@@ -29878,6 +30298,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 106
+      },
+      {
+        "date": "2026-04-17",
         "rank": 106
       }
     ],
@@ -30171,6 +30595,10 @@
       {
         "date": "2026-04-16",
         "rank": 107
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 107
       }
     ],
     "collegeStats": {
@@ -30249,8 +30677,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 119,
-      "tankathon": 128,
-      "espn": 102
+      "espn": 102,
+      "tankathon": 128
     },
     "rankHistory": [
       {
@@ -30444,6 +30872,10 @@
       {
         "date": "2026-04-16",
         "rank": 108
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 108
       }
     ],
     "collegeStats": {},
@@ -30507,8 +30939,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 79,
-      "tankathon": 104,
-      "espn": 169
+      "espn": 169,
+      "tankathon": 104
     },
     "rankHistory": [
       {
@@ -30702,6 +31134,10 @@
       {
         "date": "2026-04-16",
         "rank": 109
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 109
       }
     ],
     "collegeStats": {
@@ -30801,8 +31237,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 150,
-      "tankathon": 139,
-      "espn": 63
+      "espn": 63,
+      "tankathon": 139
     },
     "rankHistory": [
       {
@@ -30996,6 +31432,10 @@
       {
         "date": "2026-04-16",
         "rank": 110
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 110
       }
     ],
     "collegeStats": {
@@ -31095,8 +31535,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 163,
-      "tankathon": 94,
-      "espn": 95
+      "espn": 95,
+      "tankathon": 94
     },
     "rankHistory": [
       {
@@ -31290,6 +31730,10 @@
       {
         "date": "2026-04-16",
         "rank": 111
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 111
       }
     ],
     "collegeStats": {
@@ -31375,8 +31819,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 173,
-      "tankathon": 84,
-      "espn": 93
+      "espn": 93,
+      "tankathon": 84
     },
     "rankHistory": [
       {
@@ -31570,6 +32014,10 @@
       {
         "date": "2026-04-16",
         "rank": 112
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 112
       }
     ],
     "collegeStats": {
@@ -31669,8 +32117,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 178,
-      "tankathon": 87,
-      "espn": 85
+      "espn": 85,
+      "tankathon": 87
     },
     "rankHistory": [
       {
@@ -31863,6 +32311,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 113
+      },
+      {
+        "date": "2026-04-17",
         "rank": 113
       }
     ],
@@ -32157,6 +32609,10 @@
       {
         "date": "2026-04-16",
         "rank": 114
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 114
       }
     ],
     "collegeStats": {},
@@ -32220,8 +32676,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 131,
-      "tankathon": 115,
-      "espn": 116
+      "espn": 116,
+      "tankathon": 115
     },
     "rankHistory": [
       {
@@ -32415,6 +32871,10 @@
       {
         "date": "2026-04-16",
         "rank": 115
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 115
       }
     ],
     "collegeStats": {},
@@ -32478,8 +32938,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 145,
-      "tankathon": 90,
-      "espn": 128
+      "espn": 128,
+      "tankathon": 90
     },
     "rankHistory": [
       {
@@ -32673,6 +33133,10 @@
       {
         "date": "2026-04-16",
         "rank": 116
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 116
       }
     ],
     "collegeStats": {
@@ -32772,8 +33236,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 124,
-      "tankathon": 123,
-      "espn": 118
+      "espn": 118,
+      "tankathon": 123
     },
     "rankHistory": [
       {
@@ -32967,6 +33431,10 @@
       {
         "date": "2026-04-16",
         "rank": 117
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 117
       }
     ],
     "collegeStats": {
@@ -33058,8 +33526,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 139,
-      "tankathon": 116,
-      "espn": 110
+      "espn": 110,
+      "tankathon": 116
     },
     "rankHistory": [
       {
@@ -33253,6 +33721,10 @@
       {
         "date": "2026-04-16",
         "rank": 118
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 118
       }
     ],
     "collegeStats": {
@@ -33327,8 +33799,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 202,
-      "tankathon": 83,
-      "espn": 80
+      "espn": 80,
+      "tankathon": 83
     },
     "rankHistory": [
       {
@@ -33521,6 +33993,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 119
+      },
+      {
+        "date": "2026-04-17",
         "rank": 119
       }
     ],
@@ -33779,6 +34255,10 @@
       {
         "date": "2026-04-16",
         "rank": 120
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 120
       }
     ],
     "collegeStats": {},
@@ -33820,8 +34300,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 107,
-      "tankathon": 154,
-      "espn": 117
+      "espn": 117,
+      "tankathon": 154
     },
     "rankHistory": [
       {
@@ -34015,6 +34495,10 @@
       {
         "date": "2026-04-16",
         "rank": 121
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 121
       }
     ],
     "collegeStats": {
@@ -34106,8 +34590,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 175,
-      "tankathon": 111,
-      "espn": 92
+      "espn": 92,
+      "tankathon": 111
     },
     "rankHistory": [
       {
@@ -34301,6 +34785,10 @@
       {
         "date": "2026-04-16",
         "rank": 122
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 122
       }
     ],
     "collegeStats": {
@@ -34397,8 +34885,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 157,
-      "tankathon": 102,
-      "espn": 123
+      "espn": 123,
+      "tankathon": 102
     },
     "rankHistory": [
       {
@@ -34592,6 +35080,10 @@
       {
         "date": "2026-04-16",
         "rank": 123
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 123
       }
     ],
     "collegeStats": {},
@@ -34655,8 +35147,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 177,
-      "tankathon": 100,
-      "espn": 103
+      "espn": 103,
+      "tankathon": 100
     },
     "rankHistory": [
       {
@@ -34850,6 +35342,10 @@
       {
         "date": "2026-04-16",
         "rank": 124
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 124
       }
     ],
     "collegeStats": {
@@ -34946,8 +35442,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 97,
-      "tankathon": 130,
-      "espn": 156
+      "espn": 156,
+      "tankathon": 130
     },
     "rankHistory": [
       {
@@ -35141,6 +35637,10 @@
       {
         "date": "2026-04-16",
         "rank": 125
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 125
       }
     ],
     "collegeStats": {},
@@ -35204,8 +35704,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 129,
-      "tankathon": 124,
-      "espn": 131
+      "espn": 131,
+      "tankathon": 124
     },
     "rankHistory": [
       {
@@ -35399,6 +35899,10 @@
       {
         "date": "2026-04-16",
         "rank": 126
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 126
       }
     ],
     "collegeStats": {},
@@ -35462,8 +35966,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 143,
-      "tankathon": 133,
-      "espn": 107
+      "espn": 107,
+      "tankathon": 133
     },
     "rankHistory": [
       {
@@ -35657,6 +36161,10 @@
       {
         "date": "2026-04-16",
         "rank": 127
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 127
       }
     ],
     "collegeStats": {
@@ -35714,8 +36222,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 187,
-      "tankathon": 113,
-      "espn": 83
+      "espn": 83,
+      "tankathon": 113
     },
     "rankHistory": [
       {
@@ -35908,6 +36416,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 128
+      },
+      {
+        "date": "2026-04-17",
         "rank": 128
       }
     ],
@@ -36199,6 +36711,10 @@
       {
         "date": "2026-04-16",
         "rank": 129
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 129
       }
     ],
     "collegeStats": {
@@ -36268,9 +36784,9 @@
     ]
   },
   {
-    "id": "demonte capehart-dl-clemson",
+    "id": "demonte capehart-dt-clemson",
     "name": "DeMonte Capehart",
-    "position": "DL",
+    "position": "DT",
     "positionGroup": "DL",
     "school": "Clemson",
     "class": null,
@@ -36288,8 +36804,8 @@
     "projectedPick": 129,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 136,
-      "espn": 122
+      "espn": 122,
+      "tankathon": 136
     },
     "rankHistory": [
       {
@@ -36483,6 +36999,10 @@
       {
         "date": "2026-04-16",
         "rank": 130
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 130
       }
     ],
     "collegeStats": {
@@ -36577,8 +37097,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 161,
-      "tankathon": 103,
-      "espn": 125
+      "espn": 125,
+      "tankathon": 103
     },
     "rankHistory": [
       {
@@ -36772,6 +37292,10 @@
       {
         "date": "2026-04-16",
         "rank": 131
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 131
       }
     ],
     "collegeStats": {
@@ -36869,8 +37393,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 93,
-      "tankathon": 150,
-      "espn": 153
+      "espn": 153,
+      "tankathon": 150
     },
     "rankHistory": [
       {
@@ -37064,6 +37588,10 @@
       {
         "date": "2026-04-16",
         "rank": 132
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 132
       }
     ],
     "collegeStats": {
@@ -37166,8 +37694,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 106,
-      "tankathon": 153,
-      "espn": 138
+      "espn": 138,
+      "tankathon": 153
     },
     "rankHistory": [
       {
@@ -37361,6 +37889,10 @@
       {
         "date": "2026-04-16",
         "rank": 133
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 133
       }
     ],
     "collegeStats": {
@@ -37457,8 +37989,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 125,
-      "tankathon": 95,
-      "espn": 175
+      "espn": 175,
+      "tankathon": 95
     },
     "rankHistory": [
       {
@@ -37652,6 +38184,10 @@
       {
         "date": "2026-04-16",
         "rank": 134
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 134
       }
     ],
     "collegeStats": {
@@ -37734,8 +38270,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 190,
-      "tankathon": 122,
-      "espn": 86
+      "espn": 86,
+      "tankathon": 122
     },
     "rankHistory": [
       {
@@ -37929,6 +38465,10 @@
       {
         "date": "2026-04-16",
         "rank": 135
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 135
       }
     ],
     "collegeStats": {},
@@ -37992,8 +38532,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 238,
-      "tankathon": 97,
-      "espn": 71
+      "espn": 71,
+      "tankathon": 97
     },
     "rankHistory": [
       {
@@ -38187,6 +38727,10 @@
       {
         "date": "2026-04-16",
         "rank": 136
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 136
       }
     ],
     "collegeStats": {
@@ -38280,8 +38824,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 84,
-      "tankathon": 165,
-      "espn": 159
+      "espn": 159,
+      "tankathon": 165
     },
     "rankHistory": [
       {
@@ -38475,6 +39019,10 @@
       {
         "date": "2026-04-16",
         "rank": 137
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 137
       }
     ],
     "collegeStats": {
@@ -38627,6 +39175,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 138
+      },
+      {
+        "date": "2026-04-17",
         "rank": 138
       }
     ],
@@ -38885,6 +39437,10 @@
       {
         "date": "2026-04-16",
         "rank": 139
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 139
       }
     ],
     "collegeStats": {
@@ -38978,8 +39534,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 123,
-      "tankathon": 145,
-      "espn": 146
+      "espn": 146,
+      "tankathon": 145
     },
     "rankHistory": [
       {
@@ -39173,6 +39729,10 @@
       {
         "date": "2026-04-16",
         "rank": 140
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 140
       }
     ],
     "collegeStats": {
@@ -39277,8 +39837,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 142,
-      "tankathon": 138,
-      "espn": 133
+      "espn": 133,
+      "tankathon": 138
     },
     "rankHistory": [
       {
@@ -39472,6 +40032,10 @@
       {
         "date": "2026-04-16",
         "rank": 141
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 141
       }
     ],
     "collegeStats": {
@@ -39576,8 +40140,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 128,
-      "tankathon": 134,
-      "espn": 157
+      "espn": 157,
+      "tankathon": 134
     },
     "rankHistory": [
       {
@@ -39771,6 +40335,10 @@
       {
         "date": "2026-04-16",
         "rank": 142
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 142
       }
     ],
     "collegeStats": {},
@@ -39834,8 +40402,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 141,
-      "tankathon": 148,
-      "espn": 130
+      "espn": 130,
+      "tankathon": 148
     },
     "rankHistory": [
       {
@@ -40029,6 +40597,10 @@
       {
         "date": "2026-04-16",
         "rank": 143
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 143
       }
     ],
     "collegeStats": {
@@ -40125,8 +40697,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 166,
-      "tankathon": 125,
-      "espn": 129
+      "espn": 129,
+      "tankathon": 125
     },
     "rankHistory": [
       {
@@ -40319,6 +40891,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 144
+      },
+      {
+        "date": "2026-04-17",
         "rank": 144
       }
     ],
@@ -40622,6 +41198,10 @@
       {
         "date": "2026-04-16",
         "rank": 145
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 145
       }
     ],
     "collegeStats": {},
@@ -40878,6 +41458,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 146
+      },
+      {
+        "date": "2026-04-17",
         "rank": 146
       }
     ],
@@ -41162,6 +41746,10 @@
       {
         "date": "2026-04-16",
         "rank": 147
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 147
       }
     ],
     "collegeStats": {
@@ -41254,8 +41842,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 91,
-      "tankathon": 127,
-      "espn": 215
+      "espn": 215,
+      "tankathon": 127
     },
     "rankHistory": [
       {
@@ -41449,6 +42037,10 @@
       {
         "date": "2026-04-16",
         "rank": 148
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 148
       }
     ],
     "collegeStats": {
@@ -41548,8 +42140,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 207,
-      "tankathon": 109,
-      "espn": 115
+      "espn": 115,
+      "tankathon": 109
     },
     "rankHistory": [
       {
@@ -41743,6 +42335,10 @@
       {
         "date": "2026-04-16",
         "rank": 149
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 149
       }
     ],
     "collegeStats": {
@@ -41842,8 +42438,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 198,
-      "tankathon": 126,
-      "espn": 113
+      "espn": 113,
+      "tankathon": 126
     },
     "rankHistory": [
       {
@@ -42037,6 +42633,10 @@
       {
         "date": "2026-04-16",
         "rank": 150
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 150
       }
     ],
     "collegeStats": {
@@ -42145,8 +42745,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 54,
-      "tankathon": 120,
-      "espn": 269
+      "espn": 269,
+      "tankathon": 120
     },
     "rankHistory": [
       {
@@ -42340,6 +42940,10 @@
       {
         "date": "2026-04-16",
         "rank": 151
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 151
       }
     ],
     "collegeStats": {
@@ -42416,8 +43020,8 @@
     "projectedPick": null,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 173,
-      "espn": 124
+      "espn": 124,
+      "tankathon": 173
     },
     "rankHistory": [
       {
@@ -42558,6 +43162,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 152
+      },
+      {
+        "date": "2026-04-17",
         "rank": 152
       }
     ],
@@ -42847,6 +43455,10 @@
       {
         "date": "2026-04-16",
         "rank": 153
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 153
       }
     ],
     "collegeStats": {
@@ -42937,8 +43549,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 113,
-      "tankathon": 137,
-      "espn": 202
+      "espn": 202,
+      "tankathon": 137
     },
     "rankHistory": [
       {
@@ -43132,6 +43744,10 @@
       {
         "date": "2026-04-16",
         "rank": 154
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 154
       }
     ],
     "collegeStats": {
@@ -43222,8 +43838,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 197,
-      "tankathon": 143,
-      "espn": 121
+      "espn": 121,
+      "tankathon": 143
     },
     "rankHistory": [
       {
@@ -43416,6 +44032,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 155
+      },
+      {
+        "date": "2026-04-17",
         "rank": 155
       }
     ],
@@ -43715,6 +44335,10 @@
       {
         "date": "2026-04-16",
         "rank": 156
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 156
       }
     ],
     "collegeStats": {
@@ -43808,8 +44432,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 151,
-      "tankathon": 135,
-      "espn": 186
+      "espn": 186,
+      "tankathon": 135
     },
     "rankHistory": [
       {
@@ -44002,6 +44626,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 157
+      },
+      {
+        "date": "2026-04-17",
         "rank": 157
       }
     ],
@@ -44260,6 +44888,10 @@
       {
         "date": "2026-04-16",
         "rank": 158
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 158
       }
     ],
     "collegeStats": {
@@ -44351,8 +44983,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 169,
-      "tankathon": 140,
-      "espn": 168
+      "espn": 168,
+      "tankathon": 140
     },
     "rankHistory": [
       {
@@ -44546,6 +45178,10 @@
       {
         "date": "2026-04-16",
         "rank": 159
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 159
       }
     ],
     "collegeStats": {},
@@ -44609,8 +45245,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 180,
-      "tankathon": 151,
-      "espn": 151
+      "espn": 151,
+      "tankathon": 151
     },
     "rankHistory": [
       {
@@ -44804,6 +45440,10 @@
       {
         "date": "2026-04-16",
         "rank": 160
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 160
       }
     ],
     "collegeStats": {
@@ -44903,8 +45543,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 136,
-      "tankathon": 183,
-      "espn": 167
+      "espn": 167,
+      "tankathon": 183
     },
     "rankHistory": [
       {
@@ -45097,6 +45737,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 161
+      },
+      {
+        "date": "2026-04-17",
         "rank": 161
       }
     ],
@@ -45388,6 +46032,10 @@
       {
         "date": "2026-04-16",
         "rank": 162
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 162
       }
     ],
     "collegeStats": {
@@ -45481,8 +46129,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 206,
-      "tankathon": 117,
-      "espn": 162
+      "espn": 162,
+      "tankathon": 117
     },
     "rankHistory": [
       {
@@ -45675,6 +46323,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 163
+      },
+      {
+        "date": "2026-04-17",
         "rank": 163
       }
     ],
@@ -45969,6 +46621,10 @@
       {
         "date": "2026-04-16",
         "rank": 164
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 164
       }
     ],
     "collegeStats": {
@@ -46255,6 +46911,10 @@
       {
         "date": "2026-04-16",
         "rank": 165
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 165
       }
     ],
     "collegeStats": {},
@@ -46512,6 +47172,10 @@
       {
         "date": "2026-04-16",
         "rank": 166
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 166
       }
     ],
     "collegeStats": {
@@ -46583,8 +47247,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 227,
-      "tankathon": 132,
-      "espn": 147
+      "espn": 147,
+      "tankathon": 132
     },
     "rankHistory": [
       {
@@ -46778,6 +47442,10 @@
       {
         "date": "2026-04-16",
         "rank": 167
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 167
       }
     ],
     "collegeStats": {
@@ -46875,8 +47543,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 126,
-      "tankathon": 141,
-      "espn": 242
+      "espn": 242,
+      "tankathon": 141
     },
     "rankHistory": [
       {
@@ -47070,6 +47738,10 @@
       {
         "date": "2026-04-16",
         "rank": 168
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 168
       }
     ],
     "collegeStats": {
@@ -47169,8 +47841,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 183,
-      "tankathon": 144,
-      "espn": 182
+      "espn": 182,
+      "tankathon": 144
     },
     "rankHistory": [
       {
@@ -47364,6 +48036,10 @@
       {
         "date": "2026-04-16",
         "rank": 169
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 169
       }
     ],
     "collegeStats": {
@@ -47454,8 +48130,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 135,
-      "tankathon": 168,
-      "espn": 211
+      "espn": 211,
+      "tankathon": 168
     },
     "rankHistory": [
       {
@@ -47649,6 +48325,10 @@
       {
         "date": "2026-04-16",
         "rank": 170
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 170
       }
     ],
     "collegeStats": {
@@ -47748,8 +48428,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 184,
-      "tankathon": 169,
-      "espn": 163
+      "espn": 163,
+      "tankathon": 169
     },
     "rankHistory": [
       {
@@ -47942,6 +48622,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 171
+      },
+      {
+        "date": "2026-04-17",
         "rank": 171
       }
     ],
@@ -48236,6 +48920,10 @@
       {
         "date": "2026-04-16",
         "rank": 172
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 172
       }
     ],
     "collegeStats": {
@@ -48304,8 +48992,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 120,
-      "tankathon": 163,
-      "espn": 243
+      "espn": 243,
+      "tankathon": 163
     },
     "rankHistory": [
       {
@@ -48498,6 +49186,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 173
+      },
+      {
+        "date": "2026-04-17",
         "rank": 173
       }
     ],
@@ -48756,6 +49448,10 @@
       {
         "date": "2026-04-16",
         "rank": 174
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 174
       }
     ],
     "collegeStats": {},
@@ -48819,8 +49515,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 132,
-      "tankathon": 162,
-      "espn": 233
+      "espn": 233,
+      "tankathon": 162
     },
     "rankHistory": [
       {
@@ -49014,6 +49710,10 @@
       {
         "date": "2026-04-16",
         "rank": 175
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 175
       }
     ],
     "collegeStats": {
@@ -49100,8 +49800,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 118,
-      "tankathon": 175,
-      "espn": 239
+      "espn": 239,
+      "tankathon": 175
     },
     "rankHistory": [
       {
@@ -49295,6 +49995,10 @@
       {
         "date": "2026-04-16",
         "rank": 176
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 176
       }
     ],
     "collegeStats": {
@@ -49386,8 +50090,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 171,
-      "tankathon": 185,
-      "espn": 176
+      "espn": 176,
+      "tankathon": 185
     },
     "rankHistory": [
       {
@@ -49581,6 +50285,10 @@
       {
         "date": "2026-04-16",
         "rank": 177
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 177
       }
     ],
     "collegeStats": {
@@ -49672,8 +50380,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 179,
-      "tankathon": 181,
-      "espn": 172
+      "espn": 172,
+      "tankathon": 181
     },
     "rankHistory": [
       {
@@ -49866,6 +50574,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 178
+      },
+      {
+        "date": "2026-04-17",
         "rank": 178
       }
     ],
@@ -50124,6 +50836,10 @@
       {
         "date": "2026-04-16",
         "rank": 179
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 179
       }
     ],
     "collegeStats": {},
@@ -50187,8 +50903,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 159,
-      "tankathon": 142,
-      "espn": 235
+      "espn": 235,
+      "tankathon": 142
     },
     "rankHistory": [
       {
@@ -50382,6 +51098,10 @@
       {
         "date": "2026-04-16",
         "rank": 180
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 180
       }
     ],
     "collegeStats": {
@@ -50473,8 +51193,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 165,
-      "tankathon": 160,
-      "espn": 213
+      "espn": 213,
+      "tankathon": 160
     },
     "rankHistory": [
       {
@@ -50668,6 +51388,10 @@
       {
         "date": "2026-04-16",
         "rank": 181
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 181
       }
     ],
     "collegeStats": {
@@ -50751,8 +51475,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 195,
-      "tankathon": 171,
-      "espn": 174
+      "espn": 174,
+      "tankathon": 171
     },
     "rankHistory": [
       {
@@ -50945,6 +51669,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 182
+      },
+      {
+        "date": "2026-04-17",
         "rank": 182
       }
     ],
@@ -51239,6 +51967,10 @@
       {
         "date": "2026-04-16",
         "rank": 183
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 183
       }
     ],
     "collegeStats": {
@@ -51526,6 +52258,10 @@
       {
         "date": "2026-04-16",
         "rank": 184
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 184
       }
     ],
     "collegeStats": {
@@ -51619,8 +52355,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 112,
-      "tankathon": 155,
-      "espn": 279
+      "espn": 279,
+      "tankathon": 155
     },
     "rankHistory": [
       {
@@ -51814,6 +52550,10 @@
       {
         "date": "2026-04-16",
         "rank": 185
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 185
       }
     ],
     "collegeStats": {
@@ -51913,8 +52653,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 194,
-      "tankathon": 164,
-      "espn": 196
+      "espn": 196,
+      "tankathon": 164
     },
     "rankHistory": [
       {
@@ -52108,6 +52848,10 @@
       {
         "date": "2026-04-16",
         "rank": 186
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 186
       }
     ],
     "collegeStats": {
@@ -52201,8 +52945,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 271,
-      "tankathon": 131,
-      "espn": 152
+      "espn": 152,
+      "tankathon": 131
     },
     "rankHistory": [
       {
@@ -52396,6 +53140,10 @@
       {
         "date": "2026-04-16",
         "rank": 187
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 187
       }
     ],
     "collegeStats": {
@@ -52503,8 +53251,8 @@
     "projectedPick": null,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 156,
-      "espn": 214
+      "espn": 214,
+      "tankathon": 156
     },
     "rankHistory": [
       {
@@ -52697,6 +53445,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 188
+      },
+      {
+        "date": "2026-04-17",
         "rank": 188
       }
     ],
@@ -52990,6 +53742,10 @@
       {
         "date": "2026-04-16",
         "rank": 189
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 189
       }
     ],
     "collegeStats": {
@@ -53271,6 +54027,10 @@
       {
         "date": "2026-04-16",
         "rank": 190
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 190
       }
     ],
     "collegeStats": {
@@ -53364,8 +54124,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 237,
-      "tankathon": 182,
-      "espn": 140
+      "espn": 140,
+      "tankathon": 182
     },
     "rankHistory": [
       {
@@ -53558,6 +54318,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 191
+      },
+      {
+        "date": "2026-04-17",
         "rank": 191
       }
     ],
@@ -53816,6 +54580,10 @@
       {
         "date": "2026-04-16",
         "rank": 192
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 192
       }
     ],
     "collegeStats": {},
@@ -54072,6 +54840,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 193
+      },
+      {
+        "date": "2026-04-17",
         "rank": 193
       }
     ],
@@ -54330,6 +55102,10 @@
       {
         "date": "2026-04-16",
         "rank": 194
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 194
       }
     ],
     "collegeStats": {
@@ -54423,8 +55199,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 245,
-      "tankathon": 174,
-      "espn": 149
+      "espn": 149,
+      "tankathon": 174
     },
     "rankHistory": [
       {
@@ -54618,6 +55394,10 @@
       {
         "date": "2026-04-16",
         "rank": 195
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 195
       }
     ],
     "collegeStats": {
@@ -54711,8 +55491,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 221,
-      "tankathon": 149,
-      "espn": 200
+      "espn": 200,
+      "tankathon": 149
     },
     "rankHistory": [
       {
@@ -54906,6 +55686,10 @@
       {
         "date": "2026-04-16",
         "rank": 196
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 196
       }
     ],
     "collegeStats": {
@@ -55059,6 +55843,10 @@
       {
         "date": "2026-04-16",
         "rank": 197
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 197
       }
     ],
     "collegeStats": {
@@ -55147,8 +55935,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 239,
-      "tankathon": 176,
-      "espn": 158
+      "espn": 158,
+      "tankathon": 176
     },
     "rankHistory": [
       {
@@ -55342,6 +56130,10 @@
       {
         "date": "2026-04-16",
         "rank": 198
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 198
       }
     ],
     "collegeStats": {
@@ -55440,8 +56232,8 @@
     "projectedPick": null,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 184,
-      "espn": 201
+      "espn": 201,
+      "tankathon": 184
     },
     "rankHistory": [
       {
@@ -55614,6 +56406,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 199
+      },
+      {
+        "date": "2026-04-17",
         "rank": 199
       }
     ],
@@ -55845,6 +56641,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 200
+      },
+      {
+        "date": "2026-04-17",
         "rank": 200
       }
     ],
@@ -56103,6 +56903,10 @@
       {
         "date": "2026-04-16",
         "rank": 201
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 201
       }
     ],
     "collegeStats": {
@@ -56190,8 +56994,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 205,
-      "tankathon": 180,
-      "espn": 197
+      "espn": 197,
+      "tankathon": 180
     },
     "rankHistory": [
       {
@@ -56385,6 +57189,10 @@
       {
         "date": "2026-04-16",
         "rank": 202
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 202
       }
     ],
     "collegeStats": {
@@ -56484,8 +57292,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 283,
-      "tankathon": 159,
-      "espn": 141
+      "espn": 141,
+      "tankathon": 159
     },
     "rankHistory": [
       {
@@ -56678,6 +57486,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 203
+      },
+      {
+        "date": "2026-04-17",
         "rank": 203
       }
     ],
@@ -56957,6 +57769,10 @@
       {
         "date": "2026-04-16",
         "rank": 204
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 204
       }
     ],
     "collegeStats": {
@@ -57223,6 +58039,10 @@
       {
         "date": "2026-04-16",
         "rank": 205
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 205
       }
     ],
     "collegeStats": {
@@ -57451,6 +58271,10 @@
       {
         "date": "2026-04-16",
         "rank": 206
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 206
       }
     ],
     "collegeStats": {
@@ -57534,8 +58358,8 @@
     "projectedPick": null,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 147,
-      "espn": 255
+      "espn": 255,
+      "tankathon": 147
     },
     "rankHistory": [
       {
@@ -57592,6 +58416,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 207
+      },
+      {
+        "date": "2026-04-17",
         "rank": 207
       }
     ],
@@ -57656,8 +58484,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 231,
-      "tankathon": 158,
-      "espn": 216
+      "espn": 216,
+      "tankathon": 158
     },
     "rankHistory": [
       {
@@ -57851,6 +58679,10 @@
       {
         "date": "2026-04-16",
         "rank": 208
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 208
       }
     ],
     "collegeStats": {
@@ -57934,8 +58766,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 168,
-      "tankathon": 179,
-      "espn": 264
+      "espn": 264,
+      "tankathon": 179
     },
     "rankHistory": [
       {
@@ -58129,6 +58961,10 @@
       {
         "date": "2026-04-16",
         "rank": 209
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 209
       }
     ],
     "collegeStats": {
@@ -58221,8 +59057,8 @@
     "projectedPick": 137,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 146,
-      "espn": 261
+      "espn": 261,
+      "tankathon": 146
     },
     "rankHistory": [
       {
@@ -58415,6 +59251,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 210
+      },
+      {
+        "date": "2026-04-17",
         "rank": 210
       }
     ],
@@ -58657,6 +59497,10 @@
       {
         "date": "2026-04-16",
         "rank": 211
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 211
       }
     ],
     "collegeStats": {
@@ -58747,8 +59591,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 203,
-      "tankathon": 177,
-      "espn": 245
+      "espn": 245,
+      "tankathon": 177
     },
     "rankHistory": [
       {
@@ -58941,6 +59785,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 212
+      },
+      {
+        "date": "2026-04-17",
         "rank": 212
       }
     ],
@@ -59235,6 +60083,10 @@
       {
         "date": "2026-04-16",
         "rank": 213
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 213
       }
     ],
     "collegeStats": {
@@ -59521,6 +60373,10 @@
       {
         "date": "2026-04-16",
         "rank": 214
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 214
       }
     ],
     "collegeStats": {},
@@ -59778,6 +60634,10 @@
       {
         "date": "2026-04-16",
         "rank": 215
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 215
       }
     ],
     "collegeStats": {
@@ -59847,8 +60707,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 153,
-      "tankathon": 172,
-      "espn": 302
+      "espn": 302,
+      "tankathon": 172
     },
     "rankHistory": [
       {
@@ -60041,6 +60901,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 216
+      },
+      {
+        "date": "2026-04-17",
         "rank": 216
       }
     ],
@@ -60329,6 +61193,10 @@
       {
         "date": "2026-04-16",
         "rank": 217
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 217
       }
     ],
     "collegeStats": {
@@ -60613,6 +61481,10 @@
       {
         "date": "2026-04-16",
         "rank": 218
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 218
       }
     ],
     "collegeStats": {
@@ -60896,6 +61768,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 219
+      },
+      {
+        "date": "2026-04-17",
         "rank": 219
       }
     ],
@@ -61184,6 +62060,10 @@
       {
         "date": "2026-04-16",
         "rank": 220
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 220
       }
     ],
     "collegeStats": {
@@ -61467,6 +62347,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 221
+      },
+      {
+        "date": "2026-04-17",
         "rank": 221
       }
     ],
@@ -61752,6 +62636,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 222
+      },
+      {
+        "date": "2026-04-17",
         "rank": 222
       }
     ],
@@ -62049,6 +62937,10 @@
       {
         "date": "2026-04-16",
         "rank": 223
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 223
       }
     ],
     "collegeStats": {
@@ -62342,6 +63234,10 @@
       {
         "date": "2026-04-16",
         "rank": 224
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 224
       }
     ],
     "collegeStats": {},
@@ -62405,8 +63301,8 @@
     "classYear": "Jr",
     "rankBySource": {
       "cbs_sports": 186,
-      "tankathon": 186,
-      "espn": 280
+      "espn": 280,
+      "tankathon": 186
     },
     "rankHistory": [
       {
@@ -62600,6 +63496,10 @@
       {
         "date": "2026-04-16",
         "rank": 225
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 225
       }
     ],
     "collegeStats": {
@@ -62691,8 +63591,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 213,
-      "tankathon": 187,
-      "espn": 252
+      "espn": 252,
+      "tankathon": 187
     },
     "rankHistory": [
       {
@@ -62885,6 +63785,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 226
+      },
+      {
+        "date": "2026-04-17",
         "rank": 226
       }
     ],
@@ -63161,6 +64065,10 @@
       {
         "date": "2026-04-16",
         "rank": 227
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 227
       }
     ],
     "collegeStats": {},
@@ -63417,6 +64325,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 228
+      },
+      {
+        "date": "2026-04-17",
         "rank": 228
       }
     ],
@@ -63710,6 +64622,10 @@
       {
         "date": "2026-04-16",
         "rank": 229
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 229
       }
     ],
     "collegeStats": {},
@@ -63966,6 +64882,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 230
+      },
+      {
+        "date": "2026-04-17",
         "rank": 230
       }
     ],
@@ -64253,6 +65173,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 231
+      },
+      {
+        "date": "2026-04-17",
         "rank": 231
       }
     ],
@@ -64550,6 +65474,10 @@
       {
         "date": "2026-04-16",
         "rank": 232
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 232
       }
     ],
     "collegeStats": {
@@ -64837,6 +65765,10 @@
       {
         "date": "2026-04-16",
         "rank": 233
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 233
       }
     ],
     "collegeStats": {
@@ -65112,6 +66044,10 @@
       {
         "date": "2026-04-16",
         "rank": 234
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 234
       }
     ],
     "collegeStats": {
@@ -65168,9 +66104,9 @@
     ]
   },
   {
-    "id": "dj campbell-iol-texas",
+    "id": "dj campbell-og-texas",
     "name": "DJ Campbell",
-    "position": "IOL",
+    "position": "OG",
     "positionGroup": "OL",
     "school": "Texas",
     "class": null,
@@ -65188,8 +66124,8 @@
     "projectedPick": null,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 178,
-      "espn": 267
+      "espn": 267,
+      "tankathon": 178
     },
     "rankHistory": [
       {
@@ -65382,6 +66318,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 235
+      },
+      {
+        "date": "2026-04-17",
         "rank": 235
       }
     ],
@@ -65639,6 +66579,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 236
+      },
+      {
+        "date": "2026-04-17",
         "rank": 236
       }
     ],
@@ -65927,6 +66871,10 @@
       {
         "date": "2026-04-16",
         "rank": 237
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 237
       }
     ],
     "collegeStats": {
@@ -66211,6 +67159,10 @@
       {
         "date": "2026-04-16",
         "rank": 238
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 238
       }
     ],
     "collegeStats": {
@@ -66298,8 +67250,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 225,
-      "tankathon": 166,
-      "espn": 285
+      "espn": 285,
+      "tankathon": 166
     },
     "rankHistory": [
       {
@@ -66492,6 +67444,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 239
+      },
+      {
+        "date": "2026-04-17",
         "rank": 239
       }
     ],
@@ -66786,6 +67742,10 @@
       {
         "date": "2026-04-16",
         "rank": 240
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 240
       }
     ],
     "collegeStats": {
@@ -66936,6 +67896,10 @@
       {
         "date": "2026-04-16",
         "rank": 241
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 241
       }
     ],
     "collegeStats": {},
@@ -66999,8 +67963,8 @@
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 92,
-      "tankathon": 170,
-      "espn": 418
+      "espn": 418,
+      "tankathon": 170
     },
     "rankHistory": [
       {
@@ -67193,6 +68157,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 242
+      },
+      {
+        "date": "2026-04-17",
         "rank": 242
       }
     ],
@@ -67464,6 +68432,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 243
+      },
+      {
+        "date": "2026-04-17",
         "rank": 243
       }
     ],
@@ -67752,6 +68724,10 @@
       {
         "date": "2026-04-16",
         "rank": 244
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 244
       }
     ],
     "collegeStats": {
@@ -68031,6 +69007,10 @@
       {
         "date": "2026-04-16",
         "rank": 245
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 245
       }
     ],
     "collegeStats": {
@@ -68107,8 +69087,8 @@
     "projectedPick": null,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 161,
-      "espn": 300
+      "espn": 300,
+      "tankathon": 161
     },
     "rankHistory": [
       {
@@ -68301,6 +69281,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 246
+      },
+      {
+        "date": "2026-04-17",
         "rank": 246
       }
     ],
@@ -68559,6 +69543,10 @@
       {
         "date": "2026-04-16",
         "rank": 247
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 247
       }
     ],
     "collegeStats": {
@@ -68705,6 +69693,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 248
+      },
+      {
+        "date": "2026-04-17",
         "rank": 248
       }
     ],
@@ -68988,6 +69980,10 @@
       {
         "date": "2026-04-16",
         "rank": 249
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 249
       }
     ],
     "collegeStats": {
@@ -69265,6 +70261,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 250
+      },
+      {
+        "date": "2026-04-17",
         "rank": 250
       }
     ],
@@ -69549,6 +70549,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 251
+      },
+      {
+        "date": "2026-04-17",
         "rank": 251
       }
     ],
@@ -69837,6 +70841,10 @@
       {
         "date": "2026-04-16",
         "rank": 252
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 252
       }
     ],
     "collegeStats": {
@@ -70121,6 +71129,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 253
+      },
+      {
+        "date": "2026-04-17",
         "rank": 253
       }
     ],
@@ -70418,6 +71430,10 @@
       {
         "date": "2026-04-16",
         "rank": 254
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 254
       }
     ],
     "collegeStats": {
@@ -70704,6 +71720,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 255
+      },
+      {
+        "date": "2026-04-17",
         "rank": 255
       }
     ],
@@ -70992,6 +72012,10 @@
       {
         "date": "2026-04-16",
         "rank": 256
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 256
       }
     ],
     "collegeStats": {},
@@ -71249,6 +72273,10 @@
       {
         "date": "2026-04-16",
         "rank": 257
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 257
       }
     ],
     "collegeStats": {},
@@ -71505,6 +72533,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 258
+      },
+      {
+        "date": "2026-04-17",
         "rank": 258
       }
     ],
@@ -71793,6 +72825,10 @@
       {
         "date": "2026-04-16",
         "rank": 259
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 259
       }
     ],
     "collegeStats": {
@@ -72071,6 +73107,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 260
+      },
+      {
+        "date": "2026-04-17",
         "rank": 260
       }
     ],
@@ -72353,6 +73393,10 @@
       {
         "date": "2026-04-16",
         "rank": 261
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 261
       }
     ],
     "collegeStats": {
@@ -72632,6 +73676,10 @@
       {
         "date": "2026-04-16",
         "rank": 262
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 262
       }
     ],
     "collegeStats": {
@@ -72899,6 +73947,10 @@
       {
         "date": "2026-04-16",
         "rank": 263
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 263
       }
     ],
     "collegeStats": {},
@@ -73018,6 +74070,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 264
+      },
+      {
+        "date": "2026-04-17",
         "rank": 264
       }
     ],
@@ -73300,6 +74356,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 265
+      },
+      {
+        "date": "2026-04-17",
         "rank": 265
       }
     ],
@@ -73586,6 +74646,10 @@
       {
         "date": "2026-04-16",
         "rank": 266
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 266
       }
     ],
     "collegeStats": {
@@ -73712,6 +74776,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 267
+      },
+      {
+        "date": "2026-04-17",
         "rank": 267
       }
     ],
@@ -73991,6 +75059,10 @@
       {
         "date": "2026-04-16",
         "rank": 268
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 268
       }
     ],
     "collegeStats": {},
@@ -74053,8 +75125,8 @@
     "projectedPick": null,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 157,
-      "espn": 346
+      "espn": 346,
+      "tankathon": 157
     },
     "rankHistory": [
       {
@@ -74111,6 +75183,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 269
+      },
+      {
+        "date": "2026-04-17",
         "rank": 269
       }
     ],
@@ -74374,6 +75450,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 270
+      },
+      {
+        "date": "2026-04-17",
         "rank": 270
       }
     ],
@@ -74662,6 +75742,10 @@
       {
         "date": "2026-04-16",
         "rank": 271
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 271
       }
     ],
     "collegeStats": {
@@ -74946,6 +76030,10 @@
       {
         "date": "2026-04-16",
         "rank": 272
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 272
       }
     ],
     "collegeStats": {
@@ -75220,6 +76308,10 @@
       {
         "date": "2026-04-16",
         "rank": 273
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 273
       }
     ],
     "collegeStats": {
@@ -75366,6 +76458,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 274
+      },
+      {
+        "date": "2026-04-17",
         "rank": 274
       }
     ],
@@ -75623,6 +76719,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 275
+      },
+      {
+        "date": "2026-04-17",
         "rank": 275
       }
     ],
@@ -75911,6 +77011,10 @@
       {
         "date": "2026-04-16",
         "rank": 276
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 276
       }
     ],
     "collegeStats": {
@@ -76191,6 +77295,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 277
+      },
+      {
+        "date": "2026-04-17",
         "rank": 277
       }
     ],
@@ -76479,6 +77587,10 @@
       {
         "date": "2026-04-16",
         "rank": 278
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 278
       }
     ],
     "collegeStats": {
@@ -76764,6 +77876,10 @@
       {
         "date": "2026-04-16",
         "rank": 279
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 279
       }
     ],
     "collegeStats": {
@@ -77048,6 +78164,10 @@
       {
         "date": "2026-04-16",
         "rank": 280
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 280
       }
     ],
     "collegeStats": {
@@ -77151,6 +78271,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 281
+      },
+      {
+        "date": "2026-04-17",
         "rank": 281
       }
     ],
@@ -77433,6 +78557,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 282
+      },
+      {
+        "date": "2026-04-17",
         "rank": 282
       }
     ],
@@ -77721,6 +78849,10 @@
       {
         "date": "2026-04-16",
         "rank": 283
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 283
       }
     ],
     "collegeStats": {
@@ -78008,6 +79140,10 @@
       {
         "date": "2026-04-16",
         "rank": 284
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 284
       }
     ],
     "collegeStats": {
@@ -78154,6 +79290,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 285
+      },
+      {
+        "date": "2026-04-17",
         "rank": 285
       }
     ],
@@ -78411,6 +79551,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 286
+      },
+      {
+        "date": "2026-04-17",
         "rank": 286
       }
     ],
@@ -78704,6 +79848,10 @@
       {
         "date": "2026-04-16",
         "rank": 287
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 287
       }
     ],
     "collegeStats": {
@@ -78991,6 +80139,10 @@
       {
         "date": "2026-04-16",
         "rank": 288
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 288
       }
     ],
     "collegeStats": {
@@ -79275,6 +80427,10 @@
       {
         "date": "2026-04-16",
         "rank": 289
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 289
       }
     ],
     "collegeStats": {
@@ -79555,6 +80711,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 290
+      },
+      {
+        "date": "2026-04-17",
         "rank": 290
       }
     ],
@@ -79839,6 +80999,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 291
+      },
+      {
+        "date": "2026-04-17",
         "rank": 291
       }
     ],
@@ -80136,6 +81300,10 @@
       {
         "date": "2026-04-16",
         "rank": 292
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 292
       }
     ],
     "collegeStats": {
@@ -80414,6 +81582,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 293
+      },
+      {
+        "date": "2026-04-17",
         "rank": 293
       }
     ],
@@ -80698,6 +81870,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 294
+      },
+      {
+        "date": "2026-04-17",
         "rank": 294
       }
     ],
@@ -80995,6 +82171,10 @@
       {
         "date": "2026-04-16",
         "rank": 295
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 295
       }
     ],
     "collegeStats": {
@@ -81279,6 +82459,10 @@
       {
         "date": "2026-04-16",
         "rank": 296
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 296
       }
     ],
     "collegeStats": {
@@ -81562,6 +82746,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 297
+      },
+      {
+        "date": "2026-04-17",
         "rank": 297
       }
     ],
@@ -81859,6 +83047,10 @@
       {
         "date": "2026-04-16",
         "rank": 298
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 298
       }
     ],
     "collegeStats": {
@@ -82138,6 +83330,10 @@
       {
         "date": "2026-04-16",
         "rank": 299
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 299
       }
     ],
     "collegeStats": {},
@@ -82395,6 +83591,10 @@
       {
         "date": "2026-04-16",
         "rank": 300
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 300
       }
     ],
     "collegeStats": {},
@@ -82651,6 +83851,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 301
+      },
+      {
+        "date": "2026-04-17",
         "rank": 301
       }
     ],
@@ -82936,6 +84140,10 @@
       {
         "date": "2026-04-16",
         "rank": 302
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 302
       }
     ],
     "collegeStats": {},
@@ -83192,6 +84400,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 303
+      },
+      {
+        "date": "2026-04-17",
         "rank": 303
       }
     ],
@@ -83480,6 +84692,10 @@
       {
         "date": "2026-04-16",
         "rank": 304
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 304
       }
     ],
     "collegeStats": {},
@@ -83737,6 +84953,10 @@
       {
         "date": "2026-04-16",
         "rank": 305
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 305
       }
     ],
     "collegeStats": {},
@@ -83810,6 +85030,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 306
+      },
+      {
+        "date": "2026-04-17",
         "rank": 306
       }
     ],
@@ -84086,6 +85310,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 307
+      },
+      {
+        "date": "2026-04-17",
         "rank": 307
       }
     ],
@@ -84383,6 +85611,10 @@
       {
         "date": "2026-04-16",
         "rank": 308
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 308
       }
     ],
     "collegeStats": {
@@ -84631,6 +85863,10 @@
       {
         "date": "2026-04-16",
         "rank": 309
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 309
       }
     ],
     "collegeStats": {
@@ -84843,6 +86079,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 310
+      },
+      {
+        "date": "2026-04-17",
         "rank": 310
       }
     ],
@@ -85101,6 +86341,10 @@
       {
         "date": "2026-04-16",
         "rank": 311
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 311
       }
     ],
     "collegeStats": {
@@ -85155,9 +86399,9 @@
     ]
   },
   {
-    "id": "landon robinson-dl-navy",
+    "id": "landon robinson-dt-navy",
     "name": "Landon Robinson",
-    "position": "DL",
+    "position": "DT",
     "positionGroup": "DL",
     "school": "Navy",
     "class": null,
@@ -85175,8 +86419,8 @@
     "projectedPick": null,
     "classYear": null,
     "rankBySource": {
-      "tankathon": 167,
-      "espn": 429
+      "espn": 429,
+      "tankathon": 167
     },
     "rankHistory": [
       {
@@ -85286,6 +86530,10 @@
       {
         "date": "2026-04-16",
         "rank": 312
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 312
       }
     ],
     "collegeStats": {
@@ -85386,6 +86634,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 313
+      },
+      {
+        "date": "2026-04-17",
         "rank": 313
       }
     ],
@@ -85668,6 +86920,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 314
+      },
+      {
+        "date": "2026-04-17",
         "rank": 314
       }
     ],
@@ -85956,6 +87212,10 @@
       {
         "date": "2026-04-16",
         "rank": 315
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 315
       }
     ],
     "collegeStats": {
@@ -86243,6 +87503,10 @@
       {
         "date": "2026-04-16",
         "rank": 316
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 316
       }
     ],
     "collegeStats": {
@@ -86511,6 +87775,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 317
+      },
+      {
+        "date": "2026-04-17",
         "rank": 317
       }
     ],
@@ -86799,6 +88067,10 @@
       {
         "date": "2026-04-16",
         "rank": 318
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 318
       }
     ],
     "collegeStats": {
@@ -87078,6 +88350,10 @@
       {
         "date": "2026-04-16",
         "rank": 319
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 319
       }
     ],
     "collegeStats": {},
@@ -87335,6 +88611,10 @@
       {
         "date": "2026-04-16",
         "rank": 320
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 320
       }
     ],
     "collegeStats": {
@@ -87481,6 +88761,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 321
+      },
+      {
+        "date": "2026-04-17",
         "rank": 321
       }
     ],
@@ -87745,6 +89029,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 322
+      },
+      {
+        "date": "2026-04-17",
         "rank": 322
       }
     ],
@@ -88030,6 +89318,10 @@
       {
         "date": "2026-04-16",
         "rank": 323
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 323
       }
     ],
     "collegeStats": {
@@ -88313,6 +89605,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 324
+      },
+      {
+        "date": "2026-04-17",
         "rank": 324
       }
     ],
@@ -88601,6 +89897,10 @@
       {
         "date": "2026-04-16",
         "rank": 325
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 325
       }
     ],
     "collegeStats": {},
@@ -88858,6 +90158,10 @@
       {
         "date": "2026-04-16",
         "rank": 326
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 326
       }
     ],
     "collegeStats": {
@@ -88984,6 +90288,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 327
+      },
+      {
+        "date": "2026-04-17",
         "rank": 327
       }
     ],
@@ -89263,6 +90571,10 @@
       {
         "date": "2026-04-16",
         "rank": 328
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 328
       }
     ],
     "collegeStats": {},
@@ -89519,6 +90831,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 329
+      },
+      {
+        "date": "2026-04-17",
         "rank": 329
       }
     ],
@@ -89807,6 +91123,10 @@
       {
         "date": "2026-04-16",
         "rank": 330
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 330
       }
     ],
     "collegeStats": {
@@ -89930,6 +91250,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 331
+      },
+      {
+        "date": "2026-04-17",
         "rank": 331
       }
     ],
@@ -90208,6 +91532,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 332
+      },
+      {
+        "date": "2026-04-17",
         "rank": 332
       }
     ],
@@ -90496,6 +91824,10 @@
       {
         "date": "2026-04-16",
         "rank": 333
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 333
       }
     ],
     "collegeStats": {
@@ -90625,6 +91957,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 334
+      },
+      {
+        "date": "2026-04-17",
         "rank": 334
       }
     ],
@@ -90916,6 +92252,10 @@
       {
         "date": "2026-04-16",
         "rank": 335
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 335
       }
     ],
     "collegeStats": {
@@ -91026,6 +92366,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 336
+      },
+      {
+        "date": "2026-04-17",
         "rank": 336
       }
     ],
@@ -91168,6 +92512,10 @@
       {
         "date": "2026-04-16",
         "rank": 337
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 337
       }
     ],
     "collegeStats": {},
@@ -91264,6 +92612,10 @@
       {
         "date": "2026-04-16",
         "rank": 338
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 338
       }
     ],
     "collegeStats": {
@@ -91358,6 +92710,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 339
+      },
+      {
+        "date": "2026-04-17",
         "rank": 339
       }
     ],
@@ -91635,6 +92991,10 @@
       {
         "date": "2026-04-16",
         "rank": 340
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 340
       }
     ],
     "collegeStats": {},
@@ -91869,6 +93229,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 341
+      },
+      {
+        "date": "2026-04-17",
         "rank": 341
       }
     ],
@@ -92157,6 +93521,10 @@
       {
         "date": "2026-04-16",
         "rank": 342
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 342
       }
     ],
     "collegeStats": {
@@ -92262,6 +93630,10 @@
       {
         "date": "2026-04-16",
         "rank": 343
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 343
       }
     ],
     "collegeStats": {},
@@ -92337,6 +93709,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 344
+      },
+      {
+        "date": "2026-04-17",
         "rank": 344
       }
     ],
@@ -92458,6 +93834,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 345
+      },
+      {
+        "date": "2026-04-17",
         "rank": 345
       }
     ],
@@ -92741,6 +94121,10 @@
       {
         "date": "2026-04-16",
         "rank": 346
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 346
       }
     ],
     "collegeStats": {},
@@ -92976,6 +94360,10 @@
       {
         "date": "2026-04-16",
         "rank": 347
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 347
       }
     ],
     "collegeStats": {},
@@ -93053,6 +94441,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 348
+      },
+      {
+        "date": "2026-04-17",
         "rank": 348
       }
     ],
@@ -93183,6 +94575,10 @@
       {
         "date": "2026-04-16",
         "rank": 349
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 349
       }
     ],
     "collegeStats": {
@@ -93298,6 +94694,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 350
+      },
+      {
+        "date": "2026-04-17",
         "rank": 350
       }
     ],
@@ -93577,6 +94977,10 @@
       {
         "date": "2026-04-16",
         "rank": 351
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 351
       }
     ],
     "collegeStats": {},
@@ -93654,6 +95058,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 352
+      },
+      {
+        "date": "2026-04-17",
         "rank": 352
       }
     ],
@@ -93788,6 +95196,10 @@
       {
         "date": "2026-04-16",
         "rank": 353
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 353
       }
     ],
     "collegeStats": {
@@ -93917,6 +95329,10 @@
       {
         "date": "2026-04-16",
         "rank": 354
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 354
       }
     ],
     "collegeStats": {
@@ -94035,6 +95451,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 355
+      },
+      {
+        "date": "2026-04-17",
         "rank": 355
       }
     ],
@@ -94169,6 +95589,10 @@
       {
         "date": "2026-04-16",
         "rank": 356
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 356
       }
     ],
     "collegeStats": {
@@ -94265,6 +95689,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 357
+      },
+      {
+        "date": "2026-04-17",
         "rank": 357
       }
     ],
@@ -94382,6 +95810,10 @@
       {
         "date": "2026-04-16",
         "rank": 358
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 358
       }
     ],
     "collegeStats": {
@@ -94490,6 +95922,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 359
+      },
+      {
+        "date": "2026-04-17",
         "rank": 359
       }
     ],
@@ -94602,6 +96038,10 @@
       {
         "date": "2026-04-16",
         "rank": 360
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 360
       }
     ],
     "collegeStats": {
@@ -94713,6 +96153,10 @@
       {
         "date": "2026-04-16",
         "rank": 361
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 361
       }
     ],
     "collegeStats": {
@@ -94821,6 +96265,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 362
+      },
+      {
+        "date": "2026-04-17",
         "rank": 362
       }
     ],
@@ -94933,6 +96381,10 @@
       {
         "date": "2026-04-16",
         "rank": 363
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 363
       }
     ],
     "collegeStats": {},
@@ -95010,6 +96462,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 364
+      },
+      {
+        "date": "2026-04-17",
         "rank": 364
       }
     ],
@@ -95115,6 +96571,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 365
+      },
+      {
+        "date": "2026-04-17",
         "rank": 365
       }
     ],
@@ -95223,6 +96683,10 @@
       {
         "date": "2026-04-16",
         "rank": 366
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 366
       }
     ],
     "collegeStats": {},
@@ -95300,6 +96764,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 367
+      },
+      {
+        "date": "2026-04-17",
         "rank": 367
       }
     ],
@@ -95408,6 +96876,10 @@
       {
         "date": "2026-04-16",
         "rank": 368
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 368
       }
     ],
     "collegeStats": {
@@ -95507,6 +96979,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 369
+      },
+      {
+        "date": "2026-04-17",
         "rank": 369
       }
     ],
@@ -95615,6 +97091,10 @@
       {
         "date": "2026-04-16",
         "rank": 370
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 370
       }
     ],
     "collegeStats": {
@@ -95721,6 +97201,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 371
+      },
+      {
+        "date": "2026-04-17",
         "rank": 371
       }
     ],
@@ -95829,6 +97313,10 @@
       {
         "date": "2026-04-16",
         "rank": 372
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 372
       }
     ],
     "collegeStats": {
@@ -95935,6 +97423,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 373
+      },
+      {
+        "date": "2026-04-17",
         "rank": 373
       }
     ],
@@ -96043,6 +97535,10 @@
       {
         "date": "2026-04-16",
         "rank": 374
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 374
       }
     ],
     "collegeStats": {
@@ -96141,6 +97637,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 375
+      },
+      {
+        "date": "2026-04-17",
         "rank": 375
       }
     ],
@@ -96241,6 +97741,10 @@
       {
         "date": "2026-04-16",
         "rank": 376
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 376
       }
     ],
     "collegeStats": {},
@@ -96318,6 +97822,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 377
+      },
+      {
+        "date": "2026-04-17",
         "rank": 377
       }
     ],
@@ -96418,6 +97926,10 @@
       {
         "date": "2026-04-16",
         "rank": 378
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 378
       }
     ],
     "collegeStats": {
@@ -96517,6 +98029,10 @@
       {
         "date": "2026-04-16",
         "rank": 379
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 379
       }
     ],
     "collegeStats": {
@@ -96605,6 +98121,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 380
+      },
+      {
+        "date": "2026-04-17",
         "rank": 380
       }
     ],
@@ -96700,6 +98220,10 @@
       {
         "date": "2026-04-16",
         "rank": 381
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 381
       }
     ],
     "collegeStats": {
@@ -96793,6 +98317,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 382
+      },
+      {
+        "date": "2026-04-17",
         "rank": 382
       }
     ],
@@ -96893,6 +98421,10 @@
       {
         "date": "2026-04-16",
         "rank": 383
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 383
       }
     ],
     "collegeStats": {
@@ -96991,6 +98523,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 384
+      },
+      {
+        "date": "2026-04-17",
         "rank": 384
       }
     ],
@@ -97091,6 +98627,10 @@
       {
         "date": "2026-04-16",
         "rank": 385
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 385
       }
     ],
     "collegeStats": {
@@ -97189,6 +98729,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 386
+      },
+      {
+        "date": "2026-04-17",
         "rank": 386
       }
     ],
@@ -97446,6 +98990,10 @@
       {
         "date": "2026-04-16",
         "rank": 387
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 387
       }
     ],
     "collegeStats": {
@@ -97574,6 +99122,10 @@
       {
         "date": "2026-04-16",
         "rank": 388
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 388
       }
     ],
     "collegeStats": {
@@ -97673,6 +99225,10 @@
       {
         "date": "2026-04-16",
         "rank": 389
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 389
       }
     ],
     "collegeStats": {},
@@ -97750,6 +99306,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 390
+      },
+      {
+        "date": "2026-04-17",
         "rank": 390
       }
     ],
@@ -97844,6 +99404,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 391
+      },
+      {
+        "date": "2026-04-17",
         "rank": 391
       }
     ],
@@ -97944,6 +99508,10 @@
       {
         "date": "2026-04-16",
         "rank": 392
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 392
       }
     ],
     "collegeStats": {
@@ -98027,6 +99595,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 393
+      },
+      {
+        "date": "2026-04-17",
         "rank": 393
       }
     ],
@@ -98127,6 +99699,10 @@
       {
         "date": "2026-04-16",
         "rank": 394
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 394
       }
     ],
     "collegeStats": {
@@ -98210,6 +99786,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 395
+      },
+      {
+        "date": "2026-04-17",
         "rank": 395
       }
     ],
@@ -98301,6 +99881,10 @@
       {
         "date": "2026-04-16",
         "rank": 396
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 396
       }
     ],
     "collegeStats": {},
@@ -98374,6 +99958,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 397
+      },
+      {
+        "date": "2026-04-17",
         "rank": 397
       }
     ],
@@ -98449,6 +100037,10 @@
       {
         "date": "2026-04-16",
         "rank": 398
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 398
       }
     ],
     "collegeStats": {},
@@ -98522,6 +100114,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 399
+      },
+      {
+        "date": "2026-04-17",
         "rank": 399
       }
     ],
@@ -98597,6 +100193,10 @@
       {
         "date": "2026-04-16",
         "rank": 400
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 400
       }
     ],
     "collegeStats": {},
@@ -98670,6 +100270,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 401
+      },
+      {
+        "date": "2026-04-17",
         "rank": 401
       }
     ],
@@ -98745,6 +100349,10 @@
       {
         "date": "2026-04-16",
         "rank": 402
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 402
       }
     ],
     "collegeStats": {},
@@ -98818,6 +100426,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 403
+      },
+      {
+        "date": "2026-04-17",
         "rank": 403
       }
     ],
@@ -98893,6 +100505,10 @@
       {
         "date": "2026-04-16",
         "rank": 404
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 404
       }
     ],
     "collegeStats": {},
@@ -98966,6 +100582,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 405
+      },
+      {
+        "date": "2026-04-17",
         "rank": 405
       }
     ],
@@ -99041,6 +100661,10 @@
       {
         "date": "2026-04-16",
         "rank": 406
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 406
       }
     ],
     "collegeStats": {},
@@ -99114,6 +100738,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 407
+      },
+      {
+        "date": "2026-04-17",
         "rank": 407
       }
     ],
@@ -99189,6 +100817,10 @@
       {
         "date": "2026-04-16",
         "rank": 408
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 408
       }
     ],
     "collegeStats": {},
@@ -99262,6 +100894,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 409
+      },
+      {
+        "date": "2026-04-17",
         "rank": 409
       }
     ],
@@ -99337,6 +100973,10 @@
       {
         "date": "2026-04-16",
         "rank": 410
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 410
       }
     ],
     "collegeStats": {},
@@ -99410,6 +101050,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 411
+      },
+      {
+        "date": "2026-04-17",
         "rank": 411
       }
     ],
@@ -99485,6 +101129,10 @@
       {
         "date": "2026-04-16",
         "rank": 412
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 412
       }
     ],
     "collegeStats": {},
@@ -99558,6 +101206,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 413
+      },
+      {
+        "date": "2026-04-17",
         "rank": 413
       }
     ],
@@ -99633,6 +101285,10 @@
       {
         "date": "2026-04-16",
         "rank": 414
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 414
       }
     ],
     "collegeStats": {},
@@ -99706,6 +101362,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 415
+      },
+      {
+        "date": "2026-04-17",
         "rank": 415
       }
     ],
@@ -99781,6 +101441,10 @@
       {
         "date": "2026-04-16",
         "rank": 416
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 416
       }
     ],
     "collegeStats": {},
@@ -99854,6 +101518,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 417
+      },
+      {
+        "date": "2026-04-17",
         "rank": 417
       }
     ],
@@ -99929,6 +101597,10 @@
       {
         "date": "2026-04-16",
         "rank": 418
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 418
       }
     ],
     "collegeStats": {},
@@ -100002,6 +101674,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 419
+      },
+      {
+        "date": "2026-04-17",
         "rank": 419
       }
     ],
@@ -100077,6 +101753,10 @@
       {
         "date": "2026-04-16",
         "rank": 420
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 420
       }
     ],
     "collegeStats": {},
@@ -100150,6 +101830,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 421
+      },
+      {
+        "date": "2026-04-17",
         "rank": 421
       }
     ],
@@ -100225,6 +101909,10 @@
       {
         "date": "2026-04-16",
         "rank": 422
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 422
       }
     ],
     "collegeStats": {},
@@ -100298,6 +101986,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 423
+      },
+      {
+        "date": "2026-04-17",
         "rank": 423
       }
     ],
@@ -100373,6 +102065,10 @@
       {
         "date": "2026-04-16",
         "rank": 424
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 424
       }
     ],
     "collegeStats": {},
@@ -100446,6 +102142,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 425
+      },
+      {
+        "date": "2026-04-17",
         "rank": 425
       }
     ],
@@ -100546,6 +102246,10 @@
       {
         "date": "2026-04-16",
         "rank": 426
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 426
       }
     ],
     "collegeStats": {
@@ -100644,6 +102348,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 427
+      },
+      {
+        "date": "2026-04-17",
         "rank": 427
       }
     ],
@@ -100744,6 +102452,10 @@
       {
         "date": "2026-04-16",
         "rank": 428
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 428
       }
     ],
     "collegeStats": {
@@ -100843,6 +102555,10 @@
       {
         "date": "2026-04-16",
         "rank": 429
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 429
       }
     ],
     "collegeStats": {
@@ -100935,6 +102651,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 430
+      },
+      {
+        "date": "2026-04-17",
         "rank": 430
       }
     ],
@@ -101035,6 +102755,10 @@
       {
         "date": "2026-04-16",
         "rank": 431
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 431
       }
     ],
     "collegeStats": {
@@ -101134,6 +102858,10 @@
       {
         "date": "2026-04-16",
         "rank": 432
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 432
       }
     ],
     "collegeStats": {},
@@ -101207,6 +102935,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 433
+      },
+      {
+        "date": "2026-04-17",
         "rank": 433
       }
     ],
@@ -101307,6 +103039,10 @@
       {
         "date": "2026-04-16",
         "rank": 434
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 434
       }
     ],
     "collegeStats": {},
@@ -101381,6 +103117,10 @@
       {
         "date": "2026-04-16",
         "rank": 435
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 435
       }
     ],
     "collegeStats": {},
@@ -101454,6 +103194,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 436
+      },
+      {
+        "date": "2026-04-17",
         "rank": 436
       }
     ],
@@ -101554,6 +103298,10 @@
       {
         "date": "2026-04-16",
         "rank": 437
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 437
       }
     ],
     "collegeStats": {
@@ -101641,6 +103389,10 @@
       {
         "date": "2026-04-16",
         "rank": 438
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 438
       }
     ],
     "collegeStats": {
@@ -101721,6 +103473,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 439
+      },
+      {
+        "date": "2026-04-17",
         "rank": 439
       }
     ],
@@ -101821,6 +103577,10 @@
       {
         "date": "2026-04-16",
         "rank": 440
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 440
       }
     ],
     "collegeStats": {
@@ -101919,6 +103679,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 441
+      },
+      {
+        "date": "2026-04-17",
         "rank": 441
       }
     ],
@@ -102019,6 +103783,10 @@
       {
         "date": "2026-04-16",
         "rank": 442
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 442
       }
     ],
     "collegeStats": {
@@ -102118,6 +103886,10 @@
       {
         "date": "2026-04-16",
         "rank": 443
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 443
       }
     ],
     "collegeStats": {},
@@ -102191,6 +103963,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 444
+      },
+      {
+        "date": "2026-04-17",
         "rank": 444
       }
     ],
@@ -102291,6 +104067,10 @@
       {
         "date": "2026-04-16",
         "rank": 445
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 445
       }
     ],
     "collegeStats": {
@@ -102390,6 +104170,10 @@
       {
         "date": "2026-04-16",
         "rank": 446
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 446
       }
     ],
     "collegeStats": {},
@@ -102463,6 +104247,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 447
+      },
+      {
+        "date": "2026-04-17",
         "rank": 447
       }
     ],
@@ -102550,6 +104338,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 448
+      },
+      {
+        "date": "2026-04-17",
         "rank": 448
       }
     ],
@@ -102650,6 +104442,10 @@
       {
         "date": "2026-04-16",
         "rank": 449
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 449
       }
     ],
     "collegeStats": {
@@ -102743,6 +104539,10 @@
       {
         "date": "2026-04-16",
         "rank": 450
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 450
       }
     ],
     "collegeStats": {
@@ -102829,6 +104629,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 451
+      },
+      {
+        "date": "2026-04-17",
         "rank": 451
       }
     ],
@@ -102929,6 +104733,10 @@
       {
         "date": "2026-04-16",
         "rank": 452
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 452
       }
     ],
     "collegeStats": {
@@ -103022,6 +104830,10 @@
       {
         "date": "2026-04-16",
         "rank": 453
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 453
       }
     ],
     "collegeStats": {},
@@ -103095,6 +104907,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 454
+      },
+      {
+        "date": "2026-04-17",
         "rank": 454
       }
     ],
@@ -103188,6 +105004,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 455
+      },
+      {
+        "date": "2026-04-17",
         "rank": 455
       }
     ],
@@ -103288,6 +105108,10 @@
       {
         "date": "2026-04-16",
         "rank": 456
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 456
       }
     ],
     "collegeStats": {
@@ -103386,6 +105210,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 457
+      },
+      {
+        "date": "2026-04-17",
         "rank": 457
       }
     ],
@@ -103486,6 +105314,10 @@
       {
         "date": "2026-04-16",
         "rank": 458
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 458
       }
     ],
     "collegeStats": {
@@ -103579,6 +105411,10 @@
       {
         "date": "2026-04-16",
         "rank": 459
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 459
       }
     ],
     "collegeStats": {},
@@ -103652,6 +105488,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 460
+      },
+      {
+        "date": "2026-04-17",
         "rank": 460
       }
     ],
@@ -103746,6 +105586,10 @@
       {
         "date": "2026-04-16",
         "rank": 461
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 461
       }
     ],
     "collegeStats": {
@@ -103833,6 +105677,10 @@
       {
         "date": "2026-04-16",
         "rank": 462
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 462
       }
     ],
     "collegeStats": {},
@@ -103906,6 +105754,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 463
+      },
+      {
+        "date": "2026-04-17",
         "rank": 463
       }
     ],
@@ -103999,6 +105851,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 464
+      },
+      {
+        "date": "2026-04-17",
         "rank": 464
       }
     ],
@@ -104099,6 +105955,10 @@
       {
         "date": "2026-04-16",
         "rank": 465
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 465
       }
     ],
     "collegeStats": {
@@ -104197,6 +106057,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 466
+      },
+      {
+        "date": "2026-04-17",
         "rank": 466
       }
     ],
@@ -104297,6 +106161,10 @@
       {
         "date": "2026-04-16",
         "rank": 467
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 467
       }
     ],
     "collegeStats": {
@@ -104395,6 +106263,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 468
+      },
+      {
+        "date": "2026-04-17",
         "rank": 468
       }
     ],
@@ -104495,6 +106367,10 @@
       {
         "date": "2026-04-16",
         "rank": 469
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 469
       }
     ],
     "collegeStats": {},
@@ -104568,6 +106444,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 470
+      },
+      {
+        "date": "2026-04-17",
         "rank": 470
       }
     ],
@@ -104668,6 +106548,10 @@
       {
         "date": "2026-04-16",
         "rank": 471
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 471
       }
     ],
     "collegeStats": {
@@ -104766,6 +106650,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 472
+      },
+      {
+        "date": "2026-04-17",
         "rank": 472
       }
     ],
@@ -104866,6 +106754,10 @@
       {
         "date": "2026-04-16",
         "rank": 473
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 473
       }
     ],
     "collegeStats": {
@@ -104964,6 +106856,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 474
+      },
+      {
+        "date": "2026-04-17",
         "rank": 474
       }
     ],
@@ -105064,6 +106960,10 @@
       {
         "date": "2026-04-16",
         "rank": 475
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 475
       }
     ],
     "collegeStats": {
@@ -105163,6 +107063,10 @@
       {
         "date": "2026-04-16",
         "rank": 476
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 476
       }
     ],
     "collegeStats": {},
@@ -105236,6 +107140,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 477
+      },
+      {
+        "date": "2026-04-17",
         "rank": 477
       }
     ],
@@ -105336,6 +107244,10 @@
       {
         "date": "2026-04-16",
         "rank": 478
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 478
       }
     ],
     "collegeStats": {
@@ -105435,6 +107347,10 @@
       {
         "date": "2026-04-16",
         "rank": 479
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 479
       }
     ],
     "collegeStats": {
@@ -105528,6 +107444,10 @@
       {
         "date": "2026-04-16",
         "rank": 480
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 480
       }
     ],
     "collegeStats": {},
@@ -105601,6 +107521,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 481
+      },
+      {
+        "date": "2026-04-17",
         "rank": 481
       }
     ],
@@ -105676,6 +107600,10 @@
       {
         "date": "2026-04-16",
         "rank": 482
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 482
       }
     ],
     "collegeStats": {},
@@ -105749,6 +107677,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 483
+      },
+      {
+        "date": "2026-04-17",
         "rank": 483
       }
     ],
@@ -105849,6 +107781,10 @@
       {
         "date": "2026-04-16",
         "rank": 484
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 484
       }
     ],
     "collegeStats": {},
@@ -105922,6 +107858,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 485
+      },
+      {
+        "date": "2026-04-17",
         "rank": 485
       }
     ],
@@ -106016,6 +107956,10 @@
       {
         "date": "2026-04-16",
         "rank": 486
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 486
       }
     ],
     "collegeStats": {},
@@ -106090,6 +108034,10 @@
       {
         "date": "2026-04-16",
         "rank": 487
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 487
       }
     ],
     "collegeStats": {},
@@ -106163,6 +108111,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 488
+      },
+      {
+        "date": "2026-04-17",
         "rank": 488
       }
     ],
@@ -106245,6 +108197,10 @@
       {
         "date": "2026-04-16",
         "rank": 489
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 489
       }
     ],
     "collegeStats": {},
@@ -106319,6 +108275,10 @@
       {
         "date": "2026-04-16",
         "rank": 490
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 490
       }
     ],
     "collegeStats": {},
@@ -106392,6 +108352,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 491
+      },
+      {
+        "date": "2026-04-17",
         "rank": 491
       }
     ],
@@ -106480,6 +108444,10 @@
       {
         "date": "2026-04-16",
         "rank": 492
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 492
       }
     ],
     "collegeStats": {},
@@ -106553,6 +108521,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 493
+      },
+      {
+        "date": "2026-04-17",
         "rank": 493
       }
     ],
@@ -106635,6 +108607,10 @@
       {
         "date": "2026-04-16",
         "rank": 494
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 494
       }
     ],
     "collegeStats": {},
@@ -106709,6 +108685,10 @@
       {
         "date": "2026-04-16",
         "rank": 495
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 495
       }
     ],
     "collegeStats": {},
@@ -106782,6 +108762,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 496
+      },
+      {
+        "date": "2026-04-17",
         "rank": 496
       }
     ],
@@ -106867,6 +108851,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 497
+      },
+      {
+        "date": "2026-04-17",
         "rank": 497
       }
     ],
@@ -106967,6 +108955,10 @@
       {
         "date": "2026-04-16",
         "rank": 498
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 498
       }
     ],
     "collegeStats": {},
@@ -107040,6 +109032,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 499
+      },
+      {
+        "date": "2026-04-17",
         "rank": 499
       }
     ],
@@ -107140,6 +109136,10 @@
       {
         "date": "2026-04-16",
         "rank": 500
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 500
       }
     ],
     "collegeStats": {
@@ -107234,6 +109234,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 501
+      },
+      {
+        "date": "2026-04-17",
         "rank": 501
       }
     ],
@@ -107330,6 +109334,10 @@
       {
         "date": "2026-04-16",
         "rank": 502
+      },
+      {
+        "date": "2026-04-17",
+        "rank": 502
       }
     ],
     "collegeStats": {
@@ -107419,6 +109427,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 503
+      },
+      {
+        "date": "2026-04-17",
         "rank": 503
       }
     ],
@@ -107674,6 +109686,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 504
+      },
+      {
+        "date": "2026-04-17",
         "rank": 504
       }
     ],
@@ -107931,6 +109947,10 @@
       },
       {
         "date": "2026-04-16",
+        "rank": 505
+      },
+      {
+        "date": "2026-04-17",
         "rank": 505
       }
     ],
