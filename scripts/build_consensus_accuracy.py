@@ -258,7 +258,10 @@ def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     out_path = OUT_DIR / f'{year}.json'
     out_path.write_text(json.dumps(out, indent=2))
-    logger.info(f'Wrote {out_path}')
+    # Also write/update latest.json so the front-end can fetch a year-agnostic
+    # path. Always overwrite — whatever year we just built is the latest.
+    (OUT_DIR / 'latest.json').write_text(json.dumps(out, indent=2))
+    logger.info(f'Wrote {out_path} (and latest.json)')
     logger.info(f'Top-line: {stats["matchedPairs"]} paired, '
                 f'mean abs rank delta {stats["meanAbsRankDelta"]}, '
                 f'mean abs value delta {stats["meanAbsValueDelta"]} JJ pts')

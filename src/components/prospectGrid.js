@@ -264,8 +264,9 @@ export function renderProspectGrid() {
   const countEl = document.getElementById('result-count')
   if (!container) return
 
-  const { prospects, filters, sort, expandedCardId, viewMode, watchlist, draftYear, draftHistory } = getState()
-  const isHistorical = draftYear !== 2026
+  const { prospects, filters, sort, expandedCardId, viewMode, watchlist, draftYear, draftHistory, meta } = getState()
+  const currentYear = meta?.draftYear ?? draftYear
+  const isHistorical = draftYear != null && draftYear !== currentYear
   const activeProspects = isHistorical ? (draftHistory[String(draftYear)] || []) : prospects
 
   // Reset pagination when filters, sort, or year change

@@ -4,7 +4,9 @@ const state = {
   meta: {},
   historical: {},
   historicalYear: 'all',
-  draftYear: 2026,     // which draft class to view (2026 = current prospects)
+  // which draft class to view — null until meta.json loads, then set to meta.draftYear
+  // (the upcoming draft year). Historical classes are picked via the dropdown.
+  draftYear: null,
   draftHistory: {},    // loaded from draft_history.json, keyed by year string
   wrTargetHistory: null, // historical first-round WR TGT/G for percentile comparison
   filters: {
