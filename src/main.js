@@ -67,7 +67,7 @@ function renderApp() {
         <section class="max-w-7xl mx-auto px-4 pb-6" id="combine-spotlight-section" style="display:none">
           <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
             Combine Spotlight
-            <span class="text-xs font-normal text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">2026 NFL Combine</span>
+            <span id="combine-spotlight-year" class="text-xs font-normal text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">NFL Combine</span>
           </h2>
           <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3" id="combine-spotlight"></div>
         </section>
@@ -127,10 +127,22 @@ function updateHeader() {
 
   const count = prospects.length
   const ago = timeAgo(meta.lastUpdated)
-  const draftDate = new Date('2026-04-23T00:00:00')
-  const daysUntil = Math.ceil((draftDate - Date.now()) / 86400000)
+  // Conventional draft date: late April of the upcoming class year (matches the
+  // build_prospects.py rollover cutover of April 25). Used only for the header
+  // countdown — exact day varies year to year, this is the rough target.
+  const draftYearForCountdown = meta?.draftYear
+  const draftDate = draftYearForCountdown
+    ? new Date(`${draftYearForCountdown}-04-25T00:00:00`)
+    : null
+  const daysUntil = draftDate ? Math.ceil((draftDate - Date.now()) / 86400000) : 0
   const countdown = daysUntil > 0 ? ` · Draft in ${daysUntil}d` : ''
   metaEl.textContent = `Updated ${ago} · ${count} prospect${count !== 1 ? 's' : ''}${countdown}`
+
+  // Combine Spotlight section title: combine happens in late February of the draft year.
+  const combineYearEl = document.getElementById('combine-spotlight-year')
+  if (combineYearEl && draftYearForCountdown) {
+    combineYearEl.textContent = `${draftYearForCountdown} NFL Combine`
+  }
 
   if (meta.sources && statusEl) {
     statusEl.classList.remove('hidden')
@@ -162,7 +174,7 @@ async function loadData() {
       fetch(getDataUrl('draft_history.json')),
       fetch(getDataUrl('free_agency.json')),
       fetch(getDataUrl('wr_target_history.json')),
-      fetch(getDataUrl('consensus_accuracy/2026.json')),
+      fetch(getDataUrl('consensus_accuracy/latest.json')),
     ])
 
     const [prospects, news, meta, historical, draftHistory, freeAgency, wrTargetHistory, consensusAccuracy] = await Promise.all([
@@ -176,7 +188,12 @@ async function loadData() {
       consensusRes.ok ? consensusRes.json() : null,
     ])
 
-    setState({ prospects, news, meta, historical, draftHistory, freeAgency, wrTargetHistory, consensusAccuracy, loading: false })
+    // Default the viewing year to whatever draft we're currently tracking,
+    // unless the user already changed it (e.g. via deep link or earlier session).
+    const { draftYear: currentDraftYear } = getState()
+    const resolvedDraftYear = currentDraftYear ?? (meta?.draftYear ?? null)
+
+    setState({ prospects, news, meta, historical, draftHistory, freeAgency, wrTargetHistory, consensusAccuracy, draftYear: resolvedDraftYear, loading: false })
 
     // Deep-link: auto-expand a prospect from ?p=<id> query param
     const deepId = new URLSearchParams(location.search).get('p')
@@ -282,10 +299,10 @@ subscribe(state => {
   }
 }, ['meta', 'prospects', 'loading'])
 
-// Filter bar re-renders on filter/sort/historical/view/watchlist changes
+// Filter bar re-renders on filter/sort/historical/view/watchlist/year changes
 subscribe(() => {
   renderFilterBar()
-}, ['filters', 'sort', 'historical', 'historicalYear', 'viewMode', 'watchlist'])
+}, ['filters', 'sort', 'historical', 'historicalYear', 'viewMode', 'watchlist', 'meta', 'draftYear', 'draftHistory'])
 
 // When historicalYear changes, update the combine tab for the currently expanded card
 subscribe(state => {
