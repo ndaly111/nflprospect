@@ -4,6 +4,7 @@ Orchestrator: fetches all data sources, merges, writes data/*.json
 import json
 import logging
 import os
+import shutil
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -406,8 +407,41 @@ def build_meta(source_results: dict, prospect_count: int) -> dict:
     }
 
 
+def maybe_snapshot_predraft():
+    """If the existing data/prospects.json was built for a different (earlier)
+    draft year than the one we're about to build for, snapshot it as the
+    pre-draft consensus for that prior year. Idempotent: skips if snapshot
+    already exists. Only runs once per year (on the rollover day after Apr 25)."""
+    meta_path = DATA_DIR / 'meta.json'
+    src_path  = DATA_DIR / 'prospects.json'
+    if not meta_path.exists() or not src_path.exists():
+        return
+    try:
+        prev_meta = json.loads(meta_path.read_text())
+    except Exception as e:
+        logger.warning(f'Could not read meta.json for predraft snapshot check: {e}')
+        return
+    prev_year = prev_meta.get('draftYear')
+    if not isinstance(prev_year, int) or prev_year >= DRAFT_YEAR:
+        return  # not a rollover
+
+    out_dir  = DATA_DIR / 'predraft'
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_path = out_dir / f'{prev_year}.json'
+    if out_path.exists():
+        return  # already snapshotted (defensive)
+
+    shutil.copy2(src_path, out_path)
+    shutil.copy2(meta_path, out_dir / f'{prev_year}_meta.json')
+    logger.info(f'Snapshotted {prev_year} pre-draft consensus -> {out_path.name}')
+
+
 def main():
     logger.info('=== NFL Draft Pipeline Starting ===')
+
+    # 0. If we just rolled into a new draft year, preserve the outgoing year's
+    #    pre-draft consensus before we overwrite prospects.json.
+    maybe_snapshot_predraft()
 
     # 1. Load existing data
     existing = load_existing()

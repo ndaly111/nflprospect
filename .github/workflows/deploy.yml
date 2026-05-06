@@ -29,7 +29,9 @@ jobs:
       - name: Copy data to public
         run: |
           mkdir -p public/data
-          cp -r data/*.json public/data/
+          # Recursively copy everything under data/ (top-level *.json plus nested
+          # folders like consensus_accuracy/, predraft/, draft_results/)
+          cp -r data/. public/data/
 
       - name: Build
         run: npm run build

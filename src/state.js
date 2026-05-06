@@ -21,8 +21,9 @@ const state = {
   expandedCardId: null,
   loading: true,
   error: null,
-  activePage: 'prospects',      // 'prospects' | 'analytics'
-  analyticsTab: 'year',         // 'year' | 'round' | 'position' | 'players'
+  activePage: 'prospects',      // 'prospects' | 'analytics' | 'freeAgency'
+  consensusAccuracy: null,      // loaded from data/consensus_accuracy/<year>.json
+  analyticsTab: 'consensus',    // 'consensus' | 'year' | 'round' | 'position' | 'players' | 'compare'
   analyticsPos: 'QB',
   analyticsPlayerPos:   'ALL',  // filter for players tab
   analyticsPlayerYear:  'ALL',

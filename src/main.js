@@ -154,7 +154,7 @@ async function loadData() {
   setState({ loading: true, error: null })
 
   try {
-    const [prospectsRes, newsRes, metaRes, historicalRes, draftHistoryRes, freeAgencyRes, wrTargetRes] = await Promise.all([
+    const [prospectsRes, newsRes, metaRes, historicalRes, draftHistoryRes, freeAgencyRes, wrTargetRes, consensusRes] = await Promise.all([
       fetch(getDataUrl('prospects.json')),
       fetch(getDataUrl('news.json')),
       fetch(getDataUrl('meta.json')),
@@ -162,9 +162,10 @@ async function loadData() {
       fetch(getDataUrl('draft_history.json')),
       fetch(getDataUrl('free_agency.json')),
       fetch(getDataUrl('wr_target_history.json')),
+      fetch(getDataUrl('consensus_accuracy/2026.json')),
     ])
 
-    const [prospects, news, meta, historical, draftHistory, freeAgency, wrTargetHistory] = await Promise.all([
+    const [prospects, news, meta, historical, draftHistory, freeAgency, wrTargetHistory, consensusAccuracy] = await Promise.all([
       prospectsRes.ok ? prospectsRes.json() : [],
       newsRes.ok ? newsRes.json() : [],
       metaRes.ok ? metaRes.json() : {},
@@ -172,9 +173,10 @@ async function loadData() {
       draftHistoryRes.ok ? draftHistoryRes.json() : {},
       freeAgencyRes.ok ? freeAgencyRes.json() : {},
       wrTargetRes.ok ? wrTargetRes.json() : null,
+      consensusRes.ok ? consensusRes.json() : null,
     ])
 
-    setState({ prospects, news, meta, historical, draftHistory, freeAgency, wrTargetHistory, loading: false })
+    setState({ prospects, news, meta, historical, draftHistory, freeAgency, wrTargetHistory, consensusAccuracy, loading: false })
 
     // Deep-link: auto-expand a prospect from ?p=<id> query param
     const deepId = new URLSearchParams(location.search).get('p')
@@ -225,7 +227,7 @@ subscribe(state => {
   if (!state.loading && state.activePage === 'analytics') {
     renderDraftAnalytics()
   }
-}, ['draftHistory', 'prospects', 'loading', 'activePage', 'analyticsTab', 'analyticsPos', 'analyticsPlayerPos', 'analyticsPlayerYear', 'analyticsPlayerRound', 'comparePos', 'compareView', 'compareSort', 'compareSortDir', 'compareRound'])
+}, ['draftHistory', 'prospects', 'loading', 'activePage', 'analyticsTab', 'analyticsPos', 'analyticsPlayerPos', 'analyticsPlayerYear', 'analyticsPlayerRound', 'comparePos', 'compareView', 'compareSort', 'compareSortDir', 'compareRound', 'consensusAccuracy'])
 
 // Free Agency page re-renders on data load or any FA filter/tab change
 subscribe(state => {

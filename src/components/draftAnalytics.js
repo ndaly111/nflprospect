@@ -1,5 +1,6 @@
 import { getState, setState } from '../state.js'
 import { TIERS, TIER_ORDER, TIER_COLORS, POSITIONS, POS_COLORS } from '../utils/tiers.js'
+import { buildConsensusAccuracy } from './consensusAccuracy.js'
 
 const ROUNDS = [1, 2, 3, 4, 5, 6, 7]
 
@@ -585,6 +586,7 @@ export function renderDraftAnalytics() {
   )
 
   const tabs = [
+    { id: 'consensus', label: 'Consensus vs Actual' },
     { id: 'year',     label: 'By Draft Year' },
     { id: 'round',    label: 'By Round'       },
     { id: 'position', label: 'By Position'    },
@@ -601,7 +603,8 @@ export function renderDraftAnalytics() {
   ).join('')
 
   let content = ''
-  if (analyticsTab === 'year')         content = buildByYear(history)
+  if (analyticsTab === 'consensus')    content = buildConsensusAccuracy(getState().consensusAccuracy)
+  else if (analyticsTab === 'year')         content = buildByYear(history)
   else if (analyticsTab === 'round')   content = buildByRound(history)
   else if (analyticsTab === 'position') content = buildByPosition(history, analyticsPos)
   else if (analyticsTab === 'players') content = buildPlayerList(history, analyticsPlayerPos, analyticsPlayerYear, analyticsPlayerRound)
