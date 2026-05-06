@@ -355,17 +355,24 @@ def merge_combine_data(prospects: list[dict], combine_by_name: dict[str, dict]) 
 
 
 def merge_actual_picks(prospects: list[dict]) -> list[dict]:
-    """After the draft, pull actual picks from nflverse and merge into prospects."""
+    """Merge nflverse draft data into the prospect list:
+       1. Tag current-DRAFT_YEAR picks with actualPick/actualRound/actualTeam.
+       2. Drop prospects who were drafted in any PRIOR year (they're in the NFL
+          now and shouldn't be on a future-class board)."""
     import pandas as pd
     try:
         picks_df = pd.read_csv(NFLVERSE_PICKS_URL)
-        picks = picks_df[picks_df['season'] == DRAFT_YEAR]
-        if picks.empty:
-            logger.info(f'{DRAFT_YEAR} draft picks not yet in nflverse — skipping actual pick merge')
-            return prospects
+    except Exception as e:
+        logger.warning(f'Could not load nflverse picks: {e}')
+        return prospects
 
+    # ---- 1. Tag current-year picks ----
+    current = picks_df[picks_df['season'] == DRAFT_YEAR]
+    if current.empty:
+        logger.info(f'{DRAFT_YEAR} draft picks not yet in nflverse — skipping actual pick tagging')
+    else:
         pick_by_name: dict[str, dict] = {}
-        for _, row in picks.iterrows():
+        for _, row in current.iterrows():
             name = str(row.get('pfr_player_name', '') or '').strip()
             if name:
                 pick_by_name[name.lower()] = {
@@ -373,7 +380,6 @@ def merge_actual_picks(prospects: list[dict]) -> list[dict]:
                     'actualRound': int(row['round']),
                     'actualTeam':  normalize_team_name(str(row.get('team', '') or '').strip()),
                 }
-
         candidates = [{'name': k} for k in pick_by_name]
         merged = 0
         for p in prospects:
@@ -385,11 +391,65 @@ def merge_actual_picks(prospects: list[dict]) -> list[dict]:
             if data:
                 p.update(data)
                 merged += 1
-
         logger.info(f'Merged actual {DRAFT_YEAR} draft picks for {merged} prospects')
-    except Exception as e:
-        logger.warning(f'Actual pick merge failed: {e}')
-    return prospects
+
+    # ---- 2. Drop already-drafted prospects (from PRIOR years) ----
+    # Sources sometimes carry top-ranked names forward into the next class even
+    # after they're drafted. nflverse is the source of truth for who's in the NFL.
+    # Strategy: build a histogram of normalized names in prior-year picks. Drop a
+    # prospect when their name is unique in that histogram (high confidence —
+    # full names are distinctive enough that a single match across decades is
+    # almost certainly the same person). When a name occurs multiple times across
+    # prior drafts, require the school to roughly match (first-token compare,
+    # which handles "Ohio State" vs "Ohio St." but not deeper abbreviations like
+    # "UCF" vs "Central Florida" — those are rare enough at the same name to not
+    # produce false positives).
+    def _school_key(s: str) -> str:
+        return normalize_name(s).split(' ')[0] if s else ''
+
+    prior = picks_df[picks_df['season'] < DRAFT_YEAR]
+    name_to_schools: dict[str, list[str]] = {}
+    last_year_names: set[str] = set()
+    for _, row in prior.iterrows():
+        n = normalize_name(str(row.get('pfr_player_name', '') or ''))
+        s = _school_key(str(row.get('college', '') or ''))
+        if not n:
+            continue
+        name_to_schools.setdefault(n, []).append(s)
+        try:
+            if int(row['season']) == DRAFT_YEAR - 1:
+                last_year_names.add(n)
+        except (ValueError, KeyError):
+            pass
+
+    keep, drop = [], []
+    for p in prospects:
+        n = normalize_name(p.get('name', ''))
+        prior_schools = name_to_schools.get(n)
+        if not prior_schools:
+            keep.append(p)
+            continue
+        # Drafted in the year that JUST happened — drop unconditionally. They're
+        # in the NFL now; same-name collisions with players from a decade ago
+        # don't change that.
+        if n in last_year_names:
+            drop.append(p)
+            continue
+        # Older prior drafts only (no same-name pick last year).
+        if len(prior_schools) == 1:
+            # Unique name across all prior drafts — almost certainly the same person.
+            drop.append(p)
+            continue
+        # Same name drafted multiple times in older drafts — require school-prefix match.
+        ps = _school_key(p.get('school', ''))
+        if ps and ps in prior_schools:
+            drop.append(p)
+        else:
+            keep.append(p)
+    if drop:
+        logger.info(f'Dropping {len(drop)} prospects already drafted in prior years '
+                    f'(e.g. {", ".join(p["name"] for p in drop[:5])}...)')
+    return keep
 
 
 def build_meta(source_results: dict, prospect_count: int) -> dict:
