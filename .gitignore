@@ -30,3 +30,9 @@ __pycache__/
 
 # Keep data/ in git (committed by Actions)
 !data/
+
+# public/data/ is rebuilt by the deploy workflow from data/ — don't track stale copies
+public/data/
+
+# Local working dir for debug fetches
+tmp/

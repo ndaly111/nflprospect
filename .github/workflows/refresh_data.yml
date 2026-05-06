@@ -33,6 +33,17 @@ jobs:
       - name: Run pipeline
         run: python scripts/build_prospects.py
 
+      - name: Refresh post-draft consensus accuracy (most recent completed draft)
+        run: |
+          LAST_YEAR=$(python -c "from datetime import datetime,timezone;n=datetime.now(timezone.utc);print(n.year if (n.month,n.day)>=(4,25) else n.year-1)")
+          if [ -f "data/predraft/${LAST_YEAR}.json" ]; then
+            echo "Building consensus accuracy for $LAST_YEAR"
+            python scripts/fetch_draft_results.py "$LAST_YEAR"
+            python scripts/build_consensus_accuracy.py "$LAST_YEAR"
+          else
+            echo "No predraft snapshot for $LAST_YEAR yet — skipping consensus accuracy build"
+          fi
+
       - name: Commit data
         run: |
           git config user.name "github-actions[bot]"
