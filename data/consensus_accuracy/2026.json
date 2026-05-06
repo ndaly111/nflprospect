@@ -37,6 +37,7 @@
     {
       "name": "Fernando Mendoza",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Indiana",
       "consensusRank": 1,
       "rankBySource": {
@@ -58,6 +59,7 @@
     {
       "name": "David Bailey",
       "position": "DE",
+      "positionGroup": "EDGE",
       "school": "Texas Tech",
       "consensusRank": 5,
       "rankBySource": {
@@ -79,6 +81,7 @@
     {
       "name": "Jeremiyah Love",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Notre Dame",
       "consensusRank": 3,
       "rankBySource": {
@@ -100,6 +103,7 @@
     {
       "name": "Carnell Tate",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Ohio State",
       "consensusRank": 13,
       "rankBySource": {
@@ -121,6 +125,7 @@
     {
       "name": "Arvell Reese",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Ohio State",
       "consensusRank": 2,
       "rankBySource": {
@@ -142,6 +147,7 @@
     {
       "name": "Mansoor Delane",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "LSU",
       "consensusRank": 8,
       "rankBySource": {
@@ -163,6 +169,7 @@
     {
       "name": "Sonny Styles",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Ohio State",
       "consensusRank": 6,
       "rankBySource": {
@@ -184,6 +191,7 @@
     {
       "name": "Jordyn Tyson",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Arizona State",
       "consensusRank": 12,
       "rankBySource": {
@@ -205,6 +213,7 @@
     {
       "name": "Spencer Fano",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Utah",
       "consensusRank": 10,
       "rankBySource": {
@@ -226,6 +235,7 @@
     {
       "name": "Francis Mauigoa",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Miami",
       "consensusRank": 9,
       "rankBySource": {
@@ -246,6 +256,7 @@
     {
       "name": "Caleb Downs",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Ohio State",
       "consensusRank": 4,
       "rankBySource": {
@@ -267,6 +278,7 @@
     {
       "name": "Kadyn Proctor",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Alabama",
       "consensusRank": 11,
       "rankBySource": {
@@ -288,6 +300,7 @@
     {
       "name": "Ty Simpson",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Alabama",
       "consensusRank": 28,
       "rankBySource": {
@@ -308,6 +321,7 @@
     {
       "name": "Olaivavega Ioane",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Penn State",
       "consensusRank": 17,
       "rankBySource": {
@@ -327,6 +341,7 @@
     {
       "name": "Rueben Bain Jr.",
       "position": "DE",
+      "positionGroup": "EDGE",
       "school": "Miami",
       "consensusRank": 7,
       "rankBySource": {
@@ -348,6 +363,7 @@
     {
       "name": "Kenyon Sadiq",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Oregon",
       "consensusRank": 18,
       "rankBySource": {
@@ -369,6 +385,7 @@
     {
       "name": "Blake Miller",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Clemson",
       "consensusRank": 35,
       "rankBySource": {
@@ -389,6 +406,7 @@
     {
       "name": "Caleb Banks",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Florida",
       "consensusRank": 58,
       "rankBySource": {
@@ -409,6 +427,7 @@
     {
       "name": "Monroe Freeling",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Georgia",
       "consensusRank": 19,
       "rankBySource": {
@@ -429,6 +448,7 @@
     {
       "name": "Makai Lemon",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "USC",
       "consensusRank": 15,
       "rankBySource": {
@@ -450,6 +470,7 @@
     {
       "name": "Max Iheanachor",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Arizona St.",
       "consensusRank": 34,
       "rankBySource": {
@@ -470,6 +491,7 @@
     {
       "name": "Akheem Mesidor",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Miami",
       "consensusRank": 24,
       "rankBySource": {
@@ -490,6 +512,7 @@
     {
       "name": "Malachi Lawrence",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "UCF",
       "consensusRank": 45,
       "rankBySource": {
@@ -510,6 +533,7 @@
     {
       "name": "KC Concepcion",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Texas A&M",
       "consensusRank": 27,
       "rankBySource": {
@@ -529,6 +553,7 @@
     {
       "name": "Dillon Thieneman",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Oregon",
       "consensusRank": 29,
       "rankBySource": {
@@ -549,6 +574,7 @@
     {
       "name": "Keylan Rutledge",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Georgia Tech",
       "consensusRank": 46,
       "rankBySource": {
@@ -569,6 +595,7 @@
     {
       "name": "Chris Johnson",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "San Diego St.",
       "consensusRank": 33,
       "rankBySource": {
@@ -589,6 +616,7 @@
     {
       "name": "Caleb Lomu",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Utah",
       "consensusRank": 21,
       "rankBySource": {
@@ -609,6 +637,7 @@
     {
       "name": "Peter Woods",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Clemson",
       "consensusRank": 25,
       "rankBySource": {
@@ -629,6 +658,7 @@
     {
       "name": "Omar Cooper Jr.",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Indiana",
       "consensusRank": 20,
       "rankBySource": {
@@ -649,6 +679,7 @@
     {
       "name": "Keldric Faulk",
       "position": "DE",
+      "positionGroup": "EDGE",
       "school": "Auburn",
       "consensusRank": 26,
       "rankBySource": {
@@ -670,6 +701,7 @@
     {
       "name": "Jadarian Price",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Notre Dame",
       "consensusRank": 49,
       "rankBySource": {
@@ -690,6 +722,7 @@
     {
       "name": "De'Zhaun Stribling",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Ole Miss",
       "consensusRank": 80,
       "rankBySource": {
@@ -709,6 +742,7 @@
     {
       "name": "Chase Bisontis",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Texas A&M",
       "consensusRank": 36,
       "rankBySource": {
@@ -729,6 +763,7 @@
     {
       "name": "T.J. Parker",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Clemson",
       "consensusRank": 40,
       "rankBySource": {
@@ -748,6 +783,7 @@
     {
       "name": "Kayden McDonald",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Ohio State",
       "consensusRank": 30,
       "rankBySource": {
@@ -768,6 +804,7 @@
     {
       "name": "Colton Hood",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Tennessee",
       "consensusRank": 37,
       "rankBySource": {
@@ -788,6 +825,7 @@
     {
       "name": "Treydan Stukes",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Arizona",
       "consensusRank": 52,
       "rankBySource": {
@@ -808,6 +846,7 @@
     {
       "name": "Denzel Boston",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Washington",
       "consensusRank": 31,
       "rankBySource": {
@@ -828,6 +867,7 @@
     {
       "name": "R Mason Thomas",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Oklahoma",
       "consensusRank": 53,
       "rankBySource": {
@@ -847,6 +887,7 @@
     {
       "name": "Cashius Howell",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Texas A&M",
       "consensusRank": 32,
       "rankBySource": {
@@ -867,6 +908,7 @@
     {
       "name": "Christen Miller",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Georgia",
       "consensusRank": 48,
       "rankBySource": {
@@ -887,6 +929,7 @@
     {
       "name": "Jacob Rodriguez",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Texas Tech",
       "consensusRank": 44,
       "rankBySource": {
@@ -907,6 +950,7 @@
     {
       "name": "Derrick Moore",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Michigan",
       "consensusRank": 66,
       "rankBySource": {
@@ -927,6 +971,7 @@
     {
       "name": "Zion Young",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Missouri",
       "consensusRank": 57,
       "rankBySource": {
@@ -947,6 +992,7 @@
     {
       "name": "Josiah Trotter",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Missouri",
       "consensusRank": 54,
       "rankBySource": {
@@ -967,6 +1013,7 @@
     {
       "name": "Germie Bernard",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Alabama",
       "consensusRank": 41,
       "rankBySource": {
@@ -987,6 +1034,7 @@
     {
       "name": "Avieon Terrell",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Clemson",
       "consensusRank": 23,
       "rankBySource": {
@@ -1007,6 +1055,7 @@
     {
       "name": "Lee Hunter",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Texas Tech",
       "consensusRank": 47,
       "rankBySource": {
@@ -1027,6 +1076,7 @@
     {
       "name": "D'Angelo Ponds",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Indiana",
       "consensusRank": 56,
       "rankBySource": {
@@ -1046,6 +1096,7 @@
     {
       "name": "Jake Golday",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Cincinnati",
       "consensusRank": 50,
       "rankBySource": {
@@ -1066,6 +1117,7 @@
     {
       "name": "Brandon Cisse",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "South Carolina",
       "consensusRank": 43,
       "rankBySource": {
@@ -1086,6 +1138,7 @@
     {
       "name": "CJ Allen",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Georgia",
       "consensusRank": 38,
       "rankBySource": {
@@ -1105,6 +1158,7 @@
     {
       "name": "Eli Stowers",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Vanderbilt",
       "consensusRank": 62,
       "rankBySource": {
@@ -1125,6 +1179,7 @@
     {
       "name": "Gabe Jacas",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Illinois",
       "consensusRank": 39,
       "rankBySource": {
@@ -1145,6 +1200,7 @@
     {
       "name": "Nate Boerkircher",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Texas A&M",
       "consensusRank": 143,
       "rankBySource": {
@@ -1165,6 +1221,7 @@
     {
       "name": "Logan Jones",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Iowa",
       "consensusRank": 112,
       "rankBySource": {
@@ -1185,6 +1242,7 @@
     {
       "name": "Emmanuel McNeil-Warren",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Toledo",
       "consensusRank": 22,
       "rankBySource": {
@@ -1205,6 +1263,7 @@
     {
       "name": "Marlin Klein",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Michigan",
       "consensusRank": 189,
       "rankBySource": {
@@ -1225,6 +1284,7 @@
     {
       "name": "Anthony Hill Jr.",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Texas",
       "consensusRank": 42,
       "rankBySource": {
@@ -1245,6 +1305,7 @@
     {
       "name": "Max Klare",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Ohio State",
       "consensusRank": 68,
       "rankBySource": {
@@ -1265,6 +1326,7 @@
     {
       "name": "Davison Igbinosun",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Ohio State",
       "consensusRank": 113,
       "rankBySource": {
@@ -1285,6 +1347,7 @@
     {
       "name": "Jake Slaughter",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Florida",
       "consensusRank": 87,
       "rankBySource": {
@@ -1305,6 +1368,7 @@
     {
       "name": "Bud Clark",
       "position": "S",
+      "positionGroup": "DB",
       "school": "TCU",
       "consensusRank": 76,
       "rankBySource": {
@@ -1325,6 +1389,7 @@
     {
       "name": "Carson Beck",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Miami",
       "consensusRank": 151,
       "rankBySource": {
@@ -1345,6 +1410,7 @@
     {
       "name": "Tyler Onyedim",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Texas A&M",
       "consensusRank": 114,
       "rankBySource": {
@@ -1365,6 +1431,7 @@
     {
       "name": "Keyron Crawford",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Auburn",
       "consensusRank": 69,
       "rankBySource": {
@@ -1385,6 +1452,7 @@
     {
       "name": "Markel Bell",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Miami",
       "consensusRank": 127,
       "rankBySource": {
@@ -1405,6 +1473,7 @@
     {
       "name": "Sam Roush",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Stanford",
       "consensusRank": 92,
       "rankBySource": {
@@ -1425,6 +1494,7 @@
     {
       "name": "Romello Height",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Texas Tech",
       "consensusRank": 82,
       "rankBySource": {
@@ -1445,6 +1515,7 @@
     {
       "name": "Antonio Williams",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Clemson",
       "consensusRank": 55,
       "rankBySource": {
@@ -1465,6 +1536,7 @@
     {
       "name": "Tacario Davis",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Washington",
       "consensusRank": 119,
       "rankBySource": {
@@ -1485,6 +1557,7 @@
     {
       "name": "Oscar Delp",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Georgia",
       "consensusRank": 99,
       "rankBySource": {
@@ -1505,6 +1578,7 @@
     {
       "name": "Malachi Fields",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Notre Dame",
       "consensusRank": 65,
       "rankBySource": {
@@ -1525,6 +1599,7 @@
     {
       "name": "Caleb Douglas",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Texas Tech",
       "consensusRank": 262,
       "rankBySource": {
@@ -1544,6 +1619,7 @@
     {
       "name": "Drew Allar",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Penn State",
       "consensusRank": 140,
       "rankBySource": {
@@ -1564,6 +1640,7 @@
     {
       "name": "Chris McClellan",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Missouri",
       "consensusRank": 95,
       "rankBySource": {
@@ -1584,6 +1661,7 @@
     {
       "name": "A.J. Haulcy",
       "position": "S",
+      "positionGroup": "DB",
       "school": "LSU",
       "consensusRank": 59,
       "rankBySource": {
@@ -1603,6 +1681,7 @@
     {
       "name": "Zachariah Branch",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Georgia",
       "consensusRank": 63,
       "rankBySource": {
@@ -1623,6 +1702,7 @@
     {
       "name": "Ja'Kobi Lane",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "USC",
       "consensusRank": 103,
       "rankBySource": {
@@ -1642,6 +1722,7 @@
     {
       "name": "Albert Regis",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Texas A&M",
       "consensusRank": 156,
       "rankBySource": {
@@ -1662,6 +1743,7 @@
     {
       "name": "Domonique Orange",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Iowa St.",
       "consensusRank": 73,
       "rankBySource": {
@@ -1682,6 +1764,7 @@
     {
       "name": "Chris Brazzell II",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Tennessee",
       "consensusRank": 64,
       "rankBySource": {
@@ -1702,6 +1785,7 @@
     {
       "name": "Ted Hurst",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Georgia St.",
       "consensusRank": 97,
       "rankBySource": {
@@ -1722,6 +1806,7 @@
     {
       "name": "Daylen Everette",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Georgia",
       "consensusRank": 94,
       "rankBySource": {
@@ -1742,6 +1827,7 @@
     {
       "name": "Austin Barber",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Florida",
       "consensusRank": 98,
       "rankBySource": {
@@ -1762,6 +1848,7 @@
     {
       "name": "Will Kacmarek",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Ohio State",
       "consensusRank": 144,
       "rankBySource": {
@@ -1781,6 +1868,7 @@
     {
       "name": "Emmanuel Pregnon",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Oregon",
       "consensusRank": 51,
       "rankBySource": {
@@ -1801,6 +1889,7 @@
     {
       "name": "Zavion Thomas",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "LSU",
       "consensusRank": 219,
       "rankBySource": {
@@ -1820,6 +1909,7 @@
     {
       "name": "Kaelon Black",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Indiana",
       "consensusRank": 238,
       "rankBySource": {
@@ -1840,6 +1930,7 @@
     {
       "name": "Trey Zuhn III",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Texas A&M",
       "consensusRank": 88,
       "rankBySource": {
@@ -1860,6 +1951,7 @@
     {
       "name": "Jaishawn Barham",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Michigan",
       "consensusRank": 78,
       "rankBySource": {
@@ -1880,6 +1972,7 @@
     {
       "name": "Keagen Trost",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Missouri",
       "consensusRank": 120,
       "rankBySource": {
@@ -1900,6 +1993,7 @@
     {
       "name": "Chris Bell",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Louisville",
       "consensusRank": 77,
       "rankBySource": {
@@ -1920,6 +2014,7 @@
     {
       "name": "Eli Raridon",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Notre Dame",
       "consensusRank": 128,
       "rankBySource": {
@@ -1940,6 +2035,7 @@
     {
       "name": "Gennings Dunker",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Iowa",
       "consensusRank": 86,
       "rankBySource": {
@@ -1960,6 +2056,7 @@
     {
       "name": "Caleb Tiernan",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Northwestern",
       "consensusRank": 67,
       "rankBySource": {
@@ -1980,6 +2077,7 @@
     {
       "name": "Jakobe Thomas",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Miami",
       "consensusRank": 182,
       "rankBySource": {
@@ -1999,6 +2097,7 @@
     {
       "name": "Julian Neal",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Arkansas",
       "consensusRank": 126,
       "rankBySource": {
@@ -2019,6 +2118,7 @@
     {
       "name": "Jalen Huskey",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Maryland",
       "consensusRank": 234,
       "rankBySource": {
@@ -2038,6 +2138,7 @@
     {
       "name": "Jermod McCoy",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Tennessee",
       "consensusRank": 16,
       "rankBySource": {
@@ -2058,6 +2159,7 @@
     {
       "name": "Jude Bowry",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Boston College",
       "consensusRank": 136,
       "rankBySource": {
@@ -2078,6 +2180,7 @@
     {
       "name": "Darrell Jackson Jr.",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Florida State",
       "consensusRank": 134,
       "rankBySource": {
@@ -2098,6 +2201,7 @@
     {
       "name": "Kaleb Proctor",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "SE Louisiana",
       "consensusRank": 122,
       "rankBySource": {
@@ -2118,6 +2222,7 @@
     {
       "name": "Brenen Thompson",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Miss. State",
       "consensusRank": 96,
       "rankBySource": {
@@ -2138,6 +2243,7 @@
     {
       "name": "Febechi Nwaiwu",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Oklahoma",
       "consensusRank": 190,
       "rankBySource": {
@@ -2158,6 +2264,7 @@
     {
       "name": "Gracen Halton",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Oklahoma",
       "consensusRank": 79,
       "rankBySource": {
@@ -2178,6 +2285,7 @@
     {
       "name": "Jonah Coleman",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Washington",
       "consensusRank": 130,
       "rankBySource": {
@@ -2198,6 +2306,7 @@
     {
       "name": "Jadon Canady",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Oregon",
       "consensusRank": 107,
       "rankBySource": {
@@ -2218,6 +2327,7 @@
     {
       "name": "Cade Klubnik",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Clemson",
       "consensusRank": 221,
       "rankBySource": {
@@ -2238,6 +2348,7 @@
     {
       "name": "Kage Casey",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Boise St.",
       "consensusRank": 158,
       "rankBySource": {
@@ -2258,6 +2369,7 @@
     {
       "name": "Drew Shelton",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Penn State",
       "consensusRank": 145,
       "rankBySource": {
@@ -2278,6 +2390,7 @@
     {
       "name": "Jalen Farmer",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Kentucky",
       "consensusRank": 104,
       "rankBySource": {
@@ -2298,6 +2411,7 @@
     {
       "name": "Devin Moore",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Florida",
       "consensusRank": 115,
       "rankBySource": {
@@ -2318,6 +2432,7 @@
     {
       "name": "Elijah Sarratt",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Indiana",
       "consensusRank": 75,
       "rankBySource": {
@@ -2338,6 +2453,7 @@
     {
       "name": "Keionte Scott",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Miami",
       "consensusRank": 60,
       "rankBySource": {
@@ -2358,6 +2474,7 @@
     {
       "name": "Travis Burke",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Memphis",
       "consensusRank": 131,
       "rankBySource": {
@@ -2378,6 +2495,7 @@
     {
       "name": "Jimmy Rolder",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Michigan",
       "consensusRank": 139,
       "rankBySource": {
@@ -2398,6 +2516,7 @@
     {
       "name": "Wesley Williams",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Duke",
       "consensusRank": 303,
       "rankBySource": {
@@ -2417,6 +2536,7 @@
     {
       "name": "Dani Dennis-Sutton",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Penn State",
       "consensusRank": 85,
       "rankBySource": {
@@ -2437,6 +2557,7 @@
     {
       "name": "Kaden Wetjen",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Iowa",
       "consensusRank": 289,
       "rankBySource": {
@@ -2456,6 +2577,7 @@
     {
       "name": "Mike Washington Jr.",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Arkansas",
       "consensusRank": 91,
       "rankBySource": {
@@ -2476,6 +2598,7 @@
     {
       "name": "Wade Woodaz",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Clemson",
       "consensusRank": 235,
       "rankBySource": {
@@ -2495,6 +2618,7 @@
     {
       "name": "Malik Muhammad",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Texas",
       "consensusRank": 74,
       "rankBySource": {
@@ -2515,6 +2639,7 @@
     {
       "name": "Skyler Bell",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "UConn",
       "consensusRank": 90,
       "rankBySource": {
@@ -2535,6 +2660,7 @@
     {
       "name": "Kaleb Elarms-Orr",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "TCU",
       "consensusRank": 141,
       "rankBySource": {
@@ -2555,6 +2681,7 @@
     {
       "name": "Carver Willis",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Washington",
       "consensusRank": 163,
       "rankBySource": {
@@ -2575,6 +2702,7 @@
     {
       "name": "Connor Lew",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Auburn",
       "consensusRank": 71,
       "rankBySource": {
@@ -2595,6 +2723,7 @@
     {
       "name": "Will Lee III",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Texas A&M",
       "consensusRank": 121,
       "rankBySource": {
@@ -2615,6 +2744,7 @@
     {
       "name": "Trey Moore",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Texas",
       "consensusRank": 191,
       "rankBySource": {
@@ -2634,6 +2764,7 @@
     {
       "name": "Genesis Smith",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Arizona",
       "consensusRank": 83,
       "rankBySource": {
@@ -2654,6 +2785,7 @@
     {
       "name": "Jeremiah Wright",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Auburn",
       "consensusRank": 168,
       "rankBySource": {
@@ -2674,6 +2806,7 @@
     {
       "name": "Matthew Hibner",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "SMU",
       "consensusRank": 218,
       "rankBySource": {
@@ -2693,6 +2826,7 @@
     {
       "name": "Kendal Daniels",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Oklahoma",
       "consensusRank": 269,
       "rankBySource": {
@@ -2712,6 +2846,7 @@
     {
       "name": "Bryce Boettcher",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Oregon",
       "consensusRank": 175,
       "rankBySource": {
@@ -2732,6 +2867,7 @@
     {
       "name": "Bryce Lance",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "N. Dakota St.",
       "consensusRank": 109,
       "rankBySource": {
@@ -2752,6 +2888,7 @@
     {
       "name": "LT Overton",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Alabama",
       "consensusRank": 101,
       "rankBySource": {
@@ -2771,6 +2908,7 @@
     {
       "name": "Kyle Louis",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Pittsburgh",
       "consensusRank": 72,
       "rankBySource": {
@@ -2791,6 +2929,7 @@
     {
       "name": "Ephesians Prysock",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Washington",
       "consensusRank": 118,
       "rankBySource": {
@@ -2811,6 +2950,7 @@
     {
       "name": "Colbie Young",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Georgia",
       "consensusRank": 159,
       "rankBySource": {
@@ -2830,6 +2970,7 @@
     {
       "name": "Kamari Ramsey",
       "position": "S",
+      "positionGroup": "DB",
       "school": "USC",
       "consensusRank": 106,
       "rankBySource": {
@@ -2850,6 +2991,7 @@
     {
       "name": "Fernando Carmona",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Arkansas",
       "consensusRank": 180,
       "rankBySource": {
@@ -2869,6 +3011,7 @@
     {
       "name": "Reggie Virgil",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Texas Tech",
       "consensusRank": 197,
       "rankBySource": {
@@ -2889,6 +3032,7 @@
     {
       "name": "Sam Hecht",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Kansas State",
       "consensusRank": 70,
       "rankBySource": {
@@ -2909,6 +3053,7 @@
     {
       "name": "Nick Barrett",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "South Carolina",
       "consensusRank": 157,
       "rankBySource": {
@@ -2929,6 +3074,7 @@
     {
       "name": "Parker Brailsford",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Alabama",
       "consensusRank": 129,
       "rankBySource": {
@@ -2949,6 +3095,7 @@
     {
       "name": "Joshua Josephs",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Tennessee",
       "consensusRank": 84,
       "rankBySource": {
@@ -2969,6 +3116,7 @@
     {
       "name": "Beau Stephens",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Iowa",
       "consensusRank": 179,
       "rankBySource": {
@@ -2989,6 +3137,7 @@
     {
       "name": "Justin Jefferson",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Alabama",
       "consensusRank": 209,
       "rankBySource": {
@@ -3008,6 +3157,7 @@
     {
       "name": "Dalton Johnson",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Arizona",
       "consensusRank": 268,
       "rankBySource": {
@@ -3027,6 +3177,7 @@
     {
       "name": "Zakee Wheatley",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Penn State",
       "consensusRank": 105,
       "rankBySource": {
@@ -3047,6 +3198,7 @@
     {
       "name": "Justin Joly",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "NC State",
       "consensusRank": 100,
       "rankBySource": {
@@ -3067,6 +3219,7 @@
     {
       "name": "Jager Burton",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Kentucky",
       "consensusRank": 178,
       "rankBySource": {
@@ -3087,6 +3240,7 @@
     {
       "name": "Jaden Dugger",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Louisiana",
       "consensusRank": 385,
       "rankBySource": {
@@ -3106,6 +3260,7 @@
     {
       "name": "DeMonte Capehart",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Clemson",
       "consensusRank": 155,
       "rankBySource": {
@@ -3125,6 +3280,7 @@
     {
       "name": "George Gumbs Jr.",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Florida",
       "consensusRank": 228,
       "rankBySource": {
@@ -3144,6 +3300,7 @@
     {
       "name": "Keith Abney II",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Arizona St.",
       "consensusRank": 61,
       "rankBySource": {
@@ -3164,6 +3321,7 @@
     {
       "name": "Michael Taaffe",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Texas",
       "consensusRank": 199,
       "rankBySource": {
@@ -3184,6 +3342,7 @@
     {
       "name": "Max Bredeson",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Michigan",
       "consensusRank": 344,
       "rankBySource": {
@@ -3203,6 +3362,7 @@
     {
       "name": "Billy Schrauth",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Notre Dame",
       "consensusRank": 110,
       "rankBySource": {
@@ -3223,6 +3383,7 @@
     {
       "name": "Emmett Johnson",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Nebraska",
       "consensusRank": 135,
       "rankBySource": {
@@ -3243,6 +3404,7 @@
     {
       "name": "Chandler Rivers",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Duke",
       "consensusRank": 108,
       "rankBySource": {
@@ -3263,6 +3425,7 @@
     {
       "name": "Charles Demmings",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "S.F. Austin",
       "consensusRank": 198,
       "rankBySource": {
@@ -3283,6 +3446,7 @@
     {
       "name": "Tanner Koziol",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Houston",
       "consensusRank": 225,
       "rankBySource": {
@@ -3302,6 +3466,7 @@
     {
       "name": "Nicholas Singleton",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Penn State",
       "consensusRank": 164,
       "rankBySource": {
@@ -3322,6 +3487,7 @@
     {
       "name": "Keyshaun Elliott",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Arizona St.",
       "consensusRank": 173,
       "rankBySource": {
@@ -3342,6 +3508,7 @@
     {
       "name": "Jalon Kilgore",
       "position": "S",
+      "positionGroup": "DB",
       "school": "South Carolina",
       "consensusRank": 89,
       "rankBySource": {
@@ -3362,6 +3529,7 @@
     {
       "name": "Kendrick Law",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Kentucky",
       "consensusRank": 186,
       "rankBySource": {
@@ -3382,6 +3550,7 @@
     {
       "name": "Riley Nowakowski",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Indiana",
       "consensusRank": 236,
       "rankBySource": {
@@ -3401,6 +3570,7 @@
     {
       "name": "Joe Royer",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Cincinnati",
       "consensusRank": 165,
       "rankBySource": {
@@ -3421,6 +3591,7 @@
     {
       "name": "Karon Prunty",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Wake Forest",
       "consensusRank": 549,
       "rankBySource": {
@@ -3439,6 +3610,7 @@
     {
       "name": "Lorenzo Styles Jr.",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Ohio State",
       "consensusRank": 245,
       "rankBySource": {
@@ -3458,6 +3630,7 @@
     {
       "name": "Josh Cuevas",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Alabama",
       "consensusRank": 183,
       "rankBySource": {
@@ -3477,6 +3650,7 @@
     {
       "name": "Adam Randall",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Clemson",
       "consensusRank": 167,
       "rankBySource": {
@@ -3496,6 +3670,7 @@
     {
       "name": "Hezekiah Masses",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "California",
       "consensusRank": 188,
       "rankBySource": {
@@ -3516,6 +3691,7 @@
     {
       "name": "Cyrus Allen",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Cincinnati",
       "consensusRank": 147,
       "rankBySource": {
@@ -3536,6 +3712,7 @@
     {
       "name": "Kevin Coleman Jr.",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Missouri",
       "consensusRank": 142,
       "rankBySource": {
@@ -3556,6 +3733,7 @@
     {
       "name": "Cole Payton",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "N. Dakota St.",
       "consensusRank": 111,
       "rankBySource": {
@@ -3576,6 +3754,7 @@
     {
       "name": "Enrique Cruz Jr.",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Kansas",
       "consensusRank": 257,
       "rankBySource": {
@@ -3595,6 +3774,7 @@
     {
       "name": "Seydou Traore",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Miss. State",
       "consensusRank": 366,
       "rankBySource": {
@@ -3614,6 +3794,7 @@
     {
       "name": "Zane Durant",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Penn State",
       "consensusRank": 162,
       "rankBySource": {
@@ -3634,6 +3815,7 @@
     {
       "name": "Taylen Green",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Arkansas",
       "consensusRank": 149,
       "rankBySource": {
@@ -3654,6 +3836,7 @@
     {
       "name": "Karson Sharar",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Iowa",
       "consensusRank": 332,
       "rankBySource": {
@@ -3673,6 +3856,7 @@
     {
       "name": "Jackie Marshall",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Baylor",
       "consensusRank": 298,
       "rankBySource": {
@@ -3692,6 +3876,7 @@
     {
       "name": "Bauer Sharp",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "LSU",
       "consensusRank": 331,
       "rankBySource": {
@@ -3711,6 +3896,7 @@
     {
       "name": "Bobby Jamison-Travis",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Auburn",
       "consensusRank": 340,
       "rankBySource": {
@@ -3730,6 +3916,7 @@
     {
       "name": "Kaytron Allen",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Penn State",
       "consensusRank": 133,
       "rankBySource": {
@@ -3750,6 +3937,7 @@
     {
       "name": "Anez Cooper",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Miami",
       "consensusRank": 176,
       "rankBySource": {
@@ -3769,6 +3957,7 @@
     {
       "name": "Brian Parker II",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Duke",
       "consensusRank": 124,
       "rankBySource": {
@@ -3789,6 +3978,7 @@
     {
       "name": "Barion Brown",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "LSU",
       "consensusRank": 246,
       "rankBySource": {
@@ -3808,6 +3998,7 @@
     {
       "name": "Josh Cameron",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Baylor",
       "consensusRank": 185,
       "rankBySource": {
@@ -3828,6 +4019,7 @@
     {
       "name": "J.C. Davis",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Illinois",
       "consensusRank": 241,
       "rankBySource": {
@@ -3847,6 +4039,7 @@
     {
       "name": "Jack Kelly",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "BYU",
       "consensusRank": 240,
       "rankBySource": {
@@ -3866,6 +4059,7 @@
     {
       "name": "Pat Coogan",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Indiana",
       "consensusRank": 201,
       "rankBySource": {
@@ -3885,6 +4079,7 @@
     {
       "name": "Malik Benson",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Oregon",
       "consensusRank": 192,
       "rankBySource": {
@@ -3905,6 +4100,7 @@
     {
       "name": "Dametrious Crownover",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Texas A&M",
       "consensusRank": 116,
       "rankBySource": {
@@ -3925,6 +4121,7 @@
     {
       "name": "CJ Daniels",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Miami",
       "consensusRank": 211,
       "rankBySource": {
@@ -3944,6 +4141,7 @@
     {
       "name": "Demond Claiborne",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Wake Forest",
       "consensusRank": 152,
       "rankBySource": {
@@ -3964,6 +4162,7 @@
     {
       "name": "Emmanuel Henderson Jr.",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Kansas",
       "consensusRank": 292,
       "rankBySource": {
@@ -3983,6 +4182,7 @@
     {
       "name": "DJ Campbell",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Texas",
       "consensusRank": 273,
       "rankBySource": {
@@ -4001,6 +4201,7 @@
     {
       "name": "Domani Jackson",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Alabama",
       "consensusRank": 216,
       "rankBySource": {
@@ -4020,6 +4221,7 @@
     {
       "name": "Logan Taylor",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Boston College",
       "consensusRank": 194,
       "rankBySource": {
@@ -4040,6 +4242,7 @@
     {
       "name": "CJ Williams",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Stanford",
       "consensusRank": 460,
       "rankBySource": {
@@ -4058,6 +4261,7 @@
     {
       "name": "Lewis Bond",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Boston College",
       "consensusRank": 345,
       "rankBySource": {
@@ -4077,6 +4281,7 @@
     {
       "name": "Skyler Gill-Howard",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Texas Tech",
       "consensusRank": 226,
       "rankBySource": {
@@ -4096,6 +4301,7 @@
     {
       "name": "Alex Harkey",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Oregon",
       "consensusRank": 153,
       "rankBySource": {
@@ -4116,6 +4322,7 @@
     {
       "name": "Micah Morris",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Georgia",
       "consensusRank": 288,
       "rankBySource": {
@@ -4135,6 +4342,7 @@
     {
       "name": "Anterio Thompson",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Washington",
       "consensusRank": null,
       "rankBySource": {},
@@ -4151,6 +4359,7 @@
     {
       "name": "Matt Gulbin",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Michigan St.",
       "consensusRank": 166,
       "rankBySource": {
@@ -4170,6 +4379,7 @@
     {
       "name": "Gabriel Rubio",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Notre Dame",
       "consensusRank": 518,
       "rankBySource": {
@@ -4188,6 +4398,7 @@
     {
       "name": "Ryan Eckley",
       "position": "P",
+      "positionGroup": "P",
       "school": "Michigan St.",
       "consensusRank": 353,
       "rankBySource": {
@@ -4206,6 +4417,7 @@
     {
       "name": "Namdi Obiazor",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "TCU",
       "consensusRank": 259,
       "rankBySource": {
@@ -4225,6 +4437,7 @@
     {
       "name": "Jordan van den Berg",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Georgia Tech",
       "consensusRank": 304,
       "rankBySource": {
@@ -4243,6 +4456,7 @@
     {
       "name": "Caden Curry",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Ohio State",
       "consensusRank": 184,
       "rankBySource": {
@@ -4263,6 +4477,7 @@
     {
       "name": "Harold Perkins Jr.",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "LSU",
       "consensusRank": 150,
       "rankBySource": {
@@ -4283,6 +4498,7 @@
     {
       "name": "Trey Smack",
       "position": "PK",
+      "positionGroup": "PK",
       "school": "Florida",
       "consensusRank": 270,
       "rankBySource": {
@@ -4301,6 +4517,7 @@
     {
       "name": "Jayden Williams",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Ole Miss",
       "consensusRank": 383,
       "rankBySource": {
@@ -4320,6 +4537,7 @@
     {
       "name": "Anthony Smith",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "East Carolina",
       "consensusRank": 413,
       "rankBySource": {
@@ -4339,6 +4557,7 @@
     {
       "name": "TJ Hall",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Iowa",
       "consensusRank": 200,
       "rankBySource": {
@@ -4357,6 +4576,7 @@
     {
       "name": "Toriano Pride Jr.",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Missouri",
       "consensusRank": 247,
       "rankBySource": {
@@ -4376,6 +4596,7 @@
     {
       "name": "Jack Endries",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Texas",
       "consensusRank": 160,
       "rankBySource": {
@@ -4396,6 +4617,7 @@
     {
       "name": "Tyre West",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Tennessee",
       "consensusRank": 394,
       "rankBySource": {
@@ -4415,6 +4637,7 @@
     {
       "name": "Athan Kaliakmanis",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Rutgers",
       "consensusRank": 363,
       "rankBySource": {
@@ -4434,6 +4657,7 @@
     {
       "name": "Robert Spears-Jennings",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Oklahoma",
       "consensusRank": 196,
       "rankBySource": {
@@ -4453,6 +4677,7 @@
     {
       "name": "Jaren Kanak",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Oklahoma",
       "consensusRank": 333,
       "rankBySource": {
@@ -4472,6 +4697,7 @@
     {
       "name": "Landon Robinson",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Navy",
       "consensusRank": 299,
       "rankBySource": {
@@ -4492,6 +4718,7 @@
     {
       "name": "Jackson Kuwatch",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Miami-OH",
       "consensusRank": 265,
       "rankBySource": {
@@ -4511,6 +4738,7 @@
     {
       "name": "VJ Payne",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Kansas State",
       "consensusRank": 125,
       "rankBySource": {
@@ -4530,6 +4758,7 @@
     {
       "name": "Brandon Cleveland",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "NC State",
       "consensusRank": 220,
       "rankBySource": {
@@ -4549,6 +4778,7 @@
     {
       "name": "Eli Heidenreich",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Navy",
       "consensusRank": 174,
       "rankBySource": {
@@ -4568,6 +4798,7 @@
     {
       "name": "Ethan Onianwa",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Ohio State",
       "consensusRank": 396,
       "rankBySource": {
@@ -4587,6 +4818,7 @@
     {
       "name": "Tim Keenan III",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Alabama",
       "consensusRank": 206,
       "rankBySource": {
@@ -4607,6 +4839,7 @@
     {
       "name": "Zach Durfee",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Washington",
       "consensusRank": 423,
       "rankBySource": {
@@ -4625,6 +4858,7 @@
     {
       "name": "Behren Morton",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Texas Tech",
       "consensusRank": 295,
       "rankBySource": {
@@ -4644,6 +4878,7 @@
     {
       "name": "Gavin Gerhardt",
       "position": "OL",
+      "positionGroup": "OL",
       "school": "Cincinnati",
       "consensusRank": null,
       "rankBySource": {},
@@ -4660,6 +4895,7 @@
     {
       "name": "Andre Fuller",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Toledo",
       "consensusRank": 251,
       "rankBySource": {
@@ -4679,6 +4915,7 @@
     {
       "name": "Seth McGowan",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Kentucky",
       "consensusRank": 170,
       "rankBySource": {
@@ -4699,6 +4936,7 @@
     {
       "name": "Max Llewellyn",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Iowa",
       "consensusRank": 233,
       "rankBySource": {
@@ -4719,6 +4957,7 @@
     {
       "name": "Tommy Doman",
       "position": "P",
+      "positionGroup": "P",
       "school": "Florida",
       "consensusRank": 361,
       "rankBySource": {
@@ -4737,6 +4976,7 @@
     {
       "name": "Parker Hughes",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Middle Tenn. St.",
       "consensusRank": null,
       "rankBySource": {},
@@ -4753,6 +4993,7 @@
     {
       "name": "Ar'maj Reed-Adams",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Texas A&M",
       "consensusRank": 215,
       "rankBySource": {
@@ -4771,6 +5012,7 @@
     {
       "name": "Deven Eastern",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Minnesota",
       "consensusRank": 319,
       "rankBySource": {
@@ -4790,6 +5032,7 @@
     {
       "name": "Aiden Fisher",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Indiana",
       "consensusRank": 214,
       "rankBySource": {
@@ -4810,6 +5053,7 @@
     {
       "name": "Cole Wisniewski",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Texas Tech",
       "consensusRank": 362,
       "rankBySource": {
@@ -4829,6 +5073,7 @@
     {
       "name": "Jam Miller",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Alabama",
       "consensusRank": 232,
       "rankBySource": {
@@ -4848,6 +5093,7 @@
     {
       "name": "Miles Scott",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Illinois",
       "consensusRank": 491,
       "rankBySource": {
@@ -4867,6 +5113,7 @@
     {
       "name": "Quintayvious Hutchins",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Boston College",
       "consensusRank": 263,
       "rankBySource": {
@@ -4886,6 +5133,7 @@
     {
       "name": "Carsen Ryan",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "BYU",
       "consensusRank": 414,
       "rankBySource": {
@@ -4905,6 +5153,7 @@
     {
       "name": "Garrett Nussmeier",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "LSU",
       "consensusRank": 81,
       "rankBySource": {
@@ -4925,6 +5174,7 @@
     {
       "name": "Rayshaun Benny",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Michigan",
       "consensusRank": 117,
       "rankBySource": {
@@ -4945,6 +5195,7 @@
     {
       "name": "Uar Bernard",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Nigeria",
       "consensusRank": 469,
       "rankBySource": {
@@ -4964,6 +5215,7 @@
     {
       "name": "Keyshawn James-Newby",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "New Mexico",
       "consensusRank": 398,
       "rankBySource": {
@@ -4983,6 +5235,7 @@
     {
       "name": "Evan Beerntsen",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Northwestern",
       "consensusRank": 296,
       "rankBySource": {
@@ -5002,6 +5255,7 @@
     {
       "name": "Deion Burks",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Oklahoma",
       "consensusRank": 102,
       "rankBySource": {
@@ -5022,6 +5276,7 @@
     {
       "name": "Michael Dansby",
       "position": "DB",
+      "positionGroup": "DB",
       "school": "Arizona",
       "consensusRank": null,
       "rankBySource": {},
@@ -5038,6 +5293,7 @@
     {
       "name": "Dallen Bentley",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Utah",
       "consensusRank": 195,
       "rankBySource": {
@@ -5058,6 +5314,7 @@
     {
       "name": "Red Murdock",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Buffalo",
       "consensusRank": 217,
       "rankBySource": {
@@ -5077,6 +5334,7 @@
     {
       "name": "Vega Ioane",
       "position": "G",
+      "positionGroup": "OL",
       "school": "Penn State",
       "consensusRank": 14,
       "rankBySource": {
@@ -5096,6 +5354,7 @@
     {
       "name": "Jayden Loving",
       "position": "DL",
+      "positionGroup": "DL",
       "school": "Wake Forest",
       "consensusRank": 93,
       "rankBySource": {
@@ -5114,6 +5373,7 @@
     {
       "name": "Zxavian Harris",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Ole Miss",
       "consensusRank": 123,
       "rankBySource": {
@@ -5134,6 +5394,7 @@
     {
       "name": "Gavin Ortega",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Weber St.",
       "consensusRank": 132,
       "rankBySource": {
@@ -5152,6 +5413,7 @@
     {
       "name": "J'Mari Taylor",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "",
       "consensusRank": 137,
       "rankBySource": {
@@ -5170,6 +5432,7 @@
     {
       "name": "Deontae Lawson",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Alabama",
       "consensusRank": 138,
       "rankBySource": {
@@ -5190,6 +5453,7 @@
     {
       "name": "Le'Veon Moss",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "",
       "consensusRank": 146,
       "rankBySource": {
@@ -5208,6 +5472,7 @@
     {
       "name": "Michael Trigg",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Baylor",
       "consensusRank": 148,
       "rankBySource": {
@@ -5228,6 +5493,7 @@
     {
       "name": "Bakyne Coly",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Purdue",
       "consensusRank": 154,
       "rankBySource": {
@@ -5246,6 +5512,7 @@
     {
       "name": "Jeff Caldwell",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Cincinnati",
       "consensusRank": 161,
       "rankBySource": {
@@ -5265,6 +5532,7 @@
     {
       "name": "Mason Reiger",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Wisconsin",
       "consensusRank": 169,
       "rankBySource": {
@@ -5284,6 +5552,7 @@
     {
       "name": "Anthony Lucas",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "USC",
       "consensusRank": 171,
       "rankBySource": {
@@ -5304,6 +5573,7 @@
     {
       "name": "Dontay Corleone",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Cincinnati",
       "consensusRank": 172,
       "rankBySource": {
@@ -5324,6 +5594,7 @@
     {
       "name": "Isaiah World",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Oregon",
       "consensusRank": 177,
       "rankBySource": {
@@ -5344,6 +5615,7 @@
     {
       "name": "Taurean York",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Texas A&M",
       "consensusRank": 181,
       "rankBySource": {
@@ -5364,6 +5636,7 @@
     {
       "name": "Eric Rivers",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Georgia Tech",
       "consensusRank": 187,
       "rankBySource": {
@@ -5384,6 +5657,7 @@
     {
       "name": "Clay Patterson",
       "position": "DL",
+      "positionGroup": "DL",
       "school": "Stanford",
       "consensusRank": 193,
       "rankBySource": {
@@ -5402,6 +5676,7 @@
     {
       "name": "J. Michael Sturdivant",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "",
       "consensusRank": 202,
       "rankBySource": {
@@ -5420,6 +5695,7 @@
     {
       "name": "David Gusta",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Kentucky",
       "consensusRank": 203,
       "rankBySource": {
@@ -5439,6 +5715,7 @@
     {
       "name": "Bryson Eason",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Tennessee",
       "consensusRank": 204,
       "rankBySource": {
@@ -5458,6 +5735,7 @@
     {
       "name": "Bishop Fitzgerald",
       "position": "S",
+      "positionGroup": "DB",
       "school": "USC",
       "consensusRank": 205,
       "rankBySource": {
@@ -5477,6 +5755,7 @@
     {
       "name": "Dae'Quan Wright",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "",
       "consensusRank": 207,
       "rankBySource": {
@@ -5495,6 +5774,7 @@
     {
       "name": "Tyreak Sapp",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Florida",
       "consensusRank": 208,
       "rankBySource": {
@@ -5515,6 +5795,7 @@
     {
       "name": "Eric McAlister",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "TCU",
       "consensusRank": 210,
       "rankBySource": {
@@ -5534,6 +5815,7 @@
     {
       "name": "Logan Fano",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Utah",
       "consensusRank": 212,
       "rankBySource": {
@@ -5553,6 +5835,7 @@
     {
       "name": "Nadame Tucker",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "W. Michigan",
       "consensusRank": 213,
       "rankBySource": {
@@ -5573,6 +5856,7 @@
     {
       "name": "Will Pauling",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Notre Dame",
       "consensusRank": 222,
       "rankBySource": {
@@ -5591,6 +5875,7 @@
     {
       "name": "Diego Pounds",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Ole Miss",
       "consensusRank": 223,
       "rankBySource": {
@@ -5610,6 +5895,7 @@
     {
       "name": "Roman Hemby",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Indiana",
       "consensusRank": 224,
       "rankBySource": {
@@ -5629,6 +5915,7 @@
     {
       "name": "Vinny Anthony II",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Wisconsin",
       "consensusRank": 227,
       "rankBySource": {
@@ -5648,6 +5935,7 @@
     {
       "name": "Collin Wright",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Stanford",
       "consensusRank": 229,
       "rankBySource": {
@@ -5667,6 +5955,7 @@
     {
       "name": "Louis Moore",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Indiana",
       "consensusRank": 230,
       "rankBySource": {
@@ -5687,6 +5976,7 @@
     {
       "name": "DJ Rogers",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "",
       "consensusRank": 231,
       "rankBySource": {
@@ -5705,6 +5995,7 @@
     {
       "name": "Cameron Ball",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Arkansas",
       "consensusRank": 237,
       "rankBySource": {
@@ -5724,6 +6015,7 @@
     {
       "name": "DeShon Singleton",
       "position": "S",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 239,
       "rankBySource": {
@@ -5742,6 +6034,7 @@
     {
       "name": "Aamil Wagner",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Notre Dame",
       "consensusRank": 242,
       "rankBySource": {
@@ -5761,6 +6054,7 @@
     {
       "name": "Robert Henry Jr.",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "UTSA",
       "consensusRank": 243,
       "rankBySource": {
@@ -5780,6 +6074,7 @@
     {
       "name": "Kahlil Benson",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Indiana",
       "consensusRank": 244,
       "rankBySource": {
@@ -5798,6 +6093,7 @@
     {
       "name": "Harrison Wallace III",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Ole Miss",
       "consensusRank": 248,
       "rankBySource": {
@@ -5817,6 +6113,7 @@
     {
       "name": "Aaron Anderson",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "LSU",
       "consensusRank": 249,
       "rankBySource": {
@@ -5836,6 +6133,7 @@
     {
       "name": "Thaddeus Dixon",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "North Carolina",
       "consensusRank": 250,
       "rankBySource": {
@@ -5855,6 +6153,7 @@
     {
       "name": "Jacob Rizy",
       "position": "IOL",
+      "positionGroup": "OL",
       "school": "Florida State",
       "consensusRank": 252,
       "rankBySource": {
@@ -5873,6 +6172,7 @@
     {
       "name": "Devon Marshall",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "NC State",
       "consensusRank": 253,
       "rankBySource": {
@@ -5893,6 +6193,7 @@
     {
       "name": "Sawyer Robertson",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Baylor",
       "consensusRank": 254,
       "rankBySource": {
@@ -5912,6 +6213,7 @@
     {
       "name": "Scooby Williams",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Texas A&M",
       "consensusRank": 255,
       "rankBySource": {
@@ -5931,6 +6233,7 @@
     {
       "name": "Jaeden Roberts",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Alabama",
       "consensusRank": 256,
       "rankBySource": {
@@ -5950,6 +6253,7 @@
     {
       "name": "Tyren Montgomery",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "John Carroll",
       "consensusRank": 258,
       "rankBySource": {
@@ -5969,6 +6273,7 @@
     {
       "name": "Max Tomczak",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Youngstown St.",
       "consensusRank": 260,
       "rankBySource": {
@@ -5987,6 +6292,7 @@
     {
       "name": "Brett Thorson",
       "position": "P",
+      "positionGroup": "P",
       "school": "",
       "consensusRank": 261,
       "rankBySource": {
@@ -6005,6 +6311,7 @@
     {
       "name": "Fa'alili Fa'amoe",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 264,
       "rankBySource": {
@@ -6023,6 +6330,7 @@
     {
       "name": "Jacobian Guillory II",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "",
       "consensusRank": 266,
       "rankBySource": {
@@ -6041,6 +6349,7 @@
     {
       "name": "Josh Thompson",
       "position": "IOL",
+      "positionGroup": "OL",
       "school": "LSU",
       "consensusRank": 267,
       "rankBySource": {
@@ -6059,6 +6368,7 @@
     {
       "name": "Lander Barton",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Utah",
       "consensusRank": 271,
       "rankBySource": {
@@ -6078,6 +6388,7 @@
     {
       "name": "Luke Altmyer",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Illinois",
       "consensusRank": 272,
       "rankBySource": {
@@ -6097,6 +6408,7 @@
     {
       "name": "John Michael Gyllenborg",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Wyoming",
       "consensusRank": 274,
       "rankBySource": {
@@ -6116,6 +6428,7 @@
     {
       "name": "Lake McRee",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "USC",
       "consensusRank": 275,
       "rankBySource": {
@@ -6135,6 +6448,7 @@
     {
       "name": "James Thompson Jr.",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Illinois",
       "consensusRank": 276,
       "rankBySource": {
@@ -6154,6 +6468,7 @@
     {
       "name": "RJ Maryland",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "",
       "consensusRank": 277,
       "rankBySource": {
@@ -6172,6 +6487,7 @@
     {
       "name": "Patrick Payton",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "LSU",
       "consensusRank": 278,
       "rankBySource": {
@@ -6191,6 +6507,7 @@
     {
       "name": "Eric Gentry",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "USC",
       "consensusRank": 279,
       "rankBySource": {
@@ -6210,6 +6527,7 @@
     {
       "name": "Latrell McCutchin Sr.",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Houston",
       "consensusRank": 280,
       "rankBySource": {
@@ -6229,6 +6547,7 @@
     {
       "name": "Ahmari Harvey",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Georgia Tech",
       "consensusRank": 281,
       "rankBySource": {
@@ -6248,6 +6567,7 @@
     {
       "name": "Cian Slone",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "NC State",
       "consensusRank": 282,
       "rankBySource": {
@@ -6267,6 +6587,7 @@
     {
       "name": "Mikail Kamara",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Indiana",
       "consensusRank": 283,
       "rankBySource": {
@@ -6287,6 +6608,7 @@
     {
       "name": "Joey Aguilar",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Tennessee",
       "consensusRank": 284,
       "rankBySource": {
@@ -6306,6 +6628,7 @@
     {
       "name": "Damonic Williams",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Oklahoma",
       "consensusRank": 285,
       "rankBySource": {
@@ -6325,6 +6648,7 @@
     {
       "name": "Lance Mason",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Wisconsin",
       "consensusRank": 286,
       "rankBySource": {
@@ -6344,6 +6668,7 @@
     {
       "name": "Haynes King",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Georgia Tech",
       "consensusRank": 287,
       "rankBySource": {
@@ -6363,6 +6688,7 @@
     {
       "name": "Wesley Bissainthe",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Miami",
       "consensusRank": 290,
       "rankBySource": {
@@ -6382,6 +6708,7 @@
     {
       "name": "Josh Moten",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "So. Miss",
       "consensusRank": 291,
       "rankBySource": {
@@ -6401,6 +6728,7 @@
     {
       "name": "James Brockermeyer",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Miami",
       "consensusRank": 293,
       "rankBySource": {
@@ -6420,6 +6748,7 @@
     {
       "name": "Rene Konga",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Louisville",
       "consensusRank": 294,
       "rankBySource": {
@@ -6439,6 +6768,7 @@
     {
       "name": "Caullin Lacy",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Louisville",
       "consensusRank": 297,
       "rankBySource": {
@@ -6458,6 +6788,7 @@
     {
       "name": "Kam Dewberry",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 300,
       "rankBySource": {
@@ -6476,6 +6807,7 @@
     {
       "name": "Chase Roberts",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "BYU",
       "consensusRank": 301,
       "rankBySource": {
@@ -6495,6 +6827,7 @@
     {
       "name": "Ethan Burke",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Texas",
       "consensusRank": 302,
       "rankBySource": {
@@ -6514,6 +6847,7 @@
     {
       "name": "Garrett DiGiorgio",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "UCLA",
       "consensusRank": 305,
       "rankBySource": {
@@ -6533,6 +6867,7 @@
     {
       "name": "Chris Adams",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Memphis",
       "consensusRank": 306,
       "rankBySource": {
@@ -6552,6 +6887,7 @@
     {
       "name": "Gary Smith III",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "UCLA",
       "consensusRank": 307,
       "rankBySource": {
@@ -6571,6 +6907,7 @@
     {
       "name": "Riley Mahlman",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Wisconsin",
       "consensusRank": 308,
       "rankBySource": {
@@ -6590,6 +6927,7 @@
     {
       "name": "Ike Larsen",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Utah St.",
       "consensusRank": 309,
       "rankBySource": {
@@ -6608,6 +6946,7 @@
     {
       "name": "Aaron Graves",
       "position": "DL",
+      "positionGroup": "DL",
       "school": "Iowa",
       "consensusRank": 310,
       "rankBySource": {
@@ -6626,6 +6965,7 @@
     {
       "name": "Jack Pyburn",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "LSU",
       "consensusRank": 311,
       "rankBySource": {
@@ -6645,6 +6985,7 @@
     {
       "name": "Jaylon Guilbeau",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Texas",
       "consensusRank": 312,
       "rankBySource": {
@@ -6664,6 +7005,7 @@
     {
       "name": "Xavian Sorey Jr.",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Arkansas",
       "consensusRank": 313,
       "rankBySource": {
@@ -6683,6 +7025,7 @@
     {
       "name": "Caden Barnett",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Wyoming",
       "consensusRank": 314,
       "rankBySource": {
@@ -6702,6 +7045,7 @@
     {
       "name": "Xavier Nwankpa",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Iowa",
       "consensusRank": 315,
       "rankBySource": {
@@ -6721,6 +7065,7 @@
     {
       "name": "Dane Key",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Nebraska",
       "consensusRank": 316,
       "rankBySource": {
@@ -6740,6 +7085,7 @@
     {
       "name": "Brent Austin",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "California",
       "consensusRank": 317,
       "rankBySource": {
@@ -6759,6 +7105,7 @@
     {
       "name": "Chamon Metayer",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "",
       "consensusRank": 318,
       "rankBySource": {
@@ -6777,6 +7124,7 @@
     {
       "name": "Gary Bryant Jr.",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Oregon",
       "consensusRank": 320,
       "rankBySource": {
@@ -6795,6 +7143,7 @@
     {
       "name": "Nyjalik Kelly",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "UCF",
       "consensusRank": 321,
       "rankBySource": {
@@ -6814,6 +7163,7 @@
     {
       "name": "Dillon Bell",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Georgia",
       "consensusRank": 322,
       "rankBySource": {
@@ -6833,6 +7183,7 @@
     {
       "name": "Joe Fagnano",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "UConn",
       "consensusRank": 323,
       "rankBySource": {
@@ -6852,6 +7203,7 @@
     {
       "name": "Rahsul Faison",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "South Carolina",
       "consensusRank": 324,
       "rankBySource": {
@@ -6871,6 +7223,7 @@
     {
       "name": "Skyler Thomas",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Oregon State",
       "consensusRank": 325,
       "rankBySource": {
@@ -6890,6 +7243,7 @@
     {
       "name": "Khalil Jacobs",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Missouri",
       "consensusRank": 326,
       "rankBySource": {
@@ -6909,6 +7263,7 @@
     {
       "name": "Jalen McMurray",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Tennessee",
       "consensusRank": 327,
       "rankBySource": {
@@ -6928,6 +7283,7 @@
     {
       "name": "Jordan Hudson",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "SMU",
       "consensusRank": 328,
       "rankBySource": {
@@ -6947,6 +7303,7 @@
     {
       "name": "Mark Gronowski",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Iowa",
       "consensusRank": 329,
       "rankBySource": {
@@ -6966,6 +7323,7 @@
     {
       "name": "Dillon Wade",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Auburn",
       "consensusRank": 330,
       "rankBySource": {
@@ -6985,6 +7343,7 @@
     {
       "name": "Dominic Zvada",
       "position": "PK",
+      "positionGroup": "PK",
       "school": "",
       "consensusRank": 334,
       "rankBySource": {
@@ -7003,6 +7362,7 @@
     {
       "name": "Ahmaad Moses",
       "position": "S",
+      "positionGroup": "DB",
       "school": "SMU",
       "consensusRank": 335,
       "rankBySource": {
@@ -7022,6 +7382,7 @@
     {
       "name": "Kapena Gushiken",
       "position": "S",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 336,
       "rankBySource": {
@@ -7040,6 +7401,7 @@
     {
       "name": "Marvin Jones Jr.",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Oklahoma",
       "consensusRank": 337,
       "rankBySource": {
@@ -7059,6 +7421,7 @@
     {
       "name": "Aidan Hubbard",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Northwestern",
       "consensusRank": 338,
       "rankBySource": {
@@ -7078,6 +7441,7 @@
     {
       "name": "Romello Brinson",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "SMU",
       "consensusRank": 339,
       "rankBySource": {
@@ -7097,6 +7461,7 @@
     {
       "name": "Dan Villari",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Syracuse",
       "consensusRank": 341,
       "rankBySource": {
@@ -7116,6 +7481,7 @@
     {
       "name": "Diego Pavia",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Vanderbilt",
       "consensusRank": 342,
       "rankBySource": {
@@ -7135,6 +7501,7 @@
     {
       "name": "Jeffrey M'Ba",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "SMU",
       "consensusRank": 343,
       "rankBySource": {
@@ -7154,6 +7521,7 @@
     {
       "name": "Desmond Reid",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Pittsburgh",
       "consensusRank": 346,
       "rankBySource": {
@@ -7173,6 +7541,7 @@
     {
       "name": "Owen Heinecke",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Oklahoma",
       "consensusRank": 347,
       "rankBySource": {
@@ -7191,6 +7560,7 @@
     {
       "name": "Vincent Anthony Jr.",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Duke",
       "consensusRank": 348,
       "rankBySource": {
@@ -7210,6 +7580,7 @@
     {
       "name": "Jalon Daniels",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Kansas",
       "consensusRank": 349,
       "rankBySource": {
@@ -7229,6 +7600,7 @@
     {
       "name": "Miles Kitselman",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Tennessee",
       "consensusRank": 350,
       "rankBySource": {
@@ -7248,6 +7620,7 @@
     {
       "name": "Marcus Allen",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "North Carolina",
       "consensusRank": 351,
       "rankBySource": {
@@ -7267,6 +7640,7 @@
     {
       "name": "Alan Herron",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Maryland",
       "consensusRank": 352,
       "rankBySource": {
@@ -7286,6 +7660,7 @@
     {
       "name": "Noah Thomas",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Georgia",
       "consensusRank": 354,
       "rankBySource": {
@@ -7305,6 +7680,7 @@
     {
       "name": "Khalil Dinkins",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Penn State",
       "consensusRank": 355,
       "rankBySource": {
@@ -7324,6 +7700,7 @@
     {
       "name": "CJ Donaldson",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "",
       "consensusRank": 356,
       "rankBySource": {
@@ -7342,6 +7719,7 @@
     {
       "name": "Ricardo Hallman",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Wisconsin",
       "consensusRank": 357,
       "rankBySource": {
@@ -7360,6 +7738,7 @@
     {
       "name": "Micah Pettus",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Florida State",
       "consensusRank": 358,
       "rankBySource": {
@@ -7379,6 +7758,7 @@
     {
       "name": "Wesley Bailey",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Louisville",
       "consensusRank": 359,
       "rankBySource": {
@@ -7398,6 +7778,7 @@
     {
       "name": "Josh Gesky",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Illinois",
       "consensusRank": 360,
       "rankBySource": {
@@ -7417,6 +7798,7 @@
     {
       "name": "Ceyair Wright",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Nebraska",
       "consensusRank": 364,
       "rankBySource": {
@@ -7436,6 +7818,7 @@
     {
       "name": "Nolan Rucci",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Penn State",
       "consensusRank": 365,
       "rankBySource": {
@@ -7455,6 +7838,7 @@
     {
       "name": "Jalen Stroman",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Notre Dame",
       "consensusRank": 367,
       "rankBySource": {
@@ -7474,6 +7858,7 @@
     {
       "name": "Jaydn Ott",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Oklahoma",
       "consensusRank": 368,
       "rankBySource": {
@@ -7493,6 +7878,7 @@
     {
       "name": "Jalen Walthall",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Incarnate Word",
       "consensusRank": 369,
       "rankBySource": {
@@ -7512,6 +7898,7 @@
     {
       "name": "Jack Stonehouse",
       "position": "P",
+      "positionGroup": "P",
       "school": "",
       "consensusRank": 370,
       "rankBySource": {
@@ -7530,6 +7917,7 @@
     {
       "name": "Avery Smith",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Toledo",
       "consensusRank": 371,
       "rankBySource": {
@@ -7549,6 +7937,7 @@
     {
       "name": "Michael Heldman",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "C. Michigan",
       "consensusRank": 372,
       "rankBySource": {
@@ -7568,6 +7957,7 @@
     {
       "name": "Dasan McCullough",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "",
       "consensusRank": 373,
       "rankBySource": {
@@ -7586,6 +7976,7 @@
     {
       "name": "Noah Whittington",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Oregon",
       "consensusRank": 374,
       "rankBySource": {
@@ -7605,6 +7996,7 @@
     {
       "name": "Tristan Leigh",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Clemson",
       "consensusRank": 375,
       "rankBySource": {
@@ -7624,6 +8016,7 @@
     {
       "name": "Drew Stevens",
       "position": "PK",
+      "positionGroup": "PK",
       "school": "Iowa",
       "consensusRank": 376,
       "rankBySource": {
@@ -7643,6 +8036,7 @@
     {
       "name": "David Blay Jr.",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Miami",
       "consensusRank": 377,
       "rankBySource": {
@@ -7662,6 +8056,7 @@
     {
       "name": "Donaven McCulley",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Michigan",
       "consensusRank": 378,
       "rankBySource": {
@@ -7681,6 +8076,7 @@
     {
       "name": "Trebor Pena",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "",
       "consensusRank": 379,
       "rankBySource": {
@@ -7699,6 +8095,7 @@
     {
       "name": "Chip Trayanum",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Toledo",
       "consensusRank": 380,
       "rankBySource": {
@@ -7718,6 +8115,7 @@
     {
       "name": "Jaren Kump",
       "position": "C",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 381,
       "rankBySource": {
@@ -7736,6 +8134,7 @@
     {
       "name": "Joshua Braun",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Kentucky",
       "consensusRank": 382,
       "rankBySource": {
@@ -7755,6 +8154,7 @@
     {
       "name": "Michael Coats Jr.",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 384,
       "rankBySource": {
@@ -7773,6 +8173,7 @@
     {
       "name": "Shad Banks Jr.",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "UTSA",
       "consensusRank": 386,
       "rankBySource": {
@@ -7792,6 +8193,7 @@
     {
       "name": "Camden Brown",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "",
       "consensusRank": 387,
       "rankBySource": {
@@ -7810,6 +8212,7 @@
     {
       "name": "Wydett Williams Jr.",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Ole Miss",
       "consensusRank": 388,
       "rankBySource": {
@@ -7829,6 +8232,7 @@
     {
       "name": "Austin Brown",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Wisconsin",
       "consensusRank": 389,
       "rankBySource": {
@@ -7848,6 +8252,7 @@
     {
       "name": "Devin Voisin",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "South Alabama",
       "consensusRank": 390,
       "rankBySource": {
@@ -7867,6 +8272,7 @@
     {
       "name": "Chris Hilton Jr.",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "LSU",
       "consensusRank": 391,
       "rankBySource": {
@@ -7886,6 +8292,7 @@
     {
       "name": "Rasheed Miller",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Louisville",
       "consensusRank": 392,
       "rankBySource": {
@@ -7905,6 +8312,7 @@
     {
       "name": "Reuben Fatheree II",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Texas A&M",
       "consensusRank": 393,
       "rankBySource": {
@@ -7923,6 +8331,7 @@
     {
       "name": "Eric O'Neill",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "",
       "consensusRank": 395,
       "rankBySource": {
@@ -7941,6 +8350,7 @@
     {
       "name": "Delby Lemieux",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Dartmouth",
       "consensusRank": 397,
       "rankBySource": {
@@ -7960,6 +8370,7 @@
     {
       "name": "Dean Connors",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Houston",
       "consensusRank": 399,
       "rankBySource": {
@@ -7979,6 +8390,7 @@
     {
       "name": "Daniel King",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 400,
       "rankBySource": {
@@ -7997,6 +8409,7 @@
     {
       "name": "Beau Gardner",
       "position": "LS",
+      "positionGroup": "LS",
       "school": "",
       "consensusRank": 401,
       "rankBySource": {
@@ -8015,6 +8428,7 @@
     {
       "name": "Sam Howard",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Tulane",
       "consensusRank": 402,
       "rankBySource": {
@@ -8033,6 +8447,7 @@
     {
       "name": "Aaron Hall",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Duke",
       "consensusRank": 403,
       "rankBySource": {
@@ -8052,6 +8467,7 @@
     {
       "name": "Miles Capers",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Vanderbilt",
       "consensusRank": 404,
       "rankBySource": {
@@ -8070,6 +8486,7 @@
     {
       "name": "James Neal III",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Iowa St.",
       "consensusRank": 405,
       "rankBySource": {
@@ -8089,6 +8506,7 @@
     {
       "name": "Bryan Thomas Jr.",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "South Carolina",
       "consensusRank": 406,
       "rankBySource": {
@@ -8108,6 +8526,7 @@
     {
       "name": "Hank Beatty",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Illinois",
       "consensusRank": 407,
       "rankBySource": {
@@ -8127,6 +8546,7 @@
     {
       "name": "Nathan Voorhis",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "",
       "consensusRank": 408,
       "rankBySource": {
@@ -8145,6 +8565,7 @@
     {
       "name": "Ernest Hausmann",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Michigan",
       "consensusRank": 409,
       "rankBySource": {
@@ -8163,6 +8584,7 @@
     {
       "name": "Will Ferrin",
       "position": "PK",
+      "positionGroup": "PK",
       "school": "",
       "consensusRank": 410,
       "rankBySource": {
@@ -8181,6 +8603,7 @@
     {
       "name": "Keeshawn Silver",
       "position": "DL",
+      "positionGroup": "DL",
       "school": "USC",
       "consensusRank": 411,
       "rankBySource": {
@@ -8199,6 +8622,7 @@
     {
       "name": "Tomas Rimac",
       "position": "IOL",
+      "positionGroup": "OL",
       "school": "Virginia Tech",
       "consensusRank": 412,
       "rankBySource": {
@@ -8217,6 +8641,7 @@
     {
       "name": "Phillip Dunnam",
       "position": "S",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 415,
       "rankBySource": {
@@ -8235,6 +8660,7 @@
     {
       "name": "Kejon Owens",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "FIU",
       "consensusRank": 416,
       "rankBySource": {
@@ -8254,6 +8680,7 @@
     {
       "name": "Terion Stewart",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Virginia Tech",
       "consensusRank": 417,
       "rankBySource": {
@@ -8272,6 +8699,7 @@
     {
       "name": "Kansei Matsuzawa",
       "position": "PK",
+      "positionGroup": "PK",
       "school": "",
       "consensusRank": 418,
       "rankBySource": {
@@ -8290,6 +8718,7 @@
     {
       "name": "Isaiah Nwokobia",
       "position": "S",
+      "positionGroup": "DB",
       "school": "SMU",
       "consensusRank": 419,
       "rankBySource": {
@@ -8308,6 +8737,7 @@
     {
       "name": "Bryce Foster",
       "position": "IOL",
+      "positionGroup": "OL",
       "school": "Kansas",
       "consensusRank": 420,
       "rankBySource": {
@@ -8326,6 +8756,7 @@
     {
       "name": "Jarod Washington",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "SC State",
       "consensusRank": 421,
       "rankBySource": {
@@ -8345,6 +8776,7 @@
     {
       "name": "Davon Booth",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Miss. State",
       "consensusRank": 422,
       "rankBySource": {
@@ -8364,6 +8796,7 @@
     {
       "name": "Tyler Duzansky",
       "position": "LS",
+      "positionGroup": "LS",
       "school": "",
       "consensusRank": 424,
       "rankBySource": {
@@ -8382,6 +8815,7 @@
     {
       "name": "Luke Basso",
       "position": "LS",
+      "positionGroup": "LS",
       "school": "",
       "consensusRank": 425,
       "rankBySource": {
@@ -8400,6 +8834,7 @@
     {
       "name": "Braylon Braxton",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "",
       "consensusRank": 426,
       "rankBySource": {
@@ -8418,6 +8853,7 @@
     {
       "name": "Miller Moss",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Louisville",
       "consensusRank": 427,
       "rankBySource": {
@@ -8437,6 +8873,7 @@
     {
       "name": "Kentrel Bullock",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "South Alabama",
       "consensusRank": 428,
       "rankBySource": {
@@ -8456,6 +8893,7 @@
     {
       "name": "Jamal Haynes",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "",
       "consensusRank": 429,
       "rankBySource": {
@@ -8474,6 +8912,7 @@
     {
       "name": "Jacob Clark",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "",
       "consensusRank": 430,
       "rankBySource": {
@@ -8492,6 +8931,7 @@
     {
       "name": "Kobe Baynes",
       "position": "IOL",
+      "positionGroup": "OL",
       "school": "Kansas",
       "consensusRank": 431,
       "rankBySource": {
@@ -8510,6 +8950,7 @@
     {
       "name": "Derek Robertson",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "",
       "consensusRank": 432,
       "rankBySource": {
@@ -8528,6 +8969,7 @@
     {
       "name": "Kyron Drones",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Virginia Tech",
       "consensusRank": 433,
       "rankBySource": {
@@ -8547,6 +8989,7 @@
     {
       "name": "Grayson James",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "",
       "consensusRank": 434,
       "rankBySource": {
@@ -8565,6 +9008,7 @@
     {
       "name": "Coleman Bennett",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "",
       "consensusRank": 435,
       "rankBySource": {
@@ -8583,6 +9027,7 @@
     {
       "name": "Nick DeGennaro",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "James Madison",
       "consensusRank": 436,
       "rankBySource": {
@@ -8602,6 +9047,7 @@
     {
       "name": "Dylan Devezin",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "",
       "consensusRank": 437,
       "rankBySource": {
@@ -8620,6 +9066,7 @@
     {
       "name": "Maximus Pulley",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Wofford",
       "consensusRank": 438,
       "rankBySource": {
@@ -8638,6 +9085,7 @@
     {
       "name": "Kevon King",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "",
       "consensusRank": 439,
       "rankBySource": {
@@ -8656,6 +9104,7 @@
     {
       "name": "Cortez Braham Jr.",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Memphis",
       "consensusRank": 440,
       "rankBySource": {
@@ -8674,6 +9123,7 @@
     {
       "name": "Leshon Williams",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "",
       "consensusRank": 441,
       "rankBySource": {
@@ -8692,6 +9142,7 @@
     {
       "name": "TJ Harden",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "",
       "consensusRank": 442,
       "rankBySource": {
@@ -8710,6 +9161,7 @@
     {
       "name": "Rod Moore",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Michigan",
       "consensusRank": 443,
       "rankBySource": {
@@ -8728,6 +9180,7 @@
     {
       "name": "Dominic Richardson",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "",
       "consensusRank": 444,
       "rankBySource": {
@@ -8746,6 +9199,7 @@
     {
       "name": "Jaylan Knighton",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "West Virginia",
       "consensusRank": 445,
       "rankBySource": {
@@ -8764,6 +9218,7 @@
     {
       "name": "Star Thomas",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "",
       "consensusRank": 446,
       "rankBySource": {
@@ -8782,6 +9237,7 @@
     {
       "name": "Connor Tollison",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Missouri",
       "consensusRank": 447,
       "rankBySource": {
@@ -8801,6 +9257,7 @@
     {
       "name": "EJ Horton Jr",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "",
       "consensusRank": 448,
       "rankBySource": {
@@ -8819,6 +9276,7 @@
     {
       "name": "Jake Pope",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Illinois St.",
       "consensusRank": 449,
       "rankBySource": {
@@ -8837,6 +9295,7 @@
     {
       "name": "Jalil Farooq",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "",
       "consensusRank": 450,
       "rankBySource": {
@@ -8855,6 +9314,7 @@
     {
       "name": "Tony Grimes",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Purdue",
       "consensusRank": 451,
       "rankBySource": {
@@ -8873,6 +9333,7 @@
     {
       "name": "Kobe Prentice",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "",
       "consensusRank": 452,
       "rankBySource": {
@@ -8891,6 +9352,7 @@
     {
       "name": "Shiyazh Pete",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Kentucky",
       "consensusRank": 453,
       "rankBySource": {
@@ -8910,6 +9372,7 @@
     {
       "name": "Nyck Harbor",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "",
       "consensusRank": 454,
       "rankBySource": {
@@ -8928,6 +9391,7 @@
     {
       "name": "Octavian Smith Jr.",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "",
       "consensusRank": 455,
       "rankBySource": {
@@ -8946,6 +9410,7 @@
     {
       "name": "Jerand Bradley",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "",
       "consensusRank": 456,
       "rankBySource": {
@@ -8964,6 +9429,7 @@
     {
       "name": "Fred Davis II",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Northwestern",
       "consensusRank": 457,
       "rankBySource": {
@@ -8983,6 +9449,7 @@
     {
       "name": "Keelan Marion",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Miami",
       "consensusRank": 458,
       "rankBySource": {
@@ -9001,6 +9468,7 @@
     {
       "name": "Tyas Martin",
       "position": "DL",
+      "positionGroup": "DL",
       "school": "Marshall",
       "consensusRank": 459,
       "rankBySource": {
@@ -9019,6 +9487,7 @@
     {
       "name": "Christian Jones",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "San Diego St.",
       "consensusRank": 461,
       "rankBySource": {
@@ -9038,6 +9507,7 @@
     {
       "name": "Junior Vandeross III",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "",
       "consensusRank": 462,
       "rankBySource": {
@@ -9056,6 +9526,7 @@
     {
       "name": "Terry Webb",
       "position": "DL",
+      "positionGroup": "DL",
       "school": "SMU",
       "consensusRank": 463,
       "rankBySource": {
@@ -9074,6 +9545,7 @@
     {
       "name": "Peter Clarke",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "",
       "consensusRank": 464,
       "rankBySource": {
@@ -9092,6 +9564,7 @@
     {
       "name": "Jack Velling",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Michigan St.",
       "consensusRank": 465,
       "rankBySource": {
@@ -9111,6 +9584,7 @@
     {
       "name": "Trent Hendrick",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "James Madison",
       "consensusRank": 466,
       "rankBySource": {
@@ -9129,6 +9603,7 @@
     {
       "name": "Evan Svoboda",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "",
       "consensusRank": 467,
       "rankBySource": {
@@ -9147,6 +9622,7 @@
     {
       "name": "Rushawn Lawrence",
       "position": "DL",
+      "positionGroup": "DL",
       "school": "Minnesota",
       "consensusRank": 468,
       "rankBySource": {
@@ -9165,6 +9641,7 @@
     {
       "name": "Michael Wortham",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Montana",
       "consensusRank": 470,
       "rankBySource": {
@@ -9184,6 +9661,7 @@
     {
       "name": "J.T. Byrne",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "",
       "consensusRank": 471,
       "rankBySource": {
@@ -9202,6 +9680,7 @@
     {
       "name": "Truman Werremeyer",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "",
       "consensusRank": 472,
       "rankBySource": {
@@ -9220,6 +9699,7 @@
     {
       "name": "Alex Wollschlaeger",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 473,
       "rankBySource": {
@@ -9238,6 +9718,7 @@
     {
       "name": "Jalen Catalon",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Missouri",
       "consensusRank": 474,
       "rankBySource": {
@@ -9256,6 +9737,7 @@
     {
       "name": "Corey Robinson II",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 475,
       "rankBySource": {
@@ -9274,6 +9756,7 @@
     {
       "name": "Caden Fordham",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "NC State",
       "consensusRank": 476,
       "rankBySource": {
@@ -9293,6 +9776,7 @@
     {
       "name": "Isheem Young",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Memphis",
       "consensusRank": 477,
       "rankBySource": {
@@ -9311,6 +9795,7 @@
     {
       "name": "Tyler Van Dyke",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "SMU",
       "consensusRank": 478,
       "rankBySource": {
@@ -9329,6 +9814,7 @@
     {
       "name": "Zion Nelson",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "SMU",
       "consensusRank": 479,
       "rankBySource": {
@@ -9347,6 +9833,7 @@
     {
       "name": "Blake Shapen",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Miss. State",
       "consensusRank": 480,
       "rankBySource": {
@@ -9366,6 +9853,7 @@
     {
       "name": "Alex Afari Jr.",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Kentucky",
       "consensusRank": 481,
       "rankBySource": {
@@ -9384,6 +9872,7 @@
     {
       "name": "Melvin Priestly",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 482,
       "rankBySource": {
@@ -9402,6 +9891,7 @@
     {
       "name": "Javon Gipson",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Abil Christian",
       "consensusRank": 483,
       "rankBySource": {
@@ -9420,6 +9910,7 @@
     {
       "name": "Derek Simmons",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Oklahoma",
       "consensusRank": 484,
       "rankBySource": {
@@ -9438,6 +9929,7 @@
     {
       "name": "Sam Hagen",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 485,
       "rankBySource": {
@@ -9456,6 +9948,7 @@
     {
       "name": "Rocco Spindler",
       "position": "OL",
+      "positionGroup": "OL",
       "school": "Nebraska",
       "consensusRank": 486,
       "rankBySource": {
@@ -9474,6 +9967,7 @@
     {
       "name": "Myles Rowser",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Arizona St.",
       "consensusRank": 487,
       "rankBySource": {
@@ -9493,6 +9987,7 @@
     {
       "name": "James Faminu",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "UNLV",
       "consensusRank": 488,
       "rankBySource": {
@@ -9511,6 +10006,7 @@
     {
       "name": "Fintan Brose",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 489,
       "rankBySource": {
@@ -9529,6 +10025,7 @@
     {
       "name": "Jhalyn Shuler",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "South Florida",
       "consensusRank": 490,
       "rankBySource": {
@@ -9547,6 +10044,7 @@
     {
       "name": "Jimto Obidegwu",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 492,
       "rankBySource": {
@@ -9565,6 +10063,7 @@
     {
       "name": "Matthew Henry",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "W. Kentucky",
       "consensusRank": 493,
       "rankBySource": {
@@ -9584,6 +10083,7 @@
     {
       "name": "Kris Hutson",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Arizona",
       "consensusRank": 494,
       "rankBySource": {
@@ -9603,6 +10103,7 @@
     {
       "name": "Taylor Poitier",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 495,
       "rankBySource": {
@@ -9621,6 +10122,7 @@
     {
       "name": "Tyler Doty",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 496,
       "rankBySource": {
@@ -9639,6 +10141,7 @@
     {
       "name": "Courtland Ford",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "UCLA",
       "consensusRank": 497,
       "rankBySource": {
@@ -9657,6 +10160,7 @@
     {
       "name": "Van Wells",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 498,
       "rankBySource": {
@@ -9675,6 +10179,7 @@
     {
       "name": "Cam Miller",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Rutgers",
       "consensusRank": 499,
       "rankBySource": {
@@ -9694,6 +10199,7 @@
     {
       "name": "Jack Walsh",
       "position": "C",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 500,
       "rankBySource": {
@@ -9712,6 +10218,7 @@
     {
       "name": "Pete Nygra",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Louisville",
       "consensusRank": 501,
       "rankBySource": {
@@ -9731,6 +10238,7 @@
     {
       "name": "Brylan Green",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Liberty",
       "consensusRank": 502,
       "rankBySource": {
@@ -9749,6 +10257,7 @@
     {
       "name": "Joe Cooper",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Slippery Rock",
       "consensusRank": 503,
       "rankBySource": {
@@ -9768,6 +10277,7 @@
     {
       "name": "Christian Martin",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Colorado St.",
       "consensusRank": 504,
       "rankBySource": {
@@ -9786,6 +10296,7 @@
     {
       "name": "Ryan Linthicum",
       "position": "C",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 505,
       "rankBySource": {
@@ -9804,6 +10315,7 @@
     {
       "name": "Giovanni El-Hadi",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Michigan",
       "consensusRank": 506,
       "rankBySource": {
@@ -9823,6 +10335,7 @@
     {
       "name": "Bruno Fina",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 507,
       "rankBySource": {
@@ -9841,6 +10354,7 @@
     {
       "name": "Tyreek Chappell",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Texas A&M",
       "consensusRank": 508,
       "rankBySource": {
@@ -9860,6 +10374,7 @@
     {
       "name": "Amari Niblack",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Texas A&M",
       "consensusRank": 509,
       "rankBySource": {
@@ -9878,6 +10393,7 @@
     {
       "name": "Armani Winfield",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Colorado St.",
       "consensusRank": 510,
       "rankBySource": {
@@ -9896,6 +10412,7 @@
     {
       "name": "A.J. Pena",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "",
       "consensusRank": 511,
       "rankBySource": {
@@ -9914,6 +10431,7 @@
     {
       "name": "Kolbey Taylor",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Vanderbilt",
       "consensusRank": 512,
       "rankBySource": {
@@ -9933,6 +10451,7 @@
     {
       "name": "Bangally Kamara",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Kansas",
       "consensusRank": 513,
       "rankBySource": {
@@ -9951,6 +10470,7 @@
     {
       "name": "Tre Smith",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "",
       "consensusRank": 514,
       "rankBySource": {
@@ -9969,6 +10489,7 @@
     {
       "name": "Bernard Gooden",
       "position": "DL",
+      "positionGroup": "DL",
       "school": "LSU",
       "consensusRank": 515,
       "rankBySource": {
@@ -9987,6 +10508,7 @@
     {
       "name": "Dayon Hayes",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Texas A&M",
       "consensusRank": 516,
       "rankBySource": {
@@ -10005,6 +10527,7 @@
     {
       "name": "Carlos Allen Jr.",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "",
       "consensusRank": 517,
       "rankBySource": {
@@ -10023,6 +10546,7 @@
     {
       "name": "Daniel Sobkowicz",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Illinois St.",
       "consensusRank": 519,
       "rankBySource": {
@@ -10041,6 +10565,7 @@
     {
       "name": "Tommy Dunn Jr.",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "",
       "consensusRank": 520,
       "rankBySource": {
@@ -10059,6 +10584,7 @@
     {
       "name": "Dominic Bailey",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "",
       "consensusRank": 521,
       "rankBySource": {
@@ -10077,6 +10603,7 @@
     {
       "name": "Monkell Goodwine",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "",
       "consensusRank": 522,
       "rankBySource": {
@@ -10095,6 +10622,7 @@
     {
       "name": "Jacob Thomas",
       "position": "S",
+      "positionGroup": "DB",
       "school": "James Madison",
       "consensusRank": 523,
       "rankBySource": {
@@ -10114,6 +10642,7 @@
     {
       "name": "Malik Spencer",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Michigan St.",
       "consensusRank": 524,
       "rankBySource": {
@@ -10133,6 +10662,7 @@
     {
       "name": "Ismail Mahdi",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Arizona",
       "consensusRank": 525,
       "rankBySource": {
@@ -10151,6 +10681,7 @@
     {
       "name": "Tamatoa McDonough",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "",
       "consensusRank": 526,
       "rankBySource": {
@@ -10169,6 +10700,7 @@
     {
       "name": "Jack Dingle",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Cincinnati",
       "consensusRank": 527,
       "rankBySource": {
@@ -10188,6 +10720,7 @@
     {
       "name": "Jaxson Moi",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "",
       "consensusRank": 528,
       "rankBySource": {
@@ -10206,6 +10739,7 @@
     {
       "name": "Declan Williams",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Incarnate Word",
       "consensusRank": 529,
       "rankBySource": {
@@ -10225,6 +10759,7 @@
     {
       "name": "Jyrin Johnson",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Bowling Green",
       "consensusRank": 530,
       "rankBySource": {
@@ -10243,6 +10778,7 @@
     {
       "name": "Sterling Webb",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "",
       "consensusRank": 531,
       "rankBySource": {
@@ -10261,6 +10797,7 @@
     {
       "name": "Dariel Djabome",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "",
       "consensusRank": 532,
       "rankBySource": {
@@ -10279,6 +10816,7 @@
     {
       "name": "Maverick McIvor",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "W. Kentucky",
       "consensusRank": 533,
       "rankBySource": {
@@ -10297,6 +10835,7 @@
     {
       "name": "Elijah Herring",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "",
       "consensusRank": 534,
       "rankBySource": {
@@ -10315,6 +10854,7 @@
     {
       "name": "Rayshon Luke",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "Fresno St.",
       "consensusRank": 535,
       "rankBySource": {
@@ -10333,6 +10873,7 @@
     {
       "name": "Jordan Crook",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "",
       "consensusRank": 536,
       "rankBySource": {
@@ -10351,6 +10892,7 @@
     {
       "name": "Kalib Fortner",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "",
       "consensusRank": 537,
       "rankBySource": {
@@ -10369,6 +10911,7 @@
     {
       "name": "Larry Worth III",
       "position": "S",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 538,
       "rankBySource": {
@@ -10387,6 +10930,7 @@
     {
       "name": "West Weeks",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "LSU",
       "consensusRank": 539,
       "rankBySource": {
@@ -10406,6 +10950,7 @@
     {
       "name": "Dekel Crowdus",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Wisconsin",
       "consensusRank": 540,
       "rankBySource": {
@@ -10424,6 +10969,7 @@
     {
       "name": "Mani Powell",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "",
       "consensusRank": 541,
       "rankBySource": {
@@ -10442,6 +10988,7 @@
     {
       "name": "Preston Stone",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Northwestern",
       "consensusRank": 542,
       "rankBySource": {
@@ -10460,6 +11007,7 @@
     {
       "name": "Joshua Weru",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Kenya",
       "consensusRank": 543,
       "rankBySource": {
@@ -10478,6 +11026,7 @@
     {
       "name": "DeVonta Smith",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 544,
       "rankBySource": {
@@ -10496,6 +11045,7 @@
     {
       "name": "Drey Norwood",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 545,
       "rankBySource": {
@@ -10514,6 +11064,7 @@
     {
       "name": "Jonquis Hardaway",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 546,
       "rankBySource": {
@@ -10532,6 +11083,7 @@
     {
       "name": "Joshua Eaton",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 547,
       "rankBySource": {
@@ -10550,6 +11102,7 @@
     {
       "name": "Kani Walker",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 548,
       "rankBySource": {
@@ -10568,6 +11121,7 @@
     {
       "name": "Preston Hodge",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 550,
       "rankBySource": {
@@ -10586,6 +11140,7 @@
     {
       "name": "Charles Du",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 551,
       "rankBySource": {
@@ -10604,6 +11159,7 @@
     {
       "name": "Bryce Phillips",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 552,
       "rankBySource": {
@@ -10622,6 +11178,7 @@
     {
       "name": "Cam Smith",
       "position": "S",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 553,
       "rankBySource": {
@@ -10640,6 +11197,7 @@
     {
       "name": "DQ Smith",
       "position": "S",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 554,
       "rankBySource": {
@@ -10658,6 +11216,7 @@
     {
       "name": "Gavin Gibson",
       "position": "S",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 555,
       "rankBySource": {
@@ -10676,6 +11235,7 @@
     {
       "name": "Greg Crippen",
       "position": "C",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 556,
       "rankBySource": {
@@ -10694,6 +11254,7 @@
     {
       "name": "Ryan Mosesso",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "",
       "consensusRank": 557,
       "rankBySource": {
@@ -10712,6 +11273,7 @@
     {
       "name": "Devan Boykin",
       "position": "S",
+      "positionGroup": "DB",
       "school": "",
       "consensusRank": 558,
       "rankBySource": {
@@ -10730,6 +11292,7 @@
     {
       "name": "Garrison Grimes",
       "position": "LS",
+      "positionGroup": "LS",
       "school": "",
       "consensusRank": 559,
       "rankBySource": {
@@ -10748,6 +11311,7 @@
     {
       "name": "Laith Marjan",
       "position": "PK",
+      "positionGroup": "PK",
       "school": "",
       "consensusRank": 560,
       "rankBySource": {
@@ -10766,6 +11330,7 @@
     {
       "name": "Cole Maynard",
       "position": "P",
+      "positionGroup": "P",
       "school": "",
       "consensusRank": 561,
       "rankBySource": {
@@ -10784,6 +11349,7 @@
     {
       "name": "Jaffer Murphy",
       "position": "PK",
+      "positionGroup": "PK",
       "school": "",
       "consensusRank": 562,
       "rankBySource": {
@@ -10802,6 +11368,7 @@
     {
       "name": "Payton Zdroik",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "",
       "consensusRank": 563,
       "rankBySource": {
@@ -10820,6 +11387,7 @@
     {
       "name": "Charlie Becker",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Indiana",
       "consensusRank": 564,
       "rankBySource": {
@@ -10838,6 +11406,7 @@
     {
       "name": "Brandon Finney Jr.",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Oregon",
       "consensusRank": 565,
       "rankBySource": {
@@ -10858,6 +11427,7 @@
     {
       "name": "Vega Ioane",
       "position": "G",
+      "positionGroup": "OL",
       "school": "Penn State",
       "consensusRank": 14,
       "rankBySource": {
@@ -10877,6 +11447,7 @@
     {
       "name": "Arvell Reese",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Ohio State",
       "consensusRank": 2,
       "rankBySource": {
@@ -10898,6 +11469,7 @@
     {
       "name": "Jermod McCoy",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Tennessee",
       "consensusRank": 16,
       "rankBySource": {
@@ -10918,6 +11490,7 @@
     {
       "name": "Caleb Downs",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Ohio State",
       "consensusRank": 4,
       "rankBySource": {
@@ -10939,6 +11512,7 @@
     {
       "name": "Emmanuel McNeil-Warren",
       "position": "S",
+      "positionGroup": "DB",
       "school": "Toledo",
       "consensusRank": 22,
       "rankBySource": {
@@ -10959,6 +11533,7 @@
     {
       "name": "Rueben Bain Jr.",
       "position": "DE",
+      "positionGroup": "EDGE",
       "school": "Miami",
       "consensusRank": 7,
       "rankBySource": {
@@ -10980,6 +11555,7 @@
     {
       "name": "Avieon Terrell",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Clemson",
       "consensusRank": 23,
       "rankBySource": {
@@ -11000,6 +11576,7 @@
     {
       "name": "Keith Abney II",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Arizona St.",
       "consensusRank": 61,
       "rankBySource": {
@@ -11020,6 +11597,7 @@
     {
       "name": "Omar Cooper Jr.",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Indiana",
       "consensusRank": 20,
       "rankBySource": {
@@ -11040,6 +11618,7 @@
     {
       "name": "Emmanuel Pregnon",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Oregon",
       "consensusRank": 51,
       "rankBySource": {
@@ -11060,6 +11639,7 @@
     {
       "name": "Keionte Scott",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "Miami",
       "consensusRank": 60,
       "rankBySource": {
@@ -11080,6 +11660,7 @@
     {
       "name": "Makai Lemon",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "USC",
       "consensusRank": 15,
       "rankBySource": {
@@ -11101,6 +11682,7 @@
     {
       "name": "Garrett Nussmeier",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "LSU",
       "consensusRank": 81,
       "rankBySource": {
@@ -11121,6 +11703,7 @@
     {
       "name": "Sam Hecht",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Kansas State",
       "consensusRank": 70,
       "rankBySource": {
@@ -11141,6 +11724,7 @@
     {
       "name": "Anthony Hill Jr.",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Texas",
       "consensusRank": 42,
       "rankBySource": {
@@ -11163,6 +11747,7 @@
     {
       "name": "David Bailey",
       "position": "DE",
+      "positionGroup": "EDGE",
       "school": "Texas Tech",
       "consensusRank": 5,
       "rankBySource": {
@@ -11184,6 +11769,7 @@
     {
       "name": "Carnell Tate",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Ohio State",
       "consensusRank": 13,
       "rankBySource": {
@@ -11205,6 +11791,7 @@
     {
       "name": "Caleb Banks",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Florida",
       "consensusRank": 58,
       "rankBySource": {
@@ -11225,6 +11812,7 @@
     {
       "name": "Ty Simpson",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Alabama",
       "consensusRank": 28,
       "rankBySource": {
@@ -11245,6 +11833,7 @@
     {
       "name": "Blake Miller",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Clemson",
       "consensusRank": 35,
       "rankBySource": {
@@ -11265,6 +11854,7 @@
     {
       "name": "De'Zhaun Stribling",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Ole Miss",
       "consensusRank": 80,
       "rankBySource": {
@@ -11284,6 +11874,7 @@
     {
       "name": "Malachi Lawrence",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "UCF",
       "consensusRank": 45,
       "rankBySource": {
@@ -11304,6 +11895,7 @@
     {
       "name": "Nate Boerkircher",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Texas A&M",
       "consensusRank": 143,
       "rankBySource": {
@@ -11324,6 +11916,7 @@
     {
       "name": "Marlin Klein",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Michigan",
       "consensusRank": 189,
       "rankBySource": {
@@ -11344,6 +11937,7 @@
     {
       "name": "Keylan Rutledge",
       "position": "OG",
+      "positionGroup": "OL",
       "school": "Georgia Tech",
       "consensusRank": 46,
       "rankBySource": {
@@ -11364,6 +11958,7 @@
     {
       "name": "Max Iheanachor",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Arizona St.",
       "consensusRank": 34,
       "rankBySource": {
@@ -11384,6 +11979,7 @@
     {
       "name": "Carson Beck",
       "position": "QB",
+      "positionGroup": "QB",
       "school": "Miami",
       "consensusRank": 151,
       "rankBySource": {
@@ -11404,6 +12000,7 @@
     {
       "name": "Logan Jones",
       "position": "C",
+      "positionGroup": "OL",
       "school": "Iowa",
       "consensusRank": 112,
       "rankBySource": {
@@ -11424,6 +12021,7 @@
     {
       "name": "Caleb Douglas",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Texas Tech",
       "consensusRank": 262,
       "rankBySource": {
@@ -11443,6 +12041,7 @@
     {
       "name": "Mansoor Delane",
       "position": "CB",
+      "positionGroup": "DB",
       "school": "LSU",
       "consensusRank": 8,
       "rankBySource": {
@@ -11466,6 +12065,7 @@
     {
       "name": "Vega Ioane",
       "position": "G",
+      "positionGroup": "OL",
       "school": "Penn State",
       "consensusRank": 14,
       "rankBySource": {
@@ -11485,6 +12085,7 @@
     {
       "name": "Jayden Loving",
       "position": "DL",
+      "positionGroup": "DL",
       "school": "Wake Forest",
       "consensusRank": 93,
       "rankBySource": {
@@ -11503,6 +12104,7 @@
     {
       "name": "Zxavian Harris",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Ole Miss",
       "consensusRank": 123,
       "rankBySource": {
@@ -11523,6 +12125,7 @@
     {
       "name": "Gavin Ortega",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Weber St.",
       "consensusRank": 132,
       "rankBySource": {
@@ -11541,6 +12144,7 @@
     {
       "name": "J'Mari Taylor",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "",
       "consensusRank": 137,
       "rankBySource": {
@@ -11559,6 +12163,7 @@
     {
       "name": "Deontae Lawson",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Alabama",
       "consensusRank": 138,
       "rankBySource": {
@@ -11579,6 +12184,7 @@
     {
       "name": "Le'Veon Moss",
       "position": "RB",
+      "positionGroup": "RB",
       "school": "",
       "consensusRank": 146,
       "rankBySource": {
@@ -11597,6 +12203,7 @@
     {
       "name": "Michael Trigg",
       "position": "TE",
+      "positionGroup": "TE",
       "school": "Baylor",
       "consensusRank": 148,
       "rankBySource": {
@@ -11617,6 +12224,7 @@
     {
       "name": "Bakyne Coly",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Purdue",
       "consensusRank": 154,
       "rankBySource": {
@@ -11635,6 +12243,7 @@
     {
       "name": "Jeff Caldwell",
       "position": "WR",
+      "positionGroup": "WR",
       "school": "Cincinnati",
       "consensusRank": 161,
       "rankBySource": {
@@ -11654,6 +12263,7 @@
     {
       "name": "Mason Reiger",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "Wisconsin",
       "consensusRank": 169,
       "rankBySource": {
@@ -11673,6 +12283,7 @@
     {
       "name": "Anthony Lucas",
       "position": "EDGE",
+      "positionGroup": "EDGE",
       "school": "USC",
       "consensusRank": 171,
       "rankBySource": {
@@ -11693,6 +12304,7 @@
     {
       "name": "Dontay Corleone",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Cincinnati",
       "consensusRank": 172,
       "rankBySource": {
@@ -11713,6 +12325,7 @@
     {
       "name": "Isaiah World",
       "position": "OT",
+      "positionGroup": "OL",
       "school": "Oregon",
       "consensusRank": 177,
       "rankBySource": {
@@ -11733,6 +12346,7 @@
     {
       "name": "Taurean York",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Texas A&M",
       "consensusRank": 181,
       "rankBySource": {
@@ -11755,6 +12369,7 @@
     {
       "name": "Anterio Thompson",
       "position": "DT",
+      "positionGroup": "DL",
       "school": "Washington",
       "consensusRank": null,
       "rankBySource": {},
@@ -11771,6 +12386,7 @@
     {
       "name": "Gavin Gerhardt",
       "position": "OL",
+      "positionGroup": "OL",
       "school": "Cincinnati",
       "consensusRank": null,
       "rankBySource": {},
@@ -11787,6 +12403,7 @@
     {
       "name": "Parker Hughes",
       "position": "LB",
+      "positionGroup": "LB",
       "school": "Middle Tenn. St.",
       "consensusRank": null,
       "rankBySource": {},
@@ -11803,6 +12420,7 @@
     {
       "name": "Michael Dansby",
       "position": "DB",
+      "positionGroup": "DB",
       "school": "Arizona",
       "consensusRank": null,
       "rankBySource": {},

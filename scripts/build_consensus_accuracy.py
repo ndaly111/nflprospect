@@ -102,9 +102,16 @@ def build_rows(predraft: list[dict], picks: list[dict],
         else:
             category = 'rose'
 
+        # Always recompute positionGroup from the granular position — some prospect
+        # records in the predraft snapshot have stale/incorrect positionGroup values
+        # (e.g. position='G' with positionGroup='DB').
+        position_raw   = (m.get('position') if m else pk['position']) or pk['position']
+        position_group = pos_group(position_raw)
+
         rows.append({
             'name':           pk['name'],
-            'position':       (m.get('position') if m else pk['position']) or pk['position'],
+            'position':       position_raw,
+            'positionGroup':  position_group,
             'school':         (m.get('school')   if m else pk['college'])   or pk['college'],
             'consensusRank':  consensus_rank,
             'rankBySource':   rank_by_source,
@@ -130,6 +137,7 @@ def build_rows(predraft: list[dict], picks: list[dict],
         rows.append({
             'name':           p['name'],
             'position':       p.get('position'),
+            'positionGroup':  pos_group(p.get('position')),
             'school':         p.get('school'),
             'consensusRank':  cr,
             'rankBySource':   p.get('rankBySource', {}),

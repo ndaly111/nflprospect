@@ -28,9 +28,12 @@ function deltaTag(value, kind = 'value') {
   return `<span class="px-2 py-0.5 rounded text-xs font-medium bg-rose-900/50 text-rose-300">${v}${suffix}</span>`
 }
 
-function posBadge(pos) {
-  const cls = POS_COLORS[pos] || 'text-gray-400 bg-gray-800'
-  return `<span class="px-1.5 py-0.5 rounded text-[10px] font-medium ${cls}">${pos || '?'}</span>`
+function posBadge(row) {
+  const group = row.positionGroup || row.position
+  const cls   = POS_COLORS[group] || 'text-gray-400 bg-gray-800'
+  // Show granular pos (e.g. "G", "S") if it's narrower than the broad group
+  const label = (row.position && row.position !== group) ? row.position : (group || '?')
+  return `<span class="px-1.5 py-0.5 rounded text-[10px] font-medium ${cls}">${label}</span>`
 }
 
 function statTile(label, value, sub = '') {
@@ -74,7 +77,7 @@ function rowCells(r, opts = {}) {
   return `
     <tr class="border-b border-gray-800/60 hover:bg-gray-800/30">
       <td class="px-3 py-2 text-sm text-white whitespace-nowrap">${r.name}</td>
-      <td class="px-3 py-2 text-center">${posBadge(r.position)}</td>
+      <td class="px-3 py-2 text-center">${posBadge(r)}</td>
       <td class="px-3 py-2 text-xs text-gray-500 whitespace-nowrap">${school}</td>
       <td class="px-3 py-2 text-center">${tdRank}</td>
       <td class="px-3 py-2 text-center">${tdPick}</td>
