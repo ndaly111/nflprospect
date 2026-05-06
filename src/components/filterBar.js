@@ -22,20 +22,27 @@ export function renderFilterBar() {
   const container = document.getElementById('filter-bar')
   if (!container) return
 
-  const { filters, sort, historical, historicalYear, watchlist, draftYear, draftHistory } = getState()
-  const isHistorical = draftYear !== 2026
+  const { filters, sort, historical, historicalYear, watchlist, draftYear, draftHistory, meta, loading } = getState()
+  // Until meta has loaded we don't know the upcoming draft year; suppress the
+  // dropdown's misleading "(Current)" label by falling back to whatever the
+  // selected year is. After meta loads, currentYear is authoritative.
+  const currentYear = meta?.draftYear ?? draftYear
+  const isHistorical = draftYear != null && currentYear != null && draftYear !== currentYear
 
-  // Build draft year options from draftHistory
+  // Build draft year options from draftHistory (past drafts) — excluding the
+  // current upcoming draft, which is always the first option.
   const draftYears = Object.keys(draftHistory || {})
-    .filter(k => /^\d{4}$/.test(k))
+    .filter(k => /^\d{4}$/.test(k) && parseInt(k) !== currentYear)
     .sort()
     .reverse()
 
-  const draftYearSelector = `
+  // Skip rendering the dropdown entirely while meta is still loading — otherwise
+  // we'd briefly show "null (Current)".
+  const draftYearSelector = currentYear == null ? '' : `
     <div class="flex items-center gap-2">
       <label class="text-xs text-gray-400 whitespace-nowrap">Draft Year:</label>
       <select id="draft-year-select" class="bg-gray-800 border ${isHistorical ? 'border-blue-500' : 'border-gray-700'} text-gray-200 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-blue-500">
-        <option value="2026" ${draftYear === 2026 ? 'selected' : ''}>2026 (Current)</option>
+        <option value="${currentYear}" ${draftYear === currentYear ? 'selected' : ''}>${currentYear} (Current)</option>
         ${draftYears.map(y => `
           <option value="${y}" ${draftYear === parseInt(y) ? 'selected' : ''}>${y} Draft</option>`
         ).join('')}
@@ -65,7 +72,7 @@ export function renderFilterBar() {
       <div class="flex items-center gap-2 mb-3 px-3 py-2 bg-blue-900/20 border border-blue-700/40 rounded-lg text-sm text-blue-300">
         <span>Viewing <strong>${draftYear} Draft Class</strong> — actual picks, rounds, and teams</span>
         <button id="glossary-btn" class="text-xs text-blue-400 hover:text-blue-200 underline whitespace-nowrap ml-auto" title="Explain these terms">What do these mean?</button>
-        <button id="back-to-2026" class="text-xs text-blue-400 hover:text-blue-200 underline whitespace-nowrap">Back to 2026</button>
+        <button id="back-to-current" class="text-xs text-blue-400 hover:text-blue-200 underline whitespace-nowrap">Back to ${currentYear}</button>
       </div>` : ''}
     <div class="flex flex-wrap items-center gap-2 mb-3">
       ${POSITION_GROUPS.map(pos => `
@@ -171,11 +178,12 @@ function wireFilterEvents() {
     })
   }
 
-  // Back to 2026 button
-  const backBtn = document.getElementById('back-to-2026')
+  // "Back to <current>" button — reset to the upcoming draft year from meta.
+  const backBtn = document.getElementById('back-to-current')
   if (backBtn) {
     backBtn.addEventListener('click', () => {
-      setState({ draftYear: 2026, expandedCardId: null })
+      const { meta } = getState()
+      setState({ draftYear: meta?.draftYear ?? null, expandedCardId: null })
     })
   }
 
