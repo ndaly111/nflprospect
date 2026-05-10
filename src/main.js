@@ -19,83 +19,103 @@ function getDataUrl(file) {
 
 function renderApp() {
   document.getElementById('app').innerHTML = `
-    <div class="min-h-screen bg-gray-950">
-      <header class="bg-gray-900 border-b border-gray-800 sticky top-0 z-10">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4 flex-wrap">
-          <div class="flex items-center gap-3">
-            <span class="text-2xl">🏈</span>
-            <div>
-              <h1 class="text-lg font-bold text-white leading-tight">NFL Draft Tracker</h1>
-              <p class="text-xs text-gray-400" id="header-meta">Loading…</p>
-            </div>
-          </div>
-          <nav class="flex items-center gap-1">
-            <button id="nav-prospects" class="nav-tab px-4 py-1.5 rounded-lg text-sm font-medium transition-colors bg-blue-600 text-white">
-              Prospects
-            </button>
-            <button id="nav-analytics" class="nav-tab px-4 py-1.5 rounded-lg text-sm font-medium transition-colors text-gray-400 hover:text-gray-200 hover:bg-gray-800">
-              Draft Results
-            </button>
-            <button id="nav-freeagency" class="nav-tab px-4 py-1.5 rounded-lg text-sm font-medium transition-colors text-gray-400 hover:text-gray-200 hover:bg-gray-800">
-              Free Agency
-            </button>
-          </nav>
-          <div id="source-status" class="hidden sm:flex items-center gap-2 flex-wrap text-xs"></div>
+    <div class="alm-shell min-h-screen">
+      <div class="alm-page-frame">
+        <div class="alm-dateline" aria-hidden="true">
+          <span class="seal">LIVE BIG BOARD</span>
+          <span class="right">
+            <span id="header-vol">CLASS · '26</span>
+            <span id="header-issuedate"></span>
+            <span>BROADCAST FROM THE WAR ROOM</span>
+          </span>
         </div>
-      </header>
+
+        <header class="alm-masthead">
+          <h1 class="alm-mark">
+            <span class="pros">Prospect</span><span class="pect">// 26</span>
+          </h1>
+          <div class="alm-strap">
+            <span class="vol" id="header-meta">Loading…</span>
+            <h2>Consensus from <em>four boards</em>. Combine. Tape. The wire. <em>Live</em>.</h2>
+          </div>
+          <nav class="alm-nav" aria-label="Primary">
+            <div class="alm-tabs">
+              <button id="nav-prospects" class="alm-tab is-active">Prospects</button>
+              <button id="nav-analytics" class="alm-tab">Draft Results</button>
+              <button id="nav-freeagency" class="alm-tab">Free Agency</button>
+            </div>
+            <div class="alm-updated"><span class="dot"></span><span id="header-updated">Loading data…</span></div>
+            <div id="source-status" class="hidden alm-source-status"></div>
+          </nav>
+        </header>
+      </div>
 
       <!-- Prospects page -->
       <div id="page-prospects">
-        <div class="bg-gray-900 border-b border-gray-800">
-          <div class="max-w-7xl mx-auto px-4 py-3" id="filter-bar"></div>
+        <div class="alm-page-frame">
+          <div class="alm-seclabel">
+            <span class="num">01</span> THE BIG BOARD <span class="pill">filters &amp; sort</span>
+          </div>
+          <div id="filter-bar"></div>
         </div>
 
-        <main class="max-w-7xl mx-auto px-4 py-6">
+        <main class="alm-page-frame" style="padding-top: 8px; padding-bottom: 8px;">
           <div id="error-banner" class="hidden mb-4 p-3 bg-red-900 border border-red-700 rounded-lg text-red-200 text-sm"></div>
-          <div id="result-count" class="text-xs text-gray-500 mb-3"></div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="prospect-grid"></div>
+          <div class="alm-seclabel"><span class="num">02</span> PROSPECTS <span id="result-count" style="font-family:var(--font-mono);letter-spacing:0.18em;font-size:11px;text-transform:uppercase;color:var(--steel);font-style:normal;font-weight:500;"></span></div>
+          <div id="prospect-grid"></div>
         </main>
 
-        <section class="max-w-7xl mx-auto px-4 pb-6" id="mock-draft-section" style="display:none">
-          <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-            Mock Draft Board
-            <span class="text-xs font-normal text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">Tankathon · Click to view prospect</span>
-          </h2>
-          <div class="bg-gray-800 border border-gray-700 rounded-xl p-4" id="mock-draft-board"></div>
+        <section class="alm-page-frame alm-section" id="mock-draft-section" style="display:none">
+          <h2>Mock Board <span class="strap">Tankathon · click to view prospect</span></h2>
+          <div id="mock-draft-board"></div>
         </section>
 
-        <section class="max-w-7xl mx-auto px-4 pb-6" id="combine-spotlight-section" style="display:none">
-          <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-            Combine Spotlight
-            <span id="combine-spotlight-year" class="text-xs font-normal text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">NFL Combine</span>
-          </h2>
+        <section class="alm-page-frame alm-section" id="combine-spotlight-section" style="display:none">
+          <h2>Combine Spotlight <span id="combine-spotlight-year" class="strap">NFL Combine</span></h2>
           <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3" id="combine-spotlight"></div>
         </section>
 
-        <section class="max-w-7xl mx-auto px-4 pb-10">
-          <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-            Draft News <span class="text-xs font-normal text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">ESPN</span>
-          </h2>
+        <section class="alm-page-frame alm-section">
+          <h2>The Wire <span class="strap">ESPN · Draft News</span></h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="news-panel">
-            <div class="col-span-full text-gray-600 text-sm">Loading news…</div>
+            <div class="col-span-full" style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--steel-dim);">Loading wire…</div>
           </div>
         </section>
+
+        <footer class="alm-page-frame alm-foot">
+          <span>© PROSPECT // 26 · LIVE BIG BOARD</span>
+          <em>"They grade tape and chase coffee." — area scout</em>
+          <span>SET IN SAIRA · SORA · IBM PLEX MONO</span>
+        </footer>
       </div>
 
       <!-- Analytics page -->
       <div id="page-analytics" style="display:none">
-        <main class="max-w-7xl mx-auto px-4 py-8">
+        <main class="alm-page-frame" style="padding-top:18px;padding-bottom:48px;">
           <div id="analytics-page"></div>
         </main>
       </div>
 
       <!-- Free Agency page -->
       <div id="page-freeagency" style="display:none">
-        <main class="max-w-7xl mx-auto px-4 py-8">
+        <main class="alm-page-frame" style="padding-top:18px;padding-bottom:48px;">
           <div id="freeagency-page"></div>
         </main>
       </div>
     </div>`
+
+  // Telemetry: live local time in the dateline
+  const issueEl = document.getElementById('header-issuedate')
+  if (issueEl) {
+    const tick = () => {
+      const d = new Date()
+      const time = d.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false })
+      const date = d.toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' }).toUpperCase()
+      issueEl.textContent = `${date} · ${time} ET`
+    }
+    tick()
+    setInterval(tick, 30000)
+  }
 }
 
 function updateNavTabs() {
@@ -103,9 +123,7 @@ function updateNavTabs() {
   for (const [id, page] of [['nav-prospects', 'prospects'], ['nav-analytics', 'analytics'], ['nav-freeagency', 'freeAgency']]) {
     const el = document.getElementById(id)
     if (!el) continue
-    el.classList.toggle('bg-blue-600',  activePage === page)
-    el.classList.toggle('text-white',   activePage === page)
-    el.classList.toggle('text-gray-400', activePage !== page)
+    el.classList.toggle('is-active', activePage === page)
   }
 
   document.getElementById('page-prospects').style.display = activePage === 'prospects' ? '' : 'none'
@@ -122,23 +140,22 @@ function bindNavTabs() {
 function updateHeader() {
   const { meta, prospects } = getState()
   const metaEl = document.getElementById('header-meta')
+  const updatedEl = document.getElementById('header-updated')
   const statusEl = document.getElementById('source-status')
   if (!metaEl) return
 
   const count = prospects.length
   const ago = timeAgo(meta.lastUpdated)
-  // Conventional draft date: late April of the upcoming class year (matches the
-  // build_prospects.py rollover cutover of April 25). Used only for the header
-  // countdown — exact day varies year to year, this is the rough target.
   const draftYearForCountdown = meta?.draftYear
   const draftDate = draftYearForCountdown
     ? new Date(`${draftYearForCountdown}-04-25T00:00:00`)
     : null
   const daysUntil = draftDate ? Math.ceil((draftDate - Date.now()) / 86400000) : 0
   const countdown = daysUntil > 0 ? ` · Draft in ${daysUntil}d` : ''
-  metaEl.textContent = `Updated ${ago} · ${count} prospect${count !== 1 ? 's' : ''}${countdown}`
+  const classLabel = draftYearForCountdown ? `Class of '${String(draftYearForCountdown).slice(-2)}` : 'A Scouting Almanac'
+  metaEl.textContent = `${classLabel} · ${count} prospect${count !== 1 ? 's' : ''}${countdown}`
+  if (updatedEl) updatedEl.textContent = `Updated ${ago}`
 
-  // Combine Spotlight section title: combine happens in late February of the draft year.
   const combineYearEl = document.getElementById('combine-spotlight-year')
   if (combineYearEl && draftYearForCountdown) {
     combineYearEl.textContent = `${draftYearForCountdown} NFL Combine`
@@ -149,15 +166,14 @@ function updateHeader() {
     const SOURCE_LABELS = {
       tankathon: 'Tankathon',
       espn: 'ESPN',
-      walter_football: 'Walter Football',
-      cbs_sports: 'CBS Sports',
+      walter_football: 'Walter F.',
+      cbs_sports: 'CBS',
     }
     statusEl.innerHTML = Object.entries(meta.sources).map(([src, info]) => {
       const ok = info.status === 'ok'
       const label = SOURCE_LABELS[src] || src.replace(/_/g, ' ')
-      const countTxt = info.count ? ` (${info.count})` : ''
-      return `<span class="flex items-center gap-1 ${ok ? 'text-green-400' : 'text-gray-600'}">
-        <span class="text-[10px]">●</span>${label}${countTxt}</span>`
+      const countTxt = info.count ? ` ${info.count}` : ''
+      return `<span class="${ok ? 'ok' : 'down'}">${ok ? '◆' : '◇'} ${label}${countTxt}</span>`
     }).join('')
   }
 }

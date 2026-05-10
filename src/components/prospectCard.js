@@ -6,33 +6,103 @@ import { renderCombinePanel } from './combinePanel.js'
 import { renderNflCareerStats } from './nflCareerStats.js'
 import { getState, setState, subscribe } from '../state.js'
 
+// ─── Helpers ─────────────────────────────────────────────────
+
+const TEAM_COLORS = {
+  'Arizona Cardinals': '#97233F', 'Atlanta Falcons': '#A71930',
+  'Baltimore Ravens': '#241773', 'Buffalo Bills': '#00338D',
+  'Carolina Panthers': '#0085CA', 'Chicago Bears': '#0B162A',
+  'Cincinnati Bengals': '#FB4F14', 'Cleveland Browns': '#311D00',
+  'Dallas Cowboys': '#003594', 'Denver Broncos': '#FB4F14',
+  'Detroit Lions': '#0076B6', 'Green Bay Packers': '#203731',
+  'Houston Texans': '#03202F', 'Indianapolis Colts': '#002C5F',
+  'Jacksonville Jaguars': '#006778', 'Kansas City Chiefs': '#E31837',
+  'Las Vegas Raiders': '#1a1a1a', 'Los Angeles Chargers': '#0080C6',
+  'Los Angeles Rams': '#003594', 'Miami Dolphins': '#008E97',
+  'Minnesota Vikings': '#4F2683', 'New England Patriots': '#002244',
+  'New Orleans Saints': '#A28C5C', 'New York Giants': '#0B2265',
+  'New York Jets': '#125740', 'Philadelphia Eagles': '#004C54',
+  'Pittsburgh Steelers': '#101820', 'San Francisco 49ers': '#AA0000',
+  'Seattle Seahawks': '#002244', 'Tampa Bay Buccaneers': '#D50A0A',
+  'Tennessee Titans': '#0C2340', 'Washington Commanders': '#5A1414',
+}
+const SCHOOL_COLORS = {
+  'Texas': '#BF5700', 'Ohio State': '#BB0000', 'Alabama': '#9E1B32',
+  'Georgia': '#BA0C2F', 'Michigan': '#00274C', 'Notre Dame': '#0C2340',
+  'LSU': '#461D7C', 'USC': '#990000', 'Oregon': '#154733',
+  'Penn State': '#041E42', 'Clemson': '#F56600', 'Tennessee': '#FF8200',
+  'Florida': '#0021A5', 'Miami': '#F47321', 'Auburn': '#0C2340',
+  'Oklahoma': '#841617', 'Indiana': '#990000', 'Texas A&M': '#500000',
+  'South Carolina': '#73000a', 'Iowa': '#FFCD00', 'Nebraska': '#E41C38',
+  'Wisconsin': '#C5050C', 'North Carolina': '#7BAFD4', 'Stanford': '#8C1515',
+  'Utah': '#CC0000', 'Washington': '#4B2E83',
+}
+function teamColor(p) {
+  if (p.actualTeam && TEAM_COLORS[p.actualTeam]) return TEAM_COLORS[p.actualTeam]
+  if (p.projectedTeam && TEAM_COLORS[p.projectedTeam]) return TEAM_COLORS[p.projectedTeam]
+  if (p.school && SCHOOL_COLORS[p.school]) return SCHOOL_COLORS[p.school]
+  return 'var(--ink-soft)'
+}
+
+function splitName(name) {
+  if (!name) return { first: '', last: '' }
+  const parts = name.trim().split(/\s+/)
+  if (parts.length === 1) return { first: '', last: parts[0] }
+  return { first: parts.slice(0, -1).join(' '), last: parts[parts.length - 1] }
+}
+function padRank(n) { return n == null ? '—' : String(n).padStart(2, '0') }
+function fmtHeight(c) {
+  if (!c?.height) return null
+  const h = String(c.height).replace(/['"]/g, '').trim()
+  return h.includes('-') ? h.replace('-', "'") + '"' : h
+}
+function fmtFortyVert(c, key, suffix) {
+  const v = c?.[key]
+  if (v == null || v === '') return { v: '—', muted: true, suffix: '' }
+  return { v: typeof v === 'number' ? v.toFixed(suffix === 's' ? 2 : 0) : String(v), muted: false, suffix }
+}
+
+function trendSvg(delta) {
+  if (delta === 0 || !delta) {
+    return `<svg viewBox="0 0 10 10" aria-hidden="true"><line x1="1" y1="5" x2="9" y2="5" stroke="currentColor" stroke-width="1.6"/></svg>`
+  }
+  if (delta > 0) {
+    return `<svg viewBox="0 0 10 10" aria-hidden="true"><polyline points="1,8 5,2 9,8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>`
+  }
+  return `<svg viewBox="0 0 10 10" aria-hidden="true"><polyline points="1,2 5,8 9,2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>`
+}
+
+function sourceDots(prospect, sources = ['tankathon','espn','walter_football','cbs_sports']) {
+  const present = prospect.rankBySource || {}
+  return `<span class="alm-sources" aria-label="Source coverage">${
+    sources.map(s => `<i class="${present[s] != null ? 'on' : ''}"></i>`).join('')
+  }</span>`
+}
+
+// ─── Existing helpers (unchanged behavior, only minor restyles) ──
+
 function accoladeBadges(accolades) {
   if (!accolades) return ''
-  const b = (text, color) => `<span class="text-[10px] font-bold ${color} px-1.5 py-0.5 rounded-full whitespace-nowrap">${text}</span>`
+  const b = (text, kind) => `<span class="alm-badge ${kind}">${text}</span>`
   const items = []
-  if (accolades.mvp)               items.push(b('MVP',  'text-purple-300 bg-purple-900/50'))
-  if (accolades.sbmvp)             items.push(b('SB MVP','text-yellow-200 bg-yellow-900/50'))
-  if (accolades.opoy)              items.push(b('OPOY', 'text-green-300 bg-green-900/50'))
-  if (accolades.dpoy)              items.push(b('DPOY', 'text-red-300 bg-red-900/50'))
-  if (accolades.oroy)              items.push(b('OROY', 'text-emerald-300 bg-emerald-900/50'))
-  if (accolades.droy)              items.push(b('DROY', 'text-orange-300 bg-orange-900/50'))
-  if (accolades.cpoy)              items.push(b('CPOY', 'text-sky-300 bg-sky-900/50'))
-  if (accolades.allpro1 > 0) items.push(b(`${accolades.allpro1 > 1 ? accolades.allpro1 + '× ' : ''}AP1`, 'text-yellow-400 bg-yellow-900/50'))
-  if (accolades.allpro2 > 0) items.push(b(`${accolades.allpro2 > 1 ? accolades.allpro2 + '× ' : ''}AP2`, 'text-gray-300 bg-gray-700/60'))
+  if (accolades.mvp)               items.push(b('MVP',  'ox'))
+  if (accolades.sbmvp)             items.push(b('SB MVP','brass'))
+  if (accolades.opoy)              items.push(b('OPOY', 'moss'))
+  if (accolades.dpoy)              items.push(b('DPOY', 'ox'))
+  if (accolades.oroy)              items.push(b('OROY', 'moss'))
+  if (accolades.droy)              items.push(b('DROY', 'ox'))
+  if (accolades.cpoy)              items.push(b('CPOY', 'ink'))
+  if (accolades.allpro1 > 0) items.push(b(`${accolades.allpro1 > 1 ? accolades.allpro1 + '× ' : ''}AP1`, 'brass'))
+  if (accolades.allpro2 > 0) items.push(b(`${accolades.allpro2 > 1 ? accolades.allpro2 + '× ' : ''}AP2`, 'ink'))
   if (!items.length) return ''
-  return `<div class="flex flex-wrap gap-1 mt-0.5 mb-1">${items.join('')}</div>`
+  return `<div style="display:flex;flex-wrap:wrap;gap:4px;margin:4px 0 2px;">${items.join('')}</div>`
 }
 
 function tierBadge(draftGrade) {
   if (!draftGrade) return ''
   const { tier, score, yearsEvaluated, provisional, trajectory, trajectoryPct } = draftGrade
-  const STYLES = {
-    Elite:   'text-amber-300 bg-amber-900/50 border border-amber-700/40',
-    Starter: 'text-emerald-300 bg-emerald-900/50 border border-emerald-700/40',
-    Backup:  'text-slate-300 bg-slate-700/60 border border-slate-600/40',
-    Bust:    'text-red-300 bg-red-900/50 border border-red-700/40',
-  }
-  const style = STYLES[tier] || STYLES.Backup
+  const KIND = { Elite: 'brass', Starter: 'moss', Backup: 'ink', Bust: 'ox' }
+  const kind = KIND[tier] || 'ink'
   const label = provisional ? `~${tier}` : tier
   const tooltip = provisional
     ? `Provisional (${yearsEvaluated} qualifying season${yearsEvaluated !== 1 ? 's' : ''})`
@@ -40,34 +110,30 @@ function tierBadge(draftGrade) {
   let arrow = ''
   if (trajectory === 'rising') {
     const pctStr = trajectoryPct != null ? ` +${trajectoryPct}%` : ''
-    arrow = `<span class="text-green-400 font-bold text-[11px]" title="Rising production${pctStr} vs prior season">↑</span>`
+    arrow = `<span style="color:var(--moss);font-weight:700;font-family:var(--font-mono);" title="Rising production${pctStr} vs prior season">↑</span>`
   } else if (trajectory === 'declining') {
     const pctStr = trajectoryPct != null ? ` ${trajectoryPct}%` : ''
-    arrow = `<span class="text-red-400 font-bold text-[11px]" title="Declining production${pctStr} vs prior season">↓</span>`
+    arrow = `<span style="color:var(--oxblood);font-weight:700;font-family:var(--font-mono);" title="Declining production${pctStr} vs prior season">↓</span>`
   }
-  return `${arrow}<span class="text-[10px] font-bold px-1.5 py-0.5 rounded-full whitespace-nowrap ${provisional ? 'opacity-70' : ''} ${style}" title="${tooltip}">${label}</span>`
+  return `${arrow}<span class="alm-badge ${kind}" style="${provisional ? 'opacity:0.7;' : ''}" title="${tooltip}">${label}</span>`
 }
 
 function classRankBadge(draftGrade) {
   if (!draftGrade?.classRank) return ''
   const { classRank, classSize } = draftGrade
-  const color = classRank === 1 ? 'text-yellow-400'
-    : classRank <= 3 ? 'text-amber-400'
-    : classRank <= 10 ? 'text-blue-400'
-    : 'text-gray-500'
   const sfx = n => {
     const s = ['th', 'st', 'nd', 'rd'], v = n % 100
     return n + (s[(v - 20) % 10] || s[v] || s[0])
   }
-  return `<span class="text-[11px] font-semibold ${color} whitespace-nowrap" title="${sfx(classRank)} best career in class of ${classSize}">${sfx(classRank)} in class</span>`
+  const color = classRank === 1 ? 'var(--brass)' : classRank <= 10 ? 'var(--ink)' : 'var(--ink-faint)'
+  return `<span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:${color};" title="${sfx(classRank)} best career in class of ${classSize}">${sfx(classRank)} in class</span>`
 }
 
 function renderProspectNews(name) {
   const { news } = getState()
   if (!news || news.length === 0) {
-    return '<p class="text-gray-500 text-sm">No news available</p>'
+    return '<p style="color:var(--ink-faint);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;">No news on the wire.</p>'
   }
-  // Match articles mentioning the player's last name (or full name)
   const lastName = name.split(' ').pop().toLowerCase()
   const firstName = name.split(' ')[0].toLowerCase()
   const matches = news.filter(item => {
@@ -75,31 +141,29 @@ function renderProspectNews(name) {
     return text.includes(lastName) && text.includes(firstName)
   })
   if (matches.length === 0) {
-    return `<p class="text-gray-500 text-sm">No news mentioning ${name} found.</p>`
+    return `<p style="color:var(--ink-faint);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;">No filings mention ${name}.</p>`
   }
   return matches.map(item => `
     <a href="${item.url || '#'}" target="_blank" rel="noopener"
-       class="flex gap-3 py-2.5 border-b border-gray-700/50 last:border-0 hover:bg-gray-700/20 -mx-4 px-4 transition-colors">
-      ${item.image ? `<img src="${item.image}" alt="" class="w-14 h-10 object-cover rounded flex-shrink-0 bg-gray-700">` : ''}
-      <div class="flex-1 min-w-0">
-        <p class="text-sm text-gray-200 leading-snug line-clamp-2">${item.headline}</p>
-        <p class="text-xs text-gray-500 mt-0.5">${formatDate(item.published)}</p>
+       style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--rule-soft);text-decoration:none;color:inherit;">
+      ${item.image ? `<img src="${item.image}" alt="" style="width:56px;height:40px;object-fit:cover;border:1px solid var(--rule);">` : ''}
+      <div style="flex:1;min-width:0;">
+        <p style="margin:0;font-family:var(--font-serif);font-size:14px;line-height:1.35;color:var(--ink);">${item.headline}</p>
+        <p style="margin:2px 0 0;font-family:var(--font-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-faint);">${formatDate(item.published)}</p>
       </div>
     </a>`).join('')
 }
 
-// Cache for in-class college stat percentiles
 let _statPctCache = null
 let _statPctLen = 0
 
 function buildCollegeStatPct(prospects) {
   if (_statPctCache && _statPctLen === prospects.length) return _statPctCache
-  const result = {}  // {posGroup: {statKey: sorted_values[]}}
+  const result = {}
   for (const p of prospects) {
     const grp = p.positionGroup
     if (!result[grp]) result[grp] = {}
     const cs = p.collegeStats || {}
-    // Use all years — accumulate all values
     for (const stats of Object.values(cs)) {
       for (const [key, val] of Object.entries(stats)) {
         if (typeof val === 'number' && !isNaN(val) && val > 0 && key !== 'games') {
@@ -109,27 +173,12 @@ function buildCollegeStatPct(prospects) {
       }
     }
   }
-  // Sort each array
   for (const grp of Object.values(result)) {
-    for (const key of Object.keys(grp)) {
-      grp[key].sort((a, b) => a - b)
-    }
+    for (const key of Object.keys(grp)) grp[key].sort((a, b) => a - b)
   }
   _statPctCache = result
   _statPctLen = prospects.length
   return result
-}
-
-const POSITION_COLORS = {
-  QB: 'bg-red-900 text-red-300',
-  RB: 'bg-green-900 text-green-300',
-  WR: 'bg-blue-900 text-blue-300',
-  TE: 'bg-purple-900 text-purple-300',
-  OL: 'bg-yellow-900 text-yellow-300',
-  DL: 'bg-orange-900 text-orange-300',
-  EDGE: 'bg-orange-900 text-orange-300',
-  LB: 'bg-teal-900 text-teal-300',
-  DB: 'bg-indigo-900 text-indigo-300',
 }
 
 const SOURCE_LABELS = {
@@ -142,22 +191,20 @@ const SOURCE_LABELS = {
 function renderSourceRankings(prospect) {
   const entries = Object.entries(prospect.rankBySource || {})
   if (entries.length === 0) return ''
-
-  // Find the max rank across all prospects to scale bars
   const allRanks = getState().prospects.flatMap(p => Object.values(p.rankBySource || {}))
   const maxRank = allRanks.length ? Math.max(...allRanks) : 300
 
   const rows = entries.map(([src, rank]) => {
     const label = SOURCE_LABELS[src] || src.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
     const barPct = Math.round((1 - (rank - 1) / maxRank) * 100)
-    const barColor = rank <= 10 ? '#f59e0b' : rank <= 32 ? '#3b82f6' : rank <= 64 ? '#22c55e' : '#6b7280'
+    const barColor = rank <= 10 ? 'var(--brass)' : rank <= 32 ? 'var(--ink)' : rank <= 64 ? 'var(--moss)' : 'var(--ink-faint)'
     return `
-      <div class="flex items-center gap-2">
-        <span class="text-[11px] text-gray-500 w-28 flex-shrink-0 truncate">${label}</span>
-        <div class="flex-1 h-1.5 bg-gray-700 rounded-full overflow-hidden">
-          <div class="h-full rounded-full" style="width:${barPct}%;background:${barColor}"></div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-soft);width:120px;flex-shrink:0;">${label}</span>
+        <div style="flex:1;height:2px;background:var(--rule-soft);position:relative;">
+          <div style="position:absolute;left:0;top:0;height:100%;background:${barColor};width:${barPct}%;"></div>
         </div>
-        <span class="text-[11px] font-bold text-gray-300 w-8 text-right flex-shrink-0">#${rank}</span>
+        <span style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--ink);width:32px;text-align:right;flex-shrink:0;">#${rank}</span>
       </div>`
   }).join('')
 
@@ -165,26 +212,25 @@ function renderSourceRankings(prospect) {
   const spread = entries.length >= 2
     ? Math.max(...entries.map(([,r]) => r)) - Math.min(...entries.map(([,r]) => r))
     : 0
-  const spreadTxt = spread === 0 ? 'All sources agree' : spread <= 5 ? `${spread}-pick spread` : `${spread}-pick spread`
-  const spreadColor = spread === 0 ? 'text-green-400' : spread <= 5 ? 'text-blue-400' : 'text-amber-400'
+  const spreadTxt = spread === 0 ? 'All boards agree' : `${spread}-pick spread`
+  const spreadColor = spread === 0 ? 'var(--moss)' : spread <= 5 ? 'var(--ink)' : 'var(--brass)'
 
   return `
-    <div class="mb-1">
-      <div class="flex justify-between items-baseline mb-2">
-        <span class="text-[11px] text-gray-500 uppercase tracking-wider">Source Rankings</span>
-        <span class="text-[11px] ${spreadColor}">${spreadTxt}</span>
+    <div style="margin-bottom:6px;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;">
+        <span style="font-family:var(--font-display);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--ink-soft);font-weight:700;">Source Rankings</span>
+        <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:${spreadColor};">${spreadTxt}</span>
       </div>
-      <div class="flex flex-col gap-1.5">${rows}</div>
+      <div style="display:flex;flex-direction:column;gap:6px;">${rows}</div>
     </div>`
 }
 
-// delta = actualPick - predrraftRank: positive = value (slid), negative = reach (early)
 function pickValueBadge(delta) {
   if (!Number.isFinite(delta)) return ''
-  if (delta >= 10) return `<span class="text-[10px] font-bold text-emerald-400 bg-emerald-900/40 px-1.5 py-0.5 rounded-full">Value +${delta}</span>`
-  if (delta >= 5)  return `<span class="text-[10px] font-bold text-green-400 bg-green-900/40 px-1.5 py-0.5 rounded-full">+${delta}</span>`
-  if (delta <= -10) return `<span class="text-[10px] font-bold text-red-400 bg-red-900/40 px-1.5 py-0.5 rounded-full">Reach ${delta}</span>`
-  if (delta <= -5)  return `<span class="text-[10px] font-bold text-orange-400 bg-orange-900/40 px-1.5 py-0.5 rounded-full">${delta}</span>`
+  if (delta >= 10) return `<span class="alm-badge moss">Value +${delta}</span>`
+  if (delta >= 5)  return `<span class="alm-badge moss">+${delta}</span>`
+  if (delta <= -10) return `<span class="alm-badge ox">Reach ${delta}</span>`
+  if (delta <= -5)  return `<span class="alm-badge ox">${delta}</span>`
   return ''
 }
 
@@ -194,92 +240,137 @@ function findProspectById(id) {
     (draftHistory[String(draftYear)] || []).find(p => p.id === id)
 }
 
+// ─── Stat tile builders (4 universal headline measurables) ──
+
+function statTilesCurrent(prospect) {
+  const c = prospect.combineData || {}
+  const ht = fmtHeight(c)
+  const wt = c.weight ? String(c.weight) : null
+  const f = c.forty != null ? Number(c.forty).toFixed(2) : null
+  const v = c.vertical != null ? String(Math.round(c.vertical)) : null
+  return [
+    { k: 'Ht',   v: ht ?? '—',                muted: !ht,        suffix: '' },
+    { k: 'Wt',   v: wt ?? '—',                muted: !wt,        suffix: wt ? 'lb' : '' },
+    { k: '40-yd', v: f ?? '—',                 muted: !f,         suffix: f ? 's' : '' },
+    { k: 'Vert', v: v ?? '—',                 muted: !v,         suffix: v ? '"' : '' },
+  ]
+}
+
+function statTilesHistorical(prospect) {
+  const c = prospect.combineData || {}
+  const ht = fmtHeight(c)
+  const wt = c.weight ? String(c.weight) : null
+  const f = c.forty != null ? Number(c.forty).toFixed(2) : null
+  return [
+    { k: 'Ht',   v: ht ?? '—',                muted: !ht,        suffix: '' },
+    { k: 'Wt',   v: wt ?? '—',                muted: !wt,        suffix: wt ? 'lb' : '' },
+    { k: '40-yd', v: f ?? '—',                 muted: !f,         suffix: f ? 's' : '' },
+    { k: 'Pick', v: prospect.actualPick ? `#${prospect.actualPick}` : '—', muted: !prospect.actualPick, suffix: '' },
+  ]
+}
+
+function renderStatTiles(tiles) {
+  return `<div class="alm-stats">${
+    tiles.map(t => `
+      <div class="alm-stat">
+        <span class="alm-k">${t.k}</span>
+        <span class="alm-v${t.muted ? ' muted' : ''}">${t.v}${t.suffix ? `<small>${t.suffix}</small>` : ''}</span>
+      </div>`).join('')
+  }</div>`
+}
+
+// ─── Spread bar (current-year only) ──
+
+function renderSpreadBar(prospect) {
+  const sourceRanks = Object.values(prospect.rankBySource || {})
+  if (sourceRanks.length < 2) return ''
+  const minRank = Math.min(...sourceRanks)
+  const maxRank = Math.max(...sourceRanks)
+  const spread = maxRank - minRank
+  const dotPct = spread === 0 ? 50 : Math.round((prospect.consensusRank - minRank) / spread * 100)
+  const spreadLabel = spread === 0 ? 'all agree' : spread <= 2 ? 'tight' : spread <= 6 ? 'moderate' : 'wide'
+  return `
+    <div class="alm-spread">
+      <div class="lab">
+        <span class="min">Best · #${minRank}</span>
+        <span>${spreadLabel}${spread > 0 ? ` (${spread})` : ''}</span>
+        <span class="max">Worst · #${maxRank}</span>
+      </div>
+      <div class="bar"><i style="left:${dotPct}%"></i></div>
+    </div>`
+}
+
+// ═══ Historical card (drafted prospects in past classes) ══════════════════
+
 function renderHistoricalCard(prospect, isExpanded) {
-  const posColor = POSITION_COLORS[prospect.positionGroup] || 'bg-gray-800 text-gray-300'
   const isStarred = getState().watchlist.includes(prospect.id)
   const displayRank = prospect.actualPick
   const histPickBadge = (prospect.espnRank && prospect.actualPick)
     ? pickValueBadge(prospect.actualPick - prospect.espnRank)
     : ''
-  const rankColor = displayRank <= 5 ? 'text-yellow-400'
-    : displayRank <= 32 ? 'text-blue-400'
-    : displayRank <= 64 ? 'text-green-400'
-    : 'text-gray-400'
-  const gradeColor = (prospect.espnGrade || 0) >= 90 ? 'text-green-400'
-    : (prospect.espnGrade || 0) >= 85 ? 'text-yellow-400' : 'text-gray-400'
   const headshotUrl = prospect.espnId
     ? `https://a.espncdn.com/i/headshots/college-football/players/full/${prospect.espnId}.png`
     : null
-
-  const hw = (() => {
-    const c = prospect.combineData || {}
-    const parts = []
-    if (c.height) {
-      const h = String(c.height).replace(/['"]/g, '').trim()
-      parts.push(h.includes('-') ? h.replace('-', "'") + '"' : h)
-    }
-    if (c.weight) parts.push(`${c.weight} lbs`)
-    return parts.join(' · ')
-  })()
-
-  const teamSpan = prospect.actualTeam
-    ? ` · ${nflTeamLogo(prospect.actualTeam)}<span class="text-amber-400 font-semibold ml-0.5">${prospect.actualTeam}</span>`
-    : ''
+  const { first, last } = splitName(prospect.name)
+  const tiles = statTilesHistorical(prospect)
+  const teamCol = teamColor(prospect)
+  const featured = displayRank && displayRank <= 3 ? ' featured' : ''
 
   return [
-    `<div class="prospect-card bg-gray-800 rounded-xl border ${isExpanded ? 'border-blue-600' : 'border-gray-700'} overflow-hidden hover:border-gray-500 transition-colors" data-id="${prospect.id}">`,
-    `<div class="card-header cursor-pointer p-4 select-none" data-id="${prospect.id}">`,
-    `<div class="flex items-start justify-between gap-2">`,
-    `<div class="flex-1 min-w-0">`,
-    `<div class="flex items-center gap-2 flex-wrap mb-1">`,
-    `<span class="text-xs font-semibold px-2 py-0.5 rounded-full ${posColor}">${prospect.position}</span>`,
-    `<span class="school-filter-btn text-xs text-gray-400 hover:text-blue-400 transition-colors cursor-pointer truncate" data-school="${prospect.school}">${prospect.school}</span>`,
+    `<div class="prospect-card${featured} ${isExpanded ? 'border-blue-600' : ''}" style="--team:${teamCol};" data-id="${prospect.id}">`,
+    `<div class="alm-stripe" aria-hidden="true"></div>`,
+    `<div class="card-header" data-id="${prospect.id}">`,
+    `<span class="alm-rank">${padRank(displayRank)}</span>`,
+    `<div class="alm-side">`,
+    headshotUrl ? `<img src="${headshotUrl}" class="alm-headshot" alt="" loading="lazy" onerror="this.style.display='none'">` : '',
+    `<button class="star-btn" data-id="${prospect.id}" data-on="${isStarred ? '1' : '0'}" title="${isStarred ? 'Remove from watchlist' : 'Add to watchlist'}">★</button>`,
+    `<span class="card-chevron" data-id="${prospect.id}">${isExpanded ? '▲' : '▼'}</span>`,
+    `</div>`,
+    `<div class="alm-name">`,
+    first ? `<span class="alm-first">${first}</span>` : '',
+    `<span class="alm-last">${last || prospect.name}</span>`,
+    `</div>`,
+    `<div class="alm-meta">`,
+    `<span class="alm-pos">${prospect.position}</span>`,
+    `<span class="school-filter-btn" data-school="${prospect.school}">${prospect.school}</span>`,
+    prospect.actualTeam ? `<span class="sep">·</span><span class="team-filter-btn" data-team="${prospect.actualTeam}" style="cursor:pointer;color:var(--brass);">${prospect.actualTeam}</span>` : '',
+    `</div>`,
+    accoladeBadges(prospect.accolades),
+    renderStatTiles(tiles),
+    `<div class="alm-row">`,
+    `<span style="display:flex;align-items:center;gap:8px;">`,
+    `<span>Round ${prospect.actualRound || '—'}</span>`,
     histPickBadge,
     tierBadge(prospect.draftGrade),
+    `</span>`,
+    `<span>${classRankBadge(prospect.draftGrade)}</span>`,
     `</div>`,
-    `<h2 class="text-base font-bold text-white leading-snug mb-0.5">${prospect.name}</h2>`,
-    accoladeBadges(prospect.accolades),
-    `<div class="flex items-center gap-2 flex-wrap">`,
-    `<span class="text-2xl font-black ${rankColor} leading-none">#${displayRank}</span>`,
-    `<div class="text-xs text-gray-400 leading-snug">`,
-    `<div class="flex items-center gap-2 flex-wrap">`,
-    `<span>Round ${prospect.actualRound || '?'}${teamSpan}</span>`,
-    classRankBadge(prospect.draftGrade),
-    `</div>`,
-    prospect.espnRank ? `<div class="text-gray-500 text-[11px]">ESPN pre-draft: #${prospect.espnRank}</div>` : '',
-    hw ? `<div class="text-gray-500">${hw}</div>` : '',
-    `</div>`,
-    prospect.espnGrade ? [
-      `<div class="ml-auto flex flex-col items-end">`,
-      `<div class="text-[10px] text-gray-500 uppercase tracking-wider">ESPN</div>`,
-      `<div class="text-base font-bold ${gradeColor}">${prospect.espnGrade}</div>`,
+    prospect.espnRank || prospect.espnGrade ? [
+      `<div class="alm-srcline">`,
+      prospect.espnRank ? `<span>ESPN Pre-Draft: <strong>#${prospect.espnRank}</strong></span>` : '',
+      prospect.espnGrade ? `<span>ESPN Grade: <strong>${prospect.espnGrade}</strong></span>` : '',
       `</div>`,
     ].join('') : '',
-    `</div></div>`,
-    `<div class="flex flex-col items-end gap-2 flex-shrink-0">`,
-    headshotUrl ? `<img src="${headshotUrl}" alt="" loading="lazy" class="w-10 h-10 rounded-full object-cover object-top bg-gray-700 border border-gray-700" onerror="this.style.display='none'">` : '',
-    `<button class="star-btn text-lg leading-none transition-colors ${isStarred ? 'text-yellow-400' : 'text-gray-700 hover:text-gray-400'}" data-id="${prospect.id}" title="${isStarred ? 'Remove from watchlist' : 'Add to watchlist'}">★</button>`,
-    `<div class="text-gray-600 text-xs card-chevron" data-id="${prospect.id}">${isExpanded ? '▲' : '▼'}</div>`,
-    `</div></div></div>`,
-    `<div class="card-detail ${isExpanded ? '' : 'hidden'} border-t border-gray-700" data-id="${prospect.id}">`,
-    `<div class="flex border-b border-gray-700 overflow-x-auto">`,
-    `<button class="detail-tab flex-1 px-3 py-2 text-xs font-medium border-b-2 border-blue-500 text-blue-400 whitespace-nowrap" data-tab="draft" data-card="${prospect.id}">Draft Info</button>`,
-    `<button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors whitespace-nowrap" data-tab="stats" data-card="${prospect.id}">Stats</button>`,
-    `<button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors whitespace-nowrap" data-tab="combine" data-card="${prospect.id}">Combine</button>`,
-    `<button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors whitespace-nowrap" data-tab="nfl-career" data-card="${prospect.id}">NFL Career</button>`,
+    `</div>`,
+    `<div class="card-detail ${isExpanded ? '' : 'hidden'}" data-id="${prospect.id}">`,
+    `<div class="flex border-b overflow-x-auto" style="border-color:var(--rule-soft);">`,
+    `<button class="detail-tab flex-1 px-3 py-2 border-b-2 border-blue-500" data-tab="draft" data-card="${prospect.id}">Draft Info</button>`,
+    `<button class="detail-tab flex-1 px-3 py-2 border-b-2 border-transparent" data-tab="stats" data-card="${prospect.id}">Stats</button>`,
+    `<button class="detail-tab flex-1 px-3 py-2 border-b-2 border-transparent" data-tab="combine" data-card="${prospect.id}">Combine</button>`,
+    `<button class="detail-tab flex-1 px-3 py-2 border-b-2 border-transparent" data-tab="nfl-career" data-card="${prospect.id}">NFL Career</button>`,
     `</div>`,
     `<div class="p-4">`,
     `<div class="tab-content" data-tab="draft" data-card="${prospect.id}">`,
-    `<div class="text-sm space-y-0">`,
-    prospect.espnRank ? `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">ESPN Pre-Draft Rank</span><span class="font-bold text-blue-400">#${prospect.espnRank}</span></div>` : '',
-    prospect.espnGrade ? `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">ESPN Grade</span><span class="font-bold ${gradeColor}">${prospect.espnGrade}</span></div>` : '',
-    `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">Overall Pick</span><span class="font-bold text-white">#${prospect.actualPick}</span></div>`,
-    `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">Round</span><span class="text-white">${prospect.actualRound || '—'}</span></div>`,
-    `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">Team</span><span class="text-amber-400 font-semibold">${prospect.actualTeam || '—'}</span></div>`,
-    `<div class="flex justify-between ${prospect.draftGrade ? 'border-b border-gray-700/60 ' : ''}py-2"><span class="text-gray-500">Position</span><span class="text-white">${prospect.position}${prospect.positionGroup !== prospect.position ? ' (' + prospect.positionGroup + ')' : ''}</span></div>`,
+    `<div style="font-family:var(--font-serif);font-size:14px;">`,
+    prospect.espnRank ? `<div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--rule-soft);padding:8px 0;"><span style="color:var(--ink-faint);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;">ESPN Pre-Draft Rank</span><span style="font-weight:700;">#${prospect.espnRank}</span></div>` : '',
+    prospect.espnGrade ? `<div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--rule-soft);padding:8px 0;"><span style="color:var(--ink-faint);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;">ESPN Grade</span><span style="font-weight:700;">${prospect.espnGrade}</span></div>` : '',
+    `<div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--rule-soft);padding:8px 0;"><span style="color:var(--ink-faint);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;">Overall Pick</span><span style="font-weight:700;">#${prospect.actualPick}</span></div>`,
+    `<div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--rule-soft);padding:8px 0;"><span style="color:var(--ink-faint);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;">Round</span><span>${prospect.actualRound || '—'}</span></div>`,
+    `<div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--rule-soft);padding:8px 0;"><span style="color:var(--ink-faint);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;">Team</span><span style="color:var(--brass);font-weight:700;">${prospect.actualTeam || '—'}</span></div>`,
+    `<div style="display:flex;justify-content:space-between;${prospect.draftGrade ? 'border-bottom:1px solid var(--rule-soft);' : ''}padding:8px 0;"><span style="color:var(--ink-faint);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;">Position</span><span>${prospect.position}${prospect.positionGroup !== prospect.position ? ' (' + prospect.positionGroup + ')' : ''}</span></div>`,
     prospect.draftGrade ? [
-      `<div class="flex justify-between border-b border-gray-700/60 py-2"><span class="text-gray-500">NFL Grade</span><span class="flex items-center gap-2">${tierBadge(prospect.draftGrade)}<span class="text-xs text-gray-400">${prospect.draftGrade.score}/100</span></span></div>`,
-      `<div class="flex justify-between py-2"><span class="text-gray-500">Class Rank</span>${classRankBadge(prospect.draftGrade)}</div>`,
+      `<div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--rule-soft);padding:8px 0;align-items:center;"><span style="color:var(--ink-faint);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;">NFL Grade</span><span style="display:flex;align-items:center;gap:8px;">${tierBadge(prospect.draftGrade)}<span style="font-family:var(--font-mono);font-size:11px;color:var(--ink-soft);">${prospect.draftGrade.score}/100</span></span></div>`,
+      `<div style="display:flex;justify-content:space-between;padding:8px 0;align-items:center;"><span style="color:var(--ink-faint);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;">Class Rank</span>${classRankBadge(prospect.draftGrade)}</div>`,
     ].join('') : '',
     `</div></div>`,
     `<div class="tab-content hidden" data-tab="stats" data-card="${prospect.id}">`,
@@ -295,172 +386,127 @@ function renderHistoricalCard(prospect, isExpanded) {
   ].join('')
 }
 
+// ═══ Current-year prospect card ═══════════════════════════════════════════
+
 export function renderProspectCard(prospect, isExpanded = false) {
   if (!prospect.consensusRank && prospect.actualPick !== undefined) {
     return renderHistoricalCard(prospect, isExpanded)
   }
 
-  const { prospects, draftYear, draftHistory } = getState()
+  const { prospects } = getState()
   const statPct = buildCollegeStatPct(prospects)
   const trend = trendArrow(prospect.rankHistory, 30)
   const isStarred = getState().watchlist.includes(prospect.id)
-  const posColor = POSITION_COLORS[prospect.positionGroup] || 'bg-gray-800 text-gray-300'
   const chartId = `chart-${prospect.id}`
-
-  const sourcesList = Object.entries(prospect.rankBySource || {}).map(([src, rank]) => {
-    const label = SOURCE_LABELS[src] || src.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
-    return `<span class="whitespace-nowrap text-gray-400">${label}: <span class="text-gray-200 font-medium">#${rank}</span></span>`
-  }).join('<span class="text-gray-700 mx-1">·</span>')
-
-  const gradeColor = prospect.espnGrade >= 90 ? 'text-green-400' : prospect.espnGrade >= 85 ? 'text-yellow-400' : 'text-gray-400'
-  const rankColor = prospect.consensusRank <= 5 ? 'text-yellow-400'
-    : prospect.consensusRank <= 32 ? 'text-blue-400'
-    : prospect.consensusRank <= 64 ? 'text-green-400'
-    : 'text-gray-400'
+  const { first, last } = splitName(prospect.name)
   const headshotUrl = prospect.espnId
     ? `https://a.espncdn.com/i/headshots/college-football/players/full/${prospect.espnId}.png`
     : null
+  const teamCol = teamColor(prospect)
+  const featured = prospect.consensusRank <= 3 ? ' featured' : ''
 
-  // Height/weight compact display
-  const hw = (() => {
-    const c = prospect.combineData || {}
-    const parts = []
-    if (c.height) {
-      // Normalize: '6-6' → "6'6\"", '6\'4"' → "6'4\""
-      const h = String(c.height).replace(/['"]/g, '').trim()
-      const formatted = h.includes('-') ? h.replace('-', "'") + '"' : h
-      parts.push(formatted)
+  // Pick info line
+  const pickInfoLine = (() => {
+    if (prospect.actualPick) {
+      return `<span>R${prospect.actualRound} · #${prospect.actualPick} overall · <span class="team-filter-btn" data-team="${prospect.actualTeam}" style="cursor:pointer;color:var(--brass);font-weight:700;">${prospect.actualTeam}</span></span>`
     }
-    if (c.weight) parts.push(`${c.weight} lbs`)
-    return parts.length ? parts.join(' · ') : ''
+    const posInfo = `${prospect.positionGroup} #${prospect.positionRank}${prospect.positionTotal ? ` of ${prospect.positionTotal}` : ''}`
+    const rdInfo = `Rd ${prospect.projectedRound || '?'}${prospect.projectedPickRange ? ` · #${prospect.projectedPickRange[0]}–${prospect.projectedPickRange[1]}` : ''}`
+    const teamOnly = prospect.projectedTeam
+      ? ` · <span class="team-filter-btn" data-team="${prospect.projectedTeam}" style="cursor:pointer;color:var(--brass);font-weight:700;">${prospect.projectedTeam.split(' ').pop()}</span>`
+      : ''
+    return `<span>${rdInfo} · ${posInfo}${teamOnly}</span>`
   })()
 
-  // Range bar: show spread across sources
-  const sourceRanks = Object.values(prospect.rankBySource || {})
-  const rangeBar = (() => {
-    if (sourceRanks.length < 2) return ''
-    const minRank = Math.min(...sourceRanks)
-    const maxRank = Math.max(...sourceRanks)
-    const spread = maxRank - minRank
-    const dotPct = spread === 0 ? 50 : Math.round((prospect.consensusRank - minRank) / spread * 100)
-    const spreadColor = spread <= 2 ? '#22c55e' : spread <= 6 ? '#3b82f6' : '#f59e0b'
-    const spreadLabel = spread === 0 ? 'all agree' : spread <= 2 ? 'tight' : spread <= 6 ? 'moderate' : 'wide'
-    return `
-      <div class="mt-2 pt-2 border-t border-gray-700/40">
-        <div class="flex justify-between text-[10px] mb-1">
-          <span class="text-green-500/80">Best: #${minRank}</span>
-          <span style="color:${spreadColor}">${spread === 0 ? '✓ ' : ''}${spreadLabel}${spread > 0 ? ` (${spread})` : ''}</span>
-          <span class="text-amber-500/80">Worst: #${maxRank}</span>
-        </div>
-        <div class="relative h-1 bg-gray-700/60 rounded-full">
-          <div class="absolute top-1/2 w-2.5 h-2.5 rounded-full border-2 border-gray-800"
-               style="left:${dotPct}%;transform:translate(-50%,-50%);background:${spreadColor}"></div>
-        </div>
-      </div>`
-  })()
+  // Trend marker
+  const trendCls = trend.delta > 0 ? '' : trend.delta < 0 ? ' down' : ' flat'
+  const trendNum = trend.delta > 0 ? `+${trend.delta}` : (trend.delta || '0')
+  const trendBlock = `<span class="alm-trend${trendCls}">${trendSvg(trend.delta)} ${trendNum} · 30-day</span>`
 
-  // Big mover badge (>= 7 spots in 30 days)
-  const moverBadge = (() => {
-    if (prospect.actualPick) return ''  // post-draft: replace with drafted badge
-    if (Math.abs(trend.delta) < 7) return ''
-    if (trend.delta > 0) return `<span class="text-[10px] font-bold text-emerald-400 bg-emerald-900/40 px-1.5 py-0.5 rounded-full">🔥 +${trend.delta}</span>`
-    return `<span class="text-[10px] font-bold text-red-400 bg-red-900/40 px-1.5 py-0.5 rounded-full">↘ ${trend.delta}</span>`
-  })()
+  // Big-mover marker (≥7 spots)
+  const moverBadge = (prospect.actualPick || Math.abs(trend.delta) < 7)
+    ? ''
+    : (trend.delta > 0
+        ? `<span class="alm-badge moss">Riser +${trend.delta}</span>`
+        : `<span class="alm-badge ox">Falling ${trend.delta}</span>`)
 
-  // Post-draft badge + actual pick line (replaces projected info once draft happens)
   const draftedBadge = prospect.actualPick
-    ? '<span class="text-[10px] font-bold text-green-400 bg-green-900/40 px-1.5 py-0.5 rounded-full">✓ DRAFTED</span>'
+    ? `<span class="alm-badge moss">✓ Drafted</span>`
     : ''
   const postDraftPickBadge = (prospect.actualPick && prospect.consensusRank)
     ? pickValueBadge(prospect.actualPick - prospect.consensusRank)
     : ''
 
-  const pickInfoLine = (() => {
-    if (prospect.actualPick) {
-      return [
-        '<div>',
-        `Round ${prospect.actualRound}`,
-        ` · <span class="font-bold text-green-400">#${prospect.actualPick} overall</span>`,
-        ` · ${nflTeamLogo(prospect.actualTeam)}<span class="team-filter-btn text-amber-400 font-semibold hover:text-amber-300 cursor-pointer transition-colors ml-0.5" data-team="${prospect.actualTeam}">${prospect.actualTeam}</span>`,
-        '</div>',
-      ].join('')
-    }
-    const posInfo = `#${prospect.positionRank}${prospect.positionTotal ? '<span class="text-gray-600">/' + prospect.positionTotal + '</span>' : ''} ${prospect.positionGroup}`
-    const rdInfo = `Rd ${prospect.projectedRound || '?'}${prospect.projectedPickRange ? ' <span class="text-gray-600">(#' + prospect.projectedPickRange[0] + '–' + prospect.projectedPickRange[1] + ')</span>' : ''}`
-    const teamOnly = prospect.projectedTeam
-      ? ` &nbsp;·&nbsp; <span class="team-filter-btn text-amber-400 font-semibold hover:text-amber-300 cursor-pointer transition-colors" data-team="${prospect.projectedTeam}">${prospect.projectedTeam.split(' ').pop()}</span>`
-      : ''
-    return `<div>${rdInfo} &nbsp;·&nbsp; ${posInfo}${teamOnly}</div>`
-  })()
+  // Sources line
+  const srcLine = Object.entries(prospect.rankBySource || {}).map(([src, rank]) => {
+    const label = SOURCE_LABELS[src] || src.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+    return `<span>${label}: <strong>#${rank}</strong></span>`
+  }).join('')
+
+  const tiles = statTilesCurrent(prospect)
+
+  // ESPN grade — small corner mark when present
+  const espnTag = prospect.espnGrade
+    ? `<span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-faint);">ESPN <strong style="color:var(--brass);font-weight:700;">${prospect.espnGrade}</strong></span>`
+    : ''
 
   return `
-    <div class="prospect-card bg-gray-800 rounded-xl border ${isExpanded ? 'border-blue-600' : 'border-gray-700'} overflow-hidden hover:border-gray-500 transition-colors"
-         data-id="${prospect.id}">
+    <div class="prospect-card${featured} ${isExpanded ? 'border-blue-600' : ''}"
+         style="--team:${teamCol};" data-id="${prospect.id}">
+      <div class="alm-stripe" aria-hidden="true"></div>
 
-      <!-- Card Header -->
-      <div class="card-header cursor-pointer p-4 select-none" data-id="${prospect.id}">
-        <div class="flex items-start justify-between gap-2">
-          <div class="flex-1 min-w-0">
-            <div class="flex items-center gap-2 flex-wrap mb-1">
-              <span class="text-xs font-semibold px-2 py-0.5 rounded-full ${posColor}">${prospect.position}</span>
-              <span class="school-filter-btn text-xs text-gray-400 hover:text-blue-400 transition-colors cursor-pointer truncate"
-                    data-school="${prospect.school}" title="Show all ${prospect.school} prospects">${prospect.school}</span>
-              ${prospect.classYear ? `<span class="text-xs text-gray-600">${prospect.classYear}</span>` : ''}
-              ${draftedBadge}${postDraftPickBadge}${moverBadge}
-            </div>
-            <h2 class="text-base font-bold text-white leading-snug mb-1">${prospect.name}</h2>
-            <div class="flex items-center gap-2 flex-wrap">
-              <div class="flex flex-col items-center mr-1">
-                <span class="text-2xl font-black ${rankColor} leading-none">#${prospect.consensusRank}</span>
-                <span class="text-[9px] text-gray-500 uppercase tracking-wider leading-tight mt-0.5">Rank</span>
-              </div>
-              ${(!prospect.actualPick && prospect.projectedPick) ? `
-              <div class="flex flex-col items-center mr-1">
-                <span class="text-2xl font-black text-gray-400 leading-none">#${prospect.projectedPick}</span>
-                <span class="text-[9px] text-gray-500 uppercase tracking-wider leading-tight mt-0.5">Mock</span>
-              </div>` : ''}
-              <div class="text-xs text-gray-400 leading-snug">
-                ${pickInfoLine}
-                <div class="flex items-center gap-2">
-                  <span class="${trend.cls} font-medium">${trend.arrow}</span>
-                  ${hw ? `<span class="text-gray-600">·</span><span class="text-gray-500">${hw}</span>` : ''}
-                </div>
-              </div>
-              ${prospect.espnGrade ? `
-                <div class="ml-auto flex flex-col items-end">
-                  <div class="text-[10px] text-gray-500 uppercase tracking-wider">ESPN</div>
-                  <div class="text-base font-bold ${gradeColor}">${prospect.espnGrade}</div>
-                </div>` : ''}
-            </div>
-          </div>
-          <div class="flex flex-col items-end gap-2 flex-shrink-0">
-            ${headshotUrl ? `<img src="${headshotUrl}" alt="" loading="lazy"
-              class="w-10 h-10 rounded-full object-cover object-top bg-gray-700 border border-gray-700"
-              onerror="this.style.display='none'">` : ''}
-            <button class="star-btn text-lg leading-none transition-colors ${isStarred ? 'text-yellow-400' : 'text-gray-700 hover:text-gray-400'}" data-id="${prospect.id}" title="${isStarred ? 'Remove from watchlist' : 'Add to watchlist'}">★</button>
-            <button class="share-btn text-gray-600 hover:text-gray-300 transition-colors text-xs p-1" data-id="${prospect.id}" title="Copy link">⎘</button>
-            <div class="text-gray-600 text-xs card-chevron" data-id="${prospect.id}">${isExpanded ? '▲' : '▼'}</div>
-          </div>
+      <div class="card-header" data-id="${prospect.id}">
+        <span class="alm-rank">${padRank(prospect.consensusRank)}</span>
+
+        <div class="alm-side">
+          ${headshotUrl ? `<img src="${headshotUrl}" class="alm-headshot" alt="" loading="lazy" onerror="this.style.display='none'">` : ''}
+          <button class="star-btn" data-id="${prospect.id}" data-on="${isStarred ? '1' : '0'}" title="${isStarred ? 'Remove from watchlist' : 'Add to watchlist'}">★</button>
+          <button class="share-btn" data-id="${prospect.id}" title="Copy link">⎘</button>
+          <span class="card-chevron" data-id="${prospect.id}">${isExpanded ? '▲' : '▼'}</span>
         </div>
-        ${rangeBar}
-        ${sourcesList ? `
-          <div class="mt-2 text-xs flex flex-wrap gap-x-3 gap-y-0.5">
-            ${sourcesList}
-          </div>` : ''}
+
+        <div class="alm-name">
+          ${first ? `<span class="alm-first">${first}</span>` : ''}
+          <span class="alm-last">${last || prospect.name}</span>
+        </div>
+
+        <div class="alm-meta">
+          <span class="alm-pos">${prospect.position}</span>
+          <span class="school-filter-btn" data-school="${prospect.school}" title="Show all ${prospect.school} prospects">${prospect.school}</span>
+          ${prospect.classYear && prospect.classYear !== '-' ? `<span class="sep">·</span><span>${prospect.classYear}</span>` : ''}
+          ${draftedBadge ? `<span style="margin-left:auto;">${draftedBadge}${postDraftPickBadge}</span>` : moverBadge ? `<span style="margin-left:auto;">${moverBadge}</span>` : ''}
+        </div>
+
+        ${renderStatTiles(tiles)}
+
+        <div class="alm-row">
+          ${trendBlock}
+          <span style="display:flex;align-items:center;gap:8px;">
+            <span>Sources</span>
+            ${sourceDots(prospect)}
+            ${espnTag}
+          </span>
+        </div>
+
+        <div class="alm-row">
+          ${pickInfoLine}
+        </div>
+
+        ${srcLine ? `<div class="alm-srcline">${srcLine}</div>` : ''}
+        ${renderSpreadBar(prospect)}
       </div>
 
-      <!-- Expandable Detail -->
-      <div class="card-detail ${isExpanded ? '' : 'hidden'} border-t border-gray-700" data-id="${prospect.id}">
-        <div class="flex border-b border-gray-700 overflow-x-auto">
-          <button class="detail-tab flex-1 px-3 py-2 text-xs font-medium border-b-2 border-blue-500 text-blue-400 whitespace-nowrap" data-tab="ranking" data-card="${prospect.id}">Rankings</button>
-          <button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors whitespace-nowrap" data-tab="stats" data-card="${prospect.id}">Stats</button>
-          <button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors whitespace-nowrap" data-tab="combine" data-card="${prospect.id}">Combine</button>
-          <button class="detail-tab flex-1 px-3 py-2 text-xs font-medium text-gray-400 hover:text-white border-b-2 border-transparent transition-colors whitespace-nowrap" data-tab="news" data-card="${prospect.id}">News</button>
+      <div class="card-detail ${isExpanded ? '' : 'hidden'}" data-id="${prospect.id}">
+        <div class="flex border-b overflow-x-auto" style="border-color:var(--rule-soft);">
+          <button class="detail-tab flex-1 px-3 py-2 border-b-2 border-blue-500" data-tab="ranking" data-card="${prospect.id}">Rankings</button>
+          <button class="detail-tab flex-1 px-3 py-2 border-b-2 border-transparent" data-tab="stats" data-card="${prospect.id}">Stats</button>
+          <button class="detail-tab flex-1 px-3 py-2 border-b-2 border-transparent" data-tab="combine" data-card="${prospect.id}">Combine</button>
+          <button class="detail-tab flex-1 px-3 py-2 border-b-2 border-transparent" data-tab="news" data-card="${prospect.id}">From the Wire</button>
         </div>
         <div class="p-4">
           <div class="tab-content" data-tab="ranking" data-card="${prospect.id}">
             ${renderSourceRankings(prospect)}
-            <div style="height:160px; position:relative;" class="mt-3">
+            <div style="height:160px; position:relative; margin-top:14px;">
               <canvas id="${chartId}"></canvas>
             </div>
           </div>
@@ -478,9 +524,10 @@ export function renderProspectCard(prospect, isExpanded = false) {
     </div>`
 }
 
+// ─── Event wiring (unchanged behavior) ───────────────────────
+
 export function wireCardEvents(container) {
   container.addEventListener('click', e => {
-    // School filter shortcut
     const schoolBtn = e.target.closest('.school-filter-btn')
     if (schoolBtn) {
       e.stopPropagation()
@@ -490,7 +537,6 @@ export function wireCardEvents(container) {
       return
     }
 
-    // Team filter shortcut
     const teamBtn = e.target.closest('.team-filter-btn')
     if (teamBtn) {
       e.stopPropagation()
@@ -500,7 +546,6 @@ export function wireCardEvents(container) {
       return
     }
 
-    // Star / watchlist button
     const starBtn = e.target.closest('.star-btn')
     if (starBtn) {
       e.stopPropagation()
@@ -511,7 +556,6 @@ export function wireCardEvents(container) {
       return
     }
 
-    // Share button
     const shareBtn = e.target.closest('.share-btn')
     if (shareBtn) {
       e.stopPropagation()
@@ -540,17 +584,14 @@ function handleCardToggle(id) {
   const state = getState()
   const wasExpanded = state.expandedCardId === id
 
-  // Destroy chart for previously expanded card
   if (state.expandedCardId) {
     destroyChart(`chart-${state.expandedCardId}`)
   }
 
   if (wasExpanded) {
     setState({ expandedCardId: null })
-    // Visually collapse immediately (DOM is still live)
     collapseCardDOM(id)
   } else {
-    // Collapse previous
     if (state.expandedCardId) collapseCardDOM(state.expandedCardId)
     setState({ expandedCardId: id })
     expandCardDOM(id)
@@ -564,10 +605,9 @@ function expandCardDOM(id) {
   if (!detail) return
 
   detail.classList.remove('hidden')
-  if (card) card.classList.replace('border-gray-700', 'border-blue-600')
+  if (card) card.classList.add('border-blue-600')
   if (chevron) chevron.textContent = '▲'
 
-  // Reset to first available tab (ranking for current-year, draft for historical)
   const rankTab = detail.querySelector('.detail-tab[data-tab="ranking"]')
   const draftTab = detail.querySelector('.detail-tab[data-tab="draft"]')
   const firstTab = rankTab || draftTab
@@ -579,13 +619,11 @@ function expandCardDOM(id) {
     })
   }
 
-  // Init chart (only for current-year prospects with rank history)
   const prospect = findProspectById(id)
   if (prospect && prospect.rankHistory) {
     setTimeout(() => renderRankingChart(`chart-${id}`, prospect.rankHistory), 60)
   }
 
-  // Scroll expanded card into view on mobile (only if partially off-screen)
   if (card) {
     setTimeout(() => {
       const rect = card.getBoundingClientRect()
@@ -602,10 +640,7 @@ function collapseCardDOM(id) {
   const chevron = document.querySelector(`.card-chevron[data-id="${id}"]`)
   if (!detail) return
   detail.classList.add('hidden')
-  if (card) {
-    card.classList.remove('border-blue-600')
-    card.classList.add('border-gray-700')
-  }
+  if (card) card.classList.remove('border-blue-600')
   if (chevron) chevron.textContent = '▼'
 }
 
