@@ -11731,9 +11731,6 @@
         "2024": 16,
         "2025": 2
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 51.1,
@@ -31885,8 +31882,8 @@
         "participated": true
       },
       "espnRank": 0,
-      "espnGrade": 0.0,
-      "espnId": "9379",
+      "espnGrade": 34.0,
+      "espnId": "9380",
       "nflStats": {
         "2006": {
           "games": 1,
@@ -103385,9 +103382,6 @@
           "qb_hits": 20
         }
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 96.5,
@@ -122919,8 +122913,7 @@
       },
       "accolades": {
         "allpro1": 2,
-        "allpro2": 1,
-        "probowl": 1
+        "allpro2": 1
       },
       "draftGrade": {
         "tier": "Elite",
@@ -125282,9 +125275,6 @@
           "sacks": 33,
           "team": "PIT"
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -136569,9 +136559,6 @@
         "2024": 14,
         "2025": 8
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 96.8,
@@ -142010,7 +141997,7 @@
       },
       "accolades": {
         "allpro1": 1,
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Elite",
@@ -147219,7 +147206,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Backup",
@@ -151663,10 +151650,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 98.0,
         "classRank": 29,
         "classSize": 194,
@@ -155401,8 +155388,7 @@
       },
       "accolades": {
         "dpoy": true,
-        "allpro1": 2,
-        "probowl": 1
+        "allpro1": 2
       },
       "draftGrade": {
         "tier": "Elite",
@@ -155625,8 +155611,7 @@
         }
       },
       "accolades": {
-        "allpro2": 1,
-        "probowl": 1
+        "allpro2": 1
       },
       "draftGrade": {
         "tier": "Elite",
@@ -158185,9 +158170,6 @@
         "2024": 17,
         "2025": 17
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 98.9,
@@ -158769,9 +158751,6 @@
           "interceptions": 0,
           "pass_defended": 2
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -173420,10 +173399,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 90.0,
         "classRank": 26,
         "classSize": 182,
@@ -180375,9 +180354,6 @@
           "tackles_for_loss": 17,
           "qb_hits": 23
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -190883,10 +190859,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 91.5,
         "classRank": 1,
         "classSize": 195,
@@ -191146,9 +191122,6 @@
           "tackles_for_loss": 5,
           "qb_hits": 13
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -191461,9 +191434,6 @@
         "2023": 12,
         "2024": 17,
         "2025": 14
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -192049,9 +192019,6 @@
         "2024": 17,
         "2025": 12
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 91.1,
@@ -192278,9 +192245,6 @@
         "2023": 15,
         "2024": 14,
         "2025": 14
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -194033,10 +193997,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 98.0,
         "classRank": 25,
         "classSize": 195,
@@ -194843,9 +194807,6 @@
           "receiving_tds": 2,
           "team": "BAL"
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -197362,10 +197323,10 @@
         "2025": 17
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 98.7,
         "classRank": 38,
         "classSize": 195,
@@ -197421,9 +197382,6 @@
         "2023": 16,
         "2024": 13,
         "2025": 14
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -200039,9 +199997,6 @@
           "interceptions": 0,
           "pass_defended": 0
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Bust",
@@ -202689,9 +202644,6 @@
         "2018": 16,
         "2019": 16,
         "2025": 16
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -209448,10 +209400,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 98.2,
         "classRank": 31,
         "classSize": 185,
@@ -211305,9 +211257,6 @@
           "pass_defended": 15
         }
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 93.4,
@@ -212930,7 +212879,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -214138,9 +214087,6 @@
           "receiving_tds": 1,
           "team": "HOU"
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -215419,10 +215365,10 @@
         "2025": 15
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 94.1,
         "classRank": 49,
         "classSize": 185,
@@ -218628,9 +218574,6 @@
           "team": "MIA"
         }
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 84.0,
@@ -218826,9 +218769,6 @@
           "tackles_for_loss": 19,
           "qb_hits": 36
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -222438,10 +222378,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 96.8,
         "classRank": 12,
         "classSize": 185,
@@ -229290,9 +229230,6 @@
           "team": "TB"
         }
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 85.5,
@@ -229430,8 +229367,7 @@
         }
       },
       "accolades": {
-        "oroy": true,
-        "probowl": 1
+        "oroy": true
       },
       "draftGrade": {
         "tier": "Starter",
@@ -229579,7 +229515,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -229674,10 +229610,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 92.5,
         "classRank": 46,
         "classSize": 200,
@@ -229829,10 +229765,10 @@
         "2025": 17
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 87.4,
         "classRank": 62,
         "classSize": 200,
@@ -229985,10 +229921,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 86.3,
         "classRank": 1,
         "classSize": 200,
@@ -230094,10 +230030,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 90.2,
         "classRank": 41,
         "classSize": 200,
@@ -230341,9 +230277,6 @@
           "pass_defended": 4
         }
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 89.4,
@@ -230442,9 +230375,6 @@
           "tackles_for_loss": 10,
           "qb_hits": 13
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -230874,7 +230804,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -231111,9 +231041,6 @@
         "2022": 16,
         "2023": 14,
         "2024": 16
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -232317,8 +232244,7 @@
       },
       "accolades": {
         "mvp": true,
-        "cpoy": true,
-        "probowl": 1
+        "cpoy": true
       },
       "draftGrade": {
         "tier": "Starter",
@@ -234839,9 +234765,6 @@
         "2024": 17,
         "2025": 13
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 89.5,
@@ -235524,9 +235447,6 @@
           "tackles_for_loss": 5,
           "qb_hits": 2
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -240838,7 +240758,7 @@
       },
       "espnRank": 300,
       "espnGrade": 35.0,
-      "espnId": "102794",
+      "espnId": "101899",
       "nflStats": {
         "2018": {
           "games": 12,
@@ -247293,9 +247213,6 @@
           "pass_defended": 6
         }
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 70.0,
@@ -248000,9 +247917,6 @@
       "actualPick": 247,
       "actualTeam": "JAX",
       "combineData": null,
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Bust",
         "score": 0.0,
@@ -248796,8 +248710,7 @@
         }
       },
       "accolades": {
-        "droy": true,
-        "probowl": 1
+        "droy": true
       },
       "draftGrade": {
         "tier": "Starter",
@@ -248892,10 +248805,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 95.1,
         "classRank": 35,
         "classSize": 183,
@@ -249755,9 +249668,6 @@
           "pass_defended": 1
         }
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 75.9,
@@ -249909,10 +249819,10 @@
         "2025": 17
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 81.7,
         "classRank": 53,
         "classSize": 183,
@@ -250188,9 +250098,6 @@
           "qb_hits": 16
         }
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 90.2,
@@ -250342,10 +250249,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 90.9,
         "classRank": 40,
         "classSize": 183,
@@ -250759,9 +250666,6 @@
           "receiving_tds": 1,
           "team": "GB"
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -251541,9 +251445,6 @@
           "interceptions": 0,
           "pass_defended": 0
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -252651,9 +252552,6 @@
         "2023": 17,
         "2024": 5,
         "2025": 7
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -255251,9 +255149,6 @@
           "team": "WAS"
         }
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 87.3,
@@ -256377,9 +256272,6 @@
         "2018": 16,
         "2019": 16,
         "2025": 16
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -257583,10 +257475,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 91.4,
         "classRank": 28,
         "classSize": 183,
@@ -260836,9 +260728,6 @@
           "interceptions": 2,
           "pass_defended": 6
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -267469,7 +267358,7 @@
       },
       "accolades": {
         "cpoy": true,
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -268392,10 +268281,10 @@
         "2025": 12
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 78.5,
         "classRank": 45,
         "classSize": 201,
@@ -268588,9 +268477,6 @@
           "team": "CLE"
         }
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 77.7,
@@ -268761,10 +268647,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 88.1,
         "classRank": 8,
         "classSize": 201,
@@ -269173,8 +269059,7 @@
         }
       },
       "accolades": {
-        "opoy": true,
-        "probowl": 1
+        "opoy": true
       },
       "draftGrade": {
         "tier": "Elite",
@@ -269723,9 +269608,6 @@
           "interceptions": 0,
           "pass_defended": 7
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -270422,9 +270304,6 @@
           "pass_defended": 11
         }
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 82.6,
@@ -270632,9 +270511,6 @@
         "2024": 16,
         "2025": 2
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 51.1,
@@ -270828,10 +270704,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 88.9,
         "classRank": 7,
         "classSize": 201,
@@ -271579,9 +271455,6 @@
           "interceptions": 2,
           "pass_defended": 8
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -273405,9 +273278,6 @@
           "qb_hits": 17
         }
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 87.6,
@@ -273658,7 +273528,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Backup",
@@ -274904,9 +274774,6 @@
           "tackles_for_loss": 18,
           "qb_hits": 22
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -286192,10 +286059,10 @@
       "accolades": {
         "oroy": true,
         "opoy": true,
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 85.1,
         "classRank": 6,
         "classSize": 189,
@@ -286336,10 +286203,10 @@
         "2025": 16
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 73.4,
         "classRank": 38,
         "classSize": 189,
@@ -286419,7 +286286,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Backup",
@@ -286502,7 +286369,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -286785,10 +286652,10 @@
       },
       "accolades": {
         "droy": true,
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 88.3,
         "classRank": 27,
         "classSize": 189,
@@ -286832,9 +286699,6 @@
         "2022": 3,
         "2023": 17,
         "2024": 15
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -288622,9 +288486,6 @@
         "2024": 15,
         "2025": 14
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 67.2,
@@ -290318,10 +290179,10 @@
         "2025": 17
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 74.2,
         "classRank": 37,
         "classSize": 189,
@@ -292247,7 +292108,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -293834,10 +293695,10 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
-        "tier": "Elite",
+        "tier": "Starter",
         "score": 81.7,
         "classRank": 8,
         "classSize": 189,
@@ -301259,7 +301120,7 @@
         "2025": 10
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -303370,7 +303231,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -304114,7 +303975,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Backup",
@@ -304796,7 +304657,7 @@
         "2025": 16
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -304845,7 +304706,7 @@
         "2025": 17
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -306607,7 +306468,7 @@
         "2025": 13
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -306939,7 +306800,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -307468,7 +307329,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -307548,7 +307409,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -320059,7 +319920,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Bust",
@@ -320257,7 +320118,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -320330,7 +320191,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -320502,7 +320363,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Starter",
@@ -321038,7 +320899,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Backup",
@@ -321187,7 +321048,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       },
       "draftGrade": {
         "tier": "Backup",
@@ -322682,9 +322543,6 @@
           "pass_defended": 16
         }
       },
-      "accolades": {
-        "probowl": 1
-      },
       "draftGrade": {
         "tier": "Starter",
         "score": 60.2,
@@ -323785,9 +323643,6 @@
           "rushing_yards": 42,
           "team": "DEN"
         }
-      },
-      "accolades": {
-        "probowl": 1
       },
       "draftGrade": {
         "tier": "Bust",
@@ -334855,8 +334710,7 @@
         }
       },
       "accolades": {
-        "oroy": true,
-        "probowl": 1
+        "oroy": true
       }
     },
     {
@@ -334924,7 +334778,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       }
     },
     {
@@ -335088,9 +334942,6 @@
           "rushing_yards": 2,
           "team": "NYG"
         }
-      },
-      "accolades": {
-        "probowl": 1
       }
     },
     {
@@ -335438,7 +335289,7 @@
         }
       },
       "accolades": {
-        "probowl": 2
+        "probowl": 1
       }
     },
     {
@@ -335561,9 +335412,6 @@
           "tackles_for_loss": 2,
           "qb_hits": 1
         }
-      },
-      "accolades": {
-        "probowl": 1
       }
     },
     {
@@ -335716,7 +335564,7 @@
       },
       "accolades": {
         "droy": true,
-        "probowl": 2
+        "probowl": 1
       }
     },
     {
@@ -335888,9 +335736,6 @@
           "rushing_yards": 48,
           "team": "JAX"
         }
-      },
-      "accolades": {
-        "probowl": 1
       }
     },
     {
@@ -337571,9 +337416,6 @@
           "interceptions": 0,
           "pass_defended": 0
         }
-      },
-      "accolades": {
-        "probowl": 1
       }
     },
     {
@@ -362285,8 +362127,7 @@
         }
       },
       "accolades": {
-        "opoy": true,
-        "probowl": 1
+        "opoy": true
       },
       "draftGrade": {
         "tier": "Bust",
