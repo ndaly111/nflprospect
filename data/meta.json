@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-23T07:07:01Z",
-  "prospectCount": 659,
+  "lastUpdated": "2026-06-24T07:04:18Z",
+  "prospectCount": 660,
   "draftYear": 2027,
   "sources": {
     "walter_football": {
@@ -9,7 +9,7 @@
     },
     "tankathon": {
       "status": "ok",
-      "count": 94
+      "count": 95
     },
     "espn": {
       "status": "ok",
