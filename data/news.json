@@ -1,19 +1,99 @@
 [
   {
+    "headline": "2026 fantasy football draft rankings: PPR leagues",
+    "url": "https://www.espn.com/fantasy/football/story/_/page/FFPreseasonRank26main/fantasy-football-rankings-2026-draft-ppr",
+    "published": "2026-07-16T13:19:54Z",
+    "image": "https://a.espncdn.com/photo/2026/0421/fan_composite-rankings_16x9.jpg",
+    "source": "ESPN",
+    "description": "Fantasy football rankings for the upcoming season, for PPR leagues, as well as IDP and dynasty setups."
+  },
+  {
+    "headline": "Eric Karabell's 2026 fantasy football flex and superflex rankings",
+    "url": "https://www.espn.com/fantasy/football/story/_/id/47539664/2026-fantasy-football-rankings-flex-superflex-ppr-eric-karabell",
+    "published": "2026-07-16T13:19:00Z",
+    "image": "https://a.espncdn.com/photo/2025/1218/r1591212_1296x729_16-9.jpg",
+    "source": "ESPN",
+    "description": "A look at the top 200 QBs, RBs, WRs and TEs for 2026 drafts, updated throughout the fantasy football offseason."
+  },
+  {
+    "headline": "Fantasy football draft rankings 2026: Kicker",
+    "url": "https://www.espn.com/fantasy/football/story/_/page/FFPreseasonRank26K/nfl-fantasy-football-draft-rankings-2026-k-kicker",
+    "published": "2026-07-16T13:17:11Z",
+    "image": "https://a.espncdn.com/photo/2025/1206/r1585509_1296x729_16-9.jpg",
+    "source": "ESPN",
+    "description": "Fantasy football draft rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates."
+  },
+  {
+    "headline": "Fantasy football draft rankings 2026: Defense/special teams",
+    "url": "https://www.espn.com/fantasy/football/story/_/page/FFPreseasonRank26DST/nfl-fantasy-football-draft-rankings-2026-dst-defense",
+    "published": "2026-07-16T13:16:37Z",
+    "image": "https://a.espncdn.com/photo/2025/0925/r1551036_1296x729_16-9.jpg",
+    "source": "ESPN",
+    "description": "Fantasy football draft rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates."
+  },
+  {
+    "headline": "Fantasy football draft rankings 2026: Tight end",
+    "url": "https://www.espn.com/fantasy/football/story/_/page/FFPreseasonRank26TE/nfl-fantasy-football-draft-rankings-2026-te-tight-end",
+    "published": "2026-07-16T13:16:11Z",
+    "image": "https://a.espncdn.com/photo/2025/1005/r1555816_1296x729_16-9.jpg",
+    "source": "ESPN",
+    "description": "Fantasy football draft rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates."
+  },
+  {
+    "headline": "Fantasy football draft rankings 2026: Individual defensive players",
+    "url": "https://www.espn.com/fantasy/football/story/_/page/FFPreseasonRank26IDP/nfl-fantasy-football-draft-rankings-2026-idp",
+    "published": "2026-07-16T13:16:56Z",
+    "image": "https://a.espncdn.com/photo/2026/0427/r1650074_1296x729_16-9.jpg",
+    "source": "ESPN",
+    "description": "Fantasy football draft rankings from Mike Clay, Tristan H. Cockcroft and Eric Moody."
+  },
+  {
+    "headline": "Fantasy football draft rankings 2026: Wide receiver",
+    "url": "https://www.espn.com/fantasy/football/story/_/page/FFPreseasonRank26WR/nfl-fantasy-football-draft-rankings-2026-wr-wide-receiver",
+    "published": "2026-07-16T13:15:51Z",
+    "image": "https://a.espncdn.com/photo/2025/1017/r1561488_1296x729_16-9.jpg",
+    "source": "ESPN",
+    "description": "Fantasy football draft rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates."
+  },
+  {
+    "headline": "Fantasy football draft rankings 2026: Quarterback",
+    "url": "https://www.espn.com/fantasy/football/story/_/page/FFPreseasonRank26QB/nfl-fantasy-football-draft-rankings-2026-qb-quarterback",
+    "published": "2026-07-16T13:15:18Z",
+    "image": "https://a.espncdn.com/photo/2026/0105/r1596890_1296x729_16-9.jpg",
+    "source": "ESPN",
+    "description": "Fantasy football draft rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates."
+  },
+  {
+    "headline": "Fantasy football draft rankings 2026: Running back",
+    "url": "https://www.espn.com/fantasy/football/story/_/page/FFPreseasonRank26RB/nfl-fantasy-football-draft-rankings-2026-rb-running-back",
+    "published": "2026-07-16T13:15:34Z",
+    "image": "https://a.espncdn.com/photo/2025/1130/r1583040_1296x729_16-9.jpg",
+    "source": "ESPN",
+    "description": "Fantasy football draft rankings from Matt Bowen, Mike Clay, Tristan H. Cockcroft, Daniel Dopp, Eric Karabell, Liz Loza, Eric Moody and Field Yates."
+  },
+  {
+    "headline": "2026 Fantasy Football Draft Guide: Rankings, mock drafts and analysis",
+    "url": "https://www.espn.com/fantasy/football/story/_/page/FFDraftGuide26-48677635/2026-fantasy-football-rankings-mock-draft-cheat-sheets-sleepers",
+    "published": "2026-07-16T10:21:46Z",
+    "image": "https://a.espncdn.com/photo/2026/0615/fan_football_draft_guide_cr_16x9.jpg",
+    "source": "ESPN",
+    "description": "Your one-stop shop as you prep for draft season, including rankings, projections and analysis."
+  },
+  {
+    "headline": "Fantasy football: Why you should wait to draft a QB ... and then take two of them",
+    "url": "https://www.espn.com/fantasy/football/story/_/id/49366921/fantasy-football-draft-strategy-qb-pairings",
+    "published": "2026-07-16T10:19:01Z",
+    "image": "https://a.espncdn.com/photo/2026/0715/r1689589_1296x729_16-9.jpg",
+    "source": "ESPN",
+    "description": "Providing a blueprint for waiting at QB until the later rounds, including perfect pairings to target."
+  },
+  {
     "headline": "Fantasy football buzz: Why Stefon Diggs is a value right now",
     "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
     "published": "2026-07-15T16:39:34Z",
     "image": "https://a.espncdn.com/photo/2026/0715/r1689536_1296x729_16-9.jpg",
     "source": "ESPN",
     "description": "Eric Karabell explains why Stefon Diggs is well worth a late pick if your league is drafting soon."
-  },
-  {
-    "headline": "2026 fantasy football draft rankings: PPR leagues",
-    "url": "https://www.espn.com/fantasy/football/story/_/page/FFPreseasonRank26main/fantasy-football-rankings-2026-draft-ppr",
-    "published": "2026-07-15T15:40:09Z",
-    "image": "https://a.espncdn.com/photo/2026/0421/fan_composite-rankings_16x9.jpg",
-    "source": "ESPN",
-    "description": "Fantasy football rankings for the upcoming season, for PPR leagues, as well as IDP and dynasty setups."
   },
   {
     "headline": "You can have 'em: Six big-name players I'll be passing on in drafts",
@@ -24,43 +104,11 @@
     "description": "Joe Burrow? De'Von Achane? Liz Loza lists some bigger names that she's not overly keen on drafting this season."
   },
   {
-    "headline": "2026 Fantasy Football Draft Guide: Rankings, mock drafts and analysis",
-    "url": "https://www.espn.com/fantasy/football/story/_/page/FFDraftGuide26-48677635/2026-fantasy-football-rankings-mock-draft-cheat-sheets-sleepers",
-    "published": "2026-07-15T10:41:04Z",
-    "image": "https://a.espncdn.com/photo/2026/0615/fan_football_draft_guide_cr_16x9.jpg",
-    "source": "ESPN",
-    "description": "Your one-stop shop as you prep for draft season, including rankings, projections and analysis."
-  },
-  {
     "headline": "Fantasy football mock draft: How 12 teams can shift your quarterback and tight end philosophy",
     "url": "https://www.espn.com/fantasy/football/story/_/page/FFMockDraft26-49352688/fantasy-football-mock-draft-12-team-ppr",
     "published": "2026-07-13T22:30:13Z",
     "image": "https://a.espncdn.com/photo/2026/0713/r1688824_1296x729_16-9.jpg",
     "source": "ESPN",
     "description": "A 12-team mock draft shows how two additional teams can impact positional depth at the QB and TE positions."
-  },
-  {
-    "headline": "Execs, coaches, scouts rank top NFL quarterbacks for 2026",
-    "url": "https://www.espn.com/nfl/story/_/id/49315416/ranking-nfl-top-10-quarterbacks-2026-execs-coaches-scouts",
-    "published": "2026-07-15T13:36:11Z",
-    "image": "https://a.espncdn.com/photo/2026/0709/260706_nfl_fowlers-top-10-qb_16x9.jpg",
-    "source": "ESPN",
-    "description": "Who are the elite QBs in the NFL right now? Which passer ranks No. 1? And where do multiple top names from the 2024 draft class land on our top-10 list?"
-  },
-  {
-    "headline": "Will Vikings start Caleb Banks, other rookies on defense?",
-    "url": "https://www.espn.com/nfl/story/_/id/49313454/nfl-minnesota-vikings-caleb-banks-jake-golday-domonique-orange",
-    "published": "2026-07-13T10:00:13Z",
-    "image": "https://a.espncdn.com/photo/2026/0709/r1686774_608x342_16-9.jpg",
-    "source": "ESPN",
-    "description": "Minnesota selected four defensive players in the top 100 picks of the 2026 NFL draft, but who is ready now?"
-  },
-  {
-    "headline": "How high should Cam Skattebo be drafted?",
-    "url": "https://www.espn.com/video/clip/_/id/49329484/how-high-cam-skattebo-drafted",
-    "published": "2026-07-11T00:27:49Z",
-    "image": "https://a.espncdn.com/media/motion/2026/0710/dm_260710_How_high_should_Cam_Skattebo_be_drafted/dm_260710_How_high_should_Cam_Skattebo_be_drafted.jpg",
-    "source": "ESPN",
-    "description": "How high should Cam Skattebo be drafted?"
   }
 ]
