@@ -31913,8 +31913,8 @@
         "participated": true
       },
       "espnRank": 0,
-      "espnGrade": 34.0,
-      "espnId": "9380",
+      "espnGrade": 0.0,
+      "espnId": "9379",
       "nflStats": {
         "2006": {
           "games": 1,
@@ -240875,7 +240875,7 @@
       },
       "espnRank": 300,
       "espnGrade": 35.0,
-      "espnId": "101899",
+      "espnId": "102794",
       "nflStats": {
         "2018": {
           "games": 12,
