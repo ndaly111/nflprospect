@@ -2,34 +2,34 @@
   "year": 2026,
   "predraftSourceCount": 565,
   "totalPicks": 257,
-  "matchedPicks": 253,
+  "matchedPicks": 245,
   "stats": {
-    "matchedPairs": 253,
+    "matchedPairs": 245,
     "exactMatches": 5,
-    "within5": 34,
-    "within10": 64,
-    "meanAbsRankDelta": 51.35,
-    "meanAbsValueDelta": 88.84,
+    "within5": 33,
+    "within10": 60,
+    "meanAbsRankDelta": 52.03,
+    "meanAbsValueDelta": 86.89,
     "perSource": {
       "walter_football": {
-        "sample": 15,
-        "meanAbsRankDelta": 3.67,
-        "meanAbsValueDelta": 196.67
+        "sample": 14,
+        "meanAbsRankDelta": 3.5,
+        "meanAbsValueDelta": 189.29
       },
       "espn": {
-        "sample": 252,
-        "meanAbsRankDelta": 50.5,
-        "meanAbsValueDelta": 107.38
+        "sample": 244,
+        "meanAbsRankDelta": 50.91,
+        "meanAbsValueDelta": 106.45
       },
       "cbs_sports": {
-        "sample": 230,
-        "meanAbsRankDelta": 55.93,
-        "meanAbsValueDelta": 129.35
+        "sample": 222,
+        "meanAbsRankDelta": 56.5,
+        "meanAbsValueDelta": 122.45
       },
       "tankathon": {
-        "sample": 178,
-        "meanAbsRankDelta": 30.61,
-        "meanAbsValueDelta": 127.69
+        "sample": 170,
+        "meanAbsRankDelta": 30.65,
+        "meanAbsValueDelta": 127.63
       }
     }
   },
@@ -339,26 +339,21 @@
       "matched": true
     },
     {
-      "name": "Rueben Bain Jr.",
+      "name": "Rueben Bain",
       "position": "DE",
       "positionGroup": "EDGE",
-      "school": "Miami",
-      "consensusRank": 7,
-      "rankBySource": {
-        "walter_football": 9,
-        "espn": 9,
-        "cbs_sports": 2,
-        "tankathon": 8
-      },
+      "school": "Miami (FL)",
+      "consensusRank": null,
+      "rankBySource": {},
       "actualPick": 15,
       "actualRound": 1,
       "actualTeam": "TAM",
-      "rankDelta": 8,
-      "consensusValue": 1500.0,
+      "rankDelta": null,
+      "consensusValue": 0.0,
       "actualValue": 1050.0,
-      "valueDelta": -450.0,
-      "category": "fell",
-      "matched": true
+      "valueDelta": 1050.0,
+      "category": "surprise",
+      "matched": false
     },
     {
       "name": "Kenyon Sadiq",
@@ -656,25 +651,21 @@
       "matched": true
     },
     {
-      "name": "Omar Cooper Jr.",
+      "name": "Omar Cooper",
       "position": "WR",
       "positionGroup": "WR",
       "school": "Indiana",
-      "consensusRank": 20,
-      "rankBySource": {
-        "espn": 24,
-        "cbs_sports": 21,
-        "tankathon": 22
-      },
+      "consensusRank": null,
+      "rankBySource": {},
       "actualPick": 30,
       "actualRound": 1,
       "actualTeam": "NYJ",
-      "rankDelta": 10,
-      "consensusValue": 850.0,
+      "rankDelta": null,
+      "consensusValue": 0.0,
       "actualValue": 620.0,
-      "valueDelta": -230.0,
-      "category": "fell",
-      "matched": true
+      "valueDelta": 620.0,
+      "category": "surprise",
+      "matched": false
     },
     {
       "name": "Keldric Faulk",
@@ -1282,25 +1273,21 @@
       "matched": true
     },
     {
-      "name": "Anthony Hill Jr.",
+      "name": "Anthony Hill",
       "position": "LB",
       "positionGroup": "LB",
       "school": "Texas",
-      "consensusRank": 42,
-      "rankBySource": {
-        "espn": 35,
-        "cbs_sports": 57,
-        "tankathon": 47
-      },
+      "consensusRank": null,
+      "rankBySource": {},
       "actualPick": 60,
       "actualRound": 2,
       "actualTeam": "TEN",
-      "rankDelta": 18,
-      "consensusValue": 480.0,
+      "rankDelta": null,
+      "consensusValue": 0.0,
       "actualValue": 300.0,
-      "valueDelta": -180.0,
-      "category": "fell",
-      "matched": true
+      "valueDelta": 300.0,
+      "category": "surprise",
+      "matched": false
     },
     {
       "name": "Max Klare",
@@ -1928,25 +1915,21 @@
       "matched": true
     },
     {
-      "name": "Trey Zuhn III",
-      "position": "C",
+      "name": "Trey Zuhn",
+      "position": "OT",
       "positionGroup": "OL",
       "school": "Texas A&M",
-      "consensusRank": 88,
-      "rankBySource": {
-        "espn": 106,
-        "cbs_sports": 49,
-        "tankathon": 129
-      },
+      "consensusRank": null,
+      "rankBySource": {},
       "actualPick": 91,
       "actualRound": 3,
       "actualTeam": "LVR",
-      "rankDelta": 3,
-      "consensusValue": 176.0,
+      "rankDelta": null,
+      "consensusValue": 0.0,
       "actualValue": 167.0,
-      "valueDelta": -9.0,
-      "category": "fell",
-      "matched": true
+      "valueDelta": 167.0,
+      "category": "surprise",
+      "matched": false
     },
     {
       "name": "Jaishawn Barham",
@@ -2721,25 +2704,21 @@
       "matched": true
     },
     {
-      "name": "Will Lee III",
+      "name": "Will Lee",
       "position": "CB",
       "positionGroup": "DB",
       "school": "Texas A&M",
-      "consensusRank": 121,
-      "rankBySource": {
-        "espn": 105,
-        "cbs_sports": 163,
-        "tankathon": 114
-      },
+      "consensusRank": null,
+      "rankBySource": {},
       "actualPick": 129,
       "actualRound": 4,
       "actualTeam": "CAR",
-      "rankDelta": 8,
-      "consensusValue": 88.0,
+      "rankDelta": null,
+      "consensusValue": 0.0,
       "actualValue": 72.0,
-      "valueDelta": -16.0,
-      "category": "fell",
-      "matched": true
+      "valueDelta": 72.0,
+      "category": "surprise",
+      "matched": false
     },
     {
       "name": "Trey Moore",
@@ -3298,25 +3277,21 @@
       "matched": true
     },
     {
-      "name": "Keith Abney II",
+      "name": "Keith Abney",
       "position": "CB",
       "positionGroup": "DB",
       "school": "Arizona St.",
-      "consensusRank": 61,
-      "rankBySource": {
-        "espn": 75,
-        "cbs_sports": 44,
-        "tankathon": 63
-      },
+      "consensusRank": null,
+      "rankBySource": {},
       "actualPick": 157,
       "actualRound": 5,
       "actualTeam": "DET",
-      "rankDelta": 96,
-      "consensusValue": 292.0,
+      "rankDelta": null,
+      "consensusValue": 0.0,
       "actualValue": 36.5,
-      "valueDelta": -255.5,
-      "category": "fell",
-      "matched": true
+      "valueDelta": 36.5,
+      "category": "surprise",
+      "matched": false
     },
     {
       "name": "Michael Taaffe",
@@ -3710,25 +3685,21 @@
       "matched": true
     },
     {
-      "name": "Kevin Coleman Jr.",
+      "name": "Kevin Coleman",
       "position": "WR",
       "positionGroup": "WR",
       "school": "Missouri",
-      "consensusRank": 142,
-      "rankBySource": {
-        "espn": 138,
-        "cbs_sports": 109,
-        "tankathon": 176
-      },
+      "consensusRank": null,
+      "rankBySource": {},
       "actualPick": 177,
       "actualRound": 5,
       "actualTeam": "MIA",
-      "rankDelta": 35,
-      "consensusValue": 48.0,
+      "rankDelta": null,
+      "consensusValue": 0.0,
       "actualValue": 27.8,
-      "valueDelta": -20.2,
-      "category": "fell",
-      "matched": true
+      "valueDelta": 27.8,
+      "category": "surprise",
+      "matched": false
     },
     {
       "name": "Cole Payton",
@@ -4475,25 +4446,21 @@
       "matched": true
     },
     {
-      "name": "Harold Perkins Jr.",
+      "name": "Harold Perkins",
       "position": "LB",
       "positionGroup": "LB",
       "school": "LSU",
-      "consensusRank": 150,
-      "rankBySource": {
-        "espn": 107,
-        "cbs_sports": 176,
-        "tankathon": 153
-      },
+      "consensusRank": null,
+      "rankBySource": {},
       "actualPick": 215,
       "actualRound": 6,
       "actualTeam": "ATL",
-      "rankDelta": 65,
-      "consensusValue": 40.0,
+      "rankDelta": null,
+      "consensusValue": 0.0,
       "actualValue": 12.6,
-      "valueDelta": -27.4,
-      "category": "fell",
-      "matched": true
+      "valueDelta": 12.6,
+      "category": "surprise",
+      "matched": false
     },
     {
       "name": "Trey Smack",
@@ -5332,6 +5299,28 @@
       "matched": true
     },
     {
+      "name": "Rueben Bain Jr.",
+      "position": "DE",
+      "positionGroup": "EDGE",
+      "school": "Miami",
+      "consensusRank": 7,
+      "rankBySource": {
+        "walter_football": 9,
+        "espn": 9,
+        "cbs_sports": 2,
+        "tankathon": 8
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 1500.0,
+      "actualValue": 0.0,
+      "valueDelta": -1500.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
       "name": "Vega Ioane",
       "position": "G",
       "positionGroup": "OL",
@@ -5352,6 +5341,90 @@
       "matched": true
     },
     {
+      "name": "Omar Cooper Jr.",
+      "position": "WR",
+      "positionGroup": "WR",
+      "school": "Indiana",
+      "consensusRank": 20,
+      "rankBySource": {
+        "espn": 24,
+        "cbs_sports": 21,
+        "tankathon": 22
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 850.0,
+      "actualValue": 0.0,
+      "valueDelta": -850.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
+      "name": "Anthony Hill Jr.",
+      "position": "LB",
+      "positionGroup": "LB",
+      "school": "Texas",
+      "consensusRank": 42,
+      "rankBySource": {
+        "espn": 35,
+        "cbs_sports": 57,
+        "tankathon": 47
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 480.0,
+      "actualValue": 0.0,
+      "valueDelta": -480.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
+      "name": "Keith Abney II",
+      "position": "CB",
+      "positionGroup": "DB",
+      "school": "Arizona St.",
+      "consensusRank": 61,
+      "rankBySource": {
+        "espn": 75,
+        "cbs_sports": 44,
+        "tankathon": 63
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 292.0,
+      "actualValue": 0.0,
+      "valueDelta": -292.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
+      "name": "Trey Zuhn III",
+      "position": "C",
+      "positionGroup": "OL",
+      "school": "Texas A&M",
+      "consensusRank": 88,
+      "rankBySource": {
+        "espn": 106,
+        "cbs_sports": 49,
+        "tankathon": 129
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 176.0,
+      "actualValue": 0.0,
+      "valueDelta": -176.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
       "name": "Jayden Loving",
       "position": "DL",
       "positionGroup": "DL",
@@ -5367,6 +5440,27 @@
       "consensusValue": 161.0,
       "actualValue": 0.0,
       "valueDelta": -161.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
+      "name": "Will Lee III",
+      "position": "CB",
+      "positionGroup": "DB",
+      "school": "Texas A&M",
+      "consensusRank": 121,
+      "rankBySource": {
+        "espn": 105,
+        "cbs_sports": 163,
+        "tankathon": 114
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 88.0,
+      "actualValue": 0.0,
+      "valueDelta": -88.0,
       "category": "undrafted",
       "matched": true
     },
@@ -5451,6 +5545,27 @@
       "matched": true
     },
     {
+      "name": "Kevin Coleman Jr.",
+      "position": "WR",
+      "positionGroup": "WR",
+      "school": "Missouri",
+      "consensusRank": 142,
+      "rankBySource": {
+        "espn": 138,
+        "cbs_sports": 109,
+        "tankathon": 176
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 48.0,
+      "actualValue": 0.0,
+      "valueDelta": -48.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
       "name": "Le'Veon Moss",
       "position": "RB",
       "positionGroup": "RB",
@@ -5487,6 +5602,27 @@
       "consensusValue": 42.0,
       "actualValue": 0.0,
       "valueDelta": -42.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
+      "name": "Harold Perkins Jr.",
+      "position": "LB",
+      "positionGroup": "LB",
+      "school": "LSU",
+      "consensusRank": 150,
+      "rankBySource": {
+        "espn": 107,
+        "cbs_sports": 176,
+        "tankathon": 153
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 40.0,
+      "actualValue": 0.0,
+      "valueDelta": -40.0,
       "category": "undrafted",
       "matched": true
     },
@@ -11425,6 +11561,28 @@
   ],
   "biggestFalls": [
     {
+      "name": "Rueben Bain Jr.",
+      "position": "DE",
+      "positionGroup": "EDGE",
+      "school": "Miami",
+      "consensusRank": 7,
+      "rankBySource": {
+        "walter_football": 9,
+        "espn": 9,
+        "cbs_sports": 2,
+        "tankathon": 8
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 1500.0,
+      "actualValue": 0.0,
+      "valueDelta": -1500.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
       "name": "Vega Ioane",
       "position": "G",
       "positionGroup": "OL",
@@ -11488,6 +11646,27 @@
       "matched": true
     },
     {
+      "name": "Omar Cooper Jr.",
+      "position": "WR",
+      "positionGroup": "WR",
+      "school": "Indiana",
+      "consensusRank": 20,
+      "rankBySource": {
+        "espn": 24,
+        "cbs_sports": 21,
+        "tankathon": 22
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 850.0,
+      "actualValue": 0.0,
+      "valueDelta": -850.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
       "name": "Caleb Downs",
       "position": "S",
       "positionGroup": "DB",
@@ -11510,6 +11689,27 @@
       "matched": true
     },
     {
+      "name": "Anthony Hill Jr.",
+      "position": "LB",
+      "positionGroup": "LB",
+      "school": "Texas",
+      "consensusRank": 42,
+      "rankBySource": {
+        "espn": 35,
+        "cbs_sports": 57,
+        "tankathon": 47
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 480.0,
+      "actualValue": 0.0,
+      "valueDelta": -480.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
       "name": "Emmanuel McNeil-Warren",
       "position": "S",
       "positionGroup": "DB",
@@ -11527,28 +11727,6 @@
       "consensusValue": 780.0,
       "actualValue": 320.0,
       "valueDelta": -460.0,
-      "category": "fell",
-      "matched": true
-    },
-    {
-      "name": "Rueben Bain Jr.",
-      "position": "DE",
-      "positionGroup": "EDGE",
-      "school": "Miami",
-      "consensusRank": 7,
-      "rankBySource": {
-        "walter_football": 9,
-        "espn": 9,
-        "cbs_sports": 2,
-        "tankathon": 8
-      },
-      "actualPick": 15,
-      "actualRound": 1,
-      "actualTeam": "TAM",
-      "rankDelta": 8,
-      "consensusValue": 1500.0,
-      "actualValue": 1050.0,
-      "valueDelta": -450.0,
       "category": "fell",
       "matched": true
     },
@@ -11584,35 +11762,14 @@
         "cbs_sports": 44,
         "tankathon": 63
       },
-      "actualPick": 157,
-      "actualRound": 5,
-      "actualTeam": "DET",
-      "rankDelta": 96,
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
       "consensusValue": 292.0,
-      "actualValue": 36.5,
-      "valueDelta": -255.5,
-      "category": "fell",
-      "matched": true
-    },
-    {
-      "name": "Omar Cooper Jr.",
-      "position": "WR",
-      "positionGroup": "WR",
-      "school": "Indiana",
-      "consensusRank": 20,
-      "rankBySource": {
-        "espn": 24,
-        "cbs_sports": 21,
-        "tankathon": 22
-      },
-      "actualPick": 30,
-      "actualRound": 1,
-      "actualTeam": "NYJ",
-      "rankDelta": 10,
-      "consensusValue": 850.0,
-      "actualValue": 620.0,
-      "valueDelta": -230.0,
-      "category": "fell",
+      "actualValue": 0.0,
+      "valueDelta": -292.0,
+      "category": "undrafted",
       "matched": true
     },
     {
@@ -11718,27 +11875,6 @@
       "consensusValue": 243.0,
       "actualValue": 46.0,
       "valueDelta": -197.0,
-      "category": "fell",
-      "matched": true
-    },
-    {
-      "name": "Anthony Hill Jr.",
-      "position": "LB",
-      "positionGroup": "LB",
-      "school": "Texas",
-      "consensusRank": 42,
-      "rankBySource": {
-        "espn": 35,
-        "cbs_sports": 57,
-        "tankathon": 47
-      },
-      "actualPick": 60,
-      "actualRound": 2,
-      "actualTeam": "TEN",
-      "rankDelta": 18,
-      "consensusValue": 480.0,
-      "actualValue": 300.0,
-      "valueDelta": -180.0,
       "category": "fell",
       "matched": true
     }
@@ -12063,6 +12199,28 @@
   ],
   "topUndrafted": [
     {
+      "name": "Rueben Bain Jr.",
+      "position": "DE",
+      "positionGroup": "EDGE",
+      "school": "Miami",
+      "consensusRank": 7,
+      "rankBySource": {
+        "walter_football": 9,
+        "espn": 9,
+        "cbs_sports": 2,
+        "tankathon": 8
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 1500.0,
+      "actualValue": 0.0,
+      "valueDelta": -1500.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
       "name": "Vega Ioane",
       "position": "G",
       "positionGroup": "OL",
@@ -12083,6 +12241,90 @@
       "matched": true
     },
     {
+      "name": "Omar Cooper Jr.",
+      "position": "WR",
+      "positionGroup": "WR",
+      "school": "Indiana",
+      "consensusRank": 20,
+      "rankBySource": {
+        "espn": 24,
+        "cbs_sports": 21,
+        "tankathon": 22
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 850.0,
+      "actualValue": 0.0,
+      "valueDelta": -850.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
+      "name": "Anthony Hill Jr.",
+      "position": "LB",
+      "positionGroup": "LB",
+      "school": "Texas",
+      "consensusRank": 42,
+      "rankBySource": {
+        "espn": 35,
+        "cbs_sports": 57,
+        "tankathon": 47
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 480.0,
+      "actualValue": 0.0,
+      "valueDelta": -480.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
+      "name": "Keith Abney II",
+      "position": "CB",
+      "positionGroup": "DB",
+      "school": "Arizona St.",
+      "consensusRank": 61,
+      "rankBySource": {
+        "espn": 75,
+        "cbs_sports": 44,
+        "tankathon": 63
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 292.0,
+      "actualValue": 0.0,
+      "valueDelta": -292.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
+      "name": "Trey Zuhn III",
+      "position": "C",
+      "positionGroup": "OL",
+      "school": "Texas A&M",
+      "consensusRank": 88,
+      "rankBySource": {
+        "espn": 106,
+        "cbs_sports": 49,
+        "tankathon": 129
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 176.0,
+      "actualValue": 0.0,
+      "valueDelta": -176.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
       "name": "Jayden Loving",
       "position": "DL",
       "positionGroup": "DL",
@@ -12098,6 +12340,27 @@
       "consensusValue": 161.0,
       "actualValue": 0.0,
       "valueDelta": -161.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
+      "name": "Will Lee III",
+      "position": "CB",
+      "positionGroup": "DB",
+      "school": "Texas A&M",
+      "consensusRank": 121,
+      "rankBySource": {
+        "espn": 105,
+        "cbs_sports": 163,
+        "tankathon": 114
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 88.0,
+      "actualValue": 0.0,
+      "valueDelta": -88.0,
       "category": "undrafted",
       "matched": true
     },
@@ -12182,6 +12445,27 @@
       "matched": true
     },
     {
+      "name": "Kevin Coleman Jr.",
+      "position": "WR",
+      "positionGroup": "WR",
+      "school": "Missouri",
+      "consensusRank": 142,
+      "rankBySource": {
+        "espn": 138,
+        "cbs_sports": 109,
+        "tankathon": 176
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 48.0,
+      "actualValue": 0.0,
+      "valueDelta": -48.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
       "name": "Le'Veon Moss",
       "position": "RB",
       "positionGroup": "RB",
@@ -12220,152 +12504,128 @@
       "valueDelta": -42.0,
       "category": "undrafted",
       "matched": true
-    },
-    {
-      "name": "Bakyne Coly",
-      "position": "OT",
-      "positionGroup": "OL",
-      "school": "Purdue",
-      "consensusRank": 154,
-      "rankBySource": {
-        "cbs_sports": 150
-      },
-      "actualPick": null,
-      "actualRound": null,
-      "actualTeam": null,
-      "rankDelta": null,
-      "consensusValue": 38.0,
-      "actualValue": 0.0,
-      "valueDelta": -38.0,
-      "category": "undrafted",
-      "matched": true
-    },
-    {
-      "name": "Jeff Caldwell",
-      "position": "WR",
-      "positionGroup": "WR",
-      "school": "Cincinnati",
-      "consensusRank": 161,
-      "rankBySource": {
-        "espn": 145,
-        "cbs_sports": 167
-      },
-      "actualPick": null,
-      "actualRound": null,
-      "actualTeam": null,
-      "rankDelta": null,
-      "consensusValue": 34.5,
-      "actualValue": 0.0,
-      "valueDelta": -34.5,
-      "category": "undrafted",
-      "matched": true
-    },
-    {
-      "name": "Mason Reiger",
-      "position": "EDGE",
-      "positionGroup": "EDGE",
-      "school": "Wisconsin",
-      "consensusRank": 169,
-      "rankBySource": {
-        "espn": 204,
-        "cbs_sports": 127
-      },
-      "actualPick": null,
-      "actualRound": null,
-      "actualTeam": null,
-      "rankDelta": null,
-      "consensusValue": 31.0,
-      "actualValue": 0.0,
-      "valueDelta": -31.0,
-      "category": "undrafted",
-      "matched": true
-    },
-    {
-      "name": "Anthony Lucas",
-      "position": "EDGE",
-      "positionGroup": "EDGE",
-      "school": "USC",
-      "consensusRank": 171,
-      "rankBySource": {
-        "espn": 268,
-        "cbs_sports": 100,
-        "tankathon": 134
-      },
-      "actualPick": null,
-      "actualRound": null,
-      "actualTeam": null,
-      "rankDelta": null,
-      "consensusValue": 30.2,
-      "actualValue": 0.0,
-      "valueDelta": -30.2,
-      "category": "undrafted",
-      "matched": true
-    },
-    {
-      "name": "Dontay Corleone",
-      "position": "DT",
-      "positionGroup": "DL",
-      "school": "Cincinnati",
-      "consensusRank": 172,
-      "rankBySource": {
-        "espn": 214,
-        "cbs_sports": 135,
-        "tankathon": 155
-      },
-      "actualPick": null,
-      "actualRound": null,
-      "actualTeam": null,
-      "rankDelta": null,
-      "consensusValue": 29.8,
-      "actualValue": 0.0,
-      "valueDelta": -29.8,
-      "category": "undrafted",
-      "matched": true
-    },
-    {
-      "name": "Isaiah World",
-      "position": "OT",
-      "positionGroup": "OL",
-      "school": "Oregon",
-      "consensusRank": 177,
-      "rankBySource": {
-        "espn": 168,
-        "cbs_sports": 183,
-        "tankathon": 169
-      },
-      "actualPick": null,
-      "actualRound": null,
-      "actualTeam": null,
-      "rankDelta": null,
-      "consensusValue": 27.8,
-      "actualValue": 0.0,
-      "valueDelta": -27.8,
-      "category": "undrafted",
-      "matched": true
-    },
-    {
-      "name": "Taurean York",
-      "position": "LB",
-      "positionGroup": "LB",
-      "school": "Texas A&M",
-      "consensusRank": 181,
-      "rankBySource": {
-        "espn": 196,
-        "cbs_sports": 177,
-        "tankathon": 152
-      },
-      "actualPick": null,
-      "actualRound": null,
-      "actualTeam": null,
-      "rankDelta": null,
-      "consensusValue": 26.2,
-      "actualValue": 0.0,
-      "valueDelta": -26.2,
-      "category": "undrafted",
-      "matched": true
     }
   ],
   "topSurprises": [
+    {
+      "name": "Rueben Bain",
+      "position": "DE",
+      "positionGroup": "EDGE",
+      "school": "Miami (FL)",
+      "consensusRank": null,
+      "rankBySource": {},
+      "actualPick": 15,
+      "actualRound": 1,
+      "actualTeam": "TAM",
+      "rankDelta": null,
+      "consensusValue": 0.0,
+      "actualValue": 1050.0,
+      "valueDelta": 1050.0,
+      "category": "surprise",
+      "matched": false
+    },
+    {
+      "name": "Omar Cooper",
+      "position": "WR",
+      "positionGroup": "WR",
+      "school": "Indiana",
+      "consensusRank": null,
+      "rankBySource": {},
+      "actualPick": 30,
+      "actualRound": 1,
+      "actualTeam": "NYJ",
+      "rankDelta": null,
+      "consensusValue": 0.0,
+      "actualValue": 620.0,
+      "valueDelta": 620.0,
+      "category": "surprise",
+      "matched": false
+    },
+    {
+      "name": "Anthony Hill",
+      "position": "LB",
+      "positionGroup": "LB",
+      "school": "Texas",
+      "consensusRank": null,
+      "rankBySource": {},
+      "actualPick": 60,
+      "actualRound": 2,
+      "actualTeam": "TEN",
+      "rankDelta": null,
+      "consensusValue": 0.0,
+      "actualValue": 300.0,
+      "valueDelta": 300.0,
+      "category": "surprise",
+      "matched": false
+    },
+    {
+      "name": "Trey Zuhn",
+      "position": "OT",
+      "positionGroup": "OL",
+      "school": "Texas A&M",
+      "consensusRank": null,
+      "rankBySource": {},
+      "actualPick": 91,
+      "actualRound": 3,
+      "actualTeam": "LVR",
+      "rankDelta": null,
+      "consensusValue": 0.0,
+      "actualValue": 167.0,
+      "valueDelta": 167.0,
+      "category": "surprise",
+      "matched": false
+    },
+    {
+      "name": "Will Lee",
+      "position": "CB",
+      "positionGroup": "DB",
+      "school": "Texas A&M",
+      "consensusRank": null,
+      "rankBySource": {},
+      "actualPick": 129,
+      "actualRound": 4,
+      "actualTeam": "CAR",
+      "rankDelta": null,
+      "consensusValue": 0.0,
+      "actualValue": 72.0,
+      "valueDelta": 72.0,
+      "category": "surprise",
+      "matched": false
+    },
+    {
+      "name": "Keith Abney",
+      "position": "CB",
+      "positionGroup": "DB",
+      "school": "Arizona St.",
+      "consensusRank": null,
+      "rankBySource": {},
+      "actualPick": 157,
+      "actualRound": 5,
+      "actualTeam": "DET",
+      "rankDelta": null,
+      "consensusValue": 0.0,
+      "actualValue": 36.5,
+      "valueDelta": 36.5,
+      "category": "surprise",
+      "matched": false
+    },
+    {
+      "name": "Kevin Coleman",
+      "position": "WR",
+      "positionGroup": "WR",
+      "school": "Missouri",
+      "consensusRank": null,
+      "rankBySource": {},
+      "actualPick": 177,
+      "actualRound": 5,
+      "actualTeam": "MIA",
+      "rankDelta": null,
+      "consensusValue": 0.0,
+      "actualValue": 27.8,
+      "valueDelta": 27.8,
+      "category": "surprise",
+      "matched": false
+    },
     {
       "name": "Anterio Thompson",
       "position": "DT",
@@ -12380,6 +12640,23 @@
       "consensusValue": 0.0,
       "actualValue": 15.4,
       "valueDelta": 15.4,
+      "category": "surprise",
+      "matched": false
+    },
+    {
+      "name": "Harold Perkins",
+      "position": "LB",
+      "positionGroup": "LB",
+      "school": "LSU",
+      "consensusRank": null,
+      "rankBySource": {},
+      "actualPick": 215,
+      "actualRound": 6,
+      "actualTeam": "ATL",
+      "rankDelta": null,
+      "consensusValue": 0.0,
+      "actualValue": 12.6,
+      "valueDelta": 12.6,
       "category": "surprise",
       "matched": false
     },

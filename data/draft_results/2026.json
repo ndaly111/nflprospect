@@ -157,7 +157,7 @@
     "pick": 15,
     "round": 1,
     "team": "TAM",
-    "name": "Rueben Bain Jr.",
+    "name": "Rueben Bain",
     "position": "DE",
     "side": "D",
     "college": "Miami (FL)",
@@ -322,7 +322,7 @@
     "pick": 30,
     "round": 1,
     "team": "NYJ",
-    "name": "Omar Cooper Jr.",
+    "name": "Omar Cooper",
     "position": "WR",
     "side": "O",
     "college": "Indiana",
@@ -652,7 +652,7 @@
     "pick": 60,
     "round": 2,
     "team": "TEN",
-    "name": "Anthony Hill Jr.",
+    "name": "Anthony Hill",
     "position": "LB",
     "side": "D",
     "college": "Texas",
@@ -993,7 +993,7 @@
     "pick": 91,
     "round": 3,
     "team": "LVR",
-    "name": "Trey Zuhn III",
+    "name": "Trey Zuhn",
     "position": "OT",
     "side": "O",
     "college": "Texas A&M",
@@ -1411,7 +1411,7 @@
     "pick": 129,
     "round": 4,
     "team": "CAR",
-    "name": "Will Lee III",
+    "name": "Will Lee",
     "position": "CB",
     "side": "D",
     "college": "Texas A&M",
@@ -1719,7 +1719,7 @@
     "pick": 157,
     "round": 5,
     "team": "DET",
-    "name": "Keith Abney II",
+    "name": "Keith Abney",
     "position": "CB",
     "side": "D",
     "college": "Arizona St.",
@@ -1939,7 +1939,7 @@
     "pick": 177,
     "round": 5,
     "team": "MIA",
-    "name": "Kevin Coleman Jr.",
+    "name": "Kevin Coleman",
     "position": "WR",
     "side": "O",
     "college": "Missouri",
@@ -2357,7 +2357,7 @@
     "pick": 215,
     "round": 6,
     "team": "ATL",
-    "name": "Harold Perkins Jr.",
+    "name": "Harold Perkins",
     "position": "LB",
     "side": "D",
     "college": "LSU",
@@ -2439,7 +2439,7 @@
     "side": "D",
     "college": "Tennessee",
     "pfrId": "WestTy00",
-    "gsisId": "00-0041448"
+    "gsisId": ""
   },
   {
     "pick": 223,
@@ -2549,7 +2549,7 @@
     "side": "D",
     "college": "Alabama",
     "pfrId": "KeenTi00",
-    "gsisId": ""
+    "gsisId": "00-0041534"
   },
   {
     "pick": 233,
@@ -2582,7 +2582,7 @@
     "side": "O",
     "college": "Cincinnati",
     "pfrId": "GerhGa01",
-    "gsisId": ""
+    "gsisId": "00-0041124"
   },
   {
     "pick": 236,
