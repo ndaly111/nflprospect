@@ -579,6 +579,10 @@
       {
         "date": "2026-09-22",
         "rank": 1
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 1
       }
     ],
     "collegeStats": {
@@ -1232,6 +1236,10 @@
       {
         "date": "2026-09-22",
         "rank": 2
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 2
       }
     ],
     "collegeStats": {
@@ -1883,6 +1891,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 3
+      },
+      {
+        "date": "2026-09-23",
         "rank": 3
       }
     ],
@@ -2564,6 +2576,10 @@
       {
         "date": "2026-09-22",
         "rank": 4
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 4
       }
     ],
     "collegeStats": {
@@ -2607,11 +2623,11 @@
       "interceptions": 2.0
     },
     "tankStats": {
-      "Pass Yds": "664",
+      "Pass Yds": "661",
       "TD": "7",
       "INT": "2",
-      "Pct": "61.9",
-      "Rating": "139.0"
+      "Pct": "61.5",
+      "Rating": "139.2"
     },
     "combineData": {
       "height": "6-4",
@@ -3268,6 +3284,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 5
+      },
+      {
+        "date": "2026-09-23",
         "rank": 5
       }
     ],
@@ -3960,6 +3980,10 @@
       {
         "date": "2026-09-22",
         "rank": 6
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 6
       }
     ],
     "collegeStats": {
@@ -4000,7 +4024,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "JT Woods",
@@ -4604,6 +4628,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 7
+      },
+      {
+        "date": "2026-09-23",
         "rank": 7
       }
     ],
@@ -5295,6 +5323,10 @@
       {
         "date": "2026-09-22",
         "rank": 8
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 8
       }
     ],
     "collegeStats": {
@@ -5980,6 +6012,10 @@
       {
         "date": "2026-09-22",
         "rank": 9
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 9
       }
     ],
     "collegeStats": {
@@ -6623,6 +6659,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 10
+      },
+      {
+        "date": "2026-09-23",
         "rank": 10
       }
     ],
@@ -7285,6 +7325,10 @@
       {
         "date": "2026-09-22",
         "rank": 11
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 11
       }
     ],
     "collegeStats": {},
@@ -7906,6 +7950,10 @@
       {
         "date": "2026-09-22",
         "rank": 12
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 12
       }
     ],
     "collegeStats": {
@@ -7947,7 +7995,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Darrick Forrest",
@@ -8551,6 +8599,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 13
+      },
+      {
+        "date": "2026-09-23",
         "rank": 13
       }
     ],
@@ -9236,6 +9288,10 @@
       {
         "date": "2026-09-22",
         "rank": 14
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 14
       }
     ],
     "collegeStats": {},
@@ -9897,6 +9953,10 @@
       {
         "date": "2026-09-22",
         "rank": 15
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 15
       }
     ],
     "collegeStats": {
@@ -10548,6 +10608,10 @@
       {
         "date": "2026-09-22",
         "rank": 16
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 16
       }
     ],
     "collegeStats": {
@@ -11194,6 +11258,10 @@
       {
         "date": "2026-09-22",
         "rank": 17
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 17
       }
     ],
     "collegeStats": {
@@ -11241,7 +11309,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Tay Gowan",
@@ -11885,6 +11953,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 18
+      },
+      {
+        "date": "2026-09-23",
         "rank": 18
       }
     ],
@@ -12551,6 +12623,10 @@
       {
         "date": "2026-09-22",
         "rank": 19
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 19
       }
     ],
     "collegeStats": {
@@ -13194,6 +13270,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 20
+      },
+      {
+        "date": "2026-09-23",
         "rank": 20
       }
     ],
@@ -13847,6 +13927,10 @@
       {
         "date": "2026-09-22",
         "rank": 21
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 21
       }
     ],
     "collegeStats": {},
@@ -14467,6 +14551,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 22
+      },
+      {
+        "date": "2026-09-23",
         "rank": 22
       }
     ],
@@ -15111,6 +15199,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 23
+      },
+      {
+        "date": "2026-09-23",
         "rank": 23
       }
     ],
@@ -15795,6 +15887,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 24
+      },
+      {
+        "date": "2026-09-23",
         "rank": 24
       }
     ],
@@ -16482,6 +16578,10 @@
       {
         "date": "2026-09-22",
         "rank": 25
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 25
       }
     ],
     "collegeStats": {
@@ -17126,6 +17226,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 26
+      },
+      {
+        "date": "2026-09-23",
         "rank": 26
       }
     ],
@@ -17788,6 +17892,10 @@
       {
         "date": "2026-09-22",
         "rank": 27
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 27
       }
     ],
     "collegeStats": {
@@ -18419,6 +18527,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 28
+      },
+      {
+        "date": "2026-09-23",
         "rank": 28
       }
     ],
@@ -19080,6 +19192,10 @@
       {
         "date": "2026-09-22",
         "rank": 29
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 29
       }
     ],
     "collegeStats": {
@@ -19115,7 +19231,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Gervarrius Owens",
@@ -19718,6 +19834,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 30
+      },
+      {
+        "date": "2026-09-23",
         "rank": 30
       }
     ],
@@ -20339,6 +20459,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 31
+      },
+      {
+        "date": "2026-09-23",
         "rank": 31
       }
     ],
@@ -21263,6 +21387,10 @@
       {
         "date": "2026-09-22",
         "rank": 32
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 32
       }
     ],
     "collegeStats": {
@@ -21286,7 +21414,7 @@
       "shuttle": null,
       "participated": true
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Divine Deablo",
@@ -21919,6 +22047,10 @@
       {
         "date": "2026-09-22",
         "rank": 33
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 33
       }
     ],
     "collegeStats": {
@@ -21961,7 +22093,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jaylon Jones",
@@ -22565,6 +22697,10 @@
       {
         "date": "2026-09-22",
         "rank": 34
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 34
       }
     ],
     "collegeStats": {
@@ -22594,7 +22730,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Nic Jones",
@@ -23237,6 +23373,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 35
+      },
+      {
+        "date": "2026-09-23",
         "rank": 35
       }
     ],
@@ -23920,6 +24060,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 36
+      },
+      {
+        "date": "2026-09-23",
         "rank": 36
       }
     ],
@@ -24606,6 +24750,10 @@
       {
         "date": "2026-09-22",
         "rank": 37
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 37
       }
     ],
     "collegeStats": {
@@ -25271,6 +25419,10 @@
       {
         "date": "2026-09-22",
         "rank": 38
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 38
       }
     ],
     "collegeStats": {
@@ -25306,7 +25458,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jaylon Jones",
@@ -25950,6 +26102,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 39
+      },
+      {
+        "date": "2026-09-23",
         "rank": 39
       }
     ],
@@ -26621,6 +26777,10 @@
       {
         "date": "2026-09-22",
         "rank": 40
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 40
       }
     ],
     "collegeStats": {
@@ -27265,6 +27425,10 @@
       {
         "date": "2026-09-22",
         "rank": 41
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 41
       }
     ],
     "collegeStats": {
@@ -27306,7 +27470,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Damar Hamlin",
@@ -27950,6 +28114,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 42
+      },
+      {
+        "date": "2026-09-23",
         "rank": 42
       }
     ],
@@ -28601,6 +28769,10 @@
       {
         "date": "2026-09-22",
         "rank": 43
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 43
       }
     ],
     "collegeStats": {
@@ -28622,7 +28794,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Benjamin St-Juste",
@@ -29118,6 +29290,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 44
+      },
+      {
+        "date": "2026-09-23",
         "rank": 44
       }
     ],
@@ -29773,6 +29949,10 @@
       {
         "date": "2026-09-22",
         "rank": 45
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 45
       }
     ],
     "collegeStats": {
@@ -29814,7 +29994,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Chau Smith-Wade",
@@ -30458,6 +30638,10 @@
       {
         "date": "2026-09-22",
         "rank": 46
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 46
       }
     ],
     "collegeStats": {},
@@ -30860,6 +31044,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 47
+      },
+      {
+        "date": "2026-09-23",
         "rank": 47
       }
     ],
@@ -31480,6 +31668,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 48
+      },
+      {
+        "date": "2026-09-23",
         "rank": 48
       }
     ],
@@ -32170,6 +32362,10 @@
       {
         "date": "2026-09-22",
         "rank": 49
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 49
       }
     ],
     "collegeStats": {
@@ -32210,7 +32406,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Khyree Jackson",
@@ -32366,6 +32562,10 @@
       {
         "date": "2026-09-22",
         "rank": 50
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 50
       }
     ],
     "collegeStats": {
@@ -32388,7 +32588,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jaylon Jones",
@@ -32991,6 +33191,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 51
+      },
+      {
+        "date": "2026-09-23",
         "rank": 51
       }
     ],
@@ -33676,6 +33880,10 @@
       {
         "date": "2026-09-22",
         "rank": 52
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 52
       }
     ],
     "collegeStats": {
@@ -34319,6 +34527,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 53
+      },
+      {
+        "date": "2026-09-23",
         "rank": 53
       }
     ],
@@ -34993,6 +35205,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 54
+      },
+      {
+        "date": "2026-09-23",
         "rank": 54
       }
     ],
@@ -35691,6 +35907,10 @@
       {
         "date": "2026-09-22",
         "rank": 55
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 55
       }
     ],
     "collegeStats": {},
@@ -36352,6 +36572,10 @@
       {
         "date": "2026-09-22",
         "rank": 56
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 56
       }
     ],
     "collegeStats": {
@@ -36557,6 +36781,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 57
+      },
+      {
+        "date": "2026-09-23",
         "rank": 57
       }
     ],
@@ -37207,6 +37435,10 @@
       {
         "date": "2026-09-22",
         "rank": 58
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 58
       }
     ],
     "collegeStats": {
@@ -37851,6 +38083,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 59
+      },
+      {
+        "date": "2026-09-23",
         "rank": 59
       }
     ],
@@ -38538,6 +38774,10 @@
       {
         "date": "2026-09-22",
         "rank": 60
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 60
       }
     ],
     "collegeStats": {
@@ -38578,7 +38818,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Devon Witherspoon",
@@ -39181,6 +39421,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 61
+      },
+      {
+        "date": "2026-09-23",
         "rank": 61
       }
     ],
@@ -39843,6 +40087,10 @@
       {
         "date": "2026-09-22",
         "rank": 62
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 62
       }
     ],
     "collegeStats": {
@@ -40482,6 +40730,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 63
+      },
+      {
+        "date": "2026-09-23",
         "rank": 63
       }
     ],
@@ -41133,6 +41385,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 64
+      },
+      {
+        "date": "2026-09-23",
         "rank": 64
       }
     ],
@@ -41826,6 +42082,10 @@
       {
         "date": "2026-09-22",
         "rank": 65
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 65
       }
     ],
     "collegeStats": {
@@ -42027,6 +42287,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 66
+      },
+      {
+        "date": "2026-09-23",
         "rank": 66
       }
     ],
@@ -42707,6 +42971,10 @@
       {
         "date": "2026-09-22",
         "rank": 67
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 67
       }
     ],
     "collegeStats": {
@@ -43355,6 +43623,10 @@
       {
         "date": "2026-09-22",
         "rank": 68
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 68
       }
     ],
     "collegeStats": {
@@ -43396,7 +43668,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Robert Rochell",
@@ -43999,6 +44271,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 69
+      },
+      {
+        "date": "2026-09-23",
         "rank": 69
       }
     ],
@@ -44620,6 +44896,10 @@
       {
         "date": "2026-09-22",
         "rank": 70
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 70
       }
     ],
     "collegeStats": {},
@@ -44791,6 +45071,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 71
+      },
+      {
+        "date": "2026-09-23",
         "rank": 71
       }
     ],
@@ -45465,6 +45749,10 @@
       {
         "date": "2026-09-22",
         "rank": 72
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 72
       }
     ],
     "collegeStats": {},
@@ -46084,6 +46372,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 73
+      },
+      {
+        "date": "2026-09-23",
         "rank": 73
       }
     ],
@@ -46735,6 +47027,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 74
+      },
+      {
+        "date": "2026-09-23",
         "rank": 74
       }
     ],
@@ -47408,6 +47704,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 75
+      },
+      {
+        "date": "2026-09-23",
         "rank": 75
       }
     ],
@@ -48086,6 +48386,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 76
+      },
+      {
+        "date": "2026-09-23",
         "rank": 76
       }
     ],
@@ -48778,6 +49082,10 @@
       {
         "date": "2026-09-22",
         "rank": 77
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 77
       }
     ],
     "collegeStats": {
@@ -49423,6 +49731,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 78
+      },
+      {
+        "date": "2026-09-23",
         "rank": 78
       }
     ],
@@ -50108,6 +50420,10 @@
       {
         "date": "2026-09-22",
         "rank": 79
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 79
       }
     ],
     "collegeStats": {
@@ -50751,6 +51067,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 80
+      },
+      {
+        "date": "2026-09-23",
         "rank": 80
       }
     ],
@@ -51410,6 +51730,10 @@
       {
         "date": "2026-09-22",
         "rank": 81
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 81
       }
     ],
     "collegeStats": {
@@ -51451,7 +51775,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Nic Jones",
@@ -52096,6 +52420,10 @@
       {
         "date": "2026-09-22",
         "rank": 82
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 82
       }
     ],
     "collegeStats": {},
@@ -52716,6 +53044,10 @@
       {
         "date": "2026-09-22",
         "rank": 83
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 83
       }
     ],
     "collegeStats": {
@@ -52763,7 +53095,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Carrington Valentine",
@@ -53366,6 +53698,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 84
+      },
+      {
+        "date": "2026-09-23",
         "rank": 84
       }
     ],
@@ -54051,6 +54387,10 @@
       {
         "date": "2026-09-22",
         "rank": 85
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 85
       }
     ],
     "collegeStats": {
@@ -54701,6 +55041,10 @@
       {
         "date": "2026-09-22",
         "rank": 86
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 86
       }
     ],
     "collegeStats": {},
@@ -54873,6 +55217,10 @@
       {
         "date": "2026-09-22",
         "rank": 87
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 87
       }
     ],
     "collegeStats": {
@@ -54895,7 +55243,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Gervarrius Owens",
@@ -55498,6 +55846,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 88
+      },
+      {
+        "date": "2026-09-23",
         "rank": 88
       }
     ],
@@ -56188,6 +56540,10 @@
       {
         "date": "2026-09-22",
         "rank": 89
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 89
       }
     ],
     "collegeStats": {
@@ -56819,6 +57175,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 90
+      },
+      {
+        "date": "2026-09-23",
         "rank": 90
       }
     ],
@@ -57509,6 +57869,10 @@
       {
         "date": "2026-09-22",
         "rank": 91
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 91
       }
     ],
     "collegeStats": {
@@ -58159,6 +58523,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 92
+      },
+      {
+        "date": "2026-09-23",
         "rank": 92
       }
     ],
@@ -58811,6 +59179,10 @@
       {
         "date": "2026-09-22",
         "rank": 93
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 93
       }
     ],
     "collegeStats": {
@@ -59437,6 +59809,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 94
+      },
+      {
+        "date": "2026-09-23",
         "rank": 94
       }
     ],
@@ -60117,6 +60493,10 @@
       {
         "date": "2026-09-22",
         "rank": 95
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 95
       }
     ],
     "collegeStats": {
@@ -60152,7 +60532,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Tay Gowan",
@@ -60755,6 +61135,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 96
+      },
+      {
+        "date": "2026-09-23",
         "rank": 96
       }
     ],
@@ -61375,6 +61759,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 97
+      },
+      {
+        "date": "2026-09-23",
         "rank": 97
       }
     ],
@@ -62056,6 +62444,10 @@
       {
         "date": "2026-09-22",
         "rank": 98
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 98
       }
     ],
     "collegeStats": {},
@@ -62676,6 +63068,10 @@
       {
         "date": "2026-09-22",
         "rank": 99
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 99
       }
     ],
     "collegeStats": {
@@ -62723,7 +63119,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Robert Rochell",
@@ -62878,6 +63274,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 100
+      },
+      {
+        "date": "2026-09-23",
         "rank": 100
       }
     ],
@@ -63498,6 +63898,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 101
+      },
+      {
+        "date": "2026-09-23",
         "rank": 101
       }
     ],
@@ -64185,6 +64589,10 @@
       {
         "date": "2026-09-22",
         "rank": 102
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 102
       }
     ],
     "collegeStats": {
@@ -64830,6 +65238,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 103
+      },
+      {
+        "date": "2026-09-23",
         "rank": 103
       }
     ],
@@ -65520,6 +65932,10 @@
       {
         "date": "2026-09-22",
         "rank": 104
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 104
       }
     ],
     "collegeStats": {},
@@ -66146,6 +66562,10 @@
       {
         "date": "2026-09-22",
         "rank": 105
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 105
       }
     ],
     "collegeStats": {},
@@ -66765,6 +67185,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 106
+      },
+      {
+        "date": "2026-09-23",
         "rank": 106
       }
     ],
@@ -67386,6 +67810,10 @@
       {
         "date": "2026-09-22",
         "rank": 107
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 107
       }
     ],
     "collegeStats": {
@@ -67472,6 +67900,10 @@
     "rankHistory": [
       {
         "date": "2026-09-22",
+        "rank": 108
+      },
+      {
+        "date": "2026-09-23",
         "rank": 108
       }
     ],
@@ -67672,6 +68104,10 @@
       {
         "date": "2026-09-22",
         "rank": 109
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 109
       }
     ],
     "collegeStats": {
@@ -67718,7 +68154,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Carrington Valentine",
@@ -68047,6 +68483,10 @@
       {
         "date": "2026-09-22",
         "rank": 110
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 110
       }
     ],
     "collegeStats": {
@@ -68093,7 +68533,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jaylon Jones",
@@ -68253,6 +68693,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 111
+      },
+      {
+        "date": "2026-09-23",
         "rank": 111
       }
     ],
@@ -68449,6 +68893,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 112
+      },
+      {
+        "date": "2026-09-23",
         "rank": 112
       }
     ],
@@ -69093,6 +69541,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 113
+      },
+      {
+        "date": "2026-09-23",
         "rank": 113
       }
     ],
@@ -69744,6 +70196,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 114
+      },
+      {
+        "date": "2026-09-23",
         "rank": 114
       }
     ],
@@ -70424,6 +70880,10 @@
       {
         "date": "2026-09-22",
         "rank": 115
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 115
       }
     ],
     "collegeStats": {
@@ -70618,6 +71078,10 @@
       {
         "date": "2026-09-22",
         "rank": 116
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 116
       }
     ],
     "collegeStats": {
@@ -70647,7 +71111,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Kaiir Elam",
@@ -70807,6 +71271,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 117
+      },
+      {
+        "date": "2026-09-23",
         "rank": 117
       }
     ],
@@ -71428,6 +71896,10 @@
       {
         "date": "2026-09-22",
         "rank": 118
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 118
       }
     ],
     "collegeStats": {
@@ -71469,7 +71941,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "James Wiggins",
@@ -72101,6 +72573,10 @@
       {
         "date": "2026-09-22",
         "rank": 119
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 119
       }
     ],
     "collegeStats": {
@@ -72142,7 +72618,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Gervarrius Owens",
@@ -72745,6 +73221,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 120
+      },
+      {
+        "date": "2026-09-23",
         "rank": 120
       }
     ],
@@ -73422,6 +73902,10 @@
       {
         "date": "2026-09-22",
         "rank": 121
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 121
       }
     ],
     "collegeStats": {
@@ -73618,6 +74102,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 122
+      },
+      {
+        "date": "2026-09-23",
         "rank": 122
       }
     ],
@@ -74305,6 +74793,10 @@
       {
         "date": "2026-09-22",
         "rank": 123
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 123
       }
     ],
     "collegeStats": {
@@ -74961,6 +75453,10 @@
       {
         "date": "2026-09-22",
         "rank": 124
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 124
       }
     ],
     "collegeStats": {},
@@ -75581,6 +76077,10 @@
       {
         "date": "2026-09-22",
         "rank": 125
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 125
       }
     ],
     "collegeStats": {
@@ -75954,6 +76454,10 @@
       {
         "date": "2026-09-22",
         "rank": 126
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 126
       }
     ],
     "collegeStats": {},
@@ -76125,6 +76629,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 127
+      },
+      {
+        "date": "2026-09-23",
         "rank": 127
       }
     ],
@@ -76794,6 +77302,10 @@
       {
         "date": "2026-09-22",
         "rank": 128
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 128
       }
     ],
     "collegeStats": {
@@ -77319,6 +77831,10 @@
       {
         "date": "2026-09-22",
         "rank": 129
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 129
       }
     ],
     "collegeStats": {
@@ -77359,7 +77875,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jaycee Horn",
@@ -77962,6 +78478,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 130
+      },
+      {
+        "date": "2026-09-23",
         "rank": 130
       }
     ],
@@ -78654,6 +79174,10 @@
       {
         "date": "2026-09-22",
         "rank": 131
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 131
       }
     ],
     "collegeStats": {},
@@ -79279,6 +79803,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 132
+      },
+      {
+        "date": "2026-09-23",
         "rank": 132
       }
     ],
@@ -79965,6 +80493,10 @@
       {
         "date": "2026-09-22",
         "rank": 133
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 133
       }
     ],
     "collegeStats": {},
@@ -80143,6 +80675,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 134
+      },
+      {
+        "date": "2026-09-23",
         "rank": 134
       }
     ],
@@ -80656,6 +81192,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 135
+      },
+      {
+        "date": "2026-09-23",
         "rank": 135
       }
     ],
@@ -81301,6 +81841,10 @@
       {
         "date": "2026-09-22",
         "rank": 136
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 136
       }
     ],
     "collegeStats": {
@@ -81716,6 +82260,10 @@
       {
         "date": "2026-09-22",
         "rank": 137
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 137
       }
     ],
     "collegeStats": {
@@ -81751,7 +82299,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Damar Hamlin",
@@ -82627,6 +83175,10 @@
       {
         "date": "2026-09-22",
         "rank": 138
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 138
       }
     ],
     "collegeStats": {
@@ -82834,6 +83386,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 139
+      },
+      {
+        "date": "2026-09-23",
         "rank": 139
       }
     ],
@@ -83483,6 +84039,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 140
+      },
+      {
+        "date": "2026-09-23",
         "rank": 140
       }
     ],
@@ -84165,6 +84725,10 @@
       {
         "date": "2026-09-22",
         "rank": 141
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 141
       }
     ],
     "collegeStats": {},
@@ -84784,6 +85348,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 142
+      },
+      {
+        "date": "2026-09-23",
         "rank": 142
       }
     ],
@@ -85428,6 +85996,10 @@
       {
         "date": "2026-09-22",
         "rank": 143
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 143
       }
     ],
     "collegeStats": {
@@ -85469,7 +86041,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Kalon Barnes",
@@ -86073,6 +86645,10 @@
       {
         "date": "2026-09-22",
         "rank": 144
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 144
       }
     ],
     "collegeStats": {
@@ -86108,7 +86684,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Tre'Vius Hodges-Tomlinson",
@@ -86487,6 +87063,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 145
+      },
+      {
+        "date": "2026-09-23",
         "rank": 145
       }
     ],
@@ -87022,6 +87602,10 @@
       {
         "date": "2026-09-22",
         "rank": 146
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 146
       }
     ],
     "collegeStats": {},
@@ -87193,6 +87777,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 147
+      },
+      {
+        "date": "2026-09-23",
         "rank": 147
       }
     ],
@@ -87855,6 +88443,10 @@
       {
         "date": "2026-09-22",
         "rank": 148
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 148
       }
     ],
     "collegeStats": {
@@ -88505,6 +89097,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 149
+      },
+      {
+        "date": "2026-09-23",
         "rank": 149
       }
     ],
@@ -89196,6 +89792,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 150
+      },
+      {
+        "date": "2026-09-23",
         "rank": 150
       }
     ],
@@ -89889,6 +90489,10 @@
       {
         "date": "2026-09-22",
         "rank": 151
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 151
       }
     ],
     "collegeStats": {
@@ -89929,7 +90533,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Eric Stokes",
@@ -90533,6 +91137,10 @@
       {
         "date": "2026-09-22",
         "rank": 152
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 152
       }
     ],
     "collegeStats": {
@@ -91052,6 +91660,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 153
+      },
+      {
+        "date": "2026-09-23",
         "rank": 153
       }
     ],
@@ -91695,6 +92307,10 @@
       {
         "date": "2026-09-22",
         "rank": 154
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 154
       }
     ],
     "collegeStats": {
@@ -91742,7 +92358,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Derek Stingley",
@@ -91897,6 +92513,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 155
+      },
+      {
+        "date": "2026-09-23",
         "rank": 155
       }
     ],
@@ -92517,6 +93137,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 156
+      },
+      {
+        "date": "2026-09-23",
         "rank": 156
       }
     ],
@@ -93196,6 +93820,10 @@
       {
         "date": "2026-09-22",
         "rank": 157
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 157
       }
     ],
     "collegeStats": {
@@ -93237,7 +93865,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Quentin Lake",
@@ -93392,6 +94020,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 158
+      },
+      {
+        "date": "2026-09-23",
         "rank": 158
       }
     ],
@@ -94031,6 +94663,10 @@
       {
         "date": "2026-09-22",
         "rank": 159
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 159
       }
     ],
     "collegeStats": {
@@ -94072,7 +94708,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jordan Battle",
@@ -94232,6 +94868,10 @@
       {
         "date": "2026-09-22",
         "rank": 160
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 160
       }
     ],
     "collegeStats": {
@@ -94267,7 +94907,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Ryan Watts",
@@ -94870,6 +95510,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 161
+      },
+      {
+        "date": "2026-09-23",
         "rank": 161
       }
     ],
@@ -95559,6 +96203,10 @@
       {
         "date": "2026-09-22",
         "rank": 162
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 162
       }
     ],
     "collegeStats": {
@@ -95755,6 +96403,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 163
+      },
+      {
+        "date": "2026-09-23",
         "rank": 163
       }
     ],
@@ -96394,6 +97046,10 @@
       {
         "date": "2026-09-22",
         "rank": 164
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 164
       }
     ],
     "collegeStats": {
@@ -96598,6 +97254,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 165
+      },
+      {
+        "date": "2026-09-23",
         "rank": 165
       }
     ],
@@ -97260,6 +97920,10 @@
       {
         "date": "2026-09-22",
         "rank": 166
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 166
       }
     ],
     "collegeStats": {
@@ -97914,6 +98578,10 @@
       {
         "date": "2026-09-22",
         "rank": 167
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 167
       }
     ],
     "collegeStats": {
@@ -98117,6 +98785,10 @@
       {
         "date": "2026-09-22",
         "rank": 168
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 168
       }
     ],
     "collegeStats": {
@@ -98157,7 +98829,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Ambry Thomas",
@@ -98761,6 +99433,10 @@
       {
         "date": "2026-09-22",
         "rank": 169
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 169
       }
     ],
     "collegeStats": {
@@ -98782,7 +99458,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Chau Smith-Wade",
@@ -99193,6 +99869,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 170
+      },
+      {
+        "date": "2026-09-23",
         "rank": 170
       }
     ],
@@ -99852,6 +100532,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 171
+      },
+      {
+        "date": "2026-09-23",
         "rank": 171
       }
     ],
@@ -100523,6 +101207,10 @@
       {
         "date": "2026-09-22",
         "rank": 172
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 172
       }
     ],
     "collegeStats": {
@@ -100569,7 +101257,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Ryan Watts",
@@ -101213,6 +101901,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 173
+      },
+      {
+        "date": "2026-09-23",
         "rank": 173
       }
     ],
@@ -101864,6 +102556,10 @@
       {
         "date": "2026-09-22",
         "rank": 174
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 174
       }
     ],
     "collegeStats": {
@@ -102063,6 +102759,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 175
+      },
+      {
+        "date": "2026-09-23",
         "rank": 175
       }
     ],
@@ -102713,6 +103413,10 @@
       {
         "date": "2026-09-22",
         "rank": 176
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 176
       }
     ],
     "collegeStats": {},
@@ -103333,6 +104037,10 @@
       {
         "date": "2026-09-22",
         "rank": 177
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 177
       }
     ],
     "collegeStats": {
@@ -103535,6 +104243,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 178
+      },
+      {
+        "date": "2026-09-23",
         "rank": 178
       }
     ],
@@ -104174,6 +104886,10 @@
       {
         "date": "2026-09-22",
         "rank": 179
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 179
       }
     ],
     "collegeStats": {},
@@ -104293,6 +105009,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 180
+      },
+      {
+        "date": "2026-09-23",
         "rank": 180
       }
     ],
@@ -104660,6 +105380,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 181
+      },
+      {
+        "date": "2026-09-23",
         "rank": 181
       }
     ],
@@ -105344,6 +106068,10 @@
       {
         "date": "2026-09-22",
         "rank": 182
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 182
       }
     ],
     "collegeStats": {
@@ -106000,6 +106728,10 @@
       {
         "date": "2026-09-22",
         "rank": 183
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 183
       }
     ],
     "collegeStats": {},
@@ -106619,6 +107351,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 184
+      },
+      {
+        "date": "2026-09-23",
         "rank": 184
       }
     ],
@@ -107268,6 +108004,10 @@
       {
         "date": "2026-09-22",
         "rank": 185
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 185
       }
     ],
     "collegeStats": {
@@ -107313,7 +108053,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Benjamin St-Juste",
@@ -107957,6 +108697,10 @@
       {
         "date": "2026-09-22",
         "rank": 186
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 186
       }
     ],
     "collegeStats": {
@@ -108593,6 +109337,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 187
+      },
+      {
+        "date": "2026-09-23",
         "rank": 187
       }
     ],
@@ -109283,6 +110031,10 @@
       {
         "date": "2026-09-22",
         "rank": 188
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 188
       }
     ],
     "collegeStats": {
@@ -109312,7 +110064,7 @@
       "games": 3.0
     },
     "tankStats": {
-      "TACKLES": "15",
+      "TACKLES": "14",
       "SACKS": "0.5",
       "PASS DEF": "1",
       "INT": "0",
@@ -109825,6 +110577,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 189
+      },
+      {
+        "date": "2026-09-23",
         "rank": 189
       }
     ],
@@ -110505,6 +111261,10 @@
       {
         "date": "2026-09-22",
         "rank": 190
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 190
       }
     ],
     "collegeStats": {},
@@ -111124,6 +111884,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 191
+      },
+      {
+        "date": "2026-09-23",
         "rank": 191
       }
     ],
@@ -111785,6 +112549,10 @@
       {
         "date": "2026-09-22",
         "rank": 192
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 192
       }
     ],
     "collegeStats": {
@@ -111826,7 +112594,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jay Ward",
@@ -112430,6 +113198,10 @@
       {
         "date": "2026-09-22",
         "rank": 193
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 193
       }
     ],
     "collegeStats": {
@@ -112477,7 +113249,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jay Ward",
@@ -113122,6 +113894,10 @@
       {
         "date": "2026-09-22",
         "rank": 194
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 194
       }
     ],
     "collegeStats": {
@@ -113151,7 +113927,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jamien Sherwood",
@@ -113647,6 +114423,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 195
+      },
+      {
+        "date": "2026-09-23",
         "rank": 195
       }
     ],
@@ -114297,6 +115077,10 @@
       {
         "date": "2026-09-22",
         "rank": 196
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 196
       }
     ],
     "collegeStats": {
@@ -114946,6 +115730,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 197
+      },
+      {
+        "date": "2026-09-23",
         "rank": 197
       }
     ],
@@ -115607,6 +116395,10 @@
       {
         "date": "2026-09-22",
         "rank": 198
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 198
       }
     ],
     "collegeStats": {
@@ -116252,6 +117044,10 @@
       {
         "date": "2026-09-22",
         "rank": 199
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 199
       }
     ],
     "collegeStats": {
@@ -116463,6 +117259,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 200
+      },
+      {
+        "date": "2026-09-23",
         "rank": 200
       }
     ],
@@ -117107,6 +117907,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 201
+      },
+      {
+        "date": "2026-09-23",
         "rank": 201
       }
     ],
@@ -117799,6 +118603,10 @@
       {
         "date": "2026-09-22",
         "rank": 202
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 202
       }
     ],
     "collegeStats": {
@@ -117834,7 +118642,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Quentin Lake",
@@ -117990,6 +118798,10 @@
       {
         "date": "2026-09-22",
         "rank": 203
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 203
       }
     ],
     "collegeStats": {
@@ -118030,7 +118842,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jordan Battle",
@@ -118633,6 +119445,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 204
+      },
+      {
+        "date": "2026-09-23",
         "rank": 204
       }
     ],
@@ -119279,6 +120095,10 @@
       {
         "date": "2026-09-22",
         "rank": 205
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 205
       }
     ],
     "collegeStats": {
@@ -119915,6 +120735,10 @@
       {
         "date": "2026-09-22",
         "rank": 206
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 206
       }
     ],
     "collegeStats": {
@@ -119962,7 +120786,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Decamerion Richardson",
@@ -120122,6 +120946,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 207
+      },
+      {
+        "date": "2026-09-23",
         "rank": 207
       }
     ],
@@ -120766,6 +121594,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 208
+      },
+      {
+        "date": "2026-09-23",
         "rank": 208
       }
     ],
@@ -121443,6 +122275,10 @@
       {
         "date": "2026-09-22",
         "rank": 209
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 209
       }
     ],
     "collegeStats": {
@@ -122091,6 +122927,10 @@
       {
         "date": "2026-09-22",
         "rank": 210
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 210
       }
     ],
     "collegeStats": {
@@ -122189,6 +123029,10 @@
     "rankHistory": [
       {
         "date": "2026-09-22",
+        "rank": 211
+      },
+      {
+        "date": "2026-09-23",
         "rank": 211
       }
     ],
@@ -122831,6 +123675,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 212
+      },
+      {
+        "date": "2026-09-23",
         "rank": 212
       }
     ],
@@ -123483,6 +124331,10 @@
       {
         "date": "2026-09-22",
         "rank": 213
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 213
       }
     ],
     "collegeStats": {
@@ -123565,7 +124417,7 @@
     "espnGrade": null,
     "espnId": null,
     "projectedTeam": "Chicago Bears",
-    "projectedPick": 100,
+    "projectedPick": 99,
     "classYear": "Sr",
     "rankBySource": {
       "cbs_sports": 95,
@@ -123851,6 +124703,10 @@
       {
         "date": "2026-09-22",
         "rank": 214
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 214
       }
     ],
     "collegeStats": {
@@ -124052,6 +124908,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 215
+      },
+      {
+        "date": "2026-09-23",
         "rank": 215
       }
     ],
@@ -124697,6 +125557,10 @@
       {
         "date": "2026-09-22",
         "rank": 216
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 216
       }
     ],
     "collegeStats": {
@@ -125237,6 +126101,10 @@
       {
         "date": "2026-09-22",
         "rank": 217
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 217
       }
     ],
     "collegeStats": {
@@ -125439,6 +126307,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 218
+      },
+      {
+        "date": "2026-09-23",
         "rank": 218
       }
     ],
@@ -126078,6 +126950,10 @@
       {
         "date": "2026-09-22",
         "rank": 219
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 219
       }
     ],
     "collegeStats": {
@@ -126119,7 +126995,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Martin Emerson",
@@ -126752,6 +127628,10 @@
       {
         "date": "2026-09-22",
         "rank": 220
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 220
       }
     ],
     "collegeStats": {
@@ -126954,6 +127834,10 @@
       {
         "date": "2026-09-22",
         "rank": 221
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 221
       }
     ],
     "collegeStats": {
@@ -126988,7 +127872,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Kyle Hamilton",
@@ -127592,6 +128476,10 @@
       {
         "date": "2026-09-22",
         "rank": 222
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 222
       }
     ],
     "collegeStats": {
@@ -127639,7 +128527,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Chamarri Conner",
@@ -127794,6 +128682,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 223
+      },
+      {
+        "date": "2026-09-23",
         "rank": 223
       }
     ],
@@ -128431,6 +129323,10 @@
       {
         "date": "2026-09-22",
         "rank": 224
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 224
       }
     ],
     "collegeStats": {},
@@ -129050,6 +129946,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 225
+      },
+      {
+        "date": "2026-09-23",
         "rank": 225
       }
     ],
@@ -129696,6 +130596,10 @@
       {
         "date": "2026-09-22",
         "rank": 226
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 226
       }
     ],
     "collegeStats": {},
@@ -129871,6 +130775,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 227
+      },
+      {
+        "date": "2026-09-23",
         "rank": 227
       }
     ],
@@ -130520,6 +131428,10 @@
       {
         "date": "2026-09-22",
         "rank": 228
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 228
       }
     ],
     "collegeStats": {},
@@ -130588,6 +131500,10 @@
       {
         "date": "2026-09-22",
         "rank": 229
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 229
       }
     ],
     "collegeStats": {
@@ -130635,7 +131551,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Darren Hall",
@@ -131511,6 +132427,10 @@
       {
         "date": "2026-09-22",
         "rank": 230
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 230
       }
     ],
     "collegeStats": {
@@ -132159,6 +133079,10 @@
       {
         "date": "2026-09-22",
         "rank": 231
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 231
       }
     ],
     "collegeStats": {},
@@ -132779,6 +133703,10 @@
       {
         "date": "2026-09-22",
         "rank": 232
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 232
       }
     ],
     "collegeStats": {
@@ -132820,7 +133748,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Bilhal Kone",
@@ -133451,6 +134379,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 233
+      },
+      {
+        "date": "2026-09-23",
         "rank": 233
       }
     ],
@@ -134089,6 +135021,10 @@
       {
         "date": "2026-09-22",
         "rank": 234
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 234
       }
     ],
     "collegeStats": {},
@@ -134264,6 +135200,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 235
+      },
+      {
+        "date": "2026-09-23",
         "rank": 235
       }
     ],
@@ -134922,6 +135862,10 @@
       {
         "date": "2026-09-22",
         "rank": 236
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 236
       }
     ],
     "collegeStats": {
@@ -135549,6 +136493,10 @@
       {
         "date": "2026-09-22",
         "rank": 237
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 237
       }
     ],
     "collegeStats": {
@@ -135697,6 +136645,10 @@
       {
         "date": "2026-09-22",
         "rank": 238
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 238
       }
     ],
     "collegeStats": {
@@ -135738,7 +136690,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Kaiir Elam",
@@ -136342,6 +137294,10 @@
       {
         "date": "2026-09-22",
         "rank": 239
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 239
       }
     ],
     "collegeStats": {
@@ -136549,6 +137505,10 @@
       {
         "date": "2026-09-22",
         "rank": 240
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 240
       }
     ],
     "collegeStats": {
@@ -136590,7 +137550,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Camryn Bynum",
@@ -137194,6 +138154,10 @@
       {
         "date": "2026-09-22",
         "rank": 241
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 241
       }
     ],
     "collegeStats": {
@@ -137617,6 +138581,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 242
+      },
+      {
+        "date": "2026-09-23",
         "rank": 242
       }
     ],
@@ -138255,6 +139223,10 @@
       {
         "date": "2026-09-22",
         "rank": 243
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 243
       }
     ],
     "collegeStats": {
@@ -138345,7 +139317,7 @@
     "espnGrade": null,
     "espnId": null,
     "projectedTeam": "Kansas City Chiefs",
-    "projectedPick": 99,
+    "projectedPick": 100,
     "classYear": null,
     "rankBySource": {
       "tankathon": 111
@@ -138461,6 +139433,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 244
+      },
+      {
+        "date": "2026-09-23",
         "rank": 244
       }
     ],
@@ -139104,6 +140080,10 @@
       {
         "date": "2026-09-22",
         "rank": 245
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 245
       }
     ],
     "collegeStats": {
@@ -139151,7 +140131,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Kamal Hadden",
@@ -139311,6 +140291,10 @@
       {
         "date": "2026-09-22",
         "rank": 246
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 246
       }
     ],
     "collegeStats": {},
@@ -139319,7 +140303,7 @@
       "Rush Yds": "198",
       "TD": "2",
       "AVG": "4.8",
-      "REC YDS": "57",
+      "REC YDS": "54",
       "REC TD": "1"
     },
     "combineData": {
@@ -139937,6 +140921,10 @@
       {
         "date": "2026-09-22",
         "rank": 247
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 247
       }
     ],
     "collegeStats": {
@@ -140120,6 +141108,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 248
+      },
+      {
+        "date": "2026-09-23",
         "rank": 248
       }
     ],
@@ -140746,6 +141738,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 249
+      },
+      {
+        "date": "2026-09-23",
         "rank": 249
       }
     ],
@@ -141394,6 +142390,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 250
+      },
+      {
+        "date": "2026-09-23",
         "rank": 250
       }
     ],
@@ -142046,6 +143046,10 @@
       {
         "date": "2026-09-22",
         "rank": 251
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 251
       }
     ],
     "collegeStats": {
@@ -142093,7 +143097,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Joshua Williams",
@@ -142220,6 +143224,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 252
+      },
+      {
+        "date": "2026-09-23",
         "rank": 252
       }
     ],
@@ -142841,6 +143849,10 @@
       {
         "date": "2026-09-22",
         "rank": 253
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 253
       }
     ],
     "collegeStats": {},
@@ -143460,6 +144472,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 254
+      },
+      {
+        "date": "2026-09-23",
         "rank": 254
       }
     ],
@@ -144104,6 +145120,10 @@
       {
         "date": "2026-09-22",
         "rank": 255
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 255
       }
     ],
     "collegeStats": {
@@ -144747,6 +145767,10 @@
       {
         "date": "2026-09-22",
         "rank": 256
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 256
       }
     ],
     "collegeStats": {
@@ -144794,7 +145818,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Julius Brents",
@@ -145397,6 +146421,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 257
+      },
+      {
+        "date": "2026-09-23",
         "rank": 257
       }
     ],
@@ -146017,6 +147045,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 258
+      },
+      {
+        "date": "2026-09-23",
         "rank": 258
       }
     ],
@@ -146674,6 +147706,10 @@
       {
         "date": "2026-09-22",
         "rank": 259
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 259
       }
     ],
     "collegeStats": {
@@ -147319,6 +148355,10 @@
       {
         "date": "2026-09-22",
         "rank": 260
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 260
       }
     ],
     "collegeStats": {},
@@ -147939,6 +148979,10 @@
       {
         "date": "2026-09-22",
         "rank": 261
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 261
       }
     ],
     "collegeStats": {
@@ -147980,7 +149024,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Cory Trice",
@@ -148583,6 +149627,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 262
+      },
+      {
+        "date": "2026-09-23",
         "rank": 262
       }
     ],
@@ -149233,6 +150281,10 @@
       {
         "date": "2026-09-22",
         "rank": 263
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 263
       }
     ],
     "collegeStats": {},
@@ -149853,6 +150905,10 @@
       {
         "date": "2026-09-22",
         "rank": 264
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 264
       }
     ],
     "collegeStats": {
@@ -149900,7 +150956,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Cobie Durant",
@@ -150504,6 +151560,10 @@
       {
         "date": "2026-09-22",
         "rank": 265
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 265
       }
     ],
     "collegeStats": {
@@ -150551,7 +151611,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Tre Brown",
@@ -151154,6 +152214,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 266
+      },
+      {
+        "date": "2026-09-23",
         "rank": 266
       }
     ],
@@ -151815,6 +152879,10 @@
       {
         "date": "2026-09-22",
         "rank": 267
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 267
       }
     ],
     "collegeStats": {
@@ -152463,6 +153531,10 @@
       {
         "date": "2026-09-22",
         "rank": 268
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 268
       }
     ],
     "collegeStats": {},
@@ -153082,6 +154154,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 269
+      },
+      {
+        "date": "2026-09-23",
         "rank": 269
       }
     ],
@@ -153733,6 +154809,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 270
+      },
+      {
+        "date": "2026-09-23",
         "rank": 270
       }
     ],
@@ -154390,6 +155470,10 @@
       {
         "date": "2026-09-22",
         "rank": 271
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 271
       }
     ],
     "collegeStats": {
@@ -155040,6 +156124,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 272
+      },
+      {
+        "date": "2026-09-23",
         "rank": 272
       }
     ],
@@ -155826,6 +156914,10 @@
       {
         "date": "2026-09-22",
         "rank": 273
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 273
       }
     ],
     "collegeStats": {},
@@ -156446,6 +157538,10 @@
       {
         "date": "2026-09-22",
         "rank": 274
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 274
       }
     ],
     "collegeStats": {},
@@ -157065,6 +158161,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 275
+      },
+      {
+        "date": "2026-09-23",
         "rank": 275
       }
     ],
@@ -157714,6 +158814,10 @@
       {
         "date": "2026-09-22",
         "rank": 276
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 276
       }
     ],
     "collegeStats": {},
@@ -158333,6 +159437,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 277
+      },
+      {
+        "date": "2026-09-23",
         "rank": 277
       }
     ],
@@ -158954,6 +160062,10 @@
       {
         "date": "2026-09-22",
         "rank": 278
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 278
       }
     ],
     "collegeStats": {
@@ -158992,7 +160104,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Tyson Campbell",
@@ -159596,6 +160708,10 @@
       {
         "date": "2026-09-22",
         "rank": 279
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 279
       }
     ],
     "collegeStats": {
@@ -159643,7 +160759,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jacoby Stevens",
@@ -160519,6 +161635,10 @@
       {
         "date": "2026-09-22",
         "rank": 280
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 280
       }
     ],
     "collegeStats": {
@@ -161167,6 +162287,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 281
+      },
+      {
+        "date": "2026-09-23",
         "rank": 281
       }
     ],
@@ -162088,6 +163212,10 @@
       {
         "date": "2026-09-22",
         "rank": 282
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 282
       }
     ],
     "collegeStats": {
@@ -162735,6 +163863,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 283
+      },
+      {
+        "date": "2026-09-23",
         "rank": 283
       }
     ],
@@ -163391,6 +164523,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 284
+      },
+      {
+        "date": "2026-09-23",
         "rank": 284
       }
     ],
@@ -164313,6 +165449,10 @@
       {
         "date": "2026-09-22",
         "rank": 285
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 285
       }
     ],
     "collegeStats": {
@@ -164961,6 +166101,10 @@
       {
         "date": "2026-09-22",
         "rank": 286
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 286
       }
     ],
     "collegeStats": {
@@ -165605,6 +166749,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 287
+      },
+      {
+        "date": "2026-09-23",
         "rank": 287
       }
     ],
@@ -166257,6 +167405,10 @@
       {
         "date": "2026-09-22",
         "rank": 288
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 288
       }
     ],
     "collegeStats": {
@@ -166907,6 +168059,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 289
+      },
+      {
+        "date": "2026-09-23",
         "rank": 289
       }
     ],
@@ -167568,6 +168724,10 @@
       {
         "date": "2026-09-22",
         "rank": 290
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 290
       }
     ],
     "collegeStats": {
@@ -168228,6 +169388,10 @@
       {
         "date": "2026-09-22",
         "rank": 291
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 291
       }
     ],
     "collegeStats": {
@@ -168875,6 +170039,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 292
+      },
+      {
+        "date": "2026-09-23",
         "rank": 292
       }
     ],
@@ -169524,6 +170692,10 @@
       {
         "date": "2026-09-22",
         "rank": 293
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 293
       }
     ],
     "collegeStats": {},
@@ -170143,6 +171315,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 294
+      },
+      {
+        "date": "2026-09-23",
         "rank": 294
       }
     ],
@@ -170764,6 +171940,10 @@
       {
         "date": "2026-09-22",
         "rank": 295
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 295
       }
     ],
     "collegeStats": {
@@ -170811,7 +171991,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Joshua Williams",
@@ -171414,6 +172594,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 296
+      },
+      {
+        "date": "2026-09-23",
         "rank": 296
       }
     ],
@@ -172062,6 +173246,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 297
+      },
+      {
+        "date": "2026-09-23",
         "rank": 297
       }
     ],
@@ -172714,6 +173902,10 @@
       {
         "date": "2026-09-22",
         "rank": 298
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 298
       }
     ],
     "collegeStats": {},
@@ -173334,6 +174526,10 @@
       {
         "date": "2026-09-22",
         "rank": 299
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 299
       }
     ],
     "collegeStats": {
@@ -173381,7 +174577,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Tyson Campbell",
@@ -173985,6 +175181,10 @@
       {
         "date": "2026-09-22",
         "rank": 300
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 300
       }
     ],
     "collegeStats": {
@@ -174032,7 +175232,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Cam Smith",
@@ -174635,6 +175835,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 301
+      },
+      {
+        "date": "2026-09-23",
         "rank": 301
       }
     ],
@@ -175287,6 +176491,10 @@
       {
         "date": "2026-09-22",
         "rank": 302
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 302
       }
     ],
     "collegeStats": {
@@ -175930,6 +177138,10 @@
       {
         "date": "2026-09-22",
         "rank": 303
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 303
       }
     ],
     "collegeStats": {
@@ -176556,6 +177768,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 304
+      },
+      {
+        "date": "2026-09-23",
         "rank": 304
       }
     ],
@@ -177477,6 +178693,10 @@
       {
         "date": "2026-09-22",
         "rank": 305
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 305
       }
     ],
     "collegeStats": {},
@@ -178097,6 +179317,10 @@
       {
         "date": "2026-09-22",
         "rank": 306
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 306
       }
     ],
     "collegeStats": {
@@ -178144,7 +179368,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jamar Johnson",
@@ -178748,6 +179972,10 @@
       {
         "date": "2026-09-22",
         "rank": 307
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 307
       }
     ],
     "collegeStats": {
@@ -178793,7 +180021,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Dane Belton",
@@ -179669,6 +180897,10 @@
       {
         "date": "2026-09-22",
         "rank": 308
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 308
       }
     ],
     "collegeStats": {
@@ -180320,6 +181552,10 @@
       {
         "date": "2026-09-22",
         "rank": 309
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 309
       }
     ],
     "collegeStats": {},
@@ -180939,6 +182175,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 310
+      },
+      {
+        "date": "2026-09-23",
         "rank": 310
       }
     ],
@@ -181583,6 +182823,10 @@
       {
         "date": "2026-09-22",
         "rank": 311
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 311
       }
     ],
     "collegeStats": {
@@ -181630,7 +182874,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Roger McCreary",
@@ -182233,6 +183477,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 312
+      },
+      {
+        "date": "2026-09-23",
         "rank": 312
       }
     ],
@@ -182890,6 +184138,10 @@
       {
         "date": "2026-09-22",
         "rank": 313
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 313
       }
     ],
     "collegeStats": {
@@ -183532,6 +184784,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 314
+      },
+      {
+        "date": "2026-09-23",
         "rank": 314
       }
     ],
@@ -184452,6 +185708,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 315
+      },
+      {
+        "date": "2026-09-23",
         "rank": 315
       }
     ],
@@ -185381,6 +186641,10 @@
       {
         "date": "2026-09-22",
         "rank": 316
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 316
       }
     ],
     "collegeStats": {
@@ -186026,6 +187290,10 @@
       {
         "date": "2026-09-22",
         "rank": 317
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 317
       }
     ],
     "collegeStats": {
@@ -186668,6 +187936,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 318
+      },
+      {
+        "date": "2026-09-23",
         "rank": 318
       }
     ],
@@ -187320,6 +188592,10 @@
       {
         "date": "2026-09-22",
         "rank": 319
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 319
       }
     ],
     "collegeStats": {
@@ -187961,6 +189237,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 320
+      },
+      {
+        "date": "2026-09-23",
         "rank": 320
       }
     ],
@@ -188885,6 +190165,10 @@
       {
         "date": "2026-09-22",
         "rank": 321
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 321
       }
     ],
     "collegeStats": {
@@ -189536,6 +190820,10 @@
       {
         "date": "2026-09-22",
         "rank": 322
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 322
       }
     ],
     "collegeStats": {},
@@ -190155,6 +191443,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 323
+      },
+      {
+        "date": "2026-09-23",
         "rank": 323
       }
     ],
@@ -191048,6 +192340,10 @@
       {
         "date": "2026-09-22",
         "rank": 324
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 324
       }
     ],
     "collegeStats": {
@@ -191089,7 +192385,7 @@
       "shuttle": null,
       "participated": true
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Martin Emerson",
@@ -191692,6 +192988,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 325
+      },
+      {
+        "date": "2026-09-23",
         "rank": 325
       }
     ],
@@ -192313,6 +193613,10 @@
       {
         "date": "2026-09-22",
         "rank": 326
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 326
       }
     ],
     "collegeStats": {
@@ -192336,7 +193640,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Chau Smith-Wade",
@@ -192940,6 +194244,10 @@
       {
         "date": "2026-09-22",
         "rank": 327
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 327
       }
     ],
     "collegeStats": {
@@ -192981,7 +194289,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Bilhal Kone",
@@ -193584,6 +194892,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 328
+      },
+      {
+        "date": "2026-09-23",
         "rank": 328
       }
     ],
@@ -194232,6 +195544,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 329
+      },
+      {
+        "date": "2026-09-23",
         "rank": 329
       }
     ],
@@ -195072,6 +196388,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 330
+      },
+      {
+        "date": "2026-09-23",
         "rank": 330
       }
     ],
@@ -195965,6 +197285,10 @@
       {
         "date": "2026-09-22",
         "rank": 331
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 331
       }
     ],
     "collegeStats": {},
@@ -196856,6 +198180,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 332
+      },
+      {
+        "date": "2026-09-23",
         "rank": 332
       }
     ],
@@ -197758,6 +199086,10 @@
       {
         "date": "2026-09-22",
         "rank": 333
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 333
       }
     ],
     "collegeStats": {
@@ -198402,6 +199734,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 334
+      },
+      {
+        "date": "2026-09-23",
         "rank": 334
       }
     ],
@@ -199274,6 +200610,10 @@
       {
         "date": "2026-09-22",
         "rank": 335
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 335
       }
     ],
     "collegeStats": {
@@ -199914,6 +201254,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 336
+      },
+      {
+        "date": "2026-09-23",
         "rank": 336
       }
     ],
@@ -200563,6 +201907,10 @@
       {
         "date": "2026-09-22",
         "rank": 337
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 337
       }
     ],
     "collegeStats": {
@@ -201211,6 +202559,10 @@
       {
         "date": "2026-09-22",
         "rank": 338
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 338
       }
     ],
     "collegeStats": {
@@ -201858,6 +203210,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 339
+      },
+      {
+        "date": "2026-09-23",
         "rank": 339
       }
     ],
@@ -202509,6 +203865,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 340
+      },
+      {
+        "date": "2026-09-23",
         "rank": 340
       }
     ],
@@ -203434,6 +204794,10 @@
       {
         "date": "2026-09-22",
         "rank": 341
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 341
       }
     ],
     "collegeStats": {
@@ -204078,6 +205442,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 342
+      },
+      {
+        "date": "2026-09-23",
         "rank": 342
       }
     ],
@@ -204730,6 +206098,10 @@
       {
         "date": "2026-09-22",
         "rank": 343
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 343
       }
     ],
     "collegeStats": {},
@@ -205349,6 +206721,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 344
+      },
+      {
+        "date": "2026-09-23",
         "rank": 344
       }
     ],
@@ -206242,6 +207618,10 @@
       {
         "date": "2026-09-22",
         "rank": 345
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 345
       }
     ],
     "collegeStats": {
@@ -206902,6 +208282,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 346
+      },
+      {
+        "date": "2026-09-23",
         "rank": 346
       }
     ],
@@ -207845,6 +209229,10 @@
       {
         "date": "2026-09-22",
         "rank": 347
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 347
       }
     ],
     "collegeStats": {
@@ -208492,6 +209880,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 348
+      },
+      {
+        "date": "2026-09-23",
         "rank": 348
       }
     ],
@@ -209144,6 +210536,10 @@
       {
         "date": "2026-09-22",
         "rank": 349
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 349
       }
     ],
     "collegeStats": {
@@ -209792,6 +211188,10 @@
       {
         "date": "2026-09-22",
         "rank": 350
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 350
       }
     ],
     "collegeStats": {
@@ -210419,6 +211819,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 351
+      },
+      {
+        "date": "2026-09-23",
         "rank": 351
       }
     ],
@@ -211348,6 +212752,10 @@
       {
         "date": "2026-09-22",
         "rank": 352
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 352
       }
     ],
     "collegeStats": {
@@ -212271,6 +213679,10 @@
       {
         "date": "2026-09-22",
         "rank": 353
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 353
       }
     ],
     "collegeStats": {
@@ -212905,6 +214317,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 354
+      },
+      {
+        "date": "2026-09-23",
         "rank": 354
       }
     ],
@@ -213829,6 +215245,10 @@
       {
         "date": "2026-09-22",
         "rank": 355
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 355
       }
     ],
     "collegeStats": {
@@ -214480,6 +215900,10 @@
       {
         "date": "2026-09-22",
         "rank": 356
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 356
       }
     ],
     "collegeStats": {},
@@ -215099,6 +216523,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 357
+      },
+      {
+        "date": "2026-09-23",
         "rank": 357
       }
     ],
@@ -216032,6 +217460,10 @@
       {
         "date": "2026-09-22",
         "rank": 358
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 358
       }
     ],
     "collegeStats": {
@@ -216964,6 +218396,10 @@
       {
         "date": "2026-09-22",
         "rank": 359
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 359
       }
     ],
     "collegeStats": {},
@@ -217583,6 +219019,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 360
+      },
+      {
+        "date": "2026-09-23",
         "rank": 360
       }
     ],
@@ -218504,6 +219944,10 @@
       {
         "date": "2026-09-22",
         "rank": 361
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 361
       }
     ],
     "collegeStats": {
@@ -219155,6 +220599,10 @@
       {
         "date": "2026-09-22",
         "rank": 362
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 362
       }
     ],
     "collegeStats": {
@@ -219202,7 +220650,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Garrett Williams",
@@ -219942,6 +221390,10 @@
       {
         "date": "2026-09-22",
         "rank": 363
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 363
       }
     ],
     "collegeStats": {},
@@ -220562,6 +222014,10 @@
       {
         "date": "2026-09-22",
         "rank": 364
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 364
       }
     ],
     "collegeStats": {
@@ -220597,7 +222053,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Eric Stokes",
@@ -221473,6 +222929,10 @@
       {
         "date": "2026-09-22",
         "rank": 365
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 365
       }
     ],
     "collegeStats": {
@@ -221514,7 +222974,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Alex Austin",
@@ -222118,6 +223578,10 @@
       {
         "date": "2026-09-22",
         "rank": 366
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 366
       }
     ],
     "collegeStats": {
@@ -222163,7 +223627,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Kamal Hadden",
@@ -222766,6 +224230,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 367
+      },
+      {
+        "date": "2026-09-23",
         "rank": 367
       }
     ],
@@ -223687,6 +225155,10 @@
       {
         "date": "2026-09-22",
         "rank": 368
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 368
       }
     ],
     "collegeStats": {
@@ -224474,6 +225946,10 @@
       {
         "date": "2026-09-22",
         "rank": 369
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 369
       }
     ],
     "collegeStats": {
@@ -224515,7 +225991,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Cory Trice",
@@ -225118,6 +226594,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 370
+      },
+      {
+        "date": "2026-09-23",
         "rank": 370
       }
     ],
@@ -226051,6 +227531,10 @@
       {
         "date": "2026-09-22",
         "rank": 371
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 371
       }
     ],
     "collegeStats": {
@@ -226096,7 +227580,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Gervarrius Owens",
@@ -226699,6 +228183,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 372
+      },
+      {
+        "date": "2026-09-23",
         "rank": 372
       }
     ],
@@ -227342,6 +228830,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 373
+      },
+      {
+        "date": "2026-09-23",
         "rank": 373
       }
     ],
@@ -227994,6 +229486,10 @@
       {
         "date": "2026-09-22",
         "rank": 374
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 374
       }
     ],
     "collegeStats": {
@@ -228641,6 +230137,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 375
+      },
+      {
+        "date": "2026-09-23",
         "rank": 375
       }
     ],
@@ -229562,6 +231062,10 @@
       {
         "date": "2026-09-22",
         "rank": 376
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 376
       }
     ],
     "collegeStats": {
@@ -230204,6 +231708,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 377
+      },
+      {
+        "date": "2026-09-23",
         "rank": 377
       }
     ],
@@ -230853,6 +232361,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 378
+      },
+      {
+        "date": "2026-09-23",
         "rank": 378
       }
     ],
@@ -231771,6 +233283,10 @@
       {
         "date": "2026-09-22",
         "rank": 379
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 379
       }
     ],
     "collegeStats": {
@@ -232421,6 +233937,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 380
+      },
+      {
+        "date": "2026-09-23",
         "rank": 380
       }
     ],
@@ -233177,6 +234697,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 381
+      },
+      {
+        "date": "2026-09-23",
         "rank": 381
       }
     ],
@@ -234102,6 +235626,10 @@
       {
         "date": "2026-09-22",
         "rank": 382
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 382
       }
     ],
     "collegeStats": {
@@ -234149,7 +235677,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Caden Sterns",
@@ -235024,6 +236552,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 383
+      },
+      {
+        "date": "2026-09-23",
         "rank": 383
       }
     ],
@@ -235957,6 +237489,10 @@
       {
         "date": "2026-09-22",
         "rank": 384
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 384
       }
     ],
     "collegeStats": {
@@ -236607,6 +238143,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 385
+      },
+      {
+        "date": "2026-09-23",
         "rank": 385
       }
     ],
@@ -237531,6 +239071,10 @@
       {
         "date": "2026-09-22",
         "rank": 386
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 386
       }
     ],
     "collegeStats": {
@@ -238297,6 +239841,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 387
+      },
+      {
+        "date": "2026-09-23",
         "rank": 387
       }
     ],
@@ -239218,6 +240766,10 @@
       {
         "date": "2026-09-22",
         "rank": 388
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 388
       }
     ],
     "collegeStats": {},
@@ -240088,6 +241640,10 @@
       {
         "date": "2026-09-22",
         "rank": 389
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 389
       }
     ],
     "collegeStats": {
@@ -240720,6 +242276,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 390
+      },
+      {
+        "date": "2026-09-23",
         "rank": 390
       }
     ],
@@ -241358,6 +242918,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 391
+      },
+      {
+        "date": "2026-09-23",
         "rank": 391
       }
     ],
@@ -242114,6 +243678,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 392
+      },
+      {
+        "date": "2026-09-23",
         "rank": 392
       }
     ],
@@ -243007,6 +244575,10 @@
       {
         "date": "2026-09-22",
         "rank": 393
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 393
       }
     ],
     "collegeStats": {
@@ -243657,6 +245229,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 394
+      },
+      {
+        "date": "2026-09-23",
         "rank": 394
       }
     ],
@@ -244414,6 +245990,10 @@
       {
         "date": "2026-09-22",
         "rank": 395
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 395
       }
     ],
     "collegeStats": {},
@@ -245033,6 +246613,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 396
+      },
+      {
+        "date": "2026-09-23",
         "rank": 396
       }
     ],
@@ -245926,6 +247510,10 @@
       {
         "date": "2026-09-22",
         "rank": 397
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 397
       }
     ],
     "collegeStats": {},
@@ -246545,6 +248133,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 398
+      },
+      {
+        "date": "2026-09-23",
         "rank": 398
       }
     ],
@@ -247166,6 +248758,10 @@
       {
         "date": "2026-09-22",
         "rank": 399
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 399
       }
     ],
     "collegeStats": {
@@ -247195,7 +248791,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jay Ward",
@@ -248071,6 +249667,10 @@
       {
         "date": "2026-09-22",
         "rank": 400
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 400
       }
     ],
     "collegeStats": {
@@ -248836,6 +250436,10 @@
       {
         "date": "2026-09-22",
         "rank": 401
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 401
       }
     ],
     "collegeStats": {
@@ -249477,6 +251081,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 402
+      },
+      {
+        "date": "2026-09-23",
         "rank": 402
       }
     ],
@@ -250395,6 +252003,10 @@
       {
         "date": "2026-09-22",
         "rank": 403
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 403
       }
     ],
     "collegeStats": {
@@ -251055,6 +252667,10 @@
       {
         "date": "2026-09-22",
         "rank": 404
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 404
       }
     ],
     "collegeStats": {
@@ -251678,6 +253294,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 405
+      },
+      {
+        "date": "2026-09-23",
         "rank": 405
       }
     ],
@@ -252391,6 +254011,10 @@
       {
         "date": "2026-09-22",
         "rank": 406
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 406
       }
     ],
     "collegeStats": {
@@ -252438,7 +254062,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Tay Gowan",
@@ -253041,6 +254665,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 407
+      },
+      {
+        "date": "2026-09-23",
         "rank": 407
       }
     ],
@@ -253965,6 +255593,10 @@
       {
         "date": "2026-09-22",
         "rank": 408
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 408
       }
     ],
     "collegeStats": {
@@ -254599,6 +256231,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 409
+      },
+      {
+        "date": "2026-09-23",
         "rank": 409
       }
     ],
@@ -255383,6 +257019,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 410
+      },
+      {
+        "date": "2026-09-23",
         "rank": 410
       }
     ],
@@ -256275,6 +257915,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 411
+      },
+      {
+        "date": "2026-09-23",
         "rank": 411
       }
     ],
@@ -257208,6 +258852,10 @@
       {
         "date": "2026-09-22",
         "rank": 412
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 412
       }
     ],
     "collegeStats": {
@@ -257855,6 +259503,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 413
+      },
+      {
+        "date": "2026-09-23",
         "rank": 413
       }
     ],
@@ -258770,6 +260422,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 414
+      },
+      {
+        "date": "2026-09-23",
         "rank": 414
       }
     ],
@@ -259691,6 +261347,10 @@
       {
         "date": "2026-09-22",
         "rank": 415
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 415
       }
     ],
     "collegeStats": {
@@ -260588,6 +262248,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 416
+      },
+      {
+        "date": "2026-09-23",
         "rank": 416
       }
     ],
@@ -261509,6 +263173,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 417
+      },
+      {
+        "date": "2026-09-23",
         "rank": 417
       }
     ],
@@ -262433,6 +264101,10 @@
       {
         "date": "2026-09-22",
         "rank": 418
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 418
       }
     ],
     "collegeStats": {
@@ -263348,6 +265020,10 @@
       {
         "date": "2026-09-22",
         "rank": 419
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 419
       }
     ],
     "collegeStats": {
@@ -263996,6 +265672,10 @@
       {
         "date": "2026-09-22",
         "rank": 420
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 420
       }
     ],
     "collegeStats": {
@@ -264643,6 +266323,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 421
+      },
+      {
+        "date": "2026-09-23",
         "rank": 421
       }
     ],
@@ -265549,6 +267233,10 @@
       {
         "date": "2026-09-22",
         "rank": 422
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 422
       }
     ],
     "collegeStats": {
@@ -266208,6 +267896,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 423
+      },
+      {
+        "date": "2026-09-23",
         "rank": 423
       }
     ],
@@ -267132,6 +268824,10 @@
       {
         "date": "2026-09-22",
         "rank": 424
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 424
       }
     ],
     "collegeStats": {},
@@ -268023,6 +269719,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 425
+      },
+      {
+        "date": "2026-09-23",
         "rank": 425
       }
     ],
@@ -268943,6 +270643,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 426
+      },
+      {
+        "date": "2026-09-23",
         "rank": 426
       }
     ],
@@ -269867,6 +271571,10 @@
       {
         "date": "2026-09-22",
         "rank": 427
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 427
       }
     ],
     "collegeStats": {
@@ -270627,6 +272335,10 @@
       {
         "date": "2026-09-22",
         "rank": 428
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 428
       }
     ],
     "collegeStats": {
@@ -270668,7 +272380,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Tycen Anderson",
@@ -271543,6 +273255,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 429
+      },
+      {
+        "date": "2026-09-23",
         "rank": 429
       }
     ],
@@ -272464,6 +274180,10 @@
       {
         "date": "2026-09-22",
         "rank": 430
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 430
       }
     ],
     "collegeStats": {
@@ -273384,6 +275104,10 @@
       {
         "date": "2026-09-22",
         "rank": 431
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 431
       }
     ],
     "collegeStats": {
@@ -274026,6 +275750,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 432
+      },
+      {
+        "date": "2026-09-23",
         "rank": 432
       }
     ],
@@ -274950,6 +276678,10 @@
       {
         "date": "2026-09-22",
         "rank": 433
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 433
       }
     ],
     "collegeStats": {
@@ -274979,7 +276711,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Dorian Strong",
@@ -275582,6 +277314,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 434
+      },
+      {
+        "date": "2026-09-23",
         "rank": 434
       }
     ],
@@ -276447,6 +278183,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 435
+      },
+      {
+        "date": "2026-09-23",
         "rank": 435
       }
     ],
@@ -277340,6 +279080,10 @@
       {
         "date": "2026-09-22",
         "rank": 436
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 436
       }
     ],
     "collegeStats": {
@@ -277387,7 +279131,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Gervarrius Owens",
@@ -277990,6 +279734,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 437
+      },
+      {
+        "date": "2026-09-23",
         "rank": 437
       }
     ],
@@ -278610,6 +280358,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 438
+      },
+      {
+        "date": "2026-09-23",
         "rank": 438
       }
     ],
@@ -279503,6 +281255,10 @@
       {
         "date": "2026-09-22",
         "rank": 439
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 439
       }
     ],
     "collegeStats": {
@@ -279550,7 +281306,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Tycen Anderson",
@@ -280426,6 +282182,10 @@
       {
         "date": "2026-09-22",
         "rank": 440
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 440
       }
     ],
     "collegeStats": {
@@ -280467,7 +282227,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Caden Sterns",
@@ -281070,6 +282830,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 441
+      },
+      {
+        "date": "2026-09-23",
         "rank": 441
       }
     ],
@@ -281963,6 +283727,10 @@
       {
         "date": "2026-09-22",
         "rank": 442
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 442
       }
     ],
     "collegeStats": {
@@ -282598,6 +284366,10 @@
       {
         "date": "2026-09-22",
         "rank": 443
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 443
       }
     ],
     "collegeStats": {
@@ -282627,7 +284399,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Kyle Hamilton",
@@ -283230,6 +285002,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 444
+      },
+      {
+        "date": "2026-09-23",
         "rank": 444
       }
     ],
@@ -284151,6 +285927,10 @@
       {
         "date": "2026-09-22",
         "rank": 445
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 445
       }
     ],
     "collegeStats": {},
@@ -284770,6 +286550,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 446
+      },
+      {
+        "date": "2026-09-23",
         "rank": 446
       }
     ],
@@ -285670,6 +287454,10 @@
       {
         "date": "2026-09-22",
         "rank": 447
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 447
       }
     ],
     "collegeStats": {
@@ -286430,6 +288218,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 448
+      },
+      {
+        "date": "2026-09-23",
         "rank": 448
       }
     ],
@@ -287344,6 +289136,10 @@
       {
         "date": "2026-09-22",
         "rank": 449
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 449
       }
     ],
     "collegeStats": {
@@ -287992,6 +289788,10 @@
       {
         "date": "2026-09-22",
         "rank": 450
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 450
       }
     ],
     "collegeStats": {
@@ -288031,7 +289831,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Quentin Lake",
@@ -288907,6 +290707,10 @@
       {
         "date": "2026-09-22",
         "rank": 451
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 451
       }
     ],
     "collegeStats": {
@@ -288954,7 +290758,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Kaiir Elam",
@@ -289673,6 +291477,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 452
+      },
+      {
+        "date": "2026-09-23",
         "rank": 452
       }
     ],
@@ -290425,6 +292233,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 453
+      },
+      {
+        "date": "2026-09-23",
         "rank": 453
       }
     ],
@@ -291345,6 +293157,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 454
+      },
+      {
+        "date": "2026-09-23",
         "rank": 454
       }
     ],
@@ -292274,6 +294090,10 @@
       {
         "date": "2026-09-22",
         "rank": 455
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 455
       }
     ],
     "collegeStats": {
@@ -293060,6 +294880,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 456
+      },
+      {
+        "date": "2026-09-23",
         "rank": 456
       }
     ],
@@ -293953,6 +295777,10 @@
       {
         "date": "2026-09-22",
         "rank": 457
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 457
       }
     ],
     "collegeStats": {
@@ -294000,7 +295828,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Kalon Barnes",
@@ -294715,6 +296543,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 458
+      },
+      {
+        "date": "2026-09-23",
         "rank": 458
       }
     ],
@@ -295633,6 +297465,10 @@
       {
         "date": "2026-09-22",
         "rank": 459
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 459
       }
     ],
     "collegeStats": {},
@@ -295649,7 +297485,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Ahmad Gardner",
@@ -296345,6 +298181,10 @@
       {
         "date": "2026-09-22",
         "rank": 460
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 460
       }
     ],
     "collegeStats": {
@@ -296380,7 +298220,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Tay Gowan",
@@ -297255,6 +299095,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 461
+      },
+      {
+        "date": "2026-09-23",
         "rank": 461
       }
     ],
@@ -298147,6 +299991,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 462
+      },
+      {
+        "date": "2026-09-23",
         "rank": 462
       }
     ],
@@ -299065,6 +300913,10 @@
       {
         "date": "2026-09-22",
         "rank": 463
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 463
       }
     ],
     "collegeStats": {
@@ -299088,7 +300940,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Dane Belton",
@@ -299828,6 +301680,10 @@
       {
         "date": "2026-09-22",
         "rank": 464
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 464
       }
     ],
     "collegeStats": {
@@ -300552,6 +302408,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 465
+      },
+      {
+        "date": "2026-09-23",
         "rank": 465
       }
     ],
@@ -301476,6 +303336,10 @@
       {
         "date": "2026-09-22",
         "rank": 466
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 466
       }
     ],
     "collegeStats": {},
@@ -302207,6 +304071,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 467
+      },
+      {
+        "date": "2026-09-23",
         "rank": 467
       }
     ],
@@ -302949,6 +304817,10 @@
       {
         "date": "2026-09-22",
         "rank": 468
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 468
       }
     ],
     "collegeStats": {
@@ -302993,7 +304865,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Derek Stingley",
@@ -303596,6 +305468,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 469
+      },
+      {
+        "date": "2026-09-23",
         "rank": 469
       }
     ],
@@ -304467,6 +306343,10 @@
       {
         "date": "2026-09-22",
         "rank": 470
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 470
       }
     ],
     "collegeStats": {
@@ -305231,6 +307111,10 @@
       {
         "date": "2026-09-22",
         "rank": 471
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 471
       }
     ],
     "collegeStats": {
@@ -305879,6 +307763,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 472
+      },
+      {
+        "date": "2026-09-23",
         "rank": 472
       }
     ],
@@ -306638,6 +308526,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 473
+      },
+      {
+        "date": "2026-09-23",
         "rank": 473
       }
     ],
@@ -307402,6 +309294,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 474
+      },
+      {
+        "date": "2026-09-23",
         "rank": 474
       }
     ],
@@ -308335,6 +310231,10 @@
       {
         "date": "2026-09-22",
         "rank": 475
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 475
       }
     ],
     "collegeStats": {
@@ -309095,6 +310995,10 @@
       {
         "date": "2026-09-22",
         "rank": 476
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 476
       }
     ],
     "collegeStats": {
@@ -309142,7 +311046,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jaquan Brisker",
@@ -309746,6 +311650,10 @@
       {
         "date": "2026-09-22",
         "rank": 477
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 477
       }
     ],
     "collegeStats": {},
@@ -310343,6 +312251,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 478
+      },
+      {
+        "date": "2026-09-23",
         "rank": 478
       }
     ],
@@ -311276,6 +313188,10 @@
       {
         "date": "2026-09-22",
         "rank": 479
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 479
       }
     ],
     "collegeStats": {
@@ -311931,6 +313847,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 480
+      },
+      {
+        "date": "2026-09-23",
         "rank": 480
       }
     ],
@@ -312855,6 +314775,10 @@
       {
         "date": "2026-09-22",
         "rank": 481
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 481
       }
     ],
     "collegeStats": {
@@ -313778,6 +315702,10 @@
       {
         "date": "2026-09-22",
         "rank": 482
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 482
       }
     ],
     "collegeStats": {
@@ -314679,6 +316607,10 @@
       {
         "date": "2026-09-22",
         "rank": 483
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 483
       }
     ],
     "collegeStats": {},
@@ -315392,6 +317324,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 484
+      },
+      {
+        "date": "2026-09-23",
         "rank": 484
       }
     ],
@@ -316165,6 +318101,10 @@
       {
         "date": "2026-09-22",
         "rank": 485
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 485
       }
     ],
     "collegeStats": {
@@ -316928,6 +318868,10 @@
       {
         "date": "2026-09-22",
         "rank": 486
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 486
       }
     ],
     "collegeStats": {},
@@ -317659,6 +319603,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 487
+      },
+      {
+        "date": "2026-09-23",
         "rank": 487
       }
     ],
@@ -318583,6 +320531,10 @@
       {
         "date": "2026-09-22",
         "rank": 488
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 488
       }
     ],
     "collegeStats": {},
@@ -319339,6 +321291,10 @@
       {
         "date": "2026-09-22",
         "rank": 489
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 489
       }
     ],
     "collegeStats": {
@@ -320090,6 +322046,10 @@
       {
         "date": "2026-09-22",
         "rank": 490
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 490
       }
     ],
     "collegeStats": {
@@ -320829,6 +322789,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 491
+      },
+      {
+        "date": "2026-09-23",
         "rank": 491
       }
     ],
@@ -321578,6 +323542,10 @@
       {
         "date": "2026-09-22",
         "rank": 492
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 492
       }
     ],
     "collegeStats": {
@@ -321625,7 +323593,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jacoby Stevens",
@@ -322501,6 +324469,10 @@
       {
         "date": "2026-09-22",
         "rank": 493
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 493
       }
     ],
     "collegeStats": {
@@ -322548,7 +324520,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Shawn Davis",
@@ -323151,6 +325123,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 494
+      },
+      {
+        "date": "2026-09-23",
         "rank": 494
       }
     ],
@@ -323912,6 +325888,10 @@
       {
         "date": "2026-09-22",
         "rank": 495
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 495
       }
     ],
     "collegeStats": {},
@@ -324644,6 +326624,10 @@
       {
         "date": "2026-09-22",
         "rank": 496
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 496
       }
     ],
     "collegeStats": {
@@ -324673,7 +326657,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Tay Gowan",
@@ -325276,6 +327260,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 497
+      },
+      {
+        "date": "2026-09-23",
         "rank": 497
       }
     ],
@@ -325995,6 +327983,10 @@
       {
         "date": "2026-09-22",
         "rank": 498
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 498
       }
     ],
     "collegeStats": {
@@ -326030,7 +328022,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Chau Smith-Wade",
@@ -326745,6 +328737,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 499
+      },
+      {
+        "date": "2026-09-23",
         "rank": 499
       }
     ],
@@ -327512,6 +329508,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 500
+      },
+      {
+        "date": "2026-09-23",
         "rank": 500
       }
     ],
@@ -328281,6 +330281,10 @@
       {
         "date": "2026-09-22",
         "rank": 501
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 501
       }
     ],
     "collegeStats": {},
@@ -329013,6 +331017,10 @@
       {
         "date": "2026-09-22",
         "rank": 502
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 502
       }
     ],
     "collegeStats": {},
@@ -329632,6 +331640,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 503
+      },
+      {
+        "date": "2026-09-23",
         "rank": 503
       }
     ],
@@ -330384,6 +332396,10 @@
       {
         "date": "2026-09-22",
         "rank": 504
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 504
       }
     ],
     "collegeStats": {},
@@ -331119,6 +333135,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 505
+      },
+      {
+        "date": "2026-09-23",
         "rank": 505
       }
     ],
@@ -332033,6 +334053,10 @@
       {
         "date": "2026-09-22",
         "rank": 506
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 506
       }
     ],
     "collegeStats": {
@@ -332078,7 +334102,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Chau Smith-Wade",
@@ -332681,6 +334705,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 507
+      },
+      {
+        "date": "2026-09-23",
         "rank": 507
       }
     ],
@@ -333445,6 +335473,10 @@
       {
         "date": "2026-09-22",
         "rank": 508
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 508
       }
     ],
     "collegeStats": {},
@@ -334176,6 +336208,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 509
+      },
+      {
+        "date": "2026-09-23",
         "rank": 509
       }
     ],
@@ -335069,6 +337105,10 @@
       {
         "date": "2026-09-22",
         "rank": 510
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 510
       }
     ],
     "collegeStats": {
@@ -335792,6 +337832,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 511
+      },
+      {
+        "date": "2026-09-23",
         "rank": 511
       }
     ],
@@ -336554,6 +338598,10 @@
       {
         "date": "2026-09-22",
         "rank": 512
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 512
       }
     ],
     "collegeStats": {
@@ -336583,7 +338631,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jamar Johnson",
@@ -337262,6 +339310,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 513
+      },
+      {
+        "date": "2026-09-23",
         "rank": 513
       }
     ],
@@ -338026,6 +340078,10 @@
       {
         "date": "2026-09-22",
         "rank": 514
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 514
       }
     ],
     "collegeStats": {
@@ -338783,6 +340839,10 @@
       {
         "date": "2026-09-22",
         "rank": 515
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 515
       }
     ],
     "collegeStats": {},
@@ -339478,6 +341538,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 516
+      },
+      {
+        "date": "2026-09-23",
         "rank": 516
       }
     ],
@@ -340371,6 +342435,10 @@
       {
         "date": "2026-09-22",
         "rank": 517
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 517
       }
     ],
     "collegeStats": {},
@@ -341102,6 +343170,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 518
+      },
+      {
+        "date": "2026-09-23",
         "rank": 518
       }
     ],
@@ -341973,6 +344045,10 @@
       {
         "date": "2026-09-22",
         "rank": 519
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 519
       }
     ],
     "collegeStats": {
@@ -342020,7 +344096,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Chase Lucas",
@@ -342739,6 +344815,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 520
+      },
+      {
+        "date": "2026-09-23",
         "rank": 520
       }
     ],
@@ -343504,6 +345584,10 @@
       {
         "date": "2026-09-22",
         "rank": 521
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 521
       }
     ],
     "collegeStats": {
@@ -344138,6 +346222,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 522
+      },
+      {
+        "date": "2026-09-23",
         "rank": 522
       }
     ],
@@ -344835,6 +346923,10 @@
       {
         "date": "2026-09-22",
         "rank": 523
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 523
       }
     ],
     "collegeStats": {
@@ -344896,10 +346988,10 @@
     ]
   },
   {
-    "id": "will ferrin-k",
+    "id": "will ferrin-pk",
     "name": "Will Ferrin",
-    "position": "K",
-    "positionGroup": "K",
+    "position": "PK",
+    "positionGroup": "DB",
     "school": "",
     "class": null,
     "yearsInCollege": null,
@@ -344909,7 +347001,7 @@
       216,
       257
     ],
-    "positionRank": 1,
+    "positionRank": 99,
     "espnGrade": 36.0,
     "espnId": "111387",
     "projectedTeam": null,
@@ -345586,6 +347678,10 @@
       {
         "date": "2026-09-22",
         "rank": 524
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 524
       }
     ],
     "collegeStats": {
@@ -345609,8 +347705,30 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 2,
-    "playerComps": []
+    "positionTotal": 126,
+    "playerComps": [
+      {
+        "name": "Nahshon Wright",
+        "year": 2021,
+        "pick": 99,
+        "school": "Oregon St.",
+        "similarity": 59
+      },
+      {
+        "name": "Cordale Flott",
+        "year": 2022,
+        "pick": 81,
+        "school": "LSU",
+        "similarity": 55
+      },
+      {
+        "name": "Nate Wiggins",
+        "year": 2024,
+        "pick": 30,
+        "school": "Clemson",
+        "similarity": 55
+      }
+    ]
   },
   {
     "id": "jackson kuwatch-lb",
@@ -346191,6 +348309,10 @@
       {
         "date": "2026-09-22",
         "rank": 525
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 525
       }
     ],
     "collegeStats": {
@@ -346271,7 +348393,7 @@
       216,
       257
     ],
-    "positionRank": 99,
+    "positionRank": 100,
     "espnGrade": 36.0,
     "espnId": "111565",
     "projectedTeam": null,
@@ -346912,6 +349034,10 @@
       {
         "date": "2026-09-22",
         "rank": 526
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 526
       }
     ],
     "collegeStats": {
@@ -346953,7 +349079,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Bilhal Kone",
@@ -347669,6 +349795,10 @@
       {
         "date": "2026-09-22",
         "rank": 527
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 527
       }
     ],
     "collegeStats": {},
@@ -347711,10 +349841,10 @@
     ]
   },
   {
-    "id": "kansei matsuzawa-k",
+    "id": "kansei matsuzawa-pk",
     "name": "Kansei Matsuzawa",
-    "position": "K",
-    "positionGroup": "K",
+    "position": "PK",
+    "positionGroup": "DB",
     "school": "",
     "class": null,
     "yearsInCollege": null,
@@ -347724,7 +349854,7 @@
       216,
       257
     ],
-    "positionRank": 2,
+    "positionRank": 101,
     "espnGrade": 36.0,
     "espnId": "111378",
     "projectedTeam": null,
@@ -348401,6 +350531,10 @@
       {
         "date": "2026-09-22",
         "rank": 528
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 528
       }
     ],
     "collegeStats": {},
@@ -348417,8 +350551,30 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 2,
-    "playerComps": []
+    "positionTotal": 126,
+    "playerComps": [
+      {
+        "name": "Jaylon Jones",
+        "year": 2023,
+        "pick": 221,
+        "school": "Texas A&M",
+        "similarity": 100
+      },
+      {
+        "name": "Martin Emerson",
+        "year": 2022,
+        "pick": 68,
+        "school": "Mississippi St.",
+        "similarity": 95
+      },
+      {
+        "name": "Lewis Cine",
+        "year": 2022,
+        "pick": 32,
+        "school": "Georgia",
+        "similarity": 95
+      }
+    ]
   },
   {
     "id": "kentrel bullock-rb",
@@ -349114,6 +351270,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 529
+      },
+      {
+        "date": "2026-09-23",
         "rank": 529
       }
     ],
@@ -349880,6 +352040,10 @@
       {
         "date": "2026-09-22",
         "rank": 530
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 530
       }
     ],
     "collegeStats": {
@@ -350639,6 +352803,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 531
+      },
+      {
+        "date": "2026-09-23",
         "rank": 531
       }
     ],
@@ -351403,6 +353571,10 @@
       {
         "date": "2026-09-22",
         "rank": 532
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 532
       }
     ],
     "collegeStats": {},
@@ -352022,6 +354194,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 533
+      },
+      {
+        "date": "2026-09-23",
         "rank": 533
       }
     ],
@@ -352780,6 +354956,10 @@
       {
         "date": "2026-09-22",
         "rank": 534
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 534
       }
     ],
     "collegeStats": {},
@@ -353453,6 +355633,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 535
+      },
+      {
+        "date": "2026-09-23",
         "rank": 535
       }
     ],
@@ -354186,6 +356370,10 @@
       {
         "date": "2026-09-22",
         "rank": 536
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 536
       }
     ],
     "collegeStats": {},
@@ -354899,6 +357087,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 537
+      },
+      {
+        "date": "2026-09-23",
         "rank": 537
       }
     ],
@@ -355628,6 +357820,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 538
+      },
+      {
+        "date": "2026-09-23",
         "rank": 538
       }
     ],
@@ -356387,6 +358583,10 @@
       {
         "date": "2026-09-22",
         "rank": 539
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 539
       }
     ],
     "collegeStats": {
@@ -357131,6 +359331,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 540
+      },
+      {
+        "date": "2026-09-23",
         "rank": 540
       }
     ],
@@ -357908,6 +360112,10 @@
       {
         "date": "2026-09-22",
         "rank": 541
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 541
       }
     ],
     "collegeStats": {
@@ -358652,6 +360860,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 542
+      },
+      {
+        "date": "2026-09-23",
         "rank": 542
       }
     ],
@@ -359400,6 +361612,10 @@
       {
         "date": "2026-09-22",
         "rank": 543
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 543
       }
     ],
     "collegeStats": {
@@ -360141,6 +362357,10 @@
       {
         "date": "2026-09-22",
         "rank": 544
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 544
       }
     ],
     "collegeStats": {},
@@ -360854,6 +363074,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 545
+      },
+      {
+        "date": "2026-09-23",
         "rank": 545
       }
     ],
@@ -361627,6 +363851,10 @@
       {
         "date": "2026-09-22",
         "rank": 546
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 546
       }
     ],
     "collegeStats": {
@@ -362369,6 +364597,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 547
+      },
+      {
+        "date": "2026-09-23",
         "rank": 547
       }
     ],
@@ -363113,6 +365345,10 @@
       {
         "date": "2026-09-22",
         "rank": 548
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 548
       }
     ],
     "collegeStats": {
@@ -363855,6 +366091,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 549
+      },
+      {
+        "date": "2026-09-23",
         "rank": 549
       }
     ],
@@ -364599,6 +366839,10 @@
       {
         "date": "2026-09-22",
         "rank": 550
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 550
       }
     ],
     "collegeStats": {
@@ -365342,6 +367586,10 @@
       {
         "date": "2026-09-22",
         "rank": 551
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 551
       }
     ],
     "collegeStats": {},
@@ -366055,6 +368303,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 552
+      },
+      {
+        "date": "2026-09-23",
         "rank": 552
       }
     ],
@@ -366791,6 +369043,10 @@
       {
         "date": "2026-09-22",
         "rank": 553
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 553
       }
     ],
     "collegeStats": {
@@ -367525,6 +369781,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 554
+      },
+      {
+        "date": "2026-09-23",
         "rank": 554
       }
     ],
@@ -368279,6 +370539,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 555
+      },
+      {
+        "date": "2026-09-23",
         "rank": 555
       }
     ],
@@ -369039,6 +371303,10 @@
       {
         "date": "2026-09-22",
         "rank": 556
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 556
       }
     ],
     "collegeStats": {
@@ -369774,6 +372042,10 @@
       {
         "date": "2026-09-22",
         "rank": 557
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 557
       }
     ],
     "collegeStats": {
@@ -370508,6 +372780,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 558
+      },
+      {
+        "date": "2026-09-23",
         "rank": 558
       }
     ],
@@ -371273,6 +373549,10 @@
       {
         "date": "2026-09-22",
         "rank": 559
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 559
       }
     ],
     "collegeStats": {
@@ -371920,6 +374200,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 560
+      },
+      {
+        "date": "2026-09-23",
         "rank": 560
       }
     ],
@@ -372656,6 +374940,10 @@
       {
         "date": "2026-09-22",
         "rank": 561
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 561
       }
     ],
     "collegeStats": {},
@@ -373369,6 +375657,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 562
+      },
+      {
+        "date": "2026-09-23",
         "rank": 562
       }
     ],
@@ -374122,6 +376414,10 @@
       {
         "date": "2026-09-22",
         "rank": 563
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 563
       }
     ],
     "collegeStats": {
@@ -374841,6 +377137,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 564
+      },
+      {
+        "date": "2026-09-23",
         "rank": 564
       }
     ],
@@ -375606,6 +377906,10 @@
       {
         "date": "2026-09-22",
         "rank": 565
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 565
       }
     ],
     "collegeStats": {
@@ -376325,6 +378629,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 566
+      },
+      {
+        "date": "2026-09-23",
         "rank": 566
       }
     ],
@@ -377052,6 +379360,10 @@
       {
         "date": "2026-09-22",
         "rank": 567
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 567
       }
     ],
     "collegeStats": {},
@@ -377762,6 +380074,10 @@
       {
         "date": "2026-09-22",
         "rank": 568
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 568
       }
     ],
     "collegeStats": {},
@@ -378359,6 +380675,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 569
+      },
+      {
+        "date": "2026-09-23",
         "rank": 569
       }
     ],
@@ -378979,6 +381299,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 570
+      },
+      {
+        "date": "2026-09-23",
         "rank": 570
       }
     ],
@@ -379712,6 +382036,10 @@
       {
         "date": "2026-09-22",
         "rank": 571
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 571
       }
     ],
     "collegeStats": {},
@@ -380444,6 +382772,10 @@
       {
         "date": "2026-09-22",
         "rank": 572
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 572
       }
     ],
     "collegeStats": {},
@@ -381153,6 +383485,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 573
+      },
+      {
+        "date": "2026-09-23",
         "rank": 573
       }
     ],
@@ -381886,6 +384222,10 @@
       {
         "date": "2026-09-22",
         "rank": 574
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 574
       }
     ],
     "collegeStats": {},
@@ -382595,6 +384935,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 575
+      },
+      {
+        "date": "2026-09-23",
         "rank": 575
       }
     ],
@@ -383328,6 +385672,10 @@
       {
         "date": "2026-09-22",
         "rank": 576
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 576
       }
     ],
     "collegeStats": {},
@@ -384037,6 +386385,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 577
+      },
+      {
+        "date": "2026-09-23",
         "rank": 577
       }
     ],
@@ -384770,6 +387122,10 @@
       {
         "date": "2026-09-22",
         "rank": 578
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 578
       }
     ],
     "collegeStats": {},
@@ -385479,6 +387835,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 579
+      },
+      {
+        "date": "2026-09-23",
         "rank": 579
       }
     ],
@@ -386190,6 +388550,10 @@
       {
         "date": "2026-09-22",
         "rank": 580
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 580
       }
     ],
     "collegeStats": {},
@@ -386899,6 +389263,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 581
+      },
+      {
+        "date": "2026-09-23",
         "rank": 581
       }
     ],
@@ -387610,6 +389978,10 @@
       {
         "date": "2026-09-22",
         "rank": 582
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 582
       }
     ],
     "collegeStats": {},
@@ -388319,6 +390691,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 583
+      },
+      {
+        "date": "2026-09-23",
         "rank": 583
       }
     ],
@@ -389052,6 +391428,10 @@
       {
         "date": "2026-09-22",
         "rank": 584
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 584
       }
     ],
     "collegeStats": {},
@@ -389762,6 +392142,10 @@
       {
         "date": "2026-09-22",
         "rank": 585
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 585
       }
     ],
     "collegeStats": {},
@@ -390359,6 +392743,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 586
+      },
+      {
+        "date": "2026-09-23",
         "rank": 586
       }
     ],
@@ -391091,6 +393479,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 587
+      },
+      {
+        "date": "2026-09-23",
         "rank": 587
       }
     ],
@@ -391827,6 +394219,10 @@
       {
         "date": "2026-09-22",
         "rank": 588
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 588
       }
     ],
     "collegeStats": {
@@ -392555,6 +394951,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 589
+      },
+      {
+        "date": "2026-09-23",
         "rank": 589
       }
     ],
@@ -393319,6 +395719,10 @@
       {
         "date": "2026-09-22",
         "rank": 590
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 590
       }
     ],
     "collegeStats": {
@@ -394082,6 +396486,10 @@
       {
         "date": "2026-09-22",
         "rank": 591
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 591
       }
     ],
     "collegeStats": {},
@@ -394679,6 +397087,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 592
+      },
+      {
+        "date": "2026-09-23",
         "rank": 592
       }
     ],
@@ -395443,6 +397855,10 @@
       {
         "date": "2026-09-22",
         "rank": 593
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 593
       }
     ],
     "collegeStats": {},
@@ -396152,6 +398568,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 594
+      },
+      {
+        "date": "2026-09-23",
         "rank": 594
       }
     ],
@@ -396888,6 +399308,10 @@
       {
         "date": "2026-09-22",
         "rank": 595
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 595
       }
     ],
     "collegeStats": {
@@ -397611,6 +400035,10 @@
       {
         "date": "2026-09-22",
         "rank": 596
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 596
       }
     ],
     "collegeStats": {
@@ -398327,6 +400755,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 597
+      },
+      {
+        "date": "2026-09-23",
         "rank": 597
       }
     ],
@@ -399063,6 +401495,10 @@
       {
         "date": "2026-09-22",
         "rank": 598
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 598
       }
     ],
     "collegeStats": {
@@ -399797,6 +402233,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 599
+      },
+      {
+        "date": "2026-09-23",
         "rank": 599
       }
     ],
@@ -400561,6 +403001,10 @@
       {
         "date": "2026-09-22",
         "rank": 600
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 600
       }
     ],
     "collegeStats": {
@@ -401295,6 +403739,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 601
+      },
+      {
+        "date": "2026-09-23",
         "rank": 601
       }
     ],
@@ -402044,6 +404492,10 @@
       {
         "date": "2026-09-22",
         "rank": 602
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 602
       }
     ],
     "collegeStats": {
@@ -402778,6 +405230,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 603
+      },
+      {
+        "date": "2026-09-23",
         "rank": 603
       }
     ],
@@ -403514,6 +405970,10 @@
       {
         "date": "2026-09-22",
         "rank": 604
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 604
       }
     ],
     "collegeStats": {
@@ -403566,7 +406026,7 @@
       216,
       257
     ],
-    "positionRank": 100,
+    "positionRank": 102,
     "espnGrade": null,
     "espnId": "111335",
     "projectedTeam": null,
@@ -404243,6 +406703,10 @@
       {
         "date": "2026-09-22",
         "rank": 605
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 605
       }
     ],
     "collegeStats": {},
@@ -404259,7 +406723,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -404952,6 +407416,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 606
+      },
+      {
+        "date": "2026-09-23",
         "rank": 606
       }
     ],
@@ -405681,6 +408149,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 607
+      },
+      {
+        "date": "2026-09-23",
         "rank": 607
       }
     ],
@@ -406445,6 +408917,10 @@
       {
         "date": "2026-09-22",
         "rank": 608
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 608
       }
     ],
     "collegeStats": {
@@ -406531,7 +409007,7 @@
       216,
       257
     ],
-    "positionRank": 101,
+    "positionRank": 103,
     "espnGrade": null,
     "espnId": "111346",
     "projectedTeam": null,
@@ -407096,6 +409572,10 @@
       {
         "date": "2026-09-22",
         "rank": 609
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 609
       }
     ],
     "collegeStats": {
@@ -407143,7 +409623,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Greg Newsome",
@@ -407182,7 +409662,7 @@
       216,
       257
     ],
-    "positionRank": 102,
+    "positionRank": 104,
     "espnGrade": null,
     "espnId": "111349",
     "projectedTeam": null,
@@ -407747,6 +410227,10 @@
       {
         "date": "2026-09-22",
         "rank": 610
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 610
       }
     ],
     "collegeStats": {
@@ -407782,7 +410266,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -407799,7 +410283,7 @@
       216,
       257
     ],
-    "positionRank": 103,
+    "positionRank": 105,
     "espnGrade": null,
     "espnId": "111350",
     "projectedTeam": null,
@@ -408476,6 +410960,10 @@
       {
         "date": "2026-09-22",
         "rank": 611
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 611
       }
     ],
     "collegeStats": {},
@@ -408492,7 +410980,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -408509,7 +410997,7 @@
       216,
       257
     ],
-    "positionRank": 104,
+    "positionRank": 106,
     "espnGrade": null,
     "espnId": "111351",
     "projectedTeam": null,
@@ -409186,6 +411674,10 @@
       {
         "date": "2026-09-22",
         "rank": 612
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 612
       }
     ],
     "collegeStats": {
@@ -409227,7 +411719,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Quentin Lake",
@@ -409266,7 +411758,7 @@
       216,
       257
     ],
-    "positionRank": 105,
+    "positionRank": 107,
     "espnGrade": null,
     "espnId": "111352",
     "projectedTeam": null,
@@ -409943,6 +412435,10 @@
       {
         "date": "2026-09-22",
         "rank": 613
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 613
       }
     ],
     "collegeStats": {
@@ -409975,7 +412471,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Decamerion Richardson",
@@ -410014,7 +412510,7 @@
       216,
       257
     ],
-    "positionRank": 106,
+    "positionRank": 108,
     "espnGrade": null,
     "espnId": "111354",
     "projectedTeam": null,
@@ -410691,6 +413187,10 @@
       {
         "date": "2026-09-22",
         "rank": 614
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 614
       }
     ],
     "collegeStats": {},
@@ -410707,7 +413207,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -410724,7 +413224,7 @@
       216,
       257
     ],
-    "positionRank": 107,
+    "positionRank": 109,
     "espnGrade": null,
     "espnId": "111355",
     "projectedTeam": null,
@@ -411401,6 +413901,10 @@
       {
         "date": "2026-09-22",
         "rank": 615
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 615
       }
     ],
     "collegeStats": {
@@ -411436,7 +413940,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -411453,7 +413957,7 @@
       216,
       257
     ],
-    "positionRank": 108,
+    "positionRank": 110,
     "espnGrade": null,
     "espnId": "111356",
     "projectedTeam": null,
@@ -412130,6 +414634,10 @@
       {
         "date": "2026-09-22",
         "rank": 616
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 616
       }
     ],
     "collegeStats": {
@@ -412171,7 +414679,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -412188,7 +414696,7 @@
       216,
       257
     ],
-    "positionRank": 109,
+    "positionRank": 111,
     "espnGrade": null,
     "espnId": "111357",
     "projectedTeam": null,
@@ -412753,6 +415261,10 @@
       {
         "date": "2026-09-22",
         "rank": 617
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 617
       }
     ],
     "collegeStats": {
@@ -412800,7 +415312,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Kaiir Elam",
@@ -412839,7 +415351,7 @@
       216,
       257
     ],
-    "positionRank": 110,
+    "positionRank": 112,
     "espnGrade": null,
     "espnId": "111358",
     "projectedTeam": null,
@@ -413516,6 +416028,10 @@
       {
         "date": "2026-09-22",
         "rank": 618
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 618
       }
     ],
     "collegeStats": {
@@ -413563,7 +416079,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Ahmad Gardner",
@@ -413602,7 +416118,7 @@
       216,
       257
     ],
-    "positionRank": 111,
+    "positionRank": 113,
     "espnGrade": null,
     "espnId": "111360",
     "projectedTeam": null,
@@ -414279,6 +416795,10 @@
       {
         "date": "2026-09-22",
         "rank": 619
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 619
       }
     ],
     "collegeStats": {
@@ -414320,7 +416840,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -414337,7 +416857,7 @@
       216,
       257
     ],
-    "positionRank": 112,
+    "positionRank": 114,
     "espnGrade": null,
     "espnId": "111362",
     "projectedTeam": null,
@@ -415014,6 +417534,10 @@
       {
         "date": "2026-09-22",
         "rank": 620
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 620
       }
     ],
     "collegeStats": {
@@ -415061,7 +417585,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Chase Lucas",
@@ -415100,7 +417624,7 @@
       216,
       257
     ],
-    "positionRank": 113,
+    "positionRank": 115,
     "espnGrade": null,
     "espnId": "111363",
     "projectedTeam": null,
@@ -415777,6 +418301,10 @@
       {
         "date": "2026-09-22",
         "rank": 621
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 621
       }
     ],
     "collegeStats": {},
@@ -415793,7 +418321,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -415810,7 +418338,7 @@
       216,
       257
     ],
-    "positionRank": 114,
+    "positionRank": 116,
     "espnGrade": null,
     "espnId": "111365",
     "projectedTeam": null,
@@ -416487,6 +419015,10 @@
       {
         "date": "2026-09-22",
         "rank": 622
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 622
       }
     ],
     "collegeStats": {
@@ -416528,7 +419060,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -416545,7 +419077,7 @@
       216,
       257
     ],
-    "positionRank": 115,
+    "positionRank": 117,
     "espnGrade": null,
     "espnId": "111368",
     "projectedTeam": null,
@@ -417110,6 +419642,10 @@
       {
         "date": "2026-09-22",
         "rank": 623
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 623
       }
     ],
     "collegeStats": {
@@ -417151,7 +419687,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -417168,7 +419704,7 @@
       216,
       257
     ],
-    "positionRank": 116,
+    "positionRank": 118,
     "espnGrade": null,
     "espnId": "111369",
     "projectedTeam": null,
@@ -417845,6 +420381,10 @@
       {
         "date": "2026-09-22",
         "rank": 624
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 624
       }
     ],
     "collegeStats": {
@@ -417886,7 +420426,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -417903,7 +420443,7 @@
       216,
       257
     ],
-    "positionRank": 117,
+    "positionRank": 119,
     "espnGrade": null,
     "espnId": "111370",
     "projectedTeam": null,
@@ -418580,6 +421120,10 @@
       {
         "date": "2026-09-22",
         "rank": 625
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 625
       }
     ],
     "collegeStats": {
@@ -418621,7 +421165,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -418638,7 +421182,7 @@
       216,
       257
     ],
-    "positionRank": 118,
+    "positionRank": 120,
     "espnGrade": null,
     "espnId": "111371",
     "projectedTeam": null,
@@ -419315,6 +421859,10 @@
       {
         "date": "2026-09-22",
         "rank": 626
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 626
       }
     ],
     "collegeStats": {
@@ -419362,7 +421910,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Jacoby Stevens",
@@ -419401,7 +421949,7 @@
       216,
       257
     ],
-    "positionRank": 119,
+    "positionRank": 121,
     "espnGrade": null,
     "espnId": "111374",
     "projectedTeam": null,
@@ -420078,6 +422626,10 @@
       {
         "date": "2026-09-22",
         "rank": 627
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 627
       }
     ],
     "collegeStats": {
@@ -420125,7 +422677,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Bilhal Kone",
@@ -420164,7 +422716,7 @@
       216,
       257
     ],
-    "positionRank": 120,
+    "positionRank": 122,
     "espnGrade": null,
     "espnId": "111375",
     "projectedTeam": null,
@@ -420729,6 +423281,10 @@
       {
         "date": "2026-09-22",
         "rank": 628
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 628
       }
     ],
     "collegeStats": {
@@ -420770,7 +423326,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "James Wiggins",
@@ -421486,6 +424042,10 @@
       {
         "date": "2026-09-22",
         "rank": 629
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 629
       }
     ],
     "collegeStats": {},
@@ -422196,6 +424756,10 @@
       {
         "date": "2026-09-22",
         "rank": 630
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 630
       }
     ],
     "collegeStats": {},
@@ -422229,7 +424793,7 @@
       216,
       257
     ],
-    "positionRank": 121,
+    "positionRank": 123,
     "espnGrade": null,
     "espnId": "111379",
     "projectedTeam": null,
@@ -422906,6 +425470,10 @@
       {
         "date": "2026-09-22",
         "rank": 631
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 631
       }
     ],
     "collegeStats": {
@@ -422950,7 +425518,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": [
       {
         "name": "Alex Austin",
@@ -422989,7 +425557,7 @@
       216,
       257
     ],
-    "positionRank": 122,
+    "positionRank": 124,
     "espnGrade": null,
     "espnId": "111382",
     "projectedTeam": null,
@@ -423666,6 +426234,10 @@
       {
         "date": "2026-09-22",
         "rank": 632
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 632
       }
     ],
     "collegeStats": {
@@ -423701,7 +426273,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -424395,6 +426967,10 @@
       {
         "date": "2026-09-22",
         "rank": 633
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 633
       }
     ],
     "collegeStats": {},
@@ -424428,7 +427004,7 @@
       216,
       257
     ],
-    "positionRank": 123,
+    "positionRank": 125,
     "espnGrade": null,
     "espnId": "111390",
     "projectedTeam": null,
@@ -425105,6 +427681,10 @@
       {
         "date": "2026-09-22",
         "rank": 634
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 634
       }
     ],
     "collegeStats": {
@@ -425134,7 +427714,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -425828,6 +428408,10 @@
       {
         "date": "2026-09-22",
         "rank": 635
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 635
       }
     ],
     "collegeStats": {},
@@ -425861,7 +428445,7 @@
       216,
       257
     ],
-    "positionRank": 124,
+    "positionRank": 126,
     "espnGrade": null,
     "espnId": "111397",
     "projectedTeam": null,
@@ -426538,6 +429122,10 @@
       {
         "date": "2026-09-22",
         "rank": 636
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 636
       }
     ],
     "collegeStats": {
@@ -426561,7 +429149,7 @@
       "shuttle": null,
       "participated": false
     },
-    "positionTotal": 124,
+    "positionTotal": 126,
     "playerComps": []
   },
   {
@@ -427255,6 +429843,10 @@
       {
         "date": "2026-09-22",
         "rank": 637
+      },
+      {
+        "date": "2026-09-23",
+        "rank": 637
       }
     ],
     "collegeStats": {},
@@ -427572,6 +430164,10 @@
       },
       {
         "date": "2026-09-22",
+        "rank": 638
+      },
+      {
+        "date": "2026-09-23",
         "rank": 638
       }
     ],
