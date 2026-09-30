@@ -2,14 +2,14 @@
   "year": 2026,
   "predraftSourceCount": 565,
   "totalPicks": 257,
-  "matchedPicks": 245,
+  "matchedPicks": 244,
   "stats": {
-    "matchedPairs": 245,
+    "matchedPairs": 244,
     "exactMatches": 5,
     "within5": 33,
     "within10": 60,
-    "meanAbsRankDelta": 52.03,
-    "meanAbsValueDelta": 86.89,
+    "meanAbsRankDelta": 52.14,
+    "meanAbsValueDelta": 87.2,
     "perSource": {
       "walter_football": {
         "sample": 14,
@@ -17,14 +17,14 @@
         "meanAbsValueDelta": 189.29
       },
       "espn": {
-        "sample": 244,
-        "meanAbsRankDelta": 50.91,
-        "meanAbsValueDelta": 106.45
+        "sample": 243,
+        "meanAbsRankDelta": 50.99,
+        "meanAbsValueDelta": 106.83
       },
       "cbs_sports": {
-        "sample": 222,
-        "meanAbsRankDelta": 56.5,
-        "meanAbsValueDelta": 122.45
+        "sample": 221,
+        "meanAbsRankDelta": 56.43,
+        "meanAbsValueDelta": 122.96
       },
       "tankathon": {
         "sample": 170,
@@ -4541,24 +4541,21 @@
       "matched": true
     },
     {
-      "name": "Toriano Pride Jr.",
+      "name": "Toriano Pride",
       "position": "CB",
       "positionGroup": "DB",
       "school": "Missouri",
-      "consensusRank": 247,
-      "rankBySource": {
-        "espn": 189,
-        "cbs_sports": 291
-      },
+      "consensusRank": null,
+      "rankBySource": {},
       "actualPick": 220,
       "actualRound": 7,
       "actualTeam": "BUF",
-      "rankDelta": -27,
+      "rankDelta": null,
       "consensusValue": 0.0,
       "actualValue": 10.6,
       "valueDelta": 10.6,
-      "category": "rose",
-      "matched": true
+      "category": "surprise",
+      "matched": false
     },
     {
       "name": "Jack Endries",
@@ -6215,6 +6212,26 @@
       "consensusRank": 244,
       "rankBySource": {
         "cbs_sports": 238
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 0.0,
+      "actualValue": 0.0,
+      "valueDelta": -0.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
+      "name": "Toriano Pride Jr.",
+      "position": "CB",
+      "positionGroup": "DB",
+      "school": "Missouri",
+      "consensusRank": 247,
+      "rankBySource": {
+        "espn": 189,
+        "cbs_sports": 291
       },
       "actualPick": null,
       "actualRound": null,
@@ -12657,6 +12674,23 @@
       "consensusValue": 0.0,
       "actualValue": 12.6,
       "valueDelta": 12.6,
+      "category": "surprise",
+      "matched": false
+    },
+    {
+      "name": "Toriano Pride",
+      "position": "CB",
+      "positionGroup": "DB",
+      "school": "Missouri",
+      "consensusRank": null,
+      "rankBySource": {},
+      "actualPick": 220,
+      "actualRound": 7,
+      "actualTeam": "BUF",
+      "rankDelta": null,
+      "consensusValue": 0.0,
+      "actualValue": 10.6,
+      "valueDelta": 10.6,
       "category": "surprise",
       "matched": false
     },
