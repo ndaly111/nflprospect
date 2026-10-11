@@ -1,15 +1,11 @@
 {
-  "lastUpdated": "2026-10-10T11:28:01Z",
+  "lastUpdated": "2026-10-11T11:41:59Z",
   "prospectCount": 673,
   "draftYear": 2027,
   "sources": {
     "walter_football": {
       "status": "ok",
       "count": 16
-    },
-    "espn": {
-      "status": "ok",
-      "count": 500
     },
     "cbs_sports": {
       "status": "ok",
@@ -18,6 +14,10 @@
     "tankathon": {
       "status": "ok",
       "count": 161
+    },
+    "espn": {
+      "status": "ok",
+      "count": 500
     }
   }
 }
