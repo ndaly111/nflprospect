@@ -2,14 +2,14 @@
   "year": 2026,
   "predraftSourceCount": 565,
   "totalPicks": 257,
-  "matchedPicks": 244,
+  "matchedPicks": 243,
   "stats": {
-    "matchedPairs": 244,
+    "matchedPairs": 243,
     "exactMatches": 5,
     "within5": 33,
     "within10": 60,
-    "meanAbsRankDelta": 52.14,
-    "meanAbsValueDelta": 87.2,
+    "meanAbsRankDelta": 52.05,
+    "meanAbsValueDelta": 87.41,
     "perSource": {
       "walter_football": {
         "sample": 14,
@@ -17,14 +17,14 @@
         "meanAbsValueDelta": 189.29
       },
       "espn": {
-        "sample": 243,
-        "meanAbsRankDelta": 50.99,
-        "meanAbsValueDelta": 106.83
+        "sample": 242,
+        "meanAbsRankDelta": 51.16,
+        "meanAbsValueDelta": 107.25
       },
       "cbs_sports": {
-        "sample": 221,
-        "meanAbsRankDelta": 56.43,
-        "meanAbsValueDelta": 122.96
+        "sample": 220,
+        "meanAbsRankDelta": 56.12,
+        "meanAbsValueDelta": 123.35
       },
       "tankathon": {
         "sample": 170,
@@ -3257,24 +3257,21 @@
       "matched": true
     },
     {
-      "name": "George Gumbs Jr.",
-      "position": "EDGE",
+      "name": "George Gumbs",
+      "position": "DE",
       "positionGroup": "EDGE",
       "school": "Florida",
-      "consensusRank": 228,
-      "rankBySource": {
-        "espn": 166,
-        "cbs_sports": 280
-      },
+      "consensusRank": null,
+      "rankBySource": {},
       "actualPick": 156,
       "actualRound": 5,
       "actualTeam": "IND",
-      "rankDelta": -72,
+      "rankDelta": null,
       "consensusValue": 0.0,
       "actualValue": 37.0,
       "valueDelta": 37.0,
-      "category": "rose",
-      "matched": true
+      "category": "surprise",
+      "matched": false
     },
     {
       "name": "Keith Abney",
@@ -6054,6 +6051,26 @@
       "rankBySource": {
         "espn": 303,
         "cbs_sports": 142
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 0.0,
+      "actualValue": 0.0,
+      "valueDelta": -0.0,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
+      "name": "George Gumbs Jr.",
+      "position": "EDGE",
+      "positionGroup": "EDGE",
+      "school": "Florida",
+      "consensusRank": 228,
+      "rankBySource": {
+        "espn": 166,
+        "cbs_sports": 280
       },
       "actualPick": null,
       "actualRound": null,
@@ -12606,6 +12623,23 @@
       "consensusValue": 0.0,
       "actualValue": 72.0,
       "valueDelta": 72.0,
+      "category": "surprise",
+      "matched": false
+    },
+    {
+      "name": "George Gumbs",
+      "position": "DE",
+      "positionGroup": "EDGE",
+      "school": "Florida",
+      "consensusRank": null,
+      "rankBySource": {},
+      "actualPick": 156,
+      "actualRound": 5,
+      "actualTeam": "IND",
+      "rankDelta": null,
+      "consensusValue": 0.0,
+      "actualValue": 37.0,
+      "valueDelta": 37.0,
       "category": "surprise",
       "matched": false
     },
