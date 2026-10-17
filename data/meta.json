@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-16T10:14:20Z",
+  "lastUpdated": "2026-10-17T09:47:56Z",
   "prospectCount": 705,
   "draftYear": 2027,
   "sources": {
@@ -11,13 +11,13 @@
       "status": "ok",
       "count": 141
     },
-    "tankathon": {
-      "status": "ok",
-      "count": 166
-    },
     "espn": {
       "status": "ok",
       "count": 500
+    },
+    "tankathon": {
+      "status": "ok",
+      "count": 166
     }
   }
 }
