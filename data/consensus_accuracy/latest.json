@@ -2,14 +2,14 @@
   "year": 2026,
   "predraftSourceCount": 565,
   "totalPicks": 257,
-  "matchedPicks": 243,
+  "matchedPicks": 242,
   "stats": {
-    "matchedPairs": 243,
+    "matchedPairs": 242,
     "exactMatches": 5,
     "within5": 33,
     "within10": 60,
-    "meanAbsRankDelta": 52.05,
-    "meanAbsValueDelta": 87.41,
+    "meanAbsRankDelta": 52.16,
+    "meanAbsValueDelta": 87.7,
     "perSource": {
       "walter_football": {
         "sample": 14,
@@ -17,19 +17,19 @@
         "meanAbsValueDelta": 189.29
       },
       "espn": {
-        "sample": 242,
-        "meanAbsRankDelta": 51.16,
-        "meanAbsValueDelta": 107.25
+        "sample": 241,
+        "meanAbsRankDelta": 51.28,
+        "meanAbsValueDelta": 107.64
       },
       "cbs_sports": {
-        "sample": 220,
-        "meanAbsRankDelta": 56.12,
-        "meanAbsValueDelta": 123.35
+        "sample": 219,
+        "meanAbsRankDelta": 56.3,
+        "meanAbsValueDelta": 123.86
       },
       "tankathon": {
-        "sample": 170,
-        "meanAbsRankDelta": 30.65,
-        "meanAbsValueDelta": 127.63
+        "sample": 169,
+        "meanAbsRankDelta": 30.45,
+        "meanAbsValueDelta": 128.2
       }
     }
   },
@@ -4777,25 +4777,21 @@
       "matched": true
     },
     {
-      "name": "Tim Keenan III",
+      "name": "Tim Keenan",
       "position": "DT",
       "positionGroup": "DL",
       "school": "Alabama",
-      "consensusRank": 206,
-      "rankBySource": {
-        "espn": 210,
-        "cbs_sports": 214,
-        "tankathon": 168
-      },
+      "consensusRank": null,
+      "rankBySource": {},
       "actualPick": 232,
       "actualRound": 7,
       "actualTeam": "LAR",
-      "rankDelta": 26,
-      "consensusValue": 16.2,
+      "rankDelta": null,
+      "consensusValue": 0.0,
       "actualValue": 0.0,
-      "valueDelta": -16.2,
-      "category": "fell",
-      "matched": true
+      "valueDelta": 0.0,
+      "category": "surprise",
+      "matched": false
     },
     {
       "name": "Zach Durfee",
@@ -5879,6 +5875,27 @@
       "consensusValue": 16.6,
       "actualValue": 0.0,
       "valueDelta": -16.6,
+      "category": "undrafted",
+      "matched": true
+    },
+    {
+      "name": "Tim Keenan III",
+      "position": "DT",
+      "positionGroup": "DL",
+      "school": "Alabama",
+      "consensusRank": 206,
+      "rankBySource": {
+        "espn": 210,
+        "cbs_sports": 214,
+        "tankathon": 168
+      },
+      "actualPick": null,
+      "actualRound": null,
+      "actualTeam": null,
+      "rankDelta": null,
+      "consensusValue": 16.2,
+      "actualValue": 0.0,
+      "valueDelta": -16.2,
       "category": "undrafted",
       "matched": true
     },
@@ -12725,6 +12742,23 @@
       "consensusValue": 0.0,
       "actualValue": 10.6,
       "valueDelta": 10.6,
+      "category": "surprise",
+      "matched": false
+    },
+    {
+      "name": "Tim Keenan",
+      "position": "DT",
+      "positionGroup": "DL",
+      "school": "Alabama",
+      "consensusRank": null,
+      "rankBySource": {},
+      "actualPick": 232,
+      "actualRound": 7,
+      "actualTeam": "LAR",
+      "rankDelta": null,
+      "consensusValue": 0.0,
+      "actualValue": 0.0,
+      "valueDelta": 0.0,
       "category": "surprise",
       "matched": false
     },
