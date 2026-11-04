@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T13:06:20Z",
+  "lastUpdated": "2026-11-04T13:21:38Z",
   "prospectCount": 707,
   "draftYear": 2027,
   "sources": {
@@ -7,13 +7,13 @@
       "status": "ok",
       "count": 16
     },
-    "tankathon": {
-      "status": "ok",
-      "count": 169
-    },
     "cbs_sports": {
       "status": "ok",
       "count": 143
+    },
+    "tankathon": {
+      "status": "ok",
+      "count": 169
     },
     "espn": {
       "status": "ok",
